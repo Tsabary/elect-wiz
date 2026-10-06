@@ -51,18 +51,18 @@ describe("validateContent", () => {
       expect(rulesOf(c)).toContain("issue-schema");
     });
 
-    it("rejects fewer than 3 or more than 4 options", () => {
+    it("rejects fewer than 3 or more than 6 options", () => {
       const two = validContent();
       two.issues[0] = json("issues/issue-a.json", issueJson("issue-a", 2));
       expect(rulesOf(two)).toContain("issue-schema");
-      const five = validContent();
-      five.issues[0] = json("issues/issue-a.json", issueJson("issue-a", 5));
-      expect(rulesOf(five)).toContain("issue-schema");
+      const seven = validContent();
+      seven.issues[0] = json("issues/issue-a.json", issueJson("issue-a", 7));
+      expect(rulesOf(seven)).toContain("issue-schema");
     });
 
-    it("accepts 4 options", () => {
+    it.each([3, 4, 5, 6])("accepts %i options", (n) => {
       const c = validContent();
-      c.issues[0] = json("issues/issue-a.json", issueJson("issue-a", 4));
+      c.issues[0] = json("issues/issue-a.json", issueJson("issue-a", n));
       expect(rulesOf(c)).toEqual([]);
     });
 

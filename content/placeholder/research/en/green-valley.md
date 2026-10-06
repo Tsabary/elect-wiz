@@ -18,61 +18,61 @@ Led by Samir Demo (fictional person) [1].
 
 ### Cost of living {#issue-cost-of-living}
 
-**Evidence: Statement.** This fictional party's position is closest to: "Strengthen state intervention: price supervision on basic goods and essential services, stronger enforcement against excessive pricing by dominant companies, and higher taxes on excess profits. Without active regulation, large players keep prices high." [1].
+**Evidence: Statement.** This fictional party's position is closest to: "Have the state step in more: supervise the prices of basic food and essential services, act more strongly against big companies that overcharge, and tax unusually high profits. Without active regulation, big companies keep prices high." [1].
 
 Placeholder text for UI development only. It describes no real party.
 
 ### Crime in Arab society {#issue-crime-in-arab-society}
 
-**Evidence: Action.** This fictional party's position is closest to: "Use emergency tools: involve the Shin Bet, treat criminal organizations like terror organizations, allow administrative detention of crime bosses and expand police powers. Organized crime threatens state sovereignty and calls for extraordinary measures." [2].
+**Evidence: Action.** This fictional party's position is closest to: "Use extraordinary measures against organized crime: bring in the Shin Bet (Israel's internal security service) to investigate crime organizations in Arab communities, and give the police a new power to hold any suspected crime boss in Israel, Arab or Jewish, without trial. Ordinary policing has failed, and only powers like those used against terrorism can break these organizations." [2].
 
 Placeholder text for UI development only. It describes no real party.
 
 ### Gaza Strip policy {#issue-gaza}
 
-**Evidence: Formal commitment.** This fictional party's position is closest to: "Resume the fighting and take full IDF control of the Strip until Hamas's military and governing capabilities are destroyed, while encouraging the voluntary emigration of Gaza residents. Only the complete defeat of Hamas will prevent another October 7." [3].
+**Evidence: Formal commitment.** This fictional party's position is closest to: "Go back to war until Hamas is destroyed, then keep Israeli security control while a local administration without Hamas runs daily life. Israel shouldn't settle Gaza or encourage residents to leave, but it can't leave security to anyone else." [3].
 
 Placeholder text for UI development only. It describes no real party.
 
 ### Haredi military enlistment {#issue-haredi-enlistment}
 
-**Evidence: Statement.** This fictional party's position is closest to: "Set gradual enlistment targets for Haredim, with dedicated IDF tracks suited to their way of life and incentives, and cut yeshiva budgets only if targets are missed. Real change will only work through agreement with the Haredi leadership, without tearing society apart." [1].
+**Evidence: Statement.** This fictional party's position is closest to: "Bring Haredim into the army gradually: set yearly enlistment targets, create army units suited to a religious lifestyle, offer incentives, and cut yeshiva funding only if the targets aren't met. Real change will only work through agreement with Haredi leaders, without tearing society apart." [1].
 
 Placeholder text for UI development only. It describes no real party.
 
 ### Housing {#issue-housing}
 
-**Evidence: Action.** This fictional party's position is closest to: "Help buyers directly through discounted-price housing programs, larger and longer mortgages, and grants for young couples and those who served. Owning a home is the key to economic security, and the state should help people get there." [2].
+**Evidence: Action.** This fictional party's position is closest to: "Help people buy directly: discounted-price apartment programs, bigger and longer mortgages, and grants for young couples and those who served. Owning a home is the key to financial security, and the state should help people get there." [2].
 
 Placeholder text for UI development only. It describes no real party.
 
-### Iran, Hezbollah and regional security {#issue-iran-and-regional-security}
+### Iran, Hezbollah and the region {#issue-iran-and-regional-security}
 
-**Evidence: Formal commitment.** This fictional party's position is closest to: "End military operations, withdraw from Lebanese territory, and pursue a comprehensive regional agreement that also resolves the Palestinian issue. Continued military action has not brought security and fuels a cycle of escalation." [3].
+**Evidence: Formal commitment.** This fictional party's position is closest to: "End all military operations and withdraw from Lebanon now, and seek a broad regional peace through diplomacy alone. Military action hasn't brought security and keeps the cycle of escalation going." [3].
 
 Placeholder text for UI development only. It describes no real party.
 
-### Judea and Samaria and the Palestinian issue {#issue-judea-samaria}
+### Judea and Samaria {#issue-judea-samaria}
 
-**Evidence: Statement.** This fictional party's position is closest to: "Apply full Israeli sovereignty over all of Judea and Samaria, expand settlement and dismantle the Palestinian Authority. This is the historic homeland of the Jewish people, and a Palestinian state would be an existential security threat." [1].
+**Evidence: Statement.** This fictional party's position is closest to: "Keep things as they are: keep strengthening the settlements and keep the army free to act anywhere, without applying Israeli sovereignty to territory and without a Palestinian state for now. Under current conditions, any dramatic move in either direction is too risky." [1].
 
 Placeholder text for UI development only. It describes no real party.
 
 ### Judicial system {#issue-judicial-system}
 
-**Evidence: Action.** This fictional party's position is closest to: "Continue the changes: give elected officials more say in appointing judges, limit judicial review of laws and government decisions, and reduce the binding power of the attorney general's legal opinions. Elected representatives, not appointed officials, should have the final say." [2].
+**Evidence: Action.** This fictional party's position is closest to: "Agree on clear rules through a broad compromise: write a constitution, or a basic law, that sets out exactly what each branch can and can't do, possibly letting the Knesset override a court ruling in limited cases. The rules of the game should be set by wide agreement, not by one side." [2].
 
 Placeholder text for UI development only. It describes no real party.
 
 ### October 7 inquiry {#issue-october-7-inquiry}
 
-**Evidence: Formal commitment.** This fictional party's position is closest to: "Establish a commission whose members are chosen by broad Knesset agreement, or equally by the coalition and the opposition, with bereaved families involved. A commission appointed by the Supreme Court President would not be seen as impartial by much of the public." [3].
+**Evidence: Formal commitment.** This fictional party's position is closest to: "The Knesset picks the members, either by broad agreement or split equally between the government's supporters and the opposition, with bereaved families involved. A commission picked by the Supreme Court president wouldn't be seen as fair by much of the public." [3].
 
 Placeholder text for UI development only. It describes no real party.
 
 ### Religion and state {#issue-religion-and-state}
 
-**Evidence: Statement.** This fictional party's position is closest to: "Separate religion from state: full civil marriage for all couples, public transport and commerce on Shabbat, and equal recognition of all streams of Judaism. Personal and religious choices should be up to each citizen, not the state." [1].
+**Evidence: Statement.** This fictional party's position is closest to: "Take religion out of state law entirely: civil marriage and divorce for everyone, public transport and shops can open on Shabbat, and the state treats all streams of Judaism, and people with no religion, equally. Religion is a personal choice, and the state shouldn't enforce it." [1].
 
 Placeholder text for UI development only. It describes no real party.
 

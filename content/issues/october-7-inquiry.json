@@ -2,31 +2,31 @@
   "id": "october-7-inquiry",
   "en": {
     "title": "October 7 inquiry",
-    "description": "How the failures surrounding the October 7 attack should be investigated.",
-    "moreInfo": "Under Israeli law, the government decides whether to establish a state commission of inquiry, and its members are appointed by the President of the Supreme Court. The government has opposed this format and proposed instead a commission appointed through the Knesset, with equal coalition and opposition representation if no broad agreement is reached. No commission has been set up yet; the government told the High Court it would not set one up before the election, and the Court postponed its decision until after the election.",
-    "question": "How should the events of October 7 be investigated?"
+    "description": "How the failures around the October 7 attack should be investigated.",
+    "moreInfo": "Under Israeli law, the government decides whether to set up a state commission of inquiry. It's the most powerful type of investigation: it can summon anyone and see any document, and its members are picked by the President of the Supreme Court. The government opposes this and proposed instead a commission picked through the Knesset, arguing that a commission picked by the Supreme Court president wouldn't be seen as impartial by much of the public. No commission of inquiry has been set up yet. The government told the Supreme Court it won't set one up before the election.",
+    "question": "Who should pick the people who investigate October 7?"
   },
   "he": {
     "title": "חקירת 7 באוקטובר",
-    "description": "כיצד יש לחקור את הכשלים סביב מתקפת 7 באוקטובר.",
-    "moreInfo": "לפי החוק בישראל, הממשלה מחליטה אם להקים ועדת חקירה ממלכתית, וחבריה ממונים על ידי נשיא בית המשפט העליון. הממשלה התנגדה למתכונת זו והציעה במקומה ועדה שתמונה באמצעות הכנסת, עם ייצוג שווה לקואליציה ולאופוזיציה אם לא תושג הסכמה רחבה. עד כה לא הוקמה ועדה; הממשלה הודיעה לבג״ץ שלא תקים ועדה לפני הבחירות, ובית המשפט דחה את החלטתו לאחר הבחירות.",
-    "question": "כיצד יש לחקור את אירועי 7 באוקטובר?"
+    "description": "איך צריך לחקור את הכשלים סביב מתקפת 7 באוקטובר.",
+    "moreInfo": "לפי החוק בישראל, הממשלה מחליטה אם להקים ועדת חקירה ממלכתית. זה סוג החקירה החזק ביותר: הוועדה יכולה לזמן כל אדם ולעיין בכל מסמך, ואת חבריה בוחר נשיא בית המשפט העליון. הממשלה מתנגדת לכך, והציעה במקום זאת ועדה שחבריה ייבחרו באמצעות הכנסת, בטענה שוועדה שנשיא בית המשפט העליון בוחר לא תיתפס כחסרת פניות בעיני חלק גדול מהציבור. עדיין לא הוקמה אף ועדה כזו. הממשלה הודיעה לבית המשפט העליון שלא תקים ועדה לפני הבחירות.",
+    "question": "מי צריך לבחור את האנשים שיחקרו את 7 באוקטובר?"
   },
   "options": [
     {
       "id": "state-commission-under-existing-law",
-      "en": "Establish a state commission of inquiry under the existing law, with members appointed by the President of the Supreme Court. Only a fully independent body with legal powers can examine both the political and the security leadership and earn public trust.",
-      "he": "להקים ועדת חקירה ממלכתית לפי החוק הקיים, שחבריה ימונו על ידי נשיא בית המשפט העליון. רק גוף עצמאי לחלוטין עם סמכויות חוקיות יכול לבחון גם את הדרג המדיני וגם את הדרג הביטחוני ולזכות באמון הציבור."
+      "en": "The President of the Supreme Court picks the members, as the law has always required for a state commission of inquiry. Only a fully independent body with full legal powers can investigate both the government and the army, and earn public trust.",
+      "he": "נשיא בית המשפט העליון בוחר את חברי הוועדה, כפי שהחוק קבע תמיד לגבי ועדת חקירה ממלכתית. רק גוף עצמאי לגמרי, עם סמכויות חוקיות מלאות, יכול לחקור גם את הממשלה וגם את הצבא ולזכות באמון הציבור."
     },
     {
       "id": "commission-appointed-by-knesset-balance",
-      "en": "Establish a commission whose members are chosen by broad Knesset agreement, or equally by the coalition and the opposition, with bereaved families involved. A commission appointed by the Supreme Court President would not be seen as impartial by much of the public.",
-      "he": "להקים ועדה שחבריה ייבחרו בהסכמה רחבה בכנסת, או באופן שווה על ידי הקואליציה והאופוזיציה, בשיתוף משפחות שכולות. ועדה שימנה נשיא בית המשפט העליון לא תיתפס כנטולת פניות בעיני חלק גדול מהציבור."
+      "en": "The Knesset picks the members, either by broad agreement or split equally between the government's supporters and the opposition, with bereaved families involved. A commission picked by the Supreme Court president wouldn't be seen as fair by much of the public.",
+      "he": "הכנסת בוחרת את חברי הוועדה, בהסכמה רחבה או בחלוקה שווה בין תומכי הממשלה לאופוזיציה, בשיתוף משפחות שכולות. ועדה שנשיא בית המשפט העליון בוחר לא תיתפס כהוגנת בעיני חלק גדול מהציבור."
     },
     {
       "id": "commission-chosen-by-neutral-mechanism",
-      "en": "Establish a commission with full powers whose members are chosen in a way neither camp controls, such as retired judges elected by secret ballot in the Knesset, and examine the government, the security services and the legal system alike. Only such a body can win trust across the divide.",
-      "he": "להקים ועדה בעלת סמכויות מלאות שחבריה ייבחרו בדרך שאף מחנה אינו שולט בה, למשל שופטים בדימוס שייבחרו בהצבעה חשאית בכנסת, ולבחון באותה מידה את הממשלה, את מערכת הביטחון ואת מערכת המשפט. רק גוף כזה יזכה באמון משני צדי המתרס."
+      "en": "A neutral method that no political side controls picks the members, for example retired judges elected by the Knesset in a secret vote. The investigation would cover the government, the army and security services, and the legal system alike. Only such a body can be trusted by both sides.",
+      "he": "שיטה ניטרלית, שאף צד פוליטי לא שולט בה, בוחרת את חברי הוועדה, למשל שופטים בדימוס שהכנסת בוחרת בהצבעה חשאית. החקירה תעסוק באותה מידה בממשלה, בצבא ובגופי הביטחון, ובמערכת המשפט. רק לגוף כזה שני הצדדים יכולים לתת אמון."
     }
   ]
 }

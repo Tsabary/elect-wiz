@@ -68,7 +68,7 @@ Each task is self-contained. From the task alone you should know what to do, how
 - [x]
 - **What:**
   - Define typed formats and loaders for the corpus:
-    - issues: one file per issue under `content/issues/`, with IDs, both languages, 3–4 options with stable option IDs;
+    - issues: one file per issue under `content/issues/`, with IDs, both languages, 3–6 options with stable option IDs (owner decision 2026-10-06; originally 3–4);
     - `content/registry/parties.json` and `content/registry/lists.json` (list entity carries ballot letters, member party IDs, and a poll snapshot that is either a percent with source and date, or "not polled");
     - research documents at `content/research/{en,he}/<party-id>.md`, following the fixed 9-section skeleton, with one section-3 sub-section per issue ID, section-4 per-topic sub-sections, stable anchors identical across languages, and numbered sources;
     - `content/glossary.json`;
@@ -123,10 +123,10 @@ Each task is self-contained. From the task alone you should know what to do, how
   - If lists are still subject to appeals or approval, note which, so Task 4.1 re-checks them.
 
 ### Task 1.5: Research Stage 1, drafting the issues and answers and getting owner approval
-- [ ] *(Draft and independent neutrality review done. AWAITING OWNER APPROVAL: see `research/review/issues-review.md`.)*
+- [x] *(Approved by the owner on 2026-10-06 in a review session. Final English and Hebrew in `content/issues/`, glossary updated, facts re-checked (`research/review/issues-fact-check.md`), independent neutrality and Hebrew/English parity reviews applied where they didn't change meaning, options per issue widened to 3–6 (Gaza 5, Judea and Samaria 6). `surveyContentVersion` frozen at `2026-10-06.1`. The four low-severity wording questions were answered by the owner on 2026-10-06 and applied in English and Hebrew; see the top of `research/review/issues-review.md`.)*
 - **What:**
   - Research what the 10 most pressing issues in Israeli society are right now.
-  - For each issue, draft the title, one-line description, more-info text, question framing and the 3–4 most common real-world positions, written in Hebrew and English as equivalents, with Israeli-neutral terminology (e.g., "Judea and Samaria", "settlements").
+  - For each issue, draft the title, one-line description, more-info text, question framing and the most common real-world positions (3–6 options; most issues have 3–4), written in Hebrew and English as equivalents, with Israeli-neutral terminology (e.g., "Judea and Samaria", "settlements").
   - Produce the bilingual terminology glossary.
   - Run an **independent** neutrality-review agent (not the drafter) that checks for terms loaded within Israeli discourse and for missing major positions. Apply its fixes.
   - Write `research/review/issues-review.md` for the owner: each issue with why it made the list (with sources), its options in both languages, the glossary, and the issues considered but excluded (with reasons).
@@ -263,7 +263,7 @@ Each task is self-contained. From the task alone you should know what to do, how
 ### Task 2.5: Build the answer steps and the "anything else" step
 - [x]
 - **What:**
-  - Build one screen per ranked issue, in ranked order: the question framing, then the 3–4 options in this session's shuffled order, each shown as an **already-editable text area**. The user selects one and may edit its wording in place, or writes their own in a separate free-text field.
+  - Build one screen per ranked issue, in ranked order: the question framing, then the issue's 3–6 options in this session's shuffled order, each shown as an **already-editable text area**. The user selects one and may edit its wording in place, or writes their own in a separate free-text field.
   - The submitted answer is the final text, plus the starting option ID and an edited flag.
   - Show progress ("4 of 8") and a back button that preserves earlier answers.
   - Then the optional "anything else" screen: a free-text field plus an importance choice (more important than my top issue / about the middle / minor), shown only when text is entered.

@@ -1,13 +1,28 @@
 # Issues and answers: owner review (Stage 1)
 
-> ## ⏳ STATUS: AWAITING OWNER APPROVAL
-> This is a **draft for owner review**. It has **not** been approved. Nothing is locked yet.
-> - The draft issues are already in `content/issues/` and `content/glossary.json`, so the mock website can use them.
-> - Party research (Stage 2) **must not start** until the owner approves.
+> ## ✅ STATUS: APPROVED AND LOCKED (2026-10-06)
+> The owner approved every issue and option in a review session on 2026-10-06. The survey content is frozen as `surveyContentVersion` **2026-10-06.1** in `content/versions.json`. Party research (Stage 2) may start.
 >
-> **Owner approval record**, filled in only by the owner or on the owner's explicit instruction:
-> - Approved: ☐ no / ☐ yes — date: ____ — notes: ____
-> - On approval, set `surveyContentVersion` in `content/versions.json` to a frozen value (currently `draft-2026-10-06`, a draft value).
+> **Owner approval record:**
+> - Approved: ☑ yes — date: 2026-10-06 — approved by the owner in a review session, issue by issue.
+> - **Source of truth:** the approved English is recorded in `research/review/issues-final-approved-en.md`; the final English and Hebrew are in `content/issues/*.json` and the terms in `content/glossary.json`. §1 below reflects the final set; §2 shows the **draft** text as it was reviewed, kept for the record.
+> - **Changes from the draft, as approved:**
+>   - Haredi enlistment: option 4 reworded to voluntary service for all (ID renamed to `voluntary-service-for-all`).
+>   - Housing: option 2 adds limits on rent increases.
+>   - Judicial system: option 4 added (keep the current system, including changes already passed).
+>   - Gaza: option 1 adds rebuilding Israeli communities in Gaza; option 5 added (defeat Hamas, then Israeli security control with a local administration, no settlement and no pushing residents out).
+>   - Judea and Samaria: option 4 clarified (two states with settlement blocs and land swaps); options 5 (two states on the pre-1967 border) and 6 (one state with equal rights) added.
+>   - Religion and state: all options sharpened around what the law enforces.
+>   - Crime in Arab society: options sharpened with explicit scope (option 2 is now more police under normal law; option 3 is investment first; IDs renamed accordingly).
+>   - Iran, Hezbollah and the region: options sharpened; option 4 no longer includes a Palestinian state.
+>   - All text rewritten in plain language. Options allowed per issue changed from 3–4 to 3–6.
+>   - Open questions #1–#8 in §5 were resolved in the session as reflected in the approved text: #1 Gaza opt 1 keeps voluntary emigration (and adds rebuilding communities), with the opposite view in new opt 5; #2 the "also known as" asides are kept; #3 October 7 opt 3 kept; #4 Judea and Samaria opt 4 reworded and the one-state and pre-1967-border positions split into opts 5–6; #5 a 4th judicial option added; #6 the Iran issue kept; #7 housing and cost of living kept separate; #8 facts re-checked before locking (`research/review/issues-fact-check.md`).
+> - **After approval (meaning unchanged):** Hebrew written as an equivalent of the approved English; independent neutrality and Hebrew/English parity reviews by separate agents; their meaning-preserving wording fixes applied (including a few English wording tweaks: "advanced changes", "elected officials", "commission of inquiry", "encourage residents to leave", "applying Israeli sovereignty", "stays in charge of", "supervising prices"); fact-check corrections applied as recorded in `issues-fact-check.md`.
+> - **Owner wording questions: all 4 resolved (2026-10-06).** Low severity, wording only; no option's meaning changed; `surveyContentVersion` stays `2026-10-06.1`.
+>   1. ✅ **"Haredi (ultra-Orthodox)"** in the haredi-enlistment English description. **Answer: keep it.** The one-time explanatory gloss in English is an approved exception, noted in the `haredi` entry of `content/glossary.json`.
+>   2. ✅ **Haredi moreInfo, "in practice meant they never served".** **Answer: soften for accuracy.** EN now "which in practice meant most never served"; HE "ובפועל רובם לא שירתו." Recorded as fact-check correction C3 in `issues-fact-check.md`.
+>   3. ✅ **October 7 moreInfo: the government's reason.** **Answer: add the government's stated reason, short and neutral.** EN now "…proposed instead a commission picked through the Knesset, arguing that a commission picked by the Supreme Court president wouldn't be seen as impartial by much of the public."; HE "…באמצעות הכנסת, בטענה שוועדה שנשיא בית המשפט העליון בוחר לא תיתפס כחסרת פניות בעיני חלק גדול מהציבור." (The supporters of a state commission are represented by option 1.)
+>   4. ✅ **Hezbollah.** **Answer: use "terror organization"** (Israeli-neutral usage). EN now "Hezbollah (the Iran-backed terror organization in Lebanon)"; HE "חיזבאללה (ארגון הטרור בלבנון שאיראן תומכת בו)". The `hezbollah` glossary entry is updated to match.
 
 Prepared 2026-10-06 for the 26th Knesset election (election day Tuesday 27 October 2026). Process:
 1. A **drafting agent** researched and wrote the issues, options and glossary (`research/review/issues-draft-notes.md`).
@@ -30,18 +45,20 @@ Prepared 2026-10-06 for the 26th Knesset election (election day Tuesday 27 Octob
 
 ## 1. The 10 issues at a glance
 
+Final, approved set (2026-10-06):
+
 | # | ID | English | עברית | Options |
 |---|---|---|---|---|
 | 1 | `haredi-enlistment` | Haredi military enlistment | גיוס חרדים | 4 |
 | 2 | `cost-of-living` | Cost of living | יוקר המחיה | 4 |
 | 3 | `housing` | Housing | דיור | 4 |
-| 4 | `judicial-system` | Judicial system | מערכת המשפט | 3 |
+| 4 | `judicial-system` | Judicial system | מערכת המשפט | 4 |
 | 5 | `october-7-inquiry` | October 7 inquiry | חקירת 7 באוקטובר | 3 |
-| 6 | `gaza` | Gaza Strip policy | המדיניות ברצועת עזה | 4 |
-| 7 | `judea-samaria` | Judea and Samaria and the Palestinian issue | יהודה ושומרון והסוגיה הפלסטינית | 4 |
+| 6 | `gaza` | Gaza Strip policy | המדיניות ברצועת עזה | 5 |
+| 7 | `judea-samaria` | Judea and Samaria | יהודה ושומרון | 6 |
 | 8 | `religion-and-state` | Religion and state | דת ומדינה | 4 |
 | 9 | `crime-in-arab-society` | Crime in Arab society | הפשיעה בחברה הערבית | 3 |
-| 10 | `iran-and-regional-security` | Iran, Hezbollah and regional security | איראן, חיזבאללה והביטחון האזורי | 4 |
+| 10 | `iran-and-regional-security` | Iran, Hezbollah and the region | איראן, חיזבאללה והאזור | 4 |
 
 ## 2. The issues in full
 
@@ -445,6 +462,8 @@ Key decisions for the reviewer:
 I adjusted four notes (#36–39) and documented the two "also known as" aids in the Judea and Samaria moreInfo.
 
 ## 5. Open questions for the owner
+
+> **Resolved** in the owner review session on 2026-10-06. See the approval record at the top of this document. The text below is kept for the record.
 
 These are value calls from the independent reviewer. They supersede the drafter's questions, which the reviewer resolved or carried over.
 

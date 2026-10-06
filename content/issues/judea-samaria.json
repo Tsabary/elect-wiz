@@ -1,37 +1,47 @@
 {
   "id": "judea-samaria",
   "en": {
-    "title": "Judea and Samaria and the Palestinian issue",
-    "description": "The future of Judea and Samaria, the settlements and relations with the Palestinians.",
-    "moreInfo": "Israeli sovereignty has not been applied to Judea and Samaria (an area also known as the West Bank); Palestinian cities there are run by the Palestinian Authority, and Israelis live in settlements. In September 2025 several Western countries, including the UK, France and Canada, recognized a Palestinian state. Over the past year the government advanced thousands of housing units, including in the E1 area, bills to apply Israeli sovereignty (also referred to as annexation) passed preliminary readings, and several countries announced bans on settlement goods. Party positions range from full sovereignty to separation and a Palestinian state.",
+    "title": "Judea and Samaria",
+    "description": "The future of Judea and Samaria, the settlements, and relations with the Palestinians.",
+    "moreInfo": "Israel has not applied its law (sovereignty) to Judea and Samaria, an area also known as the West Bank. Palestinian cities there are run by the Palestinian Authority, and Israelis live in settlements. In September 2025 several Western countries, including the UK, France and Canada, recognized a Palestinian state. Over the past year the government approved thousands of new homes in settlements, and bills to apply Israeli sovereignty (also called annexation) passed early votes in the Knesset. Several countries banned goods made in settlements.",
     "question": "What should Israel's long-term policy be in Judea and Samaria?"
   },
   "he": {
-    "title": "יהודה ושומרון והסוגיה הפלסטינית",
-    "description": "עתידם של יהודה ושומרון, ההתיישבות והיחסים עם הפלסטינים.",
-    "moreInfo": "על יהודה ושומרון (אזור המכונה גם הגדה המערבית) לא הוחלה ריבונות ישראלית; הערים הפלסטיניות בהן מנוהלות על ידי הרשות הפלסטינית, וישראלים מתגוררים ביישובים. בספטמבר 2025 הכירו כמה מדינות מערביות, ובהן בריטניה, צרפת וקנדה, במדינה פלסטינית. בשנה האחרונה קידמה הממשלה אלפי יחידות דיור, כולל במרחב E1, הצעות חוק להחלת ריבונות (המכונה גם סיפוח) עברו בקריאה טרומית, וכמה מדינות הודיעו על איסור יבוא סחורות מההתיישבות. עמדות המפלגות נעות מריבונות מלאה ועד היפרדות ומדינה פלסטינית.",
-    "question": "מה צריכה להיות המדיניות ארוכת הטווח של ישראל ביהודה ושומרון?"
+    "title": "יהודה ושומרון",
+    "description": "העתיד של יהודה ושומרון ושל היישובים הישראליים שם, והיחסים עם הפלסטינים.",
+    "moreInfo": "ישראל לא החילה את החוק שלה (ריבונות) על יהודה ושומרון, אזור שמכונה גם הגדה המערבית. את הערים הפלסטיניות שם מנהלת הרשות הפלסטינית, וישראלים גרים ביישובים. בספטמבר 2025 הכירו כמה מדינות מערביות, ובהן בריטניה, צרפת וקנדה, במדינה פלסטינית. בשנה האחרונה אישרה הממשלה אלפי דירות חדשות ביישובים, והצעות חוק להחלת ריבונות ישראלית (המכונה גם סיפוח) עברו הצבעות ראשונות בכנסת. כמה מדינות אסרו על ייבוא מוצרים שמיוצרים ביישובים.",
+    "question": "מה צריכה להיות המדיניות של ישראל ביהודה ושומרון לטווח הארוך?"
   },
   "options": [
     {
       "id": "full-sovereignty",
-      "en": "Apply full Israeli sovereignty over all of Judea and Samaria, expand settlement and dismantle the Palestinian Authority. This is the historic homeland of the Jewish people, and a Palestinian state would be an existential security threat.",
-      "he": "להחיל ריבונות ישראלית מלאה על כל יהודה ושומרון, להרחיב את ההתיישבות ולפרק את הרשות הפלסטינית. זוהי מולדתו ההיסטורית של העם היהודי, ומדינה פלסטינית תהיה איום ביטחוני קיומי."
+      "en": "Make all of Judea and Samaria officially part of Israel, expand the settlements, and dismantle the Palestinian Authority. This is the historic homeland of the Jewish people, and a Palestinian state would threaten Israel's existence.",
+      "he": "להפוך את כל יהודה ושומרון באופן רשמי לחלק מישראל, להרחיב את היישובים ולפרק את הרשות הפלסטינית. זו המולדת ההיסטורית של העם היהודי, ומדינה פלסטינית תאיים על קיומה של ישראל."
     },
     {
       "id": "partial-sovereignty-area-c",
-      "en": "Apply Israeli sovereignty to the settlements and Area C, or to key areas such as the Jordan Valley, while Palestinians manage their own civil affairs in the other areas. This secures vital areas without absorbing a large Palestinian population.",
-      "he": "להחיל ריבונות ישראלית על היישובים ועל שטחי C, או על אזורים מרכזיים כמו בקעת הירדן, בעוד הפלסטינים מנהלים את ענייניהם האזרחיים בשאר השטחים. כך נשמרים אזורים חיוניים בלי לקלוט אוכלוסייה פלסטינית גדולה."
+      "en": "Make only part of the area officially Israeli: the settlements and the open areas around them (known as Area C, about 60% of the territory), or key areas such as the Jordan Valley. Palestinians would run their own daily affairs in the rest. This secures vital areas without taking in a large Palestinian population.",
+      "he": "להפוך רק חלק מהאזור באופן רשמי לישראלי: את היישובים ואת השטחים הפתוחים סביבם (שמכונים שטח C, כ־60% מהשטח), או אזורי מפתח כמו בקעת הירדן. הפלסטינים ינהלו את ענייני היומיום שלהם בשאר השטח. כך ישראל שומרת על אזורים חיוניים בלי לקלוט אוכלוסייה פלסטינית גדולה."
     },
     {
       "id": "maintain-current-situation",
-      "en": "Keep the current situation: keep strengthening the settlements and full IDF freedom of action, with neither sovereignty nor a Palestinian state for now. Under present conditions, any dramatic move in either direction carries heavy risks.",
-      "he": "לשמר את המצב הקיים: להמשיך לחזק את ההתיישבות ולשמור על חופש פעולה מלא לצה״ל, בלי החלת ריבונות ובלי מדינה פלסטינית בשלב זה. בתנאים הנוכחיים, כל צעד דרמטי לכל כיוון כרוך בסיכונים כבדים."
+      "en": "Keep things as they are: keep strengthening the settlements and keep the army free to act anywhere, without applying Israeli sovereignty to territory and without a Palestinian state for now. Under current conditions, any dramatic move in either direction is too risky.",
+      "he": "להשאיר את המצב כמו שהוא: להמשיך לחזק את היישובים ולשמור על חופש הפעולה של צה״ל בכל מקום, בלי להחיל ריבונות על שטחים ובלי מדינה פלסטינית בינתיים. בתנאים הנוכחיים, כל צעד דרמטי לכל כיוון מסוכן מדי."
     },
     {
       "id": "separation-two-states",
-      "en": "Separate from the Palestinians through a negotiated two-state agreement that settles borders and settlements, within a regional arrangement with the US and Arab states. This will end the conflict, keep Israel democratic with a Jewish majority and give Palestinians self-determination.",
-      "he": "להיפרד מהפלסטינים בהסכם שתי מדינות במשא ומתן שיסדיר את הגבולות ואת ההתיישבות, כחלק מהסדר אזורי עם ארה״ב ומדינות ערב. כך יסתיים הסכסוך, ישראל תישאר דמוקרטית עם רוב יהודי והפלסטינים יזכו להגדרה עצמית."
+      "en": "Two states through a negotiated agreement, where most settlers stay: the large settlement blocs near the pre-1967 border become part of Israel, Israel gives the Palestinians other land in exchange, and only the smaller, remote settlements are evacuated. This will end the conflict and keep Israel democratic with a Jewish majority.",
+      "he": "שתי מדינות בהסכם שיושג במשא ומתן, שבו רוב תושבי היישובים נשארים: גושי ההתיישבות הגדולים, שקרובים לגבול שלפני 1967 (הקו הירוק), יהפכו לחלק מישראל, ישראל תיתן לפלסטינים שטחים אחרים בתמורה, ורק היישובים הקטנים והמרוחקים יפונו. כך יסתיים הסכסוך, וישראל תישאר דמוקרטית עם רוב יהודי."
+    },
+    {
+      "id": "two-states-pre-1967-border",
+      "en": "Two states on the exact pre-1967 border: Israel withdraws from all of Judea and Samaria and East Jerusalem, every settlement is evacuated, and East Jerusalem becomes the Palestinian capital. Only ending Israeli control over all the land taken in 1967 can bring a just peace.",
+      "he": "שתי מדינות בדיוק על הגבול שלפני 1967 (הקו הירוק): ישראל נסוגה מכל יהודה ושומרון וממזרח ירושלים, כל היישובים מפונים, ומזרח ירושלים הופכת לבירה הפלסטינית. רק סיום השליטה הישראלית בכל השטחים שישראל השתלטה עליהם ב־1967 יכול להביא שלום צודק."
+    },
+    {
+      "id": "one-equal-state",
+      "en": "One state for everyone between the Jordan River and the sea, with equal rights and an equal vote for Jews and Palestinians, instead of two separate states. Separation has failed, and equality for everyone who lives in this land is the only just solution.",
+      "he": "מדינה אחת לכולם בין הירדן לים, עם זכויות שוות וזכות הצבעה שווה ליהודים ולפלסטינים, במקום שתי מדינות נפרדות. ההיפרדות נכשלה, ושוויון לכל מי שחיים בארץ הזאת הוא הפתרון הצודק היחיד."
     }
   ]
 }

@@ -4,6 +4,7 @@ import {
   BEFORE_BLACKOUT,
   completeSurvey,
   IN_BLACKOUT,
+  issues,
   lists,
   parties,
   setClock,
@@ -30,6 +31,9 @@ test.describe("poll blackout (clock override)", () => {
       page,
     }) => {
       await setClock(page, IN_BLACKOUT);
+      const optionTexts: string[] = issues().flatMap((issue: any) =>
+        issue.options.map((o: any) => o[locale] as string),
+      );
       for (const id of [
         polledParty(),
         belowList().memberPartyIds[0],
@@ -40,7 +44,11 @@ test.describe("poll blackout (clock override)", () => {
         await expect(page.getByTestId("polling-line")).toHaveCount(0);
         await expect(page.getByTestId("poll-note-below-threshold")).toHaveCount(0);
         await expect(page.getByTestId("poll-note-not-polled")).toHaveCount(0);
-        await expect(page.locator("body")).not.toContainText("%");
+        // No poll figure anywhere. Issue option text is approved survey content
+        // and may contain percentages (e.g. "Area C, about 60%"), so strip it first.
+        let bodyText = await page.locator("body").innerText();
+        for (const option of optionTexts) bodyText = bodyText.split(option).join("");
+        expect(bodyText).not.toContain("%");
       }
     });
   }

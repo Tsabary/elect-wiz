@@ -2,31 +2,36 @@
   "id": "judicial-system",
   "en": {
     "title": "Judicial system",
-    "description": "The balance of power between the government, the Knesset and the courts.",
-    "moreInfo": "Since 2023 the government has advanced changes to the judicial system, including how judges are selected and the authority of the attorney general, which led to mass protests and counter-protests. Supporters say the changes restore the balance between the branches; opponents say they weaken the checks on government power. In January 2024 the Supreme Court struck down an amendment to a Basic Law that limited the reasonableness standard. In 2025 the Knesset passed a law changing the makeup of the Judicial Selection Committee, which takes effect when the next Knesset convenes, and the government voted to dismiss the attorney general, a decision the High Court of Justice annulled. Parties offer very different plans, from continuing the changes to repealing them.",
-    "question": "What should the relationship be between the government, the Knesset and the courts?"
+    "description": "How power should be divided between the government, the Knesset (parliament) and the courts.",
+    "moreInfo": "Since 2023 the government has advanced changes to the justice system. They include how judges are chosen and the power of the attorney general, the government's top legal adviser, whose legal opinions currently bind the government. The changes led to mass protests and counter-protests. Supporters say they restore balance between the branches; opponents say they remove checks on government power. In 2024 the Supreme Court cancelled one of the changes. In 2025 the Knesset passed a law giving politicians more say in choosing judges, which takes effect when the next Knesset begins. The government also voted to fire the attorney general, a decision the Supreme Court cancelled.",
+    "question": "How much power should the courts have compared with the government and the Knesset?"
   },
   "he": {
     "title": "מערכת המשפט",
-    "description": "מאזן הכוחות בין הממשלה, הכנסת ובתי המשפט.",
-    "moreInfo": "מאז 2023 מקדמת הממשלה שינויים במערכת המשפט, בהם אופן בחירת השופטים וסמכויות היועצת המשפטית לממשלה, שהובילו להפגנות המוניות ולהפגנות נגד. התומכים אומרים שהשינויים מחזירים את האיזון בין הרשויות; המתנגדים אומרים שהם מחלישים את הבלמים על כוח השלטון. בינואר 2024 ביטל בית המשפט העליון תיקון לחוק יסוד שהגביל את עילת הסבירות. ב-2025 חוקקה הכנסת חוק שמשנה את הרכב הוועדה לבחירת שופטים, שייכנס לתוקף עם כינוס הכנסת הבאה, והממשלה החליטה לפטר את היועצת המשפטית לממשלה, החלטה שבג״ץ ביטל. המפלגות מציעות תוכניות שונות מאוד, מהמשך השינויים ועד ביטולם.",
-    "question": "מה צריכים להיות היחסים בין הממשלה, הכנסת ובתי המשפט?"
+    "description": "איך צריך לחלק את הכוח בין הממשלה, הכנסת ובתי המשפט.",
+    "moreInfo": "מאז 2023 הממשלה מקדמת שינויים במערכת המשפט. הם כוללים את הדרך שבה נבחרים שופטים ואת הסמכויות של היועץ המשפטי לממשלה, שחוות הדעת המשפטיות שלו מחייבות כיום את הממשלה. השינויים הובילו להפגנות ענק נגדם, וגם להפגנות תמיכה. התומכים אומרים שהשינויים מחזירים את האיזון בין הרשויות; המתנגדים אומרים שהם מסירים בלמים על כוח הממשלה. בשנת 2024 ביטל בית המשפט העליון את אחד השינויים. בשנת 2025 חוקקה הכנסת חוק שנותן לפוליטיקאים יותר השפעה על בחירת השופטים, והוא ייכנס לתוקף עם תחילת כהונתה של הכנסת הבאה. הממשלה גם החליטה לפטר את היועצת המשפטית לממשלה, ובית המשפט העליון ביטל את ההחלטה.",
+    "question": "כמה כוח צריך להיות לבתי המשפט בהשוואה לממשלה ולכנסת?"
   },
   "options": [
     {
       "id": "continue-judicial-changes",
-      "en": "Continue the changes: give elected officials more say in appointing judges, limit judicial review of laws and government decisions, and reduce the binding power of the attorney general's legal opinions. Elected representatives, not appointed officials, should have the final say.",
-      "he": "להמשיך בשינויים: לתת לנבחרי הציבור משקל רב יותר במינוי שופטים, להגביל את הביקורת השיפוטית על חוקים ועל החלטות הממשלה ולצמצם את המחויבות לחוות הדעת של היועץ המשפטי לממשלה. ההכרעה הסופית צריכה להיות בידי נבחרי הציבור, לא בידי פקידים ממונים."
+      "en": "Give the government and the Knesset more power over the courts: elected officials get a bigger say in choosing judges, judges get less power to cancel laws or government decisions, and the attorney general's legal opinions stop binding the government. Elected representatives, not appointed officials, should have the final say.",
+      "he": "לתת לממשלה ולכנסת יותר כוח מול בתי המשפט: לנבחרי הציבור תהיה השפעה גדולה יותר על בחירת השופטים, לשופטים יהיה פחות כוח לבטל חוקים או החלטות של הממשלה, וחוות הדעת של היועץ המשפטי לממשלה יפסיקו לחייב את הממשלה. המילה האחרונה צריכה להיות של נבחרי הציבור, ולא של פקידים ממונים."
     },
     {
       "id": "broad-agreed-constitutional-framework",
-      "en": "Reach a broad, agreed framework, such as a constitution or a Basic Law: Legislation, that defines each branch's powers and may include a limited override clause. Lasting rules of the game should be set by wide consensus rather than by one side.",
-      "he": "להגיע להסדר רחב ומוסכם, כמו חוקה או חוק יסוד: החקיקה, שיגדיר את סמכויות כל רשות ועשוי לכלול פסקת התגברות מוגבלת. כללי משחק יציבים צריכים להיקבע בהסכמה רחבה ולא על ידי צד אחד."
+      "en": "Agree on clear rules through a broad compromise: write a constitution, or a basic law, that sets out exactly what each branch can and can't do, possibly letting the Knesset override a court ruling in limited cases. The rules of the game should be set by wide agreement, not by one side.",
+      "he": "להסכים על כללים ברורים בפשרה רחבה: לכתוב חוקה, או חוק יסוד, שיקבעו בדיוק מה כל רשות יכולה ומה היא לא יכולה לעשות, ואולי לאפשר לכנסת לעקוף פסיקה של בית המשפט במקרים מוגבלים. את כללי המשחק צריך לקבוע בהסכמה רחבה, ולא על ידי צד אחד."
     },
     {
       "id": "repeal-changes-protect-independence",
-      "en": "Repeal the changes passed in recent years, including the new judicial selection law, and anchor the independence of the courts and the attorney general in a Basic Law. Independent courts are an essential check on government power and protect citizens' rights.",
-      "he": "לבטל את השינויים שחוקקו בשנים האחרונות, כולל החוק החדש לבחירת שופטים, ולעגן בחוק יסוד את עצמאות בתי המשפט והייעוץ המשפטי לממשלה. בתי משפט עצמאיים הם בלם חיוני לכוח השלטון ומגינים על זכויות האזרחים."
+      "en": "Reverse the recent changes, including the new law on choosing judges, and protect the independence of the courts and the attorney general in a basic law (a law with constitutional status). Independent courts are a key check on government power and protect citizens' rights.",
+      "he": "לבטל את השינויים שנעשו לאחרונה, כולל החוק החדש על בחירת השופטים, ולעגן בחוק יסוד (חוק במעמד חוקתי) את העצמאות של בתי המשפט ושל היועץ המשפטי לממשלה. בתי משפט עצמאיים הם בלם חשוב על כוח הממשלה, והם מגנים על זכויות האזרחים."
+    },
+    {
+      "id": "keep-current-system-stability",
+      "en": "Keep the system as it is today, including the changes the current government has already passed, such as the new law on choosing judges. No further changes and no reversal, with only small adjustments if needed. The country needs stability and should focus on other priorities.",
+      "he": "להשאיר את המערכת כמו שהיא היום, כולל השינויים שהממשלה הנוכחית כבר העבירה, כמו החוק החדש על בחירת השופטים. בלי שינויים נוספים ובלי ביטול שלהם, רק התאמות קטנות אם יהיה בהן צורך. המדינה צריכה יציבות, וצריך להתמקד בעדיפויות אחרות."
     }
   ]
 }

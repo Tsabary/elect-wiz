@@ -26,11 +26,18 @@ export const issueOptionSchema = z.object({
   he: nonEmpty,
 });
 
+/** Allowed preset options per issue (owner decision 2026-10-06: Gaza has 5, Judea and Samaria 6). */
+export const MIN_OPTIONS = 3;
+export const MAX_OPTIONS = 6;
+
 export const issueSchema = z.object({
   id: idSchema,
   en: issueTextSchema,
   he: issueTextSchema,
-  options: z.array(issueOptionSchema).min(3, "needs 3–4 options").max(4, "needs 3–4 options"),
+  options: z
+    .array(issueOptionSchema)
+    .min(MIN_OPTIONS, `needs ${MIN_OPTIONS}–${MAX_OPTIONS} options`)
+    .max(MAX_OPTIONS, `needs ${MIN_OPTIONS}–${MAX_OPTIONS} options`),
 });
 export type Issue = z.infer<typeof issueSchema>;
 export type IssueOption = z.infer<typeof issueOptionSchema>;

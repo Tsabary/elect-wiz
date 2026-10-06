@@ -21,7 +21,7 @@ All components are new.
 ### Phase 1
 
 1. **Content corpus (new).** Version-controlled files that are the single source of truth for everything users read:
-   - the 10 issues (descriptions, more-info text, question framing, 3–4 options, in Hebrew and English);
+   - the 10 issues (descriptions, more-info text, question framing, 3–6 options, in Hebrew and English);
    - the party and list registry;
    - the poll snapshot;
    - the research documents.
@@ -32,7 +32,7 @@ All components are new.
    - **Stage 0, ground truth.** Verify the official election date and poll-closing time, and the **official list of approved ballot lists** from the Central Elections Committee (CEC): list names, ballot letters, member parties of joint lists, top of each candidate list. This list defines the registry. Nothing is researched from memory.
    - **Stage 1, issues and answers (owner-gated).**
      - Research what the 10 most pressing issues in Israeli society are right now.
-     - For each issue, draft the description, more-info text, question framing and the 3–4 most common real-world positions, in Hebrew and English as equivalents, using Israeli-neutral terminology.
+     - For each issue, draft the description, more-info text, question framing and the most common real-world positions (3–6 options; most issues have 3–4), in Hebrew and English as equivalents, using Israeli-neutral terminology.
      - Produce a **bilingual terminology glossary** of approved Israeli-neutral terms.
      - An **independent neutrality review agent** checks for loaded terms and missing major positions.
      - The result goes to the owner as a **readable review document**: each issue with why it made the list and the sources behind that, its options in both languages, the glossary, and the issues considered but left out, with reasons. The owner iterates on it with the agents until approving it.
@@ -74,7 +74,7 @@ All components are new.
 No database of user data at any phase.
 
 ### Phase 1
-1. **Issue definition (corpus):** stable issue ID. In each language: title, one-line description, more-info text, question framing. Plus 3–4 options, each with a stable option ID and text in each language.
+1. **Issue definition (corpus):** stable issue ID. In each language: title, one-line description, more-info text, question framing. Plus 3–6 options, each with a stable option ID and text in each language.
 2. **Registry (corpus):**
    - **Party:** stable party ID, names in each language, list ID, short leader name, limited-information flag, research-document reference, researched-as-of date.
    - **List:** list ID, names, ballot letters, member party IDs, poll snapshot. The threshold applies at list level.
@@ -187,7 +187,7 @@ It's incompatible with the timeline and the audience, and unworkable for the mat
 
 ## Testing strategy (high-level)
 1. **Content validation (build-blocking):**
-   - Issues: every issue has all fields in both languages and 3–4 options.
+   - Issues: every issue has all fields in both languages and 3–6 options.
    - Research documents: every registry party has documents in both languages with all 9 sections and all issue sub-sections; anchors are identical across languages; sources are present; the researched-as-of date is present.
    - Registry: joint-list references are symmetric; every list has a poll snapshot or "not polled".
    - Poll figures: no poll figures in research text (heuristic check).

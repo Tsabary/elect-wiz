@@ -18,61 +18,61 @@ Led by Avraham Fiction (fictional person) [1].
 
 ### Cost of living {#issue-cost-of-living}
 
-**Evidence: Action.** This fictional party's position is closest to: "Focus on direct support for those hit hardest: higher allowances and minimum wage, and subsidies for basics such as childcare, public transport and food for low-income families. The fastest relief comes from helping households directly." [1].
+**Evidence: Action.** This fictional party's position is closest to: "Focus on direct help for those hit hardest: raise welfare allowances and the minimum wage, and subsidize basics such as daycare, public transport and food for low-income families. The fastest relief comes from helping households directly." [1].
 
 Placeholder text for UI development only. It describes no real party.
 
 ### Crime in Arab society {#issue-crime-in-arab-society}
 
-**Evidence: Formal commitment.** This fictional party's position is closest to: "Combine a major boost to policing, with more officers, investigators and illegal-weapons collection, with civil plans in education, jobs and local authorities. Crime must be fought through enforcement, but lasting change also needs economic opportunity." [2].
+**Evidence: Formal commitment.** This fictional party's position is closest to: "Give the police far more resources, but no special powers: many more officers and investigators and a major campaign to collect illegal weapons, all under normal law. The police can solve this if they're properly staffed and equipped, with no need for the Shin Bet or detention without trial." [2].
 
 Placeholder text for UI development only. It describes no real party.
 
 ### Gaza Strip policy {#issue-gaza}
 
-**Evidence: Statement.** This fictional party's position is closest to: "Keep the IDF in the areas it holds and maintain military and economic pressure, with no further withdrawal or reconstruction until Hamas is fully disarmed. Israel must keep security control in its own hands and not rely on foreign forces." [3].
+**Evidence: Statement.** This fictional party's position is closest to: "Go back to war and take control of all of Gaza until Hamas can no longer fight or govern, encourage Gaza residents to leave voluntarily, and allow Israeli communities to be rebuilt in Gaza. Only completely defeating Hamas will prevent another October 7." [3].
 
 Placeholder text for UI development only. It describes no real party.
 
 ### Haredi military enlistment {#issue-haredi-enlistment}
 
-**Evidence: Action.** This fictional party's position is closest to: "Require every 18-year-old, including Haredim, to serve in the IDF or in civilian national service, with exemptions only for a few outstanding scholars, enforced by personal sanctions such as loss of state benefits. The IDF needs the manpower, and the burden should be shared equally." [1].
+**Evidence: Action.** This fictional party's position is closest to: "Require every 18-year-old, including Haredim, to serve in the army or in civilian national service, with exemptions only for a small number of outstanding Torah scholars. Those who refuse lose state benefits. The army needs the soldiers, and the burden should be shared equally." [1].
 
 Placeholder text for UI development only. It describes no real party.
 
 ### Housing {#issue-housing}
 
-**Evidence: Formal commitment.** This fictional party's position is closest to: "Spread demand across the country by investing in transport, jobs and services outside the center, along with urban renewal in existing cities. Prices are high because demand is crowded into the center; making other areas attractive eases the pressure." [2].
+**Evidence: Formal commitment.** This fictional party's position is closest to: "Make other parts of the country more attractive: invest in transport, jobs and services outside the Tel Aviv area, and renew old neighborhoods in existing cities. Prices are high because demand is crowded into the center; making other areas attractive eases the pressure." [2].
 
 Placeholder text for UI development only. It describes no real party.
 
-### Iran, Hezbollah and regional security {#issue-iran-and-regional-security}
+### Iran, Hezbollah and the region {#issue-iran-and-regional-security}
 
-**Evidence: Statement.** This fictional party's position is closest to: "Keep up military action against Iran, Hezbollah and their allies until their capabilities are removed, including holding positions in southern Lebanon as needed. Past agreements failed to prevent threats from growing, and only force guarantees security." [3].
+**Evidence: Statement.** This fictional party's position is closest to: "Keep attacking Iran, Hezbollah and their allies until they can no longer threaten Israel, and stay in southern Lebanon as long as needed, with no deals in the meantime. Past agreements didn't stop these threats from growing, and only force guarantees security." [3].
 
 Placeholder text for UI development only. It describes no real party.
 
-### Judea and Samaria and the Palestinian issue {#issue-judea-samaria}
+### Judea and Samaria {#issue-judea-samaria}
 
-**Evidence: Action.** This fictional party's position is closest to: "Apply Israeli sovereignty to the settlements and Area C, or to key areas such as the Jordan Valley, while Palestinians manage their own civil affairs in the other areas. This secures vital areas without absorbing a large Palestinian population." [1].
+**Evidence: Action.** This fictional party's position is closest to: "Two states through a negotiated agreement, where most settlers stay: the large settlement blocs near the pre-1967 border become part of Israel, Israel gives the Palestinians other land in exchange, and only the smaller, remote settlements are evacuated. This will end the conflict and keep Israel democratic with a Jewish majority." [1].
 
 Placeholder text for UI development only. It describes no real party.
 
 ### Judicial system {#issue-judicial-system}
 
-**Evidence: Formal commitment.** This fictional party's position is closest to: "Reach a broad, agreed framework, such as a constitution or a Basic Law: Legislation, that defines each branch's powers and may include a limited override clause. Lasting rules of the game should be set by wide consensus rather than by one side." [2].
+**Evidence: Formal commitment.** This fictional party's position is closest to: "Reverse the recent changes, including the new law on choosing judges, and protect the independence of the courts and the attorney general in a basic law (a law with constitutional status). Independent courts are a key check on government power and protect citizens' rights." [2].
 
 Placeholder text for UI development only. It describes no real party.
 
 ### October 7 inquiry {#issue-october-7-inquiry}
 
-**Evidence: Statement.** This fictional party's position is closest to: "Establish a commission with full powers whose members are chosen in a way neither camp controls, such as retired judges elected by secret ballot in the Knesset, and examine the government, the security services and the legal system alike. Only such a body can win trust across the divide." [3].
+**Evidence: Statement.** This fictional party's position is closest to: "A neutral method that no political side controls picks the members, for example retired judges elected by the Knesset in a secret vote. The investigation would cover the government, the army and security services, and the legal system alike. Only such a body can be trusted by both sides." [3].
 
 Placeholder text for UI development only. It describes no real party.
 
 ### Religion and state {#issue-religion-and-state}
 
-**Evidence: Action.** This fictional party's position is closest to: "Strengthen the Jewish character of public life: strengthen Shabbat observance in the public sphere, keep marriage, conversion and kashrut under the Chief Rabbinate, and deepen Jewish identity in schools. Shared tradition is what holds the Jewish people in Israel together." [1].
+**Evidence: Action.** This fictional party's position is closest to: "Give Jewish religious law a bigger role in how the state runs: enforce Shabbat closures in public by law, keep marriage, divorce and conversion only through the Orthodox Rabbinate, and add more religious studies in state schools. A Jewish state should be guided by Jewish religious law, not only by tradition and culture." [1].
 
 Placeholder text for UI development only. It describes no real party.
 

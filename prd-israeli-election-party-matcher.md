@@ -32,7 +32,7 @@ The voter ranks the most pressing issues in Israeli society by personal importan
 ### Step 2: Answering each issue
 - The user answers their issues one at a time, in their ranked order. "Doesn't matter" issues are skipped.
 - A progress indicator is shown (e.g., "4 of 8"), with a back button to revise earlier answers within the survey.
-- Each issue shows a short neutral framing of the question and the **3–4 most common real-world positions** on it. Where the issue naturally lies on a spectrum (e.g., hawkish to dovish), the options reflect that. Where it doesn't, they are distinct approaches.
+- Each issue shows a short neutral framing of the question and the **most common real-world positions** on it: usually 3–4, and up to 6 where the real-world positions require it (owner decision 2026-10-06). Where the issue naturally lies on a spectrum (e.g., hawkish to dovish), the options reflect that. Where it doesn't, they are distinct approaches.
 - Option order is shuffled for each user.
 - **Each preset option is already an editable text field**, with no separate "edit" action needed. The user can pick an option as written, adjust its wording directly (e.g., "option B but with this change"), or write their own answer in a free-text field.
 - What gets submitted for each issue is simply the user's final text answer. Since edited options are just text, there is no letter-based referencing, and the shuffling causes no ambiguity.
@@ -63,7 +63,7 @@ The voter ranks the most pressing issues in Israeli society by personal importan
 
 ### Issues and answer options
 1. The 10 issues are compiled through research into what is currently most pressing in Israeli society. They are not restricted by topic.
-2. Each issue has a one-line neutral description, a short neutral "more info" explanation, a neutral question framing, and 3–4 options representing the most common real-world positions.
+2. Each issue has a one-line neutral description, a short neutral "more info" explanation, a neutral question framing, and 3–6 options representing the most common real-world positions.
 3. **Israeli-neutral terminology:** wording uses the terms mainstream Israelis treat as normal and neutral (e.g., "Judea and Samaria", "settlements"), in both Hebrew and English, since the English version also serves Israeli voters.
 4. Options describe a policy approach and its stated rationale, not a value judgment. Each option is written so that its own supporters would recognise it as fair.
 5. Hebrew and English versions are written as equivalents, each phrased to read as neutral to its audience while keeping the same meaning, not as literal translations.

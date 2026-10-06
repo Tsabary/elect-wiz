@@ -36,11 +36,11 @@ No published position, voting record or platform statement on this issue was fou
 
 No published position, voting record or platform statement on this issue was found for this fictional party [1].
 
-### Iran, Hezbollah and regional security {#issue-iran-and-regional-security}
+### Iran, Hezbollah and the region {#issue-iran-and-regional-security}
 
 No published position, voting record or platform statement on this issue was found for this fictional party [1].
 
-### Judea and Samaria and the Palestinian issue {#issue-judea-samaria}
+### Judea and Samaria {#issue-judea-samaria}
 
 No published position, voting record or platform statement on this issue was found for this fictional party [1].
 

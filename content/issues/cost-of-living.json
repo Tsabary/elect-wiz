@@ -2,36 +2,36 @@
   "id": "cost-of-living",
   "en": {
     "title": "Cost of living",
-    "description": "How the state should act to lower the prices of food, goods and everyday services.",
-    "moreInfo": "Prices in Israel are high compared with other developed countries, and surveys show the economy and cost of living are among the top voting considerations for both Jewish and Arab citizens. The debate is mainly about how much to rely on competition and imports, on tax cuts, on direct state regulation, or on targeted support for households.",
+    "description": "What the state should do to lower the prices of food, products and everyday services.",
+    "moreInfo": "Prices in Israel are high compared with other developed countries, and surveys show the cost of living is one of the top issues for voters, Jewish and Arab alike. The debate is mainly about what works best: more competition and imports, lower taxes, the state supervising prices, or direct help for families.",
     "question": "What is the best way to lower the cost of living?"
   },
   "he": {
     "title": "יוקר המחיה",
-    "description": "כיצד המדינה צריכה לפעול להורדת מחירי המזון, המוצרים והשירותים היומיומיים.",
-    "moreInfo": "המחירים בישראל גבוהים בהשוואה למדינות מפותחות אחרות, וסקרים מראים שהכלכלה ויוקר המחיה נמנים עם שיקולי ההצבעה המרכזיים, הן בקרב אזרחים יהודים והן בקרב אזרחים ערבים. הוויכוח נסוב בעיקר על השאלה עד כמה להישען על תחרות ויבוא, על הפחתת מסים, על פיקוח ממשלתי ישיר או על סיוע ממוקד למשקי הבית.",
-    "question": "מהי הדרך הטובה ביותר להוריד את יוקר המחיה?"
+    "description": "מה המדינה צריכה לעשות כדי להוריד את המחירים של מזון, מוצרים ושירותים יומיומיים.",
+    "moreInfo": "המחירים בישראל גבוהים בהשוואה למדינות מפותחות אחרות, וסקרים מראים שיוקר המחיה הוא אחד הנושאים החשובים ביותר לבוחרים, יהודים וערבים כאחד. הוויכוח הוא בעיקר על מה עובד הכי טוב: יותר תחרות ויבוא, הורדת מסים, פיקוח של המדינה על המחירים, או עזרה ישירה למשפחות.",
+    "question": "מה הדרך הטובה ביותר להוריד את יוקר המחיה?"
   },
   "options": [
     {
       "id": "open-market-competition-imports",
-      "en": "Open the market: remove import barriers, adopt European standards, cut regulation and break up concentration so more competitors can enter. Competition, rather than government intervention, is what brings prices down over time.",
-      "he": "לפתוח את השוק: להסיר חסמי יבוא, לאמץ תקינה אירופית, לצמצם רגולציה ולפרק ריכוזיות כדי שיותר מתחרים ייכנסו. תחרות, ולא מעורבות ממשלתית, היא שמורידה מחירים לאורך זמן."
+      "en": "Open the market to more competition: make it easier to import goods, accept products approved in Europe without extra Israeli requirements, cut red tape, and break up the few large companies that dominate many markets. Competition, not government control, is what brings prices down over time.",
+      "he": "לפתוח את השוק ליותר תחרות: להקל על יבוא של סחורות, לקבל מוצרים שאושרו באירופה בלי דרישות ישראליות נוספות, לצמצם את הבירוקרטיה ולפרק את החברות הגדולות המעטות ששולטות בשווקים רבים. תחרות, ולא שליטה ממשלתית, היא מה שמוריד מחירים לאורך זמן."
     },
     {
       "id": "cut-taxes-and-government-spending",
-      "en": "Lower taxes such as VAT and income tax and reduce government spending and bureaucracy, leaving more money in households' pockets. People spend their own money better than the state does.",
-      "he": "להוריד מסים כמו מע״מ ומס הכנסה ולצמצם את ההוצאה הממשלתית והבירוקרטיה, כך שיישאר יותר כסף בכיס של משקי הבית. אנשים מוציאים את הכסף שלהם טוב יותר מהמדינה."
+      "en": "Cut taxes, such as VAT (the tax added to almost everything you buy) and income tax, and cut government spending and bureaucracy, leaving more money in people's pockets. People spend their own money better than the state does.",
+      "he": "להוריד מסים, כמו מע״מ (המס שמתווסף כמעט לכל דבר שקונים) ומס הכנסה, ולצמצם את ההוצאות של הממשלה ואת הבירוקרטיה, כך שיישאר יותר כסף בכיס של האזרחים. אנשים יודעים להוציא את הכסף שלהם טוב יותר מהמדינה."
     },
     {
       "id": "active-state-regulation",
-      "en": "Strengthen state intervention: price supervision on basic goods and essential services, stronger enforcement against excessive pricing by dominant companies, and higher taxes on excess profits. Without active regulation, large players keep prices high.",
-      "he": "להגביר את מעורבות המדינה: פיקוח על מחירי מוצרי יסוד ושירותים חיוניים, אכיפה נחרצת יותר נגד תמחור מופרז של חברות דומיננטיות, ומיסוי גבוה יותר על רווחי יתר. בלי פיקוח פעיל, השחקנים הגדולים ימשיכו להחזיק מחירים גבוהים."
+      "en": "Have the state step in more: supervise the prices of basic food and essential services, act more strongly against big companies that overcharge, and tax unusually high profits. Without active regulation, big companies keep prices high.",
+      "he": "שהמדינה תתערב יותר: תפקח על המחירים של מזון בסיסי ושל שירותים חיוניים, תפעל בתקיפות רבה יותר נגד חברות גדולות שגובות מחירים מופרזים, ותטיל מס על רווחים גבוהים במיוחד. בלי פיקוח פעיל, החברות הגדולות ממשיכות להחזיק את המחירים גבוהים."
     },
     {
       "id": "direct-support-for-households",
-      "en": "Focus on direct support for those hit hardest: higher allowances and minimum wage, and subsidies for basics such as childcare, public transport and food for low-income families. The fastest relief comes from helping households directly.",
-      "he": "להתמקד בסיוע ישיר למי שנפגעים יותר מכול: העלאת קצבאות ושכר המינימום, וסבסוד צרכים בסיסיים כמו מעונות יום, תחבורה ציבורית ומזון למשפחות מעוטות הכנסה. ההקלה המהירה ביותר מגיעה מסיוע ישיר למשקי הבית."
+      "en": "Focus on direct help for those hit hardest: raise welfare allowances and the minimum wage, and subsidize basics such as daycare, public transport and food for low-income families. The fastest relief comes from helping households directly.",
+      "he": "להתמקד בעזרה ישירה למי שנפגעים הכי הרבה: להעלות את קצבאות הרווחה ואת שכר המינימום, ולסבסד צרכים בסיסיים כמו מעונות יום, תחבורה ציבורית ומזון למשפחות עם הכנסה נמוכה. ההקלה המהירה ביותר מגיעה מעזרה ישירה למשקי הבית."
     }
   ]
 }

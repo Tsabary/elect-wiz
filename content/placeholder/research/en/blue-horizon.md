@@ -18,61 +18,61 @@ Led by Dana Example (fictional person) [1].
 
 ### Cost of living {#issue-cost-of-living}
 
-**Evidence: Action.** This fictional party's position is closest to: "Open the market: remove import barriers, adopt European standards, cut regulation and break up concentration so more competitors can enter. Competition, rather than government intervention, is what brings prices down over time." [1].
+**Evidence: Action.** This fictional party's position is closest to: "Open the market to more competition: make it easier to import goods, accept products approved in Europe without extra Israeli requirements, cut red tape, and break up the few large companies that dominate many markets. Competition, not government control, is what brings prices down over time." [1].
 
 Placeholder text for UI development only. It describes no real party.
 
 ### Crime in Arab society {#issue-crime-in-arab-society}
 
-**Evidence: Formal commitment.** This fictional party's position is closest to: "Combine a major boost to policing, with more officers, investigators and illegal-weapons collection, with civil plans in education, jobs and local authorities. Crime must be fought through enforcement, but lasting change also needs economic opportunity." [2].
+**Evidence: Formal commitment.** This fictional party's position is closest to: "Give the police far more resources, but no special powers: many more officers and investigators and a major campaign to collect illegal weapons, all under normal law. The police can solve this if they're properly staffed and equipped, with no need for the Shin Bet or detention without trial." [2].
 
 Placeholder text for UI development only. It describes no real party.
 
 ### Gaza Strip policy {#issue-gaza}
 
-**Evidence: Statement.** This fictional party's position is closest to: "Advance the US-led plan: an international force and an alternative Palestinian administration without Hamas, with Arab backing, alongside gradual disarmament and IDF withdrawal. A diplomatic arrangement will secure the military gains and open the way to regional normalization." [3].
+**Evidence: Statement.** This fictional party's position is closest to: "Move forward with the US plan: an international force and a new Palestinian administration without Hamas, backed by Arab countries, while Hamas is gradually disarmed and the army gradually withdraws. A diplomatic deal will lock in the military gains and open the way to peace deals with more Arab countries." [3].
 
 Placeholder text for UI development only. It describes no real party.
 
 ### Haredi military enlistment {#issue-haredi-enlistment}
 
-**Evidence: Action.** This fictional party's position is closest to: "Do not impose compulsory service on communities that oppose it, whether Haredim or Arab citizens; any civilian service should be voluntary. Forced enlistment would deepen divisions, and equal rights should not be conditional on service or enforced through sanctions." [1].
+**Evidence: Action.** This fictional party's position is closest to: "No one should be forced into military or national service. Service should be voluntary, backed by strong incentives, and rights and benefits shouldn't depend on it." [1].
 
 Placeholder text for UI development only. It describes no real party.
 
 ### Housing {#issue-housing}
 
-**Evidence: Formal commitment.** This fictional party's position is closest to: "Speed up planning and permits, release more state land and cut bureaucracy and fees so that far more homes are built. Prices are high because supply is too slow, and more homes on the market will bring prices down." [2].
+**Evidence: Formal commitment.** This fictional party's position is closest to: "Build much more, faster: speed up building permits, release more state-owned land for construction, and cut bureaucracy and fees. Prices are high because too few homes are built, and more homes on the market will bring prices down." [2].
 
 Placeholder text for UI development only. It describes no real party.
 
-### Iran, Hezbollah and regional security {#issue-iran-and-regional-security}
+### Iran, Hezbollah and the region {#issue-iran-and-regional-security}
 
-**Evidence: Statement.** This fictional party's position is closest to: "Combine military pressure with US-backed agreements, such as Hezbollah disarmament arrangements and regional normalization, pulling back where reliable security guarantees exist. Military gains need to be turned into lasting diplomatic achievements alongside allies." [3].
+**Evidence: Statement.** This fictional party's position is closest to: "Keep up military pressure while negotiating, and use it to reach US-backed deals, such as disarming Hezbollah and peace deals with Arab countries. Pull back only once a deal with real security guarantees is in place. Military gains need to be turned into lasting agreements alongside allies." [3].
 
 Placeholder text for UI development only. It describes no real party.
 
-### Judea and Samaria and the Palestinian issue {#issue-judea-samaria}
+### Judea and Samaria {#issue-judea-samaria}
 
-**Evidence: Action.** This fictional party's position is closest to: "Keep the current situation: keep strengthening the settlements and full IDF freedom of action, with neither sovereignty nor a Palestinian state for now. Under present conditions, any dramatic move in either direction carries heavy risks." [1].
+**Evidence: Action.** This fictional party's position is closest to: "Make all of Judea and Samaria officially part of Israel, expand the settlements, and dismantle the Palestinian Authority. This is the historic homeland of the Jewish people, and a Palestinian state would threaten Israel's existence." [1].
 
 Placeholder text for UI development only. It describes no real party.
 
 ### Judicial system {#issue-judicial-system}
 
-**Evidence: Formal commitment.** This fictional party's position is closest to: "Reach a broad, agreed framework, such as a constitution or a Basic Law: Legislation, that defines each branch's powers and may include a limited override clause. Lasting rules of the game should be set by wide consensus rather than by one side." [2].
+**Evidence: Formal commitment.** This fictional party's position is closest to: "Keep the system as it is today, including the changes the current government has already passed, such as the new law on choosing judges. No further changes and no reversal, with only small adjustments if needed. The country needs stability and should focus on other priorities." [2].
 
 Placeholder text for UI development only. It describes no real party.
 
 ### October 7 inquiry {#issue-october-7-inquiry}
 
-**Evidence: Statement.** This fictional party's position is closest to: "Establish a commission with full powers whose members are chosen in a way neither camp controls, such as retired judges elected by secret ballot in the Knesset, and examine the government, the security services and the legal system alike. Only such a body can win trust across the divide." [3].
+**Evidence: Statement.** This fictional party's position is closest to: "A neutral method that no political side controls picks the members, for example retired judges elected by the Knesset in a secret vote. The investigation would cover the government, the army and security services, and the legal system alike. Only such a body can be trusted by both sides." [3].
 
 Placeholder text for UI development only. It describes no real party.
 
 ### Religion and state {#issue-religion-and-state}
 
-**Evidence: Action.** This fictional party's position is closest to: "Keep the existing status quo largely as it is, with only limited local adjustments. The status quo is a compromise that has let religious and secular Israelis live together, and big changes in either direction would deepen the divide." [1].
+**Evidence: Action.** This fictional party's position is closest to: "Keep the current arrangements mostly as they are: the Rabbinate stays in charge of marriage and conversion, and most public transport stays closed on Shabbat, with only small local changes. These arrangements are a compromise that lets religious and secular Israelis live together, and big changes either way would deepen the divide." [1].
 
 Placeholder text for UI development only. It describes no real party.
 

@@ -3,35 +3,35 @@
   "en": {
     "title": "Housing",
     "description": "How to make buying or renting a home more affordable.",
-    "moreInfo": "Home prices and rents in Israel are high relative to incomes; in 2026 rents kept rising while home prices dipped slightly. In an August 2026 survey of 18-to-35-year-olds, housing prices were the leading voting consideration. Much of the land for new construction is state land marketed by the Israel Land Authority, so government policy has a large effect on supply. Proposals range from faster planning and construction to state-built rental housing and direct help for buyers.",
-    "question": "What should the state's main approach be to lowering housing costs?"
+    "moreInfo": "Home prices and rents in Israel are high compared with incomes. In 2026 rents kept rising while home prices dipped slightly. In an August 2026 survey of 18-to-35-year-olds, housing prices were the top voting issue. Most land for new building belongs to the state, so government decisions strongly affect how many homes get built.",
+    "question": "What should the state mainly do to make housing cheaper?"
   },
   "he": {
     "title": "דיור",
-    "description": "כיצד להפוך את רכישת דירה או שכירתה לנגישות יותר.",
-    "moreInfo": "מחירי הדירות ושכר הדירה בישראל גבוהים ביחס להכנסות; ב-2026 שכר הדירה המשיך לעלות, בעוד מחירי הדירות ירדו מעט. בסקר שנערך באוגוסט 2026 בקרב צעירים בני 18–35, מחירי הדיור היו שיקול ההצבעה המוביל. חלק גדול מהקרקע לבנייה חדשה הוא קרקע מדינה המשווקת על ידי רשות מקרקעי ישראל, ולכן למדיניות הממשלה השפעה גדולה על ההיצע. ההצעות נעות בין האצת התכנון והבנייה, דרך דיור להשכרה שהמדינה בונה, ועד סיוע ישיר לרוכשים.",
-    "question": "מה צריכה להיות הגישה המרכזית של המדינה להורדת עלויות הדיור?"
+    "description": "איך להוזיל את הקנייה או השכירות של דירה.",
+    "moreInfo": "מחירי הדירות ושכר הדירה בישראל גבוהים ביחס להכנסות. בשנת 2026 שכר הדירה המשיך לעלות, ומחירי הדירות ירדו מעט. בסקר שנערך באוגוסט 2026 בקרב בני 18 עד 35, מחירי הדיור היו הנושא החשוב ביותר בהחלטה למי להצביע. רוב הקרקעות לבנייה חדשה שייכות למדינה, ולכן להחלטות הממשלה יש השפעה גדולה על מספר הדירות שנבנות.",
+    "question": "מה המדינה צריכה לעשות בעיקר כדי להוזיל את הדיור?"
   },
   "options": [
     {
       "id": "speed-up-planning-and-construction",
-      "en": "Speed up planning and permits, release more state land and cut bureaucracy and fees so that far more homes are built. Prices are high because supply is too slow, and more homes on the market will bring prices down.",
-      "he": "להאיץ תכנון והיתרים, לשחרר יותר קרקעות מדינה ולצמצם בירוקרטיה ואגרות, כך שייבנו הרבה יותר דירות. המחירים גבוהים כי ההיצע איטי מדי, ויותר דירות בשוק יורידו את המחירים."
+      "en": "Build much more, faster: speed up building permits, release more state-owned land for construction, and cut bureaucracy and fees. Prices are high because too few homes are built, and more homes on the market will bring prices down.",
+      "he": "לבנות הרבה יותר ומהר יותר: לזרז היתרי בנייה, לשחרר עוד קרקעות של המדינה לבנייה ולצמצם בירוקרטיה ואגרות. המחירים גבוהים כי נבנות מעט מדי דירות, ויותר דירות בשוק יורידו את המחירים."
     },
     {
       "id": "state-led-affordable-rental",
-      "en": "Make the state a central player again: build long-term affordable rental housing, require a share of affordable units in every project and regulate fair rental terms. The market alone has not delivered homes that young people can afford.",
-      "he": "להחזיר את המדינה להיות שחקן מרכזי: לבנות דיור להשכרה ארוכת טווח במחיר נגיש, לחייב שיעור של דירות בהישג יד בכל פרויקט ולהסדיר תנאי שכירות הוגנים. השוק לבדו לא סיפק דירות שצעירים יכולים לעמוד בהן."
+      "en": "Have the state build long-term rental apartments at affordable prices, require every new project to include some affordable units, and regulate the rental market, including limits on how much rent can go up. The market alone has not delivered homes young people can afford.",
+      "he": "שהמדינה תבנה דירות להשכרה לטווח ארוך במחירים בני השגה, תחייב כל פרויקט חדש לכלול חלק מהדירות בדיור בר השגה, ותסדיר את שוק השכירות, כולל הגבלה על העלאות שכר הדירה. השוק לבדו לא סיפק דירות שצעירים יכולים לעמוד במחירן."
     },
     {
       "id": "direct-help-for-buyers",
-      "en": "Help buyers directly through discounted-price housing programs, larger and longer mortgages, and grants for young couples and those who served. Owning a home is the key to economic security, and the state should help people get there.",
-      "he": "לסייע ישירות לרוכשים באמצעות תוכניות דירות במחיר מופחת, משכנתאות גדולות וארוכות יותר ומענקים לזוגות צעירים ולמי ששירתו. בעלות על דירה היא המפתח לביטחון כלכלי, והמדינה צריכה לעזור לאנשים להגיע אליה."
+      "en": "Help people buy directly: discounted-price apartment programs, bigger and longer mortgages, and grants for young couples and those who served. Owning a home is the key to financial security, and the state should help people get there.",
+      "he": "לעזור ישירות לקנות דירה: תוכניות לדירות במחיר מופחת, משכנתאות גדולות וארוכות יותר, ומענקים לזוגות צעירים ולמי ששירתו. בעלות על דירה היא המפתח לביטחון כלכלי, והמדינה צריכה לעזור לאנשים להגיע אליה."
     },
     {
       "id": "develop-periphery-and-transport",
-      "en": "Spread demand across the country by investing in transport, jobs and services outside the center, along with urban renewal in existing cities. Prices are high because demand is crowded into the center; making other areas attractive eases the pressure.",
-      "he": "לפזר את הביקוש ברחבי הארץ באמצעות השקעה בתחבורה, בתעסוקה ובשירותים מחוץ למרכז, לצד התחדשות עירונית בערים הקיימות. המחירים גבוהים כי הביקוש מרוכז במרכז, והפיכת אזורים אחרים לאטרקטיביים תקל על הלחץ."
+      "en": "Make other parts of the country more attractive: invest in transport, jobs and services outside the Tel Aviv area, and renew old neighborhoods in existing cities. Prices are high because demand is crowded into the center; making other areas attractive eases the pressure.",
+      "he": "להפוך אזורים אחרים בארץ לאטרקטיביים יותר: להשקיע בתחבורה, בתעסוקה ובשירותים מחוץ לאזור תל אביב, ולחדש שכונות ותיקות בערים קיימות. המחירים גבוהים כי הביקוש מתרכז באזור המרכז, ואם אזורים אחרים יהיו אטרקטיביים, הלחץ יפחת."
     }
   ]
 }

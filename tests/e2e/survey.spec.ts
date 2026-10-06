@@ -284,10 +284,46 @@ test.describe("answers", () => {
     await expect(page.getByTestId("answer-progress")).toContainText("1");
     await expect(page.getByTestId("answer-progress")).toContainText("6");
     await expect(page.getByTestId("step-next")).toBeDisabled();
-    await expect(page.getByTestId("answer-option")).toHaveCount(
-      issues()[0].options.length > 0 ? await page.getByTestId("answer-option").count() : 0,
-    );
+    const issueId = await page.getByTestId("answer-step").getAttribute("data-issue-id");
+    const issue = issues().find((i) => i.id === issueId);
+    await expect(page.getByTestId("answer-option")).toHaveCount(issue.options.length);
     await page.getByTestId("answer-option").first().locator("input").check();
     await expect(page.getByTestId("step-next")).toBeEnabled();
   });
+
+  // Issues have 3–6 options; the largest must stay usable on a phone.
+  for (const locale of ["he", "en"] as const) {
+    test(`shows every option of the largest issue without overflow (${locale})`, async ({
+      page,
+    }) => {
+      const largest = issues().reduce((a, b) => (b.options.length > a.options.length ? b : a));
+      expect(largest.options.length).toBeGreaterThanOrEqual(5);
+      await openSurvey(page, locale);
+      await page
+        .locator(`[data-testid="pool-item"][data-issue-id="${largest.id}"]`)
+        .getByTestId("add-to-ranking")
+        .click();
+      await rankWithButtons(page, 0);
+      await page.getByTestId("ranking-continue").click();
+      await expect(page.getByTestId("answer-step")).toHaveAttribute("data-issue-id", largest.id);
+      const options = page.getByTestId("answer-option");
+      await expect(options).toHaveCount(largest.options.length);
+      const shown = await options.evaluateAll((els) =>
+        els.map((el) => el.getAttribute("data-option-id")).sort(),
+      );
+      expect(shown).toEqual(largest.options.map((o: { id: string }) => o.id).sort());
+      // No horizontal page scroll.
+      const overflow = await page.evaluate(
+        () => document.documentElement.scrollWidth - document.documentElement.clientWidth,
+      );
+      expect(overflow).toBeLessThanOrEqual(0);
+      // The last option and the write-your-own field can be reached and selected.
+      const last = options.last();
+      await last.scrollIntoViewIfNeeded();
+      await last.locator("input").check();
+      await expect(last).toHaveAttribute("data-selected", "true");
+      await expect(page.getByTestId("own-text")).toBeVisible();
+      await expect(page.getByTestId("step-next")).toBeEnabled();
+    });
+  }
 });

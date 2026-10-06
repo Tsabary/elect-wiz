@@ -2,36 +2,41 @@
   "id": "gaza",
   "en": {
     "title": "Gaza Strip policy",
-    "description": "What Israel should do in the Gaza Strip after the ceasefire and the return of the hostages.",
-    "moreInfo": "A ceasefire under a US-led plan has been in place since October 2025, and the remains of the last hostage were returned in January 2026. The next stages of the plan, including disarming Hamas, deploying an international stabilization force and further IDF withdrawal, have not been implemented, and the IDF still holds roughly half of the Strip. Positions range from resuming the fighting, through keeping up military pressure or moving ahead with an international arrangement, to ending the war and fully withdrawing.",
-    "question": "What should Israel's policy be in the Gaza Strip?"
+    "description": "What Israel should do in the Gaza Strip now that there is a ceasefire and the hostages have returned.",
+    "moreInfo": "A ceasefire based on a US plan has been in place since October 2025, and the remains of the last hostage were returned in January 2026. The plan's next steps haven't happened: disarming Hamas, bringing in an international security force, and further Israeli withdrawal. The army still controls more than half of Gaza.",
+    "question": "What should Israel do in Gaza?"
   },
   "he": {
     "title": "המדיניות ברצועת עזה",
-    "description": "מה ישראל צריכה לעשות ברצועת עזה לאחר הפסקת האש והשבת החטופים.",
-    "moreInfo": "מאז אוקטובר 2025 חלה הפסקת אש במסגרת תוכנית בהובלת ארה״ב, ובינואר 2026 הושבה גופתו של החטוף האחרון. השלבים הבאים של התוכנית, ובהם פירוק חמאס מנשקו, פריסת כוח ייצוב בינלאומי ונסיגה נוספת של צה״ל, לא יושמו, וצה״ל עדיין מחזיק בכמחצית מהרצועה. העמדות נעות מחידוש הלחימה, דרך המשך הלחץ הצבאי או התקדמות להסדר בינלאומי, ועד סיום המלחמה ונסיגה מלאה.",
-    "question": "מה צריכה להיות המדיניות של ישראל ברצועת עזה?"
+    "description": "מה ישראל צריכה לעשות ברצועת עזה עכשיו, כשיש הפסקת אש והחטופים חזרו.",
+    "moreInfo": "מאז אוקטובר 2025 נמצאת בתוקף הפסקת אש שמבוססת על תוכנית אמריקאית, ובינואר 2026 הוחזרה גופתו של החטוף האחרון. השלבים הבאים בתוכנית עוד לא קרו: פירוק חמאס מנשקו, הצבת כוח ביטחון בינלאומי ונסיגה ישראלית נוספת. צה״ל עדיין שולט ביותר ממחצית הרצועה.",
+    "question": "מה ישראל צריכה לעשות ברצועת עזה?"
   },
   "options": [
     {
       "id": "resume-fighting-full-control",
-      "en": "Resume the fighting and take full IDF control of the Strip until Hamas's military and governing capabilities are destroyed, while encouraging the voluntary emigration of Gaza residents. Only the complete defeat of Hamas will prevent another October 7.",
-      "he": "לחדש את הלחימה ולהשתלט באופן מלא על הרצועה עד להשמדת היכולות הצבאיות והשלטוניות של חמאס, תוך עידוד הגירה מרצון של תושבי הרצועה. רק הכרעה מלאה של חמאס תמנע 7 באוקטובר נוסף."
+      "en": "Go back to war and take control of all of Gaza until Hamas can no longer fight or govern, encourage Gaza residents to leave voluntarily, and allow Israeli communities to be rebuilt in Gaza. Only completely defeating Hamas will prevent another October 7.",
+      "he": "לחזור למלחמה ולהשתלט על כל הרצועה עד שחמאס לא יוכל עוד להילחם או לשלוט, לעודד הגירה מרצון של תושבי הרצועה, ולאפשר להקים מחדש יישובים ישראליים ברצועה. רק הכרעה מלאה של חמאס תמנע 7 באוקטובר נוסף."
     },
     {
       "id": "hold-positions-disarmament-first",
-      "en": "Keep the IDF in the areas it holds and maintain military and economic pressure, with no further withdrawal or reconstruction until Hamas is fully disarmed. Israel must keep security control in its own hands and not rely on foreign forces.",
-      "he": "להשאיר את צה״ל בשטחים שבהם הוא מחזיק ולהמשיך בלחץ צבאי וכלכלי, בלי נסיגה נוספת ובלי שיקום עד שחמאס יפורק מנשקו לחלוטין. ישראל חייבת להשאיר את השליטה הביטחונית בידיה ולא להסתמך על כוחות זרים."
+      "en": "Stay where the army is now and keep military and economic pressure on Hamas, with no more withdrawals or rebuilding until Hamas gives up all its weapons. Israel must keep security in its own hands and not rely on foreign forces.",
+      "he": "להישאר במקומות שבהם צה״ל נמצא עכשיו ולהמשיך בלחץ צבאי וכלכלי על חמאס, בלי נסיגות נוספות ובלי שיקום עד שחמאס יוותר על כל הנשק שלו. ישראל חייבת להשאיר את הביטחון בידיים שלה ולא להסתמך על כוחות זרים."
     },
     {
       "id": "advance-international-arrangement",
-      "en": "Advance the US-led plan: an international force and an alternative Palestinian administration without Hamas, with Arab backing, alongside gradual disarmament and IDF withdrawal. A diplomatic arrangement will secure the military gains and open the way to regional normalization.",
-      "he": "להתקדם בתוכנית בהובלת ארה״ב: כוח בינלאומי ומנהל פלסטיני חלופי ללא חמאס בגיבוי מדינות ערב, לצד פירוק הדרגתי מנשק ונסיגת צה״ל. הסדר מדיני יעגן את ההישגים הצבאיים ויפתח את הדרך לנורמליזציה אזורית."
+      "en": "Move forward with the US plan: an international force and a new Palestinian administration without Hamas, backed by Arab countries, while Hamas is gradually disarmed and the army gradually withdraws. A diplomatic deal will lock in the military gains and open the way to peace deals with more Arab countries.",
+      "he": "להתקדם עם התוכנית האמריקאית: כוח בינלאומי ומנהלה פלסטינית חדשה בלי חמאס, בגיבוי מדינות ערב, ובמקביל פירוק הדרגתי של חמאס מנשקו ונסיגה הדרגתית של צה״ל. הסכם מדיני יבטיח את ההישגים הצבאיים ויפתח את הדרך להסכמי שלום עם עוד מדינות ערביות."
     },
     {
       "id": "end-war-full-withdrawal",
-      "en": "End the war completely: withdraw the IDF from the Strip, lift restrictions on aid and reconstruction, and hand governance to a Palestinian body as part of a path to a Palestinian state. Continued military control will not bring security and costs lives on both sides.",
-      "he": "לסיים את המלחמה לגמרי: להוציא את צה״ל מהרצועה, להסיר את המגבלות על סיוע ושיקום ולהעביר את השלטון לגוף פלסטיני כחלק מדרך למדינה פלסטינית. המשך השליטה הצבאית לא יביא ביטחון ועולה בחיי אדם משני הצדדים."
+      "en": "End the war completely: withdraw the army from Gaza, allow aid and rebuilding without restrictions, and hand control to a Palestinian government as a step toward a Palestinian state. Continued military control won't bring security and costs lives on both sides.",
+      "he": "לסיים את המלחמה לגמרי: להוציא את צה״ל מהרצועה, לאפשר סיוע ושיקום בלי הגבלות, ולהעביר את השליטה לממשל פלסטיני כצעד בדרך למדינה פלסטינית. המשך השליטה הצבאית לא יביא ביטחון, והוא עולה בחיי אדם משני הצדדים."
+    },
+    {
+      "id": "defeat-hamas-then-security-control",
+      "en": "Go back to war until Hamas is destroyed, then keep Israeli security control while a local administration without Hamas runs daily life. Israel shouldn't settle Gaza or encourage residents to leave, but it can't leave security to anyone else.",
+      "he": "לחזור למלחמה עד שחמאס יושמד, ואז להשאיר את השליטה הביטחונית בידי ישראל, בזמן שמנהלה מקומית בלי חמאס מנהלת את החיים היומיומיים. ישראל לא צריכה להקים יישובים ברצועה או לעודד את התושבים לעזוב, אבל היא לא יכולה להשאיר את הביטחון בידי מישהו אחר."
     }
   ]
 }
