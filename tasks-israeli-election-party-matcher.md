@@ -433,7 +433,7 @@ Each task is self-contained. From the task alone you should know what to do, how
 - **Plan reference:** Affected systems §2, "Stage 5, Hebrew edition".
 
 ### Task 3.5: Record the Stage 6 poll snapshot
-- [ ]
+- [x]
 - **What:** Following Stage 6 instructions, record each list's current polling average (percent of vote, source, as-of date) in `content/registry/lists.json`. Lists not tracked by public polls are recorded as "not polled". Never estimate.
 - **Acceptance criteria:**
   - Every list has a snapshot or "not polled", each with a source.

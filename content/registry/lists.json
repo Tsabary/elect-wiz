@@ -35,7 +35,78 @@
       ],
       "status": "approved",
       "poll": {
-        "status": "pending"
+        "status": "polled",
+        "percent": 8.7,
+        "source": {
+          "title": "Mean of 5 polls published 2026-09-28 to 2026-10-02",
+          "url": "https://www.gov.il/he/Departments/DynamicCollectors/knesset_election_polls_26",
+          "publisher": "Central Elections Committee poll repository (constituent poll reports)",
+          "accessed": "2026-10-06"
+        },
+        "asOf": "2026-10-02",
+        "method": "Arithmetic mean of the published vote-share figures of the 5 most recent polls in the window that publish a percentage for this list (4 pollsters), rounded half-up to one decimal. Percent of respondents as published by each poll (the raw/gross vote-intention share reported to the CEC or in the publisher's article). For Maagar Mochot's main table the share among respondents who named a party (\"בעלי הדעה\") is used; its page listing smaller lists gives only a raw share. Channel 13's CEC reports give only separate, unweighted sub-sample shares that Channel 13 says do not represent the national vote, so a Channel 13 poll is used only where its article publishes a national percentage. Seat-only polls and polls reporting a list only as 'below 1%' / 'below the threshold' are not averaged (see research/poll-snapshot.md). Window: polls first published 2026-09-15 to 2026-10-05 and at least 24h before the 2026-10-06 snapshot.",
+        "constituentPolls": [
+          {
+            "pollster": "Lazar Research (led by Dr. Menachem Lazar)",
+            "commissionedBy": "Maariv",
+            "media": "Maariv",
+            "fieldworkDates": "2026-09-30–10-01",
+            "publishedOn": "2026-10-02",
+            "population": "Representative sample of Israeli citizens 18+, Jews and Arabs",
+            "sampleSize": 602,
+            "marginOfError": "±4.0%",
+            "percent": 11.3,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election90/he/Survey_4177.pdf"
+          },
+          {
+            "pollster": "Next Data",
+            "commissionedBy": "Channel 14 (Arutz Achshav 14)",
+            "media": "Channel 14",
+            "fieldworkDates": "2026-10-01",
+            "publishedOn": "2026-10-01",
+            "population": "Adults 18+ eligible to vote, representative sample of Israeli citizens",
+            "sampleSize": 2145,
+            "marginOfError": "±2.1%",
+            "percent": 6.1,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election91/he/Survey_4176.pdf"
+          },
+          {
+            "pollster": "Direct Polls (led by Tzuriel Sharon)",
+            "commissionedBy": "i24NEWS (Middle East News 24 Ltd.)",
+            "media": "i24NEWS",
+            "fieldworkDates": "2026-10-01",
+            "publishedOn": "2026-10-01",
+            "population": "National representative sample of Israel's population aged 18+, Jews and Arabs",
+            "sampleSize": 504,
+            "marginOfError": "±4.3%",
+            "percent": 7.4,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election92/he/Survey_4178.pdf"
+          },
+          {
+            "pollster": "Maagar Mochot (led by Prof. Yitzhak Katz)",
+            "commissionedBy": "Channel 16",
+            "media": "Channel 16",
+            "fieldworkDates": "2026-09-29",
+            "publishedOn": "2026-09-29",
+            "population": "Israeli adult population aged 18+",
+            "sampleSize": 550,
+            "marginOfError": "±4.2%",
+            "percent": 12.0,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election88/he/Survey_4173.pdf"
+          },
+          {
+            "pollster": "Next Data",
+            "commissionedBy": "Channel 14 (Arutz Achshav 14)",
+            "media": "Channel 14",
+            "fieldworkDates": "2026-09-28",
+            "publishedOn": "2026-09-28",
+            "population": "Adults 18+ eligible to vote, representative sample of Israeli citizens",
+            "sampleSize": 573,
+            "marginOfError": "±4.1%",
+            "percent": 6.9,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election89/he/Survey_4175.pdf"
+          }
+        ]
       },
       "sources": [
         {
@@ -96,7 +167,78 @@
       ],
       "status": "approved",
       "poll": {
-        "status": "pending"
+        "status": "polled",
+        "percent": 16.4,
+        "source": {
+          "title": "Mean of 5 polls published 2026-09-28 to 2026-10-02",
+          "url": "https://www.gov.il/he/Departments/DynamicCollectors/knesset_election_polls_26",
+          "publisher": "Central Elections Committee poll repository (constituent poll reports)",
+          "accessed": "2026-10-06"
+        },
+        "asOf": "2026-10-02",
+        "method": "Arithmetic mean of the published vote-share figures of the 5 most recent polls in the window that publish a percentage for this list (4 pollsters), rounded half-up to one decimal. Percent of respondents as published by each poll (the raw/gross vote-intention share reported to the CEC or in the publisher's article). For Maagar Mochot's main table the share among respondents who named a party (\"בעלי הדעה\") is used; its page listing smaller lists gives only a raw share. Channel 13's CEC reports give only separate, unweighted sub-sample shares that Channel 13 says do not represent the national vote, so a Channel 13 poll is used only where its article publishes a national percentage. Seat-only polls and polls reporting a list only as 'below 1%' / 'below the threshold' are not averaged (see research/poll-snapshot.md). Window: polls first published 2026-09-15 to 2026-10-05 and at least 24h before the 2026-10-06 snapshot.",
+        "constituentPolls": [
+          {
+            "pollster": "Lazar Research (led by Dr. Menachem Lazar)",
+            "commissionedBy": "Maariv",
+            "media": "Maariv",
+            "fieldworkDates": "2026-09-30–10-01",
+            "publishedOn": "2026-10-02",
+            "population": "Representative sample of Israeli citizens 18+, Jews and Arabs",
+            "sampleSize": 602,
+            "marginOfError": "±4.0%",
+            "percent": 15.4,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election90/he/Survey_4177.pdf"
+          },
+          {
+            "pollster": "Next Data",
+            "commissionedBy": "Channel 14 (Arutz Achshav 14)",
+            "media": "Channel 14",
+            "fieldworkDates": "2026-10-01",
+            "publishedOn": "2026-10-01",
+            "population": "Adults 18+ eligible to vote, representative sample of Israeli citizens",
+            "sampleSize": 2145,
+            "marginOfError": "±2.1%",
+            "percent": 16.4,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election91/he/Survey_4176.pdf"
+          },
+          {
+            "pollster": "Direct Polls (led by Tzuriel Sharon)",
+            "commissionedBy": "i24NEWS (Middle East News 24 Ltd.)",
+            "media": "i24NEWS",
+            "fieldworkDates": "2026-10-01",
+            "publishedOn": "2026-10-01",
+            "population": "National representative sample of Israel's population aged 18+, Jews and Arabs",
+            "sampleSize": 504,
+            "marginOfError": "±4.3%",
+            "percent": 17.1,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election92/he/Survey_4178.pdf"
+          },
+          {
+            "pollster": "Maagar Mochot (led by Prof. Yitzhak Katz)",
+            "commissionedBy": "Channel 16",
+            "media": "Channel 16",
+            "fieldworkDates": "2026-09-29",
+            "publishedOn": "2026-09-29",
+            "population": "Israeli adult population aged 18+",
+            "sampleSize": 550,
+            "marginOfError": "±4.2%",
+            "percent": 17.0,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election88/he/Survey_4173.pdf"
+          },
+          {
+            "pollster": "Next Data",
+            "commissionedBy": "Channel 14 (Arutz Achshav 14)",
+            "media": "Channel 14",
+            "fieldworkDates": "2026-09-28",
+            "publishedOn": "2026-09-28",
+            "population": "Adults 18+ eligible to vote, representative sample of Israeli citizens",
+            "sampleSize": 573,
+            "marginOfError": "±4.1%",
+            "percent": 16.3,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election89/he/Survey_4175.pdf"
+          }
+        ]
       },
       "sources": [
         {
@@ -150,7 +292,30 @@
       ],
       "status": "approved",
       "poll": {
-        "status": "pending"
+        "status": "polled",
+        "percent": 0.0,
+        "source": {
+          "title": "Single poll published 2026-09-16",
+          "url": "https://www.gov.il/he/Departments/DynamicCollectors/knesset_election_polls_26",
+          "publisher": "Central Elections Committee poll repository (constituent poll reports)",
+          "accessed": "2026-10-06"
+        },
+        "asOf": "2026-09-16",
+        "method": "Arithmetic mean of the published vote-share figures of the 1 most recent poll in the window that publish a percentage for this list (1 pollster), rounded half-up to one decimal. Only 1 poll in the window published a percentage for this list. Percent of respondents as published by each poll (the raw/gross vote-intention share reported to the CEC or in the publisher's article). For Maagar Mochot's main table the share among respondents who named a party (\"בעלי הדעה\") is used; its page listing smaller lists gives only a raw share. Channel 13's CEC reports give only separate, unweighted sub-sample shares that Channel 13 says do not represent the national vote, so a Channel 13 poll is used only where its article publishes a national percentage. Seat-only polls and polls reporting a list only as 'below 1%' / 'below the threshold' are not averaged (see research/poll-snapshot.md). Window: polls first published 2026-09-15 to 2026-10-05 and at least 24h before the 2026-10-06 snapshot.",
+        "constituentPolls": [
+          {
+            "pollster": "Maagar Mochot (led by Prof. Yitzhak Katz)",
+            "commissionedBy": "Channel 16",
+            "media": "Channel 16",
+            "fieldworkDates": "2026-09-15–16",
+            "publishedOn": "2026-09-16",
+            "population": "Israeli adult population aged 18+",
+            "sampleSize": 535,
+            "marginOfError": "±4.2%",
+            "percent": 0.0,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election74/he/Survey_4151.pdf"
+          }
+        ]
       },
       "sources": [
         {
@@ -203,7 +368,30 @@
       ],
       "status": "approved",
       "poll": {
-        "status": "pending"
+        "status": "polled",
+        "percent": 0.0,
+        "source": {
+          "title": "Single poll published 2026-09-16",
+          "url": "https://www.gov.il/he/Departments/DynamicCollectors/knesset_election_polls_26",
+          "publisher": "Central Elections Committee poll repository (constituent poll reports)",
+          "accessed": "2026-10-06"
+        },
+        "asOf": "2026-09-16",
+        "method": "Arithmetic mean of the published vote-share figures of the 1 most recent poll in the window that publish a percentage for this list (1 pollster), rounded half-up to one decimal. Only 1 poll in the window published a percentage for this list. Percent of respondents as published by each poll (the raw/gross vote-intention share reported to the CEC or in the publisher's article). For Maagar Mochot's main table the share among respondents who named a party (\"בעלי הדעה\") is used; its page listing smaller lists gives only a raw share. Channel 13's CEC reports give only separate, unweighted sub-sample shares that Channel 13 says do not represent the national vote, so a Channel 13 poll is used only where its article publishes a national percentage. Seat-only polls and polls reporting a list only as 'below 1%' / 'below the threshold' are not averaged (see research/poll-snapshot.md). Window: polls first published 2026-09-15 to 2026-10-05 and at least 24h before the 2026-10-06 snapshot.",
+        "constituentPolls": [
+          {
+            "pollster": "Maagar Mochot (led by Prof. Yitzhak Katz)",
+            "commissionedBy": "Channel 16",
+            "media": "Channel 16",
+            "fieldworkDates": "2026-09-15–16",
+            "publishedOn": "2026-09-16",
+            "population": "Israeli adult population aged 18+",
+            "sampleSize": 535,
+            "marginOfError": "±4.2%",
+            "percent": 0.0,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election74/he/Survey_4151.pdf"
+          }
+        ]
       },
       "sources": [
         {
@@ -257,7 +445,30 @@
       ],
       "status": "approved",
       "poll": {
-        "status": "pending"
+        "status": "polled",
+        "percent": 0.0,
+        "source": {
+          "title": "Single poll published 2026-09-16",
+          "url": "https://www.gov.il/he/Departments/DynamicCollectors/knesset_election_polls_26",
+          "publisher": "Central Elections Committee poll repository (constituent poll reports)",
+          "accessed": "2026-10-06"
+        },
+        "asOf": "2026-09-16",
+        "method": "Arithmetic mean of the published vote-share figures of the 1 most recent poll in the window that publish a percentage for this list (1 pollster), rounded half-up to one decimal. Only 1 poll in the window published a percentage for this list. Percent of respondents as published by each poll (the raw/gross vote-intention share reported to the CEC or in the publisher's article). For Maagar Mochot's main table the share among respondents who named a party (\"בעלי הדעה\") is used; its page listing smaller lists gives only a raw share. Channel 13's CEC reports give only separate, unweighted sub-sample shares that Channel 13 says do not represent the national vote, so a Channel 13 poll is used only where its article publishes a national percentage. Seat-only polls and polls reporting a list only as 'below 1%' / 'below the threshold' are not averaged (see research/poll-snapshot.md). Window: polls first published 2026-09-15 to 2026-10-05 and at least 24h before the 2026-10-06 snapshot.",
+        "constituentPolls": [
+          {
+            "pollster": "Maagar Mochot (led by Prof. Yitzhak Katz)",
+            "commissionedBy": "Channel 16",
+            "media": "Channel 16",
+            "fieldworkDates": "2026-09-15–16",
+            "publishedOn": "2026-09-16",
+            "population": "Israeli adult population aged 18+",
+            "sampleSize": 535,
+            "marginOfError": "±4.2%",
+            "percent": 0.0,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election74/he/Survey_4151.pdf"
+          }
+        ]
       },
       "sources": [
         {
@@ -310,7 +521,78 @@
       ],
       "status": "approved",
       "poll": {
-        "status": "pending"
+        "status": "polled",
+        "percent": 2.8,
+        "source": {
+          "title": "Mean of 5 polls published 2026-09-28 to 2026-10-02",
+          "url": "https://www.gov.il/he/Departments/DynamicCollectors/knesset_election_polls_26",
+          "publisher": "Central Elections Committee poll repository (constituent poll reports)",
+          "accessed": "2026-10-06"
+        },
+        "asOf": "2026-10-02",
+        "method": "Arithmetic mean of the published vote-share figures of the 5 most recent polls in the window that publish a percentage for this list (4 pollsters), rounded half-up to one decimal. Kan 11's poll of 2026-10-04 and Channel 13's of 2026-09-30 reported it below / above the threshold in seats without a percentage in the text opened, so they are not averaged. Percent of respondents as published by each poll (the raw/gross vote-intention share reported to the CEC or in the publisher's article). For Maagar Mochot's main table the share among respondents who named a party (\"בעלי הדעה\") is used; its page listing smaller lists gives only a raw share. Channel 13's CEC reports give only separate, unweighted sub-sample shares that Channel 13 says do not represent the national vote, so a Channel 13 poll is used only where its article publishes a national percentage. Seat-only polls and polls reporting a list only as 'below 1%' / 'below the threshold' are not averaged (see research/poll-snapshot.md). Window: polls first published 2026-09-15 to 2026-10-05 and at least 24h before the 2026-10-06 snapshot.",
+        "constituentPolls": [
+          {
+            "pollster": "Lazar Research (led by Dr. Menachem Lazar)",
+            "commissionedBy": "Maariv",
+            "media": "Maariv",
+            "fieldworkDates": "2026-09-30–10-01",
+            "publishedOn": "2026-10-02",
+            "population": "Representative sample of Israeli citizens 18+, Jews and Arabs",
+            "sampleSize": 602,
+            "marginOfError": "±4.0%",
+            "percent": 3.5,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election90/he/Survey_4177.pdf"
+          },
+          {
+            "pollster": "Next Data",
+            "commissionedBy": "Channel 14 (Arutz Achshav 14)",
+            "media": "Channel 14",
+            "fieldworkDates": "2026-10-01",
+            "publishedOn": "2026-10-01",
+            "population": "Adults 18+ eligible to vote, representative sample of Israeli citizens",
+            "sampleSize": 2145,
+            "marginOfError": "±2.1%",
+            "percent": 1.7,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election91/he/Survey_4176.pdf"
+          },
+          {
+            "pollster": "Direct Polls (led by Tzuriel Sharon)",
+            "commissionedBy": "i24NEWS (Middle East News 24 Ltd.)",
+            "media": "i24NEWS",
+            "fieldworkDates": "2026-10-01",
+            "publishedOn": "2026-10-01",
+            "population": "National representative sample of Israel's population aged 18+, Jews and Arabs",
+            "sampleSize": 504,
+            "marginOfError": "±4.3%",
+            "percent": 3.3,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election92/he/Survey_4178.pdf"
+          },
+          {
+            "pollster": "Maagar Mochot (led by Prof. Yitzhak Katz)",
+            "commissionedBy": "Channel 16",
+            "media": "Channel 16",
+            "fieldworkDates": "2026-09-29",
+            "publishedOn": "2026-09-29",
+            "population": "Israeli adult population aged 18+",
+            "sampleSize": 550,
+            "marginOfError": "±4.2%",
+            "percent": 4.0,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election88/he/Survey_4173.pdf"
+          },
+          {
+            "pollster": "Next Data",
+            "commissionedBy": "Channel 14 (Arutz Achshav 14)",
+            "media": "Channel 14",
+            "fieldworkDates": "2026-09-28",
+            "publishedOn": "2026-09-28",
+            "population": "Adults 18+ eligible to vote, representative sample of Israeli citizens",
+            "sampleSize": 573,
+            "marginOfError": "±4.1%",
+            "percent": 1.6,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election89/he/Survey_4175.pdf"
+          }
+        ]
       },
       "sources": [
         {
@@ -364,7 +646,53 @@
       ],
       "status": "approved",
       "poll": {
-        "status": "pending"
+        "status": "polled",
+        "percent": 0.2,
+        "source": {
+          "title": "Mean of 3 polls published 2026-09-16 to 2026-09-22",
+          "url": "https://www.gov.il/he/Departments/DynamicCollectors/knesset_election_polls_26",
+          "publisher": "Central Elections Committee poll repository (constituent poll reports)",
+          "accessed": "2026-10-06"
+        },
+        "asOf": "2026-09-22",
+        "method": "Arithmetic mean of the published vote-share figures of the 3 most recent polls in the window that publish a percentage for this list (3 pollsters), rounded half-up to one decimal. Only 3 polls in the window published a percentage for this list. Percent of respondents as published by each poll (the raw/gross vote-intention share reported to the CEC or in the publisher's article). For Maagar Mochot's main table the share among respondents who named a party (\"בעלי הדעה\") is used; its page listing smaller lists gives only a raw share. Channel 13's CEC reports give only separate, unweighted sub-sample shares that Channel 13 says do not represent the national vote, so a Channel 13 poll is used only where its article publishes a national percentage. Seat-only polls and polls reporting a list only as 'below 1%' / 'below the threshold' are not averaged (see research/poll-snapshot.md). Window: polls first published 2026-09-15 to 2026-10-05 and at least 24h before the 2026-10-06 snapshot.",
+        "constituentPolls": [
+          {
+            "pollster": "Midgam Consulting & Research (led by Mano Geva)",
+            "commissionedBy": "The News Company (Channel 12 News)",
+            "media": "Channel 12 (N12)",
+            "fieldworkDates": "2026-09-22",
+            "publishedOn": "2026-09-22",
+            "population": "All Israelis aged 18+ eligible to vote",
+            "sampleSize": 501,
+            "marginOfError": "±4.4%",
+            "percent": 0.0,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election81/he/Survey_4162.pdf"
+          },
+          {
+            "pollster": "DRI Institute",
+            "commissionedBy": "Independent (no external commissioner)",
+            "fieldworkDates": "2026-09-15",
+            "publishedOn": "2026-09-18",
+            "population": "Representative sample of Israeli citizens 18+ eligible to vote",
+            "sampleSize": 1891,
+            "marginOfError": "±3.5%",
+            "percent": 0.37,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election76/he/Survey_4154.pdf"
+          },
+          {
+            "pollster": "Maagar Mochot (led by Prof. Yitzhak Katz)",
+            "commissionedBy": "Channel 16",
+            "media": "Channel 16",
+            "fieldworkDates": "2026-09-15–16",
+            "publishedOn": "2026-09-16",
+            "population": "Israeli adult population aged 18+",
+            "sampleSize": 535,
+            "marginOfError": "±4.2%",
+            "percent": 0.2,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election74/he/Survey_4151.pdf"
+          }
+        ]
       },
       "sources": [
         {
@@ -425,7 +753,30 @@
       ],
       "status": "approved",
       "poll": {
-        "status": "pending"
+        "status": "polled",
+        "percent": 0.0,
+        "source": {
+          "title": "Single poll published 2026-09-16",
+          "url": "https://www.gov.il/he/Departments/DynamicCollectors/knesset_election_polls_26",
+          "publisher": "Central Elections Committee poll repository (constituent poll reports)",
+          "accessed": "2026-10-06"
+        },
+        "asOf": "2026-09-16",
+        "method": "Arithmetic mean of the published vote-share figures of the 1 most recent poll in the window that publish a percentage for this list (1 pollster), rounded half-up to one decimal. Only 1 poll in the window published a percentage for this list. Percent of respondents as published by each poll (the raw/gross vote-intention share reported to the CEC or in the publisher's article). For Maagar Mochot's main table the share among respondents who named a party (\"בעלי הדעה\") is used; its page listing smaller lists gives only a raw share. Channel 13's CEC reports give only separate, unweighted sub-sample shares that Channel 13 says do not represent the national vote, so a Channel 13 poll is used only where its article publishes a national percentage. Seat-only polls and polls reporting a list only as 'below 1%' / 'below the threshold' are not averaged (see research/poll-snapshot.md). Window: polls first published 2026-09-15 to 2026-10-05 and at least 24h before the 2026-10-06 snapshot.",
+        "constituentPolls": [
+          {
+            "pollster": "Maagar Mochot (led by Prof. Yitzhak Katz)",
+            "commissionedBy": "Channel 16",
+            "media": "Channel 16",
+            "fieldworkDates": "2026-09-15–16",
+            "publishedOn": "2026-09-16",
+            "population": "Israeli adult population aged 18+",
+            "sampleSize": 535,
+            "marginOfError": "±4.2%",
+            "percent": 0.0,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election74/he/Survey_4151.pdf"
+          }
+        ]
       },
       "sources": [
         {
@@ -479,7 +830,30 @@
       ],
       "status": "approved",
       "poll": {
-        "status": "pending"
+        "status": "polled",
+        "percent": 0.0,
+        "source": {
+          "title": "Single poll published 2026-09-16",
+          "url": "https://www.gov.il/he/Departments/DynamicCollectors/knesset_election_polls_26",
+          "publisher": "Central Elections Committee poll repository (constituent poll reports)",
+          "accessed": "2026-10-06"
+        },
+        "asOf": "2026-09-16",
+        "method": "Arithmetic mean of the published vote-share figures of the 1 most recent poll in the window that publish a percentage for this list (1 pollster), rounded half-up to one decimal. Only 1 poll in the window published a percentage for this list. Percent of respondents as published by each poll (the raw/gross vote-intention share reported to the CEC or in the publisher's article). For Maagar Mochot's main table the share among respondents who named a party (\"בעלי הדעה\") is used; its page listing smaller lists gives only a raw share. Channel 13's CEC reports give only separate, unweighted sub-sample shares that Channel 13 says do not represent the national vote, so a Channel 13 poll is used only where its article publishes a national percentage. Seat-only polls and polls reporting a list only as 'below 1%' / 'below the threshold' are not averaged (see research/poll-snapshot.md). Window: polls first published 2026-09-15 to 2026-10-05 and at least 24h before the 2026-10-06 snapshot.",
+        "constituentPolls": [
+          {
+            "pollster": "Maagar Mochot (led by Prof. Yitzhak Katz)",
+            "commissionedBy": "Channel 16",
+            "media": "Channel 16",
+            "fieldworkDates": "2026-09-15–16",
+            "publishedOn": "2026-09-16",
+            "population": "Israeli adult population aged 18+",
+            "sampleSize": 535,
+            "marginOfError": "±4.2%",
+            "percent": 0.0,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election74/he/Survey_4151.pdf"
+          }
+        ]
       },
       "sources": [
         {
@@ -533,7 +907,30 @@
       ],
       "status": "approved",
       "poll": {
-        "status": "pending"
+        "status": "polled",
+        "percent": 0.3,
+        "source": {
+          "title": "Single poll published 2026-09-16",
+          "url": "https://www.gov.il/he/Departments/DynamicCollectors/knesset_election_polls_26",
+          "publisher": "Central Elections Committee poll repository (constituent poll reports)",
+          "accessed": "2026-10-06"
+        },
+        "asOf": "2026-09-16",
+        "method": "Arithmetic mean of the published vote-share figures of the 1 most recent poll in the window that publish a percentage for this list (1 pollster), rounded half-up to one decimal. Only 1 poll in the window published a percentage for this list. Percent of respondents as published by each poll (the raw/gross vote-intention share reported to the CEC or in the publisher's article). For Maagar Mochot's main table the share among respondents who named a party (\"בעלי הדעה\") is used; its page listing smaller lists gives only a raw share. Channel 13's CEC reports give only separate, unweighted sub-sample shares that Channel 13 says do not represent the national vote, so a Channel 13 poll is used only where its article publishes a national percentage. Seat-only polls and polls reporting a list only as 'below 1%' / 'below the threshold' are not averaged (see research/poll-snapshot.md). Window: polls first published 2026-09-15 to 2026-10-05 and at least 24h before the 2026-10-06 snapshot.",
+        "constituentPolls": [
+          {
+            "pollster": "Maagar Mochot (led by Prof. Yitzhak Katz)",
+            "commissionedBy": "Channel 16",
+            "media": "Channel 16",
+            "fieldworkDates": "2026-09-15–16",
+            "publishedOn": "2026-09-16",
+            "population": "Israeli adult population aged 18+",
+            "sampleSize": 535,
+            "marginOfError": "±4.2%",
+            "percent": 0.3,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election74/he/Survey_4151.pdf"
+          }
+        ]
       },
       "sources": [
         {
@@ -586,7 +983,78 @@
       ],
       "status": "approved",
       "poll": {
-        "status": "pending"
+        "status": "polled",
+        "percent": 5.5,
+        "source": {
+          "title": "Mean of 5 polls published 2026-09-28 to 2026-10-02",
+          "url": "https://www.gov.il/he/Departments/DynamicCollectors/knesset_election_polls_26",
+          "publisher": "Central Elections Committee poll repository (constituent poll reports)",
+          "accessed": "2026-10-06"
+        },
+        "asOf": "2026-10-02",
+        "method": "Arithmetic mean of the published vote-share figures of the 5 most recent polls in the window that publish a percentage for this list (4 pollsters), rounded half-up to one decimal. Percent of respondents as published by each poll (the raw/gross vote-intention share reported to the CEC or in the publisher's article). For Maagar Mochot's main table the share among respondents who named a party (\"בעלי הדעה\") is used; its page listing smaller lists gives only a raw share. Channel 13's CEC reports give only separate, unweighted sub-sample shares that Channel 13 says do not represent the national vote, so a Channel 13 poll is used only where its article publishes a national percentage. Seat-only polls and polls reporting a list only as 'below 1%' / 'below the threshold' are not averaged (see research/poll-snapshot.md). Window: polls first published 2026-09-15 to 2026-10-05 and at least 24h before the 2026-10-06 snapshot.",
+        "constituentPolls": [
+          {
+            "pollster": "Lazar Research (led by Dr. Menachem Lazar)",
+            "commissionedBy": "Maariv",
+            "media": "Maariv",
+            "fieldworkDates": "2026-09-30–10-01",
+            "publishedOn": "2026-10-02",
+            "population": "Representative sample of Israeli citizens 18+, Jews and Arabs",
+            "sampleSize": 602,
+            "marginOfError": "±4.0%",
+            "percent": 7.4,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election90/he/Survey_4177.pdf"
+          },
+          {
+            "pollster": "Next Data",
+            "commissionedBy": "Channel 14 (Arutz Achshav 14)",
+            "media": "Channel 14",
+            "fieldworkDates": "2026-10-01",
+            "publishedOn": "2026-10-01",
+            "population": "Adults 18+ eligible to vote, representative sample of Israeli citizens",
+            "sampleSize": 2145,
+            "marginOfError": "±2.1%",
+            "percent": 4.7,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election91/he/Survey_4176.pdf"
+          },
+          {
+            "pollster": "Direct Polls (led by Tzuriel Sharon)",
+            "commissionedBy": "i24NEWS (Middle East News 24 Ltd.)",
+            "media": "i24NEWS",
+            "fieldworkDates": "2026-10-01",
+            "publishedOn": "2026-10-01",
+            "population": "National representative sample of Israel's population aged 18+, Jews and Arabs",
+            "sampleSize": 504,
+            "marginOfError": "±4.3%",
+            "percent": 5.6,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election92/he/Survey_4178.pdf"
+          },
+          {
+            "pollster": "Maagar Mochot (led by Prof. Yitzhak Katz)",
+            "commissionedBy": "Channel 16",
+            "media": "Channel 16",
+            "fieldworkDates": "2026-09-29",
+            "publishedOn": "2026-09-29",
+            "population": "Israeli adult population aged 18+",
+            "sampleSize": 550,
+            "marginOfError": "±4.2%",
+            "percent": 5.0,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election88/he/Survey_4173.pdf"
+          },
+          {
+            "pollster": "Next Data",
+            "commissionedBy": "Channel 14 (Arutz Achshav 14)",
+            "media": "Channel 14",
+            "fieldworkDates": "2026-09-28",
+            "publishedOn": "2026-09-28",
+            "population": "Adults 18+ eligible to vote, representative sample of Israeli citizens",
+            "sampleSize": 573,
+            "marginOfError": "±4.1%",
+            "percent": 4.8,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election89/he/Survey_4175.pdf"
+          }
+        ]
       },
       "sources": [
         {
@@ -639,7 +1107,30 @@
       ],
       "status": "approved",
       "poll": {
-        "status": "pending"
+        "status": "polled",
+        "percent": 0.0,
+        "source": {
+          "title": "Single poll published 2026-09-16",
+          "url": "https://www.gov.il/he/Departments/DynamicCollectors/knesset_election_polls_26",
+          "publisher": "Central Elections Committee poll repository (constituent poll reports)",
+          "accessed": "2026-10-06"
+        },
+        "asOf": "2026-09-16",
+        "method": "Arithmetic mean of the published vote-share figures of the 1 most recent poll in the window that publish a percentage for this list (1 pollster), rounded half-up to one decimal. Only 1 poll in the window published a percentage for this list. Percent of respondents as published by each poll (the raw/gross vote-intention share reported to the CEC or in the publisher's article). For Maagar Mochot's main table the share among respondents who named a party (\"בעלי הדעה\") is used; its page listing smaller lists gives only a raw share. Channel 13's CEC reports give only separate, unweighted sub-sample shares that Channel 13 says do not represent the national vote, so a Channel 13 poll is used only where its article publishes a national percentage. Seat-only polls and polls reporting a list only as 'below 1%' / 'below the threshold' are not averaged (see research/poll-snapshot.md). Window: polls first published 2026-09-15 to 2026-10-05 and at least 24h before the 2026-10-06 snapshot.",
+        "constituentPolls": [
+          {
+            "pollster": "Maagar Mochot (led by Prof. Yitzhak Katz)",
+            "commissionedBy": "Channel 16",
+            "media": "Channel 16",
+            "fieldworkDates": "2026-09-15–16",
+            "publishedOn": "2026-09-16",
+            "population": "Israeli adult population aged 18+",
+            "sampleSize": 535,
+            "marginOfError": "±4.2%",
+            "percent": 0.0,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election74/he/Survey_4151.pdf"
+          }
+        ]
       },
       "sources": [
         {
@@ -676,7 +1167,30 @@
       ],
       "status": "approved",
       "poll": {
-        "status": "pending"
+        "status": "polled",
+        "percent": 0.0,
+        "source": {
+          "title": "Single poll published 2026-09-16",
+          "url": "https://www.gov.il/he/Departments/DynamicCollectors/knesset_election_polls_26",
+          "publisher": "Central Elections Committee poll repository (constituent poll reports)",
+          "accessed": "2026-10-06"
+        },
+        "asOf": "2026-09-16",
+        "method": "Arithmetic mean of the published vote-share figures of the 1 most recent poll in the window that publish a percentage for this list (1 pollster), rounded half-up to one decimal. Only 1 poll in the window published a percentage for this list. Percent of respondents as published by each poll (the raw/gross vote-intention share reported to the CEC or in the publisher's article). For Maagar Mochot's main table the share among respondents who named a party (\"בעלי הדעה\") is used; its page listing smaller lists gives only a raw share. Channel 13's CEC reports give only separate, unweighted sub-sample shares that Channel 13 says do not represent the national vote, so a Channel 13 poll is used only where its article publishes a national percentage. Seat-only polls and polls reporting a list only as 'below 1%' / 'below the threshold' are not averaged (see research/poll-snapshot.md). Window: polls first published 2026-09-15 to 2026-10-05 and at least 24h before the 2026-10-06 snapshot.",
+        "constituentPolls": [
+          {
+            "pollster": "Maagar Mochot (led by Prof. Yitzhak Katz)",
+            "commissionedBy": "Channel 16",
+            "media": "Channel 16",
+            "fieldworkDates": "2026-09-15–16",
+            "publishedOn": "2026-09-16",
+            "population": "Israeli adult population aged 18+",
+            "sampleSize": 535,
+            "marginOfError": "±4.2%",
+            "percent": 0.0,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election74/he/Survey_4151.pdf"
+          }
+        ]
       },
       "sources": [
         {
@@ -731,7 +1245,78 @@
       ],
       "status": "approved",
       "poll": {
-        "status": "pending"
+        "status": "polled",
+        "percent": 6.3,
+        "source": {
+          "title": "Mean of 5 polls published 2026-09-28 to 2026-10-02",
+          "url": "https://www.gov.il/he/Departments/DynamicCollectors/knesset_election_polls_26",
+          "publisher": "Central Elections Committee poll repository (constituent poll reports)",
+          "accessed": "2026-10-06"
+        },
+        "asOf": "2026-10-02",
+        "method": "Arithmetic mean of the published vote-share figures of the 5 most recent polls in the window that publish a percentage for this list (4 pollsters), rounded half-up to one decimal. Percent of respondents as published by each poll (the raw/gross vote-intention share reported to the CEC or in the publisher's article). For Maagar Mochot's main table the share among respondents who named a party (\"בעלי הדעה\") is used; its page listing smaller lists gives only a raw share. Channel 13's CEC reports give only separate, unweighted sub-sample shares that Channel 13 says do not represent the national vote, so a Channel 13 poll is used only where its article publishes a national percentage. Seat-only polls and polls reporting a list only as 'below 1%' / 'below the threshold' are not averaged (see research/poll-snapshot.md). Window: polls first published 2026-09-15 to 2026-10-05 and at least 24h before the 2026-10-06 snapshot.",
+        "constituentPolls": [
+          {
+            "pollster": "Lazar Research (led by Dr. Menachem Lazar)",
+            "commissionedBy": "Maariv",
+            "media": "Maariv",
+            "fieldworkDates": "2026-09-30–10-01",
+            "publishedOn": "2026-10-02",
+            "population": "Representative sample of Israeli citizens 18+, Jews and Arabs",
+            "sampleSize": 602,
+            "marginOfError": "±4.0%",
+            "percent": 7.6,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election90/he/Survey_4177.pdf"
+          },
+          {
+            "pollster": "Next Data",
+            "commissionedBy": "Channel 14 (Arutz Achshav 14)",
+            "media": "Channel 14",
+            "fieldworkDates": "2026-10-01",
+            "publishedOn": "2026-10-01",
+            "population": "Adults 18+ eligible to vote, representative sample of Israeli citizens",
+            "sampleSize": 2145,
+            "marginOfError": "±2.1%",
+            "percent": 5.5,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election91/he/Survey_4176.pdf"
+          },
+          {
+            "pollster": "Direct Polls (led by Tzuriel Sharon)",
+            "commissionedBy": "i24NEWS (Middle East News 24 Ltd.)",
+            "media": "i24NEWS",
+            "fieldworkDates": "2026-10-01",
+            "publishedOn": "2026-10-01",
+            "population": "National representative sample of Israel's population aged 18+, Jews and Arabs",
+            "sampleSize": 504,
+            "marginOfError": "±4.3%",
+            "percent": 6.4,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election92/he/Survey_4178.pdf"
+          },
+          {
+            "pollster": "Maagar Mochot (led by Prof. Yitzhak Katz)",
+            "commissionedBy": "Channel 16",
+            "media": "Channel 16",
+            "fieldworkDates": "2026-09-29",
+            "publishedOn": "2026-09-29",
+            "population": "Israeli adult population aged 18+",
+            "sampleSize": 550,
+            "marginOfError": "±4.2%",
+            "percent": 7.0,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election88/he/Survey_4173.pdf"
+          },
+          {
+            "pollster": "Next Data",
+            "commissionedBy": "Channel 14 (Arutz Achshav 14)",
+            "media": "Channel 14",
+            "fieldworkDates": "2026-09-28",
+            "publishedOn": "2026-09-28",
+            "population": "Adults 18+ eligible to vote, representative sample of Israeli citizens",
+            "sampleSize": 573,
+            "marginOfError": "±4.1%",
+            "percent": 5.1,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election89/he/Survey_4175.pdf"
+          }
+        ]
       },
       "sources": [
         {
@@ -792,7 +1377,30 @@
       ],
       "status": "approved",
       "poll": {
-        "status": "pending"
+        "status": "polled",
+        "percent": 0.0,
+        "source": {
+          "title": "Single poll published 2026-09-16",
+          "url": "https://www.gov.il/he/Departments/DynamicCollectors/knesset_election_polls_26",
+          "publisher": "Central Elections Committee poll repository (constituent poll reports)",
+          "accessed": "2026-10-06"
+        },
+        "asOf": "2026-09-16",
+        "method": "Arithmetic mean of the published vote-share figures of the 1 most recent poll in the window that publish a percentage for this list (1 pollster), rounded half-up to one decimal. Only 1 poll in the window published a percentage for this list. Percent of respondents as published by each poll (the raw/gross vote-intention share reported to the CEC or in the publisher's article). For Maagar Mochot's main table the share among respondents who named a party (\"בעלי הדעה\") is used; its page listing smaller lists gives only a raw share. Channel 13's CEC reports give only separate, unweighted sub-sample shares that Channel 13 says do not represent the national vote, so a Channel 13 poll is used only where its article publishes a national percentage. Seat-only polls and polls reporting a list only as 'below 1%' / 'below the threshold' are not averaged (see research/poll-snapshot.md). Window: polls first published 2026-09-15 to 2026-10-05 and at least 24h before the 2026-10-06 snapshot.",
+        "constituentPolls": [
+          {
+            "pollster": "Maagar Mochot (led by Prof. Yitzhak Katz)",
+            "commissionedBy": "Channel 16",
+            "media": "Channel 16",
+            "fieldworkDates": "2026-09-15–16",
+            "publishedOn": "2026-09-16",
+            "population": "Israeli adult population aged 18+",
+            "sampleSize": 535,
+            "marginOfError": "±4.2%",
+            "percent": 0.0,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election74/he/Survey_4151.pdf"
+          }
+        ]
       },
       "sources": [
         {
@@ -846,7 +1454,78 @@
       ],
       "status": "approved",
       "poll": {
-        "status": "pending"
+        "status": "polled",
+        "percent": 2.5,
+        "source": {
+          "title": "Mean of 5 polls published 2026-09-29 to 2026-10-02",
+          "url": "https://www.gov.il/he/Departments/DynamicCollectors/knesset_election_polls_26",
+          "publisher": "Central Elections Committee poll repository (constituent poll reports)",
+          "accessed": "2026-10-06"
+        },
+        "asOf": "2026-10-02",
+        "method": "Arithmetic mean of the published vote-share figures of the 5 most recent polls in the window that publish a percentage for this list (5 pollsters), rounded half-up to one decimal. Channel 13 (2026-09-30) published 2.8% in its article. Percent of respondents as published by each poll (the raw/gross vote-intention share reported to the CEC or in the publisher's article). For Maagar Mochot's main table the share among respondents who named a party (\"בעלי הדעה\") is used; its page listing smaller lists gives only a raw share. Channel 13's CEC reports give only separate, unweighted sub-sample shares that Channel 13 says do not represent the national vote, so a Channel 13 poll is used only where its article publishes a national percentage. Seat-only polls and polls reporting a list only as 'below 1%' / 'below the threshold' are not averaged (see research/poll-snapshot.md). Window: polls first published 2026-09-15 to 2026-10-05 and at least 24h before the 2026-10-06 snapshot.",
+        "constituentPolls": [
+          {
+            "pollster": "Lazar Research (led by Dr. Menachem Lazar)",
+            "commissionedBy": "Maariv",
+            "media": "Maariv",
+            "fieldworkDates": "2026-09-30–10-01",
+            "publishedOn": "2026-10-02",
+            "population": "Representative sample of Israeli citizens 18+, Jews and Arabs",
+            "sampleSize": 602,
+            "marginOfError": "±4.0%",
+            "percent": 3.6,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election90/he/Survey_4177.pdf"
+          },
+          {
+            "pollster": "Next Data",
+            "commissionedBy": "Channel 14 (Arutz Achshav 14)",
+            "media": "Channel 14",
+            "fieldworkDates": "2026-10-01",
+            "publishedOn": "2026-10-01",
+            "population": "Adults 18+ eligible to vote, representative sample of Israeli citizens",
+            "sampleSize": 2145,
+            "marginOfError": "±2.1%",
+            "percent": 1.2,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election91/he/Survey_4176.pdf"
+          },
+          {
+            "pollster": "Direct Polls (led by Tzuriel Sharon)",
+            "commissionedBy": "i24NEWS (Middle East News 24 Ltd.)",
+            "media": "i24NEWS",
+            "fieldworkDates": "2026-10-01",
+            "publishedOn": "2026-10-01",
+            "population": "National representative sample of Israel's population aged 18+, Jews and Arabs",
+            "sampleSize": 504,
+            "marginOfError": "±4.3%",
+            "percent": 1.8,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election92/he/Survey_4178.pdf"
+          },
+          {
+            "pollster": "Shmuel Rosner with Midgam Project panel, Stat-Net and Askaria (statistical adviser Prof. David Steinberg)",
+            "commissionedBy": "Channel 13 News",
+            "media": "Channel 13",
+            "fieldworkDates": "2026-09-29–30",
+            "publishedOn": "2026-09-30",
+            "population": "Stratified representative sample of the population aged 18+ (Jewish adults, young, Haredi and Arab sub-samples)",
+            "sampleSize": 1013,
+            "marginOfError": "±3.1%",
+            "percent": 2.8,
+            "url": "https://13tv.co.il/item/news/politics/politics/survey-905376242/?pid=106628"
+          },
+          {
+            "pollster": "Maagar Mochot (led by Prof. Yitzhak Katz)",
+            "commissionedBy": "Channel 16",
+            "media": "Channel 16",
+            "fieldworkDates": "2026-09-29",
+            "publishedOn": "2026-09-29",
+            "population": "Israeli adult population aged 18+",
+            "sampleSize": 550,
+            "marginOfError": "±4.2%",
+            "percent": 3.3,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election88/he/Survey_4173.pdf"
+          }
+        ]
       },
       "sources": [
         {
@@ -900,7 +1579,78 @@
       ],
       "status": "approved",
       "poll": {
-        "status": "pending"
+        "status": "polled",
+        "percent": 7.6,
+        "source": {
+          "title": "Mean of 5 polls published 2026-09-28 to 2026-10-02",
+          "url": "https://www.gov.il/he/Departments/DynamicCollectors/knesset_election_polls_26",
+          "publisher": "Central Elections Committee poll repository (constituent poll reports)",
+          "accessed": "2026-10-06"
+        },
+        "asOf": "2026-10-02",
+        "method": "Arithmetic mean of the published vote-share figures of the 5 most recent polls in the window that publish a percentage for this list (4 pollsters), rounded half-up to one decimal. Percent of respondents as published by each poll (the raw/gross vote-intention share reported to the CEC or in the publisher's article). For Maagar Mochot's main table the share among respondents who named a party (\"בעלי הדעה\") is used; its page listing smaller lists gives only a raw share. Channel 13's CEC reports give only separate, unweighted sub-sample shares that Channel 13 says do not represent the national vote, so a Channel 13 poll is used only where its article publishes a national percentage. Seat-only polls and polls reporting a list only as 'below 1%' / 'below the threshold' are not averaged (see research/poll-snapshot.md). Window: polls first published 2026-09-15 to 2026-10-05 and at least 24h before the 2026-10-06 snapshot.",
+        "constituentPolls": [
+          {
+            "pollster": "Lazar Research (led by Dr. Menachem Lazar)",
+            "commissionedBy": "Maariv",
+            "media": "Maariv",
+            "fieldworkDates": "2026-09-30–10-01",
+            "publishedOn": "2026-10-02",
+            "population": "Representative sample of Israeli citizens 18+, Jews and Arabs",
+            "sampleSize": 602,
+            "marginOfError": "±4.0%",
+            "percent": 8.6,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election90/he/Survey_4177.pdf"
+          },
+          {
+            "pollster": "Next Data",
+            "commissionedBy": "Channel 14 (Arutz Achshav 14)",
+            "media": "Channel 14",
+            "fieldworkDates": "2026-10-01",
+            "publishedOn": "2026-10-01",
+            "population": "Adults 18+ eligible to vote, representative sample of Israeli citizens",
+            "sampleSize": 2145,
+            "marginOfError": "±2.1%",
+            "percent": 7.1,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election91/he/Survey_4176.pdf"
+          },
+          {
+            "pollster": "Direct Polls (led by Tzuriel Sharon)",
+            "commissionedBy": "i24NEWS (Middle East News 24 Ltd.)",
+            "media": "i24NEWS",
+            "fieldworkDates": "2026-10-01",
+            "publishedOn": "2026-10-01",
+            "population": "National representative sample of Israel's population aged 18+, Jews and Arabs",
+            "sampleSize": 504,
+            "marginOfError": "±4.3%",
+            "percent": 7.1,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election92/he/Survey_4178.pdf"
+          },
+          {
+            "pollster": "Maagar Mochot (led by Prof. Yitzhak Katz)",
+            "commissionedBy": "Channel 16",
+            "media": "Channel 16",
+            "fieldworkDates": "2026-09-29",
+            "publishedOn": "2026-09-29",
+            "population": "Israeli adult population aged 18+",
+            "sampleSize": 550,
+            "marginOfError": "±4.2%",
+            "percent": 8.0,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election88/he/Survey_4173.pdf"
+          },
+          {
+            "pollster": "Next Data",
+            "commissionedBy": "Channel 14 (Arutz Achshav 14)",
+            "media": "Channel 14",
+            "fieldworkDates": "2026-09-28",
+            "publishedOn": "2026-09-28",
+            "population": "Adults 18+ eligible to vote, representative sample of Israeli citizens",
+            "sampleSize": 573,
+            "marginOfError": "±4.1%",
+            "percent": 7.1,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election89/he/Survey_4175.pdf"
+          }
+        ]
       },
       "sources": [
         {
@@ -954,7 +1704,78 @@
       ],
       "status": "approved",
       "poll": {
-        "status": "pending"
+        "status": "polled",
+        "percent": 4.1,
+        "source": {
+          "title": "Mean of 5 polls published 2026-09-28 to 2026-10-02",
+          "url": "https://www.gov.il/he/Departments/DynamicCollectors/knesset_election_polls_26",
+          "publisher": "Central Elections Committee poll repository (constituent poll reports)",
+          "accessed": "2026-10-06"
+        },
+        "asOf": "2026-10-02",
+        "method": "Arithmetic mean of the published vote-share figures of the 5 most recent polls in the window that publish a percentage for this list (4 pollsters), rounded half-up to one decimal. Percent of respondents as published by each poll (the raw/gross vote-intention share reported to the CEC or in the publisher's article). For Maagar Mochot's main table the share among respondents who named a party (\"בעלי הדעה\") is used; its page listing smaller lists gives only a raw share. Channel 13's CEC reports give only separate, unweighted sub-sample shares that Channel 13 says do not represent the national vote, so a Channel 13 poll is used only where its article publishes a national percentage. Seat-only polls and polls reporting a list only as 'below 1%' / 'below the threshold' are not averaged (see research/poll-snapshot.md). Window: polls first published 2026-09-15 to 2026-10-05 and at least 24h before the 2026-10-06 snapshot.",
+        "constituentPolls": [
+          {
+            "pollster": "Lazar Research (led by Dr. Menachem Lazar)",
+            "commissionedBy": "Maariv",
+            "media": "Maariv",
+            "fieldworkDates": "2026-09-30–10-01",
+            "publishedOn": "2026-10-02",
+            "population": "Representative sample of Israeli citizens 18+, Jews and Arabs",
+            "sampleSize": 602,
+            "marginOfError": "±4.0%",
+            "percent": 4.7,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election90/he/Survey_4177.pdf"
+          },
+          {
+            "pollster": "Next Data",
+            "commissionedBy": "Channel 14 (Arutz Achshav 14)",
+            "media": "Channel 14",
+            "fieldworkDates": "2026-10-01",
+            "publishedOn": "2026-10-01",
+            "population": "Adults 18+ eligible to vote, representative sample of Israeli citizens",
+            "sampleSize": 2145,
+            "marginOfError": "±2.1%",
+            "percent": 3.6,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election91/he/Survey_4176.pdf"
+          },
+          {
+            "pollster": "Direct Polls (led by Tzuriel Sharon)",
+            "commissionedBy": "i24NEWS (Middle East News 24 Ltd.)",
+            "media": "i24NEWS",
+            "fieldworkDates": "2026-10-01",
+            "publishedOn": "2026-10-01",
+            "population": "National representative sample of Israel's population aged 18+, Jews and Arabs",
+            "sampleSize": 504,
+            "marginOfError": "±4.3%",
+            "percent": 4.2,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election92/he/Survey_4178.pdf"
+          },
+          {
+            "pollster": "Maagar Mochot (led by Prof. Yitzhak Katz)",
+            "commissionedBy": "Channel 16",
+            "media": "Channel 16",
+            "fieldworkDates": "2026-09-29",
+            "publishedOn": "2026-09-29",
+            "population": "Israeli adult population aged 18+",
+            "sampleSize": 550,
+            "marginOfError": "±4.2%",
+            "percent": 4.0,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election88/he/Survey_4173.pdf"
+          },
+          {
+            "pollster": "Next Data",
+            "commissionedBy": "Channel 14 (Arutz Achshav 14)",
+            "media": "Channel 14",
+            "fieldworkDates": "2026-09-28",
+            "publishedOn": "2026-09-28",
+            "population": "Adults 18+ eligible to vote, representative sample of Israeli citizens",
+            "sampleSize": 573,
+            "marginOfError": "±4.1%",
+            "percent": 3.8,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election89/he/Survey_4175.pdf"
+          }
+        ]
       },
       "sources": [
         {
@@ -1022,7 +1843,78 @@
       ],
       "status": "approved",
       "poll": {
-        "status": "pending"
+        "status": "polled",
+        "percent": 6.5,
+        "source": {
+          "title": "Mean of 5 polls published 2026-09-28 to 2026-10-02",
+          "url": "https://www.gov.il/he/Departments/DynamicCollectors/knesset_election_polls_26",
+          "publisher": "Central Elections Committee poll repository (constituent poll reports)",
+          "accessed": "2026-10-06"
+        },
+        "asOf": "2026-10-02",
+        "method": "Arithmetic mean of the published vote-share figures of the 5 most recent polls in the window that publish a percentage for this list (4 pollsters), rounded half-up to one decimal. Percent of respondents as published by each poll (the raw/gross vote-intention share reported to the CEC or in the publisher's article). For Maagar Mochot's main table the share among respondents who named a party (\"בעלי הדעה\") is used; its page listing smaller lists gives only a raw share. Channel 13's CEC reports give only separate, unweighted sub-sample shares that Channel 13 says do not represent the national vote, so a Channel 13 poll is used only where its article publishes a national percentage. Seat-only polls and polls reporting a list only as 'below 1%' / 'below the threshold' are not averaged (see research/poll-snapshot.md). Window: polls first published 2026-09-15 to 2026-10-05 and at least 24h before the 2026-10-06 snapshot.",
+        "constituentPolls": [
+          {
+            "pollster": "Lazar Research (led by Dr. Menachem Lazar)",
+            "commissionedBy": "Maariv",
+            "media": "Maariv",
+            "fieldworkDates": "2026-09-30–10-01",
+            "publishedOn": "2026-10-02",
+            "population": "Representative sample of Israeli citizens 18+, Jews and Arabs",
+            "sampleSize": 602,
+            "marginOfError": "±4.0%",
+            "percent": 5.7,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election90/he/Survey_4177.pdf"
+          },
+          {
+            "pollster": "Next Data",
+            "commissionedBy": "Channel 14 (Arutz Achshav 14)",
+            "media": "Channel 14",
+            "fieldworkDates": "2026-10-01",
+            "publishedOn": "2026-10-01",
+            "population": "Adults 18+ eligible to vote, representative sample of Israeli citizens",
+            "sampleSize": 2145,
+            "marginOfError": "±2.1%",
+            "percent": 7.7,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election91/he/Survey_4176.pdf"
+          },
+          {
+            "pollster": "Direct Polls (led by Tzuriel Sharon)",
+            "commissionedBy": "i24NEWS (Middle East News 24 Ltd.)",
+            "media": "i24NEWS",
+            "fieldworkDates": "2026-10-01",
+            "publishedOn": "2026-10-01",
+            "population": "National representative sample of Israel's population aged 18+, Jews and Arabs",
+            "sampleSize": 504,
+            "marginOfError": "±4.3%",
+            "percent": 5.5,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election92/he/Survey_4178.pdf"
+          },
+          {
+            "pollster": "Maagar Mochot (led by Prof. Yitzhak Katz)",
+            "commissionedBy": "Channel 16",
+            "media": "Channel 16",
+            "fieldworkDates": "2026-09-29",
+            "publishedOn": "2026-09-29",
+            "population": "Israeli adult population aged 18+",
+            "sampleSize": 550,
+            "marginOfError": "±4.2%",
+            "percent": 6.0,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election88/he/Survey_4173.pdf"
+          },
+          {
+            "pollster": "Next Data",
+            "commissionedBy": "Channel 14 (Arutz Achshav 14)",
+            "media": "Channel 14",
+            "fieldworkDates": "2026-09-28",
+            "publishedOn": "2026-09-28",
+            "population": "Adults 18+ eligible to vote, representative sample of Israeli citizens",
+            "sampleSize": 573,
+            "marginOfError": "±4.1%",
+            "percent": 7.5,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election89/he/Survey_4175.pdf"
+          }
+        ]
       },
       "sources": [
         {
@@ -1083,7 +1975,78 @@
       ],
       "status": "approved",
       "poll": {
-        "status": "pending"
+        "status": "polled",
+        "percent": 0.6,
+        "source": {
+          "title": "Mean of 5 polls published 2026-09-28 to 2026-10-02",
+          "url": "https://www.gov.il/he/Departments/DynamicCollectors/knesset_election_polls_26",
+          "publisher": "Central Elections Committee poll repository (constituent poll reports)",
+          "accessed": "2026-10-06"
+        },
+        "asOf": "2026-10-02",
+        "method": "Arithmetic mean of the published vote-share figures of the 5 most recent polls in the window that publish a percentage for this list (4 pollsters), rounded half-up to one decimal. Percent of respondents as published by each poll (the raw/gross vote-intention share reported to the CEC or in the publisher's article). For Maagar Mochot's main table the share among respondents who named a party (\"בעלי הדעה\") is used; its page listing smaller lists gives only a raw share. Channel 13's CEC reports give only separate, unweighted sub-sample shares that Channel 13 says do not represent the national vote, so a Channel 13 poll is used only where its article publishes a national percentage. Seat-only polls and polls reporting a list only as 'below 1%' / 'below the threshold' are not averaged (see research/poll-snapshot.md). Window: polls first published 2026-09-15 to 2026-10-05 and at least 24h before the 2026-10-06 snapshot.",
+        "constituentPolls": [
+          {
+            "pollster": "Lazar Research (led by Dr. Menachem Lazar)",
+            "commissionedBy": "Maariv",
+            "media": "Maariv",
+            "fieldworkDates": "2026-09-30–10-01",
+            "publishedOn": "2026-10-02",
+            "population": "Representative sample of Israeli citizens 18+, Jews and Arabs",
+            "sampleSize": 602,
+            "marginOfError": "±4.0%",
+            "percent": 0.6,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election90/he/Survey_4177.pdf"
+          },
+          {
+            "pollster": "Next Data",
+            "commissionedBy": "Channel 14 (Arutz Achshav 14)",
+            "media": "Channel 14",
+            "fieldworkDates": "2026-10-01",
+            "publishedOn": "2026-10-01",
+            "population": "Adults 18+ eligible to vote, representative sample of Israeli citizens",
+            "sampleSize": 2145,
+            "marginOfError": "±2.1%",
+            "percent": 0.2,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election91/he/Survey_4176.pdf"
+          },
+          {
+            "pollster": "Shmuel Rosner with Midgam Project panel, Stat-Net and Askaria (statistical adviser Prof. David Steinberg)",
+            "commissionedBy": "Channel 13 News",
+            "media": "Channel 13",
+            "fieldworkDates": "2026-09-29–30",
+            "publishedOn": "2026-09-30",
+            "population": "Stratified representative sample of the population aged 18+ (Jewish adults, young, Haredi and Arab sub-samples)",
+            "sampleSize": 1013,
+            "marginOfError": "±3.1%",
+            "percent": 1.3,
+            "url": "https://13tv.co.il/item/news/politics/politics/survey-905376242/?pid=106628"
+          },
+          {
+            "pollster": "Maagar Mochot (led by Prof. Yitzhak Katz)",
+            "commissionedBy": "Channel 16",
+            "media": "Channel 16",
+            "fieldworkDates": "2026-09-29",
+            "publishedOn": "2026-09-29",
+            "population": "Israeli adult population aged 18+",
+            "sampleSize": 550,
+            "marginOfError": "±4.2%",
+            "percent": 0.6,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election88/he/Survey_4173.pdf"
+          },
+          {
+            "pollster": "Next Data",
+            "commissionedBy": "Channel 14 (Arutz Achshav 14)",
+            "media": "Channel 14",
+            "fieldworkDates": "2026-09-28",
+            "publishedOn": "2026-09-28",
+            "population": "Adults 18+ eligible to vote, representative sample of Israeli citizens",
+            "sampleSize": 573,
+            "marginOfError": "±4.1%",
+            "percent": 0.2,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election89/he/Survey_4175.pdf"
+          }
+        ]
       },
       "sources": [
         {
@@ -1137,7 +2100,30 @@
       ],
       "status": "approved",
       "poll": {
-        "status": "pending"
+        "status": "polled",
+        "percent": 0.0,
+        "source": {
+          "title": "Single poll published 2026-09-16",
+          "url": "https://www.gov.il/he/Departments/DynamicCollectors/knesset_election_polls_26",
+          "publisher": "Central Elections Committee poll repository (constituent poll reports)",
+          "accessed": "2026-10-06"
+        },
+        "asOf": "2026-09-16",
+        "method": "Arithmetic mean of the published vote-share figures of the 1 most recent poll in the window that publish a percentage for this list (1 pollster), rounded half-up to one decimal. Only 1 poll in the window published a percentage for this list. Percent of respondents as published by each poll (the raw/gross vote-intention share reported to the CEC or in the publisher's article). For Maagar Mochot's main table the share among respondents who named a party (\"בעלי הדעה\") is used; its page listing smaller lists gives only a raw share. Channel 13's CEC reports give only separate, unweighted sub-sample shares that Channel 13 says do not represent the national vote, so a Channel 13 poll is used only where its article publishes a national percentage. Seat-only polls and polls reporting a list only as 'below 1%' / 'below the threshold' are not averaged (see research/poll-snapshot.md). Window: polls first published 2026-09-15 to 2026-10-05 and at least 24h before the 2026-10-06 snapshot.",
+        "constituentPolls": [
+          {
+            "pollster": "Maagar Mochot (led by Prof. Yitzhak Katz)",
+            "commissionedBy": "Channel 16",
+            "media": "Channel 16",
+            "fieldworkDates": "2026-09-15–16",
+            "publishedOn": "2026-09-16",
+            "population": "Israeli adult population aged 18+",
+            "sampleSize": 535,
+            "marginOfError": "±4.2%",
+            "percent": 0.0,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election74/he/Survey_4151.pdf"
+          }
+        ]
       },
       "sources": [
         {
@@ -1190,7 +2176,30 @@
       ],
       "status": "approved",
       "poll": {
-        "status": "pending"
+        "status": "polled",
+        "percent": 0.0,
+        "source": {
+          "title": "Single poll published 2026-09-16",
+          "url": "https://www.gov.il/he/Departments/DynamicCollectors/knesset_election_polls_26",
+          "publisher": "Central Elections Committee poll repository (constituent poll reports)",
+          "accessed": "2026-10-06"
+        },
+        "asOf": "2026-09-16",
+        "method": "Arithmetic mean of the published vote-share figures of the 1 most recent poll in the window that publish a percentage for this list (1 pollster), rounded half-up to one decimal. Only 1 poll in the window published a percentage for this list. Percent of respondents as published by each poll (the raw/gross vote-intention share reported to the CEC or in the publisher's article). For Maagar Mochot's main table the share among respondents who named a party (\"בעלי הדעה\") is used; its page listing smaller lists gives only a raw share. Channel 13's CEC reports give only separate, unweighted sub-sample shares that Channel 13 says do not represent the national vote, so a Channel 13 poll is used only where its article publishes a national percentage. Seat-only polls and polls reporting a list only as 'below 1%' / 'below the threshold' are not averaged (see research/poll-snapshot.md). Window: polls first published 2026-09-15 to 2026-10-05 and at least 24h before the 2026-10-06 snapshot.",
+        "constituentPolls": [
+          {
+            "pollster": "Maagar Mochot (led by Prof. Yitzhak Katz)",
+            "commissionedBy": "Channel 16",
+            "media": "Channel 16",
+            "fieldworkDates": "2026-09-15–16",
+            "publishedOn": "2026-09-16",
+            "population": "Israeli adult population aged 18+",
+            "sampleSize": 535,
+            "marginOfError": "±4.2%",
+            "percent": 0.0,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election74/he/Survey_4151.pdf"
+          }
+        ]
       },
       "sources": [
         {
@@ -1243,7 +2252,30 @@
       ],
       "status": "approved",
       "poll": {
-        "status": "pending"
+        "status": "polled",
+        "percent": 0.0,
+        "source": {
+          "title": "Single poll published 2026-09-16",
+          "url": "https://www.gov.il/he/Departments/DynamicCollectors/knesset_election_polls_26",
+          "publisher": "Central Elections Committee poll repository (constituent poll reports)",
+          "accessed": "2026-10-06"
+        },
+        "asOf": "2026-09-16",
+        "method": "Arithmetic mean of the published vote-share figures of the 1 most recent poll in the window that publish a percentage for this list (1 pollster), rounded half-up to one decimal. Only 1 poll in the window published a percentage for this list. Percent of respondents as published by each poll (the raw/gross vote-intention share reported to the CEC or in the publisher's article). For Maagar Mochot's main table the share among respondents who named a party (\"בעלי הדעה\") is used; its page listing smaller lists gives only a raw share. Channel 13's CEC reports give only separate, unweighted sub-sample shares that Channel 13 says do not represent the national vote, so a Channel 13 poll is used only where its article publishes a national percentage. Seat-only polls and polls reporting a list only as 'below 1%' / 'below the threshold' are not averaged (see research/poll-snapshot.md). Window: polls first published 2026-09-15 to 2026-10-05 and at least 24h before the 2026-10-06 snapshot.",
+        "constituentPolls": [
+          {
+            "pollster": "Maagar Mochot (led by Prof. Yitzhak Katz)",
+            "commissionedBy": "Channel 16",
+            "media": "Channel 16",
+            "fieldworkDates": "2026-09-15–16",
+            "publishedOn": "2026-09-16",
+            "population": "Israeli adult population aged 18+",
+            "sampleSize": 535,
+            "marginOfError": "±4.2%",
+            "percent": 0.0,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election74/he/Survey_4151.pdf"
+          }
+        ]
       },
       "sources": [
         {
@@ -1292,7 +2324,30 @@
       ],
       "status": "approved",
       "poll": {
-        "status": "pending"
+        "status": "polled",
+        "percent": 0.0,
+        "source": {
+          "title": "Single poll published 2026-09-16",
+          "url": "https://www.gov.il/he/Departments/DynamicCollectors/knesset_election_polls_26",
+          "publisher": "Central Elections Committee poll repository (constituent poll reports)",
+          "accessed": "2026-10-06"
+        },
+        "asOf": "2026-09-16",
+        "method": "Arithmetic mean of the published vote-share figures of the 1 most recent poll in the window that publish a percentage for this list (1 pollster), rounded half-up to one decimal. Only 1 poll in the window published a percentage for this list. Percent of respondents as published by each poll (the raw/gross vote-intention share reported to the CEC or in the publisher's article). For Maagar Mochot's main table the share among respondents who named a party (\"בעלי הדעה\") is used; its page listing smaller lists gives only a raw share. Channel 13's CEC reports give only separate, unweighted sub-sample shares that Channel 13 says do not represent the national vote, so a Channel 13 poll is used only where its article publishes a national percentage. Seat-only polls and polls reporting a list only as 'below 1%' / 'below the threshold' are not averaged (see research/poll-snapshot.md). Window: polls first published 2026-09-15 to 2026-10-05 and at least 24h before the 2026-10-06 snapshot.",
+        "constituentPolls": [
+          {
+            "pollster": "Maagar Mochot (led by Prof. Yitzhak Katz)",
+            "commissionedBy": "Channel 16",
+            "media": "Channel 16",
+            "fieldworkDates": "2026-09-15–16",
+            "publishedOn": "2026-09-16",
+            "population": "Israeli adult population aged 18+",
+            "sampleSize": 535,
+            "marginOfError": "±4.2%",
+            "percent": 0.0,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election74/he/Survey_4151.pdf"
+          }
+        ]
       },
       "sources": [
         {
@@ -1338,7 +2393,30 @@
       ],
       "status": "approved",
       "poll": {
-        "status": "pending"
+        "status": "polled",
+        "percent": 0.0,
+        "source": {
+          "title": "Single poll published 2026-09-16",
+          "url": "https://www.gov.il/he/Departments/DynamicCollectors/knesset_election_polls_26",
+          "publisher": "Central Elections Committee poll repository (constituent poll reports)",
+          "accessed": "2026-10-06"
+        },
+        "asOf": "2026-09-16",
+        "method": "Arithmetic mean of the published vote-share figures of the 1 most recent poll in the window that publish a percentage for this list (1 pollster), rounded half-up to one decimal. Only 1 poll in the window published a percentage for this list. Percent of respondents as published by each poll (the raw/gross vote-intention share reported to the CEC or in the publisher's article). For Maagar Mochot's main table the share among respondents who named a party (\"בעלי הדעה\") is used; its page listing smaller lists gives only a raw share. Channel 13's CEC reports give only separate, unweighted sub-sample shares that Channel 13 says do not represent the national vote, so a Channel 13 poll is used only where its article publishes a national percentage. Seat-only polls and polls reporting a list only as 'below 1%' / 'below the threshold' are not averaged (see research/poll-snapshot.md). Window: polls first published 2026-09-15 to 2026-10-05 and at least 24h before the 2026-10-06 snapshot.",
+        "constituentPolls": [
+          {
+            "pollster": "Maagar Mochot (led by Prof. Yitzhak Katz)",
+            "commissionedBy": "Channel 16",
+            "media": "Channel 16",
+            "fieldworkDates": "2026-09-15–16",
+            "publishedOn": "2026-09-16",
+            "population": "Israeli adult population aged 18+",
+            "sampleSize": 535,
+            "marginOfError": "±4.2%",
+            "percent": 0.0,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election74/he/Survey_4151.pdf"
+          }
+        ]
       },
       "sources": [
         {
@@ -1391,7 +2469,30 @@
       ],
       "status": "approved",
       "poll": {
-        "status": "pending"
+        "status": "polled",
+        "percent": 0.0,
+        "source": {
+          "title": "Single poll published 2026-09-16",
+          "url": "https://www.gov.il/he/Departments/DynamicCollectors/knesset_election_polls_26",
+          "publisher": "Central Elections Committee poll repository (constituent poll reports)",
+          "accessed": "2026-10-06"
+        },
+        "asOf": "2026-09-16",
+        "method": "Arithmetic mean of the published vote-share figures of the 1 most recent poll in the window that publish a percentage for this list (1 pollster), rounded half-up to one decimal. Only 1 poll in the window published a percentage for this list. Percent of respondents as published by each poll (the raw/gross vote-intention share reported to the CEC or in the publisher's article). For Maagar Mochot's main table the share among respondents who named a party (\"בעלי הדעה\") is used; its page listing smaller lists gives only a raw share. Channel 13's CEC reports give only separate, unweighted sub-sample shares that Channel 13 says do not represent the national vote, so a Channel 13 poll is used only where its article publishes a national percentage. Seat-only polls and polls reporting a list only as 'below 1%' / 'below the threshold' are not averaged (see research/poll-snapshot.md). Window: polls first published 2026-09-15 to 2026-10-05 and at least 24h before the 2026-10-06 snapshot.",
+        "constituentPolls": [
+          {
+            "pollster": "Maagar Mochot (led by Prof. Yitzhak Katz)",
+            "commissionedBy": "Channel 16",
+            "media": "Channel 16",
+            "fieldworkDates": "2026-09-15–16",
+            "publishedOn": "2026-09-16",
+            "population": "Israeli adult population aged 18+",
+            "sampleSize": 535,
+            "marginOfError": "±4.2%",
+            "percent": 0.0,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election74/he/Survey_4151.pdf"
+          }
+        ]
       },
       "sources": [
         {
@@ -1445,7 +2546,30 @@
       ],
       "status": "approved",
       "poll": {
-        "status": "pending"
+        "status": "polled",
+        "percent": 0.0,
+        "source": {
+          "title": "Single poll published 2026-09-16",
+          "url": "https://www.gov.il/he/Departments/DynamicCollectors/knesset_election_polls_26",
+          "publisher": "Central Elections Committee poll repository (constituent poll reports)",
+          "accessed": "2026-10-06"
+        },
+        "asOf": "2026-09-16",
+        "method": "Arithmetic mean of the published vote-share figures of the 1 most recent poll in the window that publish a percentage for this list (1 pollster), rounded half-up to one decimal. Only 1 poll in the window published a percentage for this list. Percent of respondents as published by each poll (the raw/gross vote-intention share reported to the CEC or in the publisher's article). For Maagar Mochot's main table the share among respondents who named a party (\"בעלי הדעה\") is used; its page listing smaller lists gives only a raw share. Channel 13's CEC reports give only separate, unweighted sub-sample shares that Channel 13 says do not represent the national vote, so a Channel 13 poll is used only where its article publishes a national percentage. Seat-only polls and polls reporting a list only as 'below 1%' / 'below the threshold' are not averaged (see research/poll-snapshot.md). Window: polls first published 2026-09-15 to 2026-10-05 and at least 24h before the 2026-10-06 snapshot.",
+        "constituentPolls": [
+          {
+            "pollster": "Maagar Mochot (led by Prof. Yitzhak Katz)",
+            "commissionedBy": "Channel 16",
+            "media": "Channel 16",
+            "fieldworkDates": "2026-09-15–16",
+            "publishedOn": "2026-09-16",
+            "population": "Israeli adult population aged 18+",
+            "sampleSize": 535,
+            "marginOfError": "±4.2%",
+            "percent": 0.0,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election74/he/Survey_4151.pdf"
+          }
+        ]
       },
       "sources": [
         {
@@ -1499,7 +2623,54 @@
       ],
       "status": "approved",
       "poll": {
-        "status": "pending"
+        "status": "polled",
+        "percent": 0.4,
+        "source": {
+          "title": "Mean of 3 polls published 2026-09-16 to 2026-09-27",
+          "url": "https://www.gov.il/he/Departments/DynamicCollectors/knesset_election_polls_26",
+          "publisher": "Central Elections Committee poll repository (constituent poll reports)",
+          "accessed": "2026-10-06"
+        },
+        "asOf": "2026-09-27",
+        "method": "Arithmetic mean of the published vote-share figures of the 3 most recent polls in the window that publish a percentage for this list (2 pollsters), rounded half-up to one decimal. Only 3 polls in the window published a percentage for this list. Percent of respondents as published by each poll (the raw/gross vote-intention share reported to the CEC or in the publisher's article). For Maagar Mochot's main table the share among respondents who named a party (\"בעלי הדעה\") is used; its page listing smaller lists gives only a raw share. Channel 13's CEC reports give only separate, unweighted sub-sample shares that Channel 13 says do not represent the national vote, so a Channel 13 poll is used only where its article publishes a national percentage. Seat-only polls and polls reporting a list only as 'below 1%' / 'below the threshold' are not averaged (see research/poll-snapshot.md). Window: polls first published 2026-09-15 to 2026-10-05 and at least 24h before the 2026-10-06 snapshot.",
+        "constituentPolls": [
+          {
+            "pollster": "Kantar Israel",
+            "commissionedBy": "Kan (Israeli Public Broadcasting Corporation)",
+            "media": "Kan 11",
+            "fieldworkDates": "2026-09-27",
+            "publishedOn": "2026-09-27",
+            "population": "National representative sample of Israel's population aged 18+, Jews and Arabs",
+            "sampleSize": 552,
+            "marginOfError": "±4.2%",
+            "percent": 0.6,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election93/he/Survey_4179.pdf"
+          },
+          {
+            "pollster": "Kantar Israel",
+            "commissionedBy": "Israel Hayom",
+            "media": "Israel Hayom",
+            "fieldworkDates": "2026-09-16–17",
+            "publishedOn": "2026-09-17",
+            "population": "National representative sample of Israel's population aged 18+, Jews and Arabs",
+            "sampleSize": 551,
+            "marginOfError": "±4.2%",
+            "percent": 0.5,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election79/he/Survey_4160.pdf"
+          },
+          {
+            "pollster": "Maagar Mochot (led by Prof. Yitzhak Katz)",
+            "commissionedBy": "Channel 16",
+            "media": "Channel 16",
+            "fieldworkDates": "2026-09-15–16",
+            "publishedOn": "2026-09-16",
+            "population": "Israeli adult population aged 18+",
+            "sampleSize": 535,
+            "marginOfError": "±4.2%",
+            "percent": 0.2,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election74/he/Survey_4151.pdf"
+          }
+        ]
       },
       "sources": [
         {
@@ -1554,7 +2725,78 @@
       ],
       "status": "approved",
       "poll": {
-        "status": "pending"
+        "status": "polled",
+        "percent": 20.3,
+        "source": {
+          "title": "Mean of 5 polls published 2026-09-28 to 2026-10-02",
+          "url": "https://www.gov.il/he/Departments/DynamicCollectors/knesset_election_polls_26",
+          "publisher": "Central Elections Committee poll repository (constituent poll reports)",
+          "accessed": "2026-10-06"
+        },
+        "asOf": "2026-10-02",
+        "method": "Arithmetic mean of the published vote-share figures of the 5 most recent polls in the window that publish a percentage for this list (4 pollsters), rounded half-up to one decimal. Percent of respondents as published by each poll (the raw/gross vote-intention share reported to the CEC or in the publisher's article). For Maagar Mochot's main table the share among respondents who named a party (\"בעלי הדעה\") is used; its page listing smaller lists gives only a raw share. Channel 13's CEC reports give only separate, unweighted sub-sample shares that Channel 13 says do not represent the national vote, so a Channel 13 poll is used only where its article publishes a national percentage. Seat-only polls and polls reporting a list only as 'below 1%' / 'below the threshold' are not averaged (see research/poll-snapshot.md). Window: polls first published 2026-09-15 to 2026-10-05 and at least 24h before the 2026-10-06 snapshot.",
+        "constituentPolls": [
+          {
+            "pollster": "Lazar Research (led by Dr. Menachem Lazar)",
+            "commissionedBy": "Maariv",
+            "media": "Maariv",
+            "fieldworkDates": "2026-09-30–10-01",
+            "publishedOn": "2026-10-02",
+            "population": "Representative sample of Israeli citizens 18+, Jews and Arabs",
+            "sampleSize": 602,
+            "marginOfError": "±4.0%",
+            "percent": 14.8,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election90/he/Survey_4177.pdf"
+          },
+          {
+            "pollster": "Next Data",
+            "commissionedBy": "Channel 14 (Arutz Achshav 14)",
+            "media": "Channel 14",
+            "fieldworkDates": "2026-10-01",
+            "publishedOn": "2026-10-01",
+            "population": "Adults 18+ eligible to vote, representative sample of Israeli citizens",
+            "sampleSize": 2145,
+            "marginOfError": "±2.1%",
+            "percent": 24.9,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election91/he/Survey_4176.pdf"
+          },
+          {
+            "pollster": "Direct Polls (led by Tzuriel Sharon)",
+            "commissionedBy": "i24NEWS (Middle East News 24 Ltd.)",
+            "media": "i24NEWS",
+            "fieldworkDates": "2026-10-01",
+            "publishedOn": "2026-10-01",
+            "population": "National representative sample of Israel's population aged 18+, Jews and Arabs",
+            "sampleSize": 504,
+            "marginOfError": "±4.3%",
+            "percent": 22.0,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election92/he/Survey_4178.pdf"
+          },
+          {
+            "pollster": "Maagar Mochot (led by Prof. Yitzhak Katz)",
+            "commissionedBy": "Channel 16",
+            "media": "Channel 16",
+            "fieldworkDates": "2026-09-29",
+            "publishedOn": "2026-09-29",
+            "population": "Israeli adult population aged 18+",
+            "sampleSize": 550,
+            "marginOfError": "±4.2%",
+            "percent": 16.0,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election88/he/Survey_4173.pdf"
+          },
+          {
+            "pollster": "Next Data",
+            "commissionedBy": "Channel 14 (Arutz Achshav 14)",
+            "media": "Channel 14",
+            "fieldworkDates": "2026-09-28",
+            "publishedOn": "2026-09-28",
+            "population": "Adults 18+ eligible to vote, representative sample of Israeli citizens",
+            "sampleSize": 573,
+            "marginOfError": "±4.1%",
+            "percent": 24.0,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election89/he/Survey_4175.pdf"
+          }
+        ]
       },
       "sources": [
         {
@@ -1615,7 +2857,78 @@
       ],
       "status": "approved",
       "poll": {
-        "status": "pending"
+        "status": "polled",
+        "percent": 0.8,
+        "source": {
+          "title": "Mean of 5 polls published 2026-09-29 to 2026-10-02",
+          "url": "https://www.gov.il/he/Departments/DynamicCollectors/knesset_election_polls_26",
+          "publisher": "Central Elections Committee poll repository (constituent poll reports)",
+          "accessed": "2026-10-06"
+        },
+        "asOf": "2026-10-02",
+        "method": "Arithmetic mean of the published vote-share figures of the 5 most recent polls in the window that publish a percentage for this list (5 pollsters), rounded half-up to one decimal. Percent of respondents as published by each poll (the raw/gross vote-intention share reported to the CEC or in the publisher's article). For Maagar Mochot's main table the share among respondents who named a party (\"בעלי הדעה\") is used; its page listing smaller lists gives only a raw share. Channel 13's CEC reports give only separate, unweighted sub-sample shares that Channel 13 says do not represent the national vote, so a Channel 13 poll is used only where its article publishes a national percentage. Seat-only polls and polls reporting a list only as 'below 1%' / 'below the threshold' are not averaged (see research/poll-snapshot.md). Window: polls first published 2026-09-15 to 2026-10-05 and at least 24h before the 2026-10-06 snapshot.",
+        "constituentPolls": [
+          {
+            "pollster": "Lazar Research (led by Dr. Menachem Lazar)",
+            "commissionedBy": "Maariv",
+            "media": "Maariv",
+            "fieldworkDates": "2026-09-30–10-01",
+            "publishedOn": "2026-10-02",
+            "population": "Representative sample of Israeli citizens 18+, Jews and Arabs",
+            "sampleSize": 602,
+            "marginOfError": "±4.0%",
+            "percent": 0.7,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election90/he/Survey_4177.pdf"
+          },
+          {
+            "pollster": "Next Data",
+            "commissionedBy": "Channel 14 (Arutz Achshav 14)",
+            "media": "Channel 14",
+            "fieldworkDates": "2026-10-01",
+            "publishedOn": "2026-10-01",
+            "population": "Adults 18+ eligible to vote, representative sample of Israeli citizens",
+            "sampleSize": 2145,
+            "marginOfError": "±2.1%",
+            "percent": 0.4,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election91/he/Survey_4176.pdf"
+          },
+          {
+            "pollster": "Yossi Tatika (Tatika Research & Media, with the Adgenda panel)",
+            "commissionedBy": "Zman Yisrael",
+            "media": "Zman Yisrael",
+            "fieldworkDates": "2026-09-30–10-01",
+            "publishedOn": "2026-10-01",
+            "population": "Jewish and Arab respondents, weighted by age, religion, gender and region",
+            "sampleSize": 500,
+            "marginOfError": "±4.4%",
+            "percent": 1.4,
+            "url": "https://www.zman.co.il/729422/"
+          },
+          {
+            "pollster": "Shmuel Rosner with Midgam Project panel, Stat-Net and Askaria (statistical adviser Prof. David Steinberg)",
+            "commissionedBy": "Channel 13 News",
+            "media": "Channel 13",
+            "fieldworkDates": "2026-09-29–30",
+            "publishedOn": "2026-09-30",
+            "population": "Stratified representative sample of the population aged 18+ (Jewish adults, young, Haredi and Arab sub-samples)",
+            "sampleSize": 1013,
+            "marginOfError": "±3.1%",
+            "percent": 0.9,
+            "url": "https://13tv.co.il/item/news/politics/politics/survey-905376242/?pid=106628"
+          },
+          {
+            "pollster": "Maagar Mochot (led by Prof. Yitzhak Katz)",
+            "commissionedBy": "Channel 16",
+            "media": "Channel 16",
+            "fieldworkDates": "2026-09-29",
+            "publishedOn": "2026-09-29",
+            "population": "Israeli adult population aged 18+",
+            "sampleSize": 550,
+            "marginOfError": "±4.2%",
+            "percent": 0.4,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election88/he/Survey_4173.pdf"
+          }
+        ]
       },
       "sources": [
         {
@@ -1670,7 +2983,78 @@
       ],
       "status": "approved",
       "poll": {
-        "status": "pending"
+        "status": "polled",
+        "percent": 4.7,
+        "source": {
+          "title": "Mean of 5 polls published 2026-09-28 to 2026-10-02",
+          "url": "https://www.gov.il/he/Departments/DynamicCollectors/knesset_election_polls_26",
+          "publisher": "Central Elections Committee poll repository (constituent poll reports)",
+          "accessed": "2026-10-06"
+        },
+        "asOf": "2026-10-02",
+        "method": "Arithmetic mean of the published vote-share figures of the 5 most recent polls in the window that publish a percentage for this list (4 pollsters), rounded half-up to one decimal. Percent of respondents as published by each poll (the raw/gross vote-intention share reported to the CEC or in the publisher's article). For Maagar Mochot's main table the share among respondents who named a party (\"בעלי הדעה\") is used; its page listing smaller lists gives only a raw share. Channel 13's CEC reports give only separate, unweighted sub-sample shares that Channel 13 says do not represent the national vote, so a Channel 13 poll is used only where its article publishes a national percentage. Seat-only polls and polls reporting a list only as 'below 1%' / 'below the threshold' are not averaged (see research/poll-snapshot.md). Window: polls first published 2026-09-15 to 2026-10-05 and at least 24h before the 2026-10-06 snapshot.",
+        "constituentPolls": [
+          {
+            "pollster": "Lazar Research (led by Dr. Menachem Lazar)",
+            "commissionedBy": "Maariv",
+            "media": "Maariv",
+            "fieldworkDates": "2026-09-30–10-01",
+            "publishedOn": "2026-10-02",
+            "population": "Representative sample of Israeli citizens 18+, Jews and Arabs",
+            "sampleSize": 602,
+            "marginOfError": "±4.0%",
+            "percent": 3.9,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election90/he/Survey_4177.pdf"
+          },
+          {
+            "pollster": "Next Data",
+            "commissionedBy": "Channel 14 (Arutz Achshav 14)",
+            "media": "Channel 14",
+            "fieldworkDates": "2026-10-01",
+            "publishedOn": "2026-10-01",
+            "population": "Adults 18+ eligible to vote, representative sample of Israeli citizens",
+            "sampleSize": 2145,
+            "marginOfError": "±2.1%",
+            "percent": 5.2,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election91/he/Survey_4176.pdf"
+          },
+          {
+            "pollster": "Direct Polls (led by Tzuriel Sharon)",
+            "commissionedBy": "i24NEWS (Middle East News 24 Ltd.)",
+            "media": "i24NEWS",
+            "fieldworkDates": "2026-10-01",
+            "publishedOn": "2026-10-01",
+            "population": "National representative sample of Israel's population aged 18+, Jews and Arabs",
+            "sampleSize": 504,
+            "marginOfError": "±4.3%",
+            "percent": 4.3,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election92/he/Survey_4178.pdf"
+          },
+          {
+            "pollster": "Maagar Mochot (led by Prof. Yitzhak Katz)",
+            "commissionedBy": "Channel 16",
+            "media": "Channel 16",
+            "fieldworkDates": "2026-09-29",
+            "publishedOn": "2026-09-29",
+            "population": "Israeli adult population aged 18+",
+            "sampleSize": 550,
+            "marginOfError": "±4.2%",
+            "percent": 5.0,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election88/he/Survey_4173.pdf"
+          },
+          {
+            "pollster": "Next Data",
+            "commissionedBy": "Channel 14 (Arutz Achshav 14)",
+            "media": "Channel 14",
+            "fieldworkDates": "2026-09-28",
+            "publishedOn": "2026-09-28",
+            "population": "Adults 18+ eligible to vote, representative sample of Israeli citizens",
+            "sampleSize": 573,
+            "marginOfError": "±4.1%",
+            "percent": 5.3,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election89/he/Survey_4175.pdf"
+          }
+        ]
       },
       "sources": [
         {
@@ -1724,7 +3108,54 @@
       ],
       "status": "approved",
       "poll": {
-        "status": "pending"
+        "status": "polled",
+        "percent": 0.4,
+        "source": {
+          "title": "Mean of 3 polls published 2026-09-16 to 2026-10-01",
+          "url": "https://www.gov.il/he/Departments/DynamicCollectors/knesset_election_polls_26",
+          "publisher": "Central Elections Committee poll repository (constituent poll reports)",
+          "accessed": "2026-10-06"
+        },
+        "asOf": "2026-10-01",
+        "method": "Arithmetic mean of the published vote-share figures of the 3 most recent polls in the window that publish a percentage for this list (3 pollsters), rounded half-up to one decimal. Only 3 polls in the window published a percentage for this list. Percent of respondents as published by each poll (the raw/gross vote-intention share reported to the CEC or in the publisher's article). For Maagar Mochot's main table the share among respondents who named a party (\"בעלי הדעה\") is used; its page listing smaller lists gives only a raw share. Channel 13's CEC reports give only separate, unweighted sub-sample shares that Channel 13 says do not represent the national vote, so a Channel 13 poll is used only where its article publishes a national percentage. Seat-only polls and polls reporting a list only as 'below 1%' / 'below the threshold' are not averaged (see research/poll-snapshot.md). Window: polls first published 2026-09-15 to 2026-10-05 and at least 24h before the 2026-10-06 snapshot.",
+        "constituentPolls": [
+          {
+            "pollster": "Next Data",
+            "commissionedBy": "Channel 14 (Arutz Achshav 14)",
+            "media": "Channel 14",
+            "fieldworkDates": "2026-10-01",
+            "publishedOn": "2026-10-01",
+            "population": "Adults 18+ eligible to vote, representative sample of Israeli citizens",
+            "sampleSize": 2145,
+            "marginOfError": "±2.1%",
+            "percent": 0.1,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election91/he/Survey_4176.pdf"
+          },
+          {
+            "pollster": "Lazar Research (led by Dr. Menachem Lazar)",
+            "commissionedBy": "Maariv",
+            "media": "Maariv",
+            "fieldworkDates": "2026-09-16–17",
+            "publishedOn": "2026-09-18",
+            "population": "Representative sample of Israeli citizens 18+, Jews and Arabs",
+            "sampleSize": 600,
+            "marginOfError": "±4.4%",
+            "percent": 0.8,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election77/he/Survey_4158.pdf"
+          },
+          {
+            "pollster": "Maagar Mochot (led by Prof. Yitzhak Katz)",
+            "commissionedBy": "Channel 16",
+            "media": "Channel 16",
+            "fieldworkDates": "2026-09-15–16",
+            "publishedOn": "2026-09-16",
+            "population": "Israeli adult population aged 18+",
+            "sampleSize": 535,
+            "marginOfError": "±4.2%",
+            "percent": 0.3,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election74/he/Survey_4151.pdf"
+          }
+        ]
       },
       "sources": [
         {
@@ -1779,7 +3210,78 @@
       ],
       "status": "approved",
       "poll": {
-        "status": "pending"
+        "status": "polled",
+        "percent": 0.2,
+        "source": {
+          "title": "Mean of 5 polls published 2026-09-16 to 2026-10-02",
+          "url": "https://www.gov.il/he/Departments/DynamicCollectors/knesset_election_polls_26",
+          "publisher": "Central Elections Committee poll repository (constituent poll reports)",
+          "accessed": "2026-10-06"
+        },
+        "asOf": "2026-10-02",
+        "method": "Arithmetic mean of the published vote-share figures of the 5 most recent polls in the window that publish a percentage for this list (3 pollsters), rounded half-up to one decimal. Percent of respondents as published by each poll (the raw/gross vote-intention share reported to the CEC or in the publisher's article). For Maagar Mochot's main table the share among respondents who named a party (\"בעלי הדעה\") is used; its page listing smaller lists gives only a raw share. Channel 13's CEC reports give only separate, unweighted sub-sample shares that Channel 13 says do not represent the national vote, so a Channel 13 poll is used only where its article publishes a national percentage. Seat-only polls and polls reporting a list only as 'below 1%' / 'below the threshold' are not averaged (see research/poll-snapshot.md). Window: polls first published 2026-09-15 to 2026-10-05 and at least 24h before the 2026-10-06 snapshot.",
+        "constituentPolls": [
+          {
+            "pollster": "Lazar Research (led by Dr. Menachem Lazar)",
+            "commissionedBy": "Maariv",
+            "media": "Maariv",
+            "fieldworkDates": "2026-09-30–10-01",
+            "publishedOn": "2026-10-02",
+            "population": "Representative sample of Israeli citizens 18+, Jews and Arabs",
+            "sampleSize": 602,
+            "marginOfError": "±4.0%",
+            "percent": 0.3,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election90/he/Survey_4177.pdf"
+          },
+          {
+            "pollster": "Lazar Research (led by Dr. Menachem Lazar)",
+            "commissionedBy": "Maariv",
+            "media": "Maariv",
+            "fieldworkDates": "2026-09-23–24",
+            "publishedOn": "2026-09-25",
+            "population": "Representative sample of Israeli citizens 18+, Jews and Arabs",
+            "sampleSize": 610,
+            "marginOfError": "±4.4%",
+            "percent": 0.2,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election83/he/Survey_4164.pdf"
+          },
+          {
+            "pollster": "Midgam Consulting & Research (led by Mano Geva)",
+            "commissionedBy": "The News Company (Channel 12 News)",
+            "media": "Channel 12 (N12)",
+            "fieldworkDates": "2026-09-22",
+            "publishedOn": "2026-09-22",
+            "population": "All Israelis aged 18+ eligible to vote",
+            "sampleSize": 501,
+            "marginOfError": "±4.4%",
+            "percent": 0.0,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election81/he/Survey_4162.pdf"
+          },
+          {
+            "pollster": "Lazar Research (led by Dr. Menachem Lazar)",
+            "commissionedBy": "Maariv",
+            "media": "Maariv",
+            "fieldworkDates": "2026-09-16–17",
+            "publishedOn": "2026-09-18",
+            "population": "Representative sample of Israeli citizens 18+, Jews and Arabs",
+            "sampleSize": 600,
+            "marginOfError": "±4.4%",
+            "percent": 0.4,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election77/he/Survey_4158.pdf"
+          },
+          {
+            "pollster": "Maagar Mochot (led by Prof. Yitzhak Katz)",
+            "commissionedBy": "Channel 16",
+            "media": "Channel 16",
+            "fieldworkDates": "2026-09-15–16",
+            "publishedOn": "2026-09-16",
+            "population": "Israeli adult population aged 18+",
+            "sampleSize": 535,
+            "marginOfError": "±4.2%",
+            "percent": 0.0,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election74/he/Survey_4151.pdf"
+          }
+        ]
       },
       "sources": [
         {
@@ -1833,7 +3335,30 @@
       ],
       "status": "approved",
       "poll": {
-        "status": "pending"
+        "status": "polled",
+        "percent": 0.1,
+        "source": {
+          "title": "Single poll published 2026-09-16",
+          "url": "https://www.gov.il/he/Departments/DynamicCollectors/knesset_election_polls_26",
+          "publisher": "Central Elections Committee poll repository (constituent poll reports)",
+          "accessed": "2026-10-06"
+        },
+        "asOf": "2026-09-16",
+        "method": "Arithmetic mean of the published vote-share figures of the 1 most recent poll in the window that publish a percentage for this list (1 pollster), rounded half-up to one decimal. Only 1 poll in the window published a percentage for this list. Percent of respondents as published by each poll (the raw/gross vote-intention share reported to the CEC or in the publisher's article). For Maagar Mochot's main table the share among respondents who named a party (\"בעלי הדעה\") is used; its page listing smaller lists gives only a raw share. Channel 13's CEC reports give only separate, unweighted sub-sample shares that Channel 13 says do not represent the national vote, so a Channel 13 poll is used only where its article publishes a national percentage. Seat-only polls and polls reporting a list only as 'below 1%' / 'below the threshold' are not averaged (see research/poll-snapshot.md). Window: polls first published 2026-09-15 to 2026-10-05 and at least 24h before the 2026-10-06 snapshot.",
+        "constituentPolls": [
+          {
+            "pollster": "Maagar Mochot (led by Prof. Yitzhak Katz)",
+            "commissionedBy": "Channel 16",
+            "media": "Channel 16",
+            "fieldworkDates": "2026-09-15–16",
+            "publishedOn": "2026-09-16",
+            "population": "Israeli adult population aged 18+",
+            "sampleSize": 535,
+            "marginOfError": "±4.2%",
+            "percent": 0.1,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election74/he/Survey_4151.pdf"
+          }
+        ]
       },
       "sources": [
         {
@@ -1889,7 +3414,78 @@
       ],
       "status": "approved",
       "poll": {
-        "status": "pending"
+        "status": "polled",
+        "percent": 5.8,
+        "source": {
+          "title": "Mean of 5 polls published 2026-09-28 to 2026-10-02",
+          "url": "https://www.gov.il/he/Departments/DynamicCollectors/knesset_election_polls_26",
+          "publisher": "Central Elections Committee poll repository (constituent poll reports)",
+          "accessed": "2026-10-06"
+        },
+        "asOf": "2026-10-02",
+        "method": "Arithmetic mean of the published vote-share figures of the 5 most recent polls in the window that publish a percentage for this list (4 pollsters), rounded half-up to one decimal. Percent of respondents as published by each poll (the raw/gross vote-intention share reported to the CEC or in the publisher's article). For Maagar Mochot's main table the share among respondents who named a party (\"בעלי הדעה\") is used; its page listing smaller lists gives only a raw share. Channel 13's CEC reports give only separate, unweighted sub-sample shares that Channel 13 says do not represent the national vote, so a Channel 13 poll is used only where its article publishes a national percentage. Seat-only polls and polls reporting a list only as 'below 1%' / 'below the threshold' are not averaged (see research/poll-snapshot.md). Window: polls first published 2026-09-15 to 2026-10-05 and at least 24h before the 2026-10-06 snapshot.",
+        "constituentPolls": [
+          {
+            "pollster": "Lazar Research (led by Dr. Menachem Lazar)",
+            "commissionedBy": "Maariv",
+            "media": "Maariv",
+            "fieldworkDates": "2026-09-30–10-01",
+            "publishedOn": "2026-10-02",
+            "population": "Representative sample of Israeli citizens 18+, Jews and Arabs",
+            "sampleSize": 602,
+            "marginOfError": "±4.0%",
+            "percent": 6.0,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election90/he/Survey_4177.pdf"
+          },
+          {
+            "pollster": "Next Data",
+            "commissionedBy": "Channel 14 (Arutz Achshav 14)",
+            "media": "Channel 14",
+            "fieldworkDates": "2026-10-01",
+            "publishedOn": "2026-10-01",
+            "population": "Adults 18+ eligible to vote, representative sample of Israeli citizens",
+            "sampleSize": 2145,
+            "marginOfError": "±2.1%",
+            "percent": 5.1,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election91/he/Survey_4176.pdf"
+          },
+          {
+            "pollster": "Direct Polls (led by Tzuriel Sharon)",
+            "commissionedBy": "i24NEWS (Middle East News 24 Ltd.)",
+            "media": "i24NEWS",
+            "fieldworkDates": "2026-10-01",
+            "publishedOn": "2026-10-01",
+            "population": "National representative sample of Israel's population aged 18+, Jews and Arabs",
+            "sampleSize": 504,
+            "marginOfError": "±4.3%",
+            "percent": 6.5,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election92/he/Survey_4178.pdf"
+          },
+          {
+            "pollster": "Maagar Mochot (led by Prof. Yitzhak Katz)",
+            "commissionedBy": "Channel 16",
+            "media": "Channel 16",
+            "fieldworkDates": "2026-09-29",
+            "publishedOn": "2026-09-29",
+            "population": "Israeli adult population aged 18+",
+            "sampleSize": 550,
+            "marginOfError": "±4.2%",
+            "percent": 6.0,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election88/he/Survey_4173.pdf"
+          },
+          {
+            "pollster": "Next Data",
+            "commissionedBy": "Channel 14 (Arutz Achshav 14)",
+            "media": "Channel 14",
+            "fieldworkDates": "2026-09-28",
+            "publishedOn": "2026-09-28",
+            "population": "Adults 18+ eligible to vote, representative sample of Israeli citizens",
+            "sampleSize": 573,
+            "marginOfError": "±4.1%",
+            "percent": 5.2,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election89/he/Survey_4175.pdf"
+          }
+        ]
       },
       "sources": [
         {
@@ -1971,7 +3567,30 @@
       ],
       "status": "approved",
       "poll": {
-        "status": "pending"
+        "status": "polled",
+        "percent": 0.3,
+        "source": {
+          "title": "Single poll published 2026-09-16",
+          "url": "https://www.gov.il/he/Departments/DynamicCollectors/knesset_election_polls_26",
+          "publisher": "Central Elections Committee poll repository (constituent poll reports)",
+          "accessed": "2026-10-06"
+        },
+        "asOf": "2026-09-16",
+        "method": "Arithmetic mean of the published vote-share figures of the 1 most recent poll in the window that publish a percentage for this list (1 pollster), rounded half-up to one decimal. Only 1 poll in the window published a percentage for this list. Direct Polls/i24NEWS (2026-09-17) named it only as below 1% and Channel 13 listed it only inside sub-sample tables, so neither is averaged. Percent of respondents as published by each poll (the raw/gross vote-intention share reported to the CEC or in the publisher's article). For Maagar Mochot's main table the share among respondents who named a party (\"בעלי הדעה\") is used; its page listing smaller lists gives only a raw share. Channel 13's CEC reports give only separate, unweighted sub-sample shares that Channel 13 says do not represent the national vote, so a Channel 13 poll is used only where its article publishes a national percentage. Seat-only polls and polls reporting a list only as 'below 1%' / 'below the threshold' are not averaged (see research/poll-snapshot.md). Window: polls first published 2026-09-15 to 2026-10-05 and at least 24h before the 2026-10-06 snapshot.",
+        "constituentPolls": [
+          {
+            "pollster": "Maagar Mochot (led by Prof. Yitzhak Katz)",
+            "commissionedBy": "Channel 16",
+            "media": "Channel 16",
+            "fieldworkDates": "2026-09-15–16",
+            "publishedOn": "2026-09-16",
+            "population": "Israeli adult population aged 18+",
+            "sampleSize": 535,
+            "marginOfError": "±4.2%",
+            "percent": 0.3,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election74/he/Survey_4151.pdf"
+          }
+        ]
       },
       "sources": [
         {
@@ -2027,7 +3646,78 @@
       ],
       "status": "approved",
       "poll": {
-        "status": "pending"
+        "status": "polled",
+        "percent": 6.0,
+        "source": {
+          "title": "Mean of 5 polls published 2026-09-28 to 2026-10-02",
+          "url": "https://www.gov.il/he/Departments/DynamicCollectors/knesset_election_polls_26",
+          "publisher": "Central Elections Committee poll repository (constituent poll reports)",
+          "accessed": "2026-10-06"
+        },
+        "asOf": "2026-10-02",
+        "method": "Arithmetic mean of the published vote-share figures of the 5 most recent polls in the window that publish a percentage for this list (4 pollsters), rounded half-up to one decimal. Percent of respondents as published by each poll (the raw/gross vote-intention share reported to the CEC or in the publisher's article). For Maagar Mochot's main table the share among respondents who named a party (\"בעלי הדעה\") is used; its page listing smaller lists gives only a raw share. Channel 13's CEC reports give only separate, unweighted sub-sample shares that Channel 13 says do not represent the national vote, so a Channel 13 poll is used only where its article publishes a national percentage. Seat-only polls and polls reporting a list only as 'below 1%' / 'below the threshold' are not averaged (see research/poll-snapshot.md). Window: polls first published 2026-09-15 to 2026-10-05 and at least 24h before the 2026-10-06 snapshot.",
+        "constituentPolls": [
+          {
+            "pollster": "Lazar Research (led by Dr. Menachem Lazar)",
+            "commissionedBy": "Maariv",
+            "media": "Maariv",
+            "fieldworkDates": "2026-09-30–10-01",
+            "publishedOn": "2026-10-02",
+            "population": "Representative sample of Israeli citizens 18+, Jews and Arabs",
+            "sampleSize": 602,
+            "marginOfError": "±4.0%",
+            "percent": 5.5,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election90/he/Survey_4177.pdf"
+          },
+          {
+            "pollster": "Next Data",
+            "commissionedBy": "Channel 14 (Arutz Achshav 14)",
+            "media": "Channel 14",
+            "fieldworkDates": "2026-10-01",
+            "publishedOn": "2026-10-01",
+            "population": "Adults 18+ eligible to vote, representative sample of Israeli citizens",
+            "sampleSize": 2145,
+            "marginOfError": "±2.1%",
+            "percent": 6.1,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election91/he/Survey_4176.pdf"
+          },
+          {
+            "pollster": "Direct Polls (led by Tzuriel Sharon)",
+            "commissionedBy": "i24NEWS (Middle East News 24 Ltd.)",
+            "media": "i24NEWS",
+            "fieldworkDates": "2026-10-01",
+            "publishedOn": "2026-10-01",
+            "population": "National representative sample of Israel's population aged 18+, Jews and Arabs",
+            "sampleSize": 504,
+            "marginOfError": "±4.3%",
+            "percent": 6.1,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election92/he/Survey_4178.pdf"
+          },
+          {
+            "pollster": "Maagar Mochot (led by Prof. Yitzhak Katz)",
+            "commissionedBy": "Channel 16",
+            "media": "Channel 16",
+            "fieldworkDates": "2026-09-29",
+            "publishedOn": "2026-09-29",
+            "population": "Israeli adult population aged 18+",
+            "sampleSize": 550,
+            "marginOfError": "±4.2%",
+            "percent": 6.0,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election88/he/Survey_4173.pdf"
+          },
+          {
+            "pollster": "Next Data",
+            "commissionedBy": "Channel 14 (Arutz Achshav 14)",
+            "media": "Channel 14",
+            "fieldworkDates": "2026-09-28",
+            "publishedOn": "2026-09-28",
+            "population": "Adults 18+ eligible to vote, representative sample of Israeli citizens",
+            "sampleSize": 573,
+            "marginOfError": "±4.1%",
+            "percent": 6.4,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election89/he/Survey_4175.pdf"
+          }
+        ]
       },
       "sources": [
         {
@@ -2082,7 +3772,78 @@
       ],
       "status": "approved",
       "poll": {
-        "status": "pending"
+        "status": "polled",
+        "percent": 0.4,
+        "source": {
+          "title": "Mean of 5 polls published 2026-09-25 to 2026-10-02",
+          "url": "https://www.gov.il/he/Departments/DynamicCollectors/knesset_election_polls_26",
+          "publisher": "Central Elections Committee poll repository (constituent poll reports)",
+          "accessed": "2026-10-06"
+        },
+        "asOf": "2026-10-02",
+        "method": "Arithmetic mean of the published vote-share figures of the 5 most recent polls in the window that publish a percentage for this list (3 pollsters), rounded half-up to one decimal. Percent of respondents as published by each poll (the raw/gross vote-intention share reported to the CEC or in the publisher's article). For Maagar Mochot's main table the share among respondents who named a party (\"בעלי הדעה\") is used; its page listing smaller lists gives only a raw share. Channel 13's CEC reports give only separate, unweighted sub-sample shares that Channel 13 says do not represent the national vote, so a Channel 13 poll is used only where its article publishes a national percentage. Seat-only polls and polls reporting a list only as 'below 1%' / 'below the threshold' are not averaged (see research/poll-snapshot.md). Window: polls first published 2026-09-15 to 2026-10-05 and at least 24h before the 2026-10-06 snapshot.",
+        "constituentPolls": [
+          {
+            "pollster": "Lazar Research (led by Dr. Menachem Lazar)",
+            "commissionedBy": "Maariv",
+            "media": "Maariv",
+            "fieldworkDates": "2026-09-30–10-01",
+            "publishedOn": "2026-10-02",
+            "population": "Representative sample of Israeli citizens 18+, Jews and Arabs",
+            "sampleSize": 602,
+            "marginOfError": "±4.0%",
+            "percent": 0.4,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election90/he/Survey_4177.pdf"
+          },
+          {
+            "pollster": "Next Data",
+            "commissionedBy": "Channel 14 (Arutz Achshav 14)",
+            "media": "Channel 14",
+            "fieldworkDates": "2026-10-01",
+            "publishedOn": "2026-10-01",
+            "population": "Adults 18+ eligible to vote, representative sample of Israeli citizens",
+            "sampleSize": 2145,
+            "marginOfError": "±2.1%",
+            "percent": 0.1,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election91/he/Survey_4176.pdf"
+          },
+          {
+            "pollster": "Next Data",
+            "commissionedBy": "Channel 14 (Arutz Achshav 14)",
+            "media": "Channel 14",
+            "fieldworkDates": "2026-09-28",
+            "publishedOn": "2026-09-28",
+            "population": "Adults 18+ eligible to vote, representative sample of Israeli citizens",
+            "sampleSize": 573,
+            "marginOfError": "±4.1%",
+            "percent": 0.2,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election89/he/Survey_4175.pdf"
+          },
+          {
+            "pollster": "Kantar Israel",
+            "commissionedBy": "Kan (Israeli Public Broadcasting Corporation)",
+            "media": "Kan 11",
+            "fieldworkDates": "2026-09-27",
+            "publishedOn": "2026-09-27",
+            "population": "National representative sample of Israel's population aged 18+, Jews and Arabs",
+            "sampleSize": 552,
+            "marginOfError": "±4.2%",
+            "percent": 0.4,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election93/he/Survey_4179.pdf"
+          },
+          {
+            "pollster": "Lazar Research (led by Dr. Menachem Lazar)",
+            "commissionedBy": "Maariv",
+            "media": "Maariv",
+            "fieldworkDates": "2026-09-23–24",
+            "publishedOn": "2026-09-25",
+            "population": "Representative sample of Israeli citizens 18+, Jews and Arabs",
+            "sampleSize": 610,
+            "marginOfError": "±4.4%",
+            "percent": 0.7,
+            "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election83/he/Survey_4164.pdf"
+          }
+        ]
       },
       "sources": [
         {
