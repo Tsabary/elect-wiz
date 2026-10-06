@@ -1,6 +1,10 @@
 # Site copy review (Task 2.9)
 
-> **STATUS: AWAITING OWNER APPROVAL.** This copy is written into `messages/en.json` and `messages/he.json` and used by the site, but it is **not approved**. Task 2.9 stays unticked until the owner approves it. To approve, record the approval and date here, e.g. `Approved by the owner on YYYY-MM-DD`, with any requested changes applied first.
+> **STATUS: Approved by the owner on 2026-10-06. The owner did not review every string; they will report anything they see while browsing.**
+>
+> Decisions recorded with the approval (2026-10-06):
+> - **No contact channel.** The owner decided the site will have no contact email or other contact channel, ever. The Privacy & Terms "Contact" section and both contact-address placeholders were removed, and the How this works "Corrections" section no longer invites users to report errors (it keeps only the statement about how research pages are corrected). This resolves the contact-address item below.
+> - **Working name kept for now.** "Party Matcher" / "התאמת מפלגות" stays as the site name for now.
 
 Prepared 2026-10-06. Covers all non-corpus copy: intro, How this works, Privacy & Terms, disclaimers, weak-match message, threshold and not-polled wording, poll-blackout wording, error messages and every interface string (including screen-reader-only labels). The issues, options and research text are corpus content, reviewed separately (Task 1.5 and Phase 3).
 
@@ -10,8 +14,8 @@ Prepared 2026-10-06. Covers all non-corpus copy: intro, How this works, Privacy 
    - How this works → Matching: the matching system description, after D1.
    - Privacy & Terms → AI provider: provider name, retention terms link, after D1.
    - Privacy & Terms → Abuse protection: which service, what it processes, cookies, after D1. The "one cookie" sentence must be re-checked then.
-   - How this works → Corrections and Privacy & Terms → Contact: **an anonymous contact address (not linked to the operator) is needed from the owner before launch** (recommended by research/legal-findings.md §3.5–3.6).
-2. **Site name** "Party Matcher" / "התאמת מפלגות" is a working name. Change it here if you prefer another.
+   - ~~How this works → Corrections and Privacy & Terms → Contact: an anonymous contact address is needed from the owner before launch~~ **Resolved 2026-10-06: no contact channel.** The placeholders and the Contact section were removed.
+2. **Site name** "Party Matcher" / "התאמת מפלגות" is a working name. **Kept for now (owner, 2026-10-06).**
 3. **Hebrew address form:** the Hebrew uses impersonal/infinitive forms ("מדרגים", "לוחצים") and gender-ambiguous "שלך" to stay gender-neutral.
 4. **Honesty statements** worth confirming: the research is described as compiled with AI research tools, checked by a separate AI step, and reviewed before publication; "we never store your answers" (with the AI provider's own retention terms disclosed separately).
 
@@ -27,12 +31,12 @@ Prepared 2026-10-06. Covers all non-corpus copy: intro, How this works, Privacy 
 - Hebrew gendered spelling fixed ("אלייך").
 - Neutrality statement: parties don't "review or approve" content (instead of "in advance").
 - English "until polls close" → "until voting ends" (avoids ambiguity with opinion polls).
-- Contact placeholders now say the address must be anonymous.
+- Contact placeholders now say the address must be anonymous. (Superseded 2026-10-06: the contact placeholders were removed; no contact channel.)
 - Optional: Hebrew register smoothed ("של אילו מפלגות העמדות המתועדות…"), "closest to you" → "closest to your positions", "sent once" → "sent only when you ask for your result", and a plural-address slip in the ranking instructions fixed.
 
 **Hebrew/English parity check.** Verdict: no must-fix issues. Its 7 should-fix findings were all applied (English "recommended party" wording; Hebrew gendered spelling; the Hebrew "switch to Hebrew" label made gender-neutral "מעבר לעברית"; the research-link aria label now starts with the visible text in both languages; English "anything else" hint word order; Hebrew share text names the site in quotes; Hebrew "גישה מדינית" → "גישה למדיניות"). Optional findings applied: "המחקר נכון לתאריך", English announcement quotes, "לאחר מכן"; its suggestion for the neutrality paragraph was superseded by the neutrality reviewer's wording.
 
-**Automated parity guard.** `messages/messages.test.ts` fails the build's test run if the two files differ in keys or in ICU arguments/tags, if any message is empty, or if any message contains an email address or phone number.
+**Automated parity guard.** `messages/messages.test.ts` fails the build's test run if the two files differ in keys or in ICU arguments/tags, if any message is empty, or if any message contains an email address or phone number. Since 2026-10-06 it also fails if a Privacy & Terms "contact" section or contact-inviting wording comes back.
 
 ## The copy
 
@@ -152,8 +156,7 @@ Keys are the message IDs in the code. `{x}` are values filled in at runtime; `<p
 | `sections.neutrality.paragraphs[0]` | This tool has no party affiliation and no ads. No party funds it, influences it, or reviews or approves its content. All parties are researched with the same structure and the same evidence standards, and they are listed alphabetically, never by size or polls. | לכלי הזה אין זיקה מפלגתית ואין בו פרסומות. אף מפלגה לא מממנת אותו, לא משפיעה עליו ולא בודקת או מאשרת את התוכן שלו. כל המפלגות נחקרו באותו מבנה ולפי אותם סטנדרטים של ראיות, והן מוצגות לפי סדר האלף־בית, אף פעם לא לפי גודל או סקרים. |
 | `sections.neutrality.paragraphs[1]` | We never publish how many people matched with which party. | אנחנו לא מפרסמים אף פעם כמה אנשים קיבלו התאמה לכל מפלגה. |
 | `sections.corrections.title` | Corrections | תיקונים |
-| `sections.corrections.paragraphs[0]` | If you find a factual error in a research page, please let us know. Research pages are corrected only to fix errors, and the date on the page shows when it was last researched. | מצאת טעות עובדתית בדף מחקר? נשמח לדעת. דפי מחקר מתוקנים רק כדי לתקן טעויות, והתאריך בדף מראה מתי נחקר לאחרונה. |
-| `sections.corrections.placeholder` | [Anonymous contact address (not linked to the operator’s identity) to be added before launch.] | [כתובת אנונימית ליצירת קשר (שאינה מזהה את מפעיל האתר) תתווסף לפני העלייה לאוויר.] |
+| `sections.corrections.paragraphs[0]` | Research pages are corrected only to fix errors. The date on each page shows when it was last researched. | דפי מחקר מתוקנים רק כדי לתקן טעויות. התאריך בכל דף מראה מתי נחקר לאחרונה. |
 
 ### Privacy & Terms page
 
@@ -188,9 +191,6 @@ Keys are the message IDs in the code. `{x}` are values filled in at runtime; `<p
 | `sections.terms.paragraphs[0]` | This tool is a decision aid, provided for information only. It is not a recommendation of who to vote for, and it is not affiliated with any party, list or candidate. | הכלי הזה הוא כלי עזר להחלטה, ומוצע לצורכי מידע בלבד. הוא לא המלצה למי להצביע, ואין לו קשר לשום מפלגה, רשימה או מועמד. |
 | `sections.terms.paragraphs[1]` | We work to keep the research accurate, but we can’t guarantee it is complete or free of errors. The research reflects public information as of the date shown on each page. | אנחנו משתדלים לשמור על דיוק המחקר, אבל לא יכולים להבטיח שהוא שלם או נקי מטעויות. המחקר משקף מידע פומבי נכון לתאריך שמופיע בכל דף. |
 | `sections.terms.paragraphs[2]` | You may share links to the site and its pages freely. | מותר לשתף קישורים לאתר ולדפים שלו באופן חופשי. |
-| `sections.contact.title` | Contact | יצירת קשר |
-| `sections.contact.paragraphs[0]` | Questions about privacy, or a factual error to report? Get in touch. | שאלות על פרטיות, או טעות עובדתית שרוצים לדווח עליה? אפשר לפנות אלינו. |
-| `sections.contact.placeholder` | [Anonymous contact address (not linked to the operator’s identity) to be added before launch.] | [כתובת אנונימית ליצירת קשר (שאינה מזהה את מפעיל האתר) תתווסף לפני העלייה לאוויר.] |
 
 ### Parties index
 

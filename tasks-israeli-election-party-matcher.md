@@ -204,7 +204,7 @@ Each task is self-contained. From the task alone you should know what to do, how
 - **Notes:** The matching section of How-this-works and the provider name on Privacy & Terms are finalized after D1. Mark them with clear placeholders.
 - **Implementation notes:**
   - Header (Home, Parties, How this works + language switch), footer (neutrality line, Privacy & Terms, How this works, Parties), skip link. A preview banner shows while the fictional corpus and/or mock matcher are active, so sample content is never mistaken for real.
-  - Static copy pages render from `messages/*.json` via `components/layout/prose-page.tsx`. Post-D1 items (matching method, AI provider name) and the not-yet-existing anonymous contact address are rendered as dashed, `data-placeholder="post-d1"` boxes.
+  - Static copy pages render from `messages/*.json` via `components/layout/prose-page.tsx`. Post-D1 items (matching method, AI provider name, abuse protection) are rendered as dashed, `data-placeholder="post-d1"` boxes. (The contact-address placeholder was removed on 2026-10-06: no contact channel.)
   - Metadata: per-page title/description, canonical, `hreflang` alternates (`he`, `en`, `x-default`), Open Graph/X with a generated, localized site preview image. `metadataBase` comes from `NEXT_PUBLIC_SITE_URL` or Vercel's URL env vars. No author/creator/publisher metadata.
   - Anonymity check: `tests/e2e/pages.spec.ts` ("operator anonymity") scans rendered HTML for author metadata, `mailto:` and email addresses, plus any extra terms given in the (never committed) `OPERATOR_IDENTITY_TERMS` env var. `messages/messages.test.ts` checks the copy for emails/phone numbers.
   - Added a localized 404 (`app/[locale]/not-found.tsx` + catch-all).
@@ -337,7 +337,8 @@ Each task is self-contained. From the task alone you should know what to do, how
 - **Implementation notes:** instants default to legal-findings/ground-truth values (`POLL_BLACKOUT_START`, `ELECTION_CLOSE` env overrides). Blackout never switches off (archive stays poll-free, per legal-findings §3.4). Clock override (non-production only): `CLOCK_OVERRIDE` env for server rendering; per browser, the `clock-override` cookie (set by visiting any page with `?clock=<ISO>`, cleared with `?clock=off`), honoured by the client guards (`components/time/time-modes.tsx`) and the match route (also an `x-clock-override` header). The client re-checks every 15 s and on tab focus. Note: whether overrides are allowed is baked into statically generated pages at build time, so a local check needs `APP_ENV=test npm run build` (Vercel previews get `VERCEL_ENV=preview` automatically).
 
 ### Task 2.9: Write the site copy in both languages and get owner approval
-- [ ] *(Copy drafted in both languages, neutrality review and parity check done by separate agents, all should-fix findings applied, written to `messages/*.json`. AWAITING OWNER APPROVAL: see `research/review/site-copy-review.md`.)*
+- [x] *(Copy drafted in both languages, neutrality review and parity check done by separate agents, all should-fix findings applied, written to `messages/*.json`.)*
+  - *Approved by the owner on 2026-10-06 (not every string reviewed; the owner will report issues seen while browsing). Owner decision: no contact channel, ever; contact placeholders and the Privacy & Terms Contact section removed. See `research/review/site-copy-review.md`.*
 - **What:**
   - Draft all non-corpus copy in Hebrew and English: intro, How-this-works, Privacy & Terms (no answer storage, anonymous result counts only, processing by a third-party AI provider with the name to be filled after D1), disclaimer, weak-match message, threshold and not-polled wording, error messages, and all interface strings.
   - Use the glossary terms.

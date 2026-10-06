@@ -53,4 +53,14 @@ describe("site copy parity", () => {
       expect(v).not.toMatch(/\+?972[\d -]{7,}|\b0\d{1,2}-?\d{7}\b/);
     }
   });
+
+  it("offers no contact channel (owner decision, 2026-10-06)", () => {
+    for (const tree of [en, he] as Tree[]) {
+      const privacy = (tree.Privacy as Tree).sections as Tree;
+      expect(privacy).not.toHaveProperty("contact");
+    }
+    for (const v of Object.values(flatEn)) {
+      expect(v).not.toMatch(/contact address|get in touch|let us know/i);
+    }
+  });
 });

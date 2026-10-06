@@ -61,6 +61,8 @@ for (const locale of ["he", "en"] as const) {
       await expect(page.locator('#matching [data-placeholder="post-d1"]')).toBeVisible();
       await page.goto(`/${locale}/privacy`);
       await expect(page.locator('#ai [data-placeholder="post-d1"]')).toBeVisible();
+      // No contact channel (owner decision, 2026-10-06).
+      await expect(page.locator("#contact")).toHaveCount(0);
     });
   });
 }

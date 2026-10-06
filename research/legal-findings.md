@@ -125,6 +125,8 @@ Paraphrase: from the end of the Friday before the polls open until the polls clo
 
 **PRODUCT IMPACT (recommended, not strictly required):** publish the methodology and research sources, treat all lists the same way (same fields, same tone), add a non-partisan / no-affiliation statement, and provide a contact channel so parties can report factual errors. These steps strengthen the "informational" characterisation if a party petitions the CEC chair.
 
+> **Owner decision (2026-10-06):** the site will have no contact channel. The other steps above (methodology, sources, uniform treatment, neutrality statement) are implemented.
+
 ### 3.6 Anonymity and identification — Propaganda Law s.2א1 (transparency in election propaganda, added 2022)
 
 **Text, paraphrased:** (א) No person may publish an "election ad" (מודעת בחירות) unless it carries the name and contact details of the person responsible for ordering it (plus the printer, for print). If that person acted on behalf of a contestant or another body, the ad must also carry the contestant's or body's name and the list's letter or name. (ב) "מודעת בחירות" means **(1)** election propaganda by a contestant, a body linked to a faction, or a "body active in elections" (גוף פעיל בבחירות), or someone acting for them; **or (2) election propaganda content published for payment**.
@@ -138,6 +140,7 @@ Background: in February 2019 CEC chair Justice Melcer banned anonymous online el
 **PRODUCT IMPACT:**
 - Don't run paid promotion that names, shows or favours any party unless the owner is willing to add an identifying name and contact. Promotion that stays generic ("a neutral tool to compare party positions") is lower risk. If paid ads are planned, get legal confirmation first.
 - Provide at least an anonymous contact address and a neutrality statement on the site.
+  - *Owner decision (2026-10-06): no contact channel, ever. The neutrality statement is published; no contact address will be added.*
 
 **Confidence:** Medium.
 
@@ -195,7 +198,7 @@ Background: in February 2019 CEC chair Justice Melcer banned anonymous online el
 4. **Make sure the AI cannot emit poll data** during the blackout: strip poll data from its context or post-filter its output.
 5. **Attribute polls:** for every poll in the average, give the pollster, commissioner, fieldwork dates, n and margin of error, with links. Include polls only after 24h have passed since their first publication.
 6. **Never publish the anonymous result tallies.** If they were ever published, s.16ה(ד) would require a prominent non-scientific disclaimer, and the blackout would apply.
-7. **Anonymity:** fine for an unpaid, neutral tool. **No paid promotion** that names or favours parties without identifying who ordered it. Add an anonymous contact address and a neutrality and methodology statement.
+7. **Anonymity:** fine for an unpaid, neutral tool. **No paid promotion** that names or favours parties without identifying who ordered it. Add an anonymous contact address and a neutrality and methodology statement. *(Owner decision, 2026-10-06: no contact channel; the neutrality and methodology statement is published.)*
 8. **Ballot letters and party marks:** use them factually only. (Party logos raise trademark and copyright questions outside election law. Plain text names are safest.)
 9. **Election-over mode** at `2026-10-27T22:00:00+02:00`. Preferably never restore poll figures in the archive.
 10. **Privacy:** make sure answers are never logged together with IPs or cookie IDs (hosting, analytics, AI provider). Add a privacy notice.

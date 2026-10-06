@@ -15,7 +15,6 @@ const SECTIONS = [
   "abuse",
   "hosting",
   "terms",
-  "contact",
 ];
 
 export async function generateMetadata({

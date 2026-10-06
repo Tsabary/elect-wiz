@@ -125,9 +125,8 @@
       "corrections": {
         "title": "Corrections",
         "paragraphs": [
-          "If you find a factual error in a research page, please let us know. Research pages are corrected only to fix errors, and the date on the page shows when it was last researched."
-        ],
-        "placeholder": "[Anonymous contact address (not linked to the operator’s identity) to be added before launch.]"
+          "Research pages are corrected only to fix errors. The date on each page shows when it was last researched."
+        ]
       }
     }
   },
@@ -201,11 +200,6 @@
           "We work to keep the research accurate, but we can’t guarantee it is complete or free of errors. The research reflects public information as of the date shown on each page.",
           "You may share links to the site and its pages freely."
         ]
-      },
-      "contact": {
-        "title": "Contact",
-        "paragraphs": ["Questions about privacy, or a factual error to report? Get in touch."],
-        "placeholder": "[Anonymous contact address (not linked to the operator’s identity) to be added before launch.]"
       }
     }
   },
