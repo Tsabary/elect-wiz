@@ -500,7 +500,7 @@ Each task is self-contained. From the task alone you should know what to do, how
 ### Task 5.2: Prototype the candidates and produce the D1 decision memo
 - [ ]
 - **What:**
-  - Build throwaway prototypes of the matching candidates outside the production code path: architecture A (single holistic call) and architecture B (precomputed party × option alignment, per-request mapping, deterministic aggregation, explanation for the top 3–4). Run them on at least the candidate models the plan lists (Claude Opus 5.5 and Sonnet 5.5), plus any other provider the owner asks to include.
+  - Build throwaway prototypes of the matching candidates outside the production code path: architecture A (single holistic call) and architecture B (precomputed party × option alignment, per-request mapping, deterministic aggregation, explanation for the top 3–4). Run them on at least the candidate models the plan lists (Claude Opus 5.5 and Sonnet 5.5), plus any other provider the owner asks to include. Every candidate must include the owner-required answer-normalization step (plan, Decisions §1): an earlier AI step that turns each raw answer (e.g., "all of the above", "mix of 1 and 3") into explicit positions before the matching step sees anything.
   - Run the eval set on each combination, measuring quality, grounding, consistency, latency and cost per result.
   - Write `research/d1-decision.md` covering:
     - how research would be stored and fed to matching;
