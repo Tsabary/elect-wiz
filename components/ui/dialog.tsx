@@ -39,10 +39,11 @@ function DialogOverlay({ className, ...props }: DialogPrimitive.Backdrop.Props) 
 function DialogContent({
   className,
   children,
-  showCloseButton = true,
+  closeLabel,
   ...props
 }: DialogPrimitive.Popup.Props & {
-  showCloseButton?: boolean;
+  /** Accessible label of the corner close button; the button is shown only when set (localized by the caller). */
+  closeLabel?: string;
 }) {
   return (
     <DialogPortal>
@@ -56,13 +57,13 @@ function DialogContent({
         {...props}
       >
         {children}
-        {showCloseButton && (
+        {closeLabel && (
           <DialogPrimitive.Close
             data-slot="dialog-close"
             render={<Button variant="ghost" className="absolute end-2 top-2" size="icon-sm" />}
           >
             <XIcon />
-            <span className="sr-only">Close</span>
+            <span className="sr-only">{closeLabel}</span>
           </DialogPrimitive.Close>
         )}
       </DialogPrimitive.Popup>
@@ -78,11 +79,12 @@ function DialogHeader({ className, ...props }: React.ComponentProps<"div">) {
 
 function DialogFooter({
   className,
-  showCloseButton = false,
+  closeLabel,
   children,
   ...props
 }: React.ComponentProps<"div"> & {
-  showCloseButton?: boolean;
+  /** Label of an optional footer close button (localized by the caller). */
+  closeLabel?: string;
 }) {
   return (
     <div
@@ -94,8 +96,10 @@ function DialogFooter({
       {...props}
     >
       {children}
-      {showCloseButton && (
-        <DialogPrimitive.Close render={<Button variant="outline" />}>Close</DialogPrimitive.Close>
+      {closeLabel && (
+        <DialogPrimitive.Close render={<Button variant="outline" />}>
+          {closeLabel}
+        </DialogPrimitive.Close>
       )}
     </div>
   );

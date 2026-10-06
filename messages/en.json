@@ -1,36 +1,408 @@
 {
   "Metadata": {
     "siteName": "Party Matcher",
-    "title": "Knesset Election Party Matcher",
-    "description": "A non-partisan tool that helps Israeli voters find the party whose positions best match their own."
+    "title": "Party Matcher: Knesset election 2026",
+    "description": "A non-partisan tool for Israeli voters. Rank the issues that matter to you, say where you stand, and see which parties’ documented positions are closest to yours.",
+    "ogHeadline": "Which party is closest to your positions?",
+    "ogSecondary": "A non-partisan tool for the 2026 Knesset election"
   },
   "Nav": {
     "home": "Home",
     "parties": "Parties",
     "howItWorks": "How this works",
     "privacy": "Privacy & Terms",
-    "skipToContent": "Skip to content"
+    "skipToContent": "Skip to content",
+    "mainLabel": "Main",
+    "footerLabel": "Site information"
+  },
+  "Footer": {
+    "neutrality": "Non-partisan and independent. No party funds, influences or advertises on this site. This is a decision aid, not a voting recommendation."
+  },
+  "Preview": {
+    "fictional": "Preview version: the parties shown are fictional samples, not real parties.",
+    "simulated": "Preview version: results are simulated and don’t reflect real matching.",
+    "both": "Preview version: the parties shown are fictional samples and results are simulated."
   },
   "LanguageSwitch": {
     "label": "Language",
     "he": "עברית",
     "en": "English",
-    "switchTo": "עבור לעברית"
+    "switchTo": "מעבר לעברית"
+  },
+  "Common": {
+    "startSurvey": "Start",
+    "resumeSurvey": "Continue where you left off",
+    "jointList": "Running on a joint list with <partners></partners> as {list}, ballot letters {letters}.",
+    "jointListNoLetters": "Running on a joint list with <partners></partners> as {list}."
   },
   "Home": {
     "heading": "Which party is closest to your positions?",
-    "intro": "[Draft] A non-partisan tool that matches your positions with the parties' positions, based on documented research. It's a decision aid, not a voting recommendation.",
-    "start": "Let's start"
+    "lead": "Rank the issues that matter most to you, say where you stand on each, and see which parties’ documented positions are closest to yours.",
+    "duration": "Takes about 5–10 minutes.",
+    "privacyNote": "We don’t save your answers. We only count anonymous results.",
+    "privacyLink": "Privacy & Terms",
+    "stepsHeading": "How it works",
+    "steps": {
+      "rank": {
+        "title": "Rank the issues",
+        "body": "Put 10 current issues in order of importance to you. You can set aside up to 5 that don’t matter to you."
+      },
+      "answer": {
+        "title": "Say where you stand",
+        "body": "For each issue, pick the position closest to yours, adjust its wording, or write your own."
+      },
+      "anythingElse": {
+        "title": "Add anything else",
+        "body": "Optionally, tell us about anything important to you that the issues didn’t cover."
+      },
+      "result": {
+        "title": "See your closest matches",
+        "body": "Your closest party and the next closest ones, with an issue-by-issue explanation linked to the research."
+      }
+    },
+    "neutralHeading": "Non-partisan and transparent",
+    "neutralBody": "This tool has no party affiliation and no ads, and no party pays for it or has any say in its content. Every party on the ballot is researched in the same way, and every research page is open to read.",
+    "decisionAid": "The result shows which parties’ documented positions are closest to the answers you give. It’s a decision aid, not a recommendation of who to vote for.",
+    "howItWorksLink": "Read how the issues were chosen and how the parties were researched"
+  },
+  "HowItWorks": {
+    "title": "How this works",
+    "description": "How the issues were chosen, how every party was researched, how matching works, and the tool’s limitations.",
+    "intro": "This page explains how the issues were chosen, how the parties were researched, how your answers are matched with them, and what the tool can’t do.",
+    "tocLabel": "On this page",
+    "sections": {
+      "issues": {
+        "title": "How the 10 issues were chosen",
+        "paragraphs": [
+          "The issues are the 10 most pressing questions in Israeli society ahead of this election, chosen by their importance in current public debate rather than limited to any one topic area.",
+          "For each issue we wrote a short neutral description, a question, and the 3–4 most common real-world positions on it. Each position describes a policy approach and its stated reasons, worded so that its own supporters would recognise it as fair. The Hebrew and English versions say the same thing, each written to read naturally and neutrally in its language.",
+          "Before the issues were finalised, a separate review checked them for loaded language and for major positions that were missing."
+        ]
+      },
+      "research": {
+        "title": "How the parties were researched",
+        "paragraphs": [
+          "Every list on the ballot is included, as published by the Central Elections Committee, including small parties. Parties running together on a joint list are researched separately, each with its own page.",
+          "Each party’s research page follows the same structure: overview, leadership, its position on each of the 10 issues, other notable positions, coalition stance, track record, legal matters involving its leaders, and sources.",
+          "The research focuses on facts rather than campaign messaging. Evidence is ranked by reliability: actions (votes, actions in government, legislation) come first, then formal commitments (the party platform), then statements. Where a party’s actions contradict its statements, the research says so. Legal matters are reported only from court or official sources.",
+          "The research was compiled with AI research tools, working from public sources. Each document was then checked against its sources by a separate AI step, all documents were reviewed together for consistent depth and tone, and the final set was reviewed before publication. Every substantive claim cites its source, and each page shows the date it was researched."
+        ]
+      },
+      "matching": {
+        "title": "How matching works",
+        "paragraphs": [
+          "Matching compares your answers only with the published research pages, so everything in your result can be checked on this site. Each point in a result links to the part of the party’s research page it relies on.",
+          "Issues you rank higher count for more. Issues you mark as “doesn’t matter to me” count for nothing. If you add something under “anything else”, it counts as much as you say it does. A party’s actions count for more than its statements.",
+          "Polls, party size and the electoral threshold play no part in the match. They appear only as factual notes on the result.",
+          "If no party matches your positions closely, the result says so instead of presenting a weak match as a strong one."
+        ],
+        "placeholder": "[To be completed after the technical decision on the matching system: which AI system performs the matching and how, in plain language.]"
+      },
+      "polls": {
+        "title": "Polls and the electoral threshold",
+        "paragraphs": [
+          "A party’s page shows its list’s polling average from a fixed snapshot, with its source and date. If the list of a party in your result is polling below the electoral threshold (3.25%), the result notes that, with the date. Lists that don’t appear in published polls are noted as such. These notes are factual only; they are not advice about how to vote.",
+          "Israeli election law restricts publishing poll results in the days before election day. From the Friday before election day, all poll information is removed from the site, and it isn’t shown again afterwards."
+        ]
+      },
+      "limitations": {
+        "title": "Limitations",
+        "paragraphs": [
+          "No tool can capture everything that matters to you. 10 issues and a few positions on each simplify a complicated reality.",
+          "The research is a snapshot as of the date shown on each page. Parties may change their positions after that.",
+          "Some parties, especially new or small ones, have little public record. Their pages say so, and so does the result if one of them is among your matches.",
+          "Research and matching can contain mistakes, even after checking. Read the research pages, and make your own judgment.",
+          "The result is a decision aid, not a recommendation of who to vote for."
+        ]
+      },
+      "neutrality": {
+        "title": "Neutrality",
+        "paragraphs": [
+          "This tool has no party affiliation and no ads. No party funds it, influences it, or reviews or approves its content. All parties are researched with the same structure and the same evidence standards, and they are listed alphabetically, never by size or polls.",
+          "We never publish how many people matched with which party."
+        ]
+      },
+      "corrections": {
+        "title": "Corrections",
+        "paragraphs": [
+          "If you find a factual error in a research page, please let us know. Research pages are corrected only to fix errors, and the date on the page shows when it was last researched."
+        ],
+        "placeholder": "[Anonymous contact address (not linked to the operator’s identity) to be added before launch.]"
+      }
+    }
+  },
+  "Privacy": {
+    "title": "Privacy & Terms",
+    "description": "We don’t save your answers. We only count anonymous results. Here is exactly what happens to your information.",
+    "intro": "In short: no accounts, no personal details, and we never store your answers.",
+    "tocLabel": "On this page",
+    "sections": {
+      "summary": {
+        "title": "Summary",
+        "paragraphs": [
+          "We don’t save your answers. We only count anonymous results: which parties came out as the closest match and the runners-up.",
+          "There are no accounts and no login, and we don’t ask for your name, email, phone number or any other personal detail."
+        ]
+      },
+      "answers": {
+        "title": "Your answers",
+        "paragraphs": [
+          "Your answers are sent only when you ask for your result, and are used only to prepare it. We don’t store them, and they are not logged in any form that could be linked to you."
+        ]
+      },
+      "device": {
+        "title": "Progress saved on your device",
+        "paragraphs": [
+          "While you take the survey, your progress is saved only in your own browser, so you can close the page and come back to it. Nothing is sent until you ask for your result. Once your result is shown, the saved progress is deleted from your browser."
+        ]
+      },
+      "ai": {
+        "title": "Processing by an AI provider",
+        "paragraphs": [
+          "To prepare your result, your answers are processed by a third-party AI provider. We send them without your name or any other detail that identifies you, and the provider’s own data-retention terms apply to them. Please don’t include personal details in answers you write yourself."
+        ],
+        "placeholder": "[The AI provider’s name, a link to its data-retention terms, and whether it keeps requests for a period will be added once the provider is chosen.]"
+      },
+      "counts": {
+        "title": "Anonymous result counts",
+        "paragraphs": [
+          "The only thing we keep is a daily count of which parties came out as the closest match and as runners-up. These counts contain no answers and nothing that identifies you. They are seen only by the site’s operator and are never published."
+        ]
+      },
+      "sharing": {
+        "title": "Sharing",
+        "paragraphs": [
+          "If you share your result, the link contains only the names of your matched parties and the site language. It never contains your answers."
+        ]
+      },
+      "cookies": {
+        "title": "Cookies",
+        "paragraphs": [
+          "The site uses one cookie, to remember your choice of language. It doesn’t use advertising or tracking cookies."
+        ]
+      },
+      "abuse": {
+        "title": "Abuse protection",
+        "paragraphs": [
+          "To keep the service available and its costs under control, requests for results are checked to make sure they come from a real browser and aren’t automated or excessive."
+        ],
+        "placeholder": "[To be completed after the abuse-protection decision: which service performs this check, what it processes, and any cookies it sets. The cookie section above will be re-checked then.]"
+      },
+      "hosting": {
+        "title": "Hosting",
+        "paragraphs": [
+          "Like any website, our hosting provider may keep standard technical logs, such as IP addresses, for security and operation. Your answers are never in these logs."
+        ]
+      },
+      "terms": {
+        "title": "Terms of use",
+        "paragraphs": [
+          "This tool is a decision aid, provided for information only. It is not a recommendation of who to vote for, and it is not affiliated with any party, list or candidate.",
+          "We work to keep the research accurate, but we can’t guarantee it is complete or free of errors. The research reflects public information as of the date shown on each page.",
+          "You may share links to the site and its pages freely."
+        ]
+      },
+      "contact": {
+        "title": "Contact",
+        "paragraphs": ["Questions about privacy, or a factual error to report? Get in touch."],
+        "placeholder": "[Anonymous contact address (not linked to the operator’s identity) to be added before launch.]"
+      }
+    }
+  },
+  "Parties": {
+    "title": "Parties",
+    "description": "Every party on the ballot, in alphabetical order, with a research page for each.",
+    "intro": "Every party on the ballot, in alphabetical order. Each page covers the party’s positions on the 10 issues, its track record and its sources. You don’t need to take the survey to read them.",
+    "count": "{count, plural, one {# party} other {# parties}}",
+    "leader": "Led by {name}",
+    "jointGroup": "Joint list: {list}, with {partners}",
+    "ballotLetters": "Ballot letters: {letters}",
+    "limitedInfoBadge": "Limited public information"
+  },
+  "Research": {
+    "description": "Research on {name}: positions on the 10 issues, track record, coalition stance and sources.",
+    "breadcrumbLabel": "Breadcrumb",
+    "backToParties": "All parties",
+    "leader": "Leader",
+    "list": "List",
+    "ballotLetters": "Ballot letters",
+    "researchedAsOf": "Researched as of",
+    "limitedInfoTitle": "Limited information.",
+    "limitedInfoBody": "Little public information exists about this party (for example, no voting record or no published platform), so this research is less complete than for other parties.",
+    "tocLabel": "Contents"
+  },
+  "Polls": {
+    "heading": "Polling",
+    "line": "Polling average: {percent} (as of {date}).",
+    "source": "Source: {title}",
+    "belowThreshold": "This list is polling below the electoral threshold ({threshold}): average {percent} as of {date}.",
+    "notPolled": "This list doesn’t appear in published polls.",
+    "pending": "No polling information has been recorded for this list yet.",
+    "blackout": "Poll information is not shown from the Friday before election day until voting ends, as required by law.",
+    "archive": "Poll information is no longer shown on this site.",
+    "constituentHeading": "Polls included in the average",
+    "sampleSize": "{n} respondents",
+    "marginOfError": "margin of error {moe}",
+    "published": "published {date}"
+  },
+  "Survey": {
+    "metaTitle": "Survey",
+    "moreInfo": "More info",
+    "moreInfoAbout": "More info about {title}",
+    "close": "Close",
+    "closed": "The election is over and the survey is closed.",
+    "noStorage": "Your browser isn’t letting this site save progress, so if you close the page you’ll need to start again."
+  },
+  "Ranking": {
+    "stepLabel": "Step 1 of 3",
+    "heading": "Which issues matter most to you?",
+    "instructions": "Put the issues in order, from the most important to you down. Tap “Add” to move an issue into your ranking, then reorder it with the arrows or by dragging. You can mark up to {max} issues as “doesn’t matter to me”; you won’t be asked about them.",
+    "rankedHeading": "Your ranking",
+    "rankedEmpty": "Issues you add will appear here, numbered from most important.",
+    "poolHeading": "Issues to rank",
+    "poolEmpty": "All issues are placed.",
+    "notImportantHeading": "Doesn’t matter to me ({count} of {max})",
+    "notImportantEmpty": "None yet.",
+    "rankLabel": "Rank",
+    "add": "Add",
+    "addAria": "Add {title} to your ranking",
+    "notImportant": "Doesn’t matter to me",
+    "notImportantAria": "Doesn’t matter to me: {title}",
+    "moveUp": "Move {title} up",
+    "moveDown": "Move {title} down",
+    "remove": "Remove",
+    "removeAria": "Remove {title} from your ranking",
+    "restore": "Put back",
+    "restoreAria": "Put back {title} with the issues to rank",
+    "dragHandle": "Drag {title}",
+    "limitReached": "You can mark up to {max} issues as “doesn’t matter to me”. To mark this one, put another one back first.",
+    "statusRemaining": "{count, plural, one {Rank the last remaining issue to continue.} other {Rank the # remaining issues to continue.}}",
+    "statusMin": "Rank at least {min} issues to continue.",
+    "statusComplete": "All set: {count} issues ranked.",
+    "continue": "Continue",
+    "announce": {
+      "added": "{title} added to your ranking at number {position}.",
+      "addedLast": "{title} added at number {position}. All issues are placed; you can continue.",
+      "moved": "{title} moved to number {position} of {total}.",
+      "removed": "{title} moved back to the issues to rank.",
+      "notImportant": "{title} marked as “doesn’t matter to me”.",
+      "restored": "{title} put back with the issues to rank."
+    },
+    "dnd": {
+      "roleDescription": "draggable issue",
+      "instructions": "To pick up an issue, press Space or Enter. Use the arrow keys to move it, then press Space or Enter again to drop it, or Escape to cancel.",
+      "pickedUp": "Picked up {title}.",
+      "overRanked": "{title} is at number {position} in your ranking.",
+      "overPool": "{title} is over the issues to rank.",
+      "outside": "{title} is not over a list.",
+      "dropped": "Dropped. {text}",
+      "cancelled": "Cancelled. {title} was not moved."
+    }
+  },
+  "Answers": {
+    "progress": "Question {current} of {total}",
+    "rankBadge": "Your #{rank} issue",
+    "instructions": "Choose the position closest to yours. You can change its wording directly in the box, or write your own answer.",
+    "optionLabel": "Position {n}",
+    "optionTextLabel": "Position {n}, editable wording",
+    "edited": "edited",
+    "undoEdit": "Undo changes",
+    "ownLabel": "Write my own answer",
+    "ownTextLabel": "Your own answer",
+    "ownPlaceholder": "In your own words (please don’t include personal details)…",
+    "needAnswer": "Choose a position or write your own to continue.",
+    "back": "Back",
+    "next": "Next",
+    "nextToAnythingElse": "Next"
+  },
+  "AnythingElse": {
+    "stepLabel": "Step 3 of 3",
+    "heading": "Is there anything else important to you that wasn’t covered here?",
+    "optional": "Optional. You can leave this empty.",
+    "textLabel": "Anything else (optional)",
+    "placeholder": "For example, an issue or a principle that matters to you",
+    "importanceLegend": "Compared with the issues you ranked, how important is this to you?",
+    "importance": {
+      "above-top": "More important than my top issue",
+      "middle": "About as important as my middle issues",
+      "minor": "Minor"
+    },
+    "needImportance": "To continue, choose how important this is.",
+    "back": "Back",
+    "submit": "See my result"
+  },
+  "Result": {
+    "loadingTitle": "Preparing your result…",
+    "loadingBody": "We’re comparing your answers with each party’s research. This can take a little while.",
+    "heading": "Your result",
+    "intro": "These are the parties whose documented positions are closest to the answers you gave.",
+    "weakMatch": "No party closely matches your positions. These are the closest.",
+    "topMatchLabel": "Closest match",
+    "runnerUpLabel": "Next closest · #{n}",
+    "runnersUpHeading": "Next closest",
+    "ballotLetters": "Ballot letters: {letters}",
+    "limitedInfoTitle": "Limited information.",
+    "limitedInfoBody": "Little public information exists about this party, so this match rests on less evidence than others.",
+    "showBreakdown": "Show the issue-by-issue explanation",
+    "importance": "Your #{rank} issue",
+    "agreement": {
+      "agrees": "Agrees",
+      "partially": "Partly agrees",
+      "disagrees": "Disagrees",
+      "party-position-unclear": "Party’s position unclear"
+    },
+    "readInResearch": "See this in the research",
+    "readInResearchAria": "See this in the research: {title}",
+    "anythingElseHeading": "About what you added",
+    "readResearch": "Read the full research on {name}",
+    "disclaimerTitle": "A decision aid, not a recommendation",
+    "disclaimer": "This result shows which parties’ documented positions are closest to the answers you gave. It doesn’t tell you who to vote for. Read the research and make your own judgment.",
+    "howItWorksLink": "How this works and its limitations"
+  },
+  "Share": {
+    "heading": "Share",
+    "explainer": "The link shows only your matched parties and invites others to take the survey. It never includes your answers.",
+    "button": "Share my result",
+    "copied": "Link copied.",
+    "manualCopy": "Copy this link:",
+    "shareTitle": "Party Matcher",
+    "shareText": "My closest match on Party Matcher: {name}. Which party is closest to your positions?",
+    "metaTitle": "Closest match: {name}",
+    "metaTitleGeneric": "Which party is closest to your positions?",
+    "metaDescription": "A non-partisan tool for the 2026 Knesset election. Rank the issues, say where you stand, and see which parties are closest to your positions.",
+    "landingEyebrow": "A shared result. The closest match was:",
+    "alsoClose": "Next closest:",
+    "landingNote": "Based on someone else’s answers, which are never shared.",
+    "landingGenericHeading": "Which party is closest to your positions?",
+    "inviteHeading": "Which party is closest to your positions?",
+    "inviteBody": "Rank the issues that matter to you, say where you stand, and see which parties’ documented positions are closest to yours. Takes about 5–10 minutes.",
+    "ogEyebrow": "My closest match:",
+    "ogAlsoClose": "Next closest: {names}",
+    "ogGenericHeadline": "Which party is closest to your positions?",
+    "ogCta": "Find your match"
+  },
+  "TimeModes": {
+    "electionOverTitle": "The election is over.",
+    "electionOverBody": "Voting has ended and the survey is no longer available. The party research remains available as an archive.",
+    "browseParties": "Browse the parties"
   },
   "MatchErrors": {
-    "validation": "We couldn’t read your answers. You can restart the survey.",
-    "content_version_mismatch": "The survey content was updated. Please restart.",
+    "title": "We couldn’t prepare your result",
+    "validation": "Something in the submitted answers couldn’t be read. You can start the survey again.",
+    "content_version_mismatch": "The survey content was updated. Please start again.",
     "abuse_check_failed": "We couldn’t verify the request. Please try again.",
-    "rate_limited": "Too many requests. Please try again in a few minutes.",
-    "at_capacity": "The service is busy right now. Please try again later.",
-    "election_over": "The election is over and the survey is closed.",
-    "upstream_failure": "Something went wrong while preparing your result. Please try again.",
+    "rate_limited": "Too many requests right now. Please try again in a few minutes.",
+    "at_capacity": "The service is busy right now. Please try again a little later.",
+    "election_over": "The election is over and the survey is closed. The party research is still available.",
+    "upstream_failure": "Something went wrong while preparing your result. Your answers are still saved on this device. Please try again.",
     "retry": "Try again",
-    "restart": "Restart"
+    "restart": "Start again",
+    "browseParties": "Browse the parties"
+  },
+  "NotFound": {
+    "title": "Page not found",
+    "body": "The page you were looking for doesn’t exist.",
+    "home": "Home",
+    "parties": "Parties"
   }
 }

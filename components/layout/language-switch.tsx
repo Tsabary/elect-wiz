@@ -22,7 +22,7 @@ export function LanguageSwitch() {
   return (
     <Button
       variant="outline"
-      size="sm"
+      className="h-10 px-3 text-sm"
       lang={other}
       aria-label={t("switchTo")}
       data-testid="language-switch"

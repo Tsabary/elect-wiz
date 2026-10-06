@@ -22,6 +22,6 @@ export default defineConfig({
         url: `${baseURL}/he`,
         reuseExistingServer: !process.env.CI,
         timeout: 240_000,
-        env: { APP_ENV: "test" },
+        env: { APP_ENV: "test", MOCK_DELAY_MS: "400" },
       },
 });

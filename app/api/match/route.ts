@@ -6,12 +6,14 @@
 import { getIssues, getLists, getParties, getVersions } from "@/lib/content/loaders";
 import { handleMatchRequest } from "@/lib/matching/handler";
 import { selectImplementation } from "@/lib/matching/registry";
-import { isElectionOver, isPollBlackout } from "@/lib/time-modes";
+import { isElectionOver, isPollBlackout, requestClockOverride, resolveNow } from "@/lib/time-modes";
 
 export const dynamic = "force-dynamic";
 
 export async function POST(request: Request): Promise<Response> {
-  const now = new Date();
+  // Non-production only: a clock-override cookie/header lets tests and reviewers
+  // exercise the blackout and election-over modes (ignored in production).
+  const now = resolveNow({ env: process.env, override: requestClockOverride(request) });
   const versions = getVersions();
   return handleMatchRequest(request, {
     corpus: { issues: getIssues(), parties: getParties(), lists: getLists() },

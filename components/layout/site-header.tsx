@@ -1,25 +1,49 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { LanguageSwitch } from "./language-switch";
+import { MainNav } from "./main-nav";
 
 export function SiteHeader() {
   const t = useTranslations("Nav");
+  const m = useTranslations("Metadata");
   return (
-    <header className="border-b">
+    <header className="bg-background/95 supports-backdrop-filter:bg-background/80 sticky top-0 z-40 border-b backdrop-blur">
       <a
         href="#main"
-        className="focus:bg-background sr-only focus:not-sr-only focus:absolute focus:p-2"
+        className="focus:bg-background focus:ring-ring sr-only focus:not-sr-only focus:absolute focus:start-2 focus:top-2 focus:z-50 focus:rounded-md focus:p-2 focus:ring-2"
       >
         {t("skipToContent")}
       </a>
-      <div className="mx-auto flex w-full max-w-3xl items-center justify-between gap-4 px-4 py-3">
-        <nav aria-label={t("home")}>
-          <Link href="/" className="font-semibold">
-            {t("home")}
-          </Link>
-        </nav>
-        <LanguageSwitch />
+      <div className="mx-auto flex w-full max-w-3xl flex-wrap items-center gap-x-4 gap-y-1 px-4 py-2 sm:flex-nowrap">
+        <Link
+          href="/"
+          className="focus-visible:ring-ring/50 flex min-h-11 items-center gap-2 rounded-md font-semibold outline-none focus-visible:ring-3"
+        >
+          <LogoMark />
+          <span>{m("siteName")}</span>
+        </Link>
+        <div className="order-2 ms-auto sm:order-3">
+          <LanguageSwitch />
+        </div>
+        <MainNav className="order-3 w-full sm:order-2 sm:ms-auto sm:w-auto" />
       </div>
     </header>
+  );
+}
+
+/** A neutral, abstract mark: no party colours or symbols. */
+function LogoMark() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className="size-6 shrink-0">
+      <rect x="2" y="2" width="20" height="20" rx="6" className="fill-foreground" />
+      <path
+        d="M7 12.5l3.2 3.2L17 8.8"
+        fill="none"
+        strokeWidth="2.4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="stroke-background"
+      />
+    </svg>
   );
 }

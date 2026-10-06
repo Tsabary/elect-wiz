@@ -60,7 +60,7 @@
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
+  --muted-foreground: oklch(0.47 0 0);
   --accent: oklch(0.97 0 0);
   --accent-foreground: oklch(0.205 0 0);
   --destructive: oklch(0.577 0.245 27.325);
@@ -126,5 +126,44 @@
   }
   html {
     @apply font-sans;
+  }
+}
+
+/* Research documents rendered from markdown. */
+@layer components {
+  .research-prose {
+    @apply flex max-w-prose flex-col gap-3 leading-relaxed;
+  }
+  .research-prose a {
+    @apply underline underline-offset-4;
+  }
+  .research-prose ul {
+    @apply list-disc ps-6;
+  }
+  .research-prose ol {
+    @apply list-decimal ps-6;
+  }
+  .research-prose sup.citations {
+    @apply text-muted-foreground ms-0.5 text-[0.7em];
+  }
+  .research-prose sup.citations a {
+    @apply no-underline hover:underline;
+  }
+  .research-prose :target,
+  :target {
+    scroll-margin-top: 7rem;
+  }
+}
+
+/* Highlight the section a deep link points at. */
+h2:target,
+h3:target,
+li:target {
+  @apply bg-muted rounded-sm;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
   }
 }

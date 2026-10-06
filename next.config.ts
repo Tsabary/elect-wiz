@@ -5,8 +5,8 @@ const withNextIntl = createNextIntlPlugin("./i18n/request.ts");
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
-  // Content files are read from disk at render time (ISR); ship them with every function.
-  outputFileTracingIncludes: { "/**": ["./content/**/*"] },
+  // Content files (ISR) and OG-image fonts are read from disk at runtime; ship them with every function.
+  outputFileTracingIncludes: { "/**": ["./content/**/*", "./assets/fonts/**/*"] },
 };
 
 export default withNextIntl(nextConfig);

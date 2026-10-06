@@ -186,7 +186,7 @@ Each task is self-contained. From the task alone you should know what to do, how
 - The end-to-end and accessibility suites pass.
 
 ### Task 2.1: Build the layout and static pages
-- [ ]
+- [x]
 - **What:**
   - Build the shared layout: header with navigation (Home, Parties, How this works), the language switch on every page, footer with a Privacy & Terms link.
   - Build the intro page: purpose, neutrality stance, the short privacy note linking to Privacy & Terms, about 5–10 minutes estimated time, start button.
@@ -202,9 +202,15 @@ Each task is self-contained. From the task alone you should know what to do, how
 - **Dependencies:** none (Phase 1 complete)
 - **Plan reference:** Affected systems §3, "Static pages, both languages" and "Operator anonymity".
 - **Notes:** The matching section of How-this-works and the provider name on Privacy & Terms are finalized after D1. Mark them with clear placeholders.
+- **Implementation notes:**
+  - Header (Home, Parties, How this works + language switch), footer (neutrality line, Privacy & Terms, How this works, Parties), skip link. A preview banner shows while the fictional corpus and/or mock matcher are active, so sample content is never mistaken for real.
+  - Static copy pages render from `messages/*.json` via `components/layout/prose-page.tsx`. Post-D1 items (matching method, AI provider name) and the not-yet-existing anonymous contact address are rendered as dashed, `data-placeholder="post-d1"` boxes.
+  - Metadata: per-page title/description, canonical, `hreflang` alternates (`he`, `en`, `x-default`), Open Graph/X with a generated, localized site preview image. `metadataBase` comes from `NEXT_PUBLIC_SITE_URL` or Vercel's URL env vars. No author/creator/publisher metadata.
+  - Anonymity check: `tests/e2e/pages.spec.ts` ("operator anonymity") scans rendered HTML for author metadata, `mailto:` and email addresses, plus any extra terms given in the (never committed) `OPERATOR_IDENTITY_TERMS` env var. `messages/messages.test.ts` checks the copy for emails/phone numbers.
+  - Added a localized 404 (`app/[locale]/not-found.tsx` + catch-all).
 
 ### Task 2.2: Build the Parties index and research page display
-- [ ]
+- [x]
 - **What:**
   - Build the Parties index: every registry party, alphabetical by current-language name, each linking to its research page. Show joint-list grouping labels.
   - Build the per-party research page: render the research markdown with section and per-issue anchors (deep-linkable), the numbered sources, and the researched-as-of date.
@@ -219,9 +225,10 @@ Each task is self-contained. From the task alone you should know what to do, how
 - **Affected:** `app/[locale]/parties/page.tsx`, `app/[locale]/parties/[partyId]/page.tsx`, `components/research/`, `lib/content/`.
 - **Dependencies:** none (Phase 1 complete); integrates with 2.8 for blackout.
 - **Plan reference:** Affected systems §3, "Parties index…per-party research pages"; Performance §1.
+- **Implementation notes:** research markdown is rendered server-side only with `marked` (`lib/content/markdown.ts`; raw HTML escaped, citations `[n]` linked to `#source-n`). Pages are SSG for every party × locale with `revalidate = 300` and `dynamicParams = false`. The polling block (`components/research/poll-info.tsx`) is built from the registry snapshot, lists constituent polls when the snapshot has them (legal-findings §3.2), and is replaced by one neutral sentence for every party during blackout, server-side and again client-side.
 
 ### Task 2.3: Implement survey state and on-device progress
-- [ ]
+- [x]
 - **What:**
   - Implement the client-side survey state stored in local storage per plan Data model §5: schema version, survey-content version, shuffle seeds for issue order and per-issue option order, ranking, the "doesn't matter" set (max 5), per-issue answers (final text plus starting option ID plus edited flag), and the "anything else" text and importance.
   - Resume restores an identical session.
@@ -234,9 +241,10 @@ Each task is self-contained. From the task alone you should know what to do, how
 - **Affected:** `lib/survey/`.
 - **Dependencies:** none (Phase 1 complete)
 - **Plan reference:** Data model & schema changes, Phase 1 §5.
+- **Deviation:** per-issue answers are stored as a draft (`selected` option ID or "own", edited wording per option, own text) rather than only the final triple, so switching between options doesn't lose edits. `finalAnswer()` derives the exact submitted triple (final text, starting option ID, edited flag). `lib/survey/store.ts` wraps state + storage for `useSyncExternalStore`; a new session is saved immediately so a reload keeps the same shuffle.
 
 ### Task 2.4: Build the ranking step
-- [ ]
+- [x]
 - **What:**
   - Build the ranking screen: all issues start in an unranked pool in this session's random order. The user moves them into a ranked list (1 = most important), reorders freely, and can mark up to 5 as "doesn't matter" (excluded from ranking).
   - Each card shows the one-line description, plus "more info" opening the more-info text (shadcn dialog or drawer).
@@ -250,9 +258,10 @@ Each task is self-contained. From the task alone you should know what to do, how
 - **Affected:** `app/[locale]/survey/`, `components/survey/ranking/`.
 - **Dependencies:** depends on 2.3
 - **Plan reference:** Affected systems §3, "Survey (client-side)"; PRD Step 1.
+- **Implementation notes:** three equivalent ways to rank: "Add" + up/down/remove buttons (tap, click or keyboard), mouse/touch drag via handles (dnd-kit `MouseSensor` + `TouchSensor` with a 150 ms press, so the page still scrolls), and keyboard drag (`KeyboardSensor`). Announcements, instructions and the role description are localized. Focus is restored after moves. Pointer-based collision detection with a closest-corners fallback for the keyboard.
 
 ### Task 2.5: Build the answer steps and the "anything else" step
-- [ ]
+- [x]
 - **What:**
   - Build one screen per ranked issue, in ranked order: the question framing, then the 3–4 options in this session's shuffled order, each shown as an **already-editable text area**. The user selects one and may edit its wording in place, or writes their own in a separate free-text field.
   - The submitted answer is the final text, plus the starting option ID and an edited flag.
@@ -267,9 +276,10 @@ Each task is self-contained. From the task alone you should know what to do, how
 - **Affected:** `app/[locale]/survey/`, `components/survey/answers/`, `components/survey/anything-else/`.
 - **Dependencies:** depends on 2.3
 - **Plan reference:** Affected systems §3, "Survey (client-side)"; PRD Steps 2–3.
+- **Implementation notes:** "Next" requires a chosen position or non-blank own text (no judgement of quality). The importance choice for "anything else" appears once text is entered and is then required. Typing in a position's text area selects it; "Undo changes" restores the original wording.
 
 ### Task 2.6: Build the submission flow and result view
-- [ ]
+- [x]
 - **What:**
   - On completing the survey, submit through the matching client from Task 1.3, with a loading state throughout.
   - Render the result:
@@ -290,9 +300,10 @@ Each task is self-contained. From the task alone you should know what to do, how
 - **Affected:** `app/[locale]/survey/result/` (or equivalent), `components/result/`.
 - **Dependencies:** depends on 2.3, 2.4, 2.5
 - **Plan reference:** Affected systems §3, "Result view"; APIs §1, "Errors".
+- **Deviation:** the result is shown in place at `/[locale]/survey` (the "or equivalent" in Affected), not at a separate route: it lives only in memory, survey state is cleared on success, so a refresh starts a new survey. Runners-up show their breakdown in a collapsible section. Agreement levels use neutral shape markers plus text (no colour coding). During blackout poll notes are hidden both by the route and by a client-side check. The browser back button isn't wired to survey steps (in-app Back buttons are); progress survives leaving the page.
 
 ### Task 2.7: Build sharing and social preview images
-- [ ]
+- [x] *(Real WhatsApp/Facebook/X validators need a public URL: run them on the Vercel preview once deployed. The equivalent metadata check is automated in `tests/e2e/result.spec.ts`.)*
 - **What:**
   - Build a share action on the result: a URL containing only the top match party IDs and the locale.
   - Use the native share sheet on mobile and copy-link on desktop.
@@ -305,9 +316,10 @@ Each task is self-contained. From the task alone you should know what to do, how
 - **Affected:** `components/result/share/`, `app/[locale]/share/`, the share preview image route.
 - **Dependencies:** depends on 2.6
 - **Plan reference:** Affected systems §3, "Share"; APIs §2.
+- **Implementation notes:** share URL `/{locale}/share/{id1,id2,…}` (path segment, so the preview image route can read it): the result's party IDs in order, max 4, nothing else. The landing page and its `opengraph-image.tsx` keep only registry IDs. Images contain party names and site copy only: **never poll figures or threshold notes** (legal-findings §3.1 impact 3) and nothing about the operator. Satori doesn't implement bidi, so Hebrew lines are reordered visually by `lib/share/bidi.ts` (unit-tested); Heebo WOFF subsets are bundled in `assets/fonts/` (OFL). Native share sheet on coarse-pointer devices, clipboard copy elsewhere (manual-copy fallback).
 
 ### Task 2.8: Implement the time-based modes
-- [ ]
+- [x]
 - **What:**
   - Implement `lib/time-modes.ts`, reading the election-close instant and the poll-blackout-start instant from configuration (Asia/Jerusalem).
   - **Blackout mode:** hide poll numbers, threshold notes and not-polled notes everywhere (research pages, result metadata, the route's metadata attachment).
@@ -322,9 +334,10 @@ Each task is self-contained. From the task alone you should know what to do, how
 - **Affected:** `lib/time-modes.ts`, `app/api/match/route.ts`, the pages listed above, environment configuration.
 - **Dependencies:** none (Phase 1 complete)
 - **Plan reference:** Affected systems §3, "Time-based modes"; Performance §1; Rollout §4.
+- **Implementation notes:** instants default to legal-findings/ground-truth values (`POLL_BLACKOUT_START`, `ELECTION_CLOSE` env overrides). Blackout never switches off (archive stays poll-free, per legal-findings §3.4). Clock override (non-production only): `CLOCK_OVERRIDE` env for server rendering; per browser, the `clock-override` cookie (set by visiting any page with `?clock=<ISO>`, cleared with `?clock=off`), honoured by the client guards (`components/time/time-modes.tsx`) and the match route (also an `x-clock-override` header). The client re-checks every 15 s and on tab focus. Note: whether overrides are allowed is baked into statically generated pages at build time, so a local check needs `APP_ENV=test npm run build` (Vercel previews get `VERCEL_ENV=preview` automatically).
 
 ### Task 2.9: Write the site copy in both languages and get owner approval
-- [ ]
+- [ ] *(Copy drafted in both languages, neutrality review and parity check done by separate agents, all should-fix findings applied, written to `messages/*.json`. AWAITING OWNER APPROVAL: see `research/review/site-copy-review.md`.)*
 - **What:**
   - Draft all non-corpus copy in Hebrew and English: intro, How-this-works, Privacy & Terms (no answer storage, anonymous result counts only, processing by a third-party AI provider with the name to be filled after D1), disclaimer, weak-match message, threshold and not-polled wording, error messages, and all interface strings.
   - Use the glossary terms.
@@ -341,7 +354,7 @@ Each task is self-contained. From the task alone you should know what to do, how
 - **Notes:** **Owner-gated.**
 
 ### Task 2.10: Build the end-to-end and accessibility suites against the mock
-- [ ]
+- [x] *(A real screen-reader (VoiceOver/TalkBack/NVDA) spot check by the owner is still recommended; see the pass record.)*
 - **What:**
   - Write Playwright tests covering:
     - the full flow in Hebrew and English at mobile and desktop sizes;
@@ -358,6 +371,7 @@ Each task is self-contained. From the task alone you should know what to do, how
 - **Affected:** `tests/e2e/`, components as needed for fixes.
 - **Dependencies:** depends on 2.1–2.8
 - **Plan reference:** Testing strategy §3–4.
+- **Implementation notes:** suites in `tests/e2e/` (`survey`, `result`, `pages`, `time-modes`, `a11y`, plus the Phase 1 `smoke`), run on desktop and mobile Chromium against a production build. Touch drag is driven through CDP touch events. axe-core via `@axe-core/playwright`, failing on serious/critical violations. The manual pass and its fixes are recorded in `research/review/accessibility-pass.md`.
 
 ---
 
