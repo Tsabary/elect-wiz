@@ -1,0 +1,37 @@
+{
+  "id": "iran-and-regional-security",
+  "en": {
+    "title": "Iran, Hezbollah and regional security",
+    "description": "Israel's strategy toward Iran, Hezbollah and the wider region.",
+    "moreInfo": "Since February 2026 Israel and the United States have been fighting Iran, and in March Hezbollah joined from Lebanon, leading to an IDF ground operation in southern Lebanon. Ceasefires and US-mediated arrangements have been reached and partly broken; Israel has withdrawn from some areas of southern Lebanon, while US-Iran fighting continued into September 2026. Surveys show security and foreign affairs are a leading voting consideration.",
+    "question": "What should Israel's strategy be toward Iran, Hezbollah and the region?"
+  },
+  "he": {
+    "title": "איראן, חיזבאללה והביטחון האזורי",
+    "description": "האסטרטגיה של ישראל מול איראן, חיזבאללה והאזור כולו.",
+    "moreInfo": "מאז פברואר 2026 ישראל וארה״ב נלחמות באיראן, ובמרץ הצטרף חיזבאללה מלבנון, מה שהוביל למבצע קרקעי של צה״ל בדרום לבנון. הושגו הפסקות אש והסדרים בתיווך אמריקאי, שחלקם הופרו; ישראל נסוגה מחלק מהאזורים בדרום לבנון, בעוד הלחימה בין ארה״ב לאיראן נמשכה גם בספטמבר 2026. סקרים מראים שביטחון ומדיניות חוץ הם שיקול הצבעה מוביל.",
+    "question": "מה צריכה להיות האסטרטגיה של ישראל מול איראן, חיזבאללה והאזור?"
+  },
+  "options": [
+    {
+      "id": "military-pressure-until-threats-removed",
+      "en": "Keep up military action against Iran, Hezbollah and their allies until their capabilities are removed, including holding positions in southern Lebanon as needed. Past agreements failed to prevent threats from growing, and only force guarantees security.",
+      "he": "להמשיך בפעולה צבאית נגד איראן, חיזבאללה ובעלי בריתם עד שיכולותיהם יוסרו, כולל החזקת עמדות בדרום לבנון לפי הצורך. הסכמים בעבר לא מנעו את התעצמות האיומים, ורק כוח מבטיח ביטחון."
+    },
+    {
+      "id": "force-plus-us-backed-agreements",
+      "en": "Combine military pressure with US-backed agreements, such as Hezbollah disarmament arrangements and regional normalization, pulling back where reliable security guarantees exist. Military gains need to be turned into lasting diplomatic achievements alongside allies.",
+      "he": "לשלב לחץ צבאי עם הסכמים בגיבוי ארה״ב, כמו הסדרים לפירוק חיזבאללה מנשקו ונורמליזציה אזורית, ולסגת במקומות שבהם יש ערבויות ביטחוניות אמינות. צריך להפוך הישגים צבאיים להישגים מדיניים מתמשכים יחד עם בעלות הברית."
+    },
+    {
+      "id": "prioritize-ending-multifront-war",
+      "en": "Make ending the multi-front war through agreements and international coordination the top priority, using force mainly for defense. The long war's human and economic toll is heavy, and the country needs to recover and rebuild.",
+      "he": "לשים בראש סדר העדיפויות את סיום המלחמה הרב-זירתית באמצעות הסכמים ותיאום בינלאומי, ולהפעיל כוח בעיקר להגנה. המחיר האנושי והכלכלי של המלחמה הארוכה כבד, והמדינה צריכה להשתקם ולהתאושש."
+    },
+    {
+      "id": "end-military-operations-regional-peace",
+      "en": "End military operations, withdraw from Lebanese territory, and pursue a comprehensive regional agreement that also resolves the Palestinian issue. Continued military action has not brought security and fuels a cycle of escalation.",
+      "he": "להפסיק את הפעולות הצבאיות, לסגת משטח לבנון ולפעול להסכם אזורי כולל שיפתור גם את הסוגיה הפלסטינית. המשך הפעולה הצבאית לא הביא ביטחון ומזין מעגל של הסלמה."
+    }
+  ]
+}

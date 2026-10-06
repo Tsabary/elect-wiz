@@ -1,0 +1,37 @@
+{
+  "id": "housing",
+  "en": {
+    "title": "Housing",
+    "description": "How to make buying or renting a home more affordable.",
+    "moreInfo": "Home prices and rents in Israel are high relative to incomes; in 2026 rents kept rising while home prices dipped slightly. In an August 2026 survey of 18-to-35-year-olds, housing prices were the leading voting consideration. Much of the land for new construction is state land marketed by the Israel Land Authority, so government policy has a large effect on supply. Proposals range from faster planning and construction to state-built rental housing and direct help for buyers.",
+    "question": "What should the state's main approach be to lowering housing costs?"
+  },
+  "he": {
+    "title": "דיור",
+    "description": "כיצד להפוך את רכישת דירה או שכירתה לנגישות יותר.",
+    "moreInfo": "מחירי הדירות ושכר הדירה בישראל גבוהים ביחס להכנסות; ב-2026 שכר הדירה המשיך לעלות, בעוד מחירי הדירות ירדו מעט. בסקר שנערך באוגוסט 2026 בקרב צעירים בני 18–35, מחירי הדיור היו שיקול ההצבעה המוביל. חלק גדול מהקרקע לבנייה חדשה הוא קרקע מדינה המשווקת על ידי רשות מקרקעי ישראל, ולכן למדיניות הממשלה השפעה גדולה על ההיצע. ההצעות נעות בין האצת התכנון והבנייה, דרך דיור להשכרה שהמדינה בונה, ועד סיוע ישיר לרוכשים.",
+    "question": "מה צריכה להיות הגישה המרכזית של המדינה להורדת עלויות הדיור?"
+  },
+  "options": [
+    {
+      "id": "speed-up-planning-and-construction",
+      "en": "Speed up planning and permits, release more state land and cut bureaucracy and fees so that far more homes are built. Prices are high because supply is too slow, and more homes on the market will bring prices down.",
+      "he": "להאיץ תכנון והיתרים, לשחרר יותר קרקעות מדינה ולצמצם בירוקרטיה ואגרות, כך שייבנו הרבה יותר דירות. המחירים גבוהים כי ההיצע איטי מדי, ויותר דירות בשוק יורידו את המחירים."
+    },
+    {
+      "id": "state-led-affordable-rental",
+      "en": "Make the state a central player again: build long-term affordable rental housing, require a share of affordable units in every project and regulate fair rental terms. The market alone has not delivered homes that young people can afford.",
+      "he": "להחזיר את המדינה להיות שחקן מרכזי: לבנות דיור להשכרה ארוכת טווח במחיר נגיש, לחייב שיעור של דירות בהישג יד בכל פרויקט ולהסדיר תנאי שכירות הוגנים. השוק לבדו לא סיפק דירות שצעירים יכולים לעמוד בהן."
+    },
+    {
+      "id": "direct-help-for-buyers",
+      "en": "Help buyers directly through discounted-price housing programs, larger and longer mortgages, and grants for young couples and those who served. Owning a home is the key to economic security, and the state should help people get there.",
+      "he": "לסייע ישירות לרוכשים באמצעות תוכניות דירות במחיר מופחת, משכנתאות גדולות וארוכות יותר ומענקים לזוגות צעירים ולמי ששירתו. בעלות על דירה היא המפתח לביטחון כלכלי, והמדינה צריכה לעזור לאנשים להגיע אליה."
+    },
+    {
+      "id": "develop-periphery-and-transport",
+      "en": "Spread demand across the country by investing in transport, jobs and services outside the center, along with urban renewal in existing cities. Prices are high because demand is crowded into the center; making other areas attractive eases the pressure.",
+      "he": "לפזר את הביקוש ברחבי הארץ באמצעות השקעה בתחבורה, בתעסוקה ובשירותים מחוץ למרכז, לצד התחדשות עירונית בערים הקיימות. המחירים גבוהים כי הביקוש מרוכז במרכז, והפיכת אזורים אחרים לאטרקטיביים תקל על הלחץ."
+    }
+  ]
+}

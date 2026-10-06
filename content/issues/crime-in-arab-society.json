@@ -1,0 +1,32 @@
+{
+  "id": "crime-in-arab-society",
+  "en": {
+    "title": "Crime in Arab society",
+    "description": "How to tackle the wave of murders and organized crime in Arab communities.",
+    "moreInfo": "2025 was the deadliest year on record in Arab society, with 252 people killed, and the toll in the first half of 2026 was higher than in the same period of 2025. Only a small share of these killings have been solved. In July 2026 the government approved a plan to involve the Shin Bet against criminal organizations, funded largely by moving about NIS 500 million from the five-year plan for Arab society. The debate is over emergency powers versus more effective policing and investment in Arab communities.",
+    "question": "What is the right approach to fighting crime in Arab society?"
+  },
+  "he": {
+    "title": "הפשיעה בחברה הערבית",
+    "description": "כיצד להתמודד עם גל הרציחות והפשיעה המאורגנת ביישובים הערביים.",
+    "moreInfo": "שנת 2025 הייתה הקטלנית ביותר שנרשמה בחברה הערבית, עם 252 נרצחים, ובמחצית הראשונה של 2026 היה מספר הנרצחים גבוה מבתקופה המקבילה ב-2025. רק חלק קטן ממקרי הרצח פוענחו. ביולי 2026 אישרה הממשלה תוכנית לשילוב השב״כ במאבק בארגוני הפשיעה, הממומנת ברובה בהעברת כ-500 מיליון ש״ח מתוכנית החומש לחברה הערבית. הוויכוח הוא בין סמכויות חירום לבין שיטור אפקטיבי יותר והשקעה ביישובים הערביים.",
+    "question": "מהי הדרך הנכונה להילחם בפשיעה בחברה הערבית?"
+  },
+  "options": [
+    {
+      "id": "emergency-powers-shin-bet",
+      "en": "Use emergency tools: involve the Shin Bet, treat criminal organizations like terror organizations, allow administrative detention of crime bosses and expand police powers. Organized crime threatens state sovereignty and calls for extraordinary measures.",
+      "he": "להפעיל כלי חירום: לשלב את השב״כ, להתייחס לארגוני פשיעה כמו לארגוני טרור, לאפשר מעצרים מנהליים של ראשי ארגוני פשיעה ולהרחיב את סמכויות המשטרה. הפשיעה המאורגנת מאיימת על ריבונות המדינה ומחייבת צעדים חריגים."
+    },
+    {
+      "id": "policing-plus-civil-investment",
+      "en": "Combine a major boost to policing, with more officers, investigators and illegal-weapons collection, with civil plans in education, jobs and local authorities. Crime must be fought through enforcement, but lasting change also needs economic opportunity.",
+      "he": "לשלב תגבור משמעותי של השיטור, עם יותר שוטרים וחוקרים ואיסוף נשק בלתי חוקי, יחד עם תוכניות אזרחיות בחינוך, בתעסוקה וברשויות המקומיות. צריך להילחם בפשיעה באכיפה, אבל שינוי של ממש מחייב גם הזדמנות כלכלית."
+    },
+    {
+      "id": "close-gaps-effective-regular-policing",
+      "en": "Restore and expand budgets for Arab society, close gaps in education, housing and jobs, and make the police effective at solving cases under regular law, in partnership with local leaders. Years of neglect fuel crime, and emergency powers risk harming innocent citizens.",
+      "he": "להחזיר ולהגדיל את התקציבים לחברה הערבית, לסגור פערים בחינוך, בדיור ובתעסוקה ולהפוך את המשטרה לאפקטיבית בפענוח במסגרת החוק הרגיל, בשותפות עם ההנהגה המקומית. שנים של הזנחה מזינות את הפשיעה, וסמכויות חירום עלולות לפגוע באזרחים חפים מפשע."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "judea-samaria",
+  "en": {
+    "title": "Judea and Samaria and the Palestinian issue",
+    "description": "The future of Judea and Samaria, the settlements and relations with the Palestinians.",
+    "moreInfo": "Israeli sovereignty has not been applied to Judea and Samaria (an area also known as the West Bank); Palestinian cities there are run by the Palestinian Authority, and Israelis live in settlements. In September 2025 several Western countries, including the UK, France and Canada, recognized a Palestinian state. Over the past year the government advanced thousands of housing units, including in the E1 area, bills to apply Israeli sovereignty (also referred to as annexation) passed preliminary readings, and several countries announced bans on settlement goods. Party positions range from full sovereignty to separation and a Palestinian state.",
+    "question": "What should Israel's long-term policy be in Judea and Samaria?"
+  },
+  "he": {
+    "title": "יהודה ושומרון והסוגיה הפלסטינית",
+    "description": "עתידם של יהודה ושומרון, ההתיישבות והיחסים עם הפלסטינים.",
+    "moreInfo": "על יהודה ושומרון (אזור המכונה גם הגדה המערבית) לא הוחלה ריבונות ישראלית; הערים הפלסטיניות בהן מנוהלות על ידי הרשות הפלסטינית, וישראלים מתגוררים ביישובים. בספטמבר 2025 הכירו כמה מדינות מערביות, ובהן בריטניה, צרפת וקנדה, במדינה פלסטינית. בשנה האחרונה קידמה הממשלה אלפי יחידות דיור, כולל במרחב E1, הצעות חוק להחלת ריבונות (המכונה גם סיפוח) עברו בקריאה טרומית, וכמה מדינות הודיעו על איסור יבוא סחורות מההתיישבות. עמדות המפלגות נעות מריבונות מלאה ועד היפרדות ומדינה פלסטינית.",
+    "question": "מה צריכה להיות המדיניות ארוכת הטווח של ישראל ביהודה ושומרון?"
+  },
+  "options": [
+    {
+      "id": "full-sovereignty",
+      "en": "Apply full Israeli sovereignty over all of Judea and Samaria, expand settlement and dismantle the Palestinian Authority. This is the historic homeland of the Jewish people, and a Palestinian state would be an existential security threat.",
+      "he": "להחיל ריבונות ישראלית מלאה על כל יהודה ושומרון, להרחיב את ההתיישבות ולפרק את הרשות הפלסטינית. זוהי מולדתו ההיסטורית של העם היהודי, ומדינה פלסטינית תהיה איום ביטחוני קיומי."
+    },
+    {
+      "id": "partial-sovereignty-area-c",
+      "en": "Apply Israeli sovereignty to the settlements and Area C, or to key areas such as the Jordan Valley, while Palestinians manage their own civil affairs in the other areas. This secures vital areas without absorbing a large Palestinian population.",
+      "he": "להחיל ריבונות ישראלית על היישובים ועל שטחי C, או על אזורים מרכזיים כמו בקעת הירדן, בעוד הפלסטינים מנהלים את ענייניהם האזרחיים בשאר השטחים. כך נשמרים אזורים חיוניים בלי לקלוט אוכלוסייה פלסטינית גדולה."
+    },
+    {
+      "id": "maintain-current-situation",
+      "en": "Keep the current situation: keep strengthening the settlements and full IDF freedom of action, with neither sovereignty nor a Palestinian state for now. Under present conditions, any dramatic move in either direction carries heavy risks.",
+      "he": "לשמר את המצב הקיים: להמשיך לחזק את ההתיישבות ולשמור על חופש פעולה מלא לצה״ל, בלי החלת ריבונות ובלי מדינה פלסטינית בשלב זה. בתנאים הנוכחיים, כל צעד דרמטי לכל כיוון כרוך בסיכונים כבדים."
+    },
+    {
+      "id": "separation-two-states",
+      "en": "Separate from the Palestinians through a negotiated two-state agreement that settles borders and settlements, within a regional arrangement with the US and Arab states. This will end the conflict, keep Israel democratic with a Jewish majority and give Palestinians self-determination.",
+      "he": "להיפרד מהפלסטינים בהסכם שתי מדינות במשא ומתן שיסדיר את הגבולות ואת ההתיישבות, כחלק מהסדר אזורי עם ארה״ב ומדינות ערב. כך יסתיים הסכסוך, ישראל תישאר דמוקרטית עם רוב יהודי והפלסטינים יזכו להגדרה עצמית."
+    }
+  ]
+}

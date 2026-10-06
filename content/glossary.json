@@ -1,0 +1,256 @@
+{
+  "terms": [
+    {
+      "id": "haredi",
+      "en": "Haredi / Haredim",
+      "he": "חרדי / חרדים",
+      "avoid": {
+        "en": ["ultra-Orthodox", "black hats", "draft dodgers"],
+        "he": ["דוסים", "שחורים", "משתמטים", "פרזיטים"]
+      },
+      "note": "\"Haredi\" is the community's own term and is standard in Israeli English. \"Ultra-Orthodox\" is not a slur and is used by mainstream Israeli English outlets, but some Haredim feel it implies extremism; it is avoided for consistency only, and should not be treated as equivalent to the other terms in this list, which are pejorative. (Neutrality review 2026-10-06.)"
+    },
+    {
+      "id": "yeshiva-students",
+      "en": "yeshiva students",
+      "he": "תלמידי ישיבות / בני ישיבות",
+      "avoid": {
+        "en": ["draft evaders", "draft dodgers", "shirkers"],
+        "he": ["משתמטים", "עריקים", "תורתו אומנותו (as neutral description)"]
+      },
+      "note": "Describes status without judging it. \"Torato umanuto\" is the Haredi framing and may appear only inside an option's own rationale. \"Deserters\" (עריקים) is a legal status for specific individuals, not a group descriptor."
+    },
+    {
+      "id": "enlistment",
+      "en": "enlistment / military service",
+      "he": "גיוס / שירות צבאי",
+      "avoid": {
+        "en": ["draft dodging", "conscription crisis (as title)"],
+        "he": ["השתמטות", "גזירת הגיוס", "רדיפת בני ישיבות"]
+      },
+      "note": "Both sides' framings are loaded: \"draft dodging\" (opponents of exemptions) and \"decree\"/\"persecution\" (Haredi press). \"Equal burden\" (שוויון בנטל) is widely used but is one camp's slogan, so it appears only as a stated rationale inside an option."
+    },
+    {
+      "id": "national-civilian-service",
+      "en": "civilian national service",
+      "he": "שירות לאומי-אזרחי",
+      "avoid": { "en": [], "he": [] },
+      "note": "The existing official framework name; used for the non-military alternative in both languages."
+    },
+    {
+      "id": "idf",
+      "en": "IDF",
+      "he": "צה״ל",
+      "avoid": {
+        "en": ["Israeli army (fine but inconsistent)", "occupation forces"],
+        "he": ["צבא הכיבוש"]
+      },
+      "note": "Standard in Israeli English and Hebrew."
+    },
+    {
+      "id": "judea-and-samaria",
+      "en": "Judea and Samaria",
+      "he": "יהודה ושומרון",
+      "avoid": {
+        "en": ["occupied West Bank", "occupied territories", "Palestinian territories"],
+        "he": ["הגדה המערבית הכבושה", "השטחים הכבושים"]
+      },
+      "note": "Official Israeli administrative term and the term used by mainstream Hebrew media (e.g., ynet's 2026 election coverage); required by the PRD. \"West Bank\" is also common in Israeli English media and is not loaded, but is avoided for consistency with Hebrew. Some Arab and left-wing parties reject the term. Neutrality review (2026-10-06): to keep the issue recognisable and fair to those users, the judea-samaria moreInfo mentions once, in both languages, that the area is \"also known as the West Bank\" (הגדה המערבית). Everywhere else the PRD term is used."
+    },
+    {
+      "id": "settlements",
+      "en": "settlements / settlement",
+      "he": "יישובים / התיישבות",
+      "avoid": {
+        "en": ["colonies", "illegal settlements (as a blanket term)"],
+        "he": ["קולוניות", "מושבות כיבוש"]
+      },
+      "note": "English \"settlements\" is standard (PRD). In Hebrew, \"יישובים\" and \"התיישבות\" are the most neutral; \"התנחלויות\" is common and not offensive but slightly marked, so not used. \"Outposts\" (מאחזים) is a distinct legal category and should not be used for all settlements."
+    },
+    {
+      "id": "sovereignty",
+      "en": "applying Israeli sovereignty",
+      "he": "החלת ריבונות ישראלית",
+      "avoid": {
+        "en": ["annexation (as sole term)", "land grab"],
+        "he": ["סיפוח (כמונח יחיד)", "גזל אדמות"]
+      },
+      "note": "\"Applying sovereignty\" is the legal phrasing used in the Knesset bills and mainstream Hebrew; \"annexation\" (סיפוח) is also widely used in Israeli media, especially in English, and is preferred by critics. The legal act is the same; we use the bill's own wording. Neutrality review (2026-10-06): the judea-samaria moreInfo adds once \"(also referred to as annexation)\" / \"(המכונה גם סיפוח)\" so users who know the policy by that name recognise it; this is a symmetric \"also known as\", not a critics' label."
+    },
+    {
+      "id": "palestinian-authority",
+      "en": "Palestinian Authority",
+      "he": "הרשות הפלסטינית",
+      "avoid": {
+        "en": ["State of Palestine (as current fact)"],
+        "he": ["מדינת פלסטין (כעובדה קיימת)", "רש״פ (abbreviation, informal)"]
+      },
+      "note": "Neutral official name."
+    },
+    {
+      "id": "palestinian-state",
+      "en": "a Palestinian state / separation",
+      "he": "מדינה פלסטינית / היפרדות",
+      "avoid": {
+        "en": ["terror state", "ending the occupation (as neutral description)"],
+        "he": ["מדינת טרור", "סיום הכיבוש (כתיאור ניטרלי)"]
+      },
+      "note": "Described as a policy outcome, without characterization. \"Separation\" (היפרדות) is the mainstream Israeli term for disengagement-style approaches."
+    },
+    {
+      "id": "october-7-attack",
+      "en": "the October 7 attack / the events of October 7",
+      "he": "מתקפת 7 באוקטובר / אירועי 7 באוקטובר",
+      "avoid": {
+        "en": ["Al-Aqsa Flood", "the October 7 debacle (as title)"],
+        "he": ["מבול אל-אקצא", "המחדל (ככותרת)"]
+      },
+      "note": "\"Massacre\" (טבח) is accurate and mainstream in Israel and is not wrong to use; we prefer \"attack\" in neutral system text for consistent tone across languages and audiences. \"Failures\" (כשלים) is used because all major parties, including the governing coalition, acknowledge failures; \"the debacle\" (המחדל) carries an attribution of blame and is avoided as a label."
+    },
+    {
+      "id": "state-commission-of-inquiry",
+      "en": "state commission of inquiry",
+      "he": "ועדת חקירה ממלכתית",
+      "avoid": {
+        "en": ["independent commission (for one model only)", "biased commission"],
+        "he": ["ועדה מוטה", "ועדה עצמאית (רק לאחד המודלים)"]
+      },
+      "note": "Legal term under the Commissions of Inquiry Law. Supporters call it 'independent' and some opponents call it 'one-sided'; both labels are avoided in neutral text and appear only inside option rationales."
+    },
+    {
+      "id": "knesset-appointed-commission",
+      "en": "a commission appointed through the Knesset",
+      "he": "ועדה שתמונה באמצעות הכנסת",
+      "avoid": {
+        "en": [
+          "political commission",
+          "cover-up commission",
+          "national commission (as neutral description)"
+        ],
+        "he": ["ועדה פוליטית", "ועדת טיוח", "ועדה לאומית (כתיאור ניטרלי)"]
+      },
+      "note": "Opponents call the government's model 'political' or a 'cover-up'; supporters call it 'national' or 'balanced'. We describe the appointment mechanism factually instead."
+    },
+    {
+      "id": "judicial-changes",
+      "en": "changes to the judicial system",
+      "he": "שינויים במערכת המשפט",
+      "avoid": {
+        "en": [
+          "judicial coup",
+          "regime coup",
+          "judicial reform (as neutral description)",
+          "judicial overhaul (as neutral description)"
+        ],
+        "he": ["הפיכה משטרית", "הפיכה משפטית", "רפורמה משפטית (כתיאור ניטרלי)", "המהפכה המשפטית"]
+      },
+      "note": "\"Reform\" is the supporters' term; \"coup\"/\"overhaul\" are opponents' terms. A descriptive phrase is used; the specific measures (judicial selection, attorney general's authority, judicial review) are named directly."
+    },
+    {
+      "id": "high-court-of-justice",
+      "en": "Supreme Court / High Court of Justice",
+      "he": "בית המשפט העליון / בג״ץ",
+      "avoid": {
+        "en": ["activist court", "the gatekeepers"],
+        "he": ["שלטון השופטים", "שומרי הסף (as neutral term)"]
+      },
+      "note": "Official names. \"High Court of Justice\" refers to the Supreme Court sitting on petitions against the state."
+    },
+    {
+      "id": "attorney-general",
+      "en": "attorney general",
+      "he": "היועץ/ת המשפטי/ת לממשלה",
+      "avoid": { "en": [], "he": [] },
+      "note": "Hebrew uses the feminine form when referring to the incumbent and the masculine generic form for the office in options. No personal names are used anywhere."
+    },
+    {
+      "id": "voluntary-emigration",
+      "en": "encouraging voluntary emigration",
+      "he": "עידוד הגירה מרצון",
+      "avoid": { "en": ["transfer", "ethnic cleansing"], "he": ["טרנספר", "טיהור אתני"] },
+      "note": "Used only inside the option of those who advocate it, in their own wording. It is also the official name of the Defense Ministry directorate approved by the security cabinet in March 2025 to facilitate departures from Gaza. Critics' terms are avoided because they would make the option unrecognisable to its supporters. Neutrality review (2026-10-06): kept, scoped to \"Gaza residents\", never used in neutral system text (titles, descriptions, moreInfo, questions)."
+    },
+    {
+      "id": "arab-society",
+      "en": "Arab society / Arab citizens / Arab communities",
+      "he": "החברה הערבית / אזרחים ערבים / היישובים הערביים",
+      "avoid": {
+        "en": ["Arab sector", "minorities", "Palestinian citizens of Israel (contested)"],
+        "he": ["המגזר הערבי", "בני מיעוטים", "ערביי ישראל (מיושן)"]
+      },
+      "note": "\"Arab society\" (החברה הערבית) is the term used by government bodies, research institutes and Arab civil society today. \"Sector\" is considered dated and diminishing. \"Palestinian citizens\" is preferred by some but rejected by others, so it is not used."
+    },
+    {
+      "id": "shabbat",
+      "en": "Shabbat",
+      "he": "שבת",
+      "avoid": { "en": ["Sabbath (fine, but less used by Israelis)"], "he": [] },
+      "note": "Israeli English usage."
+    },
+    {
+      "id": "status-quo",
+      "en": "the status quo (on religion and state)",
+      "he": "הסטטוס קוו",
+      "avoid": {
+        "en": ["religious coercion", "secularization drive"],
+        "he": ["כפייה דתית", "הדתה", "רדיפת הדת", "כפייה חילונית"]
+      },
+      "note": "Neutral name for the long-standing religion-state arrangements. Both camps' charge words are avoided."
+    },
+    {
+      "id": "chief-rabbinate",
+      "en": "Chief Rabbinate",
+      "he": "הרבנות הראשית",
+      "avoid": {
+        "en": ["rabbinic monopoly (as neutral description)"],
+        "he": ["מונופול הרבנות (כתיאור ניטרלי)"]
+      },
+      "note": "Official institution name."
+    },
+    {
+      "id": "civil-marriage",
+      "en": "civil marriage / civil unions",
+      "he": "נישואים אזרחיים / ברית זוגיות אזרחית",
+      "avoid": { "en": [], "he": [] },
+      "note": "Two distinct proposals: full civil marriage vs. a civil-union framework alongside religious marriage. Both are used precisely."
+    },
+    {
+      "id": "hamas",
+      "en": "Hamas",
+      "he": "חמאס",
+      "avoid": { "en": ["the resistance", "militants (as sole descriptor)"], "he": ["ההתנגדות"] },
+      "note": "Name used plainly without adjectives in neutral text."
+    },
+    {
+      "id": "hezbollah",
+      "en": "Hezbollah",
+      "he": "חיזבאללה",
+      "avoid": { "en": [], "he": [] },
+      "note": "Standard spelling in Israeli English media."
+    },
+    {
+      "id": "hostages",
+      "en": "hostages",
+      "he": "חטופים",
+      "avoid": { "en": ["captives", "prisoners"], "he": ["שבויים"] },
+      "note": "Mainstream Israeli usage in both languages."
+    },
+    {
+      "id": "cost-of-living",
+      "en": "cost of living",
+      "he": "יוקר המחיה",
+      "avoid": {
+        "en": ["tycoons", "cartels (as neutral description)"],
+        "he": ["הטייקונים", "קרטלים (כתיאור ניטרלי)"]
+      },
+      "note": "Neutral system text uses \"large business groups\" / \"concentration\" (ריכוזיות), the regulator's terms."
+    },
+    {
+      "id": "israel-land-authority",
+      "en": "Israel Land Authority",
+      "he": "רשות מקרקעי ישראל",
+      "avoid": { "en": ["ILA (unexplained abbreviation)"], "he": ["רמ״י (ללא הסבר)"] },
+      "note": "Official name; abbreviations avoided for non-expert users."
+    }
+  ]
+}

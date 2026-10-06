@@ -1,0 +1,52 @@
+{
+  "parties": [
+    {
+      "id": "blue-horizon",
+      "name": { "he": "האופק הכחול (בדיונית)", "en": "Blue Horizon (fictional)" },
+      "listId": "blue-horizon",
+      "leader": { "he": "דנה דוגמה", "en": "Dana Example" },
+      "limitedInfo": false,
+      "researchedAsOf": "2026-10-06"
+    },
+    {
+      "id": "olive-branch",
+      "name": { "he": "תנועת ענף הזית (בדיונית)", "en": "Olive Branch Movement (fictional)" },
+      "listId": "olive-and-valley",
+      "leader": { "he": "נועה לדוגמה", "en": "Noa Sample" },
+      "limitedInfo": false,
+      "researchedAsOf": "2026-10-06"
+    },
+    {
+      "id": "green-valley",
+      "name": { "he": "איחוד העמק הירוק (בדיונית)", "en": "Green Valley Union (fictional)" },
+      "listId": "olive-and-valley",
+      "leader": { "he": "סמיר דמו", "en": "Samir Demo" },
+      "limitedInfo": false,
+      "researchedAsOf": "2026-10-06"
+    },
+    {
+      "id": "cedar-tradition",
+      "name": { "he": "מסורת הארז (בדיונית)", "en": "Cedar Tradition (fictional)" },
+      "listId": "cedar-tradition",
+      "leader": { "he": "אברהם בדיון", "en": "Avraham Fiction" },
+      "limitedInfo": false,
+      "researchedAsOf": "2026-10-06"
+    },
+    {
+      "id": "lighthouse",
+      "name": { "he": "המגדלור (בדיונית)", "en": "The Lighthouse (fictional)" },
+      "listId": "lighthouse",
+      "leader": { "he": "מיכל משל", "en": "Michal Mashal" },
+      "limitedInfo": false,
+      "researchedAsOf": "2026-10-06"
+    },
+    {
+      "id": "pebble-citizens",
+      "name": { "he": "רשימת אזרחי החלוק (בדיונית)", "en": "Pebble Citizens' List (fictional)" },
+      "listId": "pebble-citizens",
+      "leader": { "he": "רון מדומה", "en": "Ron Imaginary" },
+      "limitedInfo": true,
+      "researchedAsOf": "2026-10-06"
+    }
+  ]
+}

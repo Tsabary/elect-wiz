@@ -1,0 +1,36 @@
+{
+  "Metadata": {
+    "siteName": "Party Matcher",
+    "title": "Knesset Election Party Matcher",
+    "description": "A non-partisan tool that helps Israeli voters find the party whose positions best match their own."
+  },
+  "Nav": {
+    "home": "Home",
+    "parties": "Parties",
+    "howItWorks": "How this works",
+    "privacy": "Privacy & Terms",
+    "skipToContent": "Skip to content"
+  },
+  "LanguageSwitch": {
+    "label": "Language",
+    "he": "עברית",
+    "en": "English",
+    "switchTo": "עבור לעברית"
+  },
+  "Home": {
+    "heading": "Which party is closest to your positions?",
+    "intro": "[Draft] A non-partisan tool that matches your positions with the parties' positions, based on documented research. It's a decision aid, not a voting recommendation.",
+    "start": "Let's start"
+  },
+  "MatchErrors": {
+    "validation": "We couldn’t read your answers. You can restart the survey.",
+    "content_version_mismatch": "The survey content was updated. Please restart.",
+    "abuse_check_failed": "We couldn’t verify the request. Please try again.",
+    "rate_limited": "Too many requests. Please try again in a few minutes.",
+    "at_capacity": "The service is busy right now. Please try again later.",
+    "election_over": "The election is over and the survey is closed.",
+    "upstream_failure": "Something went wrong while preparing your result. Please try again.",
+    "retry": "Try again",
+    "restart": "Restart"
+  }
+}

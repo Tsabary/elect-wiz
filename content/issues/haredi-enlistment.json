@@ -1,0 +1,37 @@
+{
+  "id": "haredi-enlistment",
+  "en": {
+    "title": "Haredi military enlistment",
+    "description": "Whether and how yeshiva students and young Haredi men should serve in the IDF or in civilian national service.",
+    "moreInfo": "For decades, full-time yeshiva students received service deferrals that in practice became exemptions. In 2024 the Supreme Court ruled that there is no legal basis for a blanket exemption. Since then the IDF has issued tens of thousands of enlistment orders, but only a few thousand have enlisted. Bills setting gradual enlistment targets did not pass before the Knesset dissolved, and the issue is expected to be central in coalition negotiations.",
+    "question": "What should the policy be on military service for Haredi yeshiva students?"
+  },
+  "he": {
+    "title": "גיוס חרדים",
+    "description": "האם וכיצד בני ישיבות וצעירים חרדים צריכים לשרת בצה״ל או בשירות לאומי-אזרחי.",
+    "moreInfo": "במשך עשרות שנים קיבלו תלמידי ישיבות במשרה מלאה דחיית שירות, שהפכה בפועל לפטור. ב-2024 קבע בית המשפט העליון שאין בסיס חוקי לפטור גורף. מאז הוציא צה״ל עשרות אלפי צווי גיוס, אך רק אלפים בודדים התגייסו. הצעות חוק שקבעו יעדי גיוס הדרגתיים לא אושרו לפני פיזור הכנסת, והנושא צפוי לעמוד במרכז המשא ומתן הקואליציוני.",
+    "question": "מה צריכה להיות המדיניות לגבי שירות צבאי של בני ישיבות חרדים?"
+  },
+  "options": [
+    {
+      "id": "anchor-torah-study-exemption",
+      "en": "Anchor in law the right of full-time yeshiva students to keep studying without enlisting, free of criminal or financial sanctions. Torah study is a core value that has protected the Jewish people, and Haredim should not be forced into a framework that threatens their way of life.",
+      "he": "לעגן בחוק את זכותם של תלמידי ישיבות במשרה מלאה להמשיך ללמוד בלי להתגייס, ללא סנקציות פליליות או כלכליות. לימוד התורה הוא ערך יסוד ששמר על העם היהודי והגן עליו, ואין לכפות על הציבור החרדי מסגרת שמאיימת על אורח חייו."
+    },
+    {
+      "id": "gradual-targets-by-agreement",
+      "en": "Set gradual enlistment targets for Haredim, with dedicated IDF tracks suited to their way of life and incentives, and cut yeshiva budgets only if targets are missed. Real change will only work through agreement with the Haredi leadership, without tearing society apart.",
+      "he": "לקבוע יעדי גיוס הדרגתיים לחרדים, עם מסלולים ייעודיים בצה״ל המותאמים לאורח חייהם ותמריצים, ולקצץ בתקציבי הישיבות רק אם היעדים לא יושגו. שינוי אמיתי יצליח רק בהסכמה עם ההנהגה החרדית ובלי קרע בעם."
+    },
+    {
+      "id": "universal-service-with-sanctions",
+      "en": "Require every 18-year-old, including Haredim, to serve in the IDF or in civilian national service, with exemptions only for a few outstanding scholars, enforced by personal sanctions such as loss of state benefits. The IDF needs the manpower, and the burden should be shared equally.",
+      "he": "לחייב כל צעיר בן 18, כולל חרדים, בשירות בצה״ל או בשירות לאומי-אזרחי, עם פטור רק למספר מצומצם של מצטיינים בלימוד, ולאכוף זאת בסנקציות אישיות כמו שלילת הטבות מהמדינה. צה״ל זקוק לכוח האדם, והנטל צריך להתחלק באופן שווה."
+    },
+    {
+      "id": "no-compulsory-service-for-objecting-communities",
+      "en": "Do not impose compulsory service on communities that oppose it, whether Haredim or Arab citizens; any civilian service should be voluntary. Forced enlistment would deepen divisions, and equal rights should not be conditional on service or enforced through sanctions.",
+      "he": "לא לכפות שירות חובה על ציבורים שמתנגדים לו, חרדים או אזרחים ערבים, וכל שירות אזרחי צריך להיות התנדבותי. גיוס בכפייה יעמיק את הפילוג, וזכויות שוות אינן צריכות להיות מותנות בשירות או להיאכף באמצעות סנקציות."
+    }
+  ]
+}

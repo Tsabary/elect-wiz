@@ -1,0 +1,1235 @@
+{
+  "parties": [
+    {
+      "id": "byachad-bennett",
+      "name": {
+        "he": "ביחד בראשות בנט מחזירים את התקווה",
+        "en": "Together led by Bennett – Restoring Hope"
+      },
+      "listId": "together",
+      "leader": {
+        "he": "נפתלי בנט",
+        "en": "Naftali Bennett"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: ביחד",
+          "url": "https://www.idi.org.il/media/32309/%D7%91%D7%99%D7%97%D7%93.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "yesh-atid",
+      "name": {
+        "he": "יש עתיד - בראשות יאיר לפיד",
+        "en": "Yesh Atid – led by Yair Lapid"
+      },
+      "listId": "together",
+      "leader": {
+        "he": "יאיר לפיד",
+        "en": "Yair Lapid"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: ביחד",
+          "url": "https://www.idi.org.il/media/32309/%D7%91%D7%99%D7%97%D7%93.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        },
+        {
+          "title": "Lapid unveils Yesh Atid election slate after wave of departures ahead of joint run with Bennett",
+          "url": "https://www.ynetnews.com/article/hkfdvtkogx",
+          "publisher": "Ynetnews",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        }
+      ]
+    },
+    {
+      "id": "yashar-leyisrael",
+      "name": {
+        "he": "ישר לישראל עם איזנקוט",
+        "en": "Yashar LeYisrael with Eisenkot"
+      },
+      "listId": "yashar",
+      "leader": {
+        "he": "גדי איזנקוט",
+        "en": "Gadi Eisenkot"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: ישר",
+          "url": "https://www.idi.org.il/media/32324/%D7%99%D7%A9%D7%A8.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "yesodot-yisrael",
+      "name": {
+        "he": "יסודות ישראל",
+        "en": "Yesodot Yisrael (Foundations of Israel)"
+      },
+      "listId": "yashar",
+      "leader": {
+        "he": "חילי (יחיאל משה) טרופר",
+        "en": "Chili Tropper"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: ישר",
+          "url": "https://www.idi.org.il/media/32324/%D7%99%D7%A9%D7%A8.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "sharshar",
+      "name": {
+        "he": "שרשר לאהבה ואחדות העם",
+        "en": "Sharshar – for Love and Unity of the People"
+      },
+      "listId": "sharshar",
+      "leader": {
+        "he": "איתן שוילי",
+        "en": "Eitan Shvili"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: שרשר",
+          "url": "https://www.idi.org.il/media/32340/%D7%A9%D7%A8%D7%A9%D7%A8.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "ihud-bnei-habrit",
+      "name": {
+        "he": "איחוד בני הברית - איתחאד אבנאא אלעהד - בראשות רב חובל בשארה שליאן",
+        "en": "Ihud Bnei HaBrit (Union of the Sons of the Covenant) – led by Bishara Shlayan"
+      },
+      "listId": "partnership-for-all",
+      "leader": {
+        "he": "בשארה שליאן",
+        "en": "Bishara Shlayan"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: השותפות-לכולם",
+          "url": "https://www.idi.org.il/media/32321/%D7%94%D7%A9%D7%95%D7%AA%D7%A4%D7%95%D7%AA-%D7%9C%D7%9B%D7%95%D7%9C%D7%9D.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "pirates",
+      "name": {
+        "he": "הפיראטים",
+        "en": "The Pirates"
+      },
+      "listId": "pirates",
+      "leader": {
+        "he": "אוהד שם טוב",
+        "en": "Ohad Shem Tov"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: הפיראטים",
+          "url": "https://www.idi.org.il/media/32316/%D7%94%D7%A4%D7%99%D7%A8%D7%90%D7%98%D7%99%D7%9D.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "amcha-yisrael",
+      "name": {
+        "he": "עמי חי לעד",
+        "en": "Ami Chai La'ad (registered party that submitted the Amcha Yisrael list)"
+      },
+      "listId": "amcha-yisrael",
+      "leader": {
+        "he": "עופר וינטר",
+        "en": "Ofer Winter"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: עמך-ישראל",
+          "url": "https://www.idi.org.il/media/32333/%D7%A2%D7%9E%D7%9A-%D7%99%D7%A9%D7%A8%D7%90%D7%9C.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "israel-first",
+      "name": {
+        "he": "ישראל תחילה - ביטחון, כלכלה, אחדות בעם ישראל",
+        "en": "Israel First – Security, Economy, Unity of the People of Israel"
+      },
+      "listId": "israel-first",
+      "leader": {
+        "he": "שרן השכל",
+        "en": "Sharren Haskel"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: ישראל-תחילה",
+          "url": "https://www.idi.org.il/media/32326/%D7%99%D7%A9%D7%A8%D7%90%D7%9C-%D7%AA%D7%97%D7%99%D7%9C%D7%94.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "gan-eden",
+      "name": {
+        "he": "גן עדן",
+        "en": "Gan Eden (Garden of Eden)"
+      },
+      "listId": "gan-eden",
+      "leader": {
+        "he": "ישוע ישראל בן דוד",
+        "en": "Yeshua Israel Ben David"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: גן-עדן",
+          "url": "https://www.idi.org.il/media/32311/%D7%92%D7%9F-%D7%A2%D7%93%D7%9F.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "womens-voice",
+      "name": {
+        "he": "קול הנשים",
+        "en": "Women's Voice (Kol HaNashim)"
+      },
+      "listId": "womens-voice",
+      "leader": {
+        "he": "עמיר ישראל שדמי",
+        "en": "Amir Israel Shadmi"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: קול-הנשים",
+          "url": "https://www.idi.org.il/media/32336/%D7%A7%D7%95%D7%9C-%D7%94%D7%A0%D7%A9%D7%99%D7%9D.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "together-we-will-succeed",
+      "name": {
+        "he": "ביחד נצליח",
+        "en": "Together We Will Succeed (Beyachad Natzliach)"
+      },
+      "listId": "together-we-will-succeed",
+      "leader": {
+        "he": "אבי שקד",
+        "en": "Avi Shaked"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: ביחד-נצליח",
+          "url": "https://www.idi.org.il/media/32308/%D7%91%D7%99%D7%97%D7%93-%D7%A0%D7%A6%D7%9C%D7%99%D7%97.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "yisrael-beytenu",
+      "name": {
+        "he": "ישראל ביתנו",
+        "en": "Yisrael Beytenu"
+      },
+      "listId": "yisrael-beytenu",
+      "leader": {
+        "he": "אביגדור ליברמן",
+        "en": "Avigdor Liberman"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: ישראל-ביתנו",
+          "url": "https://www.idi.org.il/media/32325/%D7%99%D7%A9%D7%A8%D7%90%D7%9C-%D7%91%D7%99%D7%AA%D7%A0%D7%95.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "just-law",
+      "name": {
+        "he": "משפט צדק",
+        "en": "Just Law (Mishpat Tzedek)"
+      },
+      "listId": "just-law",
+      "leader": {
+        "he": "לריסה עמיר",
+        "en": "Larissa Amir"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: משפט-צדק",
+          "url": "https://www.idi.org.il/media/32329/%D7%9E%D7%A9%D7%A4%D7%98-%D7%A6%D7%93%D7%A7.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "shema",
+      "name": {
+        "he": "שמע בראשות נפתלי גולדמן",
+        "en": "Shema led by Naftali Goldman"
+      },
+      "listId": "shema",
+      "leader": {
+        "he": "נפתלי גולדמן",
+        "en": "Naftali Goldman"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: שמע",
+          "url": "https://www.idi.org.il/media/32338/%D7%A9%D7%9E%D7%A2.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "jewish-national-front",
+      "name": {
+        "he": "חזית יהודית לאומית",
+        "en": "Jewish National Front (registered party that submitted the Otzma Yehudit list)"
+      },
+      "listId": "otzma-yehudit",
+      "leader": {
+        "he": "איתמר בן גביר",
+        "en": "Itamar Ben Gvir"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: עוצמה-יהודית",
+          "url": "https://www.idi.org.il/media/32332/%D7%A2%D7%95%D7%A6%D7%9E%D7%94-%D7%99%D7%94%D7%95%D7%93%D7%99%D7%AA.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "eretz-yisrael-shelanu",
+      "name": {
+        "he": "ארץ ישראל שלנו - מפלגה יהודית מאוחדת לשלמות התורה העם והארץ",
+        "en": "Eretz Yisrael Shelanu (Our Land of Israel)"
+      },
+      "listId": "otzma-yehudit",
+      "leader": {
+        "he": "יצחק וסרלאוף",
+        "en": "Yitzhak Wasserlauf"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: עוצמה-יהודית",
+          "url": "https://www.idi.org.il/media/32332/%D7%A2%D7%95%D7%A6%D7%9E%D7%94-%D7%99%D7%94%D7%95%D7%93%D7%99%D7%AA.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "new-order",
+      "name": {
+        "he": "סדר חדש לשינוי שיטת הבחירות",
+        "en": "New Order – for Changing the Electoral System"
+      },
+      "listId": "new-order",
+      "leader": {
+        "he": "אביטל אופק",
+        "en": "Avital Ofek"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: סדר-חדש",
+          "url": "https://www.idi.org.il/media/32331/%D7%A1%D7%93%D7%A8-%D7%97%D7%93%D7%A9.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "the-reservists",
+      "name": {
+        "he": "המילואימניקים",
+        "en": "The Reservists"
+      },
+      "listId": "reservists-and-economic-party",
+      "leader": {
+        "he": "יועז הנדל",
+        "en": "Yoaz Hendel"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: המילואימניקים-והכלכלית",
+          "url": "https://www.idi.org.il/media/32315/%D7%94%D7%9E%D7%99%D7%9C%D7%95%D7%90%D7%99%D7%9E%D7%A0%D7%99%D7%A7%D7%99%D7%9D-%D7%95%D7%94%D7%9B%D7%9C%D7%9B%D7%9C%D7%99%D7%AA.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "new-economic-party",
+      "name": {
+        "he": "הכלכלית החדשה",
+        "en": "The New Economic Party"
+      },
+      "listId": "reservists-and-economic-party",
+      "leader": {
+        "he": "ירון זליכה",
+        "en": "Yaron Zelekha"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: המילואימניקים-והכלכלית",
+          "url": "https://www.idi.org.il/media/32315/%D7%94%D7%9E%D7%99%D7%9C%D7%95%D7%90%D7%99%D7%9E%D7%A0%D7%99%D7%A7%D7%99%D7%9D-%D7%95%D7%94%D7%9B%D7%9C%D7%9B%D7%9C%D7%99%D7%AA.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "the-democrats-party",
+      "name": {
+        "he": "הדמוקרטים מיסודה של תנועת העבודה",
+        "en": "The Democrats (founded by the Labor movement)"
+      },
+      "listId": "the-democrats",
+      "leader": {
+        "he": "יאיר גולן",
+        "en": "Yair Golan"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: הדמוקרטים",
+          "url": "https://www.idi.org.il/media/32313/%D7%94%D7%93%D7%9E%D7%95%D7%A7%D7%A8%D7%98%D7%99%D7%9D.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "meretz",
+      "name": {
+        "he": "מרצ",
+        "en": "Meretz"
+      },
+      "listId": "the-democrats",
+      "leader": {
+        "he": "גבי לסקי",
+        "en": "Gaby Lasky"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: הדמוקרטים",
+          "url": "https://www.idi.org.il/media/32313/%D7%94%D7%93%D7%9E%D7%95%D7%A7%D7%A8%D7%98%D7%99%D7%9D.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "raam",
+      "name": {
+        "he": "רשימת האיחוד הערבי",
+        "en": "United Arab List (Ra'am)"
+      },
+      "listId": "raam",
+      "leader": {
+        "he": "מנסור עבאס",
+        "en": "Mansour Abbas"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: רעמ",
+          "url": "https://www.idi.org.il/media/32337/%D7%A8%D7%A2%D7%9E.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "shas",
+      "name": {
+        "he": "ש\"ס - התאחדות הספרדים העולמית שומרי תורה",
+        "en": "Shas – World Union of Sephardic Torah Guardians"
+      },
+      "listId": "shas",
+      "leader": {
+        "he": "אריה דרעי",
+        "en": "Aryeh Deri"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: שס",
+          "url": "https://www.idi.org.il/media/32339/%D7%A9%D7%A1.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "haredi-public",
+      "name": {
+        "he": "למען אחיי מפלגת כלל ישראל",
+        "en": "Lema'an Achai – Party of All Israel (registered party that submitted the Haredi Public list)"
+      },
+      "listId": "haredi-public",
+      "leader": {
+        "he": "מוטי ליטנר",
+        "en": "Moti Litner"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: הציבור-החרדי",
+          "url": "https://www.idi.org.il/media/32317/%D7%94%D7%A6%D7%99%D7%91%D7%95%D7%A8-%D7%94%D7%97%D7%A8%D7%93%D7%99.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "you-and-me",
+      "name": {
+        "he": "אני ואתה - מפלגת העם הישראלית",
+        "en": "You and Me – the Israeli People's Party"
+      },
+      "listId": "you-and-me",
+      "leader": {
+        "he": "אלון גלעדי",
+        "en": "Alon Giladi"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: אני-ואתה",
+          "url": "https://www.idi.org.il/media/32305/%D7%90%D7%A0%D7%99-%D7%95%D7%90%D7%AA%D7%94.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "brit-olam",
+      "name": {
+        "he": "ברית עולם",
+        "en": "Brit Olam (Eternal Covenant)"
+      },
+      "listId": "brit-olam",
+      "leader": {
+        "he": "עופר ליפשיץ",
+        "en": "Ofer Lifshitz"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: ברית-עולם",
+          "url": "https://www.idi.org.il/media/32310/%D7%91%D7%A8%D7%99%D7%AA-%D7%A2%D7%95%D7%9C%D7%9D.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "hatikun",
+      "name": {
+        "he": "התיקון",
+        "en": "HaTikun (The Fix)"
+      },
+      "listId": "hatikun",
+      "leader": {
+        "he": "משה סלומוביץ",
+        "en": "Moshe Salomovich"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: התיקון",
+          "url": "https://www.idi.org.il/media/32322/%D7%94%D7%AA%D7%99%D7%A7%D7%95%D7%9F.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "bible-bloc",
+      "name": {
+        "he": "גה\"ת-גוש התנ\"כי",
+        "en": "Gahat – the Bible Bloc"
+      },
+      "listId": "bible-bloc",
+      "leader": {
+        "he": "משה ליפקין",
+        "en": "Moshe Lipkin"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: הגוש-התנכי",
+          "url": "https://www.idi.org.il/media/32312/%D7%94%D7%92%D7%95%D7%A9-%D7%94%D7%AA%D7%A0%D7%9B%D7%99.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "betach",
+      "name": {
+        "he": "בט\"ח בטחון חברתי",
+        "en": "Betach – Social Security"
+      },
+      "listId": "betach",
+      "leader": {
+        "he": "סמיון גרפמן",
+        "en": "Semion Grafman"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: בטח",
+          "url": "https://www.idi.org.il/media/32306/%D7%91%D7%98%D7%97.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "orot-hashachar",
+      "name": {
+        "he": "אורות השחר מפלגה של כולם",
+        "en": "Orot HaShachar – a Party for Everyone"
+      },
+      "listId": "orot-hashachar",
+      "leader": {
+        "he": "ניסים לוק",
+        "en": "Nissim Louk"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: אורות-השחר",
+          "url": "https://www.idi.org.il/media/32304/%D7%90%D7%95%D7%A8%D7%95%D7%AA-%D7%94%D7%A9%D7%97%D7%A8.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "demokratura",
+      "name": {
+        "he": "דמוקראטורה – מפלגה להגשמת הציונות וערכי הדמוקראטורה",
+        "en": "Demokratura (registered party that submitted the Personal Security list)"
+      },
+      "listId": "personal-security",
+      "leader": {
+        "he": "מיכאל טופצ'יאשוילי",
+        "en": "Michael Topchiashvili"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: בטחון-אישי",
+          "url": "https://www.idi.org.il/media/32307/%D7%91%D7%98%D7%97%D7%95%D7%9F-%D7%90%D7%99%D7%A9%D7%99.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "color-black",
+      "name": {
+        "he": "תומכי יהדות בוכרה",
+        "en": "Supporters of Bukharan Judaism (registered party that submitted the Color Black list)"
+      },
+      "listId": "color-black",
+      "leader": {
+        "he": "אליהו באומרינד",
+        "en": "Eliyahu Baumrind"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: צבע-שחור",
+          "url": "https://www.idi.org.il/media/32334/%D7%A6%D7%91%D7%A2-%D7%A9%D7%97%D7%95%D7%A8.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "likud-party",
+      "name": {
+        "he": "הליכוד, תנועה לאומית ליברלית",
+        "en": "Likud – National Liberal Movement"
+      },
+      "listId": "likud",
+      "leader": {
+        "he": "בנימין נתניהו",
+        "en": "Benjamin Netanyahu"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: הליכוד",
+          "url": "https://www.idi.org.il/media/32314/%D7%94%D7%9C%D7%99%D7%9B%D7%95%D7%93.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "new-hope",
+      "name": {
+        "he": "תקווה חדשה הימין הממלכתי",
+        "en": "New Hope – the Statesmanlike Right"
+      },
+      "listId": "likud",
+      "leader": {
+        "he": "גדעון סער",
+        "en": "Gideon Sa'ar"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: הליכוד",
+          "url": "https://www.idi.org.il/media/32314/%D7%94%D7%9C%D7%99%D7%9B%D7%95%D7%93.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        },
+        {
+          "title": "Down to the wire: Knesset election slates take shape as deadline nears",
+          "url": "https://www.ynetnews.com/article/bjhvtvhpfe",
+          "publisher": "Ynetnews",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        }
+      ]
+    },
+    {
+      "id": "blue-and-white",
+      "name": {
+        "he": "כחול לבן חוסן לישראל",
+        "en": "Blue and White – Israel Resilience"
+      },
+      "listId": "blue-and-white",
+      "leader": {
+        "he": "בני גנץ",
+        "en": "Benny Gantz"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: כחול-לבן",
+          "url": "https://www.idi.org.il/media/32327/%D7%9B%D7%97%D7%95%D7%9C-%D7%9C%D7%91%D7%9F.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "national-union-tkuma",
+      "name": {
+        "he": "האיחוד הלאומי - תקומה",
+        "en": "National Union–Tkuma (registered party of Religious Zionism)"
+      },
+      "listId": "religious-zionism-zehut",
+      "leader": {
+        "he": "בצלאל סמוטריץ'",
+        "en": "Bezalel Smotrich"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: הציונות-הדתית",
+          "url": "https://www.idi.org.il/media/32318/%D7%94%D7%A6%D7%99%D7%95%D7%A0%D7%95%D7%AA-%D7%94%D7%93%D7%AA%D7%99%D7%AA.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "zehut",
+      "name": {
+        "he": "זהות - תנועה ישראלית יהודית",
+        "en": "Zehut – Israeli Jewish Movement"
+      },
+      "listId": "religious-zionism-zehut",
+      "leader": {
+        "he": "משה פייגלין",
+        "en": "Moshe Feiglin"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: הציונות-הדתית",
+          "url": "https://www.idi.org.il/media/32318/%D7%94%D7%A6%D7%99%D7%95%D7%A0%D7%95%D7%AA-%D7%94%D7%93%D7%AA%D7%99%D7%AA.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "atid-echad",
+      "name": {
+        "he": "עתיד אחד - עתיד טוב לישראל",
+        "en": "Atid Echad – A Good Future for Israel"
+      },
+      "listId": "religious-zionism-zehut",
+      "leader": {
+        "he": "אורית סטרוק",
+        "en": "Orit Strock"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: הציונות-הדתית",
+          "url": "https://www.idi.org.il/media/32318/%D7%94%D7%A6%D7%99%D7%95%D7%A0%D7%95%D7%AA-%D7%94%D7%93%D7%AA%D7%99%D7%AA.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "ahi-movement",
+      "name": {
+        "he": "חוזרים לשורשים",
+        "en": "Chozrim LaShorashim (registered party that submitted the Ahi list)"
+      },
+      "listId": "ahi-movement",
+      "leader": {
+        "he": "יובל אלמלך",
+        "en": "Yuval Elmalech"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: תנועת-אחי",
+          "url": "https://www.idi.org.il/media/32341/%D7%AA%D7%A0%D7%95%D7%A2%D7%AA-%D7%90%D7%97%D7%99.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "beit-yemini",
+      "name": {
+        "he": "בית ימני חברתי ציוני לכלל ישראל",
+        "en": "Beit Yemini Hevrati Tziyoni (Beit Yisrael's registered party)"
+      },
+      "listId": "tzomet-beit-yisrael",
+      "leader": {
+        "he": "גדי יברקן",
+        "en": "Gadi Yevarkan"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: צומת-בית-ישראל",
+          "url": "https://www.idi.org.il/media/32335/%D7%A6%D7%95%D7%9E%D7%AA-%D7%91%D7%99%D7%AA-%D7%99%D7%A9%D7%A8%D7%90%D7%9C.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "tzomet",
+      "name": {
+        "he": "צומת - התנועה לציונות מתחדשת",
+        "en": "Tzomet – Movement for Renewed Zionism"
+      },
+      "listId": "tzomet-beit-yisrael",
+      "leader": {
+        "he": "משה גרין",
+        "en": "Moshe Green"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: צומת-בית-ישראל",
+          "url": "https://www.idi.org.il/media/32335/%D7%A6%D7%95%D7%9E%D7%AA-%D7%91%D7%99%D7%AA-%D7%99%D7%A9%D7%A8%D7%90%D7%9C.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "tekuma",
+      "name": {
+        "he": "תקומה",
+        "en": "Tekuma"
+      },
+      "listId": "tekuma",
+      "leader": {
+        "he": "אלקנא פדרמן",
+        "en": "Elkana Federman"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: מפלגת-תקומה",
+          "url": "https://www.idi.org.il/media/32328/%D7%9E%D7%A4%D7%9C%D7%92%D7%AA-%D7%AA%D7%A7%D7%95%D7%9E%D7%94.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "hadash",
+      "name": {
+        "he": "המפלגה הקומוניסטית הישראלית",
+        "en": "Israeli Communist Party (Hadash)"
+      },
+      "listId": "joint-list",
+      "leader": {
+        "he": "יוסף ג'בארין",
+        "en": "Yousef Jabareen"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: הרשימה-המשותפת",
+          "url": "https://www.idi.org.il/media/32320/%D7%94%D7%A8%D7%A9%D7%99%D7%9E%D7%94-%D7%94%D7%9E%D7%A9%D7%95%D7%AA%D7%A4%D7%AA.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        },
+        {
+          "title": "Israel's election takes shape as 38 parties submit slates, in battle between pro- and anti-Netanyahu blocs",
+          "url": "https://www.timesofisrael.com/israels-election-takes-shape-as-38-parties-submit-slates-from-likud-to-joint-list/",
+          "publisher": "The Times of Israel",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        }
+      ]
+    },
+    {
+      "id": "taal",
+      "name": {
+        "he": "התנועה הערבית להתחדשות",
+        "en": "Arab Movement for Renewal (Ta'al)"
+      },
+      "listId": "joint-list",
+      "leader": {
+        "he": "אחמד טיבי",
+        "en": "Ahmad Tibi"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: הרשימה-המשותפת",
+          "url": "https://www.idi.org.il/media/32320/%D7%94%D7%A8%D7%A9%D7%99%D7%9E%D7%94-%D7%94%D7%9E%D7%A9%D7%95%D7%AA%D7%A4%D7%AA.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        },
+        {
+          "title": "Israel's election takes shape as 38 parties submit slates, in battle between pro- and anti-Netanyahu blocs",
+          "url": "https://www.timesofisrael.com/israels-election-takes-shape-as-38-parties-submit-slates-from-likud-to-joint-list/",
+          "publisher": "The Times of Israel",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        }
+      ]
+    },
+    {
+      "id": "balad",
+      "name": {
+        "he": "אלתג'מוע אלווטני אלדמוקרטי",
+        "en": "National Democratic Assembly (Balad)"
+      },
+      "listId": "joint-list",
+      "leader": {
+        "he": "סאמי אבו שחאדה",
+        "en": "Sami Abu Shehadeh"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: הרשימה-המשותפת",
+          "url": "https://www.idi.org.il/media/32320/%D7%94%D7%A8%D7%A9%D7%99%D7%9E%D7%94-%D7%94%D7%9E%D7%A9%D7%95%D7%AA%D7%A4%D7%AA.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        },
+        {
+          "title": "אבו שחאדה בחוץ, בל\"ד נשארת: כך נראית הרשימה המשותפת אחרי הפרישה",
+          "url": "https://ynet.co.il/news/elections2026/article/s100kfzesze",
+          "publisher": "Ynet",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        }
+      ]
+    },
+    {
+      "id": "hakahal",
+      "name": {
+        "he": "מחנה ישראל",
+        "en": "Machane Yisrael (registered party that submitted the HaKahal list)"
+      },
+      "listId": "hakahal",
+      "leader": {
+        "he": "שלמה אלבוים",
+        "en": "Shlomo Elboim"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: הקהל",
+          "url": "https://www.idi.org.il/media/32319/%D7%94%D7%A7%D7%94%D7%9C.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "degel-hatorah",
+      "name": {
+        "he": "אגודת החרדים - דגל התורה",
+        "en": "Degel HaTorah"
+      },
+      "listId": "united-torah-judaism",
+      "leader": {
+        "he": "יעקב אשר",
+        "en": "Yaakov Asher"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: יהדות-התורה",
+          "url": "https://www.idi.org.il/media/32323/%D7%99%D7%94%D7%93%D7%95%D7%AA-%D7%94%D7%AA%D7%95%D7%A8%D7%94.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "agudat-yisrael",
+      "name": {
+        "he": "הסתדרות אגודת ישראל בארץ ישראל",
+        "en": "Agudat Yisrael"
+      },
+      "listId": "united-torah-judaism",
+      "leader": {
+        "he": "יצחק גולדקנופ",
+        "en": "Yitzhak Goldknopf"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: יהדות-התורה",
+          "url": "https://www.idi.org.il/media/32323/%D7%99%D7%94%D7%93%D7%95%D7%AA-%D7%94%D7%AA%D7%95%D7%A8%D7%94.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "chomat-torat-yisrael",
+      "name": {
+        "he": "חומת תורת ישראל",
+        "en": "Chomat Torat Yisrael"
+      },
+      "listId": "united-torah-judaism",
+      "leader": {
+        "he": "מאיר פרוש",
+        "en": "Meir Porush"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: יהדות-התורה",
+          "url": "https://www.idi.org.il/media/32323/%D7%99%D7%94%D7%93%D7%95%D7%AA-%D7%94%D7%AA%D7%95%D7%A8%D7%94.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "lazuz",
+      "name": {
+        "he": "לזוז",
+        "en": "Lazuz (registered party that submitted the Noam list)"
+      },
+      "listId": "noam",
+      "leader": {
+        "he": "אבי מעוז",
+        "en": "Avi Maoz"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: נעם",
+          "url": "https://www.idi.org.il/media/32330/%D7%A0%D7%A2%D7%9D.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    },
+    {
+      "id": "national-responsibility",
+      "name": {
+        "he": "אחריות לאומית - למען עתיד ילדינו",
+        "en": "National Responsibility – for Our Children's Future"
+      },
+      "listId": "noam",
+      "leader": {
+        "he": "אליהו ליבמן",
+        "en": "Eliyahu Libman"
+      },
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: נעם",
+          "url": "https://www.idi.org.il/media/32330/%D7%A0%D7%A2%D7%9D.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ]
+    }
+  ]
+}

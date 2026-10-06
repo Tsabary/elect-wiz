@@ -1,0 +1,37 @@
+{
+  "id": "religion-and-state",
+  "en": {
+    "title": "Religion and state",
+    "description": "The role of religion in public life, including Shabbat, marriage, conversion and the Chief Rabbinate.",
+    "moreInfo": "Religious matters in Israel such as marriage, conversion, kashrut and public life on Shabbat are governed by long-standing arrangements known as the status quo, with a central role for the Chief Rabbinate. Marriages within Israel are conducted only through religious institutions, though marriages performed abroad are registered, and public transport largely does not run on Shabbat, with some local exceptions. In July 2026 the Knesset also passed a Basic Law declaring Torah study a foundational value.",
+    "question": "What should the relationship between religion and state be?"
+  },
+  "he": {
+    "title": "דת ומדינה",
+    "description": "מקומה של הדת במרחב הציבורי, כולל שבת, נישואים, גיור והרבנות הראשית.",
+    "moreInfo": "נושאי דת בישראל כמו נישואים, גיור, כשרות והמרחב הציבורי בשבת מוסדרים בהסדרים ותיקים המכונים ״הסטטוס קוו״, עם תפקיד מרכזי לרבנות הראשית. נישואים בתוך ישראל נערכים רק באמצעות מוסדות דת, אם כי נישואים שנערכו בחו״ל נרשמים, ותחבורה ציבורית ברובה אינה פועלת בשבת, למעט חריגים מקומיים. ביולי 2026 חוקקה הכנסת גם את חוק יסוד: לימוד תורה, המגדיר את לימוד התורה כערך יסוד.",
+    "question": "מה צריכים להיות היחסים בין דת ומדינה?"
+  },
+  "options": [
+    {
+      "id": "strengthen-jewish-character",
+      "en": "Strengthen the Jewish character of public life: strengthen Shabbat observance in the public sphere, keep marriage, conversion and kashrut under the Chief Rabbinate, and deepen Jewish identity in schools. Shared tradition is what holds the Jewish people in Israel together.",
+      "he": "לחזק את האופי היהודי של המרחב הציבורי: לחזק את שמירת השבת במרחב הציבורי, להשאיר את הנישואים, הגיור והכשרות בידי הרבנות הראשית ולהעמיק את הזהות היהודית בבתי הספר. המסורת המשותפת היא שמחברת את העם היהודי בישראל."
+    },
+    {
+      "id": "keep-status-quo",
+      "en": "Keep the existing status quo largely as it is, with only limited local adjustments. The status quo is a compromise that has let religious and secular Israelis live together, and big changes in either direction would deepen the divide.",
+      "he": "לשמור על הסטטוס קוו הקיים במידה רבה כפי שהוא, עם התאמות מקומיות מוגבלות בלבד. הסטטוס קוו הוא פשרה שאפשרה לדתיים ולחילונים לחיות יחד, ושינויים גדולים לכל כיוון יעמיקו את הקרע."
+    },
+    {
+      "id": "more-choice-local-decisions",
+      "en": "Allow more choice while keeping a shared public space: civil unions for those who want them, local authorities deciding on Shabbat transport, and opening kashrut and conversion to more providers. Each community should be able to live by its own beliefs.",
+      "he": "לאפשר יותר בחירה תוך שמירה על מרחב ציבורי משותף: ברית זוגיות אזרחית למי שרוצה, החלטה של הרשויות המקומיות על תחבורה בשבת ופתיחת הכשרות והגיור לגופים נוספים. כל קהילה צריכה לחיות לפי אמונתה."
+    },
+    {
+      "id": "separate-religion-and-state",
+      "en": "Separate religion from state: full civil marriage for all couples, public transport and commerce on Shabbat, and equal recognition of all streams of Judaism. Personal and religious choices should be up to each citizen, not the state.",
+      "he": "להפריד בין דת למדינה: נישואים אזרחיים מלאים לכל הזוגות, תחבורה ציבורית ומסחר בשבת והכרה שווה בכל זרמי היהדות. ההחלטות בענייני אישות ודת צריכות להיות בידי כל אזרח, לא בידי המדינה."
+    }
+  ]
+}

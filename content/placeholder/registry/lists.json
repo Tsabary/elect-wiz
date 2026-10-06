@@ -1,0 +1,129 @@
+{
+  "lists": [
+    {
+      "id": "blue-horizon",
+      "name": { "he": "האופק הכחול (בדיונית)", "en": "Blue Horizon (fictional)" },
+      "ballotLetters": "זץ",
+      "memberPartyIds": ["blue-horizon"],
+      "topCandidates": [
+        { "he": "דנה דוגמה", "en": "Dana Example" },
+        { "he": "יואב ממלא־מקום", "en": "Yoav Placeholder" }
+      ],
+      "status": "approved",
+      "poll": {
+        "status": "polled",
+        "percent": 18.4,
+        "source": {
+          "title": "Fictional polling average (placeholder data)",
+          "url": "https://example.org/placeholder-polls"
+        },
+        "asOf": "2026-10-01"
+      },
+      "sources": [
+        {
+          "title": "Placeholder registry entry (fictional)",
+          "url": "https://example.org/placeholder-registry"
+        }
+      ],
+      "notes": "FICTIONAL placeholder list for UI development. Not a real party."
+    },
+    {
+      "id": "olive-and-valley",
+      "name": { "he": "ברית הזית והעמק (בדיונית)", "en": "Olive & Valley Alliance (fictional)" },
+      "ballotLetters": "קט",
+      "memberPartyIds": ["olive-branch", "green-valley"],
+      "topCandidates": [
+        { "he": "נועה לדוגמה", "en": "Noa Sample" },
+        { "he": "סמיר דמו", "en": "Samir Demo" }
+      ],
+      "status": "approved",
+      "poll": {
+        "status": "polled",
+        "percent": 7.1,
+        "source": {
+          "title": "Fictional polling average (placeholder data)",
+          "url": "https://example.org/placeholder-polls"
+        },
+        "asOf": "2026-10-01"
+      },
+      "sources": [
+        {
+          "title": "Placeholder registry entry (fictional)",
+          "url": "https://example.org/placeholder-registry"
+        }
+      ],
+      "notes": "FICTIONAL joint list for UI development."
+    },
+    {
+      "id": "cedar-tradition",
+      "name": { "he": "מסורת הארז (בדיונית)", "en": "Cedar Tradition (fictional)" },
+      "ballotLetters": "צף",
+      "memberPartyIds": ["cedar-tradition"],
+      "topCandidates": [{ "he": "אברהם בדיון", "en": "Avraham Fiction" }],
+      "status": "approved",
+      "poll": {
+        "status": "polled",
+        "percent": 10.9,
+        "source": {
+          "title": "Fictional polling average (placeholder data)",
+          "url": "https://example.org/placeholder-polls"
+        },
+        "asOf": "2026-10-01"
+      },
+      "sources": [
+        {
+          "title": "Placeholder registry entry (fictional)",
+          "url": "https://example.org/placeholder-registry"
+        }
+      ],
+      "notes": "FICTIONAL placeholder list."
+    },
+    {
+      "id": "lighthouse",
+      "name": { "he": "המגדלור (בדיונית)", "en": "The Lighthouse (fictional)" },
+      "ballotLetters": "טז",
+      "memberPartyIds": ["lighthouse"],
+      "topCandidates": [{ "he": "מיכל משל", "en": "Michal Mashal" }],
+      "status": "approved",
+      "poll": {
+        "status": "polled",
+        "percent": 2.1,
+        "source": {
+          "title": "Fictional polling average (placeholder data)",
+          "url": "https://example.org/placeholder-polls"
+        },
+        "asOf": "2026-10-01"
+      },
+      "sources": [
+        {
+          "title": "Placeholder registry entry (fictional)",
+          "url": "https://example.org/placeholder-registry"
+        }
+      ],
+      "notes": "FICTIONAL below-threshold list."
+    },
+    {
+      "id": "pebble-citizens",
+      "name": { "he": "רשימת אזרחי החלוק (בדיונית)", "en": "Pebble Citizens' List (fictional)" },
+      "ballotLetters": "שץ",
+      "memberPartyIds": ["pebble-citizens"],
+      "topCandidates": [{ "he": "רון מדומה", "en": "Ron Imaginary" }],
+      "status": "approved",
+      "poll": {
+        "status": "not_polled",
+        "source": {
+          "title": "Fictional polling average (placeholder data)",
+          "url": "https://example.org/placeholder-polls"
+        },
+        "asOf": "2026-10-01"
+      },
+      "sources": [
+        {
+          "title": "Placeholder registry entry (fictional)",
+          "url": "https://example.org/placeholder-registry"
+        }
+      ],
+      "notes": "FICTIONAL not-polled, limited-information list."
+    }
+  ]
+}

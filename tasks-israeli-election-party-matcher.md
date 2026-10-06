@@ -44,7 +44,7 @@ Each task is self-contained. From the task alone you should know what to do, how
 - The legal findings are documented.
 
 ### Task 1.1: Scaffold the Next.js app with i18n, RTL and tooling
-- [ ]
+- [x] *(Vercel preview deploy pending: the owner needs to connect the repo to Vercel. The project is deploy-ready: `vercel.json` is in place and `npm run build` passes.)*
 - **What:** Create the project:
   - Next.js App Router with TypeScript and Tailwind, plus shadcn/ui using Base UI primitives (Radix variant only if the Base UI option isn't available in the shadcn CLI).
   - next-intl with locales `he` (default, RTL) and `en`, with locale-prefixed routes.
@@ -65,7 +65,7 @@ Each task is self-contained. From the task alone you should know what to do, how
 - **Notes:** Keep the bundle lean (Performance §2). The repo must not contain the operator's personal identity: set a non-identifying git author for this repo (Security §3).
 
 ### Task 1.2: Define content formats, build-blocking validation, and placeholder content
-- [ ]
+- [x]
 - **What:**
   - Define typed formats and loaders for the corpus:
     - issues: one file per issue under `content/issues/`, with IDs, both languages, 3–4 options with stable option IDs;
@@ -88,7 +88,7 @@ Each task is self-contained. From the task alone you should know what to do, how
   - Joint-list partner references must be symmetric (validated).
 
 ### Task 1.3: Implement the matching contract, the mock route, and the client
-- [ ]
+- [x]
 - **What:**
   - Define the matching request and response types and validation exactly per plan APIs §1: input fields, set rules, length caps, survey-content version check, output entries with per-issue rank, agreement levels, anchors, the "anything else" note, the weak-match flag, deterministic metadata including the threshold or not-polled note, and the error codes with their HTTP statuses.
   - Implement `app/api/match/route.ts` as a POST route that validates input and delegates to a matching implementation chosen by configuration. The only implementation for now is the mock.
@@ -106,7 +106,7 @@ Each task is self-contained. From the task alone you should know what to do, how
 - **Notes:** The forcing mechanism must be disabled outside development and preview environments.
 
 ### Task 1.4: Research Stage 0, establishing ground truth from the CEC
-- [ ]
+- [x]
 - **What:**
   - Using web search and fetch, verify the official election date and poll-closing time, and the official list of approved ballot lists from the Central Elections Committee: list names in Hebrew and English, ballot letters, member parties of joint lists, and the top of each candidate list.
   - Populate `content/registry/lists.json` and `content/registry/parties.json` (polls left as a pending placeholder for Task 3.5).
@@ -123,7 +123,7 @@ Each task is self-contained. From the task alone you should know what to do, how
   - If lists are still subject to appeals or approval, note which, so Task 4.1 re-checks them.
 
 ### Task 1.5: Research Stage 1, drafting the issues and answers and getting owner approval
-- [ ]
+- [ ] *(Draft and independent neutrality review done. AWAITING OWNER APPROVAL: see `research/review/issues-review.md`.)*
 - **What:**
   - Research what the 10 most pressing issues in Israeli society are right now.
   - For each issue, draft the title, one-line description, more-info text, question framing and the 3–4 most common real-world positions, written in Hebrew and English as equivalents, with Israeli-neutral terminology (e.g., "Judea and Samaria", "settlements").
@@ -142,7 +142,7 @@ Each task is self-contained. From the task alone you should know what to do, how
 - **Notes:** **Owner-gated.** All of Phase 3 depends on this approval. Raise it with the owner as early as possible.
 
 ### Task 1.6: Write the per-stage pipeline instructions for Stages 2–6
-- [ ]
+- [x]
 - **What:**
   - Write reusable agent instructions under `research/pipeline/`, one file per stage:
     - **Stage 2, party research.** The 9-section skeleton. Evidence tiers. Contradictions stated. Inline citations. The joint-list partner and split history in the Overview. No poll figures. Written in English, with Hebrew sources read directly.
@@ -161,7 +161,7 @@ Each task is self-contained. From the task alone you should know what to do, how
 - **Notes:** Section-3 sub-sections depend on the approved issue IDs. The Stage 2 instructions should reference `content/issues/` rather than hard-coding issues.
 
 ### Task 1.7: Research the poll-publication ban and election-period rules
-- [ ]
+- [x]
 - **What:**
   - Research Israeli election law on publishing poll results before election day (the exact cutoff) and any election-day or election-period rules that could apply to a voter-advice tool operating during the campaign or on election day.
   - Write `research/legal-findings.md` with the rules, sources, a recommended poll-blackout start instant (with a safety margin larger than the roughly 5-minute revalidation window), and any other recommended restrictions.

@@ -1,0 +1,32 @@
+{
+  "id": "october-7-inquiry",
+  "en": {
+    "title": "October 7 inquiry",
+    "description": "How the failures surrounding the October 7 attack should be investigated.",
+    "moreInfo": "Under Israeli law, the government decides whether to establish a state commission of inquiry, and its members are appointed by the President of the Supreme Court. The government has opposed this format and proposed instead a commission appointed through the Knesset, with equal coalition and opposition representation if no broad agreement is reached. No commission has been set up yet; the government told the High Court it would not set one up before the election, and the Court postponed its decision until after the election.",
+    "question": "How should the events of October 7 be investigated?"
+  },
+  "he": {
+    "title": "חקירת 7 באוקטובר",
+    "description": "כיצד יש לחקור את הכשלים סביב מתקפת 7 באוקטובר.",
+    "moreInfo": "לפי החוק בישראל, הממשלה מחליטה אם להקים ועדת חקירה ממלכתית, וחבריה ממונים על ידי נשיא בית המשפט העליון. הממשלה התנגדה למתכונת זו והציעה במקומה ועדה שתמונה באמצעות הכנסת, עם ייצוג שווה לקואליציה ולאופוזיציה אם לא תושג הסכמה רחבה. עד כה לא הוקמה ועדה; הממשלה הודיעה לבג״ץ שלא תקים ועדה לפני הבחירות, ובית המשפט דחה את החלטתו לאחר הבחירות.",
+    "question": "כיצד יש לחקור את אירועי 7 באוקטובר?"
+  },
+  "options": [
+    {
+      "id": "state-commission-under-existing-law",
+      "en": "Establish a state commission of inquiry under the existing law, with members appointed by the President of the Supreme Court. Only a fully independent body with legal powers can examine both the political and the security leadership and earn public trust.",
+      "he": "להקים ועדת חקירה ממלכתית לפי החוק הקיים, שחבריה ימונו על ידי נשיא בית המשפט העליון. רק גוף עצמאי לחלוטין עם סמכויות חוקיות יכול לבחון גם את הדרג המדיני וגם את הדרג הביטחוני ולזכות באמון הציבור."
+    },
+    {
+      "id": "commission-appointed-by-knesset-balance",
+      "en": "Establish a commission whose members are chosen by broad Knesset agreement, or equally by the coalition and the opposition, with bereaved families involved. A commission appointed by the Supreme Court President would not be seen as impartial by much of the public.",
+      "he": "להקים ועדה שחבריה ייבחרו בהסכמה רחבה בכנסת, או באופן שווה על ידי הקואליציה והאופוזיציה, בשיתוף משפחות שכולות. ועדה שימנה נשיא בית המשפט העליון לא תיתפס כנטולת פניות בעיני חלק גדול מהציבור."
+    },
+    {
+      "id": "commission-chosen-by-neutral-mechanism",
+      "en": "Establish a commission with full powers whose members are chosen in a way neither camp controls, such as retired judges elected by secret ballot in the Knesset, and examine the government, the security services and the legal system alike. Only such a body can win trust across the divide.",
+      "he": "להקים ועדה בעלת סמכויות מלאות שחבריה ייבחרו בדרך שאף מחנה אינו שולט בה, למשל שופטים בדימוס שייבחרו בהצבעה חשאית בכנסת, ולבחון באותה מידה את הממשלה, את מערכת הביטחון ואת מערכת המשפט. רק גוף כזה יזכה באמון משני צדי המתרס."
+    }
+  ]
+}

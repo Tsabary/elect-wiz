@@ -1,0 +1,2106 @@
+{
+  "lists": [
+    {
+      "id": "together",
+      "name": {
+        "he": "ביחד בראשות נפתלי בנט",
+        "en": "Together (B'Yachad) led by Naftali Bennett"
+      },
+      "ballotLetters": "רק",
+      "memberPartyIds": [
+        "byachad-bennett",
+        "yesh-atid"
+      ],
+      "topCandidates": [
+        {
+          "he": "נפתלי בנט",
+          "en": "Naftali Bennett"
+        },
+        {
+          "he": "יאיר לפיד",
+          "en": "Yair Lapid"
+        },
+        {
+          "he": "קרן טרנר אייל",
+          "en": "Keren Terner Eyal"
+        },
+        {
+          "he": "מירב בן ארי",
+          "en": "Meirav Ben-Ari"
+        },
+        {
+          "he": "לירן אבישר בן חורין",
+          "en": "Liran Avishar Ben-Horin"
+        }
+      ],
+      "status": "approved",
+      "poll": {
+        "status": "pending"
+      },
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: ביחד",
+          "url": "https://www.idi.org.il/media/32309/%D7%91%D7%99%D7%97%D7%93.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        },
+        {
+          "title": "ועדת הבחירות המרכזית פרסמה את הפתקים של כל המפלגות לכנסת ה-26",
+          "url": "https://www.ynet.co.il/news/article/s1ibdii5fe",
+          "publisher": "Ynet (reporting CEC announcement of 27.09.2026)",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        },
+        {
+          "title": "Lapid unveils Yesh Atid election slate after wave of departures ahead of joint run with Bennett",
+          "url": "https://www.ynetnews.com/article/hkfdvtkogx",
+          "publisher": "Ynetnews",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        }
+      ]
+    },
+    {
+      "id": "yashar",
+      "name": {
+        "he": "ישר! עם איזנקוט לראשות הממשלה מאחדים את ישראל",
+        "en": "Yashar! with Eisenkot"
+      },
+      "ballotLetters": "דרך",
+      "memberPartyIds": [
+        "yashar-leyisrael",
+        "yesodot-yisrael"
+      ],
+      "topCandidates": [
+        {
+          "he": "גדי איזנקוט",
+          "en": "Gadi Eisenkot"
+        },
+        {
+          "he": "יורם כהן",
+          "en": "Yoram Cohen"
+        },
+        {
+          "he": "אורית פרקש-הכהן",
+          "en": "Orit Farkash-Hacohen"
+        },
+        {
+          "he": "עדי אלטשולר",
+          "en": "Adi Altschuler"
+        },
+        {
+          "he": "מתן כהנא",
+          "en": "Matan Kahana"
+        }
+      ],
+      "status": "approved",
+      "poll": {
+        "status": "pending"
+      },
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: ישר",
+          "url": "https://www.idi.org.il/media/32324/%D7%99%D7%A9%D7%A8.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        },
+        {
+          "title": "ועדת הבחירות המרכזית פרסמה את הפתקים של כל המפלגות לכנסת ה-26",
+          "url": "https://www.ynet.co.il/news/article/s1ibdii5fe",
+          "publisher": "Ynet (reporting CEC announcement of 27.09.2026)",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        }
+      ],
+      "notes": "CEC filing: submitted by two parties, Yashar LeYisrael with Eisenkot and Yesodot Yisrael (Tropper, #6). The CEC candidate page spells the leader's surname 'אינזקוט' (apparent typo); the list name itself uses 'איזנקוט'. Ynet's short form of the name: 'דרך – בראשות גדי איזנקוט'."
+    },
+    {
+      "id": "sharshar",
+      "name": {
+        "he": "שרשר לאהבה ואחדות העם",
+        "en": "Sharshar – for Love and Unity of the People"
+      },
+      "ballotLetters": "צדק",
+      "memberPartyIds": [
+        "sharshar"
+      ],
+      "topCandidates": [
+        {
+          "he": "איתן שוילי",
+          "en": "Eitan Shvili"
+        },
+        {
+          "he": "תמר שוילי",
+          "en": "Tamar Shvili"
+        },
+        {
+          "he": "אילן אלמקייס",
+          "en": "Ilan Elmakayes"
+        },
+        {
+          "he": "רעיה שירזי",
+          "en": "Raya Shirazi"
+        },
+        {
+          "he": "היתם אשתי",
+          "en": "Haytham Ashti"
+        }
+      ],
+      "status": "approved",
+      "poll": {
+        "status": "pending"
+      },
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: שרשר",
+          "url": "https://www.idi.org.il/media/32340/%D7%A9%D7%A8%D7%A9%D7%A8.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        },
+        {
+          "title": "ועדת הבחירות המרכזית פרסמה את הפתקים של כל המפלגות לכנסת ה-26",
+          "url": "https://www.ynet.co.il/news/article/s1ibdii5fe",
+          "publisher": "Ynet (reporting CEC announcement of 27.09.2026)",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        }
+      ]
+    },
+    {
+      "id": "partnership-for-all",
+      "name": {
+        "he": "השותפות לכולם",
+        "en": "Partnership for All"
+      },
+      "ballotLetters": "ד",
+      "memberPartyIds": [
+        "ihud-bnei-habrit"
+      ],
+      "topCandidates": [
+        {
+          "he": "טלאל אלקרינאוי",
+          "en": "Talal Alkrinawi"
+        },
+        {
+          "he": "עבדאללה אבו עאזם",
+          "en": "Abdallah Abu Azam"
+        },
+        {
+          "he": "בשארה שליאן",
+          "en": "Bishara Shlayan"
+        },
+        {
+          "he": "אליעזר עופר כהן",
+          "en": "Eliezer Ofer Cohen"
+        },
+        {
+          "he": "עודד גול-ורד'",
+          "en": "Oded Gol-Vard"
+        }
+      ],
+      "status": "approved",
+      "poll": {
+        "status": "pending"
+      },
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: השותפות-לכולם",
+          "url": "https://www.idi.org.il/media/32321/%D7%94%D7%A9%D7%95%D7%AA%D7%A4%D7%95%D7%AA-%D7%9C%D7%9B%D7%95%D7%9C%D7%9D.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        },
+        {
+          "title": "ועדת הבחירות המרכזית פרסמה את הפתקים של כל המפלגות לכנסת ה-26",
+          "url": "https://www.ynet.co.il/news/article/s1ibdii5fe",
+          "publisher": "Ynet (reporting CEC announcement of 27.09.2026)",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        }
+      ],
+      "notes": "Submitted by the registered party Ihud Bnei HaBrit (party named as led by Bishara Shlayan); list headed by Talal Alkrinawi."
+    },
+    {
+      "id": "pirates",
+      "name": {
+        "he": "הפיראטים – צפים לטוב",
+        "en": "The Pirates – Floating for Good"
+      },
+      "ballotLetters": "צף",
+      "memberPartyIds": [
+        "pirates"
+      ],
+      "topCandidates": [
+        {
+          "he": "אוהד יעקב שם טוב",
+          "en": "Ohad Shem Tov"
+        },
+        {
+          "he": "נועם כוזר ויסגרבר",
+          "en": "Noam Kozar Weisgerber"
+        },
+        {
+          "he": "דן אריאלי",
+          "en": "Dan Ariely"
+        },
+        {
+          "he": "מיטל רום",
+          "en": "Meital Rom"
+        },
+        {
+          "he": "רועי אברהם קלייטמן",
+          "en": "Roy Avraham Kleitman"
+        }
+      ],
+      "status": "approved",
+      "poll": {
+        "status": "pending"
+      },
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: הפיראטים",
+          "url": "https://www.idi.org.il/media/32316/%D7%94%D7%A4%D7%99%D7%A8%D7%90%D7%98%D7%99%D7%9D.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        },
+        {
+          "title": "ועדת הבחירות המרכזית פרסמה את הפתקים של כל המפלגות לכנסת ה-26",
+          "url": "https://www.ynet.co.il/news/article/s1ibdii5fe",
+          "publisher": "Ynet (reporting CEC announcement of 27.09.2026)",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        }
+      ]
+    },
+    {
+      "id": "amcha-yisrael",
+      "name": {
+        "he": "עמך ישראל בראשות עופר וינטר",
+        "en": "Amcha Yisrael (People of Israel) led by Ofer Winter"
+      },
+      "ballotLetters": "ך",
+      "memberPartyIds": [
+        "amcha-yisrael"
+      ],
+      "topCandidates": [
+        {
+          "he": "עופר וינטר",
+          "en": "Ofer Winter"
+        },
+        {
+          "he": "יוסף חדאד",
+          "en": "Yoseph Haddad"
+        },
+        {
+          "he": "נטעלי שם טוב",
+          "en": "Netali Shem Tov"
+        },
+        {
+          "he": "ערן בן ארי",
+          "en": "Eran Ben-Ari"
+        },
+        {
+          "he": "פלר חסון-נחום",
+          "en": "Fleur Hassan-Nahoum"
+        }
+      ],
+      "status": "approved",
+      "poll": {
+        "status": "pending"
+      },
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: עמך-ישראל",
+          "url": "https://www.idi.org.il/media/32333/%D7%A2%D7%9E%D7%9A-%D7%99%D7%A9%D7%A8%D7%90%D7%9C.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        },
+        {
+          "title": "ועדת הבחירות המרכזית פרסמה את הפתקים של כל המפלגות לכנסת ה-26",
+          "url": "https://www.ynet.co.il/news/article/s1ibdii5fe",
+          "publisher": "Ynet (reporting CEC announcement of 27.09.2026)",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        }
+      ],
+      "notes": "Submitted by the registered party 'עמי חי לעד'. CEC spells the leader 'ווינטר'."
+    },
+    {
+      "id": "israel-first",
+      "name": {
+        "he": "ישראל תחילה בראשות שרן השכל",
+        "en": "Israel First led by Sharren Haskel"
+      },
+      "ballotLetters": "י",
+      "memberPartyIds": [
+        "israel-first"
+      ],
+      "topCandidates": [
+        {
+          "he": "שרן מרים השכל",
+          "en": "Sharren Haskel"
+        },
+        {
+          "he": "רועי חיים דנינו",
+          "en": "Roey Danino"
+        },
+        {
+          "he": "ניר יופטרו",
+          "en": "Nir Yoftaro"
+        },
+        {
+          "he": "ואיל מוגרבי",
+          "en": "Wail Mugrabi"
+        },
+        {
+          "he": "עמית עדי פדר",
+          "en": "Amit Adi Peder"
+        }
+      ],
+      "status": "approved",
+      "poll": {
+        "status": "pending"
+      },
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: ישראל-תחילה",
+          "url": "https://www.idi.org.il/media/32326/%D7%99%D7%A9%D7%A8%D7%90%D7%9C-%D7%AA%D7%97%D7%99%D7%9C%D7%94.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        },
+        {
+          "title": "ועדת הבחירות המרכזית פרסמה את הפתקים של כל המפלגות לכנסת ה-26",
+          "url": "https://www.ynet.co.il/news/article/s1ibdii5fe",
+          "publisher": "Ynet (reporting CEC announcement of 27.09.2026)",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        },
+        {
+          "title": "ההצגה החלה: שרשר המלך, ״הפיראטים״ ועלה ירוק הגישו את הרשימות לכנסת",
+          "url": "https://www.kikar.co.il/political-news/tkzyl4",
+          "publisher": "Kikar HaShabbat",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        }
+      ],
+      "notes": "Ale Yarok (Green Leaf) announced a joint run with Israel First (Kikar HaShabbat); its chair Nir Yoftaro is #3, but the CEC filing lists only Israel First as the submitting party, so Ale Yarok is not modelled as a member party."
+    },
+    {
+      "id": "gan-eden",
+      "name": {
+        "he": "גן עדן בראשות ישוע ישראל בן דוד",
+        "en": "Garden of Eden (Gan Eden) led by Yeshua Israel Ben David"
+      },
+      "ballotLetters": "ה",
+      "memberPartyIds": [
+        "gan-eden"
+      ],
+      "topCandidates": [
+        {
+          "he": "ישוע ישראל בן דוד",
+          "en": "Yeshua Israel Ben David"
+        },
+        {
+          "he": "יעקב בן יששכר",
+          "en": "Yaakov Ben Yissachar"
+        },
+        {
+          "he": "יעקב ליאור כהן",
+          "en": "Yaakov Lior Cohen"
+        },
+        {
+          "he": "טליה דה רוטשילד",
+          "en": "Talia de Rothschild"
+        },
+        {
+          "he": "דוד פודברי",
+          "en": "David Podbery"
+        }
+      ],
+      "status": "approved",
+      "poll": {
+        "status": "pending"
+      },
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: גן-עדן",
+          "url": "https://www.idi.org.il/media/32311/%D7%92%D7%9F-%D7%A2%D7%93%D7%9F.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        },
+        {
+          "title": "ועדת הבחירות המרכזית פרסמה את הפתקים של כל המפלגות לכנסת ה-26",
+          "url": "https://www.ynet.co.il/news/article/s1ibdii5fe",
+          "publisher": "Ynet (reporting CEC announcement of 27.09.2026)",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        }
+      ],
+      "notes": "CEC rejected the requested letters 'יה' and approved the second choice 'ה' (Ynet/Maariv)."
+    },
+    {
+      "id": "womens-voice",
+      "name": {
+        "he": "קול הנשים",
+        "en": "Women's Voice"
+      },
+      "ballotLetters": "קה",
+      "memberPartyIds": [
+        "womens-voice"
+      ],
+      "topCandidates": [
+        {
+          "he": "עמיר ישראל שדמי",
+          "en": "Amir Israel Shadmi"
+        },
+        {
+          "he": "אמה בוהדנה",
+          "en": "Emma Bohadana"
+        },
+        {
+          "he": "טליה בן אבו",
+          "en": "Talia Ben Abu"
+        },
+        {
+          "he": "גדי רוזנר",
+          "en": "Gadi Rosner"
+        },
+        {
+          "he": "זהבית עכו",
+          "en": "Zehavit Akko"
+        }
+      ],
+      "status": "approved",
+      "poll": {
+        "status": "pending"
+      },
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: קול-הנשים",
+          "url": "https://www.idi.org.il/media/32336/%D7%A7%D7%95%D7%9C-%D7%94%D7%A0%D7%A9%D7%99%D7%9D.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        },
+        {
+          "title": "ועדת הבחירות המרכזית פרסמה את הפתקים של כל המפלגות לכנסת ה-26",
+          "url": "https://www.ynet.co.il/news/article/s1ibdii5fe",
+          "publisher": "Ynet (reporting CEC announcement of 27.09.2026)",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        }
+      ],
+      "notes": "Some outlets (NAnews) name Dr. Mazal Shaul as head; the CEC filing shows Amir Israel Shadmi at #1 (Mazal Shaul led the party in 2020)."
+    },
+    {
+      "id": "together-we-will-succeed",
+      "name": {
+        "he": "מפלגת ביחד נצליח – רשימה משותפת ערבית יהודית בראשות אבי שקד",
+        "en": "Together We Will Succeed – Joint Arab-Jewish List led by Avi Shaked"
+      },
+      "ballotLetters": "בד",
+      "memberPartyIds": [
+        "together-we-will-succeed"
+      ],
+      "topCandidates": [
+        {
+          "he": "אבי שקד",
+          "en": "Avi Shaked"
+        },
+        {
+          "he": "נעים עטאונה",
+          "en": "Naim Atauna"
+        },
+        {
+          "he": "חאתם עאטלה",
+          "en": "Hatem Atalla"
+        },
+        {
+          "he": "האלה סלימאן",
+          "en": "Hala Suleiman"
+        },
+        {
+          "he": "דראר אמריח",
+          "en": "Drar Amrih"
+        }
+      ],
+      "status": "approved",
+      "poll": {
+        "status": "pending"
+      },
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: ביחד-נצליח",
+          "url": "https://www.idi.org.il/media/32308/%D7%91%D7%99%D7%97%D7%93-%D7%A0%D7%A6%D7%9C%D7%99%D7%97.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        },
+        {
+          "title": "ועדת הבחירות המרכזית פרסמה את הפתקים של כל המפלגות לכנסת ה-26",
+          "url": "https://www.ynet.co.il/news/article/s1ibdii5fe",
+          "publisher": "Ynet (reporting CEC announcement of 27.09.2026)",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        }
+      ]
+    },
+    {
+      "id": "yisrael-beytenu",
+      "name": {
+        "he": "ישראל ביתנו בראשות אביגדור ליברמן",
+        "en": "Yisrael Beytenu led by Avigdor Liberman"
+      },
+      "ballotLetters": "ל",
+      "memberPartyIds": [
+        "yisrael-beytenu"
+      ],
+      "topCandidates": [
+        {
+          "he": "אביגדור ליברמן",
+          "en": "Avigdor Liberman"
+        },
+        {
+          "he": "רפאל בן שטרית",
+          "en": "Rafael Ben Shitrit"
+        },
+        {
+          "he": "טליה לנקרי",
+          "en": "Talya Lankri"
+        },
+        {
+          "he": "עודד פורר",
+          "en": "Oded Forer"
+        },
+        {
+          "he": "יוליה מלינובסקי קונין",
+          "en": "Yulia Malinovsky"
+        }
+      ],
+      "status": "approved",
+      "poll": {
+        "status": "pending"
+      },
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: ישראל-ביתנו",
+          "url": "https://www.idi.org.il/media/32325/%D7%99%D7%A9%D7%A8%D7%90%D7%9C-%D7%91%D7%99%D7%AA%D7%A0%D7%95.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        },
+        {
+          "title": "ועדת הבחירות המרכזית פרסמה את הפתקים של כל המפלגות לכנסת ה-26",
+          "url": "https://www.ynet.co.il/news/article/s1ibdii5fe",
+          "publisher": "Ynet (reporting CEC announcement of 27.09.2026)",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        }
+      ]
+    },
+    {
+      "id": "just-law",
+      "name": {
+        "he": "משפט צדק",
+        "en": "Just Law (Mishpat Tzedek)"
+      },
+      "ballotLetters": "קץ",
+      "memberPartyIds": [
+        "just-law"
+      ],
+      "topCandidates": [
+        {
+          "he": "רננה לריסה עמיר",
+          "en": "Larissa Amir"
+        },
+        {
+          "he": "גאולה עמיר",
+          "en": "Geula Amir"
+        },
+        {
+          "he": "אליעזר יהודי",
+          "en": "Eliezer Yehudi"
+        },
+        {
+          "he": "יצחק כהן",
+          "en": "Yitzhak Cohen"
+        },
+        {
+          "he": "יליזבטה יודין",
+          "en": "Yelizaveta Yudin"
+        }
+      ],
+      "status": "approved",
+      "poll": {
+        "status": "pending"
+      },
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: משפט-צדק",
+          "url": "https://www.idi.org.il/media/32329/%D7%9E%D7%A9%D7%A4%D7%98-%D7%A6%D7%93%D7%A7.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        },
+        {
+          "title": "ועדת הבחירות המרכזית פרסמה את הפתקים של כל המפלגות לכנסת ה-26",
+          "url": "https://www.ynet.co.il/news/article/s1ibdii5fe",
+          "publisher": "Ynet (reporting CEC announcement of 27.09.2026)",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        }
+      ]
+    },
+    {
+      "id": "shema",
+      "name": {
+        "he": "שמע – בראשות נפתלי גולדמן",
+        "en": "Shema led by Naftali Goldman"
+      },
+      "ballotLetters": "נף",
+      "memberPartyIds": [
+        "shema"
+      ],
+      "topCandidates": [
+        {
+          "he": "נפתלי בורוך גולדמן",
+          "en": "Naftali Goldman"
+        }
+      ],
+      "status": "approved",
+      "poll": {
+        "status": "pending"
+      },
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: שמע",
+          "url": "https://www.idi.org.il/media/32338/%D7%A9%D7%9E%D7%A2.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        },
+        {
+          "title": "ועדת הבחירות המרכזית פרסמה את הפתקים של כל המפלגות לכנסת ה-26",
+          "url": "https://www.ynet.co.il/news/article/s1ibdii5fe",
+          "publisher": "Ynet (reporting CEC announcement of 27.09.2026)",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        }
+      ],
+      "notes": "Single-candidate list (the CEC filing has only one candidate)."
+    },
+    {
+      "id": "otzma-yehudit",
+      "name": {
+        "he": "עוצמה יהודית בראשות איתמר בן גביר",
+        "en": "Otzma Yehudit led by Itamar Ben Gvir"
+      },
+      "ballotLetters": "ב",
+      "memberPartyIds": [
+        "jewish-national-front",
+        "eretz-yisrael-shelanu"
+      ],
+      "topCandidates": [
+        {
+          "he": "איתמר בן גביר",
+          "en": "Itamar Ben Gvir"
+        },
+        {
+          "he": "רויטל טלי גוטליב",
+          "en": "Tally Gotliv"
+        },
+        {
+          "he": "יצחק שמעון וסרלאוף",
+          "en": "Yitzhak Wasserlauf"
+        },
+        {
+          "he": "עמיחי אליהו",
+          "en": "Amichai Eliyahu"
+        },
+        {
+          "he": "לימור סון הר-מלך",
+          "en": "Limor Son Har-Melech"
+        }
+      ],
+      "status": "approved",
+      "poll": {
+        "status": "pending"
+      },
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: עוצמה-יהודית",
+          "url": "https://www.idi.org.il/media/32332/%D7%A2%D7%95%D7%A6%D7%9E%D7%94-%D7%99%D7%94%D7%95%D7%93%D7%99%D7%AA.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        },
+        {
+          "title": "ועדת הבחירות המרכזית פרסמה את הפתקים של כל המפלגות לכנסת ה-26",
+          "url": "https://www.ynet.co.il/news/article/s1ibdii5fe",
+          "publisher": "Ynet (reporting CEC announcement of 27.09.2026)",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        },
+        {
+          "title": "High Court of Justice rejects bid to bar Otzma Yehudit from running in election",
+          "url": "https://www.jpost.com/israel-election-2026/article-910555",
+          "publisher": "The Jerusalem Post",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        }
+      ],
+      "notes": "CEC filing: submitted by 'חזית יהודית לאומית' (Ben Gvir #1) and 'ארץ ישראל שלנו' (top-ranked candidate on its behalf: Wasserlauf #3). CEC rejected a motion to bar the list; the High Court (4.10.2026, per JPost) rejected the Democrats' appeal on standing grounds."
+    },
+    {
+      "id": "new-order",
+      "name": {
+        "he": "סדר חדש לכינון חוקה, להפרדת רשויות ולבחירות ישירות",
+        "en": "New Order – for a Constitution, Separation of Powers and Direct Elections"
+      },
+      "ballotLetters": "קך",
+      "memberPartyIds": [
+        "new-order"
+      ],
+      "topCandidates": [
+        {
+          "he": "אביטל חי אופק",
+          "en": "Avital Ofek"
+        },
+        {
+          "he": "לביא נאור",
+          "en": "Lavi Naor"
+        },
+        {
+          "he": "אסתר רוזן",
+          "en": "Esther Rosen"
+        },
+        {
+          "he": "דניאל בטיטו",
+          "en": "Daniel Betito"
+        },
+        {
+          "he": "זהבית שמש",
+          "en": "Zehavit Shemesh"
+        }
+      ],
+      "status": "approved",
+      "poll": {
+        "status": "pending"
+      },
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: סדר-חדש",
+          "url": "https://www.idi.org.il/media/32331/%D7%A1%D7%93%D7%A8-%D7%97%D7%93%D7%A9.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        },
+        {
+          "title": "ועדת הבחירות המרכזית פרסמה את הפתקים של כל המפלגות לכנסת ה-26",
+          "url": "https://www.ynet.co.il/news/article/s1ibdii5fe",
+          "publisher": "Ynet (reporting CEC announcement of 27.09.2026)",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        }
+      ]
+    },
+    {
+      "id": "reservists-and-economic-party",
+      "name": {
+        "he": "המילואימניקים והכלכלית בראשות יועז הנדל וירון זליכה",
+        "en": "The Reservists and the Economic Party led by Yoaz Hendel and Yaron Zelekha"
+      },
+      "ballotLetters": "די",
+      "memberPartyIds": [
+        "the-reservists",
+        "new-economic-party"
+      ],
+      "topCandidates": [
+        {
+          "he": "יועז הנדל",
+          "en": "Yoaz Hendel"
+        },
+        {
+          "he": "ירון זליכה",
+          "en": "Yaron Zelekha"
+        },
+        {
+          "he": "עינת וילף",
+          "en": "Einat Wilf"
+        },
+        {
+          "he": "חביב ווליבוביץ",
+          "en": "Haviv Volibovich"
+        },
+        {
+          "he": "יואב שלמה אדומי",
+          "en": "Yoav Shlomo Adomi"
+        }
+      ],
+      "status": "approved",
+      "poll": {
+        "status": "pending"
+      },
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: המילואימניקים-והכלכלית",
+          "url": "https://www.idi.org.il/media/32315/%D7%94%D7%9E%D7%99%D7%9C%D7%95%D7%90%D7%99%D7%9E%D7%A0%D7%99%D7%A7%D7%99%D7%9D-%D7%95%D7%94%D7%9B%D7%9C%D7%9B%D7%9C%D7%99%D7%AA.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        },
+        {
+          "title": "ועדת הבחירות המרכזית פרסמה את הפתקים של כל המפלגות לכנסת ה-26",
+          "url": "https://www.ynet.co.il/news/article/s1ibdii5fe",
+          "publisher": "Ynet (reporting CEC announcement of 27.09.2026)",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        }
+      ]
+    },
+    {
+      "id": "the-democrats",
+      "name": {
+        "he": "הדמוקרטים בראשות יאיר גולן",
+        "en": "The Democrats led by Yair Golan"
+      },
+      "ballotLetters": "אמת",
+      "memberPartyIds": [
+        "the-democrats-party",
+        "meretz"
+      ],
+      "topCandidates": [
+        {
+          "he": "יאיר גולן",
+          "en": "Yair Golan"
+        },
+        {
+          "he": "נעמה לזימי",
+          "en": "Naama Lazimi"
+        },
+        {
+          "he": "גלעד קריב",
+          "en": "Gilad Kariv"
+        },
+        {
+          "he": "אפרת רייטן",
+          "en": "Efrat Rayten"
+        },
+        {
+          "he": "יאיר פינק",
+          "en": "Yair (Yaya) Fink"
+        }
+      ],
+      "status": "approved",
+      "poll": {
+        "status": "pending"
+      },
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: הדמוקרטים",
+          "url": "https://www.idi.org.il/media/32313/%D7%94%D7%93%D7%9E%D7%95%D7%A7%D7%A8%D7%98%D7%99%D7%9D.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        },
+        {
+          "title": "ועדת הבחירות המרכזית פרסמה את הפתקים של כל המפלגות לכנסת ה-26",
+          "url": "https://www.ynet.co.il/news/article/s1ibdii5fe",
+          "publisher": "Ynet (reporting CEC announcement of 27.09.2026)",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        }
+      ],
+      "notes": "CEC filing: submitted by 'הדמוקרטים מיסודה של תנועת העבודה' and 'מרצ'. Meretz 'leader' recorded here is its top-ranked candidate on the list (#6 Gaby Lasky), not a confirmed party chair."
+    },
+    {
+      "id": "raam",
+      "name": {
+        "he": "רע\"ם – הרשימה הערבית המאוחדת",
+        "en": "Ra'am – United Arab List"
+      },
+      "ballotLetters": "עם",
+      "memberPartyIds": [
+        "raam"
+      ],
+      "topCandidates": [
+        {
+          "he": "מנסור עבאס",
+          "en": "Mansour Abbas"
+        },
+        {
+          "he": "יואב סגלוביץ",
+          "en": "Yoav Segalovitz"
+        },
+        {
+          "he": "וליד טאהא",
+          "en": "Walid Taha"
+        },
+        {
+          "he": "ואליד אל הואשלה",
+          "en": "Walid Alhwashla"
+        },
+        {
+          "he": "אימאן חטיב יאסין",
+          "en": "Iman Khatib-Yassin"
+        }
+      ],
+      "status": "approved",
+      "poll": {
+        "status": "pending"
+      },
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: רעמ",
+          "url": "https://www.idi.org.il/media/32337/%D7%A8%D7%A2%D7%9E.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        },
+        {
+          "title": "ועדת הבחירות המרכזית פרסמה את הפתקים של כל המפלגות לכנסת ה-26",
+          "url": "https://www.ynet.co.il/news/article/s1ibdii5fe",
+          "publisher": "Ynet (reporting CEC announcement of 27.09.2026)",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        },
+        {
+          "title": "העליון הפך את החלטת ועדת הבחירות: רע\"מ, הרשימה המשותפת וכסיף יוכלו להתמודד",
+          "url": "https://www.ynet.co.il/news/elections2026/article/hjw00hep9mx",
+          "publisher": "Ynet",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        },
+        {
+          "title": "Supreme Court allows Ofer Cassif, Ra'am, Joint List to run in 26th Knesset election",
+          "url": "https://www.jpost.com/israel-election-2026/article-910410",
+          "publisher": "The Jerusalem Post",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        }
+      ],
+      "notes": "CEC disqualified the list (Basic Law: The Knesset s.7A(a)(1)) and approved it conditionally pending the Supreme Court; on 2.10.2026 the Supreme Court unanimously overturned the disqualification, so the list may run."
+    },
+    {
+      "id": "shas",
+      "name": {
+        "he": "התאחדות הספרדים שומרי התורה תנועתו של מרן עובדיה יוסף זצ״ל",
+        "en": "Shas"
+      },
+      "ballotLetters": "שס",
+      "memberPartyIds": [
+        "shas"
+      ],
+      "topCandidates": [
+        {
+          "he": "אריה מכלוף דרעי",
+          "en": "Aryeh Deri"
+        },
+        {
+          "he": "ינון אזולאי",
+          "en": "Yinon Azoulay"
+        },
+        {
+          "he": "מיכאל משה מלכיאלי",
+          "en": "Michael Malkieli"
+        },
+        {
+          "he": "יואב בן צור",
+          "en": "Yoav Ben-Tzur"
+        },
+        {
+          "he": "חיים ביטון",
+          "en": "Haim Biton"
+        }
+      ],
+      "status": "approved",
+      "poll": {
+        "status": "pending"
+      },
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: שס",
+          "url": "https://www.idi.org.il/media/32339/%D7%A9%D7%A1.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        },
+        {
+          "title": "ועדת הבחירות המרכזית פרסמה את הפתקים של כל המפלגות לכנסת ה-26",
+          "url": "https://www.ynet.co.il/news/article/s1ibdii5fe",
+          "publisher": "Ynet (reporting CEC announcement of 27.09.2026)",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        },
+        {
+          "title": "החלטת יו\"ר ועדת הבחירות המרכזית פ\"מ 5/26 (בקשה למחיקת מועמד מרשימת ש\"ס) – נדחתה, 23.09.2026",
+          "url": "https://centralelectioncommittee.my.salesforce.com/sfc/dist/version/download/?oid=00D8d000009rrY5&ids=068Jz000015aswE&d=%2Fa%2FJz0000054g5p%2FI8hC1j16xtrYmXwoSZ1JtSlinOg61qUYUx_ogQJAf50&asPdf=false",
+          "publisher": "Central Elections Committee for the 26th Knesset",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        }
+      ],
+      "notes": "A motion to strike candidate #6 Dror Amos was rejected by the CEC chair on 23.09.2026 (decision P.M. 5/26)."
+    },
+    {
+      "id": "haredi-public",
+      "name": {
+        "he": "הציבור החרדי בראשות מוטי ליטנר",
+        "en": "The Haredi Public led by Moti Litner"
+      },
+      "ballotLetters": "זך",
+      "memberPartyIds": [
+        "haredi-public"
+      ],
+      "topCandidates": [
+        {
+          "he": "פנחס מרדכי (מוטי) ליטנר",
+          "en": "Moti Litner"
+        },
+        {
+          "he": "אשר פרדי",
+          "en": "Asher Pardi"
+        },
+        {
+          "he": "מרים נחמה יפה",
+          "en": "Miriam Nechama Yaffe"
+        },
+        {
+          "he": "זיוה רנית גלאנץ",
+          "en": "Ziva Ranit Glantz"
+        },
+        {
+          "he": "מרדכי רובינשטיין",
+          "en": "Mordechai Rubinstein"
+        }
+      ],
+      "status": "approved",
+      "poll": {
+        "status": "pending"
+      },
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: הציבור-החרדי",
+          "url": "https://www.idi.org.il/media/32317/%D7%94%D7%A6%D7%99%D7%91%D7%95%D7%A8-%D7%94%D7%97%D7%A8%D7%93%D7%99.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        },
+        {
+          "title": "ועדת הבחירות המרכזית פרסמה את הפתקים של כל המפלגות לכנסת ה-26",
+          "url": "https://www.ynet.co.il/news/article/s1ibdii5fe",
+          "publisher": "Ynet (reporting CEC announcement of 27.09.2026)",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        }
+      ],
+      "notes": "Submitted by the registered party 'למען אחיי מפלגת כלל ישראל'. English spelling of #2 is a transliteration."
+    },
+    {
+      "id": "you-and-me",
+      "name": {
+        "he": "אני ואתה – מפלגת העם הישראלית",
+        "en": "You and Me – the Israeli People's Party"
+      },
+      "ballotLetters": "פה",
+      "memberPartyIds": [
+        "you-and-me"
+      ],
+      "topCandidates": [
+        {
+          "he": "אלון גלעדי",
+          "en": "Alon Giladi"
+        },
+        {
+          "he": "מאיה גלעדי ז'ולסון",
+          "en": "Maya Giladi Zholson"
+        },
+        {
+          "he": "איציק זלכה",
+          "en": "Itzik Zalcha"
+        },
+        {
+          "he": "לודמילה פורטנוב",
+          "en": "Ludmila Portnov"
+        },
+        {
+          "he": "עזרא שוהם",
+          "en": "Ezra Shoham"
+        }
+      ],
+      "status": "approved",
+      "poll": {
+        "status": "pending"
+      },
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: אני-ואתה",
+          "url": "https://www.idi.org.il/media/32305/%D7%90%D7%A0%D7%99-%D7%95%D7%90%D7%AA%D7%94.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        },
+        {
+          "title": "ועדת הבחירות המרכזית פרסמה את הפתקים של כל המפלגות לכנסת ה-26",
+          "url": "https://www.ynet.co.il/news/article/s1ibdii5fe",
+          "publisher": "Ynet (reporting CEC announcement of 27.09.2026)",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        }
+      ]
+    },
+    {
+      "id": "brit-olam",
+      "name": {
+        "he": "ברית עולם לגאולת ישראל",
+        "en": "Brit Olam (Eternal Covenant) for the Redemption of Israel"
+      },
+      "ballotLetters": "זץ",
+      "memberPartyIds": [
+        "brit-olam"
+      ],
+      "topCandidates": [
+        {
+          "he": "עופר פינחס ליפשיץ",
+          "en": "Ofer Lifshitz"
+        },
+        {
+          "he": "לב סבו",
+          "en": "Lev Sabo"
+        },
+        {
+          "he": "היאם עכאשה",
+          "en": "Hiyam Akasha"
+        },
+        {
+          "he": "האני זיאדה",
+          "en": "Hani Ziada"
+        },
+        {
+          "he": "שמעון שפירא",
+          "en": "Shimon Shapira"
+        }
+      ],
+      "status": "approved",
+      "poll": {
+        "status": "pending"
+      },
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: ברית-עולם",
+          "url": "https://www.idi.org.il/media/32310/%D7%91%D7%A8%D7%99%D7%AA-%D7%A2%D7%95%D7%9C%D7%9D.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        },
+        {
+          "title": "ועדת הבחירות המרכזית פרסמה את הפתקים של כל המפלגות לכנסת ה-26",
+          "url": "https://www.ynet.co.il/news/article/s1ibdii5fe",
+          "publisher": "Ynet (reporting CEC announcement of 27.09.2026)",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        }
+      ]
+    },
+    {
+      "id": "hatikun",
+      "name": {
+        "he": "התיקון לשיטת הבחירות והממשל",
+        "en": "HaTikun – Fixing the Electoral and Governing System"
+      },
+      "ballotLetters": "נקי",
+      "memberPartyIds": [
+        "hatikun"
+      ],
+      "topCandidates": [
+        {
+          "he": "משה סלומוביץ",
+          "en": "Moshe Salomovich"
+        },
+        {
+          "he": "יארה קבלאן",
+          "en": "Yara Kablan"
+        },
+        {
+          "he": "יהל שרמן",
+          "en": "Yahel Sherman"
+        },
+        {
+          "he": "שרון סיני סימוני",
+          "en": "Sharon Sinai Simoni"
+        },
+        {
+          "he": "רומן סורוצקי",
+          "en": "Roman Sorotsky"
+        }
+      ],
+      "status": "approved",
+      "poll": {
+        "status": "pending"
+      },
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: התיקון",
+          "url": "https://www.idi.org.il/media/32322/%D7%94%D7%AA%D7%99%D7%A7%D7%95%D7%9F.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        },
+        {
+          "title": "ועדת הבחירות המרכזית פרסמה את הפתקים של כל המפלגות לכנסת ה-26",
+          "url": "https://www.ynet.co.il/news/article/s1ibdii5fe",
+          "publisher": "Ynet (reporting CEC announcement of 27.09.2026)",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        }
+      ]
+    },
+    {
+      "id": "bible-bloc",
+      "name": {
+        "he": "גה״ת – גוש התנ״כי",
+        "en": "Gahat – the Bible Bloc"
+      },
+      "ballotLetters": "יק",
+      "memberPartyIds": [
+        "bible-bloc"
+      ],
+      "topCandidates": [
+        {
+          "he": "משה ליפקין",
+          "en": "Moshe Lipkin"
+        },
+        {
+          "he": "ברכה קל",
+          "en": "Bracha Kal"
+        },
+        {
+          "he": "חנא חוווא",
+          "en": "Hanna Hawwa"
+        },
+        {
+          "he": "בנימין דוד פרידמן",
+          "en": "Binyamin David Friedman"
+        }
+      ],
+      "status": "approved",
+      "poll": {
+        "status": "pending"
+      },
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: הגוש-התנכי",
+          "url": "https://www.idi.org.il/media/32312/%D7%94%D7%92%D7%95%D7%A9-%D7%94%D7%AA%D7%A0%D7%9B%D7%99.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        },
+        {
+          "title": "ועדת הבחירות המרכזית פרסמה את הפתקים של כל המפלגות לכנסת ה-26",
+          "url": "https://www.ynet.co.il/news/article/s1ibdii5fe",
+          "publisher": "Ynet (reporting CEC announcement of 27.09.2026)",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        }
+      ],
+      "notes": "Some non-CEC sources (NAnews, English Wikipedia) name the head as 'Dennis Lipkin'; the CEC filing lists 'ליפקין משה' at #1. Only 4 candidates."
+    },
+    {
+      "id": "betach",
+      "name": {
+        "he": "בטח – ביטחון חברתי בראשות סמיון גרפמן",
+        "en": "Betach – Social Security led by Semion Grafman"
+      },
+      "ballotLetters": "ז",
+      "memberPartyIds": [
+        "betach"
+      ],
+      "topCandidates": [
+        {
+          "he": "סמיון גרפמן",
+          "en": "Semion Grafman"
+        },
+        {
+          "he": "לובוב חניס",
+          "en": "Lyubov Hanis"
+        },
+        {
+          "he": "דמיטרי זלטקין",
+          "en": "Dmitri Zlatkin"
+        }
+      ],
+      "status": "approved",
+      "poll": {
+        "status": "pending"
+      },
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: בטח",
+          "url": "https://www.idi.org.il/media/32306/%D7%91%D7%98%D7%97.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        },
+        {
+          "title": "ועדת הבחירות המרכזית פרסמה את הפתקים של כל המפלגות לכנסת ה-26",
+          "url": "https://www.ynet.co.il/news/article/s1ibdii5fe",
+          "publisher": "Ynet (reporting CEC announcement of 27.09.2026)",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        }
+      ]
+    },
+    {
+      "id": "orot-hashachar",
+      "name": {
+        "he": "אורות השחר בראשות ניסים לוק",
+        "en": "Orot HaShachar (Dawn's Light) led by Nissim Louk"
+      },
+      "ballotLetters": "בקר",
+      "memberPartyIds": [
+        "orot-hashachar"
+      ],
+      "topCandidates": [
+        {
+          "he": "נסים לוק",
+          "en": "Nissim Louk"
+        },
+        {
+          "he": "בניהו הר שמש",
+          "en": "Benayahu Har-Shemesh"
+        },
+        {
+          "he": "יאיר שלמה אנסבכר",
+          "en": "Yair Ansbacher"
+        },
+        {
+          "he": "יצחק אבוקרט",
+          "en": "Yitzhak Abukrat"
+        },
+        {
+          "he": "דב הלברטל",
+          "en": "Dov Halbertal"
+        }
+      ],
+      "status": "approved",
+      "poll": {
+        "status": "pending"
+      },
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: אורות-השחר",
+          "url": "https://www.idi.org.il/media/32304/%D7%90%D7%95%D7%A8%D7%95%D7%AA-%D7%94%D7%A9%D7%97%D7%A8.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        },
+        {
+          "title": "ועדת הבחירות המרכזית פרסמה את הפתקים של כל המפלגות לכנסת ה-26",
+          "url": "https://www.ynet.co.il/news/article/s1ibdii5fe",
+          "publisher": "Ynet (reporting CEC announcement of 27.09.2026)",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        }
+      ],
+      "notes": "NAnews named Benayahu Har-Shemesh as head; CEC filing and approved name show Nissim Louk at #1, Har-Shemesh #2."
+    },
+    {
+      "id": "personal-security",
+      "name": {
+        "he": "ביטחון אישי",
+        "en": "Personal Security"
+      },
+      "ballotLetters": "נץ",
+      "memberPartyIds": [
+        "demokratura"
+      ],
+      "topCandidates": [
+        {
+          "he": "מיכאל טופצ'יאשוילי",
+          "en": "Michael Topchiashvili"
+        },
+        {
+          "he": "גבריאל קיקווזשוילי",
+          "en": "Gavriel Kikvazhvili"
+        },
+        {
+          "he": "איליה קיקווזשוילי",
+          "en": "Ilya Kikvazhvili"
+        },
+        {
+          "he": "מקואלה חונדיאשוילי",
+          "en": "Makvala Khundiashvili"
+        },
+        {
+          "he": "נודרי יוסבאשוילי",
+          "en": "Nodari Yusbashvili"
+        }
+      ],
+      "status": "approved",
+      "poll": {
+        "status": "pending"
+      },
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: בטחון-אישי",
+          "url": "https://www.idi.org.il/media/32307/%D7%91%D7%98%D7%97%D7%95%D7%9F-%D7%90%D7%99%D7%A9%D7%99.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        },
+        {
+          "title": "ועדת הבחירות המרכזית פרסמה את הפתקים של כל המפלגות לכנסת ה-26",
+          "url": "https://www.ynet.co.il/news/article/s1ibdii5fe",
+          "publisher": "Ynet (reporting CEC announcement of 27.09.2026)",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        }
+      ],
+      "notes": "English spellings of candidates #2-#5 are transliterations."
+    },
+    {
+      "id": "color-black",
+      "name": {
+        "he": "צבע שחור – מגן עולם התורה",
+        "en": "The Color Black – Shield of the Torah World"
+      },
+      "ballotLetters": "נר",
+      "memberPartyIds": [
+        "color-black"
+      ],
+      "topCandidates": [
+        {
+          "he": "אליהו אליעזר באומרינד",
+          "en": "Eliyahu Eliezer Baumrind"
+        },
+        {
+          "he": "דרור דגני",
+          "en": "Dror Dagani"
+        },
+        {
+          "he": "יונתן יששכר",
+          "en": "Yonatan Yissachar"
+        },
+        {
+          "he": "יצחק חי הכהן רבין חיימוב",
+          "en": "Yitzhak Chai HaKohen Rabin Haimov"
+        },
+        {
+          "he": "יוסף טרבלסי",
+          "en": "Yosef Trabelsi"
+        }
+      ],
+      "status": "approved",
+      "poll": {
+        "status": "pending"
+      },
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: צבע-שחור",
+          "url": "https://www.idi.org.il/media/32334/%D7%A6%D7%91%D7%A2-%D7%A9%D7%97%D7%95%D7%A8.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        },
+        {
+          "title": "ועדת הבחירות המרכזית פרסמה את הפתקים של כל המפלגות לכנסת ה-26",
+          "url": "https://www.ynet.co.il/news/article/s1ibdii5fe",
+          "publisher": "Ynet (reporting CEC announcement of 27.09.2026)",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        }
+      ],
+      "notes": "Submitted by the registered party 'תומכי יהדות בוכרה'. Head's name appears as 'בוימרינד' in press reports and 'באומרינד אליהו אליעזר' in the CEC filing."
+    },
+    {
+      "id": "likud",
+      "name": {
+        "he": "הליכוד בהנהגת בנימין נתניהו לראשות הממשלה",
+        "en": "Likud led by Benjamin Netanyahu for Prime Minister"
+      },
+      "ballotLetters": "מחל",
+      "memberPartyIds": [
+        "likud-party",
+        "new-hope"
+      ],
+      "topCandidates": [
+        {
+          "he": "בנימין נתניהו",
+          "en": "Benjamin Netanyahu"
+        },
+        {
+          "he": "אלי (אליהו) כהן",
+          "en": "Eli Cohen"
+        },
+        {
+          "he": "אמיר אוחנה",
+          "en": "Amir Ohana"
+        },
+        {
+          "he": "יריב לוין",
+          "en": "Yariv Levin"
+        },
+        {
+          "he": "מירי רגב",
+          "en": "Miri Regev"
+        }
+      ],
+      "status": "approved",
+      "poll": {
+        "status": "pending"
+      },
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: הליכוד",
+          "url": "https://www.idi.org.il/media/32314/%D7%94%D7%9C%D7%99%D7%9B%D7%95%D7%93.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        },
+        {
+          "title": "ועדת הבחירות המרכזית פרסמה את הפתקים של כל המפלגות לכנסת ה-26",
+          "url": "https://www.ynet.co.il/news/article/s1ibdii5fe",
+          "publisher": "Ynet (reporting CEC announcement of 27.09.2026)",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        },
+        {
+          "title": "Down to the wire: Knesset election slates take shape as deadline nears",
+          "url": "https://www.ynetnews.com/article/bjhvtvhpfe",
+          "publisher": "Ynetnews",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        }
+      ],
+      "notes": "CEC filing: submitted by Likud and New Hope (merger reported by Ynetnews). The CEC candidate page title reads 'הליכוד עם בנימין נתניהו לראשות הממשלה'; the approved ballot name per the 27.09 announcement is used here. Gideon Sa'ar (#7) appears to be filed on Likud's behalf (PDF layout parsing); New Hope leader is taken from press reports."
+    },
+    {
+      "id": "blue-and-white",
+      "name": {
+        "he": "כחול לבן בראשות בני גנץ",
+        "en": "Blue and White led by Benny Gantz"
+      },
+      "ballotLetters": "כן",
+      "memberPartyIds": [
+        "blue-and-white"
+      ],
+      "topCandidates": [
+        {
+          "he": "בני גנץ",
+          "en": "Benny Gantz"
+        },
+        {
+          "he": "פנינה תמנו",
+          "en": "Pnina Tamano-Shata"
+        },
+        {
+          "he": "עליזה בלוך",
+          "en": "Aliza Bloch"
+        },
+        {
+          "he": "רועי קונקול",
+          "en": "Roy Konkol"
+        },
+        {
+          "he": "רתם אבידר צאליק",
+          "en": "Rotem Avidar Tzalik"
+        }
+      ],
+      "status": "approved",
+      "poll": {
+        "status": "pending"
+      },
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: כחול-לבן",
+          "url": "https://www.idi.org.il/media/32327/%D7%9B%D7%97%D7%95%D7%9C-%D7%9C%D7%91%D7%9F.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        },
+        {
+          "title": "ועדת הבחירות המרכזית פרסמה את הפתקים של כל המפלגות לכנסת ה-26",
+          "url": "https://www.ynet.co.il/news/article/s1ibdii5fe",
+          "publisher": "Ynet (reporting CEC announcement of 27.09.2026)",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        }
+      ]
+    },
+    {
+      "id": "religious-zionism-zehut",
+      "name": {
+        "he": "הציונות הדתית בראשות בצלאל סמוטריץ׳ וזהות בראשות משה פייגלין",
+        "en": "Religious Zionism led by Bezalel Smotrich and Zehut led by Moshe Feiglin"
+      },
+      "ballotLetters": "ט",
+      "memberPartyIds": [
+        "national-union-tkuma",
+        "zehut",
+        "atid-echad"
+      ],
+      "topCandidates": [
+        {
+          "he": "בצלאל סמוטריץ'",
+          "en": "Bezalel Smotrich"
+        },
+        {
+          "he": "משה פייגלין",
+          "en": "Moshe Feiglin"
+        },
+        {
+          "he": "אורית סטרוק",
+          "en": "Orit Strock"
+        },
+        {
+          "he": "שמחה רוטמן",
+          "en": "Simcha Rothman"
+        },
+        {
+          "he": "צבי מור",
+          "en": "Tzvi Mor"
+        }
+      ],
+      "status": "approved",
+      "poll": {
+        "status": "pending"
+      },
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: הציונות-הדתית",
+          "url": "https://www.idi.org.il/media/32318/%D7%94%D7%A6%D7%99%D7%95%D7%A0%D7%95%D7%AA-%D7%94%D7%93%D7%AA%D7%99%D7%AA.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        },
+        {
+          "title": "ועדת הבחירות המרכזית פרסמה את הפתקים של כל המפלגות לכנסת ה-26",
+          "url": "https://www.ynet.co.il/news/article/s1ibdii5fe",
+          "publisher": "Ynet (reporting CEC announcement of 27.09.2026)",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        }
+      ],
+      "notes": "CEC filing: submitted by three parties: האיחוד הלאומי-תקומה (Smotrich #1), זהות (Feiglin #2) and עתיד אחד (top-ranked candidate on its behalf: Orit Strock #3, per PDF layout parsing). The Atid Echad 'leader' is that top-ranked candidate, not a confirmed party chair. CEC rejected a motion to bar the list."
+    },
+    {
+      "id": "ahi-movement",
+      "name": {
+        "he": "תנועת אחי, תנועתו של הרב יורם אברג׳ל זצ״ל",
+        "en": "Ahi Movement (movement of the late Rabbi Yoram Abergel)"
+      },
+      "ballotLetters": "צבי",
+      "memberPartyIds": [
+        "ahi-movement"
+      ],
+      "topCandidates": [
+        {
+          "he": "יובל אלמלך",
+          "en": "Yuval Elmalech"
+        },
+        {
+          "he": "ישראל אביחי אפל",
+          "en": "Yisrael Avihai Apel"
+        },
+        {
+          "he": "ארז ראובן",
+          "en": "Erez Reuven"
+        },
+        {
+          "he": "אברהם דיין",
+          "en": "Avraham Dayan"
+        },
+        {
+          "he": "אדיר כהן",
+          "en": "Adir Cohen"
+        }
+      ],
+      "status": "approved",
+      "poll": {
+        "status": "pending"
+      },
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: תנועת-אחי",
+          "url": "https://www.idi.org.il/media/32341/%D7%AA%D7%A0%D7%95%D7%A2%D7%AA-%D7%90%D7%97%D7%99.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        },
+        {
+          "title": "ועדת הבחירות המרכזית פרסמה את הפתקים של כל המפלגות לכנסת ה-26",
+          "url": "https://www.ynet.co.il/news/article/s1ibdii5fe",
+          "publisher": "Ynet (reporting CEC announcement of 27.09.2026)",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        }
+      ],
+      "notes": "Submitted by the registered party 'חוזרים לשורשים'. Head appears as 'אלמלך יובל' in the CEC filing; press uses 'Elimelech'."
+    },
+    {
+      "id": "tzomet-beit-yisrael",
+      "name": {
+        "he": "צומת בית ישראל",
+        "en": "Tzomet – Beit Yisrael"
+      },
+      "ballotLetters": "בי",
+      "memberPartyIds": [
+        "beit-yemini",
+        "tzomet"
+      ],
+      "topCandidates": [
+        {
+          "he": "גדי (דסטה) יברקן",
+          "en": "Gadi Yevarkan"
+        },
+        {
+          "he": "משה גרין",
+          "en": "Moshe Green"
+        },
+        {
+          "he": "יניב אשטמקר",
+          "en": "Yaniv Ashtemker"
+        },
+        {
+          "he": "רם טופז דויטש",
+          "en": "Ram Topaz Deutsch"
+        },
+        {
+          "he": "תקלה תמיר אלעזר",
+          "en": "Takla Tamir Elazar"
+        }
+      ],
+      "status": "approved",
+      "poll": {
+        "status": "pending"
+      },
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: צומת-בית-ישראל",
+          "url": "https://www.idi.org.il/media/32335/%D7%A6%D7%95%D7%9E%D7%AA-%D7%91%D7%99%D7%AA-%D7%99%D7%A9%D7%A8%D7%90%D7%9C.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        },
+        {
+          "title": "ועדת הבחירות המרכזית פרסמה את הפתקים של כל המפלגות לכנסת ה-26",
+          "url": "https://www.ynet.co.il/news/article/s1ibdii5fe",
+          "publisher": "Ynet (reporting CEC announcement of 27.09.2026)",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        }
+      ],
+      "notes": "CEC filing: submitted by 'בית ימני חברתי ציוני לכלל ישראל' (Yevarkan #1, listed as 'יברקן דסטה') and 'צומת' (Green #2)."
+    },
+    {
+      "id": "tekuma",
+      "name": {
+        "he": "תקומה",
+        "en": "Tekuma"
+      },
+      "ballotLetters": "ק",
+      "memberPartyIds": [
+        "tekuma"
+      ],
+      "topCandidates": [
+        {
+          "he": "אלקנא פדרמן",
+          "en": "Elkana Federman"
+        },
+        {
+          "he": "לוטם נגר",
+          "en": "Lotem Nagar"
+        },
+        {
+          "he": "שירה כהן",
+          "en": "Shira Cohen"
+        },
+        {
+          "he": "מרים אברהם",
+          "en": "Miriam Avraham"
+        },
+        {
+          "he": "ליאנה פרץ חיימוביץ'",
+          "en": "Liana Peretz Haimovich"
+        }
+      ],
+      "status": "approved",
+      "poll": {
+        "status": "pending"
+      },
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: מפלגת-תקומה",
+          "url": "https://www.idi.org.il/media/32328/%D7%9E%D7%A4%D7%9C%D7%92%D7%AA-%D7%AA%D7%A7%D7%95%D7%9E%D7%94.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        },
+        {
+          "title": "ועדת הבחירות המרכזית פרסמה את הפתקים של כל המפלגות לכנסת ה-26",
+          "url": "https://www.ynet.co.il/news/article/s1ibdii5fe",
+          "publisher": "Ynet (reporting CEC announcement of 27.09.2026)",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        }
+      ],
+      "notes": "CEC candidate page title: 'מפלגת התקומה'. Not the historical Tkuma party."
+    },
+    {
+      "id": "joint-list",
+      "name": {
+        "he": "הרשימה המשותפת",
+        "en": "The Joint List"
+      },
+      "ballotLetters": "ודם",
+      "memberPartyIds": [
+        "hadash",
+        "taal",
+        "balad"
+      ],
+      "topCandidates": [
+        {
+          "he": "יוסף ג'בארין",
+          "en": "Yousef Jabareen"
+        },
+        {
+          "he": "אחמד טיבי",
+          "en": "Ahmad Tibi"
+        },
+        {
+          "he": "פאתן ג'טאס",
+          "en": "Faten Ghattas"
+        },
+        {
+          "he": "בכר עואודה",
+          "en": "Bakr Awawdeh"
+        },
+        {
+          "he": "עופר כסיף",
+          "en": "Ofer Cassif"
+        }
+      ],
+      "status": "approved",
+      "poll": {
+        "status": "pending"
+      },
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: הרשימה-המשותפת",
+          "url": "https://www.idi.org.il/media/32320/%D7%94%D7%A8%D7%A9%D7%99%D7%9E%D7%94-%D7%94%D7%9E%D7%A9%D7%95%D7%AA%D7%A4%D7%AA.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        },
+        {
+          "title": "ועדת הבחירות המרכזית פרסמה את הפתקים של כל המפלגות לכנסת ה-26",
+          "url": "https://www.ynet.co.il/news/article/s1ibdii5fe",
+          "publisher": "Ynet (reporting CEC announcement of 27.09.2026)",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        },
+        {
+          "title": "העליון הפך את החלטת ועדת הבחירות: רע\"מ, הרשימה המשותפת וכסיף יוכלו להתמודד",
+          "url": "https://www.ynet.co.il/news/elections2026/article/hjw00hep9mx",
+          "publisher": "Ynet",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        },
+        {
+          "title": "Supreme Court allows Ofer Cassif, Ra'am, Joint List to run in 26th Knesset election",
+          "url": "https://www.jpost.com/israel-election-2026/article-910410",
+          "publisher": "The Jerusalem Post",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        },
+        {
+          "title": "אבו שחאדה בחוץ, בל\"ד נשארת: כך נראית הרשימה המשותפת אחרי הפרישה",
+          "url": "https://ynet.co.il/news/elections2026/article/s100kfzesze",
+          "publisher": "Ynet",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        },
+        {
+          "title": "Israel's election takes shape as 38 parties submit slates, in battle between pro- and anti-Netanyahu blocs",
+          "url": "https://www.timesofisrael.com/israels-election-takes-shape-as-38-parties-submit-slates-from-likud-to-joint-list/",
+          "publisher": "The Times of Israel",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        }
+      ],
+      "notes": "CEC disqualified the list and candidates Ofer Cassif and Sami Abu Shehadeh; list approved conditionally pending the Supreme Court. On 2.10.2026 the Supreme Court unanimously overturned the list's disqualification and (7-2) Cassif's; Abu Shehadeh (originally #3, Balad chair) withdrew his candidacy, so candidates below him move up one place. Abu Shehadeh remains Balad's chair (Ynet) but is not a candidate."
+    },
+    {
+      "id": "hakahal",
+      "name": {
+        "he": "הקהל – מפלגה כלל־חרדית שנציגיה נבחרים על ידי הציבור, בראשות הרב שלמה אלבוים",
+        "en": "HaKahal – a pan-Haredi party whose representatives are elected by the public, led by Rabbi Shlomo Elboim"
+      },
+      "ballotLetters": "רץ",
+      "memberPartyIds": [
+        "hakahal"
+      ],
+      "topCandidates": [
+        {
+          "he": "שלמה אלבוים",
+          "en": "Shlomo Elboim"
+        },
+        {
+          "he": "ברוך מנדל אדלר",
+          "en": "Baruch Mendel Adler"
+        },
+        {
+          "he": "דוד גבאי",
+          "en": "David Gabbai"
+        },
+        {
+          "he": "ידידיה צבי אמיתי קובן",
+          "en": "Yedidya Tzvi Amitai Koben"
+        },
+        {
+          "he": "משה פרידמן",
+          "en": "Moshe Friedman"
+        }
+      ],
+      "status": "approved",
+      "poll": {
+        "status": "pending"
+      },
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: הקהל",
+          "url": "https://www.idi.org.il/media/32319/%D7%94%D7%A7%D7%94%D7%9C.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        },
+        {
+          "title": "ועדת הבחירות המרכזית פרסמה את הפתקים של כל המפלגות לכנסת ה-26",
+          "url": "https://www.ynet.co.il/news/article/s1ibdii5fe",
+          "publisher": "Ynet (reporting CEC announcement of 27.09.2026)",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        }
+      ],
+      "notes": "Submitted by the registered party 'מחנה ישראל'."
+    },
+    {
+      "id": "united-torah-judaism",
+      "name": {
+        "he": "יהדות התורה והשבת אגודת ישראל – דגל התורה",
+        "en": "United Torah Judaism – Agudat Yisrael – Degel HaTorah"
+      },
+      "ballotLetters": "ג",
+      "memberPartyIds": [
+        "degel-hatorah",
+        "agudat-yisrael",
+        "chomat-torat-yisrael"
+      ],
+      "topCandidates": [
+        {
+          "he": "יעקב אשר",
+          "en": "Yaakov Asher"
+        },
+        {
+          "he": "יצחק גולדקנופ",
+          "en": "Yitzhak Goldknopf"
+        },
+        {
+          "he": "יצחק זאב פינדרוס",
+          "en": "Yitzhak Pindrus"
+        },
+        {
+          "he": "מאיר פרוש",
+          "en": "Meir Porush"
+        },
+        {
+          "he": "משה עזריאל רוזנטל",
+          "en": "Moshe Rosenthal"
+        }
+      ],
+      "status": "approved",
+      "poll": {
+        "status": "pending"
+      },
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: יהדות-התורה",
+          "url": "https://www.idi.org.il/media/32323/%D7%99%D7%94%D7%93%D7%95%D7%AA-%D7%94%D7%AA%D7%95%D7%A8%D7%94.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        },
+        {
+          "title": "ועדת הבחירות המרכזית פרסמה את הפתקים של כל המפלגות לכנסת ה-26",
+          "url": "https://www.ynet.co.il/news/article/s1ibdii5fe",
+          "publisher": "Ynet (reporting CEC announcement of 27.09.2026)",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        }
+      ],
+      "notes": "CEC filing: submitted by three parties: אגודת החרדים-דגל התורה (Asher #1), הסתדרות אגודת ישראל (Goldknopf #2) and חומת תורת ישראל (top-ranked candidate on its behalf: Meir Porush #4, per PDF layout parsing; 'leader' = that candidate, not a confirmed chair)."
+    },
+    {
+      "id": "noam",
+      "name": {
+        "he": "נעם לישראל למען עתיד הילדים בראשות אבי מעוז",
+        "en": "Noam for Israel – for the Children's Future, led by Avi Maoz"
+      },
+      "ballotLetters": "ני",
+      "memberPartyIds": [
+        "lazuz",
+        "national-responsibility"
+      ],
+      "topCandidates": [
+        {
+          "he": "אבי (אביגדור) מעוז",
+          "en": "Avi Maoz"
+        },
+        {
+          "he": "שמעון טבול",
+          "en": "Shimon Tubul"
+        },
+        {
+          "he": "אליהו שלום ליבמן",
+          "en": "Eliyahu Libman"
+        },
+        {
+          "he": "ליאורה אלון",
+          "en": "Liora Alon"
+        },
+        {
+          "he": "יסכה איילת השחר חיימוב",
+          "en": "Yiska Haimov"
+        }
+      ],
+      "status": "approved",
+      "poll": {
+        "status": "pending"
+      },
+      "sources": [
+        {
+          "title": "CEC candidate-list page (26th Knesset), copy archived by IDI: נעם",
+          "url": "https://www.idi.org.il/media/32330/%D7%A0%D7%A2%D7%9D.pdf",
+          "publisher": "Central Elections Committee (page copy hosted by the Israel Democracy Institute)",
+          "accessed": "2026-10-06",
+          "authority": "cec"
+        },
+        {
+          "title": "ועדת הבחירות המרכזית פרסמה את הפתקים של כל המפלגות לכנסת ה-26",
+          "url": "https://www.ynet.co.il/news/article/s1ibdii5fe",
+          "publisher": "Ynet (reporting CEC announcement of 27.09.2026)",
+          "accessed": "2026-10-06",
+          "authority": "non-cec"
+        }
+      ],
+      "notes": "CEC filing: submitted by 'לזוז' (Maoz #1) and 'אחריות לאומית - למען עתיד ילדינו' (top-ranked candidate on its behalf: Eliyahu Libman #3; 'leader' = that candidate, not a confirmed chair)."
+    }
+  ]
+}
