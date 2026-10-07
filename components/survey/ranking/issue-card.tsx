@@ -70,7 +70,7 @@ export function IssueCard(props: Props) {
         <div className="flex items-start gap-2">
           {props.mode === "ranked" && (
             <span
-              className="bg-foreground text-background mt-0.5 flex size-6 shrink-0 items-center justify-center rounded-full text-xs font-bold"
+              className="bg-primary text-primary-foreground mt-0.5 flex size-6 shrink-0 items-center justify-center rounded-full text-xs font-bold"
               data-testid="rank-badge"
             >
               <span className="sr-only">{t("rankLabel")} </span>

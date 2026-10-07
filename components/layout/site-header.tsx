@@ -7,7 +7,7 @@ export function SiteHeader() {
   const t = useTranslations("Nav");
   const m = useTranslations("Metadata");
   return (
-    <header className="bg-background/95 supports-backdrop-filter:bg-background/80 sticky top-0 z-40 border-b backdrop-blur">
+    <header className="bg-background/95 supports-backdrop-filter:bg-background/80 sticky top-0 z-40 backdrop-blur">
       <a
         href="#main"
         className="focus:bg-background focus:ring-ring sr-only focus:not-sr-only focus:absolute focus:start-2 focus:top-2 focus:z-50 focus:rounded-md focus:p-2 focus:ring-2"
@@ -27,22 +27,33 @@ export function SiteHeader() {
         </div>
         <MainNav className="order-3 w-full sm:order-2 sm:ms-auto sm:w-auto" />
       </div>
+      <FlagStripes />
     </header>
   );
 }
 
-/** A neutral, abstract mark: no party colours or symbols. */
+/** Two thin bands echoing the flag's stripes; the national palette, not a party's. */
+function FlagStripes() {
+  return (
+    <div aria-hidden="true" className="flex flex-col gap-0.5">
+      <div className="bg-primary h-1" />
+      <div className="bg-primary h-1" />
+    </div>
+  );
+}
+
+/** A neutral, abstract mark in the flag's blue: no party colours or symbols. */
 function LogoMark() {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" className="size-6 shrink-0">
-      <rect x="2" y="2" width="20" height="20" rx="6" className="fill-foreground" />
+      <rect x="2" y="2" width="20" height="20" rx="6" className="fill-primary" />
       <path
         d="M7 12.5l3.2 3.2L17 8.8"
         fill="none"
         strokeWidth="2.4"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="stroke-background"
+        className="stroke-primary-foreground"
       />
     </svg>
   );

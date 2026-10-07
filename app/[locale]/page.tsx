@@ -53,9 +53,12 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
           }
           closed={<ElectionOverBanner />}
         />
-        <p className="bg-muted/60 rounded-lg border px-4 py-3 text-sm" data-testid="privacy-note">
+        <p
+          className="bg-secondary/60 rounded-lg border px-4 py-3 text-sm"
+          data-testid="privacy-note"
+        >
           {t("privacyNote")}{" "}
-          <Link href="/privacy" className="font-medium underline underline-offset-4">
+          <Link href="/privacy" className="text-primary font-medium underline underline-offset-4">
             {t("privacyLink")}
           </Link>
         </p>
@@ -67,10 +70,10 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
         </h2>
         <ol className="grid gap-3 sm:grid-cols-2">
           {steps.map((step, i) => (
-            <li key={step} className="flex gap-3 rounded-xl border p-4">
+            <li key={step} className="bg-secondary/60 flex gap-3 rounded-xl border p-4">
               <span
                 aria-hidden="true"
-                className="bg-foreground text-background flex size-7 shrink-0 items-center justify-center rounded-full text-sm font-semibold"
+                className="bg-primary text-primary-foreground flex size-7 shrink-0 items-center justify-center rounded-full text-sm font-semibold"
               >
                 {i + 1}
               </span>
@@ -90,7 +93,10 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
         <p className="max-w-prose">{t("neutralBody")}</p>
         <p className="max-w-prose">{t("decisionAid")}</p>
         <p>
-          <Link href="/how-it-works" className="font-medium underline underline-offset-4">
+          <Link
+            href="/how-it-works"
+            className="text-primary font-medium underline underline-offset-4"
+          >
             {t("howItWorksLink")}
           </Link>
         </p>

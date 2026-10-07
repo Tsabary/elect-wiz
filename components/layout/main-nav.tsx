@@ -29,7 +29,7 @@ export function MainNav({ className }: { className?: string }) {
                 className={cn(
                   "focus-visible:ring-ring/50 flex min-h-11 items-center rounded-md px-2 text-sm whitespace-nowrap outline-none focus-visible:ring-3",
                   active
-                    ? "text-foreground font-semibold underline decoration-2 underline-offset-8"
+                    ? "text-primary font-semibold underline decoration-2 underline-offset-8"
                     : "text-muted-foreground hover:text-foreground",
                 )}
               >

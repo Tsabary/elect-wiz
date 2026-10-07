@@ -77,7 +77,7 @@ export function ResultEntryCard({
       data-party-id={entry.partyId}
       className={cn(
         "flex flex-col gap-4 rounded-2xl border p-4 sm:p-5",
-        isTop && "border-foreground border-2",
+        isTop && "border-primary border-2",
       )}
     >
       <header className="flex flex-col gap-2">
@@ -175,7 +175,7 @@ function BreakdownItem({
         <span>{t("importance", { rank: item.rank })}</span>
         <span aria-hidden="true" className="bg-muted h-1.5 w-20 overflow-hidden rounded-full">
           <span
-            className="bg-foreground/60 block h-full rounded-full"
+            className="bg-primary/70 block h-full rounded-full"
             style={{ width: `${Math.round(weight * 100)}%` }}
           />
         </span>

@@ -396,7 +396,7 @@ function RankedList({
         <ol
           ref={setNodeRef}
           data-testid="ranked-list"
-          className={`flex min-h-20 flex-col gap-2 rounded-xl border-2 border-dashed p-2 transition-colors ${isOver ? "border-foreground/40 bg-muted/50" : "border-border"}`}
+          className={`flex min-h-20 flex-col gap-2 rounded-xl border-2 border-dashed p-2 transition-colors ${isOver ? "border-primary/50 bg-accent/60" : "border-border"}`}
         >
           {ids.length === 0 && (
             <li className="text-muted-foreground flex min-h-16 items-center justify-center px-4 text-center text-sm">

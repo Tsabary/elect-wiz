@@ -5,7 +5,7 @@ export function SiteFooter() {
   const t = useTranslations("Footer");
   const nav = useTranslations("Nav");
   return (
-    <footer className="text-muted-foreground mt-12 border-t text-sm">
+    <footer className="text-muted-foreground bg-secondary/50 border-primary mt-12 border-t-4 text-sm">
       <div className="mx-auto flex w-full max-w-3xl flex-col gap-3 px-4 py-6">
         <p>{t("neutrality")}</p>
         <nav aria-label={nav("footerLabel")}>

@@ -111,9 +111,7 @@ export function AnswerStep({
               }}
               className={cn(
                 "flex flex-col gap-2 rounded-xl border-2 p-3 transition-colors",
-                selected
-                  ? "border-foreground bg-muted/40"
-                  : "border-border hover:border-foreground/30",
+                selected ? "border-primary bg-accent/60" : "border-border hover:border-primary/40",
               )}
             >
               <div className="flex items-center justify-between gap-2">
@@ -174,7 +172,7 @@ export function AnswerStep({
           data-selected={draft.selected === OWN_ANSWER}
           className={cn(
             "flex flex-col gap-2 rounded-xl border-2 border-dashed p-3 transition-colors",
-            draft.selected === OWN_ANSWER ? "border-foreground bg-muted/40" : "border-border",
+            draft.selected === OWN_ANSWER ? "border-primary bg-accent/60" : "border-border",
           )}
         >
           <label

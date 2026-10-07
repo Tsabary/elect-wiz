@@ -11,6 +11,11 @@ import { hasRtl, visualRtl } from "@/lib/share/bidi";
 
 export const OG_SIZE = { width: 1200, height: 630 };
 
+/** Israeli flag blue, matching `--flag-blue` in app/globals.css. */
+const FLAG_BLUE = "#0038b8";
+const INK = "#0f1b3d";
+const INK_SOFT = "#3d4a6b";
+
 const BOLD = "HeeboBoldHe, HeeboBoldLat";
 const REGULAR = "HeeboHe, HeeboLat";
 
@@ -69,11 +74,13 @@ export async function renderOgImage(c: OgContent): Promise<ImageResponse> {
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
-        background: "#fafafa",
-        color: "#171717",
+        background: "#ffffff",
+        color: INK,
         fontFamily: REGULAR,
-        padding: "64px 72px",
-        borderTop: "16px solid #171717",
+        padding: "72px 72px",
+        // Flag-style bands: a thick blue stripe set in from each edge.
+        borderTop: `14px solid ${FLAG_BLUE}`,
+        borderBottom: `14px solid ${FLAG_BLUE}`,
       }}
     >
       <div
@@ -82,7 +89,7 @@ export async function renderOgImage(c: OgContent): Promise<ImageResponse> {
           fontSize: 34,
           fontWeight: 700,
           fontFamily: BOLD,
-          color: "#404040",
+          color: FLAG_BLUE,
         }}
       >
         {line(c.siteName, c.rtl)}
@@ -95,7 +102,7 @@ export async function renderOgImage(c: OgContent): Promise<ImageResponse> {
               fontSize: 36,
               fontWeight: 400,
               fontFamily: REGULAR,
-              color: "#525252",
+              color: INK_SOFT,
             }}
           >
             {line(c.eyebrow, c.rtl)}
@@ -119,7 +126,7 @@ export async function renderOgImage(c: OgContent): Promise<ImageResponse> {
               fontSize: 32,
               fontWeight: 400,
               fontFamily: REGULAR,
-              color: "#525252",
+              color: INK_SOFT,
             }}
           >
             {line(c.secondary, c.rtl, 80)}
@@ -130,8 +137,8 @@ export async function renderOgImage(c: OgContent): Promise<ImageResponse> {
         <div
           style={{
             display: "flex",
-            background: "#171717",
-            color: "#fafafa",
+            background: FLAG_BLUE,
+            color: "#ffffff",
             fontSize: 34,
             fontWeight: 700,
             fontFamily: BOLD,

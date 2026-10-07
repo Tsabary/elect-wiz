@@ -4,7 +4,7 @@ export function ProgressBar({ value, max }: { value: number; max: number }) {
   return (
     <div aria-hidden="true" className="bg-muted h-1.5 w-full overflow-hidden rounded-full">
       <div
-        className="bg-foreground h-full rounded-full transition-[width]"
+        className="bg-primary h-full rounded-full transition-[width]"
         style={{ width: `${pct}%` }}
       />
     </div>

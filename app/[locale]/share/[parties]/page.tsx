@@ -64,7 +64,7 @@ export default async function SharePage({ params }: PageProps<"/[locale]/share/[
     <div className="flex flex-col gap-8" data-testid="share-landing">
       {top ? (
         <section
-          className="border-foreground flex flex-col gap-4 rounded-2xl border-2 p-5"
+          className="border-primary flex flex-col gap-4 rounded-2xl border-2 p-5"
           aria-labelledby="shared-heading"
         >
           <p className="text-muted-foreground text-sm font-medium">{t("landingEyebrow")}</p>

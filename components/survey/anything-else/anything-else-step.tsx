@@ -78,7 +78,7 @@ export function AnythingElseStep({
           {ANYTHING_ELSE_IMPORTANCE.map((value) => (
             <label
               key={value}
-              className="has-[:checked]:border-foreground has-[:checked]:bg-muted/40 flex min-h-12 cursor-pointer items-center gap-3 rounded-xl border-2 px-3 py-2"
+              className="has-[:checked]:border-primary has-[:checked]:bg-accent/60 flex min-h-12 cursor-pointer items-center gap-3 rounded-xl border-2 px-3 py-2"
             >
               <input
                 type="radio"
