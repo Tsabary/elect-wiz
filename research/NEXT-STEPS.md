@@ -1,6 +1,6 @@
 # Handoff: where the project stands and how to continue
 
-Last updated 2026-10-07. Nothing is running. Everything is committed on `main`, which is pushed to the private GitHub repo `origin`. There are no other branches.
+Last updated 2026-10-07 (evening). Nothing is running. The 6 larger parties below were done in a cloud session on branch `claude/zealous-shannon-0bjyem` (pushed to `origin`); the owner merges it to `main`. Everything before that is on `main`.
 
 This note is for the next orchestrating agent, which may be a Claude Code cloud session. Read it fully before starting. It records what earlier sessions decided that isn't obvious from the repository.
 
@@ -18,10 +18,10 @@ This note is for the next orchestrating agent, which may be a Claude Code cloud 
 ### Phase 3 progress
 
 - **3.5 poll snapshot:** done, audited, committed (`4da942a`). All 38 lists recorded from CEC-filed polls. Log: `research/poll-snapshot.md`.
-- **3.1 research and 3.2 fact-check:** done for **22 of 52 parties**, committed as a WIP snapshot (`decb3f2`), **not yet audited**. Each document was fact-checked by a different agent from its author. `limitedInfo` and `researchedAsOf` are set in the registry for these 22 (only `haredi-public` is `limitedInfo: true`).
+- **3.1 research and 3.2 fact-check:** done for **28 of 52 parties**, committed as WIP snapshots (`decb3f2` for the first 22; branch `claude/zealous-shannon-0bjyem` for the next 6), **not yet audited**. Each document was fact-checked by a different agent from its author. `limitedInfo` and `researchedAsOf` are set in the registry for these 28 (only `haredi-public` is `limitedInfo: true`).
   - Done: likud-party, new-hope, byachad-bennett, yesh-atid, yashar-leyisrael, yesodot-yisrael, yisrael-beytenu, shas, degel-hatorah, agudat-yisrael, the-democrats-party, raam, hadash, taal, balad, blue-and-white, jewish-national-front, national-union-tkuma, the-reservists, amcha-yisrael, haredi-public, israel-first.
-  - **Next: the 6 remaining larger parties (Opus):** `meretz`, `eretz-yisrael-shelanu`, `zehut`, `atid-echad`, `chomat-torat-yisrael`, `new-economic-party`. All are members of joint lists whose partners are already done.
-  - **Then: 24 small parties** (lists polled under 1%), researched with **Sonnet** by owner decision, fact-checked with **Opus**: lazuz, national-responsibility, ahi-movement, color-black, beit-yemini, tzomet, hakahal, together-we-will-succeed, tekuma, sharshar, ihud-bnei-habrit, pirates, gan-eden, womens-voice, just-law, shema, new-order, you-and-me, brit-olam, hatikun, bible-bloc, betach, orot-hashachar, demokratura.
+  - Done 2026-10-07 (cloud session, Opus authors and Opus fact-checkers): meretz, eretz-yisrael-shelanu, zehut, atid-echad, chomat-torat-yisrael, new-economic-party. About 8,200–10,200 words and 53–81 sources each; all `limitedInfo: false`. **knesset.gov.il was geo-blocked from the cloud container**, so their 25th-Knesset votes rest on press reports; see §2a for the re-check list.
+  - **Next: 24 small parties** (lists polled under 1%), researched with **Sonnet** by owner decision, fact-checked with **Opus**: lazuz, national-responsibility, ahi-movement, color-black, beit-yemini, tzomet, hakahal, together-we-will-succeed, tekuma, sharshar, ihud-bnei-habrit, pirates, gan-eden, womens-voice, just-law, shema, new-order, you-and-me, brit-olam, hatikun, bible-bloc, betach, orot-hashachar, demokratura.
 - **3.3 consistency review, 3.4 Hebrew editions and parity check, and the Phase 3 audits:** not started.
 
 Key files:
@@ -46,6 +46,19 @@ Rules that always apply:
 - **The agent that wrote a document never checks it.** Fact-check, consistency review and parity check are each done by different agents.
 - **Quality bar:** research is the most important part of the product; don't shorten it for efficiency. Facts and actions over campaign messaging. Every claim cited to a source actually opened. No poll figures in research text. Israeli-neutral glossary terms. Plain language. Full details are in the briefs.
 
+## 2a. Re-check against Knesset records (from the 6-party cloud run)
+
+knesset.gov.il (main site, OData and the Votes API) returned a geo-block page ("temporarily inaccessible from your location") to both curl and WebFetch from the cloud container. Agents used:
+- **Votes up to 2021:** the Open Knesset mirror of the Knesset's own tables (`https://production.oknesset.org/pipelines/data/votes/` — `view_vote_rslts_hdr_approved` headers and `vote_rslts_kmmbr_shadow` per-MK rows; codes 1 = for, 2 = against, 3 = abstain, confirmed against header tallies). These were counted from raw rows and need no re-check, but the official page can be spot-checked. Known header-vs-rows gap: the 12 March 2014 Haredi draft law final reading shows 63–1 in the header and 65 for in the rows (noted in zehut and atid-echad).
+- **25th Knesset (2023–2026) and government votes:** reputable press reports only. **These need a per-MK check from a machine that can reach knesset.gov.il** (with `www`, via `Votes/GetVoteDetails/{voteId}` or OData), then a wording fix where the record differs. Government (cabinet) votes have no Knesset record; leave them as press-sourced.
+
+Lists per party:
+- **eretz-yisrael-shelanu** (Wasserlauf, Kroizer): table "Votes checked only against press reports" in `research/fact-check/eretz-yisrael-shelanu.md` (17 items). Also cross-check against `research/fact-check/jewish-national-front.md`, which cites per-MK records for votes 44580 (sovereignty preliminary reading), 45858 (death-penalty law) and 42370 (2025 budget first reading, December 2024) that this document leaves out; the two documents should agree. The reasonableness-amendment vote (24 July 2023) is tagged "Action (inferred)".
+- **atid-echad** (Strock): table "Votes checked only against press reports" in `research/fact-check/atid-echad.md`. Key item: Basic Law: Torah Study (June/July 2026), where Strock's vote for it rests on a Jerusalem Post report that six of seven Religious Zionism MKs backed it.
+- **chomat-torat-yisrael** (Porush): Basic Law: Torah Study final reading (13 July 2026, 63–52); law suspending arrests of yeshiva students (mid-July 2026, 58–54); attorney-general law final reading (15 July 2026, 61–51); Kallner October 7 inquiry bill first reading (6 July 2026, 59–0); daycare subsidies preliminary reading (27 May 2026, 44–37); Maoz sovereignty bill preliminary reading (22 October 2025, 25–24); Agudat Yisrael's announced vote against the Arrangements Law (9 February 2026). The document says Porush's personal vote was not checked for each, and lists them in `#information-availability`.
+- **new-economic-party** (no MKs): the 31 January 2023 Constitution Committee transcript (Zelekha's remarks; now backed by an Arutz Sheva interview), his September 2007 State Control Committee appearance, and whether any of its candidates has been an MK since 2021.
+- **zehut** and **meretz:** no 25th-Knesset votes are relied on (Zehut had no MKs; Meretz has had none since November 2022). All their votes are from the Open Knesset mirror.
+
 ## 3. Notes for the consistency review (Stage 4) and for the owner
 
 Collected from the Stage 2 and 3 reports so far.
@@ -57,7 +70,14 @@ Collected from the Stage 2 and 3 reports so far.
   - byachad-bennett and yesh-atid: the "Together" list plans.
   - the-reservists and yesodot-yisrael: the "Magen David" plan, co-authored before their September 2026 split.
   - hadash, taal and balad: Dr. Nahaya Wishahi (No. 10) is filed for Hadash; the CEC tally on barring the Joint List is reported as 15–8 (Jewish Chronicle) and as 18–5–1 (Srugim).
-  - agudat-yisrael and chomat-torat-yisrael: Porush and Eichler evidence must not be double-counted without a caveat.
+  - agudat-yisrael and chomat-torat-yisrael: Porush and Eichler evidence must not be double-counted without a caveat. chomat-torat-yisrael labels all Agudat Yisrael/UTJ-era evidence as such; it cites a Zman Yisrael profile (which says it used AI tools) for parts of Porush's biography.
+  - zehut, atid-echad and national-union-tkuma: the 1 September 2026 joint-list deal ("technical", split expected after the election).
+  - eretz-yisrael-shelanu and jewish-national-front: see §2a on the three per-MK votes.
+  - new-economic-party and the-reservists: the 6 September 2026 joint run and Hendel's split from Tropper.
+  - meretz and the-democrats-party: the 2024 union agreement (signed text: Meretz guaranteed places in the top 4, 7, 12 and 16; the 20 February 2026 update, reported by Ynet as places 6, 8 and 14, wasn't found in text).
+- **Coalition-line votes:** meretz keeps three **Contradiction:** items for 2021–22 coalition-line votes against opposition bills that matched its 2019 platform; check other former coalition parties' coalition-line votes are labelled the same way.
+- **"Shelf" parties** (eretz-yisrael-shelanu, atid-echad, chomat-torat-yisrael): all set `limitedInfo: false` because their candidates have substantial records; each document says the evidence is the candidates', taken in other parties. Check the wording is consistent across the three and with haredi-public (`true`).
+- **Glossary:** zehut quotes the party's own "expulsion"/emigration slogan, attributed; check against the glossary's avoided "transfer" and other documents' handling.
 - **Apply one rule across parties** for "Contradiction" versus "Change over time", including past actions against current positions years apart, and for tentative "Closest option" lines resting on indirect evidence.
 - **Check legal-section parity:** for example the Goldknopf labour-court settlement (agudat-yisrael), foreign sanctions on Smotrich (national-union-tkuma) and the ICC warrant (likud-party).
 - **Decide whether the Gaza contradiction in likud-party stays**; the fact-checker found it the weakest of the four.
@@ -86,7 +106,8 @@ Collected from the Stage 2 and 3 reports so far.
 ## 5. Operational quirks
 
 - **Usage limits:** running many Opus agents at once used up the account's session limit three times. When that happens every running agent stops. Resume each one with `SendMessage` to its ID; it continues from where it stopped, with its context intact. Running fewer agents at once (3–6) costs less per limit hit.
-- **Knesset data:** use `https://www.knesset.gov.il/...` **with `www`**; without it the service returns HTTP 474. Throttle requests. See the briefs.
+- **Knesset data:** use `https://www.knesset.gov.il/...` **with `www`**; without it the service returns HTTP 474. Throttle requests. See the briefs. **From cloud containers knesset.gov.il is geo-blocked** (redirect to `maintenance-page-geo`), for curl and WebFetch alike; use the Open Knesset mirror (up to 2021) and press reports, and record what needs a re-check (§2a). Run Knesset-heavy work locally if possible.
+- **Shared scratchpad:** parallel agents overwrote each other's downloads once. Tell each agent to use a scratchpad subfolder named after its party.
 - **Network (cloud sessions):** the research needs `knesset.gov.il`, `gov.il`, `bechirot.gov.il` and Hebrew and English news sites. Set the cloud environment's network access to Unrestricted, or allow those domains.
 - **Sub-agent results sometimes reach the orchestrator instead of the agent that spawned them.** Forward them with `SendMessage`.
 - **Kill test servers before stopping or pausing.** Playwright and `next start` processes can be left running. `pnpm test:e2e` takes several minutes and rebuilds with `APP_ENV=test`.
