@@ -71,6 +71,7 @@ Both candidates have opposed the ceasefire and hostage deals and have called for
 - **Action:** On 17–18 January 2025 Wasserlauf was one of eight ministers who voted against the hostage and ceasefire deal, which the government approved by 24 to 8 [16]. He then resigned from the government with Ben Gvir and Eliyahu on 19 January 2025. Their resignation statement called the deal "a surrender to Hamas" that released "hundreds of murderers" and withdrew the IDF from parts of Gaza [17].
 - **Statement:** Explaining his resignation on 17 January 2025, Wasserlauf wrote that he must act "according to the command of my conscience" and that, if he were not a minister, he would probably go and protest outside his own house against the deal [15].
 - **Action:** Otzma Yehudit returned to the government on 19 March 2025, after Israel resumed intensive fighting in Gaza; Ynet reported that renewed fighting was one of Ben Gvir's conditions for returning [18].
+- **Change over time:** On 5 October 2025, after the US plan was presented, Ynet reported that Otzma Yehudit and Religious Zionism were in effect giving Netanyahu a green light for the first phase; sources in both parties said that "if this is the deal and this is what we see later on, it is not a deal we will come out against", while citing a "very serious problem" with releasing murderers [21]. Days later, the party's ministers voted against the deal (next item).
 - **Action:** In the government vote on the US-backed ceasefire and hostage deal on 9–10 October 2025, Wasserlauf voted against, together with Ben Gvir, Eliyahu, Smotrich and Strock [22, 23]. Otzma Yehudit said it would stay in the coalition for now but warned it would "bring down the government" if Hamas is not dismantled [22].
 - **Statement:** On 28 November 2024 Wasserlauf told Kan Reshet Bet that Israel should return to settle in the Gaza Strip: "There is an opportunity here to correct a historic injustice, there is no question here. We also aspire to encourage the emigration of Gazans to all kinds of places, but first we need to achieve the goals of the war" [24].
 - **Action:** On 28 January 2024 Wasserlauf attended, with Ben Gvir, the Jerusalem conference organised by the Samaria Regional Council, the Nachala movement and others calling for renewed settlement in the Gaza Strip [25].
@@ -162,7 +163,7 @@ No direct statement by Wasserlauf or Kroizer on how the October 7 inquiry should
 
 ### Temple Mount {#other-temple-mount}
 
-- **Action:** Both candidates have gone up to the Temple Mount with Ben Gvir: Wasserlauf on 13 August 2024, when worshippers were filmed praying and prostrating against the site's rules, and Wasserlauf and Kroizer on 26 May 2025 [52, 53]. Kroizer was described in July 2023 as a figure who supports Jews going up to the Temple Mount [36]. (The 2023 description is from Walla's reporting on his judicial-committee candidacy.)
+- **Action:** Both candidates have gone up to the Temple Mount with Ben Gvir: Wasserlauf on 13 August 2024, when worshippers were filmed praying and prostrating against the site's rules, and Wasserlauf and Kroizer on 26 May 2025 [52, 53].
 
 ### Hostages and prisoner releases {#other-hostage-deals}
 
