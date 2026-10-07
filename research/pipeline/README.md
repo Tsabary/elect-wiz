@@ -18,7 +18,7 @@ This folder holds the instructions for the offline research pipeline. AI agents 
 2. **Nothing from memory.** Every fact comes from a source the agent fetched in that session, and is cited.
 3. **Neutrality.** Use the terms in `content/glossary.json` and avoid the terms it lists under `avoid`. Describe positions the way their own supporters would recognise as fair. Don't use value judgments or loaded adjectives.
 4. **No poll figures in research documents.** A poll figure is polling or survey wording next to a number, seat count or percentage. Current Knesset seats and past election results are allowed. The site renders the polling line from the registry snapshot so the legal poll blackout can hide it (see `research/legal-findings.md`). Content validation flags suspected poll figures and blocks the build.
-5. **Validation.** After any change, run `npm run validate:content`. It must pass. Research for the real corpus lives in `content/research/` and is validated while it's still incomplete: existing documents are fully checked, and missing ones are allowed until the real corpus becomes active in Task 4.1.
+5. **Validation.** After any change, run `pnpm validate:content`. It must pass. Research for the real corpus lives in `content/research/` and is validated while it's still incomplete: existing documents are fully checked, and missing ones are allowed until the real corpus becomes active in Task 4.1.
 6. **Don't commit.** The orchestrator owns commits.
 7. **Research documents are fixed once compiled** (PRD FR14). They change only through the re-run procedure below, on the owner's request.
 
@@ -40,7 +40,7 @@ This folder holds the instructions for the offline research pipeline. AI agents 
 5. **Stage 4.** Once every party has passed Stage 3, one review covers all English documents together.
 6. **Stage 5.** Run one Hebrew-edition agent per party, then a **separate** parity-check agent per party (or one parity agent covering a batch it didn't translate).
 7. **Bump the research version** in `content/versions.json`, e.g. `"researchVersion": "2026-10-12.1"`. Leave `surveyContentVersion` unchanged. A research change never invalidates in-progress surveys.
-8. Run `npm run validate:content` and `npm run test`.
+8. Run `pnpm validate:content` and `pnpm test`.
 
 ## Per-party re-run procedure
 
@@ -52,7 +52,7 @@ Use this for owner corrections (PRD FR14), registry changes (e.g. a list disqual
 4. **Per-party consistency check (Stage 4, scoped).** A reviewer agent compares the revised document with two or three comparable parties' documents for depth, tone and evidence standards. It also runs the neutrality and poll-figure pass, and appends to `research/review/consistency-review.md`.
 5. **Stage 5.** The Hebrew edition is regenerated, or the changed sections are updated, by an agent other than the English author. Then a **separate** agent re-runs the parity check and appends to `research/review/parity-check.md`. **Any change to the English document requires this step.**
 6. **Bump `researchVersion`** in `content/versions.json`. **Never** change `surveyContentVersion` for research or poll changes.
-7. `npm run validate:content` passes. The orchestrator commits.
+7. `pnpm validate:content` passes. The orchestrator commits.
 
 ### Poll refresh (owner request only, PRD FR21)
 

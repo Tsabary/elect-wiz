@@ -57,5 +57,5 @@ Use the `autopilot-tasks` skill on Phase 3 only, with fresh implementer and audi
 
 - **Sub-agent results sometimes reach the orchestrator instead of the agent that spawned them.** This happens when a sub-agent spawns its own sub-agents, such as neutrality or parity reviewers. If you get a result notification for an agent you didn't launch, forward its full content with `SendMessage` to the agent that launched it. An implementer may also stop and say it is "waiting for agent results". In that case, check for and forward any results, then nudge it to continue.
 - **Kill test servers before stopping or pausing.** Playwright and `next start` processes can be left running.
-- **The e2e suite takes several minutes.** `npm run test:e2e` rebuilds with `APP_ENV=test`, which turns on the clock override and forced mock results. Rebuild normally before using `next start` for anything else.
+- **The e2e suite takes several minutes.** `pnpm test:e2e` rebuilds with `APP_ENV=test`, which turns on the clock override and forced mock results. Rebuild normally before using `next start` for anything else.
 - **The owner's review doc for the issues** (read-only for them) is at https://claude.ai/code/artifact/0ff5e90b-06f8-4588-a06b-da66c547334f. It is no longer needed now that the issues are locked.

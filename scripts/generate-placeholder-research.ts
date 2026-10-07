@@ -4,7 +4,7 @@
  * and the placeholder registry, so the placeholder corpus always has one
  * sub-section per issue. Re-run after the issues change:
  *
- *   npx tsx scripts/generate-placeholder-research.ts
+ *   pnpm exec tsx scripts/generate-placeholder-research.ts
  *
  * Deleted together with the placeholder corpus in Task 4.1.
  */

@@ -31,7 +31,7 @@ Use WebSearch and WebFetch when you need to fill a gap or check a balancing fact
 4. **Issue coverage.** Each issue's "Closest option(s)" mapping should rest on comparable evidence across parties. Flag mappings that rest only on Statement-tier evidence when an Action exists, or the reverse.
 5. **Poll figures.** Do a final pass for polling or survey wording next to a number, seat count or percentage. Current seats and past results are allowed.
 6. **Fix.** Apply the fixes directly to the documents. For factual additions, cite the new sources and keep the numbering valid. If a fix needs new research beyond a few claims, send that party back for a targeted Stage 2 and Stage 3 re-run (see `README.md`) and record it.
-7. Run `npm run validate:content`. No errors are allowed in any existing research document.
+7. Run `pnpm validate:content`. No errors are allowed in any existing research document.
 
 ## Output
 

@@ -44,7 +44,7 @@ Each task is self-contained. From the task alone you should know what to do, how
 - The legal findings are documented.
 
 ### Task 1.1: Scaffold the Next.js app with i18n, RTL and tooling
-- [x] *(Vercel preview deploy pending: the owner needs to connect the repo to Vercel. The project is deploy-ready: `vercel.json` is in place and `npm run build` passes.)*
+- [x] *(Vercel preview deploy pending: the owner needs to connect the repo to Vercel. The project is deploy-ready: `vercel.json` is in place and `pnpm build` passes.)*
 - **What:** Create the project:
   - Next.js App Router with TypeScript and Tailwind, plus shadcn/ui using Base UI primitives (Radix variant only if the Base UI option isn't available in the shadcn CLI).
   - next-intl with locales `he` (default, RTL) and `en`, with locale-prefixed routes.
@@ -57,7 +57,7 @@ Each task is self-contained. From the task alone you should know what to do, how
 - **Acceptance criteria:**
   - Visiting `/` with a Hebrew or unknown browser language lands on `/he`. With an English browser language it lands on `/en`. A manual switch overrides detection and persists.
   - The Hebrew pages render RTL and the English pages LTR, including shadcn components.
-  - `npm run build`, `npm run test` (Vitest) and `npm run test:e2e` (Playwright, with one smoke test) all pass.
+  - `pnpm build`, `pnpm test` (Vitest) and `pnpm test:e2e` (Playwright, with one smoke test) all pass.
   - A Vercel preview deployment is reachable.
 - **Affected:** project root (`package.json`, `next.config`, `tailwind`/`postcss` config, `middleware.ts`), `app/[locale]/layout.tsx`, `components/ui/`, `messages/he.json`, `messages/en.json`, `i18n/` config, `tests/e2e/`.
 - **Dependencies:** none
@@ -76,7 +76,7 @@ Each task is self-contained. From the task alone you should know what to do, how
   - Write `scripts/validate-content.ts` implementing every Phase 1 check in the plan's Testing §1 (including the poll-figure heuristic: polling or survey wording next to a number, seat count or percentage, while allowing current seats and past results) and wire it into the build so failures block it.
   - Add realistic placeholder content (10 draft issues, about 6 placeholder parties including a joint list, a below-threshold list, a not-polled list and a limited-info party) so UI work can proceed.
 - **Acceptance criteria:**
-  - `npm run build` fails with a clear message when any validation rule is broken. There are unit tests with deliberately broken fixtures for each rule.
+  - `pnpm build` fails with a clear message when any validation rule is broken. There are unit tests with deliberately broken fixtures for each rule.
   - The placeholder corpus passes validation.
   - Loaders in `lib/content/` expose typed access to issues, parties, lists, research documents (parsed into sections and anchors), glossary and versions.
   - The below-threshold rule (polling average under 3.25%) and the "not polled" state are exposed as deterministic, unit-tested helpers.
@@ -334,7 +334,7 @@ Each task is self-contained. From the task alone you should know what to do, how
 - **Affected:** `lib/time-modes.ts`, `app/api/match/route.ts`, the pages listed above, environment configuration.
 - **Dependencies:** none (Phase 1 complete)
 - **Plan reference:** Affected systems §3, "Time-based modes"; Performance §1; Rollout §4.
-- **Implementation notes:** instants default to legal-findings/ground-truth values (`POLL_BLACKOUT_START`, `ELECTION_CLOSE` env overrides). Blackout never switches off (archive stays poll-free, per legal-findings §3.4). Clock override (non-production only): `CLOCK_OVERRIDE` env for server rendering; per browser, the `clock-override` cookie (set by visiting any page with `?clock=<ISO>`, cleared with `?clock=off`), honoured by the client guards (`components/time/time-modes.tsx`) and the match route (also an `x-clock-override` header). The client re-checks every 15 s and on tab focus. Note: whether overrides are allowed is baked into statically generated pages at build time, so a local check needs `APP_ENV=test npm run build` (Vercel previews get `VERCEL_ENV=preview` automatically).
+- **Implementation notes:** instants default to legal-findings/ground-truth values (`POLL_BLACKOUT_START`, `ELECTION_CLOSE` env overrides). Blackout never switches off (archive stays poll-free, per legal-findings §3.4). Clock override (non-production only): `CLOCK_OVERRIDE` env for server rendering; per browser, the `clock-override` cookie (set by visiting any page with `?clock=<ISO>`, cleared with `?clock=off`), honoured by the client guards (`components/time/time-modes.tsx`) and the match route (also an `x-clock-override` header). The client re-checks every 15 s and on tab focus. Note: whether overrides are allowed is baked into statically generated pages at build time, so a local check needs `APP_ENV=test pnpm build` (Vercel previews get `VERCEL_ENV=preview` automatically).
 
 ### Task 2.9: Write the site copy in both languages and get owner approval
 - [x] *(Copy drafted in both languages, neutrality review and parity check done by separate agents, all should-fix findings applied, written to `messages/*.json`.)*

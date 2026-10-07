@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "validate:content": "tsx scripts/validate-content.ts",
-    "prebuild": "npm run validate:content",
-    "build": "next build",
+    "build": "pnpm validate:content && next build",
     "start": "next start",
     "lint": "eslint",
     "format": "prettier --write .",
@@ -51,6 +50,7 @@
     "typescript": "^5",
     "vitest": "^5.0.3"
   },
+  "packageManager": "pnpm@11.4.0",
   "engines": {
     "node": ">=20.9"
   }

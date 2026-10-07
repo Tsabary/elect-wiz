@@ -1,6 +1,6 @@
 /**
- * Build-blocking content validation. Runs as `npm run validate:content` and
- * automatically before `npm run build` (the `prebuild` script).
+ * Build-blocking content validation. Runs as `pnpm validate:content` and
+ * automatically as part of `pnpm build`.
  *
  * Usage: tsx scripts/validate-content.ts [contentRoot]
  * Set CONTENT_CORPUS=real|placeholder to choose the active corpus.

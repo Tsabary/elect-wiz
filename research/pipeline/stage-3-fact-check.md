@@ -38,7 +38,7 @@ Use WebSearch and WebFetch. **Open every cited URL.** Never confirm a claim from
    - Set `"limitedInfo": true` or `false` for this party in `content/registry/parties.json`. Change nothing else in that file.
    - Make sure the `#information-availability` section matches. It starts with "**Limited information.**" if and only if the flag is true.
    - Set the party's `researchedAsOf` in `parties.json` to the document's `researchedAsOf`.
-8. Run `npm run validate:content`. Your party's file must produce no errors.
+8. Run `pnpm validate:content`. Your party's file must produce no errors.
 
 ## Output
 

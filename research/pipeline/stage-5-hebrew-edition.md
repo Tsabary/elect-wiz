@@ -39,7 +39,7 @@ Run it only after Stage 4 is complete, or, for a per-party re-run, after the sco
 - **Names** follow the Hebrew forms in `content/registry/` (party names, leader names) and in the original Hebrew sources.
 - **No poll figures.** Same rule as English.
 
-Run `npm run validate:content`. It checks that the anchors are identical across languages (`research-anchor-parity`). Your file must produce no errors.
+Run `pnpm validate:content`. It checks that the anchors are identical across languages (`research-anchor-parity`). Your file must produce no errors.
 
 ---
 

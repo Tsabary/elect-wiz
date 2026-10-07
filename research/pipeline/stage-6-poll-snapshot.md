@@ -61,7 +61,7 @@ Change **only** the `poll` field. Leave everything else in the registry untouche
 }
 ```
 
-Every list must end up with `polled` or `not_polled`. None may stay `pending`. Run `npm run validate:content` (registry schema).
+Every list must end up with `polled` or `not_polled`. None may stay `pending`. Run `pnpm validate:content` (registry schema).
 
 Write a short log at `research/poll-snapshot.md`: the date, the window, and per list the polls used (or "not polled") and any judgement calls. Then bump `researchVersion` in `content/versions.json`, or leave that to the orchestrator if a full run will bump it.
 

@@ -103,7 +103,7 @@ researchedAsOf: <YYYY-MM-DD, today>
 
 ## Before you finish
 
-1. Run `npm run validate:content`. Fix every error reported for your file. Errors for other parties' missing files are expected while the corpus is incomplete. Ignore those, but your file must produce **no** errors.
+1. Run `pnpm validate:content`. Fix every error reported for your file. Errors for other parties' missing files are expected while the corpus is incomplete. Ignore those, but your file must produce **no** errors.
 2. Check that the `### … {#issue-<id>}` sub-sections match the files in `content/issues/` exactly.
 3. Report to the orchestrator:
    - the file path;

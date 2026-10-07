@@ -18,7 +18,7 @@ export default defineConfig({
   webServer: process.env.E2E_BASE_URL
     ? undefined
     : {
-        command: `npm run build && npx next start -p ${PORT}`,
+        command: `pnpm build && pnpm exec next start -p ${PORT}`,
         url: `${baseURL}/he`,
         reuseExistingServer: !process.env.CI,
         timeout: 240_000,
