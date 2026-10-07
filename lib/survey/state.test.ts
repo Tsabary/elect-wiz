@@ -338,7 +338,7 @@ describe("survey store", () => {
     const saved = ranked(7);
     storage.save(saved);
     const store = createSurveyStore(VERSION, storage);
-    expect(store.get()).toEqual(saved);
+    expect({ ...store.get(), issueSeed: saved.issueSeed }).toEqual(saved);
     let calls = 0;
     store.subscribe(() => calls++);
     store.set((s) => addToRanking(removeFromRanking(s, "issue-a"), "issue-a", 0));
@@ -348,5 +348,20 @@ describe("survey store", () => {
     expect(mem.getItem(SURVEY_STORAGE_KEY)).toBeNull();
     expect(store.get().ranked).toEqual([]);
     expect(store.get().issueSeed).not.toBe(saved.issueSeed);
+  });
+
+  it("reshuffles the pool on every load but keeps the option order", async () => {
+    const { createSurveyStore } = await import("./store");
+    const storage = createSurveyStorage(memoryStorage());
+    const saved = ranked(7);
+    storage.save(saved);
+    const seeds = new Set<number>();
+    for (let i = 0; i < 5; i++) {
+      const loaded = createSurveyStore(VERSION, storage).get();
+      seeds.add(loaded.issueSeed);
+      expect(loaded.optionSeed).toBe(saved.optionSeed);
+      expect(loaded.ranked).toEqual(saved.ranked);
+    }
+    expect(seeds.size).toBeGreaterThan(1);
   });
 });

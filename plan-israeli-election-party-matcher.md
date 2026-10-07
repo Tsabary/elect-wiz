@@ -84,7 +84,7 @@ No database of user data at any phase.
 4. **Content versioning:** two independent versions.
    - The **survey-content version** covers issues and options. Changing it invalidates in-progress surveys, which is rare because these are frozen at Stage 1 approval.
    - The **research version** covers research documents and poll snapshots. Research corrections and poll refreshes never invalidate surveys.
-5. **Survey progress (browser local storage only):** schema version, survey-content version, shuffle seeds for issue order and per-issue option order (so a resumed session looks identical), ranking state, "doesn't matter" set, per-issue answers, the "anything else" text and importance. Cleared once a result is shown, so a refresh starts over (PRD). Discarded on load if the survey-content version doesn't match.
+5. **Survey progress (browser local storage only):** schema version, survey-content version, shuffle seeds for issue order and per-issue option order (option order is kept on resume; the unranked pool is reshuffled on every page load), ranking state, "doesn't matter" set, per-issue answers, the "anything else" text and importance. Cleared once a result is shown, so a refresh starts over (PRD). Discarded on load if the survey-content version doesn't match.
 
 ### Phase 2 (candidates, confirmed at D1)
 6. **Matching artifacts:** whatever derived form of the research the chosen matching needs. Candidates:

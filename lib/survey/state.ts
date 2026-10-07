@@ -33,7 +33,7 @@ export interface AnswerDraft {
 export interface SurveyState {
   schemaVersion: typeof SURVEY_SCHEMA_VERSION;
   surveyContentVersion: string;
-  /** Seed for the unranked pool's issue order. */
+  /** Seed for the unranked pool's issue order. Rerolled on every page load. */
   issueSeed: number;
   /** Seed from which each issue's option-order seed is derived. */
   optionSeed: number;

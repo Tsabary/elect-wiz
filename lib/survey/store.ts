@@ -3,6 +3,7 @@
  * Loads (or creates) the state lazily on first read in the browser and persists
  * every change to on-device storage.
  */
+import { randomSeed } from "./shuffle";
 import { createSurveyState, type SurveyState } from "./state";
 import type { SurveyStorage } from "./storage";
 
@@ -26,9 +27,13 @@ export function createSurveyStore(
   const get = (): SurveyState => {
     if (!state) {
       const saved = storage.load(surveyContentVersion);
-      state = saved ?? createSurveyState(surveyContentVersion);
-      // Save a new session right away so a reload keeps the same shuffled order.
-      if (!saved) storage.save(state);
+      // The unranked pool is reshuffled on every page load, even when resuming:
+      // issues still in the pool have no position worth keeping.
+      state = saved
+        ? { ...saved, issueSeed: randomSeed() }
+        : createSurveyState(surveyContentVersion);
+      // Save a new session right away so a reload keeps the same option order.
+      storage.save(state);
     }
     return state;
   };

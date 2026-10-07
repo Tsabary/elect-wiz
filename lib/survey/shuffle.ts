@@ -1,6 +1,6 @@
 /**
- * Seeded shuffling, so a resumed session shows exactly the same issue order and
- * option order (plan Data model §5).
+ * Seeded shuffling, so a resumed session shows exactly the same option order
+ * (plan Data model §5). The pool's issue order is reshuffled on each page load.
  */
 
 /** mulberry32: small, fast, deterministic 32-bit PRNG. Returns floats in [0, 1). */

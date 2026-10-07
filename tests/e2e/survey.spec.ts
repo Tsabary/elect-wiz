@@ -190,19 +190,17 @@ test.describe("ranking", () => {
     await expect(page.getByTestId("ranking-live")).toContainText("2");
   });
 
-  test("the order differs between new sessions but is identical on resume", async ({ page }) => {
+  test("the pool order is reshuffled on every reload", async ({ page }) => {
     const order = () =>
       page
         .getByTestId("pool-item")
         .evaluateAll((els) => els.map((e) => e.getAttribute("data-issue-id")).join(","));
-    const seen = new Set<string>();
+    await openSurvey(page, "en");
+    const seen = new Set<string>([await order()]);
     for (let i = 0; i < 4; i++) {
-      await openSurvey(page, "en");
-      const o = await order();
-      seen.add(o);
       await page.reload();
       await expect(page.getByTestId("pool-item")).toHaveCount(10);
-      expect(await order()).toBe(o);
+      seen.add(await order());
     }
     expect(seen.size).toBeGreaterThan(1);
   });
