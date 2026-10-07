@@ -1,6 +1,6 @@
 # Handoff: where the project stands and how to continue
 
-Last updated 2026-10-07 (evening). Nothing is running. The 6 larger parties below were done in a cloud session on branch `claude/zealous-shannon-0bjyem` (pushed to `origin`); the owner merges it to `main`. Everything before that is on `main`.
+Last updated 2026-10-08. Nothing is running. The owner paused the remaining research until the week of 2026-10-12. Everything is committed on `main` and pushed to the private GitHub repo `origin`; there are no other branches.
 
 This note is for the next orchestrating agent, which may be a Claude Code cloud session. Read it fully before starting. It records what earlier sessions decided that isn't obvious from the repository.
 
@@ -18,7 +18,7 @@ This note is for the next orchestrating agent, which may be a Claude Code cloud 
 ### Phase 3 progress
 
 - **3.5 poll snapshot:** done, audited, committed (`4da942a`). All 38 lists recorded from CEC-filed polls. Log: `research/poll-snapshot.md`.
-- **3.1 research and 3.2 fact-check:** done for **28 of 52 parties**, committed as WIP snapshots (`decb3f2` for the first 22; branch `claude/zealous-shannon-0bjyem` for the next 6), **not yet audited**. Each document was fact-checked by a different agent from its author. `limitedInfo` and `researchedAsOf` are set in the registry for these 28 (only `haredi-public` is `limitedInfo: true`).
+- **3.1 research and 3.2 fact-check:** done for **28 of 52 parties**, committed as WIP snapshots (`decb3f2` for the first 22; `3fd584d` for the next 6, done in a cloud session), **not yet audited**. Each document was fact-checked by a different agent from its author. `limitedInfo` and `researchedAsOf` are set in the registry for these 28 (only `haredi-public` is `limitedInfo: true`).
   - Done: likud-party, new-hope, byachad-bennett, yesh-atid, yashar-leyisrael, yesodot-yisrael, yisrael-beytenu, shas, degel-hatorah, agudat-yisrael, the-democrats-party, raam, hadash, taal, balad, blue-and-white, jewish-national-front, national-union-tkuma, the-reservists, amcha-yisrael, haredi-public, israel-first.
   - Done 2026-10-07 (cloud session, Opus authors and Opus fact-checkers): meretz, eretz-yisrael-shelanu, zehut, atid-echad, chomat-torat-yisrael, new-economic-party. About 8,200–10,200 words and 53–81 sources each; all `limitedInfo: false`. **knesset.gov.il was geo-blocked from the cloud container**, so their 25th-Knesset votes rest on press reports; see §2a for the re-check list.
   - **Next: 24 small parties** (lists polled under 1%), researched with **Sonnet** by owner decision, fact-checked with **Opus**: lazuz, national-responsibility, ahi-movement, color-black, beit-yemini, tzomet, hakahal, together-we-will-succeed, tekuma, sharshar, ihud-bnei-habrit, pirates, gan-eden, womens-voice, just-law, shema, new-order, you-and-me, brit-olam, hatikun, bible-bloc, betach, orot-hashachar, demokratura.
@@ -32,15 +32,18 @@ Key files:
 - **Legal:** `research/legal-findings.md`. Poll blackout from 2026-10-23T12:00+03:00.
 - **Corpora:** the site uses the placeholder corpus by default (`CONTENT_CORPUS`). Real research is in `content/research/{en,he}/`. Validate the real corpus with `CONTENT_CORPUS=real pnpm validate:content`; until Phase 3 is complete, the only expected errors are `research-missing`.
 
-## 2. How to run the next step (6 larger parties)
+## 2. How to run the next step (the 24 small parties)
 
-1. For each of the 6 parties, spawn **one Stage 2 research agent** (`model: opus`) with `research/pipeline/agent-briefs/stage-2-brief.md` and the party ID. Run about 3–6 agents at a time.
-2. When a document lands, read the author's report. If the document is thin for the party's size (the 22 done so far are about 6,000–11,000 words with 45–110 sources) or missed available Knesset votes, send it back to the **same** author to deepen it.
-3. Then spawn a **different** agent (`model: opus`) as the Stage 3 fact-checker, with `research/pipeline/agent-briefs/stage-3-brief.md`, the party ID, and the author's open points (unverified claims, weak sources, doubtful contradictions or legal items).
+The owner has put these on hold until the week of 2026-10-12. Start only when the owner says so. The same process was used for the 28 parties already done.
+
+1. For each of the 24 parties listed in §1, spawn **one Stage 2 research agent** with **`model: sonnet`** (owner decision for the small parties) and `research/pipeline/agent-briefs/stage-2-brief.md` plus the party ID. Run about 3–6 agents at a time.
+2. When a document lands, read the author's report. Small parties often have little public information; that is fine if the author searched hard and says so. If the author missed available evidence (for example a candidate's Knesset votes), send it back to the **same** author to deepen it.
+3. Then spawn a **different** agent with **`model: opus`** as the Stage 3 fact-checker, with `research/pipeline/agent-briefs/stage-3-brief.md`, the party ID, and the author's open points. Tell it the document was written by a lighter model, so to check with particular care.
 4. When the fact-check is done, set `limitedInfo` (from the log header) and `researchedAsOf` (from the document frontmatter) for that party in `content/registry/parties.json`. Change nothing else in that file.
-5. Run `CONTENT_CORPUS=real pnpm validate:content`. Only `research-missing` errors may remain.
-6. Commit with a message naming the phase (e.g. "WIP Phase 3: research and fact-check for 6 more parties"), ending with `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`. Never change git config; the repo-local identity is deliberately non-identifying. In a cloud session, work on the session's own branch; the owner merges to `main`.
-7. Stop there and report to the owner. Don't start the small parties, the consistency review or the Hebrew editions without the owner's go-ahead.
+5. **Knesset votes:** knesset.gov.il is geo-blocked from cloud containers. If a small party's candidates have 2023–2026 Knesset votes and the run is in the cloud, list those votes for a local re-check (as in §2a).
+6. Run `CONTENT_CORPUS=real pnpm validate:content`. Only `research-missing` errors may remain.
+7. Commit with a message naming the phase (e.g. "WIP Phase 3: research and fact-check for the small parties"), ending with `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`. Never change git config; the repo-local identity is deliberately non-identifying. In a cloud session, work on the session's own branch; the owner merges to `main`.
+8. Stop and report to the owner. After all 52 parties are done, the remaining Phase 3 steps are the consistency review (3.3, Stage 4, covering all 52 documents and the notes in §3), the Hebrew editions and parity check (3.4, Stage 5), setting `researchVersion`, and the Phase 3 audits. Each needs the owner's go-ahead.
 
 Rules that always apply:
 - **The agent that wrote a document never checks it.** Fact-check, consistency review and parity check are each done by different agents.
