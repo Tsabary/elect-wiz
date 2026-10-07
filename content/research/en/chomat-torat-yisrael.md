@@ -1,0 +1,309 @@
+---
+partyId: chomat-torat-yisrael
+lang: en
+researchedAsOf: 2026-10-07
+---
+
+## Overview {#overview}
+
+**What the party is.** Chomat Torat Yisrael (חומת תורת ישראל, "Wall of the Torah of Israel") is a Haredi party that runs for the first time in the 26th Knesset election of 27 October 2026, as one of three parties on the United Torah Judaism (UTJ) joint list [1, 4]. It was announced on 8 September 2026, the day candidate lists were due, by MK Meir Porush, who chairs the Shlomei Emunim faction (a grouping of smaller Hasidic communities inside Agudat Yisrael), and Elyakim Stark, the new political representative of the Belz Hasidic community, whose faction inside Agudat Yisrael is known as Machzikei HaDas [3, 5, 10]. Haredi news sites reported that the two men had acquired an existing registered party (a "shelf party") whose name was kept secret, in a move planned for nearly a year [3, 8].
+
+**Why it was formed.** All the reports describe the move as the result of a dispute inside Agudat Yisrael, the Hasidic party in UTJ. Shlomei Emunim and Belz said that the Gur Hasidic community, which leads the largest faction inside Agudat Yisrael (the "Central Faction"), had held back budget transfers to their local branches and controlled party funds [3, 8, 9]. A separate party lets the two factions receive directly the monthly state party-funding allocations linked to their MKs, and gives Porush his own seat in any future coalition talks [3, 9]. In an interview published on 24 September 2026, Porush said: "We didn't want to reach this situation, but there was no choice. What happened with the handling of the money in Agudat Yisrael, public money that belongs to the public, is something that must not be done, and I could not stay silent any longer" [12]. He said the move had "one single meaning: returning Agudat Yisrael to the hands of the members of the Council of Torah Sages" (Agudat Yisrael's rabbinic leadership) [12, 13].
+
+**How the parties describe the split.** Shlomei Emunim and Belz said in a joint statement that this is "merely a technical measure intended to ensure an equitable partnership within Agudat Yisrael" and not a withdrawal from it [10, 7]. At a press conference on 8 September 2026, Porush said: "I was born in Agudat Yisrael, and I am in Agudat Yisrael" [16]. A senior Agudat Yisrael official responded the same evening that Porush had chosen "to disconnect finally and completely" from Agudat Yisrael and to set up a new party "no longer subordinate to the institutions of the movement" and its Council of Torah Sages [5].
+
+**Stated aims.** The Haredi news site Emess published the aims listed in the party's official founding document: to "raise the stature of the Torah" and run public and private affairs "according to the view of the Torah"; to "fortify the walls of religion" through all public and parliamentary tools; to protect "the sanctity of Shabbat in the public space"; to secure the funding and independence of Torah and education institutions "without interference in their content"; to preserve the "Jewish character of the land in matters of marriage, conversion and modesty"; and to give Torah learners legal and judicial status [6]. This is the only formal programme document found for the party itself.
+
+**Ideology and base.** The party belongs to the Hasidic, non-Zionist Haredi stream represented by Agudat Yisrael [6, 21]. Its base is the Hasidic communities aligned with Shlomei Emunim and the Belz community [3, 10]. Porush says his faction is "the central and fastest-growing Hasidic force" in cities such as Beitar Illit, Elad and Beit Shemesh [13].
+
+**Current seats.** Chomat Torat Yisrael did not exist at the 2022 election and has no seats of its own. Its leader, Meir Porush, is a sitting MK: he was elected in 2022 on the UTJ list as an Agudat Yisrael representative [16, 26]. UTJ as a whole won 7 of 120 seats in November 2022 [22, 21].
+
+**The joint list.** The party runs on the joint list "United Torah Judaism and Shabbat – Agudat Yisrael – Degel HaTorah" (יהדות התורה והשבת אגודת ישראל – דגל התורה), ballot letter **ג** [1, 2]. According to the Central Elections Committee (CEC) filing, the list was submitted by three parties: Degel HaTorah (the Lithuanian, non-Hasidic Haredi party, registered as אגודת החרדים – דגל התורה), Agudat Yisrael (registered as הסתדרות אגודת ישראל בארץ ישראל) and Chomat Torat Yisrael [1]. The list order is Yaakov Asher (Degel HaTorah) first, Yitzhak Goldknopf (Agudat Yisrael) second, Yitzhak Pindrus (Degel HaTorah) third, Meir Porush (Chomat Torat Yisrael) fourth, Moshe Rosenthal (Degel HaTorah) fifth and Elyakim Stark (Chomat Torat Yisrael) sixth [1, 10]. The CEC filing names only these two candidates as filed on behalf of Chomat Torat Yisrael [1]. Under the agreements reached in the final hours before the deadline, the Gur, Vizhnitz and Sanz communities signed separately with Degel HaTorah, while Shlomei Emunim and Belz filed their two candidates through the separate party [7, 10]. Porush and Stark signed their agreement with Degel HaTorah [10]. Gur representatives refused at first to sign a joint-run agreement with the new party, and talks broke down for some hours [9].
+
+**History of splits among the partners.**
+- **Degel HaTorah and Agudat Yisrael.** Degel HaTorah was founded in 1988 when the Lithuanian Haredim split from Agudat Yisrael [17]. The two parties have run together as UTJ since 1992 [18, 20]. On 11 January 2005 Degel HaTorah's MKs Avraham Ravitz and Moshe Gafni asked the Knesset House Committee to split the joint UTJ Knesset faction, following a dispute over taking coalition posts [19]. The Times of Israel summarised that the parties ran together since 1992 "barring a period in 2004–2006, when they split over a disagreement about cooperating with the coalition but reunited before the subsequent election" [18]. In 2022 they again considered separate runs before agreeing on 12 September 2022 to run together [18].
+- **Chomat Torat Yisrael and Agudat Yisrael.** Chomat Torat Yisrael is itself the product of a split inside Agudat Yisrael on 8 September 2026, described above [3, 5, 17]. Davar noted that this is the first time since 1992 that a third party has run on the UTJ list [4]. Reports said the separate registration would also let Porush and Stark split from the UTJ faction after the election if they chose to [4]. The Seventh Eye, a media-watch site, reported on 13 September 2026 that Haredi newspapers played down this split, with the newspaper HaMevaser describing it as a technical-bureaucratic matter [17].
+
+## Leadership and key candidates {#leadership}
+
+**Meir Porush (list #4, party leader).** The CEC filing lists Porush as the top candidate filed on behalf of Chomat Torat Yisrael [1], and every report on the party's founding names him as its founder together with Stark [3, 5, 16].
+- **Background.** Porush was born in Jerusalem on 11 June 1955 [23, 16]. His grandfather Moshe Porush was a deputy mayor of Jerusalem and his father Menachem Porush was an Agudat Yisrael MK and deputy minister [16]. He studied in yeshiva and served in the IDF in the short "Shlav Bet" track [23, 16]. He was a member of the Jerusalem city council for 13 years and deputy mayor, and ran unsuccessfully for mayor of Jerusalem in 2008 [16]. In November 2007 he was expelled from the Boyan Hasidic court after he backed a different candidate for mayor of Beitar Illit from the one the Boyan Rebbe supported [69].
+- **Knesset and government roles (all as an Agudat Yisrael / UTJ representative).** He entered the Knesset in 1996 at the head of Agudat Yisrael's representatives on UTJ [16]. He was Deputy Minister of Housing and Construction from 1996 to 1999, and Deputy Minister of Education in 2009–2011 and 2015–2021 [16]. In the 37th government he was Minister of Jerusalem and Jewish Tradition from January 2023 to July 2025, with responsibility for Mount Meron and for implementing the findings of the inquiry into the 2021 Meron disaster [24, 16]. He resigned from the Knesset under the "Norwegian law" (which lets ministers give up their Knesset seat to the next candidate on the list) in January 2023, and returned to the Knesset when he resigned from the government on 15 July 2025 [16, 25, 26]. Since then he has sat on the Foreign Affairs and Defense Committee [30, 33].
+- **Role in the 2026 split.** He chairs the Shlomei Emunim faction [12, 6]. His son Israel Porush, a former mayor of Elad, is #13 on the UTJ list, filed by the CEC as a Degel HaTorah candidate rather than a Chomat Torat Yisrael one [1, 7].
+
+**Elyakim Stark (list #6).** The CEC filing records him as "שטארק אלי" filed on behalf of Chomat Torat Yisrael; news reports name him Elyakim (Eliakim) Stark [1, 10]. He is chairman of the Belz Hasidic community's executive committee and ran Belz's political operation in the last municipal elections [11]. The Belzer Rebbe chose him in early September 2026 to replace long-serving MK Yisrael Eichler as the community's Knesset representative [11]. He has not served in the Knesset. At an election rally on 28 September 2026 he said: "I want to apologise that we did not succeed in the most basic task, protecting the yeshiva students and the kollel students" [14].
+
+**Other top candidates on the joint list.** The other top-five candidates belong to the partner parties: Yaakov Asher (Degel HaTorah, #1, UTJ chairman), Yitzhak Goldknopf (Agudat Yisrael, #2), Yitzhak Pindrus (Degel HaTorah, #3) and Moshe Rosenthal (Degel HaTorah, #5) [1, 10]. Their records are not covered here because they do not represent this party.
+
+**Note on evidence.** Because Chomat Torat Yisrael is new, almost all evidence of its positions comes from Meir Porush's record as an Agudat Yisrael MK and minister within UTJ, and from UTJ votes taken before the split. Where this document uses such evidence, it says so.
+
+## Positions on the issues {#issues}
+
+### Haredi military enlistment {#issue-haredi-enlistment}
+
+This is the issue the party and its leader put first. Porush's interviewers wrote in September 2026 that for him "there was only one central topic" all year: what they called the "conscription decree" [13].
+
+- **Formal commitment:** The party's founding aims include "regularising the legal and judicial status of Torah learners" [6].
+- **Action (as a minister for Agudat Yisrael / UTJ):** On 15 July 2025 Porush resigned as Minister of Jerusalem and Jewish Tradition, on the instruction of Agudat Yisrael's Council of Torah Sages, because the draft enlistment bill presented by MK Yuli Edelstein did not meet the Council's demands [25, 16]. UTJ left both the government and the coalition at the same time [26, 21].
+- **Action (UTJ, July 2026, before the split):** The Haredi parties secured final passage on 13 July 2026 of Basic Law: Torah Study, which declares that "Torah study is a foundational value in the heritage of the Jewish people and in the State of Israel"; it passed 63 to 52 [42]. The same package included a law suspending, for five months, arrests and criminal proceedings against yeshiva students who had not reported for enlistment, which passed 58 to 54 in mid-July 2026 [44]. On 3 September 2026 a nine-justice panel of the Supreme Court cancelled that law unanimously [44]. Porush responded that the ruling was "a direct continuation of the trampling campaign of persecution against the Torah world" and that "no ruling or draconian order will be able to uproot Torah learners from the Gemara" [44]. The Knesset vote records of individual MKs could not be checked (see Information availability), so it was not confirmed how Porush personally voted on these bills.
+- **Action:** In December 2024, at a Shlomei Emunim gathering, Porush announced a help centre at Agudat Yisrael's Jerusalem offices for young men who received call-up orders [16]. N12 reported on 23 January 2025 recordings in which a hotline representative told a caller not to worry about his call-up order and to avoid places where he might meet police [29]. Porush's office said the centre gives advice and legal guidance "to a person who decides to act according to the instructions of his rabbis" and does not tell anyone how to act [16].
+- **Action:** In August 2025 he set up a protest tent outside the attorney general's offices in Jerusalem and held a daytime hunger strike against arrests of yeshiva students who had not reported for service [31, 30].
+- **Statement:** On 9 July 2025, in a Knesset speech shortly before his resignation, he said: "If anyone thinks he can twist the Haredi public's arm behind its back and say 'report, enlist, change your way', he is mistaken" [71].
+- **Statement:** In December 2025, in the Foreign Affairs and Defense Committee, he said of MK Boaz Bismuth's enlistment bill: "This is a bad draft law; it ought to be torn up" [33].
+- **Statement:** In an August 2025 interview he set his terms: "Whoever sits and studies should get a deferral," and asked to "bring back the arrangement that exempts whoever studies" [30]. He said he would not visit the IDF's Haredi Hasmonean Brigade because "it would be seen as going against my rabbis" [30].
+- **Statement:** In September 2026 he said a solution requires a law "in the format that meets the demands of the members of the Council of Torah Sages, accompanied by a law to bypass the High Court" [13]. He cited the recommendation of an army committee (the "Shaked committee") to protect full-time learners who study three sessions a day [13].
+- **Statement:** In February 2013 he said: "Whoever does not sit and learn should enlist" [16]. This is consistent with his later position that the exemption should cover full-time learners.
+
+**Closest option(s):** A law letting full-time yeshiva students keep studying instead of serving, with no criminal or financial penalties (`anchor-torah-study-exemption`).
+
+### Judicial system {#issue-judicial-system}
+
+- **Action (UTJ, before the split):** The Haredi factions voted for the law that makes the attorney general's legal opinions non-binding on the government. It passed on 15 July 2026 by 61 to 51 and is due to take effect on 1 January 2027 [43]. Ynet reported that the Haredi parties voted for it as part of a deal with Prime Minister Netanyahu that also passed the Torah study Basic Law [43, 42].
+- **Statement (Knesset speech):** In the debate on the first reading of this bill on 2 June 2026, Porush said a situation in which "one person, an appointed official not elected by the public, holds unlimited power" is "distorted," called on MKs "not to blink," and ended with: "The Torah learners will win, the rule of the law system will collapse!" [37].
+- **Statement:** On 27 May 2026, on Kol Barama radio, he said: "It is incumbent on us to erode the power of the court," and that at "this mountain called the court ... that's where you need to strike and cut it down to size" [36].
+- **Statement:** In September 2026 he said: "We have zero trust in the legal system," and that the solution "is to dismantle the dangerous and dictatorial power of the legal system" by legislation, which he said is what the election is about [13]. He said UTJ "supports all the moves on the legal matter" and that in the next term many Supreme Court judges and a new attorney general will be appointed [13].
+- **Statement (as minister, March 2023):** He said "the aim of the reform is returning power to the representatives the majority of the people chose," while saying he was "for dialogue without preconditions" [47].
+- **Statement (UTJ, November 2022):** Leaving coalition consultations at the President's residence, he said: "Without an override clause there will be no government" [48]. An override clause would let the Knesset re-enact laws struck down by the court. (See Coalition stance for how this pledge played out.)
+- **Statement:** In June 2026 he said of the attorney general that if she "does not stop persecuting the Torah learners, there will be no choice but to use Ehud Barak's words and drive her out with sticks and stones" [38].
+
+**Closest option(s):** Give the government and Knesset more power over the courts, and make the attorney general's opinions non-binding (`continue-judicial-changes`).
+
+### October 7 inquiry {#issue-october-7-inquiry}
+
+- **Action (UTJ, before the split):** On 6 July 2026 the Knesset passed in first reading MK Ariel Kallner's bill for a "state-national" commission of inquiry into 7 October 2023. Under the bill, six members would be appointed with the agreement of 80 MKs, or else three by the coalition and three by the opposition, with released hostages or bereaved family members as observers [41]. It passed 59 to 0 after the opposition boycotted the vote, and Kikar HaShabbat reported it passed "with Haredi support" [41]. Ynet reported that the Haredim voted for it in first reading [42]. Porush's personal vote could not be checked.
+- **Action/threat (UTJ, before the split):** On 27 May 2026 UTJ (through MK Moshe Gafni of Degel HaTorah) told Netanyahu it would vote for an opposition bill to set up a state commission of inquiry if the coalition did not supply a majority for a daycare-subsidy bill; the daycare bill then passed its preliminary reading [40]. This was a bargaining step, not a statement of preference.
+- **Statement:** In October 2026 Ynet and Yedioth Ahronoth asked every party how it wants the events of 7 October investigated; UTJ declined to respond [53].
+- No statement on this question by Porush, Stark or Chomat Torat Yisrael was found.
+
+**Closest option(s):** The evidence is thin and comes from UTJ votes. The only recorded vote supports a commission picked through the Knesset with equal coalition–opposition appointment (`commission-appointed-by-knesset-balance`), but UTJ also used support for a state commission as a bargaining threat and has not stated a public position.
+
+### Religion and state {#issue-religion-and-state}
+
+- **Formal commitment:** The party's founding aims are to run public and private affairs "according to the view of the Torah," to "fortify the walls of religion," to protect "the sanctity of Shabbat in the public space," and to preserve "the Jewish character of the land in matters of marriage, conversion and modesty" [6].
+- **Action (UTJ, before the split):** The Haredi parties secured passage in July 2026 of Basic Law: Torah Study and of a law cancelling the 2021 kashrut reform, which returned control over kosher certification to the Chief Rabbinate and authorised local rabbis [42, 43, 20].
+- **Statement (as minister, March 2023):** Asked about further religion-and-state laws, he said the coalition agreement commits the government to "keep the status quo," which meant returning the arrangements to how they were before High Court rulings and the changes made by the Bennett–Lapid government; once that was done, "we won't need to legislate more laws on the subject" [47].
+- **Statement:** In June 2026 he explained that UTJ leans toward the right-wing parties "because we didn't see in Likud's platform bringing in public transport on Shabbat, allowing civil marriage, so we are closer to them" [39].
+- **Statement:** In September 2026 he said: "As a Haredi Jew, first and foremost I am committed to the laws of the Torah," and accused the left of having made "persecution of religion and tradition" its main banner [13].
+- **Context (UTJ):** The Jerusalem Post summarised UTJ's positions in September 2026 as opposing civil marriage, Shabbat public transport and Shabbat infrastructure work, keeping conversion within the Orthodox establishment, and opposing expanded non-Orthodox prayer at the Western Wall [20].
+
+**Closest option(s):** Give Jewish religious law a bigger role, with Shabbat protected in the public space and marriage and conversion only through Orthodox institutions (`strengthen-jewish-character`). Porush has also framed some goals as restoring the status quo (`keep-status-quo`), but the party's founding aims go further.
+
+### Cost of living {#issue-cost-of-living}
+
+- **Action (UTJ, before the split):** UTJ pushed a bill by Deputy Minister Yisrael Eichler to base daycare subsidies on the mother's status rather than the father's, so that families of yeshiva students who have not enlisted would keep the subsidy; it passed a preliminary reading on 27 May 2026 by 44 to 37. Porush called it "a significant step toward correcting the terrible injustice done to the families of Torah learners" [40]. Ynet reported that the Haredi parties later gave up passing the daycare law in this Knesset in exchange for other laws [42].
+- **Statement:** Asked in September 2026 why the Haredi parties did not focus on the cost of food and housing, Porush said the "legal war" against Haredi families is itself "the cruelest cost of living there is": cuts to yeshiva budgets, attempts to cancel daycare subsidies for kollel families, and denial of municipal property-tax (arnona) discounts [13]. He said "the next term" should put social-economic demands forward "more forcefully" but "never at the expense of our existential struggle for the Torah world" [13].
+- **Statement:** On 20 August 2026 he told an economic conference that the Haredi public, which he said spends more than NIS 51 billion a year, could use its "enormous consumer power" if its spiritual leaders instructed it, in protest at budget cuts to its institutions [55].
+- **Statement:** In May 2025, in a Knesset debate on bread and grain price controls, he attacked the attorney general's decision to move children of kollel students who are required to enlist to the end of the queue for subsidised daycare [72].
+
+**Closest option(s):** Direct help for households, especially subsidies such as daycare and tax discounts for families (`direct-support-for-households`). The evidence is about support for Haredi families in particular; no position on competition, imports or general tax cuts was found.
+
+### Housing {#issue-housing}
+
+- **Action (as Deputy Housing Minister for Agudat Yisrael, 1996–1999):** In 1997 his ministry won "national priority area A" housing benefits for the new town of Harish, which he planned to settle with Hasidic families, and obtained government approval for 600 rental apartments for the Haredi public [61].
+- **Action (as minister, 2023):** In March 2023 he said the government had approved, within two months, "thousands of housing units," including 1,600 in Beitar Illit [47].
+- **Statement:** In September 2026 he said Haredi housing "will be at the top of the priorities," and that "the Haredi public needs macro solutions: building huge new cities, massive expansions of existing cities like Beitar, Elad and Beit Shemesh, and allocating commercial industrial zones" for jobs. He promised to "dismantle from the foundation" the planning barriers that keep Haredi zoning plans "stuck for years in planning committees" [13].
+- **Statement:** On 24 May 2026, after the Israel Land Authority announced, following a Supreme Court ruling, that men who are required to enlist but have not done so would no longer be eligible for the discounted-price apartment programme ("Dira Behanacha"), Porush said "only heartless lawyers" could write criteria that "discriminate only against the persecuted Torah learners" [35].
+- **Statement:** In a September 2026 podcast he discussed with Safed's deputy mayor plans to make Safed a solution for the Haredi housing shortage [15].
+
+**Closest option(s):** Build much more and faster, mainly by cutting planning barriers and approving new cities and expansions (`speed-up-planning-and-construction`), with support for keeping Haredi families eligible for discounted-price buyer programmes (`direct-help-for-buyers`). The proposals are framed around the Haredi community.
+
+### Judea and Samaria {#issue-judea-samaria}
+
+- **Action (bill):** In March 2026 Porush tabled a bill to apply Israeli law, jurisdiction and administration to four cities in Judea and Samaria: Modi'in Illit, Beitar Illit (both Haredi cities), Ma'ale Adumim and Ariel [46]. The explanatory notes say these cities are in "the heart of the Israeli consensus," that an earlier bill covering all of Judea and Samaria had been held up by "complex diplomatic circumstances," and that the narrower bill does not give up wider sovereignty in the future [46]. Israel Hayom reported that the timing was meant to signal to right-wing Agudat Yisrael voters [46]. The bill's progress after tabling was not found.
+- **Action (Agudat Yisrael faction, before the split):** On 22 October 2025 the Knesset passed in preliminary reading, by 25 to 24, a bill by MK Avi Maoz to apply sovereignty to all of Judea and Samaria. The Times of Israel reported that UTJ "was split down the middle," and an adviser to then-UTJ chairman Goldknopf said the Agudat Yisrael faction (which then included Porush) supported the bill "to highlight the hypocrisy" of a government many of whose ministers had called for applying sovereignty (annexation) [45]. Porush's personal vote could not be checked.
+- **Action (Knesset votes, as an Agudat Yisrael / UTJ MK, 2004–2005):** Open Knesset vote records show that Porush voted for a Shas no-confidence motion over the Gaza disengagement plan on 23 February 2004 and against the Prime Minister's statement on the plan on 15 March 2004. On 20 July 2005 he voted for two bills to postpone or suspend the disengagement, which were defeated 43 to 68 and 40 to 69. No vote by him is recorded on the final readings of the Disengagement Implementation Law on 16 February 2005 [73, 74].
+- **Statement (as minister, March 2023):** He said he worked with Defence Minister Gallant and Finance Minister Smotrich "to advance Jewish settlement in Judea and Samaria," and welcomed a government decision "to regularise all the young settlements" [47].
+- **Statement:** In September 2026 he said he had "always been an active campaigner on every occasion against the establishment of a Palestinian state," and that after 7 October 2023 the issue "has almost completely come off the agenda" [13].
+
+**Closest option(s):** Apply Israeli sovereignty to part of the area, here the main settlement cities (`partial-sovereignty-area-c`). The Agudat Yisrael faction's vote for full sovereignty points toward `full-sovereignty`, but the faction explained it as a political protest, so the evidence is mixed.
+
+### Gaza Strip policy {#issue-gaza}
+
+**No documented position found** on what Israel should do in Gaza now. Searches in Hebrew and English (party name, Porush and Stark with "Gaza," "Hamas" and "hostages," Haredi and general news sites) found no statement by the party, Porush or Stark on the post-ceasefire choices. The Jerusalem Post noted in September 2026 that UTJ "has not developed a similarly detailed independent position on Gaza, Lebanon or Iran" [20]. Related evidence:
+
+- **Action (as minister for Agudat Yisrael / UTJ):** On 17 January 2025 the cabinet approved the hostage-release and ceasefire agreement by 24 to 8. Porush left a written vote in favour before Shabbat; his office said he did so "after personally checking and hearing the position of the members of the Council of Torah Sages" [27].
+- **Statement:** In June 2026, after a State Comptroller report that security prisoners had been released back to Gaza because of prison overcrowding, he wrote to the prime minister and ministers calling this "a moral bankruptcy" and urging them to put enforcement into imprisoning Hamas terrorists rather than yeshiva students [56].
+- **Statement:** In August 2025, asked about reservists, he described the public as divided between those angry that Hamas was not eliminated and hostage families who feared continued fighting [30].
+- **Statement:** He opposes a Palestinian state (see Judea and Samaria) [13].
+
+### Iran, Hezbollah and the region {#issue-iran-and-regional-security}
+
+- **Statement:** In September 2026 Porush said US President Donald Trump "went out with us on two crazy operations in Iran, operations that with open divine help simply saved the State of Israel," and criticised Trump for recently starting to negotiate with Iran while speaking dismissively of Netanyahu, while still preferring Trump to his 2024 opponent [13].
+- **Statement:** In August 2025 he said his faction had "no interest in bringing down the government in wartime" [30].
+- No statement on Hezbollah, Lebanon or a regional agreement by Porush, Stark or the party was found. The Jerusalem Post and the Jewish Chronicle both reported in 2026 that UTJ generally takes less defined positions on security and foreign policy [20, 21].
+
+**Closest option(s):** The only evidence is a statement praising the US–Israeli military operations against Iran, which fits keeping up military pressure (`military-pressure-until-threats-removed`) or pressure combined with US-backed deals (`force-plus-us-backed-agreements`); it is not enough to choose between them.
+
+### Crime in Arab society {#issue-crime-in-arab-society}
+
+**No documented position found.** Searches in Hebrew and English for Porush, Stark and the party together with "crime in Arab society," "Shin Bet," "murders" and "weapons" returned nothing. The Jerusalem Post and Jewish Chronicle summaries of UTJ's agenda do not mention the issue [20, 21]. Related, but not on this question: as Minister of Jerusalem in May 2025, Porush refused to transfer about NIS 100 million from his ministry for a programme to train East Jerusalem teachers in the Israeli curriculum, saying the money was meant for employment programmes to reduce economic gaps in East Jerusalem and calling the education plan "a prize for terror" [57]. In August 2025 Calcalist reported that his ministry had not carried out any part of the government's East Jerusalem gap-reduction programme in 2024, about NIS 77.4 million; ministry officials said the Finance Ministry had not provided the funding [58].
+
+## Other notable positions {#other-positions}
+
+### Torah education and institutional independence {#other-torah-education}
+
+- **Formal commitment:** The party's aims include securing "the funding and independence of education and Torah institutions without interference in their content" [6].
+- **Action (as Deputy Education Minister for UTJ):** In December 2017 the State Comptroller's permits committee refused his request to stay a member of the Independent Education Centre, the network that runs most Haredi schools, while serving as deputy minister; he had argued it should be treated as part of the Education Ministry [68]. (See Legal or ethical matters.)
+- **Statement:** In September 2026 he listed as achievements of his ministry the first use of state heritage-preservation funds to renovate a Hasidic Talmud Torah in Jerusalem, and said he would demand that this model of directing government budgets to Haredi projects be extended to more ministries [13].
+
+### Children with special needs {#other-special-needs}
+
+- **Statement:** In 2019, as Deputy Education Minister, he said that a special-education child born to Haredi parents "does not get from the State of Israel what an exceptional child gets when born to secular parents." Globes found the claim "half true": most Haredi special-needs pupils study in non-official institutions that received lower budgets, a gap that also affected non-Haredi non-official schools [70].
+- **Statement:** In a September 2026 podcast, asked what he would do with an unlimited budget for one goal, he named the lack of adequate help for families of children with special needs [15].
+
+### Haredi local government and community autonomy {#other-local-government}
+
+- **Statement:** In September 2026 he said his main goal for the next term is "community independence and expansion": to "strengthen the Haredi local authorities, expand their powers, and give them the budgetary and statutory tools to care for the Haredi resident themselves," so that communities are not dependent on "officials who change" [13].
+- **Statement:** He complained that Agudat Yisrael had no branches in Beitar Illit, Beit Shemesh and Elad, which he described as cities with large Hasidic populations [12, 13].
+
+### Internal party democracy {#other-party-primaries}
+
+- **Statement:** In September 2026 Porush said he supports holding internal elections ("primaries") in Agudat Yisrael, noting that the last internal elections took place about 50 years ago, and said Shlomei Emunim had held local primaries, including in Jerusalem before the last municipal elections [13]. He said he had asked community representatives to renew their confidence in him before the lists were submitted [13].
+
+### Jerusalem, Mount Meron and holy sites {#other-jerusalem-meron}
+
+- **Action (as minister):** On 28 February 2023 he resigned his responsibility for the annual Lag BaOmer gathering at Mount Meron, writing that he had "responsibility without authority"; he withdrew the resignation on 5 March 2023 after the government transferred the powers to him and his project manager [59, 60].
+- **Action (as minister):** Calcalist reported in August 2025 that in 2024 his ministry carried out 3 of its 25 budgeted tasks (12%), the lowest rate among ministries, while transferring NIS 40 million for the Meron gathering [58].
+- **Statement:** In November 2022 he said Netanyahu would not make changes on the Temple Mount, as UTJ colleagues said they would not be part of such changes [48].
+
+### Relations with the attorney general, courts and police {#other-law-enforcement}
+
+- **Statement:** On 27 May 2026 he called on police officers "who have a little faith and tradition" to say they do not want to carry out orders to arrest yeshiva students [36].
+- **Statement:** In May 2026, after army briefings about a shortage of soldiers, he said "various parties decided to turn the army into a political tool in the hands of those who persecute Torah learners" [34].
+- **Statement:** In August 2025 he warned: "A war between brothers is developing here between Haredim and secular people," and said that if yeshiva students are taken from their homes, the public cannot be told how to protest [32, 30].
+
+### Haredi identity and the state {#other-haredi-identity}
+
+- **Statement:** In June 2024, after the Supreme Court ruled that the state must enlist yeshiva students, he wrote that the ruling "necessarily leads to two states here," one as it is now, and "another state in which the yeshiva students will continue to study Torah" [28].
+- **Statement:** In September 2026 he called on Haredi voters to vote, citing the founders of Agudat Yisrael who called for Knesset representatives "who will fight for Judaism, Shabbat and the holy Torah" [14].
+
+## Coalition stance {#coalition}
+
+**Stated conditions (2026).**
+- **Statement (26 September 2026):** "I will not return to the government table without regularising the status of yeshiva students, even if I remain alone in the Knesset; I will not take a role in the government while yeshiva students are persecuted" [13]. He added that if Netanyahu will not pass the law before forming a government, "apparently he intends to form a government with Mansour Abbas, because with me he has nothing to talk about" until the law, and a law bypassing the High Court, are passed [13].
+- **Statement (26 September 2026):** "We are not in Netanyahu's pocket ... The days of the open cheque are over," but "from here to joining the left? The road is very long." He said Likud and the right are "more traditional," while "the left of today has made persecution of religion and tradition its main banner," and that "none of us really thinks the left is an alternative" [13]. He named Yair Lapid and Avigdor Liberman as unacceptable [13].
+- **Statement (4 October 2026):** On Kol Barama radio he said: "The main agreement of Degel and Agudah is that we will not take any role in any government until there is a draft law" [51].
+- **Statement (5 October 2026):** On Kol Hai radio he said: "We signed an explicit agreement between Agudat Yisrael and Degel HaTorah. We will not be appointed to or serve in any coalition position, not as ministers, not deputy ministers, and not committee chairmen, and we will not allow any coalition legislation to pass as long as the status of yeshiva students and Torah learners is not regulated by law" [52]. He warned against the left, "led by figures such as Yair Golan," controlling funding decisions [52].
+- **Statement (27 May 2026):** "After the election we must not take roles, no ministers and nothing," until the government regularises the Haredi public's critical needs [36].
+- **Statement (24 June 2026):** "We all obey the Council of Torah Sages and they will decide. But what is a bloc? We don't like to say we are in a bloc; we lean more to the side of the right" [39].
+- **Context:** Israel Hayom reported on 4 October 2026 a Gur source as saying Agudat Yisrael might not oppose a minority government led by Gadi Eisenkot, and that Porush and Degel HaTorah were expected to oppose such a move; Goldknopf denied the report [51]. Under its new structure, any coalition negotiator would have to meet Porush separately [3, 9].
+
+**Track record of keeping coalition pledges (as an Agudat Yisrael / UTJ leader).**
+- **Contradiction:** On 10 November 2022 Porush said: "Without an override clause there will be no government" [48]. He then joined the government as a minister in January 2023 [24] and stayed until July 2025, although no override clause was passed; in June 2023, after Netanyahu shelved it, he said "any other agreement is not acceptable to us" but remained in office [16].
+- **Change over time:** In May 2023 he said that if the prime minister "can't pass a draft law, let him go home" [49]; in August 2023 he said UTJ would wait "to hear what he can deliver" under the signed coalition agreement [50]. He stayed in the government until July 2025, when he resigned on the Council of Torah Sages' instruction [25]. In September 2026 he explained that he had demanded the yeshiva-students law before the government was formed and before the first budget, but lacked backing from his colleagues and had no vote as a Norwegian-law minister [13].
+- **Kept:** His July 2025 resignation followed through on repeated warnings that UTJ would not stay in government without an enlistment law [25, 26].
+
+## Track record {#track-record}
+
+Chomat Torat Yisrael has never been in government. Its leader served in government as an Agudat Yisrael / UTJ representative. Item by item:
+
+- **Yeshiva-students law (promised in the 2022 coalition agreement, according to Porush):** Not delivered. Porush said in August 2023 that the agreement with Likud set out "clear things" about the yeshiva students' status law [50]; no such law passed, and UTJ left the government in July 2025 [26].
+- **Override clause (Porush's 2022 condition):** Not delivered [48, 16].
+- **Basic Law: Torah Study:** Delivered in July 2026, in a declaratory form after the operative clause was dropped [42]. Porush had said in 2018 that any enlistment law without such a Basic Law "will not help" [16].
+- **Freeze on arrests of yeshiva students:** Passed in July 2026, struck down by the Supreme Court on 3 September 2026 [44].
+- **Daycare subsidies for kollel families:** Passed a preliminary reading in May 2026; dropped in July 2026 as part of the legislative deal [40, 42].
+- **Limiting the attorney general:** Law passed on 15 July 2026 with Haredi votes [43].
+- **Budget:** On 9 February 2026 the Agudat Yisrael faction, of which Porush was then a member, announced it would vote against the Arrangements Law accompanying the 2026 state budget, over the slow progress of the exemption bill [54].
+- **Ministry of Jerusalem and Jewish Tradition:** Took over the Meron gathering after a dispute over powers [59, 60]; executed 12% of budgeted tasks in 2024, with East Jerusalem programme funds not transferred, which ministry officials attributed to Finance Ministry funding [58]. Porush counts as achievements Haredi-oriented heritage, tourism and summer-activity budgets and the Meron gatherings [13].
+- **Hostage deal:** Voted for the January 2025 cabinet decision [27].
+- **Deputy Housing Minister (1996–1999):** Obtained priority-area benefits for Harish and 600 rental units for Haredim [61]; the State Comptroller criticised political appointments in his office (see below) [63].
+
+## Legal or ethical matters involving leaders {#legal}
+
+**Meir Porush.**
+- **Police recommendation and decision not to prosecute (2000–2003).** In July 2000 the police recommended indicting Porush on suspicion of privacy-law offences and fraud and breach of trust: according to the suspicion, before the April 1999 election hundreds of letters signed by him were sent to citizens who had asked the Housing Ministry for help, asking for their political support [66]. In 2003 Attorney General Elyakim Rubinstein and State Attorney Edna Arbel decided not to ask the Knesset to lift his immunity; they said they viewed the alleged acts "with severity," but the evidence "was not free of doubt regarding the mental element of the offence," and much time had passed [67]. **Status:** closed without indictment.
+- **State Comptroller findings (1997–1998).** In May 1997 State Comptroller Miriam Ben-Porat said she was considering referring to the attorney general suspicions arising from two appointments in municipal companies recommended by Porush [62]. Her 1998 annual report said: "The parade of political and flawed appointments is led, by a wide margin, by the Deputy Minister of Housing and Construction, Meir Porush"; eight of the 25 cases she examined were his responsibility [63]. Porush responded that all assistance was given according to the binding rules and the law [16]. In November 1998 Globes reported that the police had investigated one of these appointments and recommended prosecution [65]; no indictment over it was found in the sources reviewed.
+- **Supreme Court ruling (1998).** In October 1998 the High Court of Justice cancelled the appointment, without a tender, of Porush's former adviser Shimon Einstein as head of the Housing Ministry's Rural Construction Administration [64].
+- **Conflict-of-interest decision (2017–2018).** On 7 December 2017 the State Comptroller's committee for permits under the ministers' conflict-of-interest rules refused Porush's request to remain a member of the Independent Education Centre association while serving as Deputy Education Minister [68]. Zman Yisrael reports that his petition against the decision was rejected and that a Deputy Attorney General opinion barred him from handling several related areas [16]. **Status:** concluded.
+- No indictments, convictions or open investigations involving Porush were found for the period since 2003.
+
+**Elyakim Stark.** No indictments, convictions or official inquiries were found.
+
+**What was checked:** Hebrew and English news searches for both names with terms for investigation, indictment, comptroller and court; the State Comptroller's site via the documents cited; and the reporting compiled by Zman Yisrael's profile of Porush [16]. Complaints filed by private organisations (for example to the Knesset Ethics Committee) were not included because no decision on them was found.
+
+## Sources {#sources}
+
+1. רשימת המועמדים: יהדות התורה והשבת אגודת ישראל – דגל התורה (26th Knesset candidate list; submitted by Degel HaTorah, Agudat Yisrael and Chomat Torat Yisrael). Central Elections Committee (page copy hosted by the Israel Democracy Institute), 9 September 2026. https://www.idi.org.il/media/32323/%D7%99%D7%94%D7%93%D7%95%D7%AA-%D7%94%D7%AA%D7%95%D7%A8%D7%94.pdf
+2. ועדת הבחירות המרכזית פרסמה את הפתקים של כל המפלגות לכנסת ה-26. Ynet, 27 September 2026. https://www.ynet.co.il/news/article/s1ibdii5fe
+3. Last minute drama in United Torah Judaism party. Israel National News, 8 September 2026. https://www.israelnationalnews.com/news/432906
+4. לראשונה מ-1992: רשימת יהדות התורה כוללת מפלגה שלישית מלבד אגודת ישראל ודגל התורה (Or Guetta). Davar, 8 September 2026. https://www.davar1.co.il/696518/
+5. מאיר פרוש ואליקים שטארק מפתיעים את גור - ירוצו תחת מפלגה אחרת ביהדות התורה (Avraham Freund). Kol Rega, 8 September 2026. https://www.kore.co.il/viewArticle/220650
+6. פרוש ובעלזא נוטשים את אגודת ישראל לטובת מפלגה חדשה (Pinchas Ben Ziv). Emess, 8 September 2026. https://www.emess.co.il/radio/1927388
+7. אחרי שעות של פיצוץ: יהדות התורה הוגשה במבנה מפוצל (Shalom Stein). Emess, 8 September 2026. https://www.emess.co.il/radio/1927445
+8. הפתיעו את גור: פרוש ושטארק - ירוצו תחת 'חומת תורת ישראל' ביהדות התורה. Haredim10, 8 September 2026. https://ch10.co.il/news/1100602/
+9. דרמה באגודת ישראל: פרוש ושטארק הקימו מפלגה חדשה; פיצוץ במגעים עם גור. JDN, 8 September 2026. https://www.jdn.co.il/news/2725798/
+10. After Split And Hours Of Turmoil, UTJ Submits Party Slate. Yeshiva World News, 9 September 2026. https://www.theyeshivaworld.com/news/israel-news/2595974/after-split-and-hours-of-turmoil-utj-submits-party-slate.html
+11. Drama in Agudas Yisrael: Belzer Rebbe Replaces Longtime MK Yisrael Eichler With Rav Elyakim Stark As Chassidus' Knesset Rep. Yeshiva World News, 7 September 2026. https://www.theyeshivaworld.com/news/liveblogs/live-blog/2594991/%f0%9f%9a%a8drama-in-agudas-yisrael-belzer-rebbe-replaces-longtime-mk-yisrael-eichler-with-rav-elyakim-stark-as-chassidus-knesset-rep.html
+12. פרוש פותח במתקפה חריפה על גור ומסביר מדוע הלך על מהלך הפיצול עם בעלזא: 'לא יכולתי לשתוק יותר' (Chanani Breitkopf). Kikar HaShabbat, 24 September 2026. https://www.kikar.co.il/hasidism/porush-attacks-ger-agudah-split-interview
+13. פרוש: "לא אחזור לממשלה ללא הסדרת מעמד בני הישיבות, גם אם אשאר לבד בכנסת" (interview first published in HaMevaser, by Eliezer Shulman and Meir Berger). JDN, 26 September 2026. https://www.jdn.co.il/news/2734611/
+14. אגודה פתחה את כינוסי הבחירות; שטארק: "לא הצלחנו להגן על בני הישיבות". JDN, 28 September 2026. https://www.jdn.co.il/news/2735549/
+15. ח"כ מאיר פרוש ונחמן גלבך מדבר בפודקאסט "עשייה בשניים": מצוקת הדיור, אתגרי הצפון והחינוך המיוחד. JDN, 22 September 2026. https://www.jdn.co.il/news/2732268/
+16. המבצר: התיק המלא על מאיר פרוש (HaMivtzar team). Zman Yisrael, 2 October 2026. https://www.zman.co.il/729638/
+17. העיתונים החרדים מנסים להסתיר את הפיצולים ההיסטוריים במפלגה החרדית (Ido Harari). The Seventh Eye, 13 September 2026. https://www.the7eye.org.il/594580
+18. Degel HaTorah, Agudat Yisrael agree to run again in united ultra-Orthodox faction. The Times of Israel, 12 September 2022. https://www.timesofisrael.com/liveblog_entry/degel-hatorah-agudat-yisrael-agree-to-run-again-in-united-ultra-orthodox-faction/
+19. סיעת יהדות התורה מתפצלת - הדבר לא צפוי לפגוע במבנה הקואליציה (Zvi Lavi). Globes, 11 January 2005. https://www.globes.co.il/news/article.aspx?did=873213
+20. Israel election 2026: What do Arye Deri's Shas and Yaakov Asher's United Torah Judaism stand for? The Jerusalem Post (syndicated on MSN), 10 September 2026. https://www.msn.com/en-gb/news/other/israel-election-2026-what-do-arye-deris-shas-and-yaakov-ashers-united-torah-judaism-stand-for/ar-AA2bYK0C
+21. Israel election: Who are the Charedi parties and what do they stand for? The Jewish Chronicle, 6 October 2026. https://www.thejc.com/news/israel/israel-election-who-charedi-parties-jc9tckw7
+22. ספירת הקולות הסתיימה: זו תמונת המנדטים הסופית. Globes, 2 November 2022. https://www.globes.co.il/news/article.aspx?did=1001428564
+23. מאיר פרוש - אודות. Knesset Channel, accessed 7 October 2026. https://www.knesset.tv/knesset-members/meir-porush/
+24. באישור הרבנים: מאיר פרוש ימונה לשר ירושלים ומסורת ויהיה אחראי על מירון. Arutz 7, 2 January 2023. https://www.inn.co.il/news/587790
+25. בעקבות משבר הגיוס: השר מאיר פרוש מתפטר מהממשלה. JDN, 15 July 2025. https://www.jdn.co.il/news/2443523/
+26. UTJ lawmakers forced out as resigning ministers reclaim Knesset seats (Sam Sokol). The Times of Israel, 17 July 2025. https://www.timesofisrael.com/liveblog_entry/utj-lawmakers-forced-out-as-resigning-ministers-reclaim-knesset-seats/
+27. 24 שרים הצביעו בעד, 8 התנגדו: עסקת החטופים אושרה בממשלה. Ynet, 17 January 2025. https://www.ynet.co.il/article/bkglsnudjx
+28. בג"ץ קבע פה אחד שהמדינה חייבת לגייס חרדים: "מעמסת אי-השוויון בנטל חריפה מתמיד". Ynet, 25 June 2024. https://www.ynet.co.il/news/article/bk9ylloe0
+29. הארגונים שפועלים כדי למנוע מצעירים חרדים להתייצב בבקו"ם בכל מחיר. N12 (Mako), 23 January 2025. https://www.mako.co.il/news-israel/2025_q1/Article-adf542fcc409491026.htm
+30. מאיר פרוש: "ביום כיפור היו יותר הרוגים - ועכשיו מדברים על גיוס חרדים". Ynet, 13 August 2025. https://www.ynet.co.il/news/article/yokra14474347
+31. ח"כ מאיר פרוש במחאה על מעצרם של בני ישיבות שלא התגייסו: "זה יביא לאסון". Walla, 7 August 2025. https://www.walla.co.il/news/breaking-news/3771464
+32. ח"כ פרוש: תתחילו לפחד! מתפתחת בישראל מלחמת אחים בין חרדים לחילונים. Kikar HaShabbat, 10 August 2025. https://www.kikar.co.il/interviews/t0rts5
+33. ח"כ מאיר פרוש: "מדובר בחוק גיוס גרוע, מן הראוי לקרוע אותו". JDN, 1 December 2025. https://www.jdn.co.il/news/2527489/
+34. מאיר פרוש: מחסור בחיילים? 'הפכו את הצבא לכלי פוליטי בידי רודפי לומדי התורה'. Haredim10, 17 May 2026. https://ch10.co.il/news/1070485/
+35. עקב פסיקת בג"ץ: רשות מקרקעי ישראל הודיעה שמשתמטים לא ייכללו ב"דירה בהנחה". Ynet, 24 May 2026. https://www.ynet.co.il/news/article/rypfwpxege
+36. ח"כ פרוש שובר שתיקה ויוצא במתקפה חריפה על נתניהו הציונות הדתית והמפכ"ל. JDN, 27 May 2026. https://www.jdn.co.il/news/2659815/
+37. ח"כ פרוש במליאה: מיארה מתבכיינת, אסור למצמץ. Arutz 7, 2 June 2026. https://www.inn.co.il/news/698132
+38. פרוש תוקף את היועמ"שית: "אם תמשיך לרדוף לומדי התורה - נגרש אותה במקלות". Ynet, 16 June 2026. https://www.ynet.co.il/news/article/sjuauqiwex
+39. מאיר פרוש עולה להתקפה: "ישראל היא המדינה היחידה שעוצרת לומדי תורה, לא נותנים לחיות, זו סכנה!" Kikar HaShabbat, 24 June 2026. https://www.kikar.co.il/interviews/th4kl4
+40. החרדים איימו - והליכוד תמך בהצעה לסבסוד מעונות לילדי משתמטים. Ynet (syndicated on MSN), 27 May 2026. https://www.msn.com/he-il/news/other/%D7%94%D7%97%D7%A8%D7%93%D7%99%D7%9D-%D7%9E%D7%90%D7%99%D7%99%D7%9E%D7%99%D7%9D-%D7%A2%D7%9C-%D7%A0%D7%AA%D7%A0%D7%99%D7%94%D7%95-%D7%9C%D7%90-%D7%99%D7%94%D7%99%D7%94-%D7%A8%D7%95%D7%91-%D7%9C%D7%97%D7%95%D7%A7-%D7%94%D7%9E%D7%A2%D7%95%D7%A0%D7%95%D7%AA-%D7%A0%D7%A6%D7%91%D7%99%D7%A2-%D7%91%D7%A2%D7%93-%D7%95%D7%A2%D7%93%D7%AA-%D7%97%D7%A7%D7%99%D7%A8%D7%94-%D7%9E%D7%9E%D7%9C%D7%9B%D7%AA%D7%99%D7%AA/ar-AA24akJ5
+41. בלי ביבי ובתמיכת החרדים: אושרה הצעת החוק לוועדת חקירה לטבח 7 באוקטובר. Kikar HaShabbat, 6 July 2026. https://www.kikar.co.il/israel-news/october-7-inquiry-committee
+42. נתניהו שוב נעדר מהצבעה שנויה במחלוקת, אושר סופית חוק יסוד לימוד תורה (Amir Ettinger). Ynet, 13 July 2026. https://www.ynet.co.il/news/article/ryrbw9zvfg
+43. נתניהו שוב נעדר: אושר סופית החוק שיחליש דרמטית את תפקיד היועמ"ש. Ynet (syndicated on MSN), 15 July 2026. https://www.msn.com/he-il/news/other/%D7%94%D7%91%D7%9C%D7%99%D7%A5-%D7%A0%D7%9E%D7%A9%D7%9A-%D7%94%D7%94%D7%A6%D7%91%D7%A2%D7%94-%D7%A2%D7%9C-%D7%94%D7%97%D7%95%D7%A7-%D7%9C%D7%94%D7%97%D7%9C%D7%A9%D7%AA-%D7%AA%D7%A4%D7%A7%D7%99%D7%93-%D7%94%D7%99%D7%95%D7%A2%D7%A5-%D7%94%D7%9E%D7%A9%D7%A4%D7%98%D7%99-%D7%9C%D7%9E%D7%9E%D7%A9%D7%9C%D7%94-%D7%99%D7%A9%D7%99%D7%A8/ar-AA27YQXX
+44. 9 בעד, 0 נגד: בג"ץ ביטל את חוק הקפאת מעצרי העריקים החרדים. Ynet (syndicated on MSN), 3 September 2026. https://www.msn.com/he-il/news/other/9-%D7%91%D7%A2%D7%93-0-%D7%A0%D7%92%D7%93-%D7%91%D7%92-%D7%A5-%D7%91%D7%99%D7%98%D7%9C-%D7%90%D7%AA-%D7%97%D7%95%D7%A7-%D7%94%D7%A7%D7%A4%D7%90%D7%AA-%D7%9E%D7%A2%D7%A6%D7%A8%D7%99-%D7%94%D7%A2%D7%A8%D7%99%D7%A7%D7%99%D7%9D-%D7%94%D7%97%D7%A8%D7%93%D7%99%D7%9D/ar-AA2bvgPG
+45. 2 West Bank annexation bills get initial nod, with MKs rebelling against PM as Vance visits. The Times of Israel, 22 October 2025. https://www.timesofisrael.com/2-west-bank-annexation-bills-get-initial-nod-with-mks-rebelling-against-pm-as-vance-visits/
+46. רגע לפני הפגרה: פרוש מקדם חוק ריבונות ממוקד לארבע ערים ביו"ש. Israel Hayom (syndicated on MSN), 25 March 2026. https://www.msn.com/he-il/news/other/%D7%A8%D7%92%D7%A2-%D7%9C%D7%A4%D7%A0%D7%99-%D7%94%D7%A4%D7%92%D7%A8%D7%94-%D7%A4%D7%A8%D7%95%D7%A9-%D7%9E%D7%A7%D7%93%D7%9D-%D7%97%D7%95%D7%A7-%D7%A8%D7%99%D7%91%D7%95%D7%A0%D7%95%D7%AA-%D7%9E%D7%9E%D7%95%D7%A7%D7%93-%D7%9C%D7%90%D7%A8%D7%91%D7%A2-%D7%A2%D7%A8%D7%99%D7%9D-%D7%91%D7%99%D7%95-%D7%A9/ar-AA1ZoVbH
+47. השר מאיר פרוש בראיון: "ההסתה המופרעת תוביל לאלימות נגד דתיים". ice, 7 March 2023. https://www.ice.co.il/local-news/news/article/943532
+48. ח''כ מאיר פרוש ביציאה מבית הנשיא: דורשים פסקת התגברות, בלי זה לא תהיה ממשלה. Arutz 7, 10 November 2022. https://www.inn.co.il/news/582584
+49. השר פרוש: נתניהו לא יכול? שילך הביתה. Arutz 7, 2 May 2023. https://www.inn.co.il/news/600133
+50. ביהדות התורה עונים לנתניהו: "חתמת, תביא פתרון". Ynet, 21 August 2023. https://www.ynet.co.il/news/article/rjv7vfet3
+51. בנט לאחר דברי פרוש וחשיפת "היום": "מי שלא משרת לא יקבל שקל מהמדינה". Israel Hayom (syndicated on MSN), 4 October 2026. https://www.msn.com/he-il/news/other/%D7%91%D7%A0%D7%98-%D7%9C%D7%90%D7%97%D7%A8-%D7%93%D7%91%D7%A8%D7%99-%D7%A4%D7%A8%D7%95%D7%A9-%D7%95%D7%97%D7%A9%D7%99%D7%A4%D7%AA-%D7%94%D7%99%D7%95%D7%9D-%D7%9E%D7%99-%D7%A9%D7%9C%D7%90-%D7%9E%D7%A9%D7%A8%D7%AA-%D7%9C%D7%90-%D7%99%D7%A7%D7%91%D7%9C-%D7%A9%D7%A7%D7%9C-%D7%9E%D7%94%D7%9E%D7%93%D7%99%D7%A0%D7%94/ar-AA2dx9G7
+52. Porush draws red line: No coalition without Draft Law. Israel National News, 5 October 2026. https://www.israelnationalnews.com/news/434136
+53. ממלכתית, "לאומית" או משהו אחר: איך המפלגות רוצות לחקור את 7/10? Ynet / Yedioth Ahronoth, 4 October 2026. https://www.ynet.co.il/yedioth/article/yokra14915209
+54. UTJ's Agudat Yisrael faction to vote against Arrangements Law in budget vote. The Times of Israel (syndicated on MSN), 9 February 2026. https://www.msn.com/en-us/news/world/utj-s-agudat-yisrael-faction-to-vote-against-arrangements-law-in-budget-vote/ar-AA1VYjW1
+55. פרוש מאיים על מערכת המשפט: "נשתמש בכוחנו הצרכני העצום". Israel Hayom (syndicated on MSN), 20 August 2026. https://www.msn.com/he-il/news/other/%D7%A4%D7%A8%D7%95%D7%A9-%D7%9E%D7%90%D7%99%D7%99%D7%9D-%D7%A2%D7%9C-%D7%9E%D7%A2%D7%A8%D7%9B%D7%AA-%D7%94%D7%9E%D7%A9%D7%A4%D7%98-%D7%A0%D7%A9%D7%AA%D7%9E%D7%A9-%D7%91%D7%9B%D7%95%D7%97%D7%A0%D7%95-%D7%94%D7%A6%D7%A8%D7%9B%D7%A0%D7%99-%D7%94%D7%A2%D7%A6%D7%95%D7%9D/ar-AA2azZjY
+56. MK Meir Porush: Releasing Terrorists While Jailing Yeshiva Bochurim Is "A Moral Bankruptcy". Yeshiva World News, 15 June 2026. https://www.theyeshivaworld.com/news/israel-news/2562108/mk-meir-porush-releasing-terrorists-while-jailing-yeshiva-bochurim-is-a-moral-bankruptcy.html
+57. מאבק תקציבי בין החרדים לליכוד - על חשבון טיפול בהסתה לטרור במזרח ירושלים (Doron Bloch). Kipa, 22 May 2025. https://www.kipa.co.il/%D7%97%D7%93%D7%A9%D7%95%D7%AA/%D7%A4%D7%95%D7%9C%D7%99%D7%98%D7%99/1204583-0/
+58. אפס שקלים למזרח ירושלים, עשרות מיליונים להילולת מירון (Amiti Gazit). Calcalist, 14 August 2025. https://www.calcalist.co.il/local_news/article/bjn0glquxg
+59. השר מאיר פרוש מתפטר מהאחריות על הילולת מירון (Zvi Zarchia). Calcalist, 28 February 2023. https://www.calcalist.co.il/local_news/article/hjdtvqs0s
+60. הממשלה אישרה העברת הסמכויות בהילולת מירון; השר פרוש חזר בו מההתפטרות (Zvi Zarchia). Calcalist, 5 March 2023. https://www.calcalist.co.il/local_news/article/s1wmjfmjn
+61. ניצחון בחריש, תבוסה בדיור להשכרה. Globes, 8 September 1997. https://www.globes.co.il/news/article.aspx?did=137502
+62. מבקרת המדינה שוקלת להעביר לבדיקת רובינשטיין שני מינויים פוליטיים של פרוש. Globes, 20 May 1997. https://www.globes.co.il/news/article.aspx?did=130667
+63. נקודת השפל של פרוש. Globes, 6 May 1998. https://www.globes.co.il/news/article.aspx?did=63840
+64. בג"ץ ביטל מינויו ללא מיכרז של מועמדו של פרוש למנהל המינהל לבנייה כפרית. Globes, 13 October 1998. https://www.globes.co.il/news/article.aspx?did=72307
+65. מינוי אחד יותר מדי. Globes, 18 November 1998. https://www.globes.co.il/news/article.aspx?did=89359
+66. המשטרה ממליצה להעמיד לדין את ח"כ פרוש. Ynet, 25 July 2000. https://www.ynet.co.il/articles/0,7340,L-38150,00.html
+67. בחירות 2019 - לא תקין פוליטית: דו"ח השחיתות. N12 (Mako), 13 September 2019. https://www.mako.co.il/news-israel-elections/elections_2019-q3_2019/Article-e76a73df2a42d61026.htm
+68. החלטה מס' 4/2017: החלטה בבקשתו של סגן שר החינוך הרב מאיר פרוש לקבלת היתר להמשך השתתפותו כחבר בעמותת החינוך העצמאי. State Comptroller's Office, permits committee, 7 December 2017. https://media.mevaker.gov.il/mevaker/media/ltlcafsu/vaadat_heterim_07122017_sgan-hasar_meir_porush.pdf
+69. פרוש סולק מהחסידות. Ynet, 4 November 2007. https://www.ynet.co.il/articles/0,7340,L-3467282,00.html
+70. אילו נתונים שכח ח"כ פרוש כשטען להפליית חרדים בחינוך המיוחד? Globes, 23 September 2019. https://www.globes.co.il/news/article.aspx?did=1001301607
+71. השר פרוש במליאה: "היועמ"שית תיזכר לדראון עולם". Arutz 7, 9 July 2025. https://www.inn.co.il/news/673608
+72. "יועמ"שית שפויה לא הייתה מרעיבה ילדים חרדים כתחביב". N12 (Mako), 21 May 2025. https://www.mako.co.il/news-politics/2025_q2/Article-2c663563b52f691026.htm
+73. Knesset plenum vote headers (view_vote_rslts_hdr_approved), Knesset data via Open Knesset, dataset covering the 16th–24th Knessets (votes cited: 23 February 2004, 15 March 2004, 16 and 20 July 2005; accessed 7 October 2026). https://production.oknesset.org/pipelines/data/votes/view_vote_rslts_hdr_approved/view_vote_rslts_hdr_approved.csv
+74. Per-MK plenum vote results (vote_rslts_kmmbr_shadow), Knesset data via Open Knesset (records for Meir Porush, MK id 563; accessed 7 October 2026). https://production.oknesset.org/pipelines/data/votes/vote_rslts_kmmbr_shadow/vote_rslts_kmmbr_shadow.csv
+
+## Information availability {#information-availability}
+
+There is enough public information to describe this party's likely positions, but almost all of it comes from its leader's record rather than from the party itself. Chomat Torat Yisrael was announced on 8 September 2026 and has no Knesset record, no government record and no published platform beyond the founding aims reported by Emess [6]. Its positions are therefore inferred mainly from Meir Porush's 30-year record as an Agudat Yisrael / UTJ MK, deputy minister and minister, and from UTJ votes taken before the split. Its second candidate, Elyakim Stark, has no public record beyond a few statements. Coverage of the party comes mostly from Haredi news sites.
+
+Specific gaps:
+- **Knesset vote records:** The Knesset website and its vote database (OData and vote-details services) were blocked from this research environment ("not available from your location"). Open Knesset data covering votes up to 2021 was used for his older record [73, 74], but Porush's individual 25th-Knesset votes on the July 2026 bills, the October 2025 sovereignty bill and the July 2026 inquiry bill could not be checked. Votes are described from press reports of how UTJ or the Agudat Yisrael faction voted.
+- **Gaza, Iran and Lebanon, and crime in Arab society:** Little or nothing was found on these questions for the party or its leaders. Reporting describes UTJ as a whole as having less defined positions on security and foreign policy [20, 21].
+- **Unopened sources:** Several articles could not be opened (for example on Bechadrei Haredim, Channel 14, i24NEWS and Calcalist's 2018 report), so they are not cited. Some older facts (Porush's 2013, 2018 and June 2023 statements, and the 2018 Deputy Attorney General opinion) are cited from Zman Yisrael's compiled profile of Porush [16] rather than from the original reports.
+- **Party status after the election:** Whether Chomat Torat Yisrael will form a separate Knesset faction after the election is not known; reports say the separate registration would allow it [4].
