@@ -227,7 +227,7 @@ Strock has been a minister since December 2022 [11, 18], so her record can be co
 | Apply Israeli sovereignty to Judea and Samaria | Strock's statements [33] | **Not delivered.** The Knesset passed only a declaratory motion in July 2025 [34]. Strock said in May 2026: "We did not apply sovereignty... we did not succeed" [23]. |
 | Destroy Hamas and not end the war with a deal before that | Strock's statements [24] | **Not delivered on her terms.** The government approved the January 2025 and October 2025 deals over her opposition; she stayed in government [23, 25, 26]. |
 | Reform national service | Strock's stated plans [19] | **Delivered in part.** The reform began in January 2025 [62]. |
-| Discounts on land for young families in the Negev and Galilee | Strock-led plan, 2023 [58] | **Partly delivered.** The plan was approved, but Strock said in September 2024 that the Israel Land Authority was not carrying it out [59]. |
+| Discounts on land for young families in the Negev and Galilee | Strock-led plan, 2023 [58] | **Partly delivered.** The plan was adopted [58, 59], but Strock said in September 2024 that the Israel Land Authority was not carrying it out [59]. |
 | Changes to the judicial system | Strock's statements [41] | **Delivered in part** by the coalition: reasonableness law (2023), Judicial Selection Law (2025, from the next Knesset), attorney general law (2026, from January 2027) [42, 43, 46, 47]. |
 
 **Earlier Knesset record (Jewish Home, 2013–2015).** In the 19th Knesset Strock was a coalition MK. She voted for the 2014 Haredi enlistment law and the National Civilian Service Law [48–50], voted for the 2014 food competition law [48, 49], and blocked Elazar Stern's conversion bill [55].
