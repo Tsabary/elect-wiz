@@ -19,6 +19,7 @@ Read first, in full, and follow exactly:
 
 - OPEN EVERY CITED URL (WebFetch, or curl for sites that block it). Verify each substantive claim against the source as worded (numbers, dates, names, vote direction, quotes) and the evidence tier. Never confirm from memory or a search snippet. Use web.archive.org if a page is down; otherwise replace the source with an authoritative one you opened, or remove the claim.
 - Facts and actions over campaign messaging. Fix wrong tiers.
+- **Recency:** a "Closest option(s)" line must rest on evidence from 2021 onwards and the current leadership. If it relies on older evidence, fix it, or mark the position undocumented for the current party.
 - `**Contradiction:**` is only for an action that contradicts a stated position (cite both). Add one where you find it. Relabel statement-versus-statement differences, or positions that changed over time, as `**Change over time:**`, keeping the party's explanation.
 - Legal section: only official proceedings (investigation opened, indictment, conviction, AG or State Attorney decision, court ruling, State Comptroller finding, Knesset Ethics Committee decision) or reputable reporting of such an act. Facts only, status current as of today. Remove complaints by rivals and police merely "examining" a complaint. Use comparable wording across parties ("indicted on", "convicted of", "the court ruled").
 - Joint lists: verify partners, list name, ballot letters and split history.

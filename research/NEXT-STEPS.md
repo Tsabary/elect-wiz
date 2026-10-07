@@ -57,13 +57,14 @@ Lists per party:
 - **atid-echad** (Strock): table "Votes checked only against press reports" in `research/fact-check/atid-echad.md`. Key item: Basic Law: Torah Study (June/July 2026), where Strock's vote for it rests on a Jerusalem Post report that six of seven Religious Zionism MKs backed it.
 - **chomat-torat-yisrael** (Porush): Basic Law: Torah Study final reading (13 July 2026, 63–52); law suspending arrests of yeshiva students (mid-July 2026, 58–54); attorney-general law final reading (15 July 2026, 61–51); Kallner October 7 inquiry bill first reading (6 July 2026, 59–0); daycare subsidies preliminary reading (27 May 2026, 44–37); Maoz sovereignty bill preliminary reading (22 October 2025, 25–24); Agudat Yisrael's announced vote against the Arrangements Law (9 February 2026). The document says Porush's personal vote was not checked for each, and lists them in `#information-availability`.
 - **new-economic-party** (no MKs): the 31 January 2023 Constitution Committee transcript (Zelekha's remarks; now backed by an Arutz Sheva interview), his September 2007 State Control Committee appearance, and whether any of its candidates has been an MK since 2021.
-- **zehut** and **meretz:** no 25th-Knesset votes are relied on (Zehut had no MKs; Meretz has had none since November 2022). All their votes are from the Open Knesset mirror.
+- **zehut** and **meretz:** no 25th-Knesset votes are relied on (Zehut had no MKs; Meretz has had none since November 2022). All their votes are from the Open Knesset mirror. **Meretz exception:** its MKs served until November 2022, and the mirror may not cover its votes from mid-2021 to 2022; check any Meretz vote in that period against the official record too.
 
 ## 3. Notes for the consistency review (Stage 4) and for the owner
 
 Collected from the Stage 2 and 3 reports so far.
 
 **Stage 4 must:**
+- **Apply the recency rule (owner decision, 2026-10-07)** to all documents: each "Closest option(s)" line rests on evidence from 2021 onwards and the current leadership; older history is dated background only (see `research/pipeline/stage-2-party-research.md`, section 3). The 28 documents written so far predate the rule and must be checked against it.
 - **Re-verify vote tallies** in the documents fact-checked before the pagination pitfall was found: byachad-bennett, new-hope, agudat-yisrael, the-democrats-party, likud-party, yesh-atid, shas.
 - **Keep shared facts identical** across partner documents:
   - likud-party and new-hope: the merger was dropped on 14 July 2026 in favour of a joint run; the High Court rejected Haskel's petition on 9 August 2026.
@@ -101,7 +102,7 @@ Collected from the Stage 2 and 3 reports so far.
 - **Keep it short.** Summarise, and point only to the parts that matter.
 - **The operator stays anonymous.** No owner name anywhere: not on the site, in metadata, in commits or in content. There is no contact channel by owner decision.
 - **The working name** "Party Matcher" / "התאמת מפלגות" stays for now.
-- **The matching backend is deliberately undecided until D1** (Phase 5). Don't build it. A recorded owner requirement for any option: an answer-normalization step before matching (plan, Decisions §1).
+- **The matching backend is deliberately undecided until D1** (Phase 5). Don't build it. Recorded owner requirements for any option: an answer-normalization step before matching, and recency (parties are judged on current positions and leadership; evidence from 2021 onwards outweighs older evidence). See the plan, Decisions §1.
 
 ## 5. Operational quirks
 
