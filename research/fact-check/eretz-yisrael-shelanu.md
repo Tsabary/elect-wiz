@@ -101,3 +101,34 @@ For the consistency review: the Jewish National Front fact-check log reports per
 - **Wasserlauf's MK status:** not independently confirmed for July 2023 or today. Kroizer replaced Eliyahu, not Wasserlauf, under the Norwegian law [64], and the JNF log's per-MK records show Wasserlauf voting in 2024–2026, which suggests he kept his seat. The document therefore avoids saying he is "currently an MK".
 - **The 2008 founding** (Marzel and Wolpo) is reported by Ynetnews [62]. No source shows that today's registered party with the long name is the same legal entity, so the text says only that a party of this name was announced then.
 - Several sources are right-leaning or sectoral outlets (Srugim, JDN, Arutz Sheva, Kipa, Kikar HaShabbat). They are used for the candidates' own words or for events that are corroborated (for example, vote tallies by Kan and Walla). Kroizer's claim in [65] about Haredi parties and an importer is attributed to him and to unnamed sources.
+
+## Knesset record check (2026-10-07)
+
+Checked from a machine that can reach knesset.gov.il, by an agent that neither wrote nor fact-checked the document. Each Knesset vote was read from the official vote-details service (`https://www.knesset.gov.il/WebSiteApi/knessetapi/Votes/GetVoteDetails/{voteId}`, all MKs in one response); vote IDs were found through the Knesset's OData service (`KNS_PlenumVote`, all pages read). Tallies below are the record's counters and were re-counted from the per-MK rows. Government (cabinet) votes have no Knesset record and stay press-sourced. Result: 13 Knesset votes checked (the 17-item list, less 6 cabinet decisions, plus the reasonableness vote, which was already on the list, the two other Torah Study readings and the December 2024 budget vote); all tallies matched the press figures; personal votes were added throughout and two items were corrected (the reasonableness tag and the housing law's description). Sources [69]–[82] added; the list is numbered 1–82 with no gaps, every source cited.
+
+| Vote | Vote ID | Official result | Doc said | Action |
+|---|---|---|---|---|
+| 28 Mar 2023, Illegal Weapons law, 3rd reading | 38597 | Passed 20–6; Kroizer for; Wasserlauf not recorded as voting | 20–6; personal votes not listed | Kroizer's vote added [69] |
+| 30 Jul 2023, protection law (Penal Law Amendment 146), 3rd reading | 39854 | Passed 9–0; Kroizer for; Wasserlauf not recorded | Tally not given | Tally and Kroizer's vote added [70] |
+| 24 Jul 2023, Basic Law: The Judiciary (Amendment No. 3, reasonableness), 3rd reading | 39785 | Passed 64–0; Wasserlauf and Kroizer for | **Action (inferred)**, from JNS's "all 64 members of the coalition" | Retagged **Action**; personal votes stated from the record [71] |
+| 17–18 Jan 2025, government vote on hostage deal | — (cabinet) | No Knesset record | Wasserlauf against (Ynet) | Left press-sourced |
+| 19 Mar 2025, Knesset approval of Otzma ministers' return | 43497 (also 43389, appointments, same tally) | Approved 65–46; Wasserlauf and Kroizer for | 65–46; not listed | Votes added [73] |
+| 25 Mar 2025, 2025 Budget Law, 3rd reading | 43638 | Passed 66–52; Wasserlauf and Kroizer for. The record files the vote under the sitting of 24 March 2025 with no time; the clause votes are timed 25 March, so the press date (25 March) is kept | 66–52; not listed | Votes added [74] |
+| 27 Mar 2025, Basic Law: The Judiciary (Amendment No. 4, Judicial Selection), 3rd reading | 43884 | Passed 67–1, 2 present not voting; Wasserlauf and Kroizer for | 67–1; not listed | Votes and the 2 non-voting MKs added [75] |
+| 5 May 2025, government decision on inquiry | — (cabinet) | No Knesset record | Not listed | Left press-sourced |
+| 4 Aug 2025, government decision to dismiss the AG | — (cabinet) | No Knesset record | Not listed | Left press-sourced |
+| 9–10 Oct 2025, government vote on Gaza deal | — (cabinet) | No Knesset record | Wasserlauf against (ToI, Walla) | Left press-sourced |
+| 22 Oct 2025, Maoz sovereignty bill, preliminary reading | 44580 | Passed 25–24, 1 present not voting; Wasserlauf and Kroizer for | 25–24; personal votes "could not be checked" | Votes added [76] |
+| 16 Nov 2025, government decision on inquiry commission | — (cabinet) | No Knesset record | Not listed | Left press-sourced |
+| 24 Dec 2025, Kallner inquiry bill, preliminary reading | 44946 | Passed 53–48, 1 abstention (Meir Porush, Agudat Yisrael); Wasserlauf and Kroizer for | 53–48; not listed; Srugim: Agudat Yisrael did not take part | Votes added; Porush's abstention noted next to Srugim's report; intro and **Closest option(s)** reworded, since there is now a recorded personal vote (option unchanged) [77] |
+| 30 Mar 2026, Death Penalty for Terrorists Law, 3rd reading | 45858 | Passed 62–48, 1 abstention; Wasserlauf and Kroizer for | 62–48; not listed | Votes and abstention added [78]; track record updated |
+| 13 Jul 2026, Basic Law: Torah Study, 3rd reading | 46248 | Passed 63–52; Wasserlauf and Kroizer for | 63–52; not listed | Votes added [81] |
+| 10 Jun 2026, Basic Law: Torah Study, preliminary reading | 46121 | Passed 56–43; both for | Not in doc | Added [79] |
+| 1 Jul 2026, Basic Law: Torah Study, 1st reading | 46181 | Passed 63–53; both for | Not in doc | Added [80] |
+| 15 Jul 2026, government decision on Shin Bet plan | — (cabinet) | No Knesset record | Not listed | Left press-sourced |
+| 28 Jul 2026, national housing sub-committee law, 3rd reading | 46685 | Planning and Building Law (Amendment No. 170), a **government bill** (KNS_Bill 2240465); passed 11–0, 1 present not voting; Kroizer not recorded as voting | "a bill led by Kroizer"; "his bill"; tally not given | Reworded in #leadership, #issue-housing and #track-record: a government bill handled by the committee he chairs, which JDN called his bill; tally and "not recorded as voting" added [82] |
+| 16 Dec 2024, 2025 Budget Law, 1st reading | 42370 | Passed 59–57; Wasserlauf and Kroizer against (Otzma Yehudit then in the coalition) | Not in doc | Added to #issue-cost-of-living [72] |
+
+**Agreement with jewish-national-front.md:** its per-MK statements for 44580 (all six Otzma Yehudit MKs voting, including Wasserlauf and Kroizer, for), 45858 (the same six for, plus Gotliv) and 42370 (Ben Gvir, Wasserlauf, Almog Cohen, Son Har-Melech, Fogel and Kroizer against) match the official record exactly. This document now gives the same personal votes. No discrepancy to report.
+
+Also updated: the #issues intro, the current-seats line (the record shows both voting as MKs in July 2026, which settles the earlier doubt about Wasserlauf's MK status) and #information-availability, which no longer says the votes could not be checked.

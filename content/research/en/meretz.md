@@ -308,7 +308,7 @@ The Citizenship and Entry into Israel Law (Temporary Order) restricts residency 
 
 - **Change over time:**
   - On 1 July 2021, the Times of Israel reported that Meretz leader Nitzan Horowitz had told confidants that Meretz would not officially back extending the law [53]. At the session of 5–6 July 2021, after a compromise that cut the extension to six months and gave residency visas to some 1,600 Palestinian families, all six Meretz MKs voted for the government's request to extend the law. The motion was also declared a confidence vote and ended in a 59–59 tie, so the law expired [21, 22, 52].
-  - In 2022 a new version, a government bill, passed with the votes of coalition and right-wing opposition parties. In votes on 7 February 2022, Meretz MKs voted against it. On 10 March 2022, five Meretz MKs (Rozin, Salalha, Rinawie Zoabi, Lasky and Raz) voted against it at its final reading, where it passed 45–15 [20, 21, 22, 45].
+  - In 2022 a new version, a government bill, passed with the votes of coalition and right-wing opposition parties. On 7 February 2022, Meretz MKs voted against three private bills on the same subject at their preliminary readings, which passed 73–16, 73–32 and 74–17; at the government bill's first reading the same evening, which passed 44–5 with 43 MKs present but not voting, no Meretz MK was recorded as voting [54, 55, 56, 57]. On 10 March 2022, five Meretz MKs (Rozin, Salalha, Rinawie Zoabi, Lasky and Raz) voted against it at its final reading, where it passed 45–15 [20, 21, 22, 45].
   - On 10 March 2022, Meretz's MKs also voted with the Joint List and Ra'am for a series of reservations (proposed amendments) to the bill, all of which were defeated [21, 22].
   - In 2022, five Meretz MKs (Raz, Salalha, Rinawie Zoabi, Lasky and Rozin) were among the initiators of a bill to repeal the law, which was not debated [45, 46, 47, 48].
 
@@ -409,7 +409,7 @@ The Citizenship and Entry into Israel Law (Temporary Order) restricts residency 
 **Notable internal events:**
 - MK Ghaida Rinawie Zoabi broke coalition discipline in January 2022, bringing down the first vote on the enlistment bill [41].
 - She voted against the Judea and Samaria regulations bill in June 2022 [43].
-- The Knesset approved dissolution bills at preliminary reading on 22 June 2022 and passed the final Dissolution Law on 30 June 2022 (92–0); Meretz MKs voted in favour, and Raz was among its initiators [21, 22, 45, 46, 47].
+- The Knesset approved dissolution bills at preliminary reading on 22 June 2022 and passed the final Dissolution Law on 30 June 2022 (92–0); Raz was among its initiators [21, 22, 45, 46, 47]. Meretz MKs voted for the bills at the preliminary readings, except that Raz voted against one of the eleven preliminary votes [58]; at the final reading five Meretz MKs voted for and Golan was not recorded as voting [59].
 
 **Since November 2022:** Meretz has had no Knesset members and therefore no voting record [14, 19]. Its main actions have been:
 - the July 2024 union with Labor [3, 4, 5];
@@ -475,6 +475,12 @@ No indictments, convictions or official inquiries involving the party's leaders 
 51. Labor-Gesher-Meretz (party profile). Israel Democracy Institute, accessed 2026-10-07. https://en.idi.org.il/israeli-elections-and-parties/parties/labor-gesher-meretz
 52. In blow to coalition, Knesset knocks down extension of family unification law. The Times of Israel, 2021-07-06. https://www.timesofisrael.com/in-blow-to-coalition-knesset-knocks-down-extension-of-family-unification-law/
 53. Meretz chief says party won't back law against Palestinian family reunification. The Times of Israel, 2021-07-01. https://www.timesofisrael.com/meretz-chief-says-party-wont-back-law-against-palestinian-family-reunification/
+54. Plenum vote 36694: חוק האזרחות והכניסה לישראל (הוראת שעה), התשפ"ב-2022 (government bill, first reading; 44 for, 5 against, 43 present not voting). Knesset vote-details service (official per-MK record), 2022-02-07 (accessed 2026-10-07). https://www.knesset.gov.il/WebSiteApi/knessetapi/Votes/GetVoteDetails/36694
+55. Plenum vote 36681: הצעת חוק האזרחות והכניסה לישראל (הוראת שעה), התשפ"א-2021 (private bill, preliminary reading; 73 for, 16 against). Knesset vote-details service (official per-MK record), 2022-02-07 (accessed 2026-10-07). https://www.knesset.gov.il/WebSiteApi/knessetapi/Votes/GetVoteDetails/36681
+56. Plenum vote 36682: הצעת חוק האזרחות והכניסה לישראל (הוראת שעה), התשפ"ב-2021 (private bill, preliminary reading; 73 for, 32 against). Knesset vote-details service (official per-MK record), 2022-02-07 (accessed 2026-10-07). https://www.knesset.gov.il/WebSiteApi/knessetapi/Votes/GetVoteDetails/36682
+57. Plenum vote 36683: הצעת חוק האזרחות והכניסה לישראל (הוראת שעה), התשפ"ב-2022 (private bill, preliminary reading; 74 for, 17 against). Knesset vote-details service (official per-MK record), 2022-02-07 (accessed 2026-10-07). https://www.knesset.gov.il/WebSiteApi/knessetapi/Votes/GetVoteDetails/36683
+58. Plenum vote 37347: הצעת חוק התפזרות הכנסת העשרים וארבע, התשפ"א-2021 (preliminary reading; 99 for, 2 against, 6 present not voting). Knesset vote-details service (official per-MK record), 2022-06-22 (accessed 2026-10-07). https://www.knesset.gov.il/WebSiteApi/knessetapi/Votes/GetVoteDetails/37347
+59. Plenum vote 37524: חוק התפזרות הכנסת העשרים וארבע ומימון מפלגות, התשפ"ב-2022 (third reading; 92 for, 5 present not voting). Knesset vote-details service (official per-MK record), 2022-06-30 (accessed 2026-10-07). https://www.knesset.gov.il/WebSiteApi/knessetapi/Votes/GetVoteDetails/37524
 
 ## Information availability {#information-availability}
 
@@ -491,5 +497,5 @@ Enough public information exists to describe Meretz's positions, but with clear 
 - Since July 2024 Meretz operates mainly inside The Democrats. Its own institutions were replaced by a standing committee, and the 2026 campaign platform could not be retrieved because The Democrats' website blocked automated access [3].
 - The text of the February 2026 update to the union agreement was not found; its terms are known from press reports [7].
 - Few Meretz-specific statements were found on the 2025–2026 issues: the Iran wars, the Gaza ceasefire plan, Haredi enlistment after the 2024 Supreme Court ruling, and how to choose an October 7 commission. Several issue sections therefore rely on the 2022 platform, the 2024 joint agreement or statements by the joint list's leader, and say so.
-- The Knesset website could not be reached from the research environment. Votes and bill records come from the official Knesset open-data tables as mirrored by Open Knesset [21, 22, 45–48].
+- The Knesset website could not be reached from the original research environment. Votes and bill records come from the official Knesset open-data tables as mirrored by Open Knesset [21, 22, 45–48]. On 7 October 2026 every vote cited here from mid-2021 to 2022 was checked against the Knesset's official per-MK vote records; two descriptions were corrected as a result [54–59].
 - No source was found confirming who formally chairs Meretz in 2026. Lasky is the only candidate filed on Meretz's behalf [1], the secretary-general heads its standing committee under the 2024 agreement [3, 7], and the party website's leadership page appears out of date [16].

@@ -71,3 +71,42 @@ Additions from verified Knesset bill data (not corrections): Lasky's bills on ma
 - Who formally chairs Meretz in 2026 remains unconfirmed. The party website's leadership page is stale (it lists Zehava Galon).
 - The April 2019 platform PDF (IDI copy) has font-mapping errors in numbers (e.g. "29%" where the 2022 text has 80%), so only its non-numeric pledges are cited.
 - The 28 June 2022 Climate Bill vote (15–0) could not be tied to a specific bill ID; the document describes it only as "a Climate Bill in a later vote".
+
+## Knesset record check (2026-10-07)
+
+Checked from a machine that can reach knesset.gov.il, by an agent that neither wrote nor fact-checked the document. Every vote the document cites from mid-2021 to November 2022 was read from the official vote-details service (`https://www.knesset.gov.il/WebSiteApi/knessetapi/Votes/GetVoteDetails/{voteId}`, all MKs in one response). Vote IDs were found through the Knesset's OData service (`KNS_PlenumVote`, all pages read), and the three May 2021 override votes were also spot-checked. Result: 50 vote records checked. All tallies and Meretz per-MK votes matched the document, except for two descriptions, which were corrected: the 7 February 2022 Citizenship Law votes, and who voted on the 2022 dissolution bills. No Contradiction or **Closest option(s)** line was affected. The 10 March 2022 series of Citizenship Law reservation votes was not re-checked one by one. Sources [54]–[59] added; the list is numbered 1–59 with no gaps, every source cited.
+
+| Vote | Vote ID | Official result | Doc said | Action |
+|---|---|---|---|---|
+| 10 May 2021, override bills (spot check) | 34099, 34100, 34101 | 41–30, 41–30, 40–30; all six Meretz MKs then serving against | 41–30 and 40–30; six against | Match |
+| 5 Jul 2021, Citizenship Law extension (confidence vote) | 35027 | 59–59, 2 abstentions, so not adopted; six Meretz MKs for | 59–59 tie; six for | Match |
+| 14 Jul 2021, Basic Law: Human Dignity override bills | 35062, 35064 | Defeated 50–62, 50–64; six against | Same | Match |
+| 28 Jul 2021, sovereignty bills | 34961, 34831 | Defeated 50–64, 47–63; six against | Same | Match |
+| 6 Oct 2021, Climate Bill (Gamliel) | 35136 | Defeated 47–55; six against | Same | Match |
+| 13 Oct 2021, medical cannabis bill (Haskel), preliminary | 35090 | Passed 54–42; six for | Same | Match |
+| 4 Nov 2021, 2021 Budget Law, 3rd reading | 35879 | Passed 61–59; six for | Same | Match |
+| 4 Nov 2021, Arrangements Law, 3rd reading | 35896 | Passed 61–57, 1 present not voting; six for | 61–57 | Match |
+| 5 Nov 2021, 2022 Budget Law, 3rd reading | 35939 | Passed 59–56, 1 present not voting; six for | 59–56 | Match |
+| 24 Nov 2021, public-housing bill | 36094 | Defeated 40–44; six against | Same | Match |
+| 24 Nov 2021, child-allowance bill | 36100 | Defeated 38–43, 1 abstention; six against | 38–43 | Match |
+| 1 Dec 2021, disability allowance bill | 36118 | Defeated 20–22; Lasky, Rozin, Raz, Rinawie Zoabi against | Same | Match |
+| 13 Dec 2021, warrantless-search bill (1st reading) | 36202 | Passed 60–58; six for | Same | Match |
+| 22 Dec 2021, bill to abolish conscription (Eichler) | 36231 | Defeated 18–32; Golan, Rozin, Raz against | Same | Match |
+| 17 Jan 2022, Security Service Law (Amendment 25), 1st reading | 36544 | 54–54, not adopted; five Meretz for, Rinawie Zoabi against | Same | Match |
+| 31 Jan 2022, Amendment 26, 1st reading | 36635 | Passed 51–48; six for. The record now shows the item under its later title, Security Service Law (Amendment No. 28 – temporary provision), 2026: the same bill item was passed as the July 2026 arrest-freeze law | 51–48; six for | Match |
+| 2 Feb 2022, Amsalem call-up bill | 36648 | Defeated 30–50; six against | Same | Match |
+| 7 Feb 2022, Citizenship Law votes | 36694; 36681, 36682, 36683 | Government bill's 1st reading (36694): passed 44–5, 43 present not voting, **no Meretz MK recorded**. Three private bills of the same name at preliminary reading: passed 73–16, 73–32, 74–17, with 5, 5 and 4 Meretz MKs against | "In votes on 7 February 2022, Meretz MKs voted against it" (the government bill) | **Corrected:** Meretz voted against the three private bills; no Meretz MK recorded on the government bill's first reading [54–57] |
+| 10 Mar 2022, Citizenship Law, 3rd reading | 37006 | Passed 45–15; Rozin, Salalha, Rinawie Zoabi, Lasky, Raz against | Same | Match |
+| 11 May 2022, minimum sentences for weapons offences (Gallant) | 37100 | Defeated 53–61; six against | Same | Match |
+| 11 May 2022, water-cannon documentation bills, preliminary | 37085, 37086, 37087 | Passed 54–0, 48–0, 48–0; six for | "voted for the bill in May" | Match |
+| 31 May 2022, Detainee and Prisoner Shackling Law, 3rd reading | 37209 | Passed 9–0; Lasky for | Lasky for | Match |
+| 6 Jun 2022, Judea and Samaria emergency regulations | 37279 | Defeated 52–58; five Meretz for, Rinawie Zoabi against | Same | Match |
+| 15 Jun 2022, disability public-transport discount bill | 37316 | Defeated 47–52, 1 present not voting; six against | 47–52 | Match |
+| 22 Jun 2022, sovereignty bills | 37375, 37376 | Defeated 46–52, 46–51; six against | Same | Match |
+| 22 Jun 2022, medical cannabis bill | 37378 | Defeated 20–29, 2 present not voting; Lasky and Raz for, Rozin present not voting, Rinawie Zoabi against | Same | Match |
+| 22 Jun 2022, dissolution bills, preliminary (11 votes) | 37342–37352 | All passed; Meretz MKs for, but Raz voted **against** in 37347 (99–2) and several Meretz MKs were recorded present without voting in others | "Meretz MKs voted in favour" | **Refined:** Raz's vote against one of the eleven noted [58] |
+| 28 Jun 2022, Climate Bill, 1st reading | 37413 | Passed 15–0; Salalha, Rozin, Raz for | Same | Match |
+| 30 Jun 2022, Dissolution Law, 3rd reading | 37524 | Passed 92–0, 5 present not voting; Lasky, Salalha, Rozin, Raz, Rinawie Zoabi for; **Golan not recorded as voting** | "Meretz MKs voted in favour" | **Refined:** five for, Golan not recorded [59] |
+| 4 Jul 2022, water-cannon documentation bill, 1st reading | 37538 | Passed 23–0; Lasky, Rozin, Raz for | "voted for the bill in ... July 2022" | Match |
+
+Also updated: #information-availability, which now says the 2021–2022 votes were checked against the official record.

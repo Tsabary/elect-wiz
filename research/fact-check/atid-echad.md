@@ -117,3 +117,30 @@ Knesset OData and the Votes API were geo-blocked; none of these could be checked
 - 25th-Knesset votes rest on press reports (table above). The single individual vote reported for the 2022–2026 term (October 2025 Gaza deal, against) comes from the interviewer's narration in a Ynet podcast write-up, not from a government record.
 - Several sources for her ministry's actions are reports of others (Peace Now via AP [37]; ToI [38]) with her office's response included; ICE [58, 60, 61] is a commercial news site whose headlines overstate (e.g. "new city" for a 350-home community), but the body text was used only for facts it states.
 - Party financing: the Party Financing Law treats parties on a joint list that form one faction as separate factions for current funding [12], which bears on why the structure is kept; no official figure for any funding to Atid Echad was found.
+
+## Knesset record check (2026-10-07)
+
+Checked from a machine that can reach knesset.gov.il, by an agent that neither wrote nor fact-checked the document. Each Knesset vote was read from the official vote-details service (`https://www.knesset.gov.il/WebSiteApi/knessetapi/Votes/GetVoteDetails/{voteId}`, all MKs in one response); vote IDs were found through the Knesset's OData service (`KNS_PlenumVote`, all pages read). Government and security-cabinet votes have no Knesset record and stay press-sourced. Result: 7 of the table's Knesset votes checked, plus the Torah Study first reading and the inquiry bill's preliminary reading; all press tallies matched except the attorney-general law, whose tally the document had not given; Strock voted for every one. One vote (the 6 July 2026 first reading of the inquiry bill) has no published per-MK record. Sources [72]–[81] added; the list is numbered 1–81 with no gaps, every source cited.
+
+| Vote | Vote ID | Official result | Doc said | Action |
+|---|---|---|---|---|
+| 24 Jul 2023, reasonableness law (Basic Law: The Judiciary, Amendment No. 3), 3rd reading | 39785 | Passed 64–0; Strock for | 64–0; "individual vote not checked" | Strock's vote added; tag changed from "Coalition context" to **Action** [72] |
+| 17–18 Jan 2025, government: hostage deal | — (cabinet) | No Knesset record | RZ ministers against (JPost) | Left press-sourced |
+| 25 Mar 2025, 2025 Budget Law, 3rd reading | 43638 | Passed 66–52; Strock for (record files it under the sitting of 24 March 2025; clause votes timed 25 March) | Tally not given; vote "could not be checked" | Tally and vote added [73] |
+| 27 Mar 2025, Judicial Selection Law (Amendment No. 4), 3rd reading | 43884 | Passed 67–1, 2 present not voting; Strock for | Not given; not listed | Added [74] |
+| 29 May 2025, government: 22 new settlements | — (cabinet) | No Knesset record | Not listed | Left press-sourced |
+| 23 Jul 2025, sovereignty summary motion | 44413 | Adopted 71–13; Strock for | 71 for (13 against in log); not listed | Tally and vote added [75] |
+| 4 Aug 2025, government: AG dismissal | — (cabinet) | No Knesset record | Not listed | Left press-sourced |
+| 9 Oct 2025, government: Gaza deal | — (cabinet) | No Knesset record | Strock against (Ynet narration) | Left press-sourced |
+| 16 Nov 2025, government: inquiry decision | — (cabinet) | No Knesset record | Not listed | Left press-sourced |
+| 26 Nov 2024, security cabinet: Lebanon ceasefire | — (cabinet) | No Knesset record | Participation unknown | Left press-sourced |
+| June 2026, Basic Law: Torah Study ("the June vote") | 46121 | Preliminary reading on 10 June 2026, passed 56–43; Strock for; Religious Zionism 6 for, Moshe Solomon against (matches JPost) | "for, by implication" | Confirmed from the record and the reading identified [78] |
+| 1 Jul 2026, Basic Law: Torah Study, 1st reading | 46181 | Passed 63–53; Strock for; Solomon against | Not in doc | Added [79] |
+| 6 Jul 2026, October 7 inquiry (Kallner) bill, 1st reading | Not found | No vote record in OData `KNS_PlenumVote` (searched by date, title keywords and the bill's item ID 2237628) or among vote-details IDs around that date. The bill record (`KNS_Bill(2237628)`) shows status "preparation for second and third reading", last updated 6 July 2026, confirming passage | 59–0; not listed | Text says no per-MK record is published [77]; added Strock's recorded vote for the bill at its preliminary reading (vote 44946, 24 Dec 2025, 53–48, 1 abstention) [76]; **Closest option(s)** now cites that vote (option unchanged) |
+| 13 Jul 2026, Basic Law: Torah Study, 3rd reading | 46248 | Passed 63–52; Strock for; all 7 Religious Zionism MKs for, including Solomon | "Her vote at the final reading was not found" | Rewritten from the record: Strock voted for at all three readings [80] |
+| 15 Jul 2026, Attorney General law, 3rd reading | 46462 | Passed 65–51; Strock for | Tally not given; not listed | Tally and vote added [81]; #issue-judicial-system summary updated |
+| 16 Jul 2026, government: Shin Bet plan | — (cabinet) | No Knesset record | Not listed | Left press-sourced |
+
+**Spot check of mirror votes (10 May 2021):** the official record gives 45–30 (settlements regularisation, 34096–34098), 41–30 and 41–30 (Basic Law: The Override, 34099–34100), 40–30 (override clause in Basic Law: Human Dignity and Liberty, 34101) and 42–29 (Disengagement Law repeal, 34102), with Strock for in each. These equal the raw-row counts the document gives, not the mirror header figures. For the consistency review: the official record's decision text for these votes is "to transfer the bill to committee for preparation for second and third reading", while the document describes them as preliminary-stage votes (meretz.md says only "referring ... to committee"); not changed here (outside the 25th-Knesset re-check), but worth a look.
+
+Also updated: #information-availability, which now says the 25th-Knesset votes were checked against the official record.
