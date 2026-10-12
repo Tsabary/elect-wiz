@@ -288,10 +288,13 @@ The party supports civil marriage, ending the Chief Rabbinate's exclusive contro
 
 ## Legal or ethical matters involving leaders {#legal}
 
-No indictments or convictions involving the party's leaders were found. One police investigation, into MK Gilad Kariv (number 3), awaits a decision by the State Attorney's Office. The other official decisions found involve the party chair, Yair Golan. Complaints by rival parties on which no official body acted, and court cases that Golan himself filed, are not listed here.
+No indictments or convictions involving the party's leaders were found. One police investigation, into MK Gilad Kariv (number 3), awaits a decision by the State Attorney's Office. One Knesset Ethics Committee decision concerns MK Naama Lazimi (number 2). The other official decisions found involve the party chair, Yair Golan. Complaints by rival parties on which no official body acted, and court cases that Golan himself filed, are not listed here.
 
 **Gilad Kariv:**
 - **Police investigation over a leaked committee protocol.** After a complaint by Knesset Speaker Amir Ohana, police questioned Kariv as a suspect in April 2025 over the suspected passing of information from a closed Knesset Foreign Affairs and Defense Committee meeting held on June 13, 2023, at which the prime minister gave a classified briefing. Kariv said the quotes published from the meeting had been approved by the military censor and contained no classified information, denied harming state security, and called the complaint political [69]. On July 9, 2025, police announced that they had completed the investigation and transferred the file to the Economic Department of the State Attorney's Office "for review and decision" [70]. In July 2026 the organization Lavi petitioned the High Court to require the Attorney General and the State Attorney to decide without further delay whether to indict him, or to say when they would decide [71]. **Status:** pending. No decision to indict or to close the file was found as of October 12, 2026.
+
+**Naama Lazimi:**
+- **Knesset Ethics Committee.** On May 12, 2026 the Ethics Committee found that Lazimi (number 2) had breached the ethics rules by her conduct at a demonstration in Tel Aviv on March 30, 2024, where she was filmed taking part in blocking a road and placing a wooden plank on a bonfire that protesters had lit on it. The committee imposed a reprimand and removed her from the Knesset plenum and its committees for two days, May 20 and May 25, 2026. In the same decision it did not hold her responsible for a post by her parliamentary adviser. She did not respond to the complaints (decision 55/25) [92]. **Status:** decided.
 
 **Yair Golan:**
 - **State Attorney's Office decision on 2023 remarks.** Following a complaint about Golan's 2023 statement, during the protests against the changes to the judicial system, that "refusal is a legitimate tool", the office of the Deputy State Attorney decided on July 29, 2025 not to order a criminal investigation, "given the circumstances of the case and in accordance with prosecution policy on these offences" [68]. **Status:** closed without an investigation.
@@ -393,6 +396,7 @@ No indictments or convictions involving the party's leaders were found. One poli
 89. High Court strikes down law shielding haredi yeshiva students from arrest over draft evasion. The Jerusalem Post, September 3, 2026. https://jpost.com/israel-news/politics-and-diplomacy/article-907553
 90. Knesset plenum votes 36635 (Security Service Law bill, integration of yeshiva students, first reading, January 31, 2022) and 41074 (motion to apply continuity to the same bill, June 11, 2024): official per-MK records. Knesset vote-details service, accessed October 12, 2026. https://www.knesset.gov.il/WebSiteApi/knessetapi/Votes/GetVoteDetails/36635 ; https://www.knesset.gov.il/WebSiteApi/knessetapi/Votes/GetVoteDetails/41074
 91. מצע מפלגת העבודה לבחירות לכנסת ה-24 (Labor platform for the March 2021 election, copy hosted by IDI). Israel Labor Party / Israel Democracy Institute, 2021. https://www.idi.org.il/media/16030/%D7%9E%D7%A4%D7%9C%D7%92%D7%AA-%D7%94%D7%A2%D7%91%D7%95%D7%93%D7%94.pdf
+92. החלטה מס' 55/25: החלטת ועדת האתיקה בקובלנות נגד חברת הכנסת נעמה לזימי. Knesset Ethics Committee, May 12, 2026. https://main.knesset.gov.il/Activity/committees/Ethics/Decisions25/Decisions25-55.pdf
 
 ## Information availability {#information-availability}
 

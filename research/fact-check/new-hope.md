@@ -72,3 +72,59 @@ All 62 original sources were opened (news pages with WebFetch; the CEC PDF downl
 - Many issue positions come from Sa'ar as foreign minister. They may reflect government policy rather than party policy (already stated in #information-availability).
 - Source [13]'s real title contains "draft dodgers" (a glossary avoid-term). It is kept only because it is the publisher's title. The body text doesn't use it.
 - Source [20] (Ynetnews) shows no publication date. It is kept as n.d.
+
+## Targeted re-run check (2026-10-12)
+
+- Document checked: content/research/en/new-hope.md (researchedAsOf 2026-10-12), after the targeted Stage 2 re-run that added the 2021–22 government record and sources 85–120
+- Checked by: Stage 3 agent (neither the Stage 2 author nor the author of the re-run) on 2026-10-12
+- Claims checked: about 165 (every changed or added claim) · Corrected: 19 · Removed: 2 · Sources replaced: 0 (9 sources added: 121–129)
+- Limited-information flag: false (unchanged: a Knesset faction with a full voting record since 2021, two terms in government and wide coverage; the re-run filled the 2021–22 gap, and the remaining gaps are the lack of a 2026 platform and of statements on prices since September 2024)
+
+Sources 85–120 were all opened, with 24, 25, 62 and 83. The Times of Israel pages opened only with a crawler user agent. The archived 2021 plans [83] were read from copies saved from the Internet Archive earlier on 12 October; the archive was offline during this check. All 16 plenum votes cited in the new text (35027, 35879, 35896, 35939, 36074, 36094, 36100, 36118, 36202, 36926, 37006, 37070, 37100, 37279, 37316, 37503) were re-read in the vote-details service: tallies, each named MK's vote and each faction label match. The bill records in [93], [95] and [102] were re-read.
+
+### Corrections
+
+| Section/anchor | Original claim | Problem | Action | Source |
+|---|---|---|---|---|
+| #issue-cost-of-living, #issue-haredi-enlistment, #track-record | Sa'ar and Elkin "are not recorded" as voting in the 2021–22 votes | True but misleading: the Knesset's record shows Elkin's membership ended on 15 June 2021 and Sa'ar's on 9 July 2021, after they became ministers | Reworded in three places: they did not vote because they had left the Knesset | [23, 121] |
+| #issue-crime-in-arab-society | The December 2021 minimum-sentence bill was "promoted by Sa'ar" | The report says Haskel proposed it and Sa'ar welcomed its passage | Reworded | [94] |
+| #issue-crime-in-arab-society | The government weapons bill (Amendment No. 143) stayed in committee | Correct, but a law named "Amendment No. 143 and Temporary Provision" was published in July 2022. Its text was read: it is a different, private bill on offences against children and helpless persons in care settings | Kept; one sentence added so the two are not confused | [93, 128] |
+| #issue-crime-in-arab-society (Closest option) | Sa'ar worked "without the Shin Bet and without detention without trial" | Stated as fact; the sources only show what he proposed | Reworded: none of the sources opened shows him proposing either | [94, 96, 97] |
+| #issue-housing | Target Price land is offered in cities with low prices "or" a low socio-economic rank | Globes joins the two with "and" and gives the thresholds | Reworded to the source, attributed | [106] |
+| #issue-housing, #track-record, #information-availability | The 2021 housing plan was "described only as far as it had been read earlier" | The plan was read in full: five points, including 100,000 rental apartments in ten years and a first-apartment plan | Added as a Formal commitment; the delivery items now compare with it; the availability note corrected | [83] |
+| #issue-housing (Closest option) | Stated without qualification | Rests on a former minister's record and a 2021 plan, not a current platform (rule 4) | "Tentative for the party today" added | [83, 105–107, 111] |
+| #leadership | Shasha-Biton "announced that she was resigning from the Knesset" | Maariv says she announced she was leaving politics and taking a time-out | Reworded | [120] |
+| #coalition | "No statement by Sa'ar himself about Ra'am from 2025 or 2026 was found" | One exists: on 22 August 2026 he said "the experiment of 2021 failed" and that a government resting on Ra'am's support cannot be repeated | Claim removed; the statement added as his explanation | [122] |
+| #coalition | The Likud petitioned to disqualify Ra'am (no outcome) | Outcome known: the CEC barred Ra'am on 23 September 2026 (18–5); the Supreme Court overturned that on 2 October 2026 | Added | [125, 126] |
+| #coalition (Change over time, Ra'am) | "No pledge … was found in the sources that could be opened" | Searched again in Hebrew and English. No pledge about Ra'am found. One dated statement found: Shasha-Biton, 25 March 2021, ruling out a government propped up by the Joint List | Label kept; text rewritten with the statement, the scope of the search and Sa'ar's explanation | [123, 122] |
+| #coalition | Change over time: term-limit and indicted-candidate bills versus running on Netanyahu's list | No source shows Sa'ar changed his position on either bill, and the reversal is already counted in the Contradiction on Netanyahu | Label removed; facts kept as context | [85, 86, 90, 92] |
+| #coalition | (missing) | Sa'ar pledged in December 2020: "I will not sit under Lapid as prime minister". New Hope joined the Bennett–Lapid rotation government, and by September 2022 he was justice minister under Prime Minister Lapid | Contradiction added, with both sources and his June 2022 remark; no statement on the pledge itself was found | [124, 24, 118, 23, 89] |
+| #track-record | The June 2022 dissolution announcement "ended the government's legislative work" | Laws were still passed on 30 June 2022, including one this document cites | Reworded: it left only days to finish pending bills | [90, 103] |
+| #track-record | Indicted-candidate bill: "No report or record of such a law being passed … was found" | Outcome can be stated: the 24th Knesset enacted one amendment to Basic Law: The Government (No. 10, July 2021) | Replaced with the finding, which also covers the term limit | [127] |
+| #track-record | Splitting the attorney general's role rests on a title search | Search repeated without the government-bill filter: only private bills, none splitting the role. Sa'ar said in September 2022 that he had not managed it in one year | His statement added | [102, 129] |
+| #track-record | Rothman's and Shaked's votes on the justices cited to Globes only | The Jerusalem Post reports the same | Second source cited | [99, 100] |
+
+### Removed claims
+
+| Section/anchor | Claim | Reason |
+|---|---|---|
+| #coalition | "No statement by Sa'ar himself about Ra'am from 2025 or 2026 was found." | A statement was found [122] |
+| #coalition | The `**Change over time:**` label on the term-limit paragraph | Not a documented change of position (rule 1); text kept |
+
+### Legal section verification
+
+The re-run did not change #legal. Checked for a new official item: Knesset Ethics Committee decision 51/25 of 12 May 2026 lists Sa'ar's ten absences beyond the quota in the summer sitting, accepts his explanation (travel abroad as foreign minister) and imposes no sanction. With no finding against him it is not a legal item under rule 5 and was not added. Buskila and Haskel appear in the same decision, also without a sanction. No other new proceeding involving Sa'ar or Elkin was found.
+
+### Joint-list and split-history verification
+
+Unchanged by the re-run. The shared facts were compared with likud-party.md (joint list and filing parties, the merger steps of March and August 2025, the 14 July 2026 agreement, the 9 August 2026 ruling, the Comptroller-vote affair): consistent.
+
+### Notes for the consistency review
+
+- Labels after this check: 4 Contradictions (sovereignty votes; October 7 inquiry; sitting under Netanyahu; sitting under Lapid) and 4 Change-over-time items (enlistment twice; the January 2025 sovereignty vote; Ra'am). Each was tested against rule 1. The Lapid item is new and rests on a December 2020 campaign statement; the lead reviewer may want to confirm the label.
+- The Ra'am item stays a Change over time: no dated pledge about Ra'am from before June 2021 was found.
+- Closest-option lines for cost of living, housing and crime in Arab society follow from evidence dated 2021 or later and are worded as tentative.
+- gov.il could not be opened from this machine either (every request refused), so the 31 October 2021 housing plan and the 14 November 2021 Jerusalem decision remain cited from press reports. Elkin's figures from his 2023 interview remain attributed to him; they were not checked against Central Bureau of Statistics data.
+- Depth: the document is now about 15,250 words, the longest in the corpus, and its Track record is about four times the length of blue-and-white's. Nothing was cut, because each added paragraph carries sourced content, but the 2021–22 ministries of the comparable parties are not covered at this depth.
+- The 2021 plans [83] exist only as Internet Archive copies, and the archive was offline for part of 12 October 2026.
+

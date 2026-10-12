@@ -245,8 +245,10 @@ Whether these votes went against a pledge could not be checked: no Ra'am platfor
 
 ## Legal or ethical matters involving leaders {#legal}
 
-No indictments, convictions or official inquiries involving the party's leaders were found. The check covered Hebrew and English news coverage for police investigations, indictments, State Comptroller findings and court rulings involving Mansour Abbas, Yoav Segalovitz, Walid Taha, Walid Alhwashla and Iman Khatib-Yassin.
+No indictments, convictions or official inquiries involving the party's leaders were found. One Knesset Ethics Committee decision, on absences from Knesset sittings, concerns Mansour Abbas and Yasser Hujirat and is listed below. The check covered Hebrew and English news coverage for police investigations, indictments, State Comptroller findings and court rulings involving Mansour Abbas, Yoav Segalovitz, Walid Taha, Walid Alhwashla and Iman Khatib-Yassin.
 
+- **Mansour Abbas, Knesset Ethics Committee (2026).** On 12 May 2026 the Ethics Committee decided on Knesset members' absences from sittings in the winter and summer sittings of the 25th Knesset's third session (decision 51/25). It found that Abbas had been absent from 10 sittings beyond the quota the law allows. Abbas did not respond. The committee noted that it was not the first time he had exceeded the quota, that its earlier decision had imposed no sanction on him, and that he chairs a party, and imposed a remark (הערה) and the loss of three days' salary [91]. **Status:** decided; sanction imposed.
+- **Yasser Hujirat (No. 6), Knesset Ethics Committee (2026).** In the same decision the committee found that Hujirat had been absent from four sittings beyond the quota in the summer sitting. Hujirat did not respond. The committee noted that it was the first time he had exceeded the quota and imposed a warning (אזהרה) [91]. **Status:** decided; sanction imposed.
 - **The party's disqualification case (2026).** The CEC barred Ra'am on 23 September 2026 [5]. On 2 October 2026 the Supreme Court unanimously overturned the decision and found the material did not meet the legal standard for barring a list [2, 4]. The case concerned the list as a whole, not criminal proceedings against any leader.
 
 ## Sources {#sources}
@@ -341,6 +343,7 @@ No indictments, convictions or official inquiries involving the party's leaders 
 88. Plenum vote 37006: Citizenship and Entry into Israel Law (Temporary Order), 2022, third reading (45 for, 15 against) (per-MK results). Knesset vote-details service (official record), 2022-03-10 (accessed 2026-10-12). https://www.knesset.gov.il/WebSiteApi/knessetapi/Votes/GetVoteDetails/37006
 89. High Court strikes down law shielding haredi yeshiva students from arrest over draft evasion. The Jerusalem Post, 3 September 2026. https://jpost.com/israel-news/politics-and-diplomacy/article-907553
 90. רע"מ (party page: election results, candidate lists and platforms). Israel Democracy Institute, accessed 2026-10-12. https://www.idi.org.il/policy/parties-and-elections/parties/raam/
+91. החלטה מס' 51/25: החלטת ועדת האתיקה בענין היעדרויות חברי הכנסת מישיבות הכנסת בכנס החורף ובכנס הקיץ של המושב השלישי של הכנסת ה-25. Knesset Ethics Committee, 12 May 2026. https://main.knesset.gov.il/Activity/committees/Ethics/Decisions25/Decisions25-51.pdf
 
 ## Information availability {#information-availability}
 
