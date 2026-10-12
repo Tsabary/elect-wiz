@@ -43,7 +43,7 @@ Further down, the filing lists this party's Bruria Naim Arman (No. 11), Amir Str
 - **Keren Terner Eyal** is a former director-general of the Finance and Transportation ministries [8, 18].
 - **Liran Avishar Ben-Horin** is a former director-general of the Communications Ministry [18]. She and MK Meirav Cohen (Yesh Atid) lead the list's policy work on women [19].
 - **Michal Hirsch Negri** is a former director-general of the Ra'anana municipality [18].
-- **Eitan Ginzburg** is a former Blue and White Knesset member [20]. Ynetnews notes he is one of two openly gay candidates on the slate [21].
+- **Eitan Ginzburg** is a sitting Knesset member. The Jerusalem Post describes him as a former Blue and White lawmaker [20]; Knesset records still list him as a current member of the Blue and White – National Unity faction, which he has sat in since July 8, 2025 [93]. Ynetnews notes he is one of two openly gay candidates on the slate [21].
 - **Yonatan Shalev** (23) co-founded "Shoulder to Shoulder," a group of young Israelis and reservists, after a close friend was killed in the war. He would be the youngest Knesset member ever [22].
 - **Bruria Naim Arman** is the party's director-general; **Amir Strogo** is a former CEO of the youth organization Aharai; **Nissan Zeevi** is an activist from the north [18].
 
@@ -59,7 +59,7 @@ When he presented the slate on September 6, 2026, Bennett said the candidates we
 - **Opening imports while supporting farmers.** Tariffs would be cut gradually (the plan cites 212% on milk powder) and replaced with direct support for farmers.
 - **Kosher certification.** International kosher certifications would be recognised automatically.
 
-It sets a goal of lowering the average shopping basket to the OECD level within three years [23].
+It sets a goal of lowering the average shopping basket to the OECD level within three years; the plan page's summary puts this as cutting food prices by 30% within three years [23].
 
 **Statement:** When the plan was presented in July 2026, the party said that bringing food prices down to the OECD average would save a family about NIS 8,000 a year. The plan as reported also requires suppliers with a monopoly to sell off brands, and requires the Shufersal supermarket chain to sell stores in areas where it dominates. Bennett said: "Lowering prices requires courage. We will wage a struggle against the strongest monopolies and pressure groups in the country" [24]. The Jerusalem Post report on the plan mentions no VAT or income-tax cuts [24]. In February 2026 Bennett promised to "break monopolies, break up cartels, open the market" [25].
 
@@ -75,7 +75,7 @@ It sets a goal of lowering the average shopping basket to the OECD level within 
 - stronger neighbourhood policing;
 - legislation to free the police from political pressure.
 
-The plan claims that crime fell by 30% under Bennett's 2021–2022 government; this is the party's own figure and was not independently verified for this document [28]. The plan does not mention holding suspects without trial, and the page reviewed did not mention investment in Arab communities [28].
+The plan sets a target of a 30% drop in murders within four years [28]. It also says that crime fell by 30% under Bennett's 2021–2022 government; this is the party's own figure and was not independently verified for this document [28]. The plan does not mention holding suspects without trial, and the page reviewed did not mention investment in Arab communities [28].
 
 **Formal commitment (Negev):** A separate plan for the Negev, where many Bedouin citizens live, includes the following [29]:
 - declaring the region an emergency zone;
@@ -88,11 +88,11 @@ The plan claims that crime fell by 30% under Bennett's 2021–2022 government; t
 
 The plan also offers resilience centres, industrial zones, incentives for Hebrew study and pre-army academies for young people. It sums up its approach as: "whoever integrates will benefit, and whoever does not will meet uncompromising enforcement" [29].
 
-**Action:** The coalition that Bennett headed in 2021 was formed with support from Ra'am, an Arab party. The coalition agreements committed to a NIS 30 billion five-year plan to close gaps in Arab, Druze, Circassian and Bedouin society, a NIS 2.5 billion plan against crime, and recognition of three Bedouin communities [16]. From late 2021 the police ran an enforcement operation called "Safe Route" (מסלול בטוח) against crime in Arab society. In January 2022 a senior police officer told Maariv that its first months had produced 284 searches and 242 arrests, and the seizure of 58 luxury vehicles, 76 weapons and NIS 20 million in cash [30].
+**Action:** The coalition that Bennett headed in 2021 was formed with support from Ra'am, an Arab party. The coalition agreements committed to a NIS 30 billion five-year plan to close gaps in Arab, Druze, Circassian and Bedouin society, a NIS 2.5 billion plan against crime, and recognition of three Bedouin communities [16]. On October 24, 2021, the cabinet Bennett headed approved both plans: NIS 29.5 billion over five years for developing Arab society, and NIS 2.4 billion over five years against crime in Arab society, of which NIS 1.4 billion was for law enforcement, including new police stations, and NIS 1 billion for civilian programmes. Bennett said the goal was "to reduce the gaps in education, welfare, women's employment and the economic-municipal sphere" [85]. From late 2021 the police ran an enforcement operation called "Safe Route" (מסלול בטוח) against crime in Arab society. In January 2022 a senior police officer told Maariv that its first months had produced 284 searches and 242 arrests, and the seizure of 58 luxury vehicles, 76 weapons and NIS 20 million in cash [30].
 
 **Statement:** In October 2026 Bennett and Lapid also pledged that, if elected, they would ask the head of the Shin Bet to examine the agency's involvement in the case of Haymanot Kasau, a girl missing since February 2024 [31].
 
-**Closest option(s):** Use extraordinary measures, including the Shin Bet (`emergency-powers-shin-bet`). The plans clearly support bringing in the Shin Bet, but no position was found on the new power to hold suspects without trial that this option also includes. In government, Bennett's coalition also committed large sums to Arab communities (`invest-in-arab-communities-first`), but the current plans focus on enforcement.
+**Closest option(s):** Use extraordinary measures, including the Shin Bet (`emergency-powers-shin-bet`). The plans clearly support bringing in the Shin Bet, but no position was found on the new power to hold suspects without trial that this option also includes. In government, Bennett's cabinet also approved large sums for Arab communities alongside policing (`invest-in-arab-communities-first`), but the current plans focus on enforcement.
 
 ### Gaza Strip policy {#issue-gaza}
 
@@ -100,11 +100,13 @@ The plan also offers resilience centres, industrial zones, incentives for Hebrew
 
 **Statement:** In August 2026 Bennett said: "We will remove Turkey and Qatar from Gaza and bring Egypt in instead, while preserving freedom of action in Gaza" [33]. On August 1, 2026, he opposed the "Board of Peace" framework, which sets out how Hamas would disarm and the army would withdraw. He said "Hamas is growing stronger rapidly," that "we must not allow agreements to be signed over our heads, and we must not budge a centimeter from the red line until Hamas is disarmed and the weapons are removed from Gaza," and warned against Hamas storing its weapons "in warehouses when the keys are handed over to Qatar" [34]. In June 2026 he said of Hamas's military build-up: "You have to prevent the monster from being built to begin with" [35].
 
+**Action:** While Bennett was prime minister, Israel raised the number of entry permits for workers and traders from Gaza. On October 20, 2021, it authorised 3,000 more, for a total of 10,000. The Defense Ministry body that coordinates civilian affairs said the decision "was made by the political echelon following a security assessment" and depended on long-term stability being kept [87]. This was before the October 7 attack; the party's current plan does not propose such steps [32].
+
 **Closest option(s):** Stay where the army is now until Hamas disarms (`hold-positions-disarmament-first`). The threat to disarm Hamas by force if needed also overlaps with `defeat-hamas-then-security-control`, but the party does not call for a return to full-scale war now.
 
 ### Haredi military enlistment {#issue-haredi-enlistment}
 
-**Formal commitment:** The party's "Servants Law" plan would require military service or full civilian national service, and would tie state benefits to it. People who complete full national service would get the same benefits as those who serve in the army [36]. For those who do not serve, the plan would cancel the stipend for married yeshiva students (kollel), daycare subsidies, discounts on municipal property tax (arnona) and National Insurance discounts [36]. For those who serve, it promises:
+**Formal commitment:** The party's "Those Who Serve Law" plan would require military service or full civilian national service, and would tie state benefits to it. People who complete full national service would get the same benefits as those who serve in the army [36]. For those who do not serve, the plan would cancel the stipend for married yeshiva students (kollel), daycare subsidies, discounts on municipal property tax (arnona) and National Insurance discounts [36]. For those who serve, it promises:
 - for active reservists, a benefit worth NIS 1 million toward a first home, free daycare, after-school programmes and summer school, half-price electricity, water, municipal property tax and vehicle testing, three years of free public transport and a free first degree;
 - for those who finish regular service, NIS 1,000 a month toward daycare for children up to age 3, free public transport for three years (five for combat soldiers) and a free first degree [36].
 
@@ -120,7 +122,11 @@ The plan reviewed does not set a number of exemptions for full-time Torah schola
 
 He has also described a gentler route. In May 2026 he promised to bring "our Haredi brothers into employment and military service with love and Israeli solidarity" and to set up well-funded state-Haredi schools [44]. In September 2026 he proposed Haredi "hesder yeshivas" along Israel's borders that would combine Torah study with military service [45].
 
-**Closest option(s):** Require everyone to serve, with sanctions on those who refuse (`universal-service-with-sanctions`). Bennett's statements reject any exemption quota, so his position is stricter than this option's allowance for a small number of Torah scholars.
+**Action:** As prime minister, Bennett led a government that advanced a bill lowering the age at which yeshiva students are exempted from service from 24 to 21, with the stated aim of letting them start work earlier. It failed on a 54–54 tie on January 17, 2022, and passed its first reading 51–48 on January 31, 2022; the Knesset record shows Bennett voting for it both times [80, 81, 94]. He said then: "Lowering the exemption age to 21 will allow young Haredim to acquire a profession at a logical age, work at quality jobs and provide for their families" [81]. The bill was described as a temporary step until a fuller arrangement, and it did not complete its readings before the Knesset dissolved [9, 81].
+
+**Change over time:** In government in January 2022, Bennett backed a bill that kept the exemption for yeshiva students and lowered its age [80, 81]. In 2026 he pledges enlistment for all "without quotas and without tricks" and an end to state money for those who do not serve [36, 37, 39]. The two positions are four years apart, with the October 7 attack and the war in between; no statement by Bennett explaining the difference was found.
+
+**Closest option(s):** Require everyone to serve, with sanctions on those who refuse (`universal-service-with-sanctions`). This rests on the 2026 plan and statements. Bennett's statements reject any exemption quota, so his position is stricter than this option's allowance for a small number of Torah scholars.
 
 ### Housing {#issue-housing}
 
@@ -151,9 +157,9 @@ He has also described a gentler route. In May 2026 he promised to bring "our Har
 
 ### Judea and Samaria {#issue-judea-samaria}
 
-**Statement:** In a recording from a closed meeting, published on September 7, 2025, Bennett said: "I oppose a Palestinian state, I oppose giving up land... I support maximum security and minimum friction with the Palestinians." He added that he supports "autonomy for the Palestinians, that they manage themselves, but they cannot receive sovereignty over the borders" [47, 48]. In September 2026 The Jerusalem Post reported that Bennett "remains adamantly opposed to a Palestinian state" and supports settlement in Judea and Samaria [45]. After an attack on the settlement of Gilad Farm (Havat Gilad) in July 2026, he said "terror must be eradicated with an iron fist" [49]. Candidate Yonatan Shalev (No. 10) said "we're not going to pass Israeli territory to anyone," and that reducing violence by settlers is a priority alongside security [22].
+**Statement:** In a recording from a closed meeting, published on September 7, 2025, Bennett said: "I oppose a Palestinian state, I oppose giving up land... I support maximum security and minimum friction with the Palestinians." He added that he supports "autonomy for the Palestinians, that they manage themselves, but they cannot receive sovereignty over the borders" [47, 48]. In September 2026 The Jerusalem Post reported that Bennett "remains adamantly opposed to a Palestinian state" and supports settlement in Judea and Samaria [45]. After an attack on the settlement of Gilad Farm (Havat Gilad) in July 2026, he said "terror must be eradicated with an iron fist" [49]. In an interview published on July 3, 2026, he said: "I am against a Palestinian state, period. It is a red line." He described his plan as settlement under the law in Area C, with the Palestinian Authority running Areas A and B under permanent full Israeli security control, and said this was the same as the existing arrangement [92]. Candidate Yonatan Shalev (No. 10) said "we're not going to pass Israeli territory to anyone," and that reducing violence by settlers is a priority alongside security [22].
 
-**Action:** In May 2021, during coalition talks, Bennett told his party that as prime minister he would continue the existing policy: not applying sovereignty to territory or setting up new settlements, but also not freezing construction in existing communities or removing any [50]. In June 2022 his coalition could not pass the renewal of the regulations that apply Israeli law to Israelis living in Judea and Samaria; this was one of the triggers for dissolving the Knesset [9].
+**Action:** In May 2021, during coalition talks, Bennett told his party that as prime minister he would continue the existing policy: not applying sovereignty to territory or setting up new settlements, but also not freezing construction in existing communities or removing any [50]. On October 27, 2021, the Defense Ministry's planning council advanced about 3,000 homes in settlements, roughly half of them for final approval, in the first such decision under his government; approval of about 1,300 homes for Palestinians was expected to be discussed the following week [86]. In June 2022 his coalition could not pass the renewal of the regulations that apply Israeli law to Israelis living in Judea and Samaria; this was one of the triggers for dissolving the Knesset [9].
 
 **No formal commitment found.** The party's national security plan reviewed for this document has no section on a Palestinian state or on applying Israeli sovereignty to territory [32].
 
@@ -199,7 +205,7 @@ No statement was found in which Bennett discusses alternative ways of choosing t
 
 **Action:** Bennett's government advanced a kosher-certification reform, approved for final votes by the Knesset's religious services committee on October 27, 2021. It lets private bodies issue certification under Rabbinate or rabbinic standards, with the Rabbinate acting as regulator; it does not allow Reform, Conservative or secular certification [26].
 
-**Change of position:** In 2015, as leader of The Jewish Home, Bennett opposed state recognition of same-sex couples ("Recognition — no; rights — yes"). His current party proposes a civil partnership open to same-sex couples [21].
+**Change over time:** In 2015, as leader of The Jewish Home, Bennett opposed state recognition of same-sex couples ("Recognition — no; rights — yes"). His current party proposes a civil partnership open to same-sex couples [21].
 
 **Closest option(s):** Keep the Rabbinate but let people choose alternatives, with local decisions on Shabbat (`more-choice-local-decisions`).
 
@@ -208,10 +214,15 @@ No statement was found in which Bennett discusses alternative ways of choosing t
 ### Prime minister's term limit and governance {#other-term-limits-and-governance}
 
 **Statement:**
-- **Term limits.** In September 2025 Bennett said the first topic his cabinet would discuss would be a basic law limiting a prime minister to two terms or eight years, followed by an eight-year break before running again. He said the limit would not apply retroactively and that joining his government would require accepting it [55]. Responding, Benny Gantz welcomed the position but said that Bennett, as prime minister in 2021, had opposed similar legislation Gantz promoted; this is Gantz's account and was not checked against a Knesset record for this document [55]. Bennett has said "power corrupts, and absolute power for long periods absolutely corrupts" [25].
+- **Term limits.** In September 2025 Bennett said the first topic his cabinet would discuss would be a basic law limiting a prime minister to two terms or eight years, followed by an eight-year break before running again. He said the limit would not apply retroactively and that joining his government would require accepting it [55]. Bennett has said "power corrupts, and absolute power for long periods absolutely corrupts" [25].
+- **Term limits in government.** **Action:** On November 22, 2021, while Bennett was prime minister, a government bill to limit a prime minister to eight years in office passed its first reading 66–48, and the Knesset record shows Bennett voting for it [82, 83]. The bill, sponsored by Justice Minister Gideon Sa'ar, would not have applied retroactively [83]. It did not become law: Knesset records list it as still awaiting its second and third readings [84]. In September 2025 Benny Gantz welcomed Bennett's pledge but wrote that a term-limit law was one of the first he had tried to advance in that government and that "regrettably, the prime minister at the time, Naftali Bennett, opposed it" [55]. This is Gantz's account. The Knesset record shows Bennett voting for the government's term-limit bill at first reading [82]; no record of Bennett voting against a term-limit bill was found, and no response by Bennett to Gantz's statement was found.
 - **Running government.** In June 2026 he proposed closing seven ministries, handing more power to local authorities and setting measurable targets for ministers [61].
 - **Political appointments.** In February 2026 he proposed a temporary review of recent political appointments [25].
 - **Netanyahu.** In September 2026 he said of Prime Minister Netanyahu: "I am not a hater of Bibi... I think 30 years is enough," and that Netanyahu "should be pardoned" [45].
+
+### Citizenship and Entry Law {#other-citizenship-law}
+
+**Action:** The Citizenship and Entry into Israel Law is a temporary law, first passed in 2003, that prevents Palestinians from Judea and Samaria and Gaza from gaining citizenship or permanent residency through marriage to Israeli citizens [91]. In early July 2021 the Bennett government's request to extend it failed on a 59–59 tie, with Bennett voting for the extension [90]. On March 10, 2022, the Knesset passed the law again by 45–15 with opposition votes, and Bennett voted for it; the coalition parties Meretz and Ra'am voted against [89, 91].
 
 ### Education {#other-education}
 
@@ -282,7 +293,7 @@ Bennett said in September 2026: "The time has come to pass these laws" [21].
 
 **Statement:**
 - **Troop shortage.** Bennett says the IDF is short of about 20,000 soldiers. He warned in September 2026 that "the shortage of soldiers is costing us soldiers' lives" [38, 39].
-- **Benefits for reservists.** The party promises reservists the housing, childcare and utility benefits described in the Servants Law plan [36].
+- **Benefits for reservists.** The party promises reservists the housing, childcare and utility benefits described in the Those Who Serve Law plan [36].
 - **The "Deri Law."** In October 2026 he proposed a "Deri Law," under which anyone who avoided IDF service, or encouraged others to, could not sit in the security cabinet. He called it "one of our core conditions for the next government" [39]. The name refers to Shas leader Aryeh Deri.
 
 ### Foreign relations and Israel's image abroad {#other-foreign-relations}
@@ -300,13 +311,13 @@ Bennett said in September 2026: "The time has come to pass these laws" [21].
 - **The "Deri Law" as a condition (October 2026).** On October 6, 2026, Bennett made the "Deri Law" a core condition for any coalition [39].
 - **The northern border law as a condition (September 2026).** On September 23, 2026, he committed to making the law to rebuild communities near the Lebanese border a condition for joining a government [68].
 - **Term limits and the inquiry as conditions (September 2025).** He said joining his government would require accepting both [55].
-- **Netanyahu and Likud.** In June 2026 Lapid, speaking at a press conference of the list's Knesset faction, said the list would gladly form a government with Eisenkot, Liberman, Golan "and hopefully, even with Likud, after Netanyahu loses," but "will not sit" with Netanyahu [69]. No equivalent statement by Bennett himself was found. He said he is "not a hater of Bibi" [45].
+- **Netanyahu and Likud.** In June 2026 Lapid, speaking at a press conference of the list's Knesset faction, said the list would gladly form a government with Eisenkot, Liberman, Golan "and hopefully, even with Likud, after Netanyahu loses," but "will not sit" with Netanyahu [69]. In an interview published on July 3, 2026, Bennett said: "I am with Lapid until the end, I will not sit with Netanyahu" [92]. In September 2026 he said he is "not a hater of Bibi" and that Netanyahu "should be pardoned" [45].
 - **The change bloc (September 26, 2026).** Bennett and Lapid met with Eisenkot (Yashar), Liberman (Yisrael Beytenu) and Yair Golan (The Democrats). They signed a declaration committing to a "Zionist, statesmanlike" government, to not attacking each other, and to joint working groups [53, 70]. No candidate for prime minister was agreed [53]. Leaders of Arab parties were not invited [71].
 
 **Track record on coalition pledges:**
 - **2018: the defense-portfolio ultimatum.** In November 2018 Bennett demanded the defense portfolio and threatened to take The Jewish Home out of Netanyahu's coalition. He did not get the portfolio, but announced on November 19 that he would stay in the government, saying he wanted to believe the prime minister would keep his word [17].
 - **2021: Lapid and Ra'am.** **Contradiction:** In May 2021, during fighting with Hamas in Gaza, Bennett said he would not form a coalition with Lapid because it would need Ra'am's support [72]. On May 30, 2021, he announced he was going into government with Lapid [72]. The coalition he led was formed with Ra'am, whose agreement included a NIS 30 billion plan for Arab society [16]. Bennett said in September 2026: "I did break a promise. That's just a fact." He explained that the choice was between yet more elections and forming a government with Ra'am's Mansour Abbas [45].
-- **Arab parties then and now.** **Contradiction:** Bennett now pledges to rely only on Zionist parties and not to sit with Ra'am [7, 45], but in 2021–2022 he led a government that relied on Ra'am [16]. He attributes the change to October 7 [45].
+- **Arab parties then and now.** **Change over time:** Bennett now pledges to rely only on Zionist parties and not to sit with Ra'am [7, 45], but in 2021–2022 he led a government that relied on Ra'am [16]. He attributes the change to October 7 [45].
 
 ## Track record {#track-record}
 
@@ -315,10 +326,14 @@ Bennett said in September 2026: "The time has come to pass these laws" [21].
 **Bennett's 2021–2022 government, promise against delivery:**
 - **Forming a government without new elections.** Delivered. Bennett said in May 2021 that Netanyahu did not have a government and that the alternative was repeated elections [72]. The coalition of eight parties, from right to left plus Ra'am, held 61 of 120 seats and took office in June 2021 [16].
 - **Not relying on Ra'am.** Not kept (see "Coalition stance") [45, 72].
+- **Passing a state budget.** Delivered. On November 4, 2021, the Knesset passed the 2021 budget law 61–59, with Bennett voting for it [88].
+- **Arab society.** The cabinet approved the five-year development plan and the plan against crime on October 24, 2021 [85].
+- **Limiting a prime minister's term.** Not completed. The government's bill passed its first reading in November 2021 with Bennett's vote, but did not become law [82, 84].
+- **Haredi enlistment.** Not completed. The bill lowering the exemption age passed only a first reading [80, 81].
 - **"We won't relinquish territory and we won't harm the Jewish identity of the State of Israel"** (his stated red lines, May 30, 2021) [72]. No territory was handed over. His stated policy was no new settlements, no applying sovereignty to territory, and no freeze on building in existing communities [50].
 - **Reforming kosher certification.** Advanced. The reform, approved for final votes in committee in October 2021, opened kosher certification to private bodies from January 2023 [26].
 - **Lowering the cost of living.** A NIS 4.4 billion plan was presented in February 2022, combining tax credits for working parents with import-duty cuts. Opposition MK Moshe Gafni called it "too little, too late," and Labor MK Naama Lazimi, from a coalition party, said the public deserved "a genuine plan and not crumbs" [27].
-- **Crime in Arab society.** The coalition committed NIS 2.5 billion to fighting crime, plus a five-year development plan [16]. The police's "Safe Route" operation produced hundreds of arrests in its first months, according to a senior police officer [30]. The party now claims crime fell by 30% [28]; this is the party's own claim and was not independently verified for this document.
+- **Crime in Arab society.** The coalition agreements committed NIS 2.5 billion to fighting crime, plus a five-year development plan [16]. The police's "Safe Route" operation produced hundreds of arrests in its first months, according to a senior police officer [30]. The party now says crime fell by 30% [28]; this is the party's own figure and was not independently verified for this document.
 - **Stability of the government.** Not achieved. The coalition lost its majority after Yamina lawmakers left. It could not renew the Judea and Samaria regulations, and the Knesset dissolved on June 30, 2022, about a year after the government took office [9].
 
 **Since 2022.** Bennett has not been in the Knesset. He announced in June 2022 that he would not run again [9], then returned in 2025 with a new party [1]. The party has no voting record. Its outgoing Knesset work is done through its partner Yesh Atid's lawmakers, whose record is not covered in this document [69].
@@ -327,7 +342,8 @@ Bennett said in September 2026: "The time has come to pass these laws" [21].
 
 No indictments or convictions involving the party's leaders were found. The official findings below are State Comptroller fines and a court ruling.
 
-- **State Comptroller fines over primary-campaign funding (2013 and 2015).** In a report on party primaries published in August 2013, State Comptroller Joseph Shapira fined Bennett NIS 65,000. The report found that he exceeded the spending limit, did not list all expenses in his account (including fees for a private investigator gathering information on the activity of MK Nissan Slomiansky during the Jewish Home primaries) and did not provide authorisations for all expenses made in his name [77]. In a report published on December 2, 2015, on the primaries held in December 2014–January 2015, the State Comptroller fined Bennett NIS 30,000, finding that his expenses exceeded the legal spending limit and his income exceeded the legal limits [78].- **The 2022 High Court ruling on Bennett's home.** On May 18, 2022, the High Court of Justice ruled on petitions about protests near Bennett's private home in Ra'anana, where he lived while prime minister. Justice Alroni described "a bleak picture of clearly improper management" by state bodies in the building works at the home, including late legal opinions and work done without the required planning procedures [73]. The ruling criticised the conduct of state authorities, not Bennett personally; Ynet's report does not describe any finding of personal fault against him [73]. The petitions were partly accepted, with changes to the rules for noise from protests [73].
+- **State Comptroller fines over primary-campaign funding (2013 and 2015).** In a report on party primaries published in August 2013, State Comptroller Joseph Shapira fined Bennett NIS 65,000. The report found that he exceeded the spending limit, did not list all expenses in his account (including fees for a private investigator gathering information on the activity of MK Nissan Slomiansky during the Jewish Home primaries) and did not provide authorisations for all expenses made in his name [77]. In a report published on December 2, 2015, on the primaries held in December 2014–January 2015, the State Comptroller fined Bennett NIS 30,000, finding that his expenses exceeded the legal spending limit and his income exceeded the legal limits [78]. Current status: both matters ended with the fines.
+- **The 2022 High Court ruling on Bennett's home.** On May 18, 2022, the High Court of Justice ruled on petitions about protests near Bennett's private home in Ra'anana, where he lived while prime minister. Justice Alroni described "a bleak picture of clearly improper management" by state bodies in the building works at the home, including late legal opinions and work done without the required planning procedures [73]. The ruling criticised the conduct of state authorities, not Bennett personally; Ynet's report does not describe any finding of personal fault against him [73]. The petitions were partly accepted, with changes to the rules for noise from protests [73]. Current status: decided; no further proceedings were found.
 - **No findings were found** against Keren Terner Eyal or Liran Avishar Ben-Horin.
 
 **What was checked:** news coverage of Bennett's 2021–2022 term and of the 2025–2026 campaign (The Times of Israel, The Jerusalem Post, Ynet, Kipa, Arutz Sheva), court reporting on Ynet, and reporting on State Comptroller reports on primary funding. The State Comptroller's own reports could not be opened online, so the fines above rest on news reporting of those reports.
@@ -369,7 +385,7 @@ No indictments or convictions involving the party's leaders were found. The offi
 33. Bennett, Lapid unveil election blueprint to overhaul Israel's security and diplomacy. Ynetnews, 2026-08-19. https://www.ynetnews.com/article/hkqoql7vmx
 34. Eisenkot, Likud clash over BoP framework for Hamas disarmament, IDF withdrawal from Gaza. The Jerusalem Post, 2026-08-01. https://www.jpost.com/israel-news/politics-and-diplomacy/article-904244
 35. Naftali Bennett warns Israel-US ties are weakening, urges overhaul of public diplomacy. The Jerusalem Post, 2026-06-23. https://www.jpost.com/israel-news/politics-and-diplomacy/article-900306
-36. ״ביחד נתקן״ – חוק המשרתים (Servants Law plan). Together (ביחד) party, n.d., accessed 2026-10-06. https://be-yahad.org.il/plans/meshartim/
+36. ״ביחד נתקן״ – חוק המשרתים (Those Who Serve Law plan). Together (ביחד) party, n.d., accessed 2026-10-06. https://be-yahad.org.il/plans/meshartim/
 37. Bennett: 'The government of October 7 destroyed, and the government of October 27 will fix'. Ynetnews, 2026-09-06. https://www.ynetnews.com/article/a3nbn7uxe
 38. Bennett warns IDF faces 'collapse' over troop shortage. Ynetnews, 2026-09-29. https://www.ynetnews.com/article/hyqdolyqfe
 39. Bennett unveils 'Deri Law': draft dodgers would be barred from Israel's security cabinet. Ynetnews, 2026-10-06. https://www.ynetnews.com/article/hjculmgjge
@@ -393,7 +409,7 @@ No indictments or convictions involving the party's leaders were found. The offi
 57. Bennett: 'Direct line' connects flydubai attempted hijacking, Oct. 7 after gov. trades blame. The Jerusalem Post, 2026-10-04. https://www.jpost.com/israel-news/politics-and-diplomacy/article-910567
 58. רק ביחד נתקן את יחסי הדת והמדינה (religion and state plan). Together (ביחד) party, n.d., accessed 2026-10-06. https://be-yahad.org.il/plans/religionandstate/
 59. Ex-PM Bennett backs public transport on Shabbat, civil marriage, sparking Haredi backlash. The Times of Israel, 2026-04-20. https://www.timesofisrael.com/liveblog_entry/ex-pm-bennett-backs-public-transport-on-shabbat-civil-marriage-sparking-haredi-backlash/
-60. Launching joint slate, Bennett and Lapid promise 'the era of division is over'. The Times of Israel, 2026-04-26. https://www.timesofisrael.com/launching-joint-slate-bennett-and-lapid-promise-the-era-of-division-is-over/
+60. Launching joint slate, Bennett and Lapid promise 'the era of division is over'. The Times of Israel, 2026-04-27. https://www.timesofisrael.com/launching-joint-slate-bennett-and-lapid-promise-the-era-of-division-is-over/
 61. 'New Covenant': Bennett outlines plan to 'build Israel from scratch' in every major area of life. The Jerusalem Post, 2026-06-23. https://www.jpost.com/israel-news/politics-and-diplomacy/article-900302
 62. Bennett: Next gov't will declare national education emergency, address teacher shortage. The Jerusalem Post, 2026-08-24. https://www.jpost.com/israel-election-2026/article-906457
 63. רק יחד נביא שיויון זכויות לקהילה הגאה (LGBT equality plan). Together (ביחד) party, n.d., accessed 2026-10-06. https://be-yahad.org.il/plans/pride/
@@ -413,13 +429,28 @@ No indictments or convictions involving the party's leaders were found. The offi
 77. Bennett, Danon, Peretz, and Other Knesset Members Fined for Expense Reporting Violations (reporting the State Comptroller's report, via Ynet). The Algemeiner, 2013-08-22. https://www.algemeiner.com/2013/08/22/bennett-danon-peretz-and-other-knesset-members-fined-for-expense-reporting-violations/
 78. דו"ח המבקר: קנס כבד לשר בנט, חשד לפלילים בהתנהלות ח"כ חזן. Kipa, 2015-12-02. https://www.kipa.co.il/חדשות/%d7%93%d7%95%d7%97-%d7%94%d7%9e%d7%91%d7%a7%d7%a8-%d7%a7%d7%a0%d7%a1-%d7%9b%d7%91%d7%93-%d7%9c%d7%a9%d7%a8-%d7%91%d7%a0%d7%98-%d7%97%d7%a9%d7%93-%d7%9c%d7%a4%d7%9c%d7%99%d7%9c%d7%99%d7%9d/
 79. Knesset database: factions 1077 (Yamina), 941 (The New Right) and 948 (Yamina). Knesset (official open-data service), n.d., accessed 2026-10-07. https://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_Faction()?$filter=FactionID%20eq%201077%20or%20FactionID%20eq%20941%20or%20FactionID%20eq%20948&$format=json
+80. Knesset plenum vote 36635: Security Service Law bill (Amendment No. 26, integration of yeshiva students), first reading. Knesset (vote record), 2022-01-31. https://www.knesset.gov.il/WebSiteApi/knessetapi/Votes/GetVoteDetails/36635
+81. After previous failure, Haredi army draft bill passes its first reading. The Times of Israel, 2022-01-31. https://www.timesofisrael.com/after-previous-failure-haredi-army-draft-bill-passes-its-first-reading/
+82. Knesset plenum vote 36074: Basic Law: The Government (amendment – maximum period in office as prime minister), first reading. Knesset (vote record), 2021-11-22. https://www.knesset.gov.il/WebSiteApi/knessetapi/Votes/GetVoteDetails/36074
+83. Knesset votes to cap PM terms in first reading. Ynetnews, n.d. (reports the vote of 2021-11-22), accessed 2026-10-12. https://www.ynetnews.com/article/rk4ucdfdf
+84. KNS_Bill 2165126: government bill, Basic Law: The Government (Amendment No. 11), 24th Knesset (status: awaiting plenum debate before second and third readings). Knesset (official open-data service), n.d., accessed 2026-10-12. https://www.knesset.gov.il/OdataV4/ParliamentInfo/KNS_Bill?$filter=Id%20eq%202165126
+85. Cabinet okays NIS 32 billion to develop Arab Israeli economy, fight crime. The Times of Israel, 2021-10-24. https://www.timesofisrael.com/cabinet-okays-over-nis-32-billion-to-develop-arab-israeli-economy-fight-crime/
+86. Israel approves some 3,000 new settler homes, according to settlement monitor (Associated Press). PBS NewsHour, 2021-10-27. https://www.pbs.org/newshour/world/israel-approves-some-3000-new-settler-homes-according-to-settlement-monitor
+87. Israel authorizes 3,000 additional entry permits for Gaza workers. The Times of Israel, 2021-10-20. https://www.timesofisrael.com/israel-authorizes-3000-additional-entry-permits-for-gaza-workers/
+88. Knesset plenum vote 35879: Budget Law for the 2021 fiscal year, third reading. Knesset (vote record), 2021-11-04. https://www.knesset.gov.il/WebSiteApi/knessetapi/Votes/GetVoteDetails/35879
+89. Knesset plenum vote 37006: Citizenship and Entry into Israel Law (Temporary Provision), 2022, third reading. Knesset (vote record), 2022-03-10. https://www.knesset.gov.il/WebSiteApi/knessetapi/Votes/GetVoteDetails/37006
+90. Knesset plenum vote 35027: order extending the Citizenship and Entry into Israel Law (Temporary Provision). Knesset (vote record), 2021-07-05. https://www.knesset.gov.il/WebSiteApi/knessetapi/Votes/GetVoteDetails/35027
+91. Knesset passes controversial citizenship law in third reading. JNS, 2022-03-13. https://www.jns.org/knesset-passes-controversial-citizenship-law-in-third-reading/
+92. בנט: "אני עם לפיד עד הסוף, לא אשב עם נתניהו. לשבת תחת איזנקוט? מה שצריך להצלת המדינה". Ynet, 2026-07-03. https://www.ynet.co.il/news/120andone/article/s100tqclqmg
+93. Knesset database: current members of the Blue and White – National Unity faction (FactionID 1110). Knesset (official open-data service), n.d., accessed 2026-10-12. https://www.knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=FactionID%20eq%201110%20and%20IsCurrent%20eq%20true
+94. Knesset plenum vote 36544: Security Service Law bill (Amendment No. 25, integration of yeshiva students), first reading (not passed, 54–54). Knesset (vote record), 2022-01-17. https://www.knesset.gov.il/WebSiteApi/knessetapi/Votes/GetVoteDetails/36544
 
 ## Information availability {#information-availability}
 
 There is enough public information about this party to judge its positions. It has a detailed published platform: more than 20 policy plans on its website covering cost of living, housing, service, security, the Negev, religion and state, LGBT rights, health, older people, disability and the environment [74]. Its leader has a public record as prime minister and campaigns heavily.
 
 **Gaps:**
-- **No Knesset voting record.** The party has never had Knesset members, so there are no votes to compare with its promises; this document uses Bennett's record in government instead.
+- **No Knesset voting record of the party.** The party has never had Knesset members, so it has no votes of its own to compare with its promises. This is why the document has fewer Action-tier items than documents on parties with sitting lawmakers. It uses Bennett's own record instead: his acts as prime minister in 2021–2022 and his recorded Knesset votes in that term [80, 82, 88–90]. His record as a minister before 2021 is given only as dated background.
 - **No formal platform on some security issues.** The party's plans do not take a formal position on a Palestinian state or on applying sovereignty to territory, or on whether to keep or end the ceasefires with Iran and Hezbollah. Those positions here rest on statements.
 - **Details of the joint-list agreement.** The terms of the Yesh Atid agreement, beyond public statements by its lawmakers, were not found in an official document.
 - **Conflicting candidate backgrounds.** Sources disagree on two candidates. The Jerusalem Post reversed the backgrounds of Keren Terner Eyal and Liran Avishar Ben-Horin; this document follows Ynetnews and The Times of Israel.

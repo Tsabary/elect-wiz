@@ -6,27 +6,27 @@ researchedAsOf: 2026-10-07
 
 ## Overview {#overview}
 
-**Degel HaTorah** (Hebrew: דגל התורה, "Banner of the Torah"; registered name "אגודת החרדים – דגל התורה") is a Haredi party that represents the non-Hasidic, "Lithuanian" stream of the Ashkenazi Haredi community. Rabbi Elazar Menachem Man Shach founded it in 1988 as a break-away from Agudat Yisrael, after disputes between the Lithuanian rabbis and the Hasidic leaders inside Agudat Yisrael. It won two seats in its first election in 1988 [12]. The party's newspaper is *Yated Ne'eman* [12].
+**Degel HaTorah** (Hebrew: דגל התורה, "Banner of the Torah"; registered name "אגודת החרדים – דגל התורה") is a Haredi party that represents the non-Hasidic, "Lithuanian" stream of the Ashkenazi Haredi community. Rabbi Elazar Shach founded it in 1988 after a rift between him and Agudat Yisrael. It won two seats in its first election in 1988, the only one in which it ran alone [12]. The party's newspaper is *Yated Ne'eman* [46].
 
-**How the party is run.** Degel HaTorah's decisions are made by its rabbinic leadership, not by party primaries. Its spiritual leaders have included Rabbis Shach, Yosef Shalom Elyashiv, Aharon Leib Steinman, Chaim Kanievsky and Gershon Edelstein (who died in 2023) [12]. Today the leading figures are Rabbi Dov Lando and Rabbi Moshe Hillel Hirsch [12, 23, 28]. In September 2026 it was Rabbi Lando who decided the make-up of the party's Knesset slate (see Leadership) [4, 5].
+**How the party is run.** Degel HaTorah's decisions are made by its rabbinic leadership, not by party primaries. Its spiritual leaders have included Rabbi Shach and Rabbi Yosef Shalom Elyashiv [12, 13]. Today the leading figures are Rabbi Dov Lando and Rabbi Moshe Hillel Hirsch [23, 28]. In September 2026 it was Rabbi Lando who decided the make-up of the party's Knesset slate (see Leadership) [4, 5].
 
-**Ideology.** Reference works describe the party's role as protecting the Haredi way of life, above all full-time Torah study in yeshivas, Haredi education and the religious status quo [12, 15]. Mainstream reference works describe United Torah Judaism (UTJ), the joint list Degel HaTorah runs on, as non-Zionist. They describe it as conservative on religion and state, and as leaning toward a social-democratic approach on economics because many of its voters have low incomes [13, 14]. The Israel Democracy Institute (IDI) describes its security positions as "in the center", with decisions guided by religious rather than security considerations [15]. Its campaign slogan in September 2026 was "The right to be Haredi" [9].
+**Ideology.** The Israel Democracy Institute (IDI) describes United Torah Judaism (UTJ), the joint list Degel HaTorah runs on, as working for the interests of the public it represents in education and welfare, for keeping the exemption from IDF service for its young men, and for preserving the religious character of the state. It describes the list's foreign and security positions as "in the center", with decisions guided by religious rather than security considerations, and says the list has tended to support the right since 1977 because the right is more conservative on religion and state [15]. Its campaign slogan in September 2026 was "The right to be Haredi" [9].
 
-**Base of support.** The party's voters are mainly Lithuanian (non-Hasidic) Haredim [12, 14].
+**Base of support.** The party draws most of its support from the Lithuanian (non-Hasidic) stream of Haredi Judaism [12].
 
 **Current Knesset seats.** United Torah Judaism won **7 seats** in the November 2022 election, with 280,194 votes (5.9%) [15]. Four of those seven seats belong to Degel HaTorah [23, 29]. Since 16 July 2026 Degel HaTorah has sat as its own Knesset faction, separate from Agudat Yisrael (see below) [18, 73].
 
-**Joint list.** Degel HaTorah runs on the **United Torah Judaism** list, "יהדות התורה והשבת אגודת ישראל – דגל התורה", under the ballot letter **ג** [1, 3]. The CEC filing for the 2026 election shows that three registered parties submitted the list: **Degel HaTorah**, **Agudat Yisrael** (the Hasidic party) and **Chomat Torat Yisrael** [1]. Chomat Torat Yisrael is a separate registered party that candidates linked to the Belz and Shlomei Emunim Hasidic groups used in 2026 to submit their places on the list [3, 14]. Under a rotation arrangement between the two main partners, the list is led by whichever party's turn it is. In 2026 it is Degel HaTorah's turn, so Degel HaTorah chair Yaakov Asher heads the whole list [5].
+**Joint list.** Degel HaTorah runs on the **United Torah Judaism** list, "יהדות התורה והשבת אגודת ישראל – דגל התורה", under the ballot letter **ג** [1, 3]. The CEC filing for the 2026 election shows that three registered parties submitted the list: **Degel HaTorah**, **Agudat Yisrael** (the Hasidic party) and **Chomat Torat Yisrael** [1]. Chomat Torat Yisrael is a separate party announced on 8 September 2026 by Meir Porush (Shlomei Emunim faction) and Elyakim Stark (Belz Hasidic community), who until then were inside Agudat Yisrael [76]. Under a rotation arrangement between the two main partners, the list is led by whichever party's turn it is. In 2026 it is Degel HaTorah's turn, so Degel HaTorah chair Yaakov Asher heads the whole list [5].
 
-**History of splitting and re-uniting.** Degel HaTorah and Agudat Yisrael have run together as UTJ since the 1992 election [15]. They have often split into separate Knesset factions, usually as a technical step before elections, and then run together again [12, 13]. The Knesset's faction records give the dates below [72]; the July 2026 split is not yet shown there:
-- **1996 and 1999:** separate Degel HaTorah factions shortly before the 1996 and 1999 elections [72].
-- **12 January 2005:** the faction split during the 16th Knesset. According to Hebrew Wikipedia, Degel HaTorah's then-leader Avraham Ravitz asked for the split after Agudat Yisrael's Yaakov Litzman became Finance Committee chair in coordination with the coalition, against Rabbi Elyashiv's instruction that Degel HaTorah stay in the opposition [13]. The Knesset records date the split to 12 January 2005 [72]; English Wikipedia's date of January 2004 [14] does not match them. The parties ran together again in the 2006 election [13, 14].
-- **18 December 2008:** the Knesset House Committee approved the split ten days before lists were due for the 18th Knesset election. The dispute was over which party would get the sixth place on the joint list [16, 72]. The parties then ran together again [13].
-- **2019:** separate factions in January, July and December 2019, each before one of that period's elections [72].
+**History of splitting and re-uniting.** Degel HaTorah and Agudat Yisrael have run together as UTJ since the 1992 election [15]. Knesset faction records show that their joint Knesset faction has nevertheless been formally divided into separate Agudat Yisrael and Degel HaTorah factions ten times, each time but one shortly before an election [72, 73]. The dates are below; the July 2026 split is not yet shown in the faction records:
+- **8 April 1996 and 23 February 1999:** separate factions shortly before the 1996 and 1999 elections [72].
+- **12 January 2005:** the faction split in the middle of the 16th Knesset [72]. Globes reported that Degel HaTorah's MKs Avraham Ravitz and Moshe Gafni asked for the split on Rabbi Elyashiv's instruction, after Agudat Yisrael's Yaakov Litzman took up the post of Finance Committee chair without waiting three months, as the rabbi had told Degel HaTorah's own MKs to do before taking coalition posts [13]. The parties ran together again in the 2006 election, and a joint faction sat in the next Knesset [72].
+- **18 December 2008:** the Knesset House Committee approved the split ten days before lists were due for the 18th Knesset election. The dispute was over which party would get the sixth place on the joint list [16, 72]. A joint faction was formed again after the election [72].
+- **9 January, 10 July and 30 December 2019:** separate factions before each of that period's three elections [72].
 - **28 December 2020:** the Knesset approved a split into separate Agudat Yisrael and Degel HaTorah factions. Maariv described it as "technical only, for party-funding purposes" [17, 72].
 - **15 August 2022:** separate factions again before the November 2022 election [72].
 - **16 July 2026:** the Knesset House Committee approved UTJ's request to split into Degel HaTorah and Agudat Yisrael factions again, at a late-evening session [18, 73]. MK Uri Maklev (Degel HaTorah) called it a technical step before the 26th Knesset election: "We are not divorcing but ... separating for a period" [18].
-- Hebrew Wikipedia notes that the joint faction split at the end of almost every Knesset term, and that each time the two parties agreed to run together again [13]. They did so again on 8 September 2026 [3].
+- After each split through 2022 the parties ran together again and formed a joint faction in the next Knesset [72]. They filed a joint list again on 8 September 2026 [3].
 
 ## Leadership and key candidates {#leadership}
 
@@ -52,13 +52,13 @@ researchedAsOf: 2026-10-07
 
 **Former leader Moshe Gafni** is still chair of the party's national movement [4]. His record and statements as party chair until September 2026 appear throughout this document.
 
-**Spiritual leadership.** Rabbi Dov Lando's public statements carry decisive weight in the party. In July 2026 he said that soldiers sent to war "for the honor of the state" who kill people commit "murder". Degel HaTorah, then led by Gafni, called his words "holy" and said those unfamiliar with the religious context should not rush to interpret them. People close to the rabbi described the remarks as a "theoretical halachic discussion" [68]. In October 2026 he said Zionism "made Arabs hate us", and that Religious Zionist soldiers "are killed because their rabbis teach them a distorted Torah" [69].
+**Spiritual leadership.** Rabbi Dov Lando is the party's senior rabbinic authority; he decided its 2026 slate and its exit from the government [4, 22]. In July 2026 he said that soldiers sent to war "for the honor of the state" who kill people commit "murder". Degel HaTorah, then led by Gafni, called his words "holy" and said those unfamiliar with the religious context should not rush to interpret them. People close to the rabbi described the remarks as a "theoretical halachic discussion" [68]. In October 2026 he said Zionism "made Arabs hate us", and that Religious Zionist soldiers "are killed because their rabbis teach them a distorted Torah" [69].
 
 ## Positions on the issues {#issues}
 
 ### Cost of living {#issue-cost-of-living}
 
-**Action:** In the coalition agreement UTJ signed with Likud on 21 December 2022, the government committed to:
+**Action:** In UTJ's 2022 coalition agreement with Likud, the government committed to the steps below. This document quotes the agreement text dated 21 December 2022, as published by Mako [19]; the final agreement was signed on 28 December 2022, and its clause numbers differ [20, 77].
 - cancel the purchase taxes on disposable tableware and sweetened drinks;
 - expand funding for charities that hand out holiday food baskets and food vouchers (up to NIS 100 million);
 - look at subsidising gluten-free food for people with celiac disease, including price supervision or vouchers;
@@ -73,17 +73,19 @@ Party MK Yitzhak Pindrus had named the drinks and tableware taxes as grievances 
 
 **Statement:** At the party's campaign launch in September 2026, Gafni said that one of the things the party did before the Knesset dissolved was to prevent Finance Minister Smotrich from passing the milk reform, "which would have caused thousands of people to go bankrupt" [9].
 
-**Statement / record:** In 2013 Gafni drew up an "alternative economic plan" together with Meretz leader Zehava Gal-On [13]. Asher's Knesset biography lists consumer-protection work, including chairing the sub-committee on the Food Competition Law and a lobby to cut costs for people with celiac disease [10].
+**Action:** On 11 March 2024 the Knesset approved, 47–29, the order raising VAT to 18% from January 2025. Asher and Pindrus, and Degel HaTorah's then-MK Eliyahu Baruchi, voted for it [78].
 
-**Assessment:** The record points mainly to targeted state help: subsidies, food aid, discounts and removing specific consumer taxes. The party secured a freeze of the previous government's agricultural reforms and says it blocked the milk reform, and it voted for the 2025 budget, which came after a VAT rise. No published platform on cost of living was found.
+**Record:** Asher's Knesset biography lists consumer-protection work, including chairing the sub-committee on the Food Competition Law and a lobby to cut costs for people with celiac disease [10].
+
+**Assessment:** The record points mainly to targeted state help: subsidies, food aid, discounts and removing specific consumer taxes. The party secured a freeze of the previous government's agricultural reforms and says it blocked the milk reform, and its MKs voted for the 2024 order raising VAT and for the 2025 budget. No published platform on cost of living was found.
 
 **Closest option(s):** Focus on direct help for households, through subsidies and support for low-income families (`direct-support-for-households`). Its record of cancelling specific purchase taxes also touches on cutting taxes (`cut-taxes-and-government-spending`). The record does not show support for opening the market to more competition and imports (`open-market-competition-imports`).
 
 ### Crime in Arab society {#issue-crime-in-arab-society}
 
-**Action:** The coalition agreement UTJ signed on 21 December 2022 says the government sees crime and violence in Arab society as "a central matter that must be dealt with as a top priority", and that it "will allocate resources and tools for enforcement and eradicating crime" in Arab society [19].
+**Action:** UTJ's 2022 coalition agreement says the government sees crime and violence in Arab society as "a central matter that must be dealt with as a top priority", and that it "will allocate resources and tools for enforcement and eradicating crime" in Arab society [19].
 
-**No other documented position found.** I searched the Knesset voting database for votes on bills about crime organizations and on the Shin Bet's powers in 2024–2026. No Degel HaTorah MK voted on the crime-organization bills of 8 July 2026 [71]. I also checked Times of Israel topic pages for Degel HaTorah, Gafni, Asher and Pindrus, and Hebrew coverage of the party's 2026 campaign. I found no statement by the party on involving the Shin Bet (Israel's internal security service), holding suspected crime bosses without trial, or the July 2026 government plan.
+**No other documented position found.** The Knesset voting database was searched for votes on bills about crime organizations and on the Shin Bet's powers in 2024–2026. No Degel HaTorah MK voted on the crime-organization bills of 8 July 2026 [71]. Times of Israel topic pages for Degel HaTorah, Gafni, Asher and Pindrus, and Hebrew coverage of the party's 2026 campaign, were also checked. No statement by the party was found on involving the Shin Bet (Israel's internal security service), holding suspected crime bosses without trial, or the July 2026 government plan.
 
 **Closest option(s):** The evidence is thin. The 2022 clause on "resources and tools for enforcement" is closest to giving the police more resources (`more-police-resources-normal-law`). It does not address the Shin Bet, holding people without trial, or investment in Arab communities.
 
@@ -93,23 +95,23 @@ Party MK Yitzhak Pindrus had named the drinks and tableware taxes as grievances 
 
 **Statement:** In April 2025 Gafni and Uri Maklev criticised Finance Minister Bezalel Smotrich after Smotrich said returning the hostages was "not the most important thing." Gafni compared this to zealots "for whom the national issue was more important than human life." Maklev said Smotrich was harming the hostages' families [54].
 
-**Statement:** In 2017 Gafni said that on diplomatic matters "I am closer to left-wing positions" and that "the Palestinians were here before us" [55]. He also said he would not sit with the left because of disagreements over Reform Judaism [56].
+**Background (2017, before the period this guide relies on):** Gafni said that on diplomatic matters "I am closer to left-wing positions" and that "the Palestinians were here before us" [55]. He also said he would not sit with the left because of disagreements over Reform Judaism [56].
 
 **Limits of the evidence:** All of these statements date from 2025 or earlier, while the war was still being fought. No statement by the party was found on the current questions: an international force, disarming Hamas (a terror organization), a Palestinian administration, or further withdrawal. Degel HaTorah has had no ministers in the government that decides these questions [6, 15].
 
-**Closest option(s):** Mixed and dated. The party's statements favoured ending the fighting and putting the hostages first through a US-backed arrangement. That is closest to moving forward with the US plan (`advance-international-arrangement`). No evidence links the party to a Palestinian state or to full withdrawal (`end-war-full-withdrawal`).
+**Closest option(s):** Tentative, mixed and dated. The statements are by Gafni and Maklev, who led the party until September 2026 and are not on the 2026 slate; no statement by the current chair was found. The party's statements favoured ending the fighting and putting the hostages first through a US-backed arrangement. That is closest to moving forward with the US plan (`advance-international-arrangement`). No evidence links the party to a Palestinian state or to full withdrawal (`end-war-full-withdrawal`).
 
 ### Haredi military enlistment {#issue-haredi-enlistment}
 
 This is the party's central issue.
 
-**Action (coalition agreement, 21 December 2022):** UTJ made the government commit that, before the 2023 budget passed, the Knesset would complete both a **Basic Law: Torah Study** (a law with constitutional status) and an amendment to the Security Service Law "to regulate the status of yeshiva students", with the agreement of all coalition parties. The clause adds that UTJ had wanted this settled even before the government was formed [19].
+**Action (2022 coalition agreement):** UTJ made the government commit that, before the 2023 budget passed, the Knesset would complete both a **Basic Law: Torah Study** (a law with constitutional status) and an amendment to the Security Service Law "to regulate the status of yeshiva students", with the agreement of all coalition parties. The clause adds that UTJ had wanted this settled even before the government was formed [19].
 
 **Action (Basic Law: Torah Study):** Gafni and Asher sponsored the bill. It was published for first reading on 1 July 2026 with two sections: Torah study is "a foundational value in the heritage of the Jewish people and in the State of Israel", and the law is meant to create a "balance" against other basic values. Its explanatory notes say it responds to the High Court rulings that struck down the yeshiva-student exemption (2017) and restricted funding to students without an exemption (2024) [35]. The Knesset passed the law on 13 July 2026 by 63 to 52, after the "balance" section was removed [36, 37, 42, 75]. All four Degel HaTorah MKs voted for it [42]. Gafni called it "a historic step" [37].
 
-**Action (arrest freeze):** On 14 July 2026 the Knesset passed, by 58 to 54, a temporary law freezing arrests, investigations and enforcement against yeshiva students who had been declared deserters for not reporting for service. To qualify, a student must study for at least 45 hours a week in a yeshiva (40 in a *kollel*) on a list set by the defense minister. The freeze runs until 30 November 2026 [38, 39, 42]. All four Degel HaTorah MKs voted for it [42]. Asher was one of its leading promoters [6], and party chair Gafni said: "the era of arrests is over: we promised and we delivered!" [2]. Before the vote, the legal advisers of the Knesset Foreign Affairs and Defense Committee warned that it "grants yeshiva students immunity from criminal sanctions" while those sanctions remain in force for everyone else [39]. On 15 July 2026 a High Court justice froze the law pending a hearing [40].
+**Action (arrest freeze):** On 14 July 2026 the Knesset passed, by 58 to 54, a temporary law freezing arrests, investigations and enforcement against yeshiva students who had been declared deserters for not reporting for service. To qualify, a student must study for at least 45 hours a week in a yeshiva (40 in a *kollel*) on a list set by the defense minister. The freeze runs until 30 November 2026 [38, 39, 42]. All four Degel HaTorah MKs voted for it [42]. Asher was one of its leading promoters [6], and party chair Gafni said: "the era of arrests is over: we promised and we delivered!" [2]. Before the vote, the legal advisers of the Knesset Foreign Affairs and Defense Committee warned that it "grants yeshiva students immunity from criminal sanctions" while those sanctions remain in force for everyone else [39]. On 15 July 2026 a High Court justice froze the law pending a hearing [40], and on 3 September 2026 a nine-justice panel struck it down unanimously [79].
 
-**Action (leaving government):** On 14 July 2025, on Rabbi Lando's instruction, Degel HaTorah's MKs resigned all coalition posts and left the government. The party objected to a draft bill that would not cancel call-up orders already issued, would give the army alone control of the exemptions committee, and would set harsher funding cuts for yeshivas that missed targets. The party said the bill "deviates from the agreements and promises made by Likud and the coalition" [22, 23]. Earlier, in May 2025, the party had boycotted coalition votes over the same issue [25]. In June 2025 its rabbis told it to advance a bill to dissolve the Knesset [26].
+**Action (leaving government):** On 14 July 2025, on Rabbi Lando's instruction, Degel HaTorah's MKs resigned all coalition posts and left the government. The party objected to a draft bill that would not cancel call-up orders already issued, would give the army alone control of the exemptions committee, and would set harsher funding cuts for yeshivas that missed targets. The party said the bill "deviates from the agreements and promises made by Likud and the coalition" [22, 23]. Earlier, in May 2025, the party had boycotted coalition votes over the same issue [25]. In June 2025 its rabbis told it to advance a bill to dissolve the Knesset [26]. When dissolution bills came to a vote on 12 June 2025, the party's four MKs voted against them, and the bills failed [78]; in the same week the party and Shas were reported to have endorsed a revised enlistment proposal (see below) [27].
 
 **Action / formal commitment (accepting targets):** The party has at times accepted laws with enlistment targets for young men *not* in full-time study:
 - In June 2025 Degel HaTorah and Shas endorsed a revised version of MK Yuli Edelstein's proposal. It set rising enlistment targets and personal and institutional sanctions. Reporting at the time said the Haredi leadership felt it had "no other choice" [27].
@@ -124,7 +126,7 @@ This is the party's central issue.
 
 ### Housing {#issue-housing}
 
-**Action (coalition agreement, 21 December 2022):** UTJ's agreement makes stopping the rise in home prices a "national goal". It commits to:
+**Action (2022 coalition agreement):** UTJ's agreement makes stopping the rise in home prices a "national goal". It commits to:
 - a plan to increase housing supply with "immediate planning solutions", emphasising dense construction;
 - cutting bureaucracy and speeding up building permits;
 - funding infrastructure to release about 300,000 planned homes that are stuck;
@@ -142,13 +144,13 @@ This is the party's central issue.
 
 ### Iran, Hezbollah and the region {#issue-iran-and-regional-security}
 
-**No documented position found.** I checked:
+**No documented position found.** Sources checked:
 - the Knesset voting database;
 - Times of Israel topic pages for Degel HaTorah, Gafni, Asher and Pindrus (2023–2026);
 - Ynet and other Hebrew coverage of the party's 2026 campaign;
 - the IDI party profile.
 
-I found no statement by the party on strategy toward Iran or Hezbollah (the Iran-backed terror organization in Lebanon), on staying in southern Lebanon, or on US-brokered deals. Related material that does not amount to a strategy:
+No statement by the party was found on strategy toward Iran or Hezbollah (the Iran-backed terror organization in Lebanon), on staying in southern Lebanon, or on US-brokered deals. Related material that does not amount to a strategy:
 - In June 2025, as Interior Committee chair, Asher promised "an immediate legislative response" to compensate people whose homes were damaged by Iranian missiles [70].
 - The IDI describes the wider UTJ list as "in the center" on security, with decisions driven by religious considerations [15].
 - Rabbi Lando's July 2026 remarks about wars fought "for the honor of the state" were a general religious statement, not a policy on Iran [68].
@@ -161,15 +163,15 @@ I found no statement by the party on strategy toward Iran or Hezbollah (the Iran
 - **22 October 2025**, bill to apply sovereignty to "Judea and Samaria": Gafni, Asher and Maklev voted against. Degel HaTorah was outside the coalition by then. The bill passed its preliminary reading 25–24 [43, 44, 75].
 - **31 December 2025**, bill to apply sovereignty to Beitar Illit, a Haredi city: Maklev voted against. It failed 8–45 [43, 75].
 
-No Degel HaTorah MK voted on the bill to apply sovereignty to Ma'ale Adumim (22 October 2025, passed 31–9) or on a non-binding July 2025 motion supporting sovereignty in Judea, Samaria and the Jordan Valley (passed 71–13) [43, 75]. The tallies come from the same Knesset database [75]. The database records each MK's vote but not the reasons for it.
+No Degel HaTorah MK voted on the bill to apply sovereignty to Ma'ale Adumim (22 October 2025, passed 31–9) or on a non-binding July 2025 motion supporting sovereignty in Judea, Samaria and the Jordan Valley (passed 71–13) [43, 75]. The tallies come from the same Knesset database [75]. On the October 2025 bill, the Times of Israel quoted the Degel HaTorah faction as saying that "proposals to declare sovereignty at this time are putting us in conflict with the countries of the world, and especially with the United States" [14]. The 2023 and January 2025 votes were cast while the party was in the coalition; the database does not record reasons for votes.
 
 **Action (settlement housing):** The 2022 coalition agreement applies its population-based housing targets to "marketing and approvals" in Judea and Samaria as well [19]. Beitar Illit, a Haredi city that Pindrus once led as mayor, lies in Judea and Samaria; a December 2025 bill sought to apply Israeli sovereignty to it [11, 43].
 
-**Statement:** In June 2017 Gafni said that on diplomatic matters he was "closer to left-wing positions" and that "the Palestinians were here before us and we are the ones who removed them from here" [55]. The Likud's Haredi campaign staff criticised the remarks at the time [55]. Pindrus's Knesset biography describes him as standing firmly with settlement representatives [11].
+**Background (2017, before the period this guide relies on):** Gafni said that on diplomatic matters he was "closer to left-wing positions" and that "the Palestinians were here before us and we are the ones who removed them from here" [55]. The Likud's Haredi campaign staff criticised the remarks at the time [55]. Pindrus's Knesset biography describes him as standing firmly with settlement representatives [11]. Pindrus's biography is undated background.
 
 **No published position was found** on a Palestinian state, on the Palestinian Authority, or on the long-term future of the territory.
 
-**Closest option(s):** Keep things as they are: no Israeli sovereignty and no new arrangement, while settlement housing continues (`maintain-current-situation`). This is based on the party's consistent votes against sovereignty bills and its support for housing in existing settlements. The evidence on a final arrangement is otherwise thin.
+**Closest option(s):** Keep things as they are: no Israeli sovereignty and no new arrangement, while settlement housing continues (`maintain-current-situation`). This is based on the party's consistent votes against sovereignty bills from 2023 to 2025, its stated reason in October 2025, and its support for housing in existing settlements. The evidence on a final arrangement is otherwise thin.
 
 ### Judicial system {#issue-judicial-system}
 
@@ -205,7 +207,7 @@ In June 2026 Ynet reported a deal under which the Haredi parties would back the 
 
 ### Religion and state {#issue-religion-and-state}
 
-**Action (coalition agreement, 21 December 2022)** [19]. Clauses UTJ secured include:
+**Action (2022 coalition agreement)** [19]. Clauses UTJ secured include:
 - preserving "the status quo on religion and state as it has been accepted for decades", and repairing any damage to it, "including changes that occurred in the past", by legislation if needed;
 - coalition discipline to block any private bill that changes the religious status quo;
 - recognising only conversions done through a state body subject to the Chief Rabbinate;
@@ -267,7 +269,7 @@ In June 2026 Ynet reported a deal under which the Haredi parties would back the 
 
 ## Coalition stance {#coalition}
 
-**2022 election and government.** UTJ ran in 2022 as part of Benjamin Netanyahu's bloc [21] and signed a coalition agreement with Likud. The agreement text is dated 21 December 2022; the Times of Israel reported the final signing on 28 December 2022 [19, 20]. Degel HaTorah received the Finance Committee chair (Gafni), the Interior Committee chair (Asher) and the post of Deputy Transportation Minister (Maklev) [6, 20, 23]. The party had traditionally refused full ministerial posts on principle, partly so as not to bear responsibility for desecrating Shabbat [6, 8].
+**2022 election and government.** UTJ ran in 2022 as part of Benjamin Netanyahu's bloc [21] and signed a coalition agreement with Likud. The agreement text used in this document is dated 21 December 2022; the final agreement was signed on 28 December 2022 [19, 20, 77]. Degel HaTorah received the Finance Committee chair (Gafni), the Interior Committee chair (Asher) and the post of Deputy Transportation Minister (Maklev) [6, 20, 23]. The party had traditionally refused full ministerial posts on principle, partly so as not to bear responsibility for desecrating Shabbat [6, 8].
 
 **Leaving the government (July 2025).** Degel HaTorah left the government and coalition on 14 July 2025 over the draft law [22, 23]. Gafni then described the break with the Religious Zionist parties as a "bill of divorce" [24].
 
@@ -278,9 +280,11 @@ In June 2026 Ynet reported a deal under which the Haredi parties would back the 
 - **31 August 2026:** Ynet reported that, for the first time, Degel HaTorah was considering asking its rabbis for permission to take ministerial posts. If UTJ joins the next coalition, Asher would be expected to become Degel HaTorah's first minister [5, 8].
 - **September 2026:** at a Ynet conference, Asher said: "Whoever wants comfortable partners in government, who don't want to take his chair or replace him, and wants a stable government, will have to sit with us. I have no problem sitting with Gadi Eisenkot... I'm ready to sit with anyone" [6].
 - **29 September 2026:** responding to a report that two Agudat Yisrael MKs might let an Eisenkot-led government form, Asher said UTJ "has no desire to topple or install anyone" and that all its factions would support only a government in which yeshiva students' exemption is "legally settled" [34].
-- **2017:** Gafni said that although he was closer to the left on diplomatic issues, he would not sit with the left because of disputes over Reform Judaism [56].
+- **Background (2017):** Gafni said that although he was closer to the left on diplomatic issues, he would not sit with the left because of disputes over Reform Judaism [56].
 
-**Contradiction:** Between May and July 2026 the party's spiritual leader said "we no longer have any trust in Netanyahu" and "there is no bloc", and a party spokesman said Degel HaTorah was "in the opposition" [32, 33, 49]. Yet on 2 June 2026 three Degel HaTorah MKs, and on 15 July 2026 all four, voted for the coalition's attorney general bill, a central coalition bill [41, 48]. In June 2026 Shas and UTJ denied a reported "deal" to support coalition bills in return for their own laws, but said they would "be able to resume voting in favor of coalition legislation" once those laws were advanced; in July 2026 the Times of Israel reported such an arrangement [47, 49]. The party has not described its July 2026 votes as a return to Netanyahu's bloc.
+**Contradiction:** In the 2022 coalition agreement, UTJ (including Degel HaTorah) agreed that the coalition would last until the end of the 25th Knesset (clause 8 of the signed agreement) [77]. On 14 July 2025 Degel HaTorah left the government and the coalition [22, 23]. The party says Likud and the coalition broke their own commitments on the status of yeshiva students first [22].
+
+**Votes with the coalition after leaving it.** Between May and July 2026 the party's spiritual leader said "we no longer have any trust in Netanyahu" and "there is no bloc", and a party spokesman said Degel HaTorah was "in the opposition" [32, 33, 49]. On 2 June 2026 three Degel HaTorah MKs, and on 15 July 2026 all four, voted for the coalition's attorney general bill [41, 48]. The party had also voted for a bill to split the attorney general's role in October 2025, and its 2022 coalition agreement backed such changes (see Judicial system) [41, 19]. In June 2026 Shas and UTJ denied a reported "deal" to support coalition bills in return for their own laws, but said they would "be able to resume voting in favor of coalition legislation" once those laws were advanced; in July 2026 the Times of Israel reported such an arrangement [47, 49]. The party has not described its July 2026 votes as a return to Netanyahu's bloc. The statements were about loyalty to a bloc after the election, not a pledge on these bills, so this is recorded as context and not as a contradiction.
 
 **Track record on coalition pledges.** In 2022 UTJ ran with the Netanyahu bloc and joined his government as it had said it would [19, 21]. It left the government in July 2025, saying the coalition had broken its commitments on the draft law [22]. No 2026 pledge naming a preferred prime minister was found. The party's stated condition is a law settling the exemption for yeshiva students [34].
 
@@ -289,12 +293,12 @@ In June 2026 Ynet reported a deal under which the Haredi parties would back the 
 Degel HaTorah was part of the government from December 2022 until July 2025. It had no full ministers; its posts were committee chairs and a deputy ministry [6, 20]. Below, its main coalition-agreement commitments are compared with what happened.
 
 - **Basic Law: Torah Study:** promised "by the passage of the 2023 budget" [19]. **Passed on 13 July 2026**, three years late, in a softer form without the "balance" clause [35, 36, 37].
-- **Security Service Law amendment settling yeshiva students' status:** promised by the 2023 budget [19]. **Not passed.** The draft-exemption law was not passed in the 25th Knesset; Ynet linked the September 2026 leadership change to that failure [5, 28, 29]. A temporary arrest freeze passed in July 2026, but the High Court froze it the next day [38, 40].
+- **Security Service Law amendment settling yeshiva students' status:** promised by the 2023 budget [19]. **Not passed.** The draft-exemption law was not passed in the 25th Knesset; Ynet linked the September 2026 leadership change to that failure [5, 28, 29]. A temporary arrest freeze passed in July 2026, but the High Court froze it the next day and struck it down in September 2026 [38, 40, 79].
 - **Yeshiva and Haredi education funding:** promised minimum per-student funding and moving yeshiva money into the budget base [19]. **Largely delivered.** About NIS 1 billion was moved into the 2025 base [59]. In 2026 the budget included nearly NIS 1 billion more for Haredi schools [60]; a separate NIS 800 million allocation passed in March 2026 but the attorney general froze it, citing a December 2025 High Court ruling [61].
 - **Judicial changes:** promised support for the justice minister's bills [19]. **Partly delivered.** The reasonableness law passed in July 2023 (later cancelled by the Supreme Court), the judicial-selection law in March 2025, and the attorney general law in July 2026, all with Degel HaTorah votes [41, 48].
 - **Hametz in hospitals law:** promised [19]. A bill was filed in January 2023 [63]. No final passage was found.
 - **Daycare subsidies:** promised no change without coalition agreement [19]. After the 2024 ruling the subsidies were removed for some families. In June 2026 the Finance Committee approved a restoration bill for its first reading [51]. No final passage was found.
-- **Purchase taxes on disposable tableware and sweetened drinks:** promised to be cancelled [19]. This document did not verify implementation.
+- **Purchase taxes on disposable tableware and sweetened drinks:** promised to be cancelled [19]. **Delivered.** On 1 January 2023 the new finance minister ordered both taxes cancelled; Gafni said: "This was one of our promises to do immediately with the establishment of the government" [80].
 - **Finance Committee:** Gafni chaired it until July 2025 [22]. By June 2026 Likud's Hanoch Milwidsky chaired it [51].
 
 ## Legal or ethical matters involving leaders {#legal}
@@ -316,9 +320,9 @@ What was checked: the Knesset biographies of Yaakov Asher and Yitzhak Pindrus [1
 9. דגל התורה השיקה את קמפיין הבחירות: "אנחנו צריכים ללמוד מגוש השינוי". Ynet, 2026-09-27. https://www.ynet.co.il/news/elections2026/article/s1joun8cfl
 10. חבר הכנסת יעקב אשר – פרטים אישיים (MK biography). The Knesset, accessed 2026-10-06. https://knesset.gov.il/WebSiteApi/knessetapi/MKs/GetMkDetailsContent?mkId=861&languageKey=he
 11. חבר הכנסת יצחק פינדרוס – פרטים אישיים (MK biography). The Knesset, accessed 2026-10-06. https://knesset.gov.il/WebSiteApi/knessetapi/MKs/GetMkDetailsContent?mkId=1001&languageKey=he
-12. דגל התורה. Hebrew Wikipedia, accessed 2026-10-06. https://he.wikipedia.org/wiki/דגל_התורה
-13. יהדות התורה. Hebrew Wikipedia, accessed 2026-10-06. https://he.wikipedia.org/wiki/יהדות_התורה
-14. United Torah Judaism. English Wikipedia, accessed 2026-10-06. https://en.wikipedia.org/wiki/United_Torah_Judaism
+12. דגל התורה (party page, "All Israeli elections and parties"). Israel Democracy Institute, accessed 2026-10-12. https://www.idi.org.il/policy/parties-and-elections/parties/degel-hatora/
+13. סיעת יהדות התורה מתפצלת - הדבר לא צפוי לפגוע במבנה הקואליציה. Globes, 2005-01-11. https://www.globes.co.il/news/article.aspx?did=873213
+14. 2 West Bank annexation bills get initial nod, with MKs rebelling against PM as Vance visits. The Times of Israel, 2025-10-22. https://www.timesofisrael.com/2-west-bank-annexation-bills-get-initial-nod-with-mks-rebelling-against-pm-as-vance-visits/
 15. יהדות התורה (party profile and election results). Israel Democracy Institute, accessed 2026-10-06. https://www.idi.org.il/policy/parties-and-elections/parties/yahadut-hatorah/
 16. אושר פילוג בין "אגודת ישראל" ל"דגל התורה". Ynet, 2008-12-18. https://www.ynet.co.il/articles/0,7340,L-3640696,00.html
 17. ועדת הכנסת החליטה על פיצול סיעת יהדות התורה לשתי סיעות. Maariv, 2020-12-28. https://www.maariv.co.il/breaking-news/article-811349
@@ -380,11 +384,16 @@ What was checked: the Knesset biographies of Yaakov Asher and Yitzhak Pindrus [1
 73. House Committee session of 16 July 2026, 21:55 (agenda item: "בקשת סיעת יהדות התורה להתפלג לפי סעיף 59(2) לחוק הכנסת"). The Knesset, parliamentary information database (OData, KNS_CmtSessionItem), accessed 2026-10-07. https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_CmtSessionItem?$filter=CommitteeSessionID%20eq%202245253
 74. Plenum vote results: Religious Courts Jurisdiction (Arbitration) Bill, third reading, 24 March 2026 (vote 45441). The Knesset, parliamentary information database (OData), accessed 2026-10-07. https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PlenumVoteResult?$filter=VoteID%20eq%2045441
 75. Plenum vote results for all MKs, used for vote tallies (votes 38405, 42820, 44413, 44575, 44580, 44992, 39785, 46462, 44946, 45858, 44647, 46248; results are paged 100 rows at a time). The Knesset, parliamentary information database (OData), accessed 2026-10-07. https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PlenumVoteResult?$filter=(VoteID%20eq%2038405%20or%20VoteID%20eq%2042820%20or%20VoteID%20eq%2044413%20or%20VoteID%20eq%2044575%20or%20VoteID%20eq%2044580%20or%20VoteID%20eq%2044992%20or%20VoteID%20eq%2039785%20or%20VoteID%20eq%2046462%20or%20VoteID%20eq%2044946%20or%20VoteID%20eq%2045858%20or%20VoteID%20eq%2044647%20or%20VoteID%20eq%2046248)
+76. דרמה באגודת ישראל: פרוש ושטארק הקימו מפלגה חדשה; פיצוץ במגעים עם גור. JDN, 2026-09-08. https://www.jdn.co.il/news/2725798/
+77. הסכם קואליציוני לכינון הממשלה ה-37 בין סיעת הליכוד לסיעת יהדות התורה והשבת אגודת ישראל – דגל התורה (signed agreement, 28 December 2022). The Knesset, 2022-12-28. https://main.knesset.gov.il/mk/government/Documents/CA37-YT.pdf
+78. Knesset plenum votes 40533 (VAT order, 2024-03-11, 47–29) and 44209 and 44210 (Knesset dissolution bills, preliminary readings, 2025-06-12): official per-MK records. Knesset vote-details service, accessed 2026-10-12. https://www.knesset.gov.il/WebSiteApi/knessetapi/Votes/GetVoteDetails/40533 ; https://www.knesset.gov.il/WebSiteApi/knessetapi/Votes/GetVoteDetails/44209 ; https://www.knesset.gov.il/WebSiteApi/knessetapi/Votes/GetVoteDetails/44210
+79. High Court strikes down law shielding haredi yeshiva students from arrest over draft evasion. The Jerusalem Post, 2026-09-03. https://jpost.com/israel-news/politics-and-diplomacy/article-907553
+80. In 1st move as minister, Smotrich orders taxes on plasticware, sugary drinks nixed. The Times of Israel, 2023-01-01. https://www.timesofisrael.com/in-1st-move-as-minister-smotrich-orders-taxes-on-plasticware-sugary-drinks-nixed/
 
 ## Information availability {#information-availability}
 
 There is enough public information to describe Degel HaTorah's positions on most issues, mainly from actions:
-- Knesset votes, taken from the Knesset's own voting database;
+- Knesset votes, taken from the Knesset's own voting records;
 - the signed 2022 coalition agreement;
 - legislation the party sponsored;
 - extensive news coverage.

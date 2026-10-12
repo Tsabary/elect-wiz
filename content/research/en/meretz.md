@@ -29,7 +29,7 @@ researchedAsOf: 2026-10-07
   - **No "party merger" agreement would be filed, so that the joint list cannot later split into separate Knesset factions under section 59(2) of the Knesset Law** [3].
   - The guarantees for Meretz end with the term of the 26th Knesset [3].
 - **12 July 2024:** Labor's convention approved the agreement with one vote against [5, 6].
-- **Late 2025 to February 2026 (dispute and update):** Ynet reported that in the preceding months Golan had sought to change the 2024 agreement so that Meretz representatives would not receive realistic places on the list [7]. On **20 February 2026** the two parties signed an update. According to Ynet, it set Meretz's guaranteed places at **6, 8 and 14** on the list, extended the guarantee to future elections (cancellable only by a special majority of a joint convention), and added Meretz representatives to coalition-negotiation teams [7]. The text of the update itself was not found; these terms come from Ynet's report.
+- **Late 2025 to February 2026 (dispute and update):** Ynet reported that the two parties had been in dispute in the preceding months over the places guaranteed to Meretz under the 2024 agreement, and that Golan had insisted on changing them [7]. On **20 February 2026** the two parties signed an update. According to Ynet, it set Meretz's guaranteed places at **6, 8 and 14** on the list, extended the guarantee to future elections (cancellable only by a special majority of a joint convention), and added Meretz representatives to coalition-negotiation teams [7]. The text of the update itself was not found; these terms come from Ynet's report.
 - **20 July 2026:** The Democrats' primaries were held. Mako/N12 reported that Meretz's guaranteed places were 6, 8 and 14 [8]. Lasky was placed sixth and Michal Rozin eighth on the list [8, 9, 11]. The filed list places the Meretz representative at No. 6, not within the top four set by the original 2024 agreement, which is consistent with the reported February 2026 update [1, 3, 7].
 
 **History of splits after past elections.** Meretz has run on joint lists several times:
@@ -128,7 +128,7 @@ Knesset per-MK votes below were counted from the raw rows of the Knesset's open-
 - **Statement (Gaby Lasky, September 2026):** in a post about the makers of "Naza", a film about IDF activity in Gaza that presents allegations of war crimes, Lasky wrote that "the violent discourse against the creators must stop". She said such works "raise moral questions that, precisely out of the pain, must be asked". Ice reported that the post was later deleted [11, 12].
 - **Not found:** no Meretz statement was found on the October 2025 US-plan ceasefire or on its next stages, after searches of Hebrew and English news and Meretz's website.
 
-**Closest option(s):** Advance an international arrangement with a Palestinian administration without Hamas and a gradual withdrawal (`advance-international-arrangement`). This is closest to the 2024 joint agreement's call to hand Gaza to moderate Palestinian actors while keeping Israeli security interests. The 2022 platform's call to lift the closure and treat Gaza as part of a future Palestinian state also has elements of `end-war-full-withdrawal`. The evidence predates the 2025 ceasefire.
+**Closest option(s):** Tentative: advance an international arrangement with a Palestinian administration without Hamas and a gradual withdrawal (`advance-international-arrangement`). This is closest to the 2024 joint agreement's call to hand Gaza to moderate Palestinian actors while keeping Israeli security interests. The 2022 platform's call to lift the closure and treat Gaza as part of a future Palestinian state also has elements of `end-war-full-withdrawal`. The mapping is tentative because the evidence predates the October 2025 ceasefire and no Meretz statement on the US plan was found.
 
 ### Haredi military enlistment {#issue-haredi-enlistment}
 
@@ -144,7 +144,7 @@ Knesset per-MK votes below were counted from the raw rows of the Knesset's open-
 - **Statement (joint list leader, not Meretz):** at The Democrats' convention on 31 May 2026, its leader Yair Golan promised to legislate an enlistment law. He said the party would not sit in government with parties he blamed for, among other things, large-scale non-enlistment of yeshiva students during the war [44].
 - **Not found:** no Meretz-specific statement on Haredi enlistment after 2022 was found.
 
-**Closest option(s):** Gradual enlistment targets with incentives and budget consequences (`gradual-targets-by-agreement`). This is the government bill Meretz's MKs voted for as coalition members in 2022. The evidence is limited and dated: no later Meretz position was found, and the joint list leader's 2026 statements are not Meretz's own.
+**Closest option(s):** Tentative: gradual enlistment targets with incentives and budget consequences (`gradual-targets-by-agreement`). This is the government bill Meretz's MKs voted for as coalition members in January 2022. The mapping is tentative because it rests on those votes alone: no later Meretz position was found, and the joint list leader's 2026 statements are not Meretz's own.
 
 ### Housing {#issue-housing}
 
@@ -176,7 +176,7 @@ Knesset per-MK votes below were counted from the raw rows of the Knesset's open-
 - **Statement (Gaby Lasky):** see her undated remark about solidarity with women in Iran, reported in October 2026 [11, 12].
 - **Not found:** no Meretz or Lasky statement was found on the June 2025 or February 2026 wars with Iran, or on the 2026 fighting in Lebanon. Searches covered Hebrew and English news and Meretz's website.
 
-**Closest option(s):** The evidence predates the current wars and is mixed. The 2024 joint agreement's emphasis on security capabilities, alliances and political arrangements is closest to `force-plus-us-backed-agreements`. The 2022 platform's preference for diplomacy and "restraint" leans towards `prioritize-ending-multifront-war`.
+**Closest option(s):** Tentative, because the evidence predates the 2025–2026 wars and is mixed. The 2024 joint agreement's emphasis on security capabilities, alliances and political arrangements is closest to `force-plus-us-backed-agreements`. The 2022 platform's preference for diplomacy and "restraint" leans towards `prioritize-ending-multifront-war`.
 
 ### Judea and Samaria {#issue-judea-samaria}
 
@@ -228,7 +228,7 @@ Knesset per-MK votes below were counted from the raw rows of the Knesset's open-
 - **Action (related, 2022):** in January 2022, Lasky submitted a bill to set up a state commission of inquiry into the submarines and naval vessels affair. Ice reported that she did so because not all ministers supported a government decision to set up such a commission [29, 46]. This shows a preference for the state-commission mechanism under existing law, but it concerns a different matter.
 - **Not found:** no Meretz-specific statement or document on how the October 7 commission's members should be chosen was found. Searches covered Hebrew and English news, Meretz's website and the 2024 agreement.
 
-**Closest option(s):** A state commission whose members are chosen by the President of the Supreme Court under existing law (`state-commission-under-existing-law`). This rests mainly on the joint list leader's statement and on Lasky's earlier use of the state-commission route; no Meretz position on the October 7 inquiry itself was found.
+**Closest option(s):** Tentative: a state commission whose members are chosen by the President of the Supreme Court under existing law (`state-commission-under-existing-law`). The mapping is tentative because it rests on indirect evidence: the joint list leader's statement and Lasky's 2022 use of the state-commission route for a different matter. No Meretz position on the October 7 inquiry itself was found.
 
 ### Religion and state {#issue-religion-and-state}
 
@@ -306,13 +306,13 @@ Knesset per-MK votes below were counted from the raw rows of the Knesset's open-
 
 The Citizenship and Entry into Israel Law (Temporary Order) restricts residency and citizenship for Palestinians from Judea and Samaria and Gaza who marry Israeli citizens.
 
+- **Contradiction:** On 1 July 2021, the Times of Israel reported that Meretz leader Nitzan Horowitz had told confidants that Meretz would not officially back extending the law [53]. At the session of 5–6 July 2021, all six Meretz MKs voted for the government's request to extend the law. The motion was also declared a confidence vote and ended in a 59–59 tie, so the law expired [21, 22, 52]. The explanation on record is a compromise reached before the vote, which cut the extension to six months and gave residency visas to some 1,600 Palestinian families [52].
 - **Change over time:**
-  - On 1 July 2021, the Times of Israel reported that Meretz leader Nitzan Horowitz had told confidants that Meretz would not officially back extending the law [53]. At the session of 5–6 July 2021, after a compromise that cut the extension to six months and gave residency visas to some 1,600 Palestinian families, all six Meretz MKs voted for the government's request to extend the law. The motion was also declared a confidence vote and ended in a 59–59 tie, so the law expired [21, 22, 52].
   - In 2022 a new version, a government bill, passed with the votes of coalition and right-wing opposition parties. On 7 February 2022, Meretz MKs voted against three private bills on the same subject at their preliminary readings, which passed 73–16, 73–32 and 74–17; at the government bill's first reading the same evening, which passed 44–5 with 43 MKs present but not voting, no Meretz MK was recorded as voting [54, 55, 56, 57]. On 10 March 2022, five Meretz MKs (Rozin, Salalha, Rinawie Zoabi, Lasky and Raz) voted against it at its final reading, where it passed 45–15 [20, 21, 22, 45].
-  - On 10 March 2022, Meretz's MKs also voted with the Joint List and Ra'am for a series of reservations (proposed amendments) to the bill, all of which were defeated [21, 22].
+  - On 10 March 2022, Meretz's MKs also voted with the Joint List and Ra'am for all 39 reservations (proposed amendments) to the bill that were put to a vote. Six Meretz MKs voted for each of the first 27 and five for each of the last 12, and every reservation was defeated [21, 22, 60, 61].
   - In 2022, five Meretz MKs (Raz, Salalha, Rinawie Zoabi, Lasky and Rozin) were among the initiators of a bill to repeal the law, which was not debated [45, 46, 47, 48].
 
-  The explanation found for the 2021 vote is the compromise described above [52]. Meretz's 2019 and 2022 platforms say Israel is also responsible for the rights of "Palestinians married to Israelis" [17, 49].
+  Meretz's 2019 and 2022 platforms say Israel is also responsible for the rights of "Palestinians married to Israelis" [17, 49].
 
 
 ### Protest rights and policing {#other-protest-policing}
@@ -418,7 +418,7 @@ The Citizenship and Entry into Israel Law (Temporary Order) restricts residency 
 
 ## Legal or ethical matters involving leaders {#legal}
 
-No indictments, convictions or official inquiries involving the party's leaders were found. This covers Gaby Lasky, secretary-general Tomer Reznik and Michal Rozin. What was checked: Hebrew and English news searches for Lasky, Reznik and Meretz with terms for investigations, indictments, the State Comptroller and the Knesset Ethics Committee, plus the news coverage cited in this document.
+No indictments, convictions or official inquiries involving the party's leaders were found. This covers Gaby Lasky, secretary-general Tomer Reznik and Michal Rozin. What was checked: Hebrew and English news searches for Lasky, Reznik, Rozin and Meretz with terms for police investigations, indictments, the State Comptroller and the Knesset Ethics Committee, plus the news coverage cited in this document. The searches were repeated on 12 October 2026 and again found no official proceeding.
 
 ## Sources {#sources}
 
@@ -481,6 +481,8 @@ No indictments, convictions or official inquiries involving the party's leaders 
 57. Plenum vote 36683: הצעת חוק האזרחות והכניסה לישראל (הוראת שעה), התשפ"ב-2022 (private bill, preliminary reading; 74 for, 17 against). Knesset vote-details service (official per-MK record), 2022-02-07 (accessed 2026-10-07). https://www.knesset.gov.il/WebSiteApi/knessetapi/Votes/GetVoteDetails/36683
 58. Plenum vote 37347: הצעת חוק התפזרות הכנסת העשרים וארבע, התשפ"א-2021 (preliminary reading; 99 for, 2 against, 6 present not voting). Knesset vote-details service (official per-MK record), 2022-06-22 (accessed 2026-10-07). https://www.knesset.gov.il/WebSiteApi/knessetapi/Votes/GetVoteDetails/37347
 59. Plenum vote 37524: חוק התפזרות הכנסת העשרים וארבע ומימון מפלגות, התשפ"ב-2022 (third reading; 92 for, 5 present not voting). Knesset vote-details service (official per-MK record), 2022-06-30 (accessed 2026-10-07). https://www.knesset.gov.il/WebSiteApi/knessetapi/Votes/GetVoteDetails/37524
+60. Plenum vote 36949: Citizenship and Entry into Israel Law (Temporary Order), 2022, reservation (7) to section 1 – the first of 39 reservation votes that day (vote IDs 36949–37004), each read separately; this one was defeated 16–35. Knesset vote-details service (official per-MK record), 2022-03-10 (accessed 2026-10-12). https://www.knesset.gov.il/WebSiteApi/knessetapi/Votes/GetVoteDetails/36949
+61. Plenum vote 37004: Citizenship and Entry into Israel Law (Temporary Order), 2022, reservation (220) – the last of the 39 reservation votes; defeated 15–44. Knesset vote-details service (official per-MK record), 2022-03-10 (accessed 2026-10-12). https://www.knesset.gov.il/WebSiteApi/knessetapi/Votes/GetVoteDetails/37004
 
 ## Information availability {#information-availability}
 
@@ -497,5 +499,5 @@ Enough public information exists to describe Meretz's positions, but with clear 
 - Since July 2024 Meretz operates mainly inside The Democrats. Its own institutions were replaced by a standing committee, and the 2026 campaign platform could not be retrieved because The Democrats' website blocked automated access [3].
 - The text of the February 2026 update to the union agreement was not found; its terms are known from press reports [7].
 - Few Meretz-specific statements were found on the 2025–2026 issues: the Iran wars, the Gaza ceasefire plan, Haredi enlistment after the 2024 Supreme Court ruling, and how to choose an October 7 commission. Several issue sections therefore rely on the 2022 platform, the 2024 joint agreement or statements by the joint list's leader, and say so.
-- The Knesset website could not be reached from the original research environment. Votes and bill records come from the official Knesset open-data tables as mirrored by Open Knesset [21, 22, 45–48]. On 7 October 2026 every vote cited here from mid-2021 to 2022 was checked against the Knesset's official per-MK vote records; two descriptions were corrected as a result [54–59].
+- The Knesset website could not be reached from the original research environment. Votes and bill records come from the official Knesset open-data tables as mirrored by Open Knesset [21, 22, 45–48]. On 7 October 2026 every vote cited here from mid-2021 to 2022 was checked against the Knesset's official per-MK vote records; two descriptions were corrected as a result [54–59]. On 12 October 2026 the 39 reservation votes of 10 March 2022 on the Citizenship Law were also checked one by one [60, 61].
 - No source was found confirming who formally chairs Meretz in 2026. Lasky is the only candidate filed on Meretz's behalf [1], the secretary-general heads its standing committee under the 2024 agreement [3, 7], and the party website's leadership page appears out of date [16].
