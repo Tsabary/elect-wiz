@@ -90,7 +90,7 @@ The party's only earlier partnership, with Hendel's Reservists, ended on 6 Septe
   - **22 October 2025:** voted for three opposition bills in preliminary reading. They would make reduced National Insurance rates, housing benefits and state aid for yeshiva students and needy students conditional on meeting obligations under the Security Service Law.
   - **3 December 2025:** voted for a preliminary-reading bill titled the "Ben-Gurion outline" for deferring and exempting service on grounds of religious study.
   - **4 February 2026:** voted for a preliminary-reading bill to impose financial penalties under the Security Service Law.
-  - **14 July 2026:** voted against the final (second and third) readings of the Security Service Law (Amendment No. 28 – temporary provision). The Knesset passed it 58–54 [56, 72]. According to Anadolu, it bars the arrest and prosecution of Haredi men who have not enlisted until 30 November 2026 and suspends criminal proceedings already under way [56].
+  - **14 July 2026:** voted against the final (second and third) readings of the Security Service Law (Amendment No. 28 – temporary provision). The Knesset passed it 58–54 [56, 72]. According to Anadolu, it bars the arrest and prosecution of Haredi men who have not enlisted until 30 November 2026 and suspends criminal proceedings already under way [56]. The High Court of Justice froze the law the next day and struck it down on 3 September 2026 [81].
 - **Action:** No Knesset bill on enlistment initiated by Tropper himself was found among the bills listed under his name [36].
 - **Change over time:** Tropper was a minister in the government that tabled the January 2022 bill, which kept the exemption for yeshiva students and lowered its age [35, 73, 74]. In June 2024 he voted against reviving that bill, and in 2026 he says the state should not finance those who choose not to serve [12, 52]. No statement by Tropper about the 2022 bill was found.
 
@@ -163,7 +163,7 @@ The party's only earlier partnership, with Hendel's Reservists, ended on 6 Septe
   - 12 November 2025, three bills;
   - 1 July 2026, three bills.
   
-  On 19 March 2025 he voted for a bill listing events that would require a state commission. On 24 December 2025 he voted **against** the preliminary reading of the bill for a "state-national" commission into the events of October 7, which passed 53–48 with one abstention [52, 53, 72]. The Israel Democracy Institute described it as a private bill by a Likud MK under which the members would be chosen through the Knesset: first by a proposal approved by 80 MKs, then if needed three members each from the coalition and the opposition, and finally by the Knesset Speaker. The institute calls it a political rather than a state commission [48]. MK Ariel Kallner's bill passed its first reading 59–0 on 6 July 2026 [49]. No vote by Tropper on the first reading was found in the open-data vote records.
+  On 19 March 2025 he voted for a bill listing events that would require a state commission. On 24 December 2025 he voted **against** the preliminary reading of the bill for a "state-national" commission into the events of October 7, which passed 53–48 with one abstention [52, 53, 72]. The Israel Democracy Institute described it as a private bill by a Likud MK under which the members would be chosen through the Knesset: first by a proposal approved by 80 MKs, then if needed three members each from the coalition and the opposition, and finally by the Knesset Speaker. The institute calls it a political rather than a state commission [48]. MK Ariel Kallner's bill passed its first reading 59–0 on 6 July 2026, with the opposition boycotting the vote [49]; no per-MK record of that vote is published in the Knesset's vote services, so the tally is the press figure and Tropper's vote is not recorded.
 
 **Closest option(s):** The President of the Supreme Court picks the members, as the law requires for a state commission of inquiry (`state-commission-under-existing-law`).
 
@@ -190,7 +190,7 @@ The party's only earlier partnership, with Hendel's Reservists, ended on 6 Septe
 - **Action:** On 18 July 2024 Tropper voted for a Knesset resolution, adopted 68–9, stating that the Knesset opposes the establishment of a Palestinian state west of the Jordan [78].
 - **Action (Knesset votes on applying Israeli sovereignty)** [52, 53]: All the votes below were preliminary readings. Tropper voted **for**:
   - the "Applying Israeli Sovereignty to the Jordan Valley" bill on 15 March 2023, which failed 14–66 [72];
-  - the same bill again on 22 January 2025, when it failed 32–56. The Times of Israel reported that it was an opposition bill, that a National Unity source said the party backed it because the Jordan Valley is a "strategic asset", and that coalition members called it "trolling" [59, 72];
+  - the same bill again on 22 January 2025, when it failed 32–56. The Times of Israel reported that it was an opposition bill and that coalition members called it "trolling" [59, 72];
   - Avigdor Liberman's bill applying sovereignty to Ma'ale Adumim on 22 October 2025, which passed 31–9 with one abstention according to the Knesset record (Maariv reported 32–9) [60, 72];
   - a bill applying sovereignty to Beitar Illit on 31 December 2025, which failed 8–45 [72].
   
@@ -258,7 +258,7 @@ He did vote for a preliminary-reading bill to make housing benefits conditional 
 - **Context:** The party's condition that Hendel receive the National Security Ministry [16, 18] lapsed when the two leaders split on 6 September 2026 [23].
 - **Action (Knesset votes)** [52, 53]:
   - **14 June 2023:** voted for a preliminary-reading bill to widen the aggravating circumstance for links to a crime organization in the Law on Combating Crime Organizations.
-  - **10 December 2025:** voted **against** the preliminary reading of a bill allowing a crime organization to be declared a terror organization. According to Maariv, the bill was brought by MK Tzvika Fogel at the request of National Security Minister Itamar Ben Gvir [58]. Once an organization was declared, the police and the Shin Bet could use technological and investigative tools that are currently reserved for counter-terrorism [58].
+  - **10 December 2025:** voted **against** the preliminary reading of the Special Powers to Combat Crime Organizations (Temporary Provisions) bill, which as tabled would allow a crime organization to be declared a terror organization; it passed 54–41 [82]. According to Maariv, the bill was brought by MK Tzvika Fogel at the request of National Security Minister Itamar Ben Gvir [58]. Once an organization was declared, the police and the Shin Bet could use technological and investigative tools that are currently reserved for counter-terrorism [58].
 - **Change over time:** The August 2026 Magen David Plan, which Tropper co-authored with Hendel before their split, proposes a dedicated Shin Bet division to fight crime in Arab society [15, 16, 17]. Eight months earlier, in December 2025, before that plan existed, Tropper voted against a bill that would let the police and the Shin Bet use counter-terrorism tools against crime organizations declared terror organizations [52, 53, 58]. The two measures differ in how they work: a dedicated unit, versus declaring organizations terror groups under a bill drafted at the National Security Minister's request. No statement explaining the vote was found. The joint list's own published plan on crime does not mention the Shin Bet [69].
 - No position was found from Tropper on investing in Arab communities as a way to fight crime.
 
@@ -269,7 +269,7 @@ He did vote for a preliminary-reading bill to make housing benefits conditional 
 ### Governance and term limits {#other-governance-term-limits}
 
 - **Action:** Tropper co-sponsored a bill to amend Basic Law: The Government (P/5096/25, December 2024) [40]. It would bar anyone who has served eight consecutive years as prime minister from serving again. The explanatory notes argue that long terms can lead to "governmental degeneration".
-- **Action:** In 2019 he initiated bills to:
+- **Dated background (2019; action):** In 2019 he initiated bills to:
   - end a prime minister's or minister's term when an indictment is filed;
   - make it mandatory to appoint a deputy prime minister;
   - require Knesset members to declare foreign bank accounts [36].
@@ -332,7 +332,7 @@ He did vote for a preliminary-reading bill to make housing benefits conditional 
 
 ### Animal welfare {#other-animal-welfare}
 
-- **Action:** In 2019 Tropper initiated a bill to ban live shipments of animals for slaughter (an amendment to the Animal Welfare Law) [36]. The bill did not advance.
+- **Dated background (2019; action):** In 2019 Tropper initiated a bill to ban live shipments of animals for slaughter (an amendment to the Animal Welfare Law) [36]. The bill did not advance.
 
 ### Periphery and the north {#other-periphery-north}
 
@@ -418,7 +418,7 @@ No indictments, convictions or official inquiries involving the party's leaders 
 
 **What was checked:** Hebrew and English searches for "טרופר" with the State Comptroller, the Knesset Ethics Committee, indictments and investigations, and press profiles of him [47].
 
-**Related court matter (Tropper as plaintiff):** Tropper won a civil defamation suit he had filed against a Likud activist. On 21 September 2025 the court awarded him NIS 160,000 in damages plus NIS 12,000 in costs. The court found that the defendant had shared "false accusations of the utmost severity" against him on TikTok [46]. Tropper was the plaintiff in this case, not a defendant. Current status: decided; no report of an appeal was found.
+A civil defamation suit that Tropper himself filed against a Likud activist, and won in September 2025, is not listed here, because court cases a leader brings as plaintiff are outside the scope of this section [46].
 
 No legal matters involving Shira Shapira, Elyasaf Peretz or Shlomi Yechiav were found.
 
@@ -504,6 +504,8 @@ No legal matters involving Shira Shapira, Elyasaf Peretz or Shlomi Yechiav were 
 78. Knesset plenum vote 41304: summary of the debate on international recognition of a Palestinian state. Knesset (vote record), 2024-07-18. https://www.knesset.gov.il/WebSiteApi/knessetapi/Votes/GetVoteDetails/41304
 79. Plenum protocol (דברי הכנסת), session of 23 July 2025, motions on applying sovereignty in Judea, Samaria and the Jordan Valley. Knesset, 2025-07-23. https://fs.knesset.gov.il/25/Plenum/25_ptm_7822514.doc
 80. Lapid finalizes coalition deals with all parties in incoming 'change government'. The Times of Israel, 2021-06-11. https://www.timesofisrael.com/lapid-inks-formal-coalition-deals-with-raam-yisrael-beytenu/
+81. High Court strikes down law shielding haredi yeshiva students from arrest over draft evasion. The Jerusalem Post, 3 September 2026. https://jpost.com/israel-news/politics-and-diplomacy/article-907553
+82. Plenum vote 44855: Special Powers to Combat Crime Organizations (Temporary Provisions) Bill, preliminary reading (54 for, 41 against) (per-MK results). Knesset vote-details service (official record), 2025-12-10 (accessed 2026-10-12). https://www.knesset.gov.il/WebSiteApi/knessetapi/Votes/GetVoteDetails/44855
 
 ## Information availability {#information-availability}
 

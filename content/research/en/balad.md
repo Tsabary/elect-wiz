@@ -96,7 +96,7 @@ Balad's housing record focuses on housing shortages in Arab towns, together with
 - **Action:** In June 2021 Abu Shehadeh co-sponsored a bill to build a new city on state land in the Northern District for Arab citizens. The city would be open to all citizens, with no admissions committee (a body that can vet new residents) [46]. The bill says existing Arab towns are dense, mostly on private land, and short of building plots and jobs [46].
 - **Action:** He co-sponsored a June 2021 bill to repeal Amendment 116 to the Planning and Building Law (the "Kaminitz law", 2017), which raised penalties for building without permits. The bill says the amendment increased house demolitions and blocks the legalisation of existing buildings [47].
 - **Action:** He co-sponsored a bill to guarantee Arab citizens fair representation on planning bodies [48] and a bill to limit how much private land authorities can take for public use without paying compensation [59].
-- **Action (2020, dated background):** With 13 other Joint List MKs, he co-sponsored a "fair rent" bill (September 2020) to create a public rent registry and require landlords to show tenants the rents paid in the previous 12 months, to limit sharp yearly rent rises [45].
+- **Dated background (2020; action):** With 13 other Joint List MKs, he co-sponsored a "fair rent" bill (September 2020) to create a public rent registry and require landlords to show tenants the rents paid in the previous 12 months, to limit sharp yearly rent rises [45].
 
 **Closest option(s):** Plan and build much more, especially by releasing state land and planning capacity for Arab communities (`speed-up-planning-and-construction`), together with state-built housing and rent regulation (`state-led-affordable-rental`). This rests on Abu Shehadeh's 2021 bills and the Joint List's 2026 plan.
 
@@ -126,8 +126,10 @@ No Balad statement specific to the 2026 war with Iran or the 2026 ground operati
 - **Statement:** In April 2023 Abu Shehadeh said: "We totally oppose this reform." He argued that Israel has no constitution, that Arab citizens had relied on the courts to defend themselves against the government and the Knesset, and that the changes would take that option away [27].
 - **Statement:** He also criticised the protest movement against the changes. He said it ignored what he called the occupation and discrimination and wanted to "go back to the bad situation that was a few months ago." He called instead for "a real democracy" built on equality [27]. A Balad statement in March 2023 said the dispute was about "redrawing the limits of democracy for Jews only" [30].
 - **Action (vote, 2021):** On 14 July 2021 Abu Shehadeh voted against an opposition bill to amend Basic Law: Human Dignity and Liberty so that a law could stay valid despite a court ruling; it was defeated 50–62 [92].
-- **Action:** Abu Shehadeh co-sponsored proposed Basic Laws (laws with constitutional status) to anchor equality: "Basic Law: Equality" (2021), which the explanatory notes present as a response to the 2018 Nation-State Law [38], and the 2020 "Democratic, Egalitarian and Shared State" Basic Law. The latter says any law that contradicts it would be void [33].
-- **Action:** He co-sponsored Basic Law amendments to bar a Knesset member under indictment for a serious crime from being given the task of forming a government (2020) [51], and to end the term of a prime minister or minister once an indictment is filed (2021) [50].
+- **Action (2021 bill):** Abu Shehadeh co-sponsored "Basic Law: Equality" (2021), a proposed basic law (a law with constitutional status) that the explanatory notes present as a response to the 2018 Nation-State Law [38].
+- **Dated background (2020; action):** He co-sponsored the 2020 "Democratic, Egalitarian and Shared State" Basic Law bill, which says any law that contradicts it would be void [33].
+- **Action (2021 bill):** He co-sponsored a Basic Law amendment to end the term of a prime minister or minister once an indictment is filed (2021) [50].
+- **Dated background (2020; action):** He co-sponsored a Basic Law amendment to bar a Knesset member under indictment for a serious crime from being given the task of forming a government (2020) [51].
 
 **Closest option(s):** Reverse the government's changes and protect the courts' independence in a basic law (`repeal-changes-protect-independence`). This rests on the chair's 2023 statements. Balad also wants a constitution-level guarantee of equality, shown by its 2021 "Basic Law: Equality" bill, which overlaps with `broad-agreed-constitutional-framework`.
 
@@ -152,7 +154,7 @@ No Balad statement specific to the 2026 war with Iran or the 2026 ground operati
 
 ### Recognition of Arab citizens as a national minority {#other-national-minority}
 
-- **Action:** In June 2020 Balad's three MKs proposed "Basic Law: The Arab Minority as a National Minority", which would recognise collective rights, including the right to run its own cultural affairs [36]. In December 2020 they proposed a separate Arab state-education system run by Arab citizens, describing them as a national minority entitled to manage their own education [52].
+- **Dated background (2020; action):** In June 2020 Balad's three MKs proposed "Basic Law: The Arab Minority as a National Minority", which would recognise collective rights, including the right to run its own cultural affairs [36]. In December 2020 they proposed a separate Arab state-education system run by Arab citizens, describing them as a national minority entitled to manage their own education [52].
 - **Action:** In February 2022 Abu Shehadeh co-sponsored a bill to anchor Arabic as an official language in primary legislation [57].
 
 ### Citizenship and family reunification {#other-citizenship-law}

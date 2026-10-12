@@ -48,7 +48,7 @@ researchedAsOf: 2026-10-07
 
 **Action (in government, 2021):** Kahana, Tropper and Farkash-Hacohen were ministers in the government that passed the 2021 Arrangements Law. Besides the kashrut reform, it included an import reform that Srugim reported was expected to save consumers about NIS 6 billion a year [87, 41, 42, 49].
 
-**Action (budget votes):** Eisenkot, Kahana, Farkash-Hacohen and Tropper voted against the 2023–2024 state budget and the accompanying economic arrangements law in May 2023 [58, 93], and against the 2025 budget at first reading in December 2024 [91] and at its final reading on March 24, 2025 [106]. Farkash-Hacohen and Tropper voted against the 2026 budget in its final reading on March 30, 2026 [102].
+**Action (budget votes):** Eisenkot, Kahana, Farkash-Hacohen and Tropper voted against the 2023–2024 state budget and the accompanying economic arrangements law in May 2023 [58, 93], and against the 2025 budget at first reading in December 2024 [91] and at its final reading on March 25, 2025 (the Knesset record files the vote under the sitting of March 24) [106]. Farkash-Hacohen and Tropper voted against the 2026 budget in its final reading on March 30, 2026 [102].
 
 **Closest option(s):** Open the market to more competition and imports (`open-market-competition-imports`). The platform also includes targeted support for people who serve and low-income pensioners (`direct-support-for-households`), and an income-tax cut paired with new consumption taxes.
 

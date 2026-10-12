@@ -52,7 +52,7 @@ researchedAsOf: 2026-10-07
 
 **Former leader Moshe Gafni** is still chair of the party's national movement [4]. His record and statements as party chair until September 2026 appear throughout this document.
 
-**Spiritual leadership.** Rabbi Dov Lando is the party's senior rabbinic authority; he decided its 2026 slate and its exit from the government [4, 22]. In July 2026 he said that soldiers sent to war "for the honor of the state" who kill people commit "murder". Degel HaTorah, then led by Gafni, called his words "holy" and said those unfamiliar with the religious context should not rush to interpret them. People close to the rabbi described the remarks as a "theoretical halachic discussion" [68]. In October 2026 he said Zionism "made Arabs hate us", and that Religious Zionist soldiers "are killed because their rabbis teach them a distorted Torah" [69].
+**Spiritual leadership.** Rabbi Dov Lando is the party's senior rabbinic authority; he decided its 2026 slate and its exit from the government [4, 22]. In July 2026 he said that soldiers sent to war "for the honor of the state" who kill people commit "murder". Degel HaTorah, then led by Gafni, called his words "holy" and said those unfamiliar with the religious context should not rush to interpret them [68]. In October 2026 he said Zionism "made Arabs hate us", and that Religious Zionist soldiers "are killed because their rabbis teach them a distorted Torah" [69].
 
 ## Positions on the issues {#issues}
 
@@ -136,7 +136,7 @@ This is the party's central issue.
 - locating a new Haredi city within 90 days;
 - planning targets "adjusted to the relative size" of different population groups, including in Judea and Samaria [19].
 
-**Formal commitment / record:** Asher has led the Knesset lobby on Haredi housing since 2016 [10]. Pindrus managed the Haredi Institute for Public Affairs' housing project, which aimed to influence government policy on Haredi housing shortages [11].
+**Background (candidates' record, from 2016):** Asher has led the Knesset lobby on Haredi housing since 2016 [10]. Pindrus managed the Haredi Institute for Public Affairs' housing project, which aimed to influence government policy on Haredi housing shortages [11].
 
 **Scope:** Several of these commitments focus on housing for the Haredi community (a Haredi city, planning by population group). Others, such as supply, permits and mortgages, apply to everyone.
 
@@ -196,7 +196,7 @@ No Degel HaTorah MK voted on the bill to apply sovereignty to Ma'ale Adumim (22 
 - **12 November 2025:** Gafni, Asher and Maklev voted against three such bills, while outside the coalition [42].
 - **1 July 2026:** all four Degel HaTorah MKs voted against three such bills [42].
 
-**Action (vote for a Knesset-appointed commission):** On 24 December 2025, Gafni, Asher and Maklev voted for the coalition's preliminary bill to create a "state-national commission of inquiry" into the October 7 attack. It passed 53–48, with one abstention [45, 75]. The bill passed its first reading in July 2026, 59–0, while the opposition boycotted the vote. Under the bill:
+**Action (vote for a Knesset-appointed commission):** On 24 December 2025, Gafni, Asher and Maklev voted for the coalition's preliminary bill to create a "state-national commission of inquiry" into the October 7 attack. It passed 53–48, with one abstention [45, 75]. The bill passed its first reading on 6 July 2026, 59–0, while the opposition boycotted the vote; no per-MK record of that vote is published in the Knesset's vote services, so the tally is the press figure [47]. Under the bill:
 - 80 of the 120 MKs choose the members;
 - if there is no agreement within two weeks, the coalition and the opposition each pick three members;
 - four supervisory members representing bereaved families join the commission [47].

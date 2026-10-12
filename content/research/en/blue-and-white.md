@@ -46,8 +46,8 @@ He left the wartime government in June 2024 [13]. In the September 2026 campaign
 
 The party has no 2026 platform with a cost-of-living plan. A non-partisan election guide notes that the party has not published a 2026 manifesto and relies on 2025 policy material, which focuses on national service, public-service reform, defense, education, resilience and rebuilding the north [29]. The evidence below is mostly older or indirect.
 
-- **Statement (dated background, 2019):** In his first campaign speech on 29 January 2019, Gantz pledged to fight monopolies and deal with the housing crisis [37].
-- **Formal commitment (dated background, 2019):** The March 2019 Blue and White platform (written with the parties it then ran with) promised NIS 12.5 billion more for the health system over five years [35]. Its other economic commitments included long-term care insurance and a gradually longer school day [36].
+- **Dated background (2019; statement):** In his first campaign speech on 29 January 2019, Gantz pledged to fight monopolies and deal with the housing crisis [37].
+- **Dated background (2019; formal commitment):** The March 2019 Blue and White platform (written with the parties it then ran with) promised NIS 12.5 billion more for the health system over five years [35]. Its other economic commitments included long-term care insurance and a gradually longer school day [36].
 - **Action:** In opposition, Gantz voted against the 2025 state budget bill in a Knesset vote on 16 December 2024 [43, 46]. On 26 November 2025 he voted for a motion calling for a parliamentary inquiry into the government's failure to fight the cost of living [43, 46].
 - **Action:** Gantz has consistently voted for targeted benefits for military reservists, including:
   - state funding of daycare fees for reservists' children (12 March 2025 and 10 December 2025) [43, 46];
@@ -102,10 +102,10 @@ No detailed party plan on crime in Arab society was found. The Knesset voting re
   - fines of NIS 50,000 for not fulfilling security-service duties, and NIS 100,000 where the intent was to avoid service (4 February 2026) [54];
   - a 20% budget cut for schools where fewer than 80% of graduates required to serve enlist in military or civilian service (26 November 2025) [55];
   - a Basic Law amendment barring people who did not fulfil their service duty from sitting in the security cabinet (24 December 2025) [56].
-- **Action:** On 14 July 2026 he voted against the final reading of the government's Security Service Law (amendment 28, temporary provision), which passed 58–54 [41, 45, 72]. The law freezes arrest, investigation and enforcement proceedings against yeshiva students who are required to serve, if they study at least 45 hours a week (40 in a kollel, a yeshiva for married men) and, from the law's start, have no other occupation. It runs until 30 November 2026 [59]. Knesset records list it as a continuation of the same 2022 government bill (booklet 1502) that the June 2024 vote revived [59, 60].
+- **Action:** On 14 July 2026 he voted against the final reading of the government's Security Service Law (amendment 28, temporary provision), which passed 58–54 [41, 45, 72]. The law froze arrest, investigation and enforcement proceedings against yeshiva students who are required to serve, if they study at least 45 hours a week (40 in a kollel, a yeshiva for married men) and, from the law's start, have no other occupation. Its text ran until 30 November 2026 [59]. The High Court of Justice froze the law the next day and struck it down on 3 September 2026 [84]. Knesset records list it as a continuation of the same 2022 government bill (booklet 1502) that the June 2024 vote revived [59, 60].
 - **Statement:** On 22 February 2026 he said that every citizen should serve, with options "from military to community service alone" [24]. On 3 September 2026 he said that everyone at 18 must serve, and "whoever doesn't serve – won't receive" [22]. In August 2026 he said the Haredi parties cannot be in the next government "because they won't agree to a fair enlistment law and public national education for all" [19].
 
-**Contradiction:** The 2022 bill that set gradual targets and funding cuts was published by the government while Gantz was Defense Minister, and he voted for it at its first reading in January 2022 [15, 60, 80]. In June 2024 he voted against reviving that same bill [41, 48]. His explanation is that the 2022 bill was submitted only as a "bridging law" until a full service framework could be set up [62].
+**Change over time:** The 2022 bill that set gradual targets and funding cuts was published by the government while Gantz was Defense Minister, and he voted for it at its first reading in January 2022 [15, 60, 80]. In June 2024 he voted against reviving that same bill [41, 48]. The two votes were cast in different Knessets, the first as part of the coalition and the second in the opposition, with the October 7 attack and the war in between. His explanation is that the 2022 bill was submitted only as a "bridging law" until a full service framework could be set up [62].
 
 **Closest option(s):** Require every 18-year-old, including Haredim, to do military or civilian national service, with benefits tied to service (`universal-service-with-sanctions`). His 2022 government bill matched the gradual-targets approach (`gradual-targets-by-agreement`), but his positions since 2024 have moved away from it.
 
@@ -113,14 +113,14 @@ No detailed party plan on crime in Arab society was found. The Knesset voting re
 
 No 2026 housing plan was found [29].
 
-- **Statement (dated background, 2019):** In January 2019 Gantz pledged to tackle the housing crisis [37].
+- **Dated background (2019; statement):** In January 2019 Gantz pledged to tackle the housing crisis [37].
 - **Action:** On 26 November 2025 Gantz voted for a private bill giving public-housing tenants rights to buy their homes [43, 46]. On 1 January 2025 he voted for a bill giving reservists priority in buying Israel Land Authority land in the periphery [43, 46]. On 25 March 2026 he voted for a bill to develop Kiryat Shmona and give reservists and disabled veterans priority in housing there [43, 46].
 
 **Closest option(s):** The limited evidence points to direct help for buyers, especially those who served (`direct-help-for-buyers`), together with developing the north and periphery (`develop-periphery-and-transport`). The evidence is thin.
 
 ### Iran, Hezbollah and the region {#issue-iran-and-regional-security}
 
-- **Statement (dated background, 2019):** At the Munich Security Conference on 17 February 2019 Gantz called Iran's regime "an evil one", said "On my watch Iran will not have nuclear weapons" and "On my watch there will be no appeasement" [71].
+- **Dated background (2019; statement):** At the Munich Security Conference on 17 February 2019 Gantz called Iran's regime "an evil one", said "On my watch Iran will not have nuclear weapons" and "On my watch there will be no appeasement" [71].
 - **Action:** As Defense Minister in October 2022, he backed the US-mediated maritime border agreement with Lebanon. He said it "establishes a new security equation" and that Israel "did not concede a single millimeter of security" [70].
 - **Formal commitment:** Advancing normalization with Saudi Arabia "as part of a comprehensive process" was one of his six conditions in May 2024 [14].
 - **Statement:** On 14 June 2024 he said Israel must act in the north "either through an agreement or through escalation if necessary" [33].
@@ -131,7 +131,7 @@ No 2026 housing plan was found [29].
 
 ### Judea and Samaria {#issue-judea-samaria}
 
-- **Formal commitment (dated background, 2019):** The March 2019 Blue and White platform said "there will be no second disengagement" and committed to keeping the settlement blocs, the Jordan Valley, Jerusalem and the Golan. It proposed a regional conference with Arab states to "deepen the process of separation from the Palestinians", without mentioning a Palestinian state [35, 36]. In January 2019 Gantz said that if it turned out there was no way to reach peace at that time, he would strengthen the settlement blocs and the Golan Heights, and the Jordan Valley would remain Israel's eastern security border [37].
+- **Dated background (2019; formal commitment):** The March 2019 Blue and White platform said "there will be no second disengagement" and committed to keeping the settlement blocs, the Jordan Valley, Jerusalem and the Golan. It proposed a regional conference with Arab states to "deepen the process of separation from the Palestinians", without mentioning a Palestinian state [35, 36]. In January 2019 Gantz said that if it turned out there was no way to reach peace at that time, he would strengthen the settlement blocs and the Golan Heights, and the Jordan Valley would remain Israel's eastern security border [37].
 - **Statement:** On 30 October 2022 Gantz said: "The left in Israel thinks the solution is two states for two peoples. I am against this." He proposed instead to "shrink the conflict" rather than slide into "a binational state", and to keep the Jordan Valley and Israeli security superiority [34].
 - **Action:** On 18 July 2024 Gantz and the four other faction MKs who voted (Tamano-Shata, Tropper, Farkash-Hacohen and Biton) voted for a Knesset resolution, which passed 68–9, stating that "the Knesset firmly opposes the establishment of a Palestinian state west of the Jordan" [39, 42, 50].
 - **Action:** On 22 January 2025 he and all the faction MKs who voted, including Eisenkot and Kahana, voted for a private bill to apply Israeli sovereignty to the Jordan Valley. The bill was defeated 32–56 [42, 45, 51].
@@ -142,7 +142,7 @@ No 2026 housing plan was found [29].
 
 ### Judicial system {#issue-judicial-system}
 
-- **Statement (dated background, 2019):** In January 2019 Gantz pledged "zero tolerance for corruption of any kind" and said a prime minister under indictment could not serve [17, 37]. The 2019 platform proposed term limits for the prime minister [36].
+- **Dated background (2019; statement):** In January 2019 Gantz pledged "zero tolerance for corruption of any kind" and said a prime minister under indictment could not serve [17, 37]. The 2019 platform proposed term limits for the prime minister [36].
 - **Statement:** When the Knesset passed the law changing the Judicial Selection Committee on 27 March 2025, Gantz warned that "democracies fall or die slowly when they suffer from a malignant disease called the tyranny of the majority" [66]. The law replaces the two Israel Bar Association members with one lawyer chosen by the coalition and one chosen by the opposition. It takes effect in the next Knesset [66, 67]. Opposition lawmakers boycotted the final vote, and opposition faction leaders pledged to repeal the law [66]. Gantz said that day: "even if it takes time – we will fix it. The politicization of the Judicial Selection Committee will be cancelled, a real reform will be advanced" [76].
 - **Action:** Gantz voted against:
   - two private bills to split the attorney general's role (29 October 2025) [42, 45];
@@ -166,10 +166,10 @@ No 2026 housing plan was found [29].
 
 ### Religion and state {#issue-religion-and-state}
 
-- **Formal commitment (dated background, 2019):** The March 2019 Blue and White platform supported public transportation on Shabbat and civil unions, including for same-sex couples. It also promised to expand the egalitarian prayer area at the Western Wall, with a joint oversight council [35].
+- **Dated background (2019; formal commitment):** The March 2019 Blue and White platform supported public transportation on Shabbat and civil unions, including for same-sex couples. It also promised to expand the egalitarian prayer area at the Western Wall, with a joint oversight council [35].
 - **Action:** On 19 November 2025 Gantz and all the faction MKs who voted backed two private bills on public transport on Shabbat. Both failed (39–58 and 43–58) [43, 46, 79]. One of them would let each local authority decide whether to run public transport on Shabbat, based on a residents' survey and without employing drivers whose weekly day of rest is Shabbat [53].
 - **Action:** On 25 February 2026 he voted against a bill to require consulting the Chief Rabbinate on holy places [43, 46].
-- **Action:** As Defense Minister in November 2020, he changed Defense Ministry forms to read "parent 1" and "parent 2" to include LGBT families [69].
+- **Dated background (2020; action):** As Defense Minister in November 2020, he changed Defense Ministry forms to read "parent 1" and "parent 2" to include LGBT families [69].
 
 **Closest option(s):** Keep religious services but allow choice and local decisions, such as city-by-city Shabbat transport (`more-choice-local-decisions`). This rests on the November 2025 and February 2026 votes; the 2019 platform's support for civil unions is older background, and no statement on civil marriage since 2021 was found.
 
@@ -196,7 +196,7 @@ Rotem Avidar Tzalik (place 5) is a reservists' rights activist and Roy Konkol (p
 
 The Nation-State Law is a 2018 basic law that defines Israel as the nation-state of the Jewish people.
 
-**Formal commitment:** The 2019 platform promised to protect equality through Basic Law amendments, without directly repealing the Nation-State Law [35].
+**Dated background (2019; formal commitment):** The 2019 platform promised to protect equality through Basic Law amendments, without directly repealing the Nation-State Law [35].
 
 **Action:** On 3 July 2024 and 13 November 2024 Gantz voted for bills adding equality "in the spirit of the Declaration of Independence" to the Nation-State Law [43, 44, 46, 47]. On 18 December 2024 he voted against a bill to repeal the law entirely [43, 46]. On 12 February 2025 he voted for a bill to set up a special planning committee for Druze communities [43, 46]. The 2026 list includes a Druze candidate [2].
 
@@ -206,7 +206,7 @@ The Nation-State Law is a 2018 basic law that defines Israel as the nation-state
 
 ### Governance and term limits {#other-governance}
 
-**Formal commitment:** The 2019 platform proposed limiting a prime minister's tenure to eight consecutive years or three terms [36].
+**Dated background (2019; formal commitment):** The 2019 platform proposed limiting a prime minister's tenure to eight consecutive years or three terms [36].
 
 **Action:** On 22 November 2021, while Blue and White sat in the Bennett–Lapid government, a government bill limiting a prime minister to eight years in office passed its first reading 66–48, with Gantz voting for it; it did not complete its readings [82, 83]. In opposition, Gantz voted three times for Basic Law bills limiting a prime minister's tenure, in July 2024, July 2025 and February 2026 [44, 47].
 
@@ -222,13 +222,13 @@ The Nation-State Law is a 2018 basic law that defines Israel as the nation-state
 
 **Statement:** In August 2026 Gantz named "public education" among the key decisions for a broad government, and said the Haredi parties cannot be in the next government because they will not agree to "public national education for all", which the Jerusalem Post glossed as teaching core curriculum subjects [19].
 
-**Formal commitment:** The 2019 platform promised to gradually lengthen the school day [36].
+**Dated background (2019; formal commitment):** The 2019 platform promised to gradually lengthen the school day [36].
 
 ### LGBT rights {#other-lgbt}
 
-**Formal commitment:** The 2019 platform supported same-sex civil unions and surrogacy for same-sex couples [35].
+**Dated background (2019; formal commitment):** The 2019 platform supported same-sex civil unions and surrogacy for same-sex couples [35].
 
-**Action:** As Defense Minister he adapted ministry forms for LGBT families in November 2020 [69].
+**Dated background (2020; action):** As Defense Minister he adapted ministry forms for LGBT families in November 2020 [69].
 
 ### Hostages {#other-hostages}
 
@@ -267,6 +267,8 @@ The party has been in government in three governments: the 35th government (May 
 - **LGBT inclusion:** Delivered within his ministry, which changed its forms in November 2020 [69].
 - **Lebanon maritime agreement (2022):** Gantz supported the agreement as Defense Minister [70].
 - **Emergency government (2023–2024):** Gantz served in the war cabinet from 12 October 2023 [12, 15]. He set six conditions on 18 May 2024 [14]. He left on 9 June 2024, saying Netanyahu was preventing "real victory" [13].
+
+**Coalition-line votes (2021–2022):** While the party sat in the Bennett–Lapid coalition, its MKs voted with the coalition against opposition private bills at their preliminary readings: a bill to increase the public-housing stock (24 November 2021, defeated 40–44), with Alon Schuster voting against; a bill to raise child allowances (24 November 2021, defeated 38–43), with Schuster voting against; a bill setting minimum sentences for weapons offences (11 May 2022, defeated 53–61), with Gantz and Schuster voting against; a bill on public-transport discounts for people with disabilities (15 June 2022, defeated 47–52), with Schuster voting against [85]. The party's platform for the March 2021 election holds no pledge on any of these four measures: on welfare it pledges to raise the old-age allowance and income support for older people, on disability to implement the Equal Rights for Persons with Disabilities Law in full and to promote accessibility, on housing to enlarge the supply of homes, and on crime a national plan that includes collecting weapons [86]. They are therefore recorded as votes with the coalition and not as contradictions. On 1 December 2021 Blue and White MK Yael Ron Ben-Moshe also voted against an opposition bill to equalise the disability allowance with the minimum wage, which was defeated 20–22; Gantz and Schuster are not recorded as voting [87]. The 2021 platform holds no pledge on the level of the disability allowance, so this too is recorded as a vote with the coalition.
 
 **Opposition record (2022–2023 and since June 2024):**
 - He voted against the coalition's judicial and attorney-general bills [42, 45].
@@ -375,6 +377,10 @@ No court rulings, State Comptroller findings or indictments involving Pnina Tama
 81. After previous failure, Haredi army draft bill passes its first reading. The Times of Israel, 31 January 2022. https://www.timesofisrael.com/after-previous-failure-haredi-army-draft-bill-passes-its-first-reading/
 82. Knesset plenum vote 36074: Basic Law: The Government (amendment – maximum period in office as prime minister), first reading. Knesset (vote record), 22 November 2021. https://www.knesset.gov.il/WebSiteApi/knessetapi/Votes/GetVoteDetails/36074
 83. KNS_Bill 2165126: government bill, Basic Law: The Government (Amendment No. 11), 24th Knesset (status: awaiting plenum debate before second and third readings). Knesset open data (OData), accessed 12 October 2026. https://www.knesset.gov.il/OdataV4/ParliamentInfo/KNS_Bill?$filter=Id%20eq%202165126
+84. High Court strikes down law shielding haredi yeshiva students from arrest over draft evasion. The Jerusalem Post, 3 September 2026. https://jpost.com/israel-news/politics-and-diplomacy/article-907553
+85. Knesset plenum votes 36094 (Public Housing (Increasing the Stock) Bill, 24 November 2021), 36100 (National Insurance (Raising Child Allowances) Bill, 24 November 2021), 37100 (Penal Law (Minimum Sentences for Weapons Offences) Bill, 11 May 2022) and 37316 (Public Transport Discount for People with Disabilities Bill, 15 June 2022), all preliminary readings: official per-MK records. Knesset vote-details service, accessed 12 October 2026. https://www.knesset.gov.il/WebSiteApi/knessetapi/Votes/GetVoteDetails/36094 ; https://www.knesset.gov.il/WebSiteApi/knessetapi/Votes/GetVoteDetails/36100 ; https://www.knesset.gov.il/WebSiteApi/knessetapi/Votes/GetVoteDetails/37100 ; https://www.knesset.gov.il/WebSiteApi/knessetapi/Votes/GetVoteDetails/37316
+86. כחול לבן – העקרונות שלנו (Blue and White platform for the March 2021 election, copy hosted by IDI). Blue and White / Israel Democracy Institute, 2021. https://www.idi.org.il/media/15840/%D7%9B%D7%97%D7%95%D7%9C-%D7%9C%D7%91%D7%9F.pdf
+87. Knesset plenum vote 36118 (National Insurance (Equalising the Disability Allowance with the Minimum Wage) Bill, preliminary reading, 1 December 2021; 20 for, 22 against): official per-MK record. Knesset vote-details service, accessed 12 October 2026. https://www.knesset.gov.il/WebSiteApi/knessetapi/Votes/GetVoteDetails/36118
 
 ## Information availability {#information-availability}
 
