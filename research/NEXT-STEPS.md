@@ -1,6 +1,6 @@
 # Handoff: where the project stands and how to continue
 
-Last updated 2026-10-08. Nothing is running. The owner paused the remaining research until the week of 2026-10-12. Everything is committed on `main` and pushed to the private GitHub repo `origin`; there are no other branches.
+Last updated 2026-10-12. Nothing is running. The Stage 4 review of the 28 done parties is paused before its lead-review step (see Phase 3 progress); the 24 small parties are on hold. Everything is committed on `main` and pushed to the private GitHub repo `origin`; there are no other branches.
 
 This note is for the next orchestrating agent, which may be a Claude Code cloud session. Read it fully before starting. It records what earlier sessions decided that isn't obvious from the repository.
 
@@ -22,7 +22,8 @@ This note is for the next orchestrating agent, which may be a Claude Code cloud 
   - Done: likud-party, new-hope, byachad-bennett, yesh-atid, yashar-leyisrael, yesodot-yisrael, yisrael-beytenu, shas, degel-hatorah, agudat-yisrael, the-democrats-party, raam, hadash, taal, balad, blue-and-white, jewish-national-front, national-union-tkuma, the-reservists, amcha-yisrael, haredi-public, israel-first.
   - Done 2026-10-07 (cloud session, Opus authors and Opus fact-checkers): meretz, eretz-yisrael-shelanu, zehut, atid-echad, chomat-torat-yisrael, new-economic-party. About 8,200–10,200 words and 53–81 sources each; all `limitedInfo: false`. **knesset.gov.il was geo-blocked from the cloud container**, so their 25th-Knesset votes rest on press reports; see §2a for the re-check list.
   - **Next: 24 small parties** (lists polled under 1%), researched with **Sonnet** by owner decision, fact-checked with **Opus**: lazuz, national-responsibility, ahi-movement, color-black, beit-yemini, tzomet, hakahal, together-we-will-succeed, tekuma, sharshar, ihud-bnei-habrit, pirates, gan-eden, womens-voice, just-law, shema, new-order, you-and-me, brit-olam, hatikun, bible-bloc, betach, orot-hashachar, demokratura.
-- **3.3 consistency review, 3.4 Hebrew editions and parity check, and the Phase 3 audits:** not started.
+- **3.3 consistency review (Stage 4), for the 28 done parties:** the four **group reviews are done** and committed as WIP (`45faaa8`). Rulebook: `research/pipeline/agent-briefs/stage-4-brief.md`. Group logs, metrics and digest: `research/review/consistency/`. **Paused by the owner before the next two steps:** (1) one **lead reviewer** (Opus, not an author, fact-checker or group reviewer) who answers the "For the lead reviewer" questions in the four group logs with one rule each, applies the resulting fixes across all 28 documents, regenerates the metrics, and writes `research/review/consistency-review.md`; (2) a fresh **auditor**. Also open: a targeted re-run for new-hope (its 2021–22 term in government and coalition-line votes), which needs the owner's go-ahead. When the 24 small parties are done, they get the scoped Stage 4 against these 28.
+- **3.4 Hebrew editions and parity check, and the Phase 3 audits:** not started.
 
 Key files:
 - **Agent briefs:** `research/pipeline/agent-briefs/stage-2-brief.md` (research) and `stage-3-brief.md` (fact-check). These hold the owner's quality bar and everything learned so far. Give each agent the brief plus its party ID.
