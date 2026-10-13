@@ -286,3 +286,31 @@ Author flags reviewed, no change needed:
 - Author's flags reviewed: "שינוי לאורך זמן" and "רקע (לפני 2021):" are faithful to the EN labels; no change needed. "מעמד:" was changed (see above). "הצהרה" for the Knesset declaration was changed to "גילוי דעת" (see above). "גיוס אוניברסלי" was changed to "שירות אוניברסלי" to match the EN "universal service". "באופן זמני" for "temporarily" is correct (it is not "tentative") and was kept. "השיג" is used for "secured", and the council is "מועצת חכמי התורה" throughout.
 - English questioned: none. The Iran "Closest option(s)" line having no [n] is consistent with the Gaza and other summary lines, which restate cited bullets. Yinon Azoulay "from seventh to second place" does not conflict with anything else in the document, and both languages match.
 - Validation: no error names the file ✔ (`pnpm validate:content` exits 0)
+
+## blue-and-white (checked 2026-10-13; EN researchedAsOf 2026-10-07)
+- Hebrew edition by: Stage 5a agent (Sonnet) · Parity check by: Stage 5b agent (Opus, different)
+- Sections/anchors: identical ✔ (same 33 anchors, same order; issue sub-headings match each issue's `he.title`)
+- Citations: the `[n]` sequence is identical across the whole body ✔; Sources list identical (87 entries, same order, same titles and URLs) ✔; closest-option IDs identical ✔; frontmatter matches except `lang` ✔; dates day first ✔; no "נחקרה/שנחקרו" (the only "נחקרו" is Fifth Dimension employees "questioned under caution") ✔
+- Claims compared: ~300 · Differences found: 17 · Fixed: 17 · Unresolved: 0
+| Anchor | Difference | Resolution |
+|---|---|---|
+| overview | Naturalness (2): English glosses left in the Hebrew: "חוסן לישראל" (Israel Resilience) and "המכון הישראלי לדמוקרטיה (מכון IDI)" | Removed both glosses |
+| overview | Naturalness: heading "מספר המושבים הנוכחי" is a literal rendering of "Current seats" | Changed to "מספר חברי הכנסת כיום" |
+| overview | Meaning drift: "תושבי הצפון ויישובים סמוכים לרצועת עזה" read as if candidates include communities, not residents of communities near Gaza | Changed to "תושבי הצפון ותושבי היישובים הסמוכים לרצועת עזה" |
+| issue-cost-of-living, other-reservists | Meaning drift (2): ארנונה glossed as "מס רכוש עירוני". In Hebrew, מס רכוש is a different tax, and ארנונה needs no gloss | Removed the gloss in both places |
+| issue-gaza | Naturalness: ungrammatical "ישראל אסור שתאפשר להתהוות של איומים" | Changed to "אסור לישראל לאפשר היווצרות של איומים…" |
+| issue-gaza (closest) | Meaning drift (strength): "he has said there should be no Israeli settlement" was rendered "אמר שאסור שתהיה" (must not) | Changed to "אמר שלא צריכה להיות התיישבות ישראלית בעזה". Checked the rest of the flagged sentence: "תמיכתו בפברואר 2025 בהעברה מרצון חולקת מרכיב אחד עם `resume-fighting-full-control`" says exactly what the English says ✔ |
+| issue-iran-and-regional-security | Naturalness: same ungrammatical "ישראל אסור שתאפשר התהוות" | Changed to "אסור לישראל לאפשר היווצרות של איומים…" |
+| other-nation-state-law | Meaning drift and naturalness (4): the heading "שוויון בחוק יסוד: ישראל כמדינת הלאום של העם היהודי והקהילה הדרוזית" could be read as "the nation-state of the Jewish people and the Druze community". The full statute name was also repeated where the English uses the short name | Heading changed to "שוויון בחוק הלאום והקהילה הדרוזית". The definition line now gives "חוק הלאום (חוק יסוד: ישראל – מדינת הלאום של העם היהודי)", and later mentions use "חוק הלאום" |
+| other-arab-parties | Loaded wording: "the security decisions ahead" was rendered "שעומדות לפנינו" (first person, "before us") | Changed to "ההחלטות הביטחוניות הצפויות" |
+| other-governance | Naturalness: heading "שלטון וכהונות מוגבלות" | Changed to "משילות והגבלת כהונה" |
+| coalition | Meaning drift: "must be 'returned to the political margins'" (passive) was rendered "צריכים 'לחזור לשוליים'" (they should go back) | Changed to "צריכים 'להיות מוחזרים לשוליים הפוליטיים'" |
+| coalition | Naturalness: gender agreement error "שלושה מערכות בחירות" | Changed to "שלוש מערכות בחירות" |
+- Checked, no change (author flags and rulings):
+  - "המשתמטים" (coalition, 20 September 2026): it sits inside quotation marks and is attributed ("מפלגתו אמרה…"). The English quotes and attributes the same words ("the draft dodgers"), so it is allowed under the ruling ✔.
+  - "פנינה תמנו-שטה": the registry's `he` is "פנינה תמנו", but the English writes the longer name "Pnina Tamano-Shata" throughout, and so does the registry's own `en`. Decision: keep "תמנו-שטה" for parity with the English.
+  - "Dated background" as "רקע מתקופה קודמת": the meaning is equivalent and the wording is neutral. Kept.
+  - "Tentatively" as "בהסתייגות": not "זמני/זמנית". Kept.
+  - No `avoid.he` term appears anywhere else. The glossary `he` forms are used (צה״ל, השב״כ, מעצר בלי משפט, החלת ריבונות ישראלית, ועדת חקירה ממלכתית, גושי ההתיישבות, הרבנות הראשית and others).
+  - "Change over time" is "שינוי לאורך זמן" ✔.
+- Validation: no error names the file ✔ (the remaining errors concern other parties' files)
