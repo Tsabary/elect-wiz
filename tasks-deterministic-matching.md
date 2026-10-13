@@ -104,7 +104,7 @@ The owner also creates the small counter database for the anonymous counts befor
 - **Notes:** Existing rules to carry over are in `research/pipeline/agent-briefs/stage-4-brief.md` ("Rules decided") and `research/review/consistency-review.md`.
 
 ### Task 1.5: Update the project documents for what is cancelled
-- [ ]
+- [x]
 - **What:** Bring the handoff note, the original task list and the original plan in line with the new direction, so a fresh agent doesn't start cancelled work.
 - **Acceptance criteria:**
   - `research/NEXT-STEPS.md` says: the 24 small parties are not researched; the owner review of content is dropped; decision gate D1 and Phase 5 are dropped; all Hebrew content is done by the owner in a cloud session; this document is the active task list.
@@ -137,7 +137,7 @@ The owner also creates the small counter database for the anonymous counts befor
 - **Notes:** The placeholder parties are `blue-horizon`, `olive-branch`, `green-valley` (joint list `olive-and-valley`), `cedar-tradition`, `lighthouse`, `pebble-citizens`, plus the listed party from Task 1.1.
 
 ### Task 2.2: Simplify the survey to pick-one answers
-- [ ]
+- [x]
 - **What:** Remove option editing, the write-your-own field and the "Anything else?" step from the survey state, storage and screens. The last answer screen submits directly.
 - **Acceptance criteria:**
   - An answer draft holds only the selected option ID. `OWN_ANSWER`, edited texts, own text, `editOption`, `editOwn`, `optionText`, the `anything-else` step and all `anythingElse` state and helpers are gone from `lib/survey/state.ts`.
@@ -154,7 +154,7 @@ The owner also creates the small counter database for the anonymous counts befor
 - **Notes:** Until Task 2.3 lands, submission still goes to the old route; keep the request it builds valid (every answer is an unedited preset with a starting option) so the app keeps working between the two tasks.
 
 ### Task 2.3: Run matching in the browser and remove the server route
-- [ ]
+- [x]
 - **What:** Serve the matching bundle, load it in the survey, compute the result locally, and delete the old route, handler, client, mock and implementation registry.
 - **Acceptance criteria:**
   - A route serves one bundle per language for the active corpus: positions, grids, constants, that language's texts and points, stamped with `matchingVersion` and `surveyContentVersion`. It holds no poll data and no registry facts. The address always serves the current bundle; `matchingVersion` is only a cache-busting parameter.
@@ -173,7 +173,7 @@ The owner also creates the small counter database for the anonymous counts befor
 - **Notes:** End-to-end tests that rely on mock scenarios will fail after this task until Task 2.8; run the unit tests and build here and say so in the report.
 
 ### Task 2.4: Update the result page
-- [ ]
+- [x]
 - **What:** Show the top five parties in full and the rest behind a "show all" control (owner decision 2026-10-13); show the "also worth knowing" points for each party and the note that not every list is matched; remove the "anything else" block.
 - **Acceptance criteria:**
   - The result shows the five highest-scoring parties as full cards (top match first). A "show all" control reveals the remaining researched parties in score order as compact rows; each row opens to the same per-issue breakdown and points. The scoring function returns all researched parties in order, not only four.
@@ -188,7 +188,7 @@ The owner also creates the small counter database for the anonymous counts befor
 - **Plan reference:** Affected systems → "Result view"; PRD "Result" section.
 
 ### Task 2.5: Build listed-only party pages and tier labels
-- [ ]
+- [x]
 - **What:** Give listed parties a page, show each party's tier in the Parties list, and restrict share links to researched parties.
 - **Acceptance criteria:**
   - A listed party's page shows its name, list, ballot letters, leader, the list's top candidates, the joint-list label where relevant, the standard note that the party was not researched in depth and is not in the matching, and the platform link when one exists. It shows no research document and no poll information.
@@ -202,7 +202,7 @@ The owner also creates the small counter database for the anonymous counts befor
 - **Plan reference:** Affected systems → "Parties section"; Security → "External links on listed-only pages"; Decisions 10 and 11.
 
 ### Task 2.6: Add the anonymous counts
-- [ ]
+- [x]
 - **What:** Add the endpoint and counter module that record, per day, surveys started, results shown, and per party how often it was top match and runner-up; and send the two calls from the survey.
 - **Acceptance criteria:**
   - `POST /api/tally` accepts two kinds of call. "Survey started" carries nothing else. "Result" carries 3–4 distinct party IDs in order, all researched parties. Anything else is rejected, as is any body over a small size cap, and everything after the election closes.
@@ -235,7 +235,7 @@ The owner also creates the small counter database for the anonymous counts befor
 - **Notes:** Present the copy to the owner in chat, short, changed passages only; the owner won't edit documents. This is the only Hebrew writing in this document.
 
 ### Task 2.8: Rebuild the end-to-end and accessibility suites
-- [ ]
+- [x]
 - **What:** Update the Playwright suites for the new flow, on the placeholder corpus.
 - **Acceptance criteria:**
   - The survey spec covers ranking, picking one option per issue, back navigation, resume after reload, and direct submission; it has no editing, write-your-own or "anything else" steps.

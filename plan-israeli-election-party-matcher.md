@@ -1,3 +1,5 @@
+> **Superseded in part, 2026-10-13.** `plan-deterministic-matching.md` (PRD: `prd-deterministic-matching.md`) replaces the Phase 2 candidate matching designs, decision gate D1, Phase 4's owner review and Phase 5. The active task list is `tasks-deterministic-matching.md`. Read this plan only for what those documents don't cover.
+
 # Technical Plan: Israeli Election Party Matcher
 
 > Source PRD: `prd-israeli-election-party-matcher.md`

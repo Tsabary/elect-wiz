@@ -42,7 +42,7 @@ A second change comes with it. Only the 28 parties researched so far are matched
 - The tiers are simply "researched" and "not researched". There is no polling cut-off that moves a researched party out of the matching.
 
 ### Site copy
-- **How this works** explains the new matching method in plain language. It also explains the two tiers: every list polling at 1% or more was researched, plus three smaller ones, and the remaining lists were not. This explanation must follow the poll-blackout rules.
+- **How this works** explains the new matching method in plain language. It also says plainly that not every list was researched in depth and that the others are shown with official details only. **It does not state the criterion (owner decision 2026-10-13):** the lists were chosen by their polling level when the research was done, and publishing that would let the "official details only" label be read as a poll result during the poll blackout.
 - **Privacy & Terms** no longer mentions a third-party AI provider.
 - All copy that mentions AI matching, free-text answers or "anything else" is updated, with Hebrew and English kept in parity.
 
