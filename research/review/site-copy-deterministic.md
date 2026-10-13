@@ -165,3 +165,7 @@ The owner chose not to publish the polling criterion at all. `HowItWorks.section
 - HE: לא כל הרשימות שבפתק נחקרו לעומק. ההחלטה אילו רשימות לחקור התקבלה בזמן עריכת המחקר. שאר הרשימות מוצגות עם הפרטים הרשמיים שלהן בלבד.
 
 The poll-derived wording ("polling at 1% or more") and the blackout swap on the How-this-works page were removed, so the "official details only" label can never be read as a poll result. A unit test guards against that wording returning. This supersedes points 7 and 8 of the "For the owner" list above and closes finding S1 of the neutrality review.
+
+## Owner approval (2026-10-13)
+
+The owner approved the copy as it stands after the neutrality and parity corrections and the list-selection decision above. Two points were settled with it and need no revisiting: the intro keeps "about 5–10 minutes", and the copy gives no numbers of researched or listed parties.
