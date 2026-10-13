@@ -591,3 +591,34 @@ Points the author flagged:
 - Tags, citations, options: evidence-tier tags and option IDs identical line by line (70 tags/IDs); `[n]` sequences identical on every line; Sources identical (96 entries, same order, same titles and URLs).
 - Rulings: no "נחקרה/שנחקרו"; no avoid.he term outside quotes or source titles ("קרטלים" is inside Bennett's quoted words, which the English quotes; "מונופול הרבנות" only in source title [25]); no Latin acronyms left in prose (Ynet/Ynetnews are outlet names); dates day first.
 - Validation: no error names the file ✔
+
+## chomat-torat-yisrael (checked 2026-10-13; EN researchedAsOf 2026-10-07)
+- Hebrew edition by: Stage 5a agent (Sonnet) · Parity check by: Stage 5b agent (Opus, different)
+- Sections/anchors: identical ✔ (frontmatter identical except `lang: he`; the files line up line for line, 342 lines each)
+- Claims compared: ~300 · Differences found: 22 · Fixed: 22 · Unresolved: 0
+- Checked by script on every line: `[n]` citations identical ✔; option IDs on every "closest option(s)" line identical ✔; evidence-tier tags identical ✔; Sources list (97 entries) byte-identical, with the same count, order and URLs ✔; no "נחקרה"/"שנחקרו" ✔; no "זמני/זמנית" ✔; dates day first ✔.
+
+| Anchor | Difference | Resolution |
+|---|---|---|
+| leadership | meaning drift: "The other top-five candidates" (four names, the others in the top five besides Porush) was given as "חמשת המועמדים הראשונים האחרים", which says there are five more | "שאר המועמדים בחמישייה הראשונה שייכים..." |
+| issue-judicial-system | meaning drift: "(See Coalition stance for how this pledge played out.)" was given as "how the pledge was fulfilled" ("התקיימה"), but the Coalition section says it was not delivered | "(על מה שעלה בגורל ההתחייבות הזו ראו...)" |
+| issue-gaza | meaning drift: "post-ceasefire choices" was given as "הבחירות שלאחר הפסקת האש", which reads as "the elections after the ceasefire" | "האפשרויות שעל הפרק אחרי הפסקת האש" |
+| coalition | meaning drift: he "warned against the left ... controlling funding decisions" was given as a left that already controls them ("ששולט") | "מפני מצב שבו השמאל ... ישלוט בהחלטות על מימון" |
+| coalition | dropped claim: the quote "can't pass a draft law" lost the word "draft" ("לא יכול להעביר חוק") | "לא יכול להעביר חוק גיוס" |
+| coalition | meaning drift: "reprimanded" was given as "הוכיחו אותו", which without niqqud also reads as "proved him" | "ננזף" |
+| coalition | naturalness: the quote "any other agreement is not acceptable to us" was broken ("ושאין \"כל הסכמה אחרת מקובלת עלינו\"") | "וש\"כל הסכמה אחרת אינה מקובלת עלינו\"" (the wording of source [77]'s title) |
+| coalition, track-record | naturalness (3): "Kept (eventually)", "Not delivered" and "Delivered" were given as "קוים" / "לא קוים", which without niqqud reads as "lines" | "ההבטחה קוימה (בסופו של דבר)", "ההבטחה לא קוימה", "הושג" |
+| issue-judea-samaria | ruling: failed votes gave the losing side first ("נכשלה ב-8 מול 45"; "נדחו ב-43 מול 68 וב-40 מול 69"), 3 votes | Majority first: "נדחתה ב-45 קולות מול 8"; "נדחו ב-68 קולות מול 43 וב-69 קולות מול 40" |
+| issue-judea-samaria | glossary/ruling: the July 2025 Knesset "sovereignty motion" was given as "הצעת הריבונות" | "גילוי הדעת בעניין ריבונות מיולי 2025" |
+| information-availability | ruling: "final reading" was given as "הקריאה האחרונה" | "הקריאה השלישית" |
+| leadership, issue-haredi-enlistment, issue-crime-in-arab-society | glossary/naming (3, flagged by the author): the English "Minister of Jerusalem and Jewish Tradition" / "Minister of Jerusalem" was given as "השר לירושלים ולמסורת ישראל" / "כשר לירושלים" | "שר ירושלים ומסורת ישראל" / "כשר ירושלים", the form used in this party's checked Hebrew result texts and matching "משרד ירושלים ומסורת ישראל" in track-record. (agudat-yisrael's "ירושלים ומורשת" follows that file's own English, "Jerusalem and Heritage". The two English documents name the ministry differently; each Hebrew file now follows its own English.) |
+| overview, leadership, issue-haredi-enlistment, issue-judicial-system, issue-religion-and-state, information-availability | naturalness (9): the English gloss ("Wall of the Torah of Israel") and the Latin spelling "(Eliakim)" left in Hebrew prose; "להתנתק סופית ומוחלטת"; "הקטינו את הפיצול" (played down); "המועמד העליון"; "חבר הכנסת ותיק הכהונה"; "מראיינים של פרוש" (indefinite); "אנחנו לא נותנים שום אמון"; "אחרי שייעשה זאת"; "אליקים שטארק, אינו מותיר רקורד" | Removed the Latin glosses; "סופית ולחלוטין"; "הצניעו"; "המועמד הראשון"; "הוותיק"; "מראייניו של פרוש"; "אין לנו שום אמון"; "אחרי שזה ייעשה"; "למועמד השני שלה ... אין רקורד פומבי" |
+
+Author's flags, checked:
+- "גזירת הגיוס" (an avoid.he term) is allowed: it stays inside quotation marks and is attributed to Porush's interviewers ("מה שהם כינו"), and the English quotes and attributes the same words ("what they called the 'conscription decree'").
+- "Persecution" quotes: "מסע הרדיפה הרומס", "רדיפת הדת והמסורת" (2), "רודפי לומדי התורה", "לומדי התורה הנרדפים", "תלמידי ישיבות נרדפים" and "לרדוף את לומדי התורה" are all in quotation marks and attributed to Porush, matching English quotations. No avoid term appears outside quotes or source titles ("משתמטים" and "עריקים" appear only in the titles of [35], [40] and [44]). "(סיפוח)" follows the English "(annexation)" next to "החלת ריבונות", so it is not used as the only term. "הרפורמה" appears only inside Porush's quote.
+- "נמנע" is used only where the English says "abstain" (October 7 inquiry ×2, death penalty, information availability). "1 present not voting" appears only in source [90], which is unchanged.
+- "Other top candidates": the English is not wrong on its face. Porush is #4, so the other top-five candidates are the four listed. No "English questioned". Only the Hebrew wording was fixed (see table).
+- Names follow the registry and the checked result texts: חומת תורת ישראל, מאיר פרוש, אליקים שטארק, and the lists.json forms יצחק זאב פינדרוס and משה עזריאל רוזנטל.
+- Other rulings: "secured" = "השיגו" (2) ✔; "tentative" = "אינה ודאית" (not זמני) ✔; "שינוי לאורך זמן" ✔; the closest-option tag is exactly "**האפשרות/ות הקרובה/ות:**" ✔; "acting minister" does not occur. JDN and i24NEWS are kept as outlet names, as in the other checked Hebrew files (like Ynet).
+- Validation: no error names the file ✔ (`pnpm validate:content`: "Content validation passed"; the self-match report was not rewritten)
