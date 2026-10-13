@@ -565,3 +565,29 @@ Points the author flagged:
 - Not questioned: October 7 inquiry. The English says the government decided "not to set up a state commission of inquiry and instead to promote a commission of inquiry" whose composition reflects broad agreement; source [28]'s headline "תוקם ועדת חקירה לא ממלכתית" says the same thing, so the English is consistent. Hebrew wording matches the glossary ("ועדת חקירה ממלכתית").
 - Terms checked and kept: "מתיישבים" for settlers (neutral; no glossary entry, no avoid term); quoted "יישובים צעירים" (attributed as the ministry's own term), "מפלגת מדף" (attributed to the press), "טרור לאומני" (inside quotation marks, attributed to the security chiefs and to Strock's reply, as in the English); "גילוי דעת" for the Knesset declaratory motion; failed votes put the majority first ("נדחתה ברוב של 66 מול 14", "56 מול 32").
 - Validation: no error names the file ✔ (`pnpm validate:content` passed)
+
+## byachad-bennett (checked 2026-10-13; EN researchedAsOf 2026-10-06)
+- Hebrew edition by: Stage 5a agent (Sonnet) · Parity check by: Stage 5b agent (Opus, different)
+- Sections/anchors: identical ✔ (31 headings, same order; frontmatter identical except `lang: he`)
+- Claims compared: ~390 (every paragraph, bullet and sentence in all sections) · Differences found: 12 · Fixed: 11 · Unresolved: 1
+| Anchor | Difference | Resolution |
+|---|---|---|
+| overview | naturalness: English glosses of the party and list names, "(Together led by Bennett – Restoring Hope)" and "(Together (B'Yachad) led by Naftali Bennett)", left in Hebrew prose (2 items; aids for English readers only, no claim) | Removed |
+| leadership | loaded wording / naturalness: "openly gay candidates" as "מועמדים הומוסקסואלים בגלוי" (clinical, word-for-word) | "אחד משני המועמדים ברשימה שהם גאים מוצהרים" |
+| issue-cost-of-living | glossary/ruling: Latin acronym "OECD" in prose (3 places: "(OECD)" after the full name, "ב-OECD", "ה-OECD") | Written out each time as "(במדינות) הארגון לשיתוף פעולה ולפיתוח כלכלי"; no Latin left |
+| issue-haredi-enlistment | added claim: plan name given as "ביחד נתקן – חוק המשרתים"; the English names it only "Those Who Serve Law" | "חוק המשרתים" (now consistent with the other-military-manpower mention) |
+| issue-october-7-inquiry, coalition | citation/tag: tag "**הצהרה (הצהרת המנהיגים המשותפת):**" repeats "הצהרה" and could read as a second Statement tag; the coalition bullet called the same document "הצהרה" | Tag kept as Statement with a distinct qualifier: "**הצהרה (הכרזה משותפת של המנהיגים):**"; coalition prose "חתמו על הכרזה" (not "גילוי דעת", which is reserved for Knesset declarations) |
+| issue-religion-and-state | loaded wording / glossary: "ends its monopoly" as "מבטלת את המונופול שלה" in narrative text; the glossary avoids "מונופול הרבנות" as a neutral description | "מבטלת את הבלעדיות שלה": same meaning (the Rabbinate stays, loses exclusivity), neutral. The source title "מונופול הרבנות נשבר" in Sources [25] untouched |
+| other-pensions-and-older-people, information-availability | naturalness: "older people" as "אנשים מבוגרים" (literal; 4 places incl. the heading) | "אזרחים ותיקים" (standard Israeli term, as in other Hebrew documents) |
+| coalition | meaning drift: Lapid's "and hopefully, even with Likud" as "ואם יהיה אפשר" ("if possible") | "ובתקווה, גם עם הליכוד" |
+| track-record | naturalness (2 items): "קווי האדום" (ungrammatical); "בהצבעתו של בנט" (ambiguous for "with Bennett's vote") | "הקווים האדומים"; "ובנט הצביע בעדה" |
+| legal | name: English "Justice Alroni", Hebrew "השופט אלרון" | Hebrew set to follow the English: "השופט אלרוני". **Unresolved: English questioned** (the English name itself may be wrong; already logged for the owner by the orchestrator). If the owner corrects the English, the Hebrew must change with it |
+| information-availability | naturalness: "את תנאי ההסכם ... לא נמצאו" (broken construction) | "תנאי ההסכם ... לא נמצאו במסמך רשמי" |
+
+- Checked and kept as flagged by the author:
+  - "defections" as "עריקתם" (overview): standard neutral Israeli political usage for lawmakers leaving a coalition, same strength as "defections". The glossary's avoided "עריקים" applies to yeshiva students, not here. Kept.
+  - Candidate names from the CEC list match the English and the registry's `together` topCandidates.
+  - "Change over time" is "שינוי לאורך זמן" throughout; closest-option tag is exactly "**האפשרות/ות הקרובה/ות:**"; "temporary" ("צעד זמני", "בחינה זמנית") translates "temporary", not "tentative"; failed votes put the majority first ("נדחתה ברוב של 44 מול 40", "52 מול 47"); ties (54–54, 59–59) given as ties.
+- Tags, citations, options: evidence-tier tags and option IDs identical line by line (70 tags/IDs); `[n]` sequences identical on every line; Sources identical (96 entries, same order, same titles and URLs).
+- Rulings: no "נחקרה/שנחקרו"; no avoid.he term outside quotes or source titles ("קרטלים" is inside Bennett's quoted words, which the English quotes; "מונופול הרבנות" only in source title [25]); no Latin acronyms left in prose (Ynet/Ynetnews are outlet names); dates day first.
+- Validation: no error names the file ✔
