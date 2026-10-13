@@ -3,6 +3,7 @@ import {
   answerIssues,
   completeCase,
   completeSurvey,
+  expectBallotSlip,
   listOf,
   listedParties,
   LOCALES,
@@ -68,6 +69,16 @@ for (const locale of LOCALES) {
         );
         for (const p of listedParties()) expect(shown).not.toContain(p.id);
 
+        // Every full card and every "show all" row carries its list's ballot slip.
+        for (const [i, partyId] of set.entries.entries()) {
+          await expectBallotSlip(
+            resultEntry(page, partyId),
+            locale,
+            listOf(partyId),
+            i < FULL ? "normal" : "compact",
+          );
+        }
+
         // Each party has one breakdown item per ranked issue, and the recorded
         // "party position unclear" items are labelled so.
         for (const partyId of set.entries) {
@@ -96,7 +107,9 @@ for (const locale of LOCALES) {
       const label = top.getByTestId("joint-list-label");
       await expect(label).toBeVisible();
       await expect(label).toContainText(list.name[locale]);
-      await expect(label).toContainText(list.ballotLetters);
+      // The letters are on the slip beside the label, once, and not in the sentence too.
+      await expect(label).not.toContainText(list.ballotLetters);
+      await expectBallotSlip(top, locale, list, "normal");
       const partnerId = list.memberPartyIds.find((x: string) => x !== topId);
       const partnerName = parties().find((p) => p.id === partnerId).name[locale];
       await expect(label.getByRole("link", { name: partnerName })).toHaveAttribute(
@@ -107,6 +120,8 @@ for (const locale of LOCALES) {
       expect(set.entries.slice(1, FULL)).toContain(partnerId);
       const partner = resultEntry(page, partnerId);
       await expect(partner).toHaveCount(1);
+      // Both parties of the list show the same letters, each on its own slip.
+      await expectBallotSlip(partner, locale, list, "normal");
       await expect(
         partner.getByTestId("joint-list-label").locator(`a[href="/${locale}/parties/${topId}"]`),
       ).toBeVisible();

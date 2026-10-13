@@ -1,5 +1,6 @@
 import { expect, test } from "@playwright/test";
 import {
+  expectBallotSlip,
   issues,
   listedParties,
   listOf,
@@ -140,12 +141,23 @@ test.describe("parties", () => {
       await page.goto(`/${locale}/parties`);
       const shown = await page
         .getByTestId("party-link")
-        .evaluateAll((els) => els.map((e) => e.querySelector("span")!.textContent!));
+        .evaluateAll((els) =>
+          els.map((e) => e.querySelector('[data-testid="party-link-name"]')!.textContent!),
+        );
       const expected = parties()
         .map((p) => p.name[locale] as string)
         .sort(new Intl.Collator(locale, { sensitivity: "base", numeric: true }).compare);
       expect(shown).toEqual(expected);
       await expect(page.getByTestId("joint-group").first()).toBeVisible();
+      // Each entry carries its list's ballot slip, at the compact size.
+      for (const p of parties()) {
+        await expectBallotSlip(
+          page.locator(`[data-testid="party-link"][data-party-id="${p.id}"]`),
+          locale,
+          listOf(p.id),
+          "compact",
+        );
+      }
     });
 
     test(`index shows each party's tier (${locale})`, async ({ page }) => {
@@ -200,7 +212,11 @@ test.describe("parties", () => {
         const facts = article.locator("dl");
         await expect(facts).toContainText(p.leader[locale]);
         await expect(facts).toContainText(list.name[locale]);
-        await expect(facts).toContainText(list.ballotLetters);
+        // The ballot letters are on the slip, not repeated as a line of text.
+        await expectBallotSlip(article.locator("header"), locale, list, "normal");
+        await expect(
+          facts.locator("dd").getByText(list.ballotLetters, { exact: true }),
+        ).toHaveCount(0);
         expect(
           await page
             .getByTestId("top-candidates")
@@ -265,6 +281,17 @@ test.describe("parties", () => {
         await page.goto(`/${locale}/parties/${p.id}`);
         await expect(page.getByTestId("party-name")).toHaveText(p.name[locale]);
         await expect(page.getByTestId("researched-as-of")).toBeVisible();
+        // The list's ballot slip is in the header; the letters appear nowhere else in it.
+        const header = page.locator("article > header");
+        await expectBallotSlip(header, locale, listOf(p.id), "normal");
+        await expect(
+          header.locator("dd").getByText(listOf(p.id).ballotLetters, { exact: true }),
+        ).toHaveCount(0);
+        if (listOf(p.id).memberPartyIds.length > 1) {
+          await expect(header.getByTestId("joint-list-label")).not.toContainText(
+            listOf(p.id).ballotLetters,
+          );
+        }
         await expect(page.getByTestId("sources").locator("li").first()).toHaveAttribute(
           "id",
           "source-1",

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { BallotSlip } from "@/components/parties/ballot-slip";
 import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
 import { getLists, getParties } from "@/lib/content/loaders";
@@ -42,35 +43,35 @@ export default async function PartiesPage({ params }: PageProps<"/[locale]/parti
               data-testid="party-link"
               data-party-id={p.id}
               data-tier={p.tier}
-              className="hover:bg-muted/50 focus-visible:ring-ring/50 flex flex-col gap-1 rounded-xl border p-4 outline-none focus-visible:ring-3"
+              className="hover:bg-muted/50 focus-visible:ring-ring/50 flex items-start gap-3 rounded-xl border p-4 outline-none focus-visible:ring-3"
             >
-              <span className="text-lg font-semibold">{p.name}</span>
-              <span className="text-sm font-medium" data-testid="party-tier">
-                {t(`tier.${p.tier}`)}
-              </span>
-              <span className="text-muted-foreground text-sm">
-                {t("leader", { name: p.leader })}
-              </span>
-              {p.list.isJoint ? (
-                <span className="text-sm" data-testid="joint-group">
-                  {t("jointGroup", {
-                    list: p.list.name,
-                    partners: new Intl.ListFormat(locale, { type: "conjunction" }).format(
-                      p.partners.map((x) => x.name),
-                    ),
-                  })}
+              <span className="flex min-w-0 grow flex-col gap-1">
+                <span className="text-lg font-semibold" data-testid="party-link-name">
+                  {p.name}
                 </span>
-              ) : null}
-              {p.list.ballotLetters ? (
+                <span className="text-sm font-medium" data-testid="party-tier">
+                  {t(`tier.${p.tier}`)}
+                </span>
                 <span className="text-muted-foreground text-sm">
-                  {t("ballotLetters", { letters: p.list.ballotLetters })}
+                  {t("leader", { name: p.leader })}
                 </span>
-              ) : null}
-              {p.limitedInfo ? (
-                <span className="text-muted-foreground text-xs font-medium">
-                  {t("limitedInfoBadge")}
-                </span>
-              ) : null}
+                {p.list.isJoint ? (
+                  <span className="text-sm" data-testid="joint-group">
+                    {t("jointGroup", {
+                      list: p.list.name,
+                      partners: new Intl.ListFormat(locale, { type: "conjunction" }).format(
+                        p.partners.map((x) => x.name),
+                      ),
+                    })}
+                  </span>
+                ) : null}
+                {p.limitedInfo ? (
+                  <span className="text-muted-foreground text-xs font-medium">
+                    {t("limitedInfoBadge")}
+                  </span>
+                ) : null}
+              </span>
+              <BallotSlip letters={p.list.ballotLetters} size="compact" />
             </Link>
           </li>
         ))}

@@ -28,27 +28,24 @@ export function ListOfLinks({ items }: { items: { id: string; name: string }[] }
 }
 
 /**
- * "Running on a joint list with [Party B] as [list name], ballot letters [XX]"
- * (PRD "Joint lists"). Partners link to their research pages.
+ * "Running on a joint list with [Party B] as [list name]" (PRD "Joint lists").
+ * Partners link to their research pages. The list's ballot letters are not in
+ * the sentence: the ballot slip shown beside it carries them.
  */
 export function JointListLabel({
   partners,
   listName,
-  ballotLetters,
 }: {
   partners: { id: string; name: string }[];
   listName: string;
-  ballotLetters: string;
 }) {
   const t = useTranslations("Common");
-  const values = {
-    partners: () => <ListOfLinks items={partners} />,
-    list: listName,
-    letters: ballotLetters,
-  };
   return (
     <span data-testid="joint-list-label">
-      {ballotLetters ? t.rich("jointList", values) : t.rich("jointListNoLetters", values)}
+      {t.rich("jointList", {
+        partners: () => <ListOfLinks items={partners} />,
+        list: listName,
+      })}
     </span>
   );
 }
