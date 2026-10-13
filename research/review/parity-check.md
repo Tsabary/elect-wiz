@@ -364,3 +364,43 @@ Author flags reviewed, no change needed:
 - Rulings checked: no "נחקרה/שנחקרו"; no "זמני/זמנית"; no "ממלא מקום" needed; no Latin acronyms in prose (OECD is spelled out in Hebrew). Outlet names (The Times of Israel, Ynet, Ynetnews, Jerusalem Post, PBS) are left in Latin script as proper names; "PBS" is the only Latin acronym and was left unchanged as an outlet name. Area letters A/B/C follow the glossary ("שטח C"). Dates are day first throughout.
 - Not changed: candidate names that are not in the registry (נאור שירי, יוראי להב הרצנו, יסמין סקס פרידמן, נטע אטיאס and others). The registry names that do appear (top 5 of the list, party names, the CEC filing name) match. The feminine form "מנהלת הסיעה" for Neta Attias cannot be checked against the English, which does not mark gender; left as is.
 - Validation: no error names the file ✔
+
+## jewish-national-front (checked 2026-10-13; EN researchedAsOf 2026-10-07)
+- Hebrew edition by: Stage 5a agent (Sonnet) · Parity check by: Stage 5b agent (Opus, different)
+- Sections/anchors: identical ✔ (all 9 sections and all 15 sub-section anchors, same order; issue headings match `he.title`)
+- Sources list: identical ✔ (90 entries, same order, same titles and URLs; byte-identical). `[n]` sequence: identical across the whole body ✔. Option IDs on all "closest option(s)" lines: identical ✔ (11 IDs).
+- Claims compared: ~365 (sentence level, all sections) · Differences found: 20 · Fixed: 20 · Unresolved: 0
+
+| Anchor | Difference | Resolution |
+|---|---|---|
+| overview | naturalness: Latin transliteration "(Hazit Yehudit Leumit)" and English gloss "("Jewish Power")" left inside Hebrew prose (2 items; aids for English readers only, no claim) | Removed |
+| overview | naturalness: "חסרו בהן חתימותיו של שליש" (wrong possessive) | "חתימות של שליש מחברי הוועדה" |
+| issue-* (9 sub-sections) | citation/tag: closest-option tag written "**האפשרות הקרובה:**" instead of the mandated "**האפשרות/ות הקרובה/ות:**" (9 lines) | Replaced in all 9 |
+| leadership | meaning drift: Gotliv para, "has said it will ask for the Justice Ministry" rendered "תדרוש" (stronger) | "תבקש" |
+| leadership, issue-housing | meaning drift: Wasserlauf's ministry rendered "(המשרד) לפיתוח הנגב, הגליל והחוסן הלאומי", adding "development" not in the English "Negev, Galilee and National Resilience" (2 places) | "השר/המשרד לנגב, לגליל ולחוסן הלאומי" |
+| leadership | meaning drift: Eliyahu "suggested that dropping a nuclear bomb on Gaza was within the realm of possibility" rendered "אמר ש...היא אחת האפשרויות" (stronger) | "רמז ש...היא בגדר האפשר" |
+| leadership, legal | glossary/ruling: Latin acronym "ה-AP" in prose (2 places) | "סוכנות הידיעות" / "סוכנות הידיעות Associated Press" |
+| issue-gaza | meaning drift: "conditional on international participation" rendered "שיתוף פעולה בינלאומי" | "בתנאי שתהיה השתתפות בינלאומית" |
+| issue-iran-and-regional-security | naturalness: "שישראל "אסור לה להסתפק..."" (quote spliced into broken syntax) | "שאסור לישראל "להסתפק..." ואסור לה "לסגת..."" (quoted words unchanged) |
+| issue-judicial-system | meaning drift: "Supreme Court Deputy President" rendered "המשנה לנשיאת" (adds a gender for the President that the English does not state) | "המשנה לנשיא בית המשפט העליון" (the title's standard form) |
+| issue-judicial-system | naturalness: "החזרת דרישות העמידה" (calque) | "החזרת כללי זכות העמידה" |
+| issue-haredi-enlistment | meaning drift: "Ynet survey of parties' enlistment plans" rendered "סקר של ynet" (2 places); in Hebrew "סקר" reads as an opinion poll and sits next to a date, which the English does not mean. No figure is involved in either language | "(בתשובה ל)פנייה של ynet בספטמבר 2026, שביקשה מהמפלגות את תוכניותיהן בנושא הגיוס" |
+| issue-haredi-enlistment | glossary/meaning drift: "gradual enlistment by agreement" rendered "שילוב הדרגתי בצבא" | "גיוס הדרגתי בהסכמה" (glossary: גיוס) |
+| issue-housing, issue-cost-of-living | naturalness: "פלטפורמה" for "platform" (2 places) | "מצע" |
+| issue-religion-and-state | naturalness: "יהודים נאסרו בתפילה שם" | "נאסר על יהודים להתפלל שם" |
+| coalition | naturalness/tag: track-record tags "**קוים:**" / "**קוים בחלקו:**" (ambiguous spelling, reads as "lines") | "**קוימה:**" / "**קוימה בחלקה:**" |
+| coalition | meaning drift: "approved it ... over the votes of the three Otzma Yehudit ministers" rendered "חרף הצבעתם" (doesn't say they voted against) | "אף ששלושת שרי עוצמה יהודית הצביעו נגד" |
+| track-record | naturalness: typo "לא אוששר" | "לא אושש" |
+| legal | meaning drift: "200 hours of community service" rendered "200 שעות עבודות שירות" (עבודות שירות is a different sentence, counted in months) | "200 שעות של שירות לתועלת הציבור". The 2004 "three months of community service work" kept as "עבודות שירות" (months, so it fits) |
+| legal | naturalness: "ובן גביר נאסר לדבר" and "השניים הוטלו עליהם סנקציות" (ungrammatical, 2 items) | "ונאסר על בן גביר לדבר" / "שעל השניים הוטלו סנקציות" |
+
+Points the author flagged:
+- Gotliv's name "טלי (רויטל) גוטליב": kept. The English itself writes "Tally (Revital) Gotliv" (everyday name first, legal name in brackets), so the Hebrew mirrors it. The registry form "רויטל טלי גוטליב" is the CEC filing order. Both forms contain the same names. Elsewhere "טלי גוטליב" / "גוטליב" match the English "Tally Gotliv" / "Gotliv".
+- "הנוכל בנט": kept. It is inside quotation marks, attributed to Ben Gvir, and translates the same words the English quotes ("the fraud Bennett").
+- "Ynet survey": changed (see table row). No figure in either language.
+- "ועדה חוקרת בעלת סמכויות חקירה פליליות": kept. It is a faithful, neutral rendering of "investigative committee with criminal investigative powers", and it doesn't clash with any glossary term ("ועדת חקירה ממלכתית" would be wrong here).
+- 12 October 2026 dates vs researchedAsOf 2026-10-07: not a parity difference. The Hebrew carries the same dates. In the English this reads as a later fact-check pass (sources 82–84, 88, 89 accessed 2026-10-12), and "as of" statements carry their own dates. I don't judge the English wrong, but the owner may want researchedAsOf bumped if later checks should count as the research date. Not counted as unresolved.
+- Source 78 vs body "25–24": consistent. Source 78 says "25 for, 24 against, 1 present not voting", and the body's 25–24 is for–against. Not counted.
+- Owner's wording rule: the Hebrew never says the party "נחקרה" / "שנחקרו". The "נחקר" forms that remain refer to people questioned by police or quoted speech ✔. No "זמני/זמנית" for "tentative" (the remaining "שקט זמני" and "עובדים זמניים" translate "temporary"). "נדחתה" is used for failed votes. "שינוי לאורך זמן" ✔. avoid.he terms appear only inside attributed quotes that match the English ("הסיפוח" in Ben Gvir's "what about annexation?"; the party's "national" framework) ✔. Dates are day first ✔.
+- English questioned: none.
+- Validation: no error names the file ✔
