@@ -314,3 +314,33 @@ Author flags reviewed, no change needed:
   - No `avoid.he` term appears anywhere else. The glossary `he` forms are used (צה״ל, השב״כ, מעצר בלי משפט, החלת ריבונות ישראלית, ועדת חקירה ממלכתית, גושי ההתיישבות, הרבנות הראשית and others).
   - "Change over time" is "שינוי לאורך זמן" ✔.
 - Validation: no error names the file ✔ (the remaining errors concern other parties' files)
+
+## amcha-yisrael (checked 2026-10-13; EN researchedAsOf 2026-10-07)
+- Hebrew edition by: Stage 5a agent (Sonnet) · Parity check by: Stage 5b agent (Opus, different)
+- Sections/anchors: identical ✔ (all 35 anchors in the same order; frontmatter matches except `lang: he`)
+- Claims compared: ~250 · Differences found: 37 · Fixed: 37 · Unresolved: 0
+- Checked line by line by script and by reading: `[n]` citations identical on every line, option IDs identical on every "closest option(s)" line, evidence-tier tags identical, Sources list identical (69 entries, same order and URLs), numbers and dates match. No "נחקרה"/"שנחקרו". Dates are day first.
+
+| Anchor | Difference | Resolution |
+|---|---|---|
+| overview | meaning drift: "residents of settlements" rendered "תושבי יישובים" (reads as "residents of towns") | → "תושבי ההתיישבות" (glossary term) |
+| overview | naturalness (6): Hebrew gloss of a Hebrew name ("בתרגום חופשי"); "לשעבר מפקד"; clumsy "ונעשה צעד שהיה נגד לחצו"; "פיזור סמכויות"; "בוחרים לראשונה"; "Ynet, שהעתיק" | Reworded: "השם מתפרש בערך כ…"; "מפקד לשעבר"; "והיה בניגוד ללחץ… על מפלגות הימין הקטנות להתמזג"; "ביזור"; "בוחרים חדשים"; "כפי שדיווח Ynet, שהביא את נוסח הודעת הוועדה" |
+| leadership | dropped/added claim (2): "elite" (Sayeret Matkal, Maglan) dropped; Bodnero described as in "אגף התקציבים", a detail the English doesn't give | Restored "ביחידות העילית"; Bodnero → "כלכלן שעסק בעבר בתקציב הבריאות במשרד האוצר" |
+| leadership, track-record | meaning drift (2): Eli called a city ("מהעיר עלי"); Ben Zion's "acting head" rendered "מנהל אותה בפועל" (de facto runs it), in 2 places | → "מהיישוב עלי"; "ממלא מקום ראש המועצה" (both places) |
+| leadership | names (5): candidate names not in the registry checked against the CEC list [1] (rendered image) and the party's team page [4]: "לאלי דראי"/"סעדיה יעקב דראי" → "ללי דרעי"/"סעדיה יעקב דרעי"; "אלי גינו" → "אלי ג'ינו"; "עלאם איבראהים" → "עלם איברהים" (party page; the CEC lists "אבראהים עלמאדין", and the party form matches the English "Alam Ibrahim"); "משה הר-ציון" → "משה הר ציון". Others (בודנרו, דוידי בן ציון, אביב עזרא, סיגל קראוניק-עטיה, אריק מת'יו רובין, לילך אידלברג, משה טולדנו, רז מלכה, דור יצחק לוי) match the sources/English and need no change. No other Hebrew research file mentions these people. | Fixed |
+| leadership, other-service-rewards | naturalness/register (3): slang "תנועת מילואימניקים" (2 places); "שהשתדלנות שלה בכנסת (הלובי)"; "בגיוס לשירות הציבורי" (ambiguous with military enlistment) | → "תנועת משרתי המילואים"; "שהשדולה שלה בכנסת"; "בקבלה לעבודה בשירות הציבורי"; "נגמ"ש" → "הנגמ"ש" |
+| issue-haredi-enlistment, coalition | glossary/registry names (2): "גולדקנופף" in body text (registry: "יצחק גולדקנופ"); "יוליה מלינובסקי" (registry: "יוליה מלינובסקי קונין") | Body text uses the registry forms; the source title in Sources #33 is unchanged |
+| issue-crime-in-arab-society | meaning drift: "gives no support to `invest-in-arab-communities-first`" rendered "ואינה תומכת" (could read as opposition) | → "ואין בעמדתה תמיכה ב…" |
+| issue-gaza, information-availability | meaning drift (2): "unnamed former official" rendered "שלא נקבע שמו" ("whose name was not decided") | → "גורם לשעבר אחד שלא נחשף שמו" (both places) |
+| issue-gaza | naturalness: "אויב ששופך מלחמה" | → "אויב שיוצא למלחמה נגד ישראל" |
+| issue-haredi-enlistment | naturalness (2): broken quote syntax 'שמי ש"אינם…"'; "עימתו אותו" | → 'וש"מי שלא משרתים, לא לומדים ולא תורמים לא ייהנו מהטבות"'; "התעמתו איתו" |
+| issue-iran-and-regional-security, issue-judea-samaria | naturalness (2): "המיפוי הוא בהסתייגות"; "כפי שנשלף לצורך המחקר" | → "המיפוי נעשה בהסתייגות"; "כפי שנבדק לצורך מחקר זה" |
+| issue-judicial-system | meaning drift: "the attorney general" rendered "הייעוץ המשפטי לממשלה" (the advisory system) | → "היועץ המשפטי לממשלה" (glossary) |
+| other-security-doctrine | meaning drift: "suspected attack" on the flydubai flight softened to "תקרית חשודה"; naturalness: "דורכים ברגל" for "stamping their feet" | → "חשד לתקיפה של טיסת פליידובאי בדרכה לישראל"; "רוקעים ברגליים" |
+| other-periphery-local-government | meaning drift: "calls strengthening border areas 'a national and security goal'" rendered "קוראת לחיזוק…" (calls *for*) | → "מגדירה את חיזוק אזורי הגבול 'יעד לאומי וביטחוני'" |
+| coalition | naturalness (4): "ואותו בלבד נמליץ"; "הדמוקרטים משמאל"; "61st finger" gloss "הקול שנותן לממשלה את רוב החברים"; tense "לא רצה" in reported speech | → "ורק עליו נמליץ"; "מפלגת השמאל הדמוקרטים"; "הקול שמעניק לממשלה את הרוב"; "לא רוצה" |
+| legal | naturalness: "בלי אישור במסלול המתאים" | → "בלי אישור בערוצים המקובלים" |
+
+- Flags from the author were reviewed: "עריק" (other-governance) refers to the legal status of one specific person, and the English uses "deserter" in the same place, so it is kept. "מתפרעים חרדים קיצוניים" sits in quotation marks and is attributed to Winter ("שמה שכינה"), where the English quotes "extremist Haredi rioters", so it is kept. "Public diplomacy" is rendered consistently as "הסברה", once as "דיפלומטיה ציבורית (הסברה)", and "public-diplomacy system" in the founding-document quote as "מערך דיפלומטיה והסברה", so all are kept. "temporary truces" → "הפסקות אש זמניות" is "temporary", not "tentative", so it is kept. Every "Tentative" mapping is "בהסתייגות".
+- Note for the orchestrator (not unresolved): the CEC list [1] gives No. 13 as "אבראהים עלמאדין" (Alamaddin), while the English "Alam Ibrahim" follows the party's site. The Hebrew follows the English and the party's site.
+- Validation: no error names the file ✔ (remaining errors concern other parties' unfinished Hebrew files, e.g. jewish-national-front)
