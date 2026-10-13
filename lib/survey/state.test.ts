@@ -7,6 +7,7 @@ import {
   createSurveyState,
   draftFor,
   emptyDraft,
+  hasProgress,
   isAnswered,
   issueOrder,
   markNotImportant,
@@ -236,6 +237,36 @@ describe("matching input", () => {
     expect(buildMatchInput(oneMissing, ISSUES)).toBeNull();
     const unknownOption = setDraft(answered(ranked(7)), "issue-c", { selected: "nope" });
     expect(buildMatchInput(unknownOption, ISSUES)).toBeNull();
+  });
+});
+
+describe("progress worth resuming", () => {
+  const fresh = () => createSurveyState(VERSION, { issueSeed: 1, optionSeed: 2 });
+
+  it("a survey that was only opened is not progress", () => {
+    expect(hasProgress(fresh())).toBe(false);
+    // Moving between screens, or an answer screen opened with nothing chosen, changes nothing.
+    expect(hasProgress({ ...fresh(), step: { kind: "answer", index: 0 } })).toBe(false);
+    expect(hasProgress(setDraft(fresh(), "issue-a", emptyDraft()))).toBe(false);
+    expect(hasProgress({ ...fresh(), started: false })).toBe(false);
+  });
+
+  it("a ranked issue, a 'doesn't matter' issue or an answer is progress", () => {
+    expect(hasProgress(addToRanking(fresh(), "issue-a"))).toBe(true);
+    const marked = markNotImportant(fresh(), "issue-a");
+    expect(marked.ok && hasProgress(marked.state)).toBe(true);
+    expect(hasProgress(setDraft(fresh(), "issue-a", selectAnswer(emptyDraft(), "opt-1")))).toBe(
+      true,
+    );
+  });
+
+  it("a survey counted as started stays progress after its changes are undone", () => {
+    const undone = removeFromRanking(
+      addToRanking({ ...fresh(), started: true }, "issue-a"),
+      "issue-a",
+    );
+    expect(undone.ranked).toEqual([]);
+    expect(hasProgress(undone)).toBe(true);
   });
 });
 

@@ -60,6 +60,20 @@ export function createSurveyState(
   };
 }
 
+/**
+ * Whether a saved survey holds anything the user did. A state is saved the
+ * moment the survey page opens (to keep the option order across a reload), so
+ * a saved state alone is not progress.
+ */
+export function hasProgress(state: SurveyState): boolean {
+  return (
+    state.started === true ||
+    state.ranked.length > 0 ||
+    state.notImportant.length > 0 ||
+    Object.values(state.answers).some((a) => a?.selected != null)
+  );
+}
+
 // ------------------------------------------------------------------ ordering
 
 /** This session's random issue order. */

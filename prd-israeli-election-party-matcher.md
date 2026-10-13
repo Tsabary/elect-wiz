@@ -53,7 +53,7 @@ The voter ranks the most pressing issues in Israeli society by personal importan
 - **Weak matches:** if no party matches the user well, the result says so honestly (e.g., "No party closely matches your positions. These are the closest."), rather than presenting a weak match as strong.
 - A clear disclaimer that this is a decision aid, not an endorsement.
 - **Actions available on the result:** read party research pages and **share**. The share content shows only the top match(es) and an invitation to take the survey, never the user's answers.
-- The result page does **not** offer or suggest "edit answers" or "try again". A user who really wants to can restart by refreshing, but the product doesn't encourage it.
+- The result page does **not** offer or suggest "edit answers" or "try again". A user who really wants to can restart by refreshing, but the product doesn't encourage it. *(Changed by owner decision 2026-10-13: "start over" is now offered on the result page, the intro and the survey; still no "edit answers". See `prd-deterministic-matching.md`, Result.)*
 - While the result is being prepared, the user sees a clear loading state.
 
 ### After the election
@@ -126,7 +126,7 @@ New standalone product. No existing product, users or data are affected.
 - Use in other elections or ongoing reuse across election cycles.
 - User accounts, login (apart from the exploratory AI sign-in idea), and saved results or history.
 - Storing user answers in any form.
-- "Edit answers" or "try again" prompts on the result page.
+- "Edit answers" or "try again" prompts on the result page. *("Start over" is in scope since 2026-10-13; see `prd-deterministic-matching.md`.)*
 - A separate match score or explanation for joint-list partner parties.
 - Public display of usage or result statistics.
 - Automatic, periodic refresh of polling data or research documents.

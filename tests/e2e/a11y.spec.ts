@@ -42,6 +42,17 @@ for (const locale of LOCALES) {
       });
     }
 
+    test("intro with saved progress (continue + start over) has no serious violations", async ({
+      page,
+    }) => {
+      await openSurvey(page, locale);
+      await page.getByTestId("pool-item").first().getByTestId("add-to-ranking").click();
+      await expect(page.getByTestId("ranked-item")).toHaveCount(1);
+      await page.goto(`/${locale}`);
+      await expect(page.getByTestId("home-start-over")).toBeVisible();
+      await expectNoSeriousViolations(page, "intro with saved progress");
+    });
+
     test("research page has no serious violations", async ({ page }) => {
       await page.goto(`/${locale}/parties/${researchedParties()[1].id}`);
       await expectNoSeriousViolations(page, "research");
@@ -68,6 +79,12 @@ for (const locale of LOCALES) {
       await expectNoSeriousViolations(page, "more-info dialog");
       await page.keyboard.press("Escape");
       await expect(page.getByRole("dialog")).toHaveCount(0);
+      // The "start over" confirmation, opened and then cancelled.
+      await page.getByTestId("survey-start-over").click();
+      await expect(page.getByRole("alertdialog")).toBeVisible();
+      await expectNoSeriousViolations(page, "start-over confirmation");
+      await page.getByTestId("start-over-cancel").click();
+      await expect(page.getByRole("alertdialog")).toHaveCount(0);
       await rankWithButtons(page, 2);
       await page.getByTestId("ranking-continue").click();
 
@@ -97,6 +114,7 @@ for (const locale of LOCALES) {
       // flag and an unclear-position item among its parties.
       await completeCase(page, locale, "below-threshold-top");
       await expectNoSeriousViolations(page, "result, show-all closed");
+      await expect(page.getByTestId("start-over")).toBeVisible();
       // A runner-up's collapsed breakdown and points, opened.
       await page.getByTestId("result-entry").nth(1).locator("summary").click();
       await expect(

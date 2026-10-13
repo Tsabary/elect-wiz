@@ -169,3 +169,44 @@ The poll-derived wording ("polling at 1% or more") and the blackout swap on the 
 ## Owner approval (2026-10-13)
 
 The owner approved the copy as it stands after the neutrality and parity corrections and the list-selection decision above. Two points were settled with it and need no revisiting: the intro keeps "about 5–10 minutes", and the copy gives no numbers of researched or listed parties.
+
+## Hebrew wording: no party "נחקרה" (owner decision 2026-10-13)
+
+The owner, a native Hebrew speaker, pointed out that "נחקרה" / "שנחקרו" said of a party reads as "was interrogated" (a police investigation). Every Hebrew string that used the passive verb with a party or list as its subject now speaks of research carried out about the party: "נערך עליה מחקר", "מפלגות שנערך עליהן מחקר (מעמיק)", "לא נערך עליה מחקר מעמיק", and, for the short label, "יש דף מחקר". The English strings are unchanged and the meaning is the same. Not yet seen by the independent parity reviewer.
+
+| Key | עברית (new) |
+|---|---|
+| `Home.steps.result.body` | חמש המפלגות הקרובות ביותר לתשובות שלך, עם הסבר לפי נושא שמקושר למחקר. אפשר לפתוח גם את שאר המפלגות שנערך עליהן מחקר, לפי הסדר. |
+| `Home.neutralBody` | לכלי הזה אין זיקה מפלגתית ואין בו פרסומות, ואף מפלגה לא משלמת עליו ולא משפיעה על התוכן שלו. על כל המפלגות שנכללות בהתאמה נערך מחקר באותה דרך, וכל דפי המחקר פתוחים לקריאה. מפלגות שלא נערך עליהן מחקר מעמיק מוצגות עם הפרטים הרשמיים שלהן בלבד ואינן נכללות בהתאמה. |
+| `Home.howItWorksLink` | איך נבחרו הנושאים, איך נערך המחקר על המפלגות ואיך פועלת ההתאמה |
+| `HowItWorks.description` | איך נבחרו הנושאים, על אילו מפלגות נערך מחקר ואיך, איך פועלת ההתאמה ומהן המגבלות של הכלי. |
+| `HowItWorks.intro` | בעמוד הזה מוסבר איך נבחרו הנושאים, על אילו מפלגות נערך מחקר ואיך, איך התשובות שלך מושוות לעמדות של המפלגות ומה הכלי לא יכול לעשות. |
+| `HowItWorks.sections.research.title` | על אילו מפלגות נערך מחקר, ואיך |
+| `HowItWorks.sections.research.paragraphs[0]` | לא על כל הרשימות שבפתק נערך מחקר מעמיק. ההחלטה אילו רשימות ייכללו במחקר התקבלה בזמן עריכתו. שאר הרשימות מוצגות עם הפרטים הרשמיים שלהן בלבד. |
+| `HowItWorks.sections.research.paragraphs[1]` | המפלגות שנערך עליהן מחקר מעמיק נכללות בהתאמה, ולכל אחת מהן יש דף מחקר משלה. על מפלגות שרצות יחד ברשימה משותפת נערך מחקר נפרד לכל אחת, ולכל אחת יש דף משלה. |
+| `HowItWorks.sections.research.paragraphs[5]` | המחקר נערך בעזרת כלי מחקר מבוססי בינה מלאכותית, על סמך מקורות פומביים. כל מסמך נבדק אחר כך מול המקורות שלו בשלב נפרד, גם הוא בעזרת בינה מלאכותית, וכל המסמכים נבדקו יחד כדי לוודא עומק וטון אחידים. כל טענה מהותית מלווה במקור, ובכל דף מופיע התאריך שבו נערך המחקר. |
+| `HowItWorks.sections.matching.paragraphs[7]` | התוצאה מציגה במלואן את חמש המפלגות הקרובות ביותר, ומתחתיהן אפשר לפתוח את שאר המפלגות שנערך עליהן מחקר, לפי הסדר. מפלגות שסמוכות זו לזו בסדר הזה קרובות פעמים רבות לתשובות שלך כמעט באותה מידה, ולכן להבדל קטן במיקום אין משמעות רבה. לכל מפלגה אפשר לראות, נושא אחרי נושא, אם היא מסכימה, מסכימה חלקית או לא מסכימה עם העמדה שבחרת, או שעמדתה לא ברורה, עם הסבר קצר שמקושר לחלק המתאים בדף המחקר שלה. לכל מפלגה מופיעות גם כמה נקודות תחת ״כדאי לדעת גם״, על עמדות בולטות שלה מחוץ ל־10 הנושאים. הנקודות האלה לא משפיעות על ההתאמה. |
+| `HowItWorks.sections.polls.paragraphs[0]` | בדף של מפלגה שנערך עליה מחקר מוצג ממוצע הסקרים של הרשימה שלה, מתוך תמונת מצב קבועה, עם המקור והתאריך. בדפים של מפלגות שלא נערך עליהן מחקר לא מוצג מידע על סקרים. אם הרשימה של מפלגה שמופיעה בתוצאה שלך נמצאת בסקרים מתחת לאחוז החסימה (3.25%), התוצאה מציינת זאת, יחד עם התאריך. רשימות שלא מופיעות בסקרים שפורסמו מסומנות ככאלה. ההערות האלה עובדתיות בלבד; הן לא עצה למי להצביע. |
+| `HowItWorks.sections.limitations.paragraphs[1]` | לא כל הרשימות שבפתק נכללות בהתאמה. מפלגה שלא נערך עליה מחקר מעמיק לא יכולה להופיע בתוצאה שלך, בלי קשר לעמדות שלה. |
+| `HowItWorks.sections.limitations.paragraphs[3]` | על חלק מהמפלגות שנערך עליהן מחקר, בעיקר חדשות או קטנות, יש מעט מידע פומבי. הדפים שלהן מציינים זאת, וכך גם התוצאה אם אחת מהן מופיעה בין ההתאמות שלך. |
+| `HowItWorks.sections.neutrality.paragraphs[0]` | לכלי הזה אין זיקה מפלגתית ואין בו פרסומות. אף מפלגה לא מממנת אותו, לא משפיעה עליו ולא בודקת או מאשרת את התוכן שלו. המחקר על כל המפלגות נערך באותו מבנה ולפי אותם סטנדרטים של ראיות. כל המפלגות, בין שנערך עליהן מחקר ובין שלא, מוצגות יחד לפי סדר האלף־בית, אף פעם לא לפי גודל או סקרים. |
+| `HowItWorks.sections.corrections.paragraphs[0]` | דפי מחקר מתוקנים רק כדי לתקן טעויות. התאריך בכל דף מראה מתי נערך המחקר לאחרונה. |
+| `Parties.description` | כל המפלגות שבפתק, לפי סדר האלף־בית. למפלגות שנערך עליהן מחקר יש דף מחקר; שאר המפלגות מוצגות עם הפרטים הרשמיים שלהן. |
+| `Parties.intro` | כל המפלגות שבפתק, לפי סדר האלף־בית. בדף של מפלגה שמסומנת ״יש דף מחקר״ מופיעות העמדות שלה ב־10 הנושאים, הרקורד שלה והמקורות, והיא נכללת בהתאמה. שאר המפלגות מוצגות עם הפרטים הרשמיים שלהן בלבד ואינן נכללות בהתאמה. לא צריך למלא את השאלון כדי לקרוא את הדפים. |
+| `Parties.tier.researched` | יש דף מחקר · נכללת בהתאמה |
+| `Research.listedDescription` | פרטים רשמיים על {name}: רשימה, אותיות הפתק, יו״ר ומועמדים מובילים. על המפלגה לא נערך מחקר מעמיק. |
+| `Research.listedNote` | על המפלגה הזו לא נערך מחקר מעמיק, והיא אינה נכללת בהתאמה. בדף הזה מופיעים רק הפרטים הרשמיים שלה. |
+| `Result.notAllLists` | על חלק מהרשימות שבפתק לא נערך מחקר מעמיק, והן אינן נכללות בהתאמה. <link>לכל המפלגות</link>. |
+
+## "Start over" copy (owner decision 2026-10-13)
+
+Matching now costs nothing, so the result page, the intro and the survey screens offer "start over". New keys, in both languages:
+
+| Key | English | עברית |
+|---|---|---|
+| `Common.startOver` | Start over | להתחיל מחדש |
+| `Survey.startOverConfirm.title` | Start over? | להתחיל מחדש? |
+| `Survey.startOverConfirm.body` | Your ranking and answers so far will be deleted. | הדירוג והתשובות שלך עד עכשיו יימחקו. |
+| `Survey.startOverConfirm.confirm` | Start over | להתחיל מחדש |
+| `Survey.startOverConfirm.cancel` | Keep going | להמשיך בשאלון |
+| `Result.startOverHint` | Starting over opens a new survey. This result is not saved. | התחלה מחדש פותחת שאלון חדש. התוצאה הזו לא נשמרת. |

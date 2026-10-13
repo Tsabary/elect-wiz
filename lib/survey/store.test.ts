@@ -59,6 +59,34 @@ describe("survey store: when a survey counts as started", () => {
     expect(onStarted).toHaveBeenCalledTimes(1);
   });
 
+  it("starting over puts a new survey in place, which is counted again at its first ranking change", () => {
+    const onStarted = vi.fn();
+    const storage = fakeStorage();
+    const store = createSurveyStore(VERSION, storage, { onStarted });
+    store.set((s) => addToRanking(s, "a"));
+    const before = store.get();
+    const listener = vi.fn();
+    store.subscribe(listener);
+
+    store.clear();
+    expect(listener).toHaveBeenCalledTimes(1);
+    expect(storage.load(VERSION)).toBeNull();
+    const fresh = store.get();
+    expect(fresh).toMatchObject({ ranked: [], notImportant: [], answers: {} });
+    expect(fresh.step).toEqual({ kind: "ranking" });
+    expect(fresh.started).toBeUndefined();
+    expect([fresh.issueSeed, fresh.optionSeed]).not.toEqual([before.issueSeed, before.optionSeed]);
+    // Nothing is saved, and nothing counted, until the user does something.
+    expect(storage.load(VERSION)).toBeNull();
+    expect(onStarted).toHaveBeenCalledTimes(1);
+
+    store.set((s) => addToRanking(s, "b"));
+    expect(onStarted).toHaveBeenCalledTimes(2);
+    expect(storage.load(VERSION)).toMatchObject({ ranked: ["b"], started: true });
+    store.set((s) => addToRanking(s, "c"));
+    expect(onStarted).toHaveBeenCalledTimes(2);
+  });
+
   it("reports nothing when a saved survey is resumed", () => {
     const onStarted = vi.fn();
     const saved = { ...addToRanking(createSurveyState(VERSION), "a"), started: true };

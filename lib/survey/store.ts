@@ -10,7 +10,10 @@ import type { SurveyStorage } from "./storage";
 export interface SurveyStore {
   get(): SurveyState;
   set(update: (s: SurveyState) => SurveyState): void;
-  /** Forgets saved progress (after a result is shown); the next survey starts fresh. */
+  /**
+   * Forgets saved progress (after a result is shown, or when the user starts over) and
+   * puts a new survey in its place, with new shuffle seeds, which counts as started anew.
+   */
   clear(): void;
   subscribe(listener: () => void): () => void;
   readonly storageAvailable: boolean;

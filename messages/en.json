@@ -30,6 +30,7 @@
   "Common": {
     "startSurvey": "Start",
     "resumeSurvey": "Continue where you left off",
+    "startOver": "Start over",
     "ballotLetters": "Ballot letters: {letters}",
     "jointList": "Running on a joint list with <partners></partners> as {list}."
   },
@@ -245,7 +246,13 @@
     "moreInfoAbout": "More info about {title}",
     "close": "Close",
     "closed": "The election is over and the survey is closed.",
-    "noStorage": "Your browser isn’t letting this site save progress, so if you close the page you’ll need to start again."
+    "noStorage": "Your browser isn’t letting this site save progress, so if you close the page you’ll need to start again.",
+    "startOverConfirm": {
+      "title": "Start over?",
+      "body": "Your ranking and answers so far will be deleted.",
+      "confirm": "Start over",
+      "cancel": "Keep going"
+    }
   },
   "Ranking": {
     "stepLabel": "Step 1 of 3",
@@ -333,7 +340,8 @@
     "notAllLists": "Some lists on the ballot were not researched in depth and are not included in the matching. <link>See all the parties</link>.",
     "disclaimerTitle": "A decision aid, not a recommendation",
     "disclaimer": "This result shows which parties’ documented positions are closest to the answers you gave. It doesn’t tell you who to vote for. Read the research and make your own judgment.",
-    "howItWorksLink": "How this works and its limitations"
+    "howItWorksLink": "How this works and its limitations",
+    "startOverHint": "Starting over opens a new survey. This result is not saved."
   },
   "Share": {
     "heading": "Share",
