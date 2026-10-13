@@ -1,18 +1,18 @@
 # Hebrew texts parity check: amcha-yisrael
 
 - Checked on 13 October 2026 by a Stage 7d parity checker (not the author of the Hebrew file)
-- Hebrew texts by: Stage 7d author agent, Sonnet · Parity check by: Stage 7d parity checker agent, Opus 5.5 (different)
+- Hebrew texts by: Stage 7d author agent, Sonnet · Parity check by: Stage 7d parity checker agent, Opus (different)
 - Structure, agreement values and anchors: identical ✔
-- Texts compared: 41 option texts + 0 unclear + 3 points · must-fix: 0 · should-fix: 3 · notes: 9
-- Result: pass after fixes (the three should-fix items are wording only; no meaning, label or structure problem)
+- Texts compared: 41 option texts + 0 unclear + 3 points · must-fix: 0 · should-fix: 3 (3 fixed) · notes: 9
+- Result: pass after fixes (all three should-fix items fixed and confirmed on 13 October 2026; no open findings)
 
 ## Findings
 
 | # | Issue / option, or point | Severity | English says | Hebrew says | Suggested Hebrew | Status (open / fixed / not applied: reason) |
 |---|---|---|---|---|---|---|
-| 1 | gaza / defeat-hamas-then-security-control | should-fix (meaning drift; naturalness) | "and Winter has backed Jewish settlement in Gaza afterwards" ("afterwards" = settlement after Hamas is destroyed) | "ווינטר תמך בהתיישבות יהודית ברצועה לאחר מכן" (at the end of the sentence, "לאחר מכן" reads as when Winter gave his backing, not when the settlement would happen) | Replace "ווינטר תמך בהתיישבות יהודית ברצועה לאחר מכן." with "ווינטר תמך בכך שלאחר מכן תקום ברצועה התיישבות יהודית." | open |
-| 2 | judea-samaria / partial-sovereignty-area-c | should-fix (naturalness) | "promised stronger governance and enforcement in Area C" | "הבטיחה שלטון ואכיפה חזקים יותר בשטח C" ("שלטון" means rule or regime; "governance" in Hebrew political usage is "משילות") | Replace "הבטיחה שלטון ואכיפה חזקים יותר בשטח C" with "הבטיחה לחזק את המשילות והאכיפה בשטח C" | open |
-| 3 | october-7-inquiry / state-commission-under-existing-law | should-fix (naturalness) | "rather than the President of the Supreme Court picking members" | "ולא נשיא בית המשפט העליון יבחר את החברים" (reads as translated) | Replace ", ולא נשיא בית המשפט העליון יבחר את החברים." with ", במקום שנשיא בית המשפט העליון יבחר את החברים." | open |
+| 1 | gaza / defeat-hamas-then-security-control | should-fix (meaning drift; naturalness) | "and Winter has backed Jewish settlement in Gaza afterwards" ("afterwards" = settlement after Hamas is destroyed) | "ווינטר תמך בהתיישבות יהודית ברצועה לאחר מכן" (at the end of the sentence, "לאחר מכן" reads as when Winter gave his backing, not when the settlement would happen) | Replace "ווינטר תמך בהתיישבות יהודית ברצועה לאחר מכן." with "ווינטר תמך בכך שלאחר מכן תקום ברצועה התיישבות יהודית." | fixed (confirmed 13 October 2026: suggested Hebrew applied verbatim) |
+| 2 | judea-samaria / partial-sovereignty-area-c | should-fix (naturalness) | "promised stronger governance and enforcement in Area C" | "הבטיחה שלטון ואכיפה חזקים יותר בשטח C" ("שלטון" means rule or regime; "governance" in Hebrew political usage is "משילות") | Replace "הבטיחה שלטון ואכיפה חזקים יותר בשטח C" with "הבטיחה לחזק את המשילות והאכיפה בשטח C" | fixed (confirmed 13 October 2026: suggested Hebrew applied verbatim) |
+| 3 | october-7-inquiry / state-commission-under-existing-law | should-fix (naturalness) | "rather than the President of the Supreme Court picking members" | "ולא נשיא בית המשפט העליון יבחר את החברים" (reads as translated) | Replace ", ולא נשיא בית המשפט העליון יבחר את החברים." with ", במקום שנשיא בית המשפט העליון יבחר את החברים." | fixed (confirmed 13 October 2026: suggested Hebrew applied verbatim) |
 | 4 | crime-in-arab-society / emergency-powers-shin-bet, more-police-resources-normal-law | note (glossary) | "Shin Bet involvement" (no gloss) | "שילוב השב״כ (שירות הביטחון הפנימי של ישראל)" | No change. The parenthesis is the glossary's mandatory Hebrew form of the term (the glossary's English entry carries the same explanation, "Israel's internal security service"), and the glossary note asks for it on first use; each text is shown on its own. It defines the term and says nothing about the party, so it is not an added claim. Same ruling as in the other parties' logs. | n/a |
 | 5 | gaza (all five texts) | note (glossary) | "voluntary emigration"; "facilitate voluntary emigration" | "הגירה מרצון"; "לסייע להגירה מרצון" | No change. Matches the English: the glossary form "עידוד הגירה מרצון" is for "encouraging voluntary emigration", and the English here never says "encouraging"; adding "עידוד" would change the party's wording. No critics' term (טרנספר and so on) appears. | n/a |
 | 6 | haredi-enlistment / voluntary-service-for-all | note (glossary) | "Basic Law: Service" (quoted) | "חוק יסוד: שירות" (quoted) | No change. Quotation kept, no article inside the law's name, and named Basic Laws carry no "(חוק במעמד חוקתי)" gloss, as in the English and the other parties' Hebrew files. | n/a |
@@ -45,3 +45,5 @@ None.
 10. Form: done by script. Every text has 1–2 sentences (points one each); no poll figures, option IDs, citation numbers, links or Markdown; dates day first; every English quotation stays quoted; names in registry forms; "party leader" is "ראש המפלגה" and "chair" is "יו״ר"; no article inside a law's name; references to the user's choice use the Hebrew option words (תוספת משאבים למשטרה, סמכויות מיוחדות, שמירת ההסדרים הנוכחיים, בחירה מקומית, מי ששירתו, שילוב השב״כ).
 
 Validation: `CONTENT_CORPUS=real pnpm validate:content` passed (content, self-match and profile tests). The Hebrew file raises no error or warning; amcha-yisrael appears only in an existing self-match "for review" line about israel-first, which concerns the matching, not the texts.
+
+Re-check after fixes (13 October 2026): the Hebrew file was re-read; the only changes are the three suggested replacements (#1–#3), structure, agreement values and anchors are still identical, and the English file is unchanged. `CONTENT_CORPUS=real pnpm validate:content` was re-run: passed (content, self-match and profile tests), with no error or warning from this file.
