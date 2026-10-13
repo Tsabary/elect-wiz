@@ -1,0 +1,377 @@
+{
+  "issueId": "crime-in-arab-society",
+  "rows": [
+    {
+      "partyId": "agudat-yisrael",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "more-police-resources-normal-law",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-crime-in-arab-society",
+      "basis": "Line calls its only evidence \"thin and not specific to this party\"; it \"fits\" more-police (rule 2)"
+    },
+    {
+      "partyId": "amcha-yisrael",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "emergency-powers-shin-bet",
+          "level": "secondary"
+        },
+        {
+          "optionId": "more-police-resources-normal-law",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-crime-in-arab-society",
+      "basis": "\"Tentative\"; \"sits between\" emergency-powers and more-police, \"no single option can be chosen\"; \"gives no support\" to invest-first, left out (rules 2, 7)"
+    },
+    {
+      "partyId": "atid-echad",
+      "unclear": true,
+      "held": [],
+      "anchor": "issue-crime-in-arab-society",
+      "basis": "No documented position found."
+    },
+    {
+      "partyId": "balad",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "invest-in-arab-communities-first",
+          "level": "main"
+        },
+        {
+          "optionId": "more-police-resources-normal-law",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-crime-in-arab-society",
+      "basis": "Invest-first stated first, \"together with\" tougher enforcement under normal law (rule 5); no position on the Shin Bet plan"
+    },
+    {
+      "partyId": "blue-and-white",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "more-police-resources-normal-law",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-crime-in-arab-society",
+      "basis": "\"This is closest to\" more-police without special powers; opposes terror-style powers; no position on investing in Arab councils (rule 3)"
+    },
+    {
+      "partyId": "byachad-bennett",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "emergency-powers-shin-bet",
+          "level": "main"
+        },
+        {
+          "optionId": "invest-in-arab-communities-first",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-crime-in-arab-society",
+      "basis": "Emergency-powers stated first; cabinet \"also approved large sums for Arab communities\" (invest), \"but the current plans focus on enforcement\" (rule 5); caveat: no position on holding suspects without trial (rule 8)"
+    },
+    {
+      "partyId": "chomat-torat-yisrael",
+      "unclear": true,
+      "held": [],
+      "anchor": "issue-crime-in-arab-society",
+      "basis": "No documented position found."
+    },
+    {
+      "partyId": "degel-hatorah",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "more-police-resources-normal-law",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-crime-in-arab-society",
+      "basis": "\"The evidence is thin\"; the 2022 clause \"is closest to\" more-police (rule 2)"
+    },
+    {
+      "partyId": "eretz-yisrael-shelanu",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "emergency-powers-shin-bet",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-crime-in-arab-society",
+      "basis": "Single option stated plainly: extraordinary measures including the Shin Bet and detention without trial (rule 3)"
+    },
+    {
+      "partyId": "hadash",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "invest-in-arab-communities-first",
+          "level": "main"
+        },
+        {
+          "optionId": "more-police-resources-normal-law",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-crime-in-arab-society",
+      "basis": "Invest-first stated first; the Joint List plan \"also calls for\" stronger police units, which \"overlaps with\" more-police (rule 5)"
+    },
+    {
+      "partyId": "haredi-public",
+      "unclear": true,
+      "held": [],
+      "anchor": "issue-crime-in-arab-society",
+      "basis": "No documented position found."
+    },
+    {
+      "partyId": "israel-first",
+      "unclear": true,
+      "held": [],
+      "anchor": "issue-crime-in-arab-society",
+      "basis": "No documented position found."
+    },
+    {
+      "partyId": "jewish-national-front",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "emergency-powers-shin-bet",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-crime-in-arab-society",
+      "basis": "Single option stated plainly (rule 3); caveat: in 2023 Ben Gvir opposed administrative detention for Jewish suspects, while the option covers \"Arab or Jewish\" (rule 8)"
+    },
+    {
+      "partyId": "likud-party",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "emergency-powers-shin-bet",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-crime-in-arab-society",
+      "basis": "Single option stated plainly: extraordinary measures including the Shin Bet (rule 3); caveat: no position found on holding crime bosses without trial (rule 8)"
+    },
+    {
+      "partyId": "meretz",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "invest-in-arab-communities-first",
+          "level": "main"
+        },
+        {
+          "optionId": "more-police-resources-normal-law",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-crime-in-arab-society",
+      "basis": "Invest-first stated first; \"also has elements of\" more-police (rule 5)"
+    },
+    {
+      "partyId": "national-union-tkuma",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "emergency-powers-shin-bet",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-crime-in-arab-society",
+      "basis": "Single option stated plainly: extraordinary measures including the Shin Bet and terrorism-style powers (rule 3); \"no support for the investment-first approach was found\", left out (rule 7)"
+    },
+    {
+      "partyId": "new-economic-party",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "more-police-resources-normal-law",
+          "level": "secondary"
+        },
+        {
+          "optionId": "invest-in-arab-communities-first",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-crime-in-arab-society",
+      "basis": "\"The evidence is thin\" and \"does not let one option be picked with confidence\"; points \"if anything, to a mix of\" more-police and invest (rule 2)"
+    },
+    {
+      "partyId": "new-hope",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "emergency-powers-shin-bet",
+          "level": "secondary"
+        },
+        {
+          "optionId": "more-police-resources-normal-law",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-crime-in-arab-society",
+      "basis": "\"Tentative\"; 2021-2022 record \"closest to\" more-police, the December 2025 vote \"closest to\" emergency-powers; no evidence for invest-first, left out (rules 2, 7)"
+    },
+    {
+      "partyId": "raam",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "more-police-resources-normal-law",
+          "level": "main"
+        },
+        {
+          "optionId": "invest-in-arab-communities-first",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-crime-in-arab-society",
+      "basis": "\"The evidence is mixed\"; main demands \"combine\" more-police (named first) \"with\" restoring budgets (invest) (rule 5); 2021 Shin Bet support \"not repeated since 2023\", so emergency-powers is not held"
+    },
+    {
+      "partyId": "shas",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "invest-in-arab-communities-first",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-crime-in-arab-society",
+      "basis": "\"The limited record leans toward\" invest and \"rests on one minister's action in 2023\"; the line calls its own evidence thin (rule 2)"
+    },
+    {
+      "partyId": "taal",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "invest-in-arab-communities-first",
+          "level": "main"
+        },
+        {
+          "optionId": "more-police-resources-normal-law",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-crime-in-arab-society",
+      "basis": "Invest-first stated first, \"together with\" a stronger police and prosecution effort under normal law (rule 5)"
+    },
+    {
+      "partyId": "the-democrats-party",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "emergency-powers-shin-bet",
+          "level": "main"
+        },
+        {
+          "optionId": "invest-in-arab-communities-first",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-crime-in-arab-society",
+      "basis": "\"The evidence is mixed\"; plan is \"closest to\" emergency-powers, prevention measures \"overlap with\" invest (rule 5); caveat: no support found for holding suspects without trial (rule 8)"
+    },
+    {
+      "partyId": "the-reservists",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "emergency-powers-shin-bet",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-crime-in-arab-society",
+      "basis": "Single option named: extraordinary measures, bringing in the Shin Bet (rule 3); caveat: plan \"also adds many police resources\" (no second option named) and has not addressed detention without trial (rule 8)"
+    },
+    {
+      "partyId": "yashar-leyisrael",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "more-police-resources-normal-law",
+          "level": "main"
+        },
+        {
+          "optionId": "invest-in-arab-communities-first",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-crime-in-arab-society",
+      "basis": "\"The evidence is mixed\"; \"the core is\" more-police, combined with community measures that \"overlap with\" invest (rule 5)"
+    },
+    {
+      "partyId": "yesh-atid",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "emergency-powers-shin-bet",
+          "level": "either"
+        },
+        {
+          "optionId": "invest-in-arab-communities-first",
+          "level": "either"
+        }
+      ],
+      "anchor": "issue-crime-in-arab-society",
+      "basis": "\"The evidence is mixed\": 2026 plans support part of emergency-powers, record in government points to invest; neither given as closest (rule 4)"
+    },
+    {
+      "partyId": "yesodot-yisrael",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "emergency-powers-shin-bet",
+          "level": "either"
+        },
+        {
+          "optionId": "more-police-resources-normal-law",
+          "level": "either"
+        }
+      ],
+      "anchor": "issue-crime-in-arab-society",
+      "basis": "\"The evidence is mixed\": the plan \"points toward\" emergency-powers, the vote and other measures \"point toward\" more-police; neither given as closest (rule 4)"
+    },
+    {
+      "partyId": "yisrael-beytenu",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "emergency-powers-shin-bet",
+          "level": "main"
+        },
+        {
+          "optionId": "more-police-resources-normal-law",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-crime-in-arab-society",
+      "basis": "Emergency-powers stated first; \"also calls for more police, which overlaps with\" more-police (rule 5)"
+    },
+    {
+      "partyId": "zehut",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "emergency-powers-shin-bet",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-crime-in-arab-society",
+      "basis": "Only held option is emergency-powers (Shin Bet), which \"fits ... only in part\": platform opposes administrative detention and adds revocation of citizenship (rules 3, 8); \"rejects\" invest-first, left out (rule 7)"
+    }
+  ]
+}

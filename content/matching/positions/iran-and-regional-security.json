@@ -1,0 +1,355 @@
+{
+  "issueId": "iran-and-regional-security",
+  "rows": [
+    {
+      "partyId": "agudat-yisrael",
+      "unclear": true,
+      "held": [],
+      "anchor": "issue-iran-and-regional-security",
+      "basis": "No documented position found."
+    },
+    {
+      "partyId": "amcha-yisrael",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "military-pressure-until-threats-removed",
+          "level": "secondary"
+        }
+      ],
+      "ruledOut": [
+        "prioritize-ending-multifront-war",
+        "end-military-operations-regional-peace"
+      ],
+      "anchor": "issue-iran-and-regional-security",
+      "basis": "Line names only military-pressure but says \"the mapping is tentative because the evidence is general security doctrine\" (rule 2)"
+    },
+    {
+      "partyId": "atid-echad",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "military-pressure-until-threats-removed",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-iran-and-regional-security",
+      "basis": "Line names only military-pressure but says \"the evidence is limited to Lebanon and to statements in cabinet meetings, not votes\"; treated as calling its own evidence thin (rule 2)"
+    },
+    {
+      "partyId": "balad",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "end-military-operations-regional-peace",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-iran-and-regional-security",
+      "basis": "One option stated plainly, nothing else held (rule 3)"
+    },
+    {
+      "partyId": "blue-and-white",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "force-plus-us-backed-agreements",
+          "level": "main"
+        },
+        {
+          "optionId": "military-pressure-until-threats-removed",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-iran-and-regional-security",
+      "basis": "force-plus stated plainly; \"also has elements of\" military-pressure (rule 5)"
+    },
+    {
+      "partyId": "byachad-bennett",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "military-pressure-until-threats-removed",
+          "level": "main"
+        },
+        {
+          "optionId": "force-plus-us-backed-agreements",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-iran-and-regional-security",
+      "basis": "\"The evidence is mixed\": the plan \"points to\" military-pressure first, its emphasis on alliances and Saudi normalization \"points to\" force-plus second (rule 5); no position found on the current ceasefires or on withdrawing from southern Lebanon"
+    },
+    {
+      "partyId": "chomat-torat-yisrael",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "military-pressure-until-threats-removed",
+          "level": "secondary"
+        },
+        {
+          "optionId": "force-plus-us-backed-agreements",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-iran-and-regional-security",
+      "basis": "\"The only evidence is a statement… it is not enough to choose between them\": the line calls its own evidence thin (rule 2), so both named options are secondary"
+    },
+    {
+      "partyId": "degel-hatorah",
+      "unclear": true,
+      "held": [],
+      "anchor": "issue-iran-and-regional-security",
+      "basis": "No documented position found."
+    },
+    {
+      "partyId": "eretz-yisrael-shelanu",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "military-pressure-until-threats-removed",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-iran-and-regional-security",
+      "basis": "One option stated plainly, nothing else held (rule 3)"
+    },
+    {
+      "partyId": "hadash",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "end-military-operations-regional-peace",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-iran-and-regional-security",
+      "basis": "One option stated plainly (rule 3); caveat: no specific Hadash statement on Hezbollah's disarmament was found (rule 8)"
+    },
+    {
+      "partyId": "haredi-public",
+      "unclear": true,
+      "held": [],
+      "anchor": "issue-iran-and-regional-security",
+      "basis": "No documented position found."
+    },
+    {
+      "partyId": "israel-first",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "force-plus-us-backed-agreements",
+          "level": "secondary"
+        },
+        {
+          "optionId": "military-pressure-until-threats-removed",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-iran-and-regional-security",
+      "basis": "Line says \"the evidence is partial\" (rule 2): force-plus named as closest and \"victory without compromise\" is \"also close to\" military-pressure, both secondary; caveat: she supports the US-backed Israel-Lebanon arrangement"
+    },
+    {
+      "partyId": "jewish-national-front",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "military-pressure-until-threats-removed",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-iran-and-regional-security",
+      "basis": "One option stated plainly, nothing else held (rule 3)"
+    },
+    {
+      "partyId": "likud-party",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "force-plus-us-backed-agreements",
+          "level": "main"
+        },
+        {
+          "optionId": "military-pressure-until-threats-removed",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-iran-and-regional-security",
+      "basis": "force-plus stated plainly; ceasefire refusal and open-ended security zone \"also reflect\" military-pressure (rule 5)"
+    },
+    {
+      "partyId": "meretz",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "force-plus-us-backed-agreements",
+          "level": "secondary"
+        },
+        {
+          "optionId": "prioritize-ending-multifront-war",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-iran-and-regional-security",
+      "basis": "\"Tentative, because the evidence predates the 2025-2026 wars and is mixed\" (rule 2): 2024 agreement \"closest to\" force-plus, 2022 platform \"leans towards\" prioritize-ending, both secondary"
+    },
+    {
+      "partyId": "national-union-tkuma",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "military-pressure-until-threats-removed",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-iran-and-regional-security",
+      "basis": "One option stated plainly, nothing else held (rule 3)"
+    },
+    {
+      "partyId": "new-economic-party",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "military-pressure-until-threats-removed",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-iran-and-regional-security",
+      "basis": "\"Tentatively\" military-pressure (rule 2); caveats: emphasis on covert economic means and targeted strikes rather than open warfare, rests on the leader's columns, covers Iran only"
+    },
+    {
+      "partyId": "new-hope",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "force-plus-us-backed-agreements",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-iran-and-regional-security",
+      "basis": "One option stated plainly, nothing else held (rule 3)"
+    },
+    {
+      "partyId": "raam",
+      "unclear": true,
+      "held": [],
+      "anchor": "issue-iran-and-regional-security",
+      "basis": "No documented position found."
+    },
+    {
+      "partyId": "shas",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "force-plus-us-backed-agreements",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-iran-and-regional-security",
+      "basis": "One option stated plainly (rule 3); line notes the evidence is the leader's statements and his part in security cabinet discussions, without calling it thin"
+    },
+    {
+      "partyId": "taal",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "end-military-operations-regional-peace",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-iran-and-regional-security",
+      "basis": "One option stated plainly (rule 3); line notes \"the evidence is statements only\", read as naming the evidence type, not as calling it thin"
+    },
+    {
+      "partyId": "the-democrats-party",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "force-plus-us-backed-agreements",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-iran-and-regional-security",
+      "basis": "One option stated plainly, nothing else held (rule 3)"
+    },
+    {
+      "partyId": "the-reservists",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "military-pressure-until-threats-removed",
+          "level": "main"
+        },
+        {
+          "optionId": "force-plus-us-backed-agreements",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-iran-and-regional-security",
+      "basis": "military-pressure stated plainly; regional cooperation is \"a smaller element of\" force-plus (rule 5)"
+    },
+    {
+      "partyId": "yashar-leyisrael",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "force-plus-us-backed-agreements",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-iran-and-regional-security",
+      "basis": "One option stated plainly, nothing else held (rule 3)"
+    },
+    {
+      "partyId": "yesh-atid",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "force-plus-us-backed-agreements",
+          "level": "main"
+        },
+        {
+          "optionId": "military-pressure-until-threats-removed",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-iran-and-regional-security",
+      "basis": "force-plus stated plainly; support for the strikes and opposition to the 2026 US-Iran deal \"also lean towards\" military-pressure (rule 5)"
+    },
+    {
+      "partyId": "yesodot-yisrael",
+      "unclear": true,
+      "held": [],
+      "anchor": "issue-iran-and-regional-security",
+      "basis": "No documented position found."
+    },
+    {
+      "partyId": "yisrael-beytenu",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "military-pressure-until-threats-removed",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-iran-and-regional-security",
+      "basis": "One option stated plainly, nothing else held (rule 3)"
+    },
+    {
+      "partyId": "zehut",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "military-pressure-until-threats-removed",
+          "level": "main"
+        }
+      ],
+      "ruledOut": [
+        "force-plus-us-backed-agreements"
+      ],
+      "anchor": "issue-iran-and-regional-security",
+      "basis": "One option stated plainly (rule 3); \"explicitly rejects reliance on US-backed arrangements\", so force-plus is not held (rule 7)"
+    }
+  ]
+}

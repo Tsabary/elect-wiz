@@ -1,0 +1,41 @@
+{
+  "issueId": "iran-and-regional-security",
+  "pairs": [
+    {
+      "a": "military-pressure-until-threats-removed",
+      "b": "force-plus-us-backed-agreements",
+      "closeness": 0.6,
+      "reason": "Both keep up military pressure and do not pull back early; they differ on agreements, which one refuses for now and the other makes the goal of the pressure."
+    },
+    {
+      "a": "military-pressure-until-threats-removed",
+      "b": "prioritize-ending-multifront-war",
+      "closeness": 0.2,
+      "reason": "Both keep force available against attack, but one keeps attacking until the threats are gone and the other stops attacking now even with threats remaining."
+    },
+    {
+      "a": "military-pressure-until-threats-removed",
+      "b": "end-military-operations-regional-peace",
+      "closeness": 0,
+      "reason": "One keeps attacking and stays in Lebanon with no deals because only force brings security; the other ends all operations, withdraws now and relies on diplomacy alone."
+    },
+    {
+      "a": "force-plus-us-backed-agreements",
+      "b": "prioritize-ending-multifront-war",
+      "closeness": 0.4,
+      "reason": "Both aim at agreed arrangements and keep force in some role, but one keeps attacking until a deal with guarantees is in place and the other stops attacking first."
+    },
+    {
+      "a": "force-plus-us-backed-agreements",
+      "b": "end-military-operations-regional-peace",
+      "closeness": 0.2,
+      "reason": "Both seek regional peace agreements, but one uses continued military pressure and pulls back only after a deal while the other ends operations and withdraws now, using diplomacy alone."
+    },
+    {
+      "a": "prioritize-ending-multifront-war",
+      "b": "end-military-operations-regional-peace",
+      "closeness": 0.6,
+      "reason": "Both stop attacking now and put ending the fighting first; they differ on keeping force to respond to attacks versus withdrawing from Lebanon and relying on diplomacy alone."
+    }
+  ]
+}

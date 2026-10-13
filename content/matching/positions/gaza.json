@@ -1,0 +1,401 @@
+{
+  "issueId": "gaza",
+  "rows": [
+    {
+      "partyId": "agudat-yisrael",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "resume-fighting-full-control",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-gaza",
+      "basis": "Line calls itself \"tentative and mixed\" and says it \"rests on indirect evidence\"; names resume-fighting-full-control as closest (rule 2). Caveat: its ministers voted for the January 2025 hostage and ceasefire deal."
+    },
+    {
+      "partyId": "amcha-yisrael",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "resume-fighting-full-control",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-gaza",
+      "basis": "One option stated plainly, nothing else named (rule 3)."
+    },
+    {
+      "partyId": "atid-echad",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "resume-fighting-full-control",
+          "level": "main"
+        },
+        {
+          "optionId": "hold-positions-disarmament-first",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-gaza",
+      "basis": "First option stated plainly; May 2026 comments \"also partly match\" hold-positions-disarmament-first (rule 5). Caveat: long-term aim of settlement goes beyond the hold option."
+    },
+    {
+      "partyId": "balad",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "end-war-full-withdrawal",
+          "level": "main"
+        }
+      ],
+      "ruledOut": [
+        "advance-international-arrangement"
+      ],
+      "anchor": "issue-gaza",
+      "basis": "One option stated plainly (rule 3); advance-international-arrangement \"does not fit its stated view\" and is left out (rule 7)."
+    },
+    {
+      "partyId": "blue-and-white",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "defeat-hamas-then-security-control",
+          "level": "main"
+        },
+        {
+          "optionId": "hold-positions-disarmament-first",
+          "level": "secondary"
+        },
+        {
+          "optionId": "advance-international-arrangement",
+          "level": "secondary"
+        },
+        {
+          "optionId": "resume-fighting-full-control",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-gaza",
+      "basis": "First option stated plainly; \"also matches\" hold-positions; \"shares elements with\" advance-international-arrangement; \"shares one element of\" resume-fighting-full-control (rule 5). Caveat on resume: voluntary relocation only, he says no Israeli settlement in Gaza (rule 8)."
+    },
+    {
+      "partyId": "byachad-bennett",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "hold-positions-disarmament-first",
+          "level": "main"
+        },
+        {
+          "optionId": "defeat-hamas-then-security-control",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-gaza",
+      "basis": "First option stated plainly; threat to disarm Hamas by force \"also overlaps with\" defeat-hamas-then-security-control (rule 5). Caveat: does not call for a return to full-scale war now (rule 8)."
+    },
+    {
+      "partyId": "chomat-torat-yisrael",
+      "unclear": true,
+      "held": [],
+      "anchor": "issue-gaza",
+      "basis": "No documented position found."
+    },
+    {
+      "partyId": "degel-hatorah",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "advance-international-arrangement",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-gaza",
+      "basis": "Line calls itself \"Tentative, mixed and dated\"; \"closest to\" advance-international-arrangement (rule 2). end-war-full-withdrawal named only to rule it out (rule 7)."
+    },
+    {
+      "partyId": "eretz-yisrael-shelanu",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "resume-fighting-full-control",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-gaza",
+      "basis": "One option stated plainly, nothing else named (rule 3)."
+    },
+    {
+      "partyId": "hadash",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "end-war-full-withdrawal",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-gaza",
+      "basis": "One option stated plainly (rule 3). Caveat: no statement on the specific stages of the US plan was found."
+    },
+    {
+      "partyId": "haredi-public",
+      "unclear": true,
+      "held": [],
+      "anchor": "issue-gaza",
+      "basis": "No documented position found."
+    },
+    {
+      "partyId": "israel-first",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "hold-positions-disarmament-first",
+          "level": "secondary"
+        }
+      ],
+      "ruledOut": [
+        "end-war-full-withdrawal",
+        "resume-fighting-full-control"
+      ],
+      "anchor": "issue-gaza",
+      "basis": "Names hold-positions-disarmament-first but says \"The evidence is only partial\" (rule 2). resume-fighting-full-control is \"a poor fit\" and is left out (rule 7)."
+    },
+    {
+      "partyId": "jewish-national-front",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "resume-fighting-full-control",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-gaza",
+      "basis": "One option stated plainly, nothing else named (rule 3)."
+    },
+    {
+      "partyId": "likud-party",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "hold-positions-disarmament-first",
+          "level": "main"
+        },
+        {
+          "optionId": "resume-fighting-full-control",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-gaza",
+      "basis": "First option stated plainly; some actions and statements \"go further, towards\" resume-fighting-full-control; \"The evidence is mixed\" (rule 5)."
+    },
+    {
+      "partyId": "meretz",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "advance-international-arrangement",
+          "level": "secondary"
+        },
+        {
+          "optionId": "end-war-full-withdrawal",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-gaza",
+      "basis": "Line opens \"Tentative\" and says \"The mapping is tentative\"; points to advance-international-arrangement and \"also has elements of\" end-war-full-withdrawal (rule 2)."
+    },
+    {
+      "partyId": "national-union-tkuma",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "resume-fighting-full-control",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-gaza",
+      "basis": "One option stated plainly, nothing else named (rule 3)."
+    },
+    {
+      "partyId": "new-economic-party",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "defeat-hamas-then-security-control",
+          "level": "main"
+        },
+        {
+          "optionId": "hold-positions-disarmament-first",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-gaza",
+      "basis": "\"The evidence points to\" defeat-hamas-then-security-control \"and partly to\" hold-positions (rule 5). advance-international-arrangement left out: the line says only that the party \"does not rule out parts of\" it."
+    },
+    {
+      "partyId": "new-hope",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "advance-international-arrangement",
+          "level": "main"
+        },
+        {
+          "optionId": "hold-positions-disarmament-first",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-gaza",
+      "basis": "First option stated plainly; disarm-first condition and no Palestinian Authority role \"also overlap with\" hold-positions (rule 5). Caveat: \"The evidence is mostly statements\"."
+    },
+    {
+      "partyId": "raam",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "advance-international-arrangement",
+          "level": "main"
+        },
+        {
+          "optionId": "end-war-full-withdrawal",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-gaza",
+      "basis": "First option stated plainly; some statements \"also overlap with\" end-war-full-withdrawal (rule 5)."
+    },
+    {
+      "partyId": "shas",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "advance-international-arrangement",
+          "level": "main"
+        },
+        {
+          "optionId": "hold-positions-disarmament-first",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-gaza",
+      "basis": "First option stated plainly; Deri's emphasis on the army staying until Hamas is dismantled \"also overlaps with\" hold-positions (rule 5). Caveat: apart from one minister's vote, the evidence is statements."
+    },
+    {
+      "partyId": "taal",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "end-war-full-withdrawal",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-gaza",
+      "basis": "One option stated plainly, nothing else named (rule 3)."
+    },
+    {
+      "partyId": "the-democrats-party",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "advance-international-arrangement",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-gaza",
+      "basis": "One option stated plainly, nothing else named (rule 3)."
+    },
+    {
+      "partyId": "the-reservists",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "hold-positions-disarmament-first",
+          "level": "main"
+        },
+        {
+          "optionId": "resume-fighting-full-control",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-gaza",
+      "basis": "First option stated plainly, \"combined with\" encouraging voluntary emigration, \"an element of\" resume-fighting-full-control; \"The evidence is mixed\" (rule 5). Caveat: has not said whether it supports a return to full-scale war."
+    },
+    {
+      "partyId": "yashar-leyisrael",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "advance-international-arrangement",
+          "level": "main"
+        },
+        {
+          "optionId": "hold-positions-disarmament-first",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-gaza",
+      "basis": "First option stated plainly; emphasis on Hamas disarming before reconstruction \"overlaps with\" hold-positions (rule 5)."
+    },
+    {
+      "partyId": "yesh-atid",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "advance-international-arrangement",
+          "level": "main"
+        },
+        {
+          "optionId": "hold-positions-disarmament-first",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-gaza",
+      "basis": "\"The evidence is mixed\": advance-international-arrangement is named first and backed by a Knesset vote (action); the joint list's plan \"also demands\" disarmament by force, hold-positions (rule 5, actions over statements)."
+    },
+    {
+      "partyId": "yesodot-yisrael",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "defeat-hamas-then-security-control",
+          "level": "main"
+        },
+        {
+          "optionId": "hold-positions-disarmament-first",
+          "level": "secondary"
+        }
+      ],
+      "ruledOut": [
+        "resume-fighting-full-control"
+      ],
+      "anchor": "issue-gaza",
+      "basis": "Tropper's own statements \"match\" defeat-hamas-then-security-control; the joint list leader's 2026 statement is consistent with this \"and also with\" hold-positions; \"The evidence is mixed\" (rule 5). Caveat: evidence mostly dates from 2024."
+    },
+    {
+      "partyId": "yisrael-beytenu",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "defeat-hamas-then-security-control",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-gaza",
+      "basis": "One option stated plainly (rule 3). Caveat: civil responsibility goes to an international body rather than a local administration (rule 8)."
+    },
+    {
+      "partyId": "zehut",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "resume-fighting-full-control",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-gaza",
+      "basis": "One option stated plainly (rule 3). Caveat: the party goes further, speaking of \"expulsion\" and full Israeli sovereignty over Gaza (rule 8)."
+    }
+  ]
+}

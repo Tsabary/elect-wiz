@@ -1,0 +1,41 @@
+{
+  "issueId": "judicial-system",
+  "pairs": [
+    {
+      "a": "continue-judicial-changes",
+      "b": "broad-agreed-constitutional-framework",
+      "closeness": 0.4,
+      "reason": "Both would redraw the limits on the courts, possibly with a Knesset override, but one has the elected majority do it and the other requires a broad compromise not set by one side."
+    },
+    {
+      "a": "continue-judicial-changes",
+      "b": "repeal-changes-protect-independence",
+      "closeness": 0,
+      "reason": "One gives elected officials more power over judges and the attorney general; the other reverses those changes and protects their independence in a basic law."
+    },
+    {
+      "a": "continue-judicial-changes",
+      "b": "keep-current-system-stability",
+      "closeness": 0.4,
+      "reason": "Both keep the changes already passed, including the law on choosing judges, but one continues with further changes and the other stops there; the directions differ and the lower is used."
+    },
+    {
+      "a": "broad-agreed-constitutional-framework",
+      "b": "repeal-changes-protect-independence",
+      "closeness": 0.4,
+      "reason": "Both fix the rules in a constitution or basic law, but one leaves the content to a broad compromise, possibly with an override, and the other reverses the changes and protects the courts."
+    },
+    {
+      "a": "broad-agreed-constitutional-framework",
+      "b": "keep-current-system-stability",
+      "closeness": 0.4,
+      "reason": "Both avoid one side pushing its changes further, but one writes a new constitutional framework and the other wants no further change beyond small adjustments."
+    },
+    {
+      "a": "repeal-changes-protect-independence",
+      "b": "keep-current-system-stability",
+      "closeness": 0.4,
+      "reason": "Both stop further changes that weaken the courts, but one reverses what was passed and adds protection in a basic law while the other rules out any reversal."
+    }
+  ]
+}

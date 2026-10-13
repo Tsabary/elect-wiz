@@ -1,0 +1,660 @@
+{
+  "profiles": [
+    {
+      "id": "security-hawk-full-sovereignty",
+      "description": "A security-hawkish voter who wants a return to war and full control in Gaza, full sovereignty in Judea and Samaria, and no deals with Iran or Hezbollah.",
+      "ranked": [
+        "gaza",
+        "judea-samaria",
+        "iran-and-regional-security",
+        "crime-in-arab-society",
+        "judicial-system",
+        "october-7-inquiry",
+        "religion-and-state"
+      ],
+      "answers": {
+        "gaza": "resume-fighting-full-control",
+        "judea-samaria": "full-sovereignty",
+        "iran-and-regional-security": "military-pressure-until-threats-removed",
+        "crime-in-arab-society": "emergency-powers-shin-bet",
+        "judicial-system": "continue-judicial-changes",
+        "october-7-inquiry": "commission-appointed-by-knesset-balance",
+        "religion-and-state": "strengthen-jewish-character"
+      },
+      "expect": {
+        "topAnyOf": [
+          "national-union-tkuma",
+          "jewish-national-front",
+          "eretz-yisrael-shelanu",
+          "atid-echad"
+        ],
+        "inTop4": [
+          "national-union-tkuma",
+          "jewish-national-front",
+          "eretz-yisrael-shelanu"
+        ],
+        "notInTop4": [
+          "hadash",
+          "taal",
+          "balad",
+          "meretz",
+          "the-democrats-party"
+        ]
+      },
+      "reason": "The research gives National Union-Tkuma, Jewish National Front and Eretz Yisrael Shelanu exactly these seven options as their closest; Atid Echad has the same six with no documented position on crime. The Joint List parties, Meretz and The Democrats are mapped to withdrawal or the US plan in Gaza and to two states."
+    },
+    {
+      "id": "haredi-interests",
+      "description": "A Haredi voter who cares most about protecting yeshiva students from the draft and the religious character of the state, and wants direct help for large families.",
+      "ranked": [
+        "haredi-enlistment",
+        "religion-and-state",
+        "cost-of-living",
+        "housing",
+        "judicial-system",
+        "october-7-inquiry"
+      ],
+      "answers": {
+        "haredi-enlistment": "anchor-torah-study-exemption",
+        "religion-and-state": "strengthen-jewish-character",
+        "cost-of-living": "direct-support-for-households",
+        "housing": "direct-help-for-buyers",
+        "judicial-system": "continue-judicial-changes",
+        "october-7-inquiry": "commission-appointed-by-knesset-balance"
+      },
+      "expect": {
+        "topAnyOf": [
+          "shas",
+          "agudat-yisrael",
+          "degel-hatorah",
+          "chomat-torat-yisrael"
+        ],
+        "inTop4": [
+          "shas",
+          "agudat-yisrael",
+          "degel-hatorah"
+        ],
+        "notInTop4": [
+          "yisrael-beytenu",
+          "yesh-atid",
+          "yashar-leyisrael",
+          "the-democrats-party",
+          "hadash"
+        ]
+      },
+      "reason": "Shas is mapped to all six of these options; Agudat Yisrael, Degel HaTorah and Chomat Torat Yisrael share the exemption law, a bigger role for religious law, direct household support and the judicial changes, differing only on housing emphasis or a tentative inquiry line. The parties listed as excluded are mapped to universal service with sanctions or voluntary service, and to more choice or separation on religion."
+    },
+    {
+      "id": "religious-zionist",
+      "description": "A religious-Zionist voter: full sovereignty and settlement first, a stronger Jewish character for the state, and Haredi enlistment only by agreement.",
+      "ranked": [
+        "judea-samaria",
+        "religion-and-state",
+        "haredi-enlistment",
+        "judicial-system",
+        "gaza",
+        "housing",
+        "iran-and-regional-security",
+        "cost-of-living"
+      ],
+      "answers": {
+        "judea-samaria": "full-sovereignty",
+        "religion-and-state": "strengthen-jewish-character",
+        "haredi-enlistment": "gradual-targets-by-agreement",
+        "judicial-system": "continue-judicial-changes",
+        "gaza": "resume-fighting-full-control",
+        "housing": "develop-periphery-and-transport",
+        "iran-and-regional-security": "military-pressure-until-threats-removed",
+        "cost-of-living": "open-market-competition-imports"
+      },
+      "expect": {
+        "topAnyOf": [
+          "national-union-tkuma",
+          "atid-echad",
+          "jewish-national-front",
+          "eretz-yisrael-shelanu"
+        ],
+        "inTop4": [
+          "national-union-tkuma",
+          "jewish-national-front"
+        ],
+        "notInTop4": [
+          "hadash",
+          "taal",
+          "meretz",
+          "the-democrats-party"
+        ]
+      },
+      "reason": "National Union-Tkuma, Atid Echad, Jewish National Front and Eretz Yisrael Shelanu are all mapped to full sovereignty, a bigger role for religious law, gradual enlistment by agreement, the judicial changes and a return to war in Gaza; they differ only on housing emphasis and on whether a cost-of-living position was found."
+    },
+    {
+      "id": "secular-right-universal-service",
+      "description": "A secular right-wing voter: everyone serves, religion out of state law, tough on Hamas and Iran, sovereignty over part of Judea and Samaria.",
+      "ranked": [
+        "haredi-enlistment",
+        "religion-and-state",
+        "judea-samaria",
+        "gaza",
+        "iran-and-regional-security",
+        "cost-of-living",
+        "crime-in-arab-society",
+        "october-7-inquiry"
+      ],
+      "answers": {
+        "haredi-enlistment": "universal-service-with-sanctions",
+        "religion-and-state": "separate-religion-and-state",
+        "judea-samaria": "partial-sovereignty-area-c",
+        "gaza": "defeat-hamas-then-security-control",
+        "iran-and-regional-security": "military-pressure-until-threats-removed",
+        "cost-of-living": "open-market-competition-imports",
+        "crime-in-arab-society": "emergency-powers-shin-bet",
+        "october-7-inquiry": "state-commission-under-existing-law"
+      },
+      "expect": {
+        "topAnyOf": [
+          "yisrael-beytenu",
+          "yesodot-yisrael",
+          "the-reservists"
+        ],
+        "inTop4": [
+          "yisrael-beytenu"
+        ],
+        "notInTop4": [
+          "shas",
+          "agudat-yisrael",
+          "degel-hatorah",
+          "chomat-torat-yisrael"
+        ]
+      },
+      "reason": "Yisrael Beytenu is mapped to seven of these options outright and, on religion, to more choice with civil marriage for all noted as part of separation. Yesodot Yisrael and The Reservists share universal service, partial sovereignty, open markets and a state commission but sit at more choice on religion. The Haredi parties are mapped to the exemption law and a bigger role for religious law."
+    },
+    {
+      "id": "centrist-broad-agreement",
+      "description": "A centrist voter: a state commission of inquiry, agreed rules for the courts, everyone serves, firm on security without annexation, more choice on religion.",
+      "ranked": [
+        "october-7-inquiry",
+        "judicial-system",
+        "haredi-enlistment",
+        "gaza",
+        "iran-and-regional-security",
+        "judea-samaria",
+        "religion-and-state",
+        "cost-of-living",
+        "housing"
+      ],
+      "answers": {
+        "october-7-inquiry": "state-commission-under-existing-law",
+        "judicial-system": "broad-agreed-constitutional-framework",
+        "haredi-enlistment": "universal-service-with-sanctions",
+        "gaza": "hold-positions-disarmament-first",
+        "iran-and-regional-security": "force-plus-us-backed-agreements",
+        "judea-samaria": "maintain-current-situation",
+        "religion-and-state": "more-choice-local-decisions",
+        "cost-of-living": "open-market-competition-imports",
+        "housing": "speed-up-planning-and-construction"
+      },
+      "expect": {
+        "topAnyOf": [
+          "byachad-bennett",
+          "yesh-atid",
+          "yashar-leyisrael",
+          "the-reservists",
+          "blue-and-white"
+        ],
+        "inTop4": [
+          "byachad-bennett"
+        ],
+        "notInTop4": [
+          "hadash",
+          "taal",
+          "balad",
+          "national-union-tkuma",
+          "jewish-national-front",
+          "agudat-yisrael"
+        ]
+      },
+      "reason": "Bennett's party is mapped to these options on every issue (with Iran mixed between this option and its neighbour). Yesh Atid, Yashar LeYisrael, The Reservists and Blue and White share the state commission, universal service and more choice on religion and hold this or an adjacent option on the courts, Gaza and Judea and Samaria. The excluded parties are mapped to the opposite ends on the inquiry, the courts or enlistment."
+    },
+    {
+      "id": "centre-left-liberal",
+      "description": "A centre-left voter: protect the courts, separate religion and state, a negotiated two-state agreement with the settlement blocs, and an active state on prices and rental housing.",
+      "ranked": [
+        "judicial-system",
+        "october-7-inquiry",
+        "religion-and-state",
+        "judea-samaria",
+        "haredi-enlistment",
+        "gaza",
+        "cost-of-living",
+        "housing"
+      ],
+      "answers": {
+        "judicial-system": "repeal-changes-protect-independence",
+        "october-7-inquiry": "state-commission-under-existing-law",
+        "religion-and-state": "separate-religion-and-state",
+        "judea-samaria": "separation-two-states",
+        "haredi-enlistment": "universal-service-with-sanctions",
+        "gaza": "advance-international-arrangement",
+        "cost-of-living": "active-state-regulation",
+        "housing": "state-led-affordable-rental"
+      },
+      "expect": {
+        "topAnyOf": [
+          "the-democrats-party",
+          "meretz"
+        ],
+        "inTop4": [
+          "the-democrats-party",
+          "meretz"
+        ],
+        "notInTop4": [
+          "national-union-tkuma",
+          "jewish-national-front",
+          "eretz-yisrael-shelanu",
+          "zehut",
+          "shas",
+          "likud-party"
+        ]
+      },
+      "reason": "The Democrats are mapped to all eight of these options. Meretz, on the same list, is mapped to seven and differs only on enlistment (a tentative gradual-targets line). The excluded parties are mapped to continuing the judicial changes and to sovereignty or the current situation in Judea and Samaria."
+    },
+    {
+      "id": "left-two-state-peace",
+      "description": "A left-wing voter for whom ending the conflict comes first: the US plan in Gaza, a negotiated two-state agreement, an end to the multi-front war and investment in Arab communities.",
+      "ranked": [
+        "gaza",
+        "judea-samaria",
+        "iran-and-regional-security",
+        "crime-in-arab-society",
+        "judicial-system",
+        "religion-and-state",
+        "cost-of-living"
+      ],
+      "answers": {
+        "gaza": "advance-international-arrangement",
+        "judea-samaria": "separation-two-states",
+        "iran-and-regional-security": "prioritize-ending-multifront-war",
+        "crime-in-arab-society": "invest-in-arab-communities-first",
+        "judicial-system": "repeal-changes-protect-independence",
+        "religion-and-state": "separate-religion-and-state",
+        "cost-of-living": "direct-support-for-households"
+      },
+      "expect": {
+        "topAnyOf": [
+          "meretz",
+          "the-democrats-party"
+        ],
+        "inTop4": [
+          "meretz",
+          "the-democrats-party"
+        ],
+        "notInTop4": [
+          "national-union-tkuma",
+          "jewish-national-front",
+          "eretz-yisrael-shelanu",
+          "zehut",
+          "amcha-yisrael"
+        ]
+      },
+      "reason": "Meretz is mapped to the US plan, negotiated two states, investment in Arab communities first, repeal and separation, with ending the multi-front war and direct household support as its second options. The Democrats share the first two, repeal and separation. The excluded parties are mapped to a return to war in Gaza and full sovereignty."
+    },
+    {
+      "id": "joint-list-positions",
+      "description": "A voter whose answers follow the documented positions of the Joint List parties: two states on the pre-1967 border, a full end to the war, investment in Arab communities, and a strong welfare state.",
+      "ranked": [
+        "judea-samaria",
+        "gaza",
+        "crime-in-arab-society",
+        "cost-of-living",
+        "housing",
+        "iran-and-regional-security",
+        "judicial-system",
+        "october-7-inquiry",
+        "haredi-enlistment"
+      ],
+      "answers": {
+        "judea-samaria": "two-states-pre-1967-border",
+        "gaza": "end-war-full-withdrawal",
+        "crime-in-arab-society": "invest-in-arab-communities-first",
+        "cost-of-living": "direct-support-for-households",
+        "housing": "state-led-affordable-rental",
+        "iran-and-regional-security": "end-military-operations-regional-peace",
+        "judicial-system": "repeal-changes-protect-independence",
+        "october-7-inquiry": "state-commission-under-existing-law",
+        "haredi-enlistment": "voluntary-service-for-all"
+      },
+      "expect": {
+        "topAnyOf": [
+          "hadash",
+          "taal",
+          "balad"
+        ],
+        "inTop4": [
+          "hadash",
+          "taal",
+          "balad"
+        ],
+        "notInTop4": [
+          "national-union-tkuma",
+          "jewish-national-front",
+          "likud-party",
+          "amcha-yisrael",
+          "yisrael-beytenu"
+        ]
+      },
+      "reason": "Hadash and Ta'al are mapped to all nine of these options. Balad is mapped to seven, has state-led rental as its second housing option and no documented position on the inquiry. The excluded parties are mapped to sovereignty or the current situation and to continued or renewed fighting in Gaza."
+    },
+    {
+      "id": "arab-pragmatic-conservative",
+      "description": "An Arab voter focused on daily life: more police against crime under normal law, direct help with living costs, faster planning and building, a negotiated two-state agreement, and no change on religion and state.",
+      "ranked": [
+        "crime-in-arab-society",
+        "cost-of-living",
+        "housing",
+        "judea-samaria",
+        "religion-and-state",
+        "gaza"
+      ],
+      "answers": {
+        "crime-in-arab-society": "more-police-resources-normal-law",
+        "cost-of-living": "direct-support-for-households",
+        "housing": "speed-up-planning-and-construction",
+        "judea-samaria": "separation-two-states",
+        "religion-and-state": "keep-status-quo",
+        "gaza": "advance-international-arrangement"
+      },
+      "expect": {
+        "topAnyOf": [
+          "raam"
+        ],
+        "inTop4": [
+          "raam"
+        ],
+        "notInTop4": [
+          "zehut",
+          "national-union-tkuma",
+          "jewish-national-front",
+          "eretz-yisrael-shelanu"
+        ]
+      },
+      "reason": "Ra'am is the only party the research maps to all six of these options (several of them marked tentative or mixed). No other party combines police under normal law, direct household support and a negotiated two-state agreement. The excluded parties are mapped to emergency powers, full sovereignty and a return to war."
+    },
+    {
+      "id": "economy-first-competition",
+      "description": "An economically focused voter who ranks cost of living and housing first: more competition and imports, build faster, and otherwise centre-right answers.",
+      "ranked": [
+        "cost-of-living",
+        "housing",
+        "haredi-enlistment",
+        "judicial-system",
+        "religion-and-state",
+        "iran-and-regional-security",
+        "judea-samaria"
+      ],
+      "answers": {
+        "cost-of-living": "open-market-competition-imports",
+        "housing": "speed-up-planning-and-construction",
+        "haredi-enlistment": "universal-service-with-sanctions",
+        "judicial-system": "broad-agreed-constitutional-framework",
+        "religion-and-state": "more-choice-local-decisions",
+        "iran-and-regional-security": "military-pressure-until-threats-removed",
+        "judea-samaria": "maintain-current-situation"
+      },
+      "expect": {
+        "topAnyOf": [
+          "byachad-bennett",
+          "yisrael-beytenu",
+          "yashar-leyisrael",
+          "new-economic-party",
+          "yesh-atid"
+        ],
+        "inTop4": [
+          "byachad-bennett",
+          "yisrael-beytenu"
+        ],
+        "notInTop4": [
+          "hadash",
+          "taal",
+          "meretz",
+          "shas"
+        ]
+      },
+      "reason": "Bennett's party is mapped to these options on all seven issues and Yisrael Beytenu on six (partial sovereignty instead of the current situation). Yashar LeYisrael, Yesh Atid and the New Economic Party share open markets, universal service and more choice; the New Economic Party explicitly rejects building more as the main housing answer, so it is a plausible but not certain top. The excluded parties are mapped to direct support or state regulation and to state-led rental or buyer grants."
+    },
+    {
+      "id": "five-issues-service-and-security",
+      "description": "A voter who marks five issues as not mattering and ranks only five, all about security and who carries the burden: Iran, enlistment, Gaza, the inquiry and crime.",
+      "ranked": [
+        "iran-and-regional-security",
+        "haredi-enlistment",
+        "gaza",
+        "october-7-inquiry",
+        "crime-in-arab-society"
+      ],
+      "answers": {
+        "iran-and-regional-security": "military-pressure-until-threats-removed",
+        "haredi-enlistment": "universal-service-with-sanctions",
+        "gaza": "hold-positions-disarmament-first",
+        "october-7-inquiry": "state-commission-under-existing-law",
+        "crime-in-arab-society": "emergency-powers-shin-bet"
+      },
+      "expect": {
+        "topAnyOf": [
+          "the-reservists",
+          "byachad-bennett",
+          "yisrael-beytenu"
+        ],
+        "inTop4": [
+          "the-reservists",
+          "byachad-bennett",
+          "yisrael-beytenu"
+        ],
+        "notInTop4": [
+          "hadash",
+          "taal",
+          "shas",
+          "degel-hatorah"
+        ]
+      },
+      "reason": "The Reservists are mapped to all five options and Bennett's party to all five with Iran marked mixed. Yisrael Beytenu matches four and is mapped to the neighbouring Gaza option (defeat Hamas, then security control). Hadash and Ta'al are mapped to ending military operations and voluntary service; Shas and Degel HaTorah to the exemption law and a Knesset-picked commission."
+    },
+    {
+      "id": "likud-mainstream",
+      "description": "A mainstream right-wing voter who backs the outgoing government's line on every issue and ranks all ten.",
+      "ranked": [
+        "iran-and-regional-security",
+        "gaza",
+        "judicial-system",
+        "judea-samaria",
+        "october-7-inquiry",
+        "haredi-enlistment",
+        "religion-and-state",
+        "cost-of-living",
+        "crime-in-arab-society",
+        "housing"
+      ],
+      "answers": {
+        "iran-and-regional-security": "force-plus-us-backed-agreements",
+        "gaza": "hold-positions-disarmament-first",
+        "judicial-system": "continue-judicial-changes",
+        "judea-samaria": "maintain-current-situation",
+        "october-7-inquiry": "commission-appointed-by-knesset-balance",
+        "haredi-enlistment": "gradual-targets-by-agreement",
+        "religion-and-state": "keep-status-quo",
+        "cost-of-living": "open-market-competition-imports",
+        "crime-in-arab-society": "emergency-powers-shin-bet",
+        "housing": "direct-help-for-buyers"
+      },
+      "expect": {
+        "topAnyOf": [
+          "likud-party",
+          "new-hope"
+        ],
+        "inTop4": [
+          "likud-party",
+          "new-hope"
+        ],
+        "notInTop4": [
+          "hadash",
+          "taal",
+          "balad",
+          "meretz",
+          "the-democrats-party"
+        ]
+      },
+      "reason": "The research gives Likud each of these ten options as its closest (several marked mixed). New Hope, on the same list, shares the Iran, courts, Judea and Samaria, inquiry, religion and cost-of-living options and has this Gaza option and buyer help as second options. The excluded parties are mapped to repeal on the courts, a state commission, and withdrawal or the US plan in Gaza."
+    },
+    {
+      "id": "libertarian-right",
+      "description": "A small-government right-wing voter: cut taxes and spending, no forced service, community choice on religion, release land for building, and full sovereignty.",
+      "ranked": [
+        "cost-of-living",
+        "haredi-enlistment",
+        "religion-and-state",
+        "housing",
+        "judea-samaria",
+        "judicial-system"
+      ],
+      "answers": {
+        "cost-of-living": "cut-taxes-and-government-spending",
+        "haredi-enlistment": "voluntary-service-for-all",
+        "religion-and-state": "more-choice-local-decisions",
+        "housing": "speed-up-planning-and-construction",
+        "judea-samaria": "full-sovereignty",
+        "judicial-system": "continue-judicial-changes"
+      },
+      "expect": {
+        "topAnyOf": [
+          "zehut"
+        ],
+        "inTop4": [
+          "zehut"
+        ],
+        "notInTop4": [
+          "meretz",
+          "the-democrats-party",
+          "shas"
+        ]
+      },
+      "reason": "Zehut is the only party the research maps to this combination: open markets together with cutting taxes and spending, voluntary service, community-level choice on religion (marked mixed), building faster on released state land, full sovereignty and more power over the courts. No other right-wing party is mapped to voluntary service as its main option. The excluded parties are mapped to state regulation or direct support and to sanctions or the exemption law on enlistment."
+    },
+    {
+      "id": "right-wing-reform-and-service",
+      "description": "A right-wing voter who backs the judicial changes and a Knesset-picked inquiry but wants everyone to serve and more choice on religion, with no annexation for now.",
+      "ranked": [
+        "judicial-system",
+        "october-7-inquiry",
+        "haredi-enlistment",
+        "religion-and-state",
+        "judea-samaria",
+        "gaza",
+        "iran-and-regional-security",
+        "cost-of-living"
+      ],
+      "answers": {
+        "judicial-system": "continue-judicial-changes",
+        "october-7-inquiry": "commission-appointed-by-knesset-balance",
+        "haredi-enlistment": "universal-service-with-sanctions",
+        "religion-and-state": "more-choice-local-decisions",
+        "judea-samaria": "maintain-current-situation",
+        "gaza": "advance-international-arrangement",
+        "iran-and-regional-security": "force-plus-us-backed-agreements",
+        "cost-of-living": "open-market-competition-imports"
+      },
+      "expect": {
+        "topAnyOf": [
+          "new-hope",
+          "israel-first",
+          "likud-party"
+        ],
+        "inTop4": [
+          "new-hope"
+        ],
+        "notInTop4": [
+          "hadash",
+          "taal",
+          "balad",
+          "meretz"
+        ]
+      },
+      "reason": "This voter crosses the coalition's line on enlistment and religion, so the top is left open between three parties. New Hope is mapped to these options on the courts, the inquiry, Judea and Samaria, Gaza, Iran and cost of living, with enlistment mixed. Israel First is mapped to the judicial changes, universal service, more choice, US-backed agreements and open markets. Likud shares the courts, inquiry, Judea and Samaria, Iran and cost-of-living options. The excluded parties are mapped to repeal and, where documented, a state commission."
+    },
+    {
+      "id": "mixed-hawk-social-democrat",
+      "description": "A deliberately mixed voter: far-right answers on Gaza and Judea and Samaria, but secular and social-democratic answers on religion, enlistment, prices, housing and the courts.",
+      "ranked": [
+        "gaza",
+        "judea-samaria",
+        "religion-and-state",
+        "haredi-enlistment",
+        "cost-of-living",
+        "housing",
+        "judicial-system"
+      ],
+      "answers": {
+        "gaza": "resume-fighting-full-control",
+        "judea-samaria": "full-sovereignty",
+        "religion-and-state": "separate-religion-and-state",
+        "haredi-enlistment": "universal-service-with-sanctions",
+        "cost-of-living": "active-state-regulation",
+        "housing": "state-led-affordable-rental",
+        "judicial-system": "repeal-changes-protect-independence"
+      },
+      "expect": {
+        "topAnyOf": [
+          "amcha-yisrael",
+          "zehut",
+          "national-union-tkuma",
+          "jewish-national-front",
+          "eretz-yisrael-shelanu",
+          "yisrael-beytenu",
+          "the-democrats-party"
+        ],
+        "notInTop4": [
+          "shas",
+          "degel-hatorah",
+          "raam"
+        ]
+      },
+      "reason": "No party in the research holds this combination, so the top is deliberately wide: the parties mapped to war in Gaza and full sovereignty (Amcha Yisrael also to universal service), Yisrael Beytenu with neighbouring security options plus universal service and civil marriage, and The Democrats, who match the five lower-ranked answers. The firm expectation is the exclusion: Shas, Degel HaTorah and Ra'am are mapped to none of these seven options as their main position."
+    },
+    {
+      "id": "mixed-dovish-free-marketeer",
+      "description": "A deliberately mixed voter: a negotiated two-state agreement and the US plan in Gaza, combined with free-market answers on prices and housing and liberal answers on religion and service.",
+      "ranked": [
+        "judea-samaria",
+        "gaza",
+        "cost-of-living",
+        "housing",
+        "religion-and-state",
+        "haredi-enlistment",
+        "judicial-system"
+      ],
+      "answers": {
+        "judea-samaria": "separation-two-states",
+        "gaza": "advance-international-arrangement",
+        "cost-of-living": "open-market-competition-imports",
+        "housing": "speed-up-planning-and-construction",
+        "religion-and-state": "separate-religion-and-state",
+        "haredi-enlistment": "universal-service-with-sanctions",
+        "judicial-system": "broad-agreed-constitutional-framework"
+      },
+      "expect": {
+        "topAnyOf": [
+          "the-democrats-party",
+          "meretz",
+          "raam",
+          "yashar-leyisrael",
+          "yesh-atid"
+        ],
+        "notInTop4": [
+          "jewish-national-front",
+          "eretz-yisrael-shelanu",
+          "atid-echad",
+          "agudat-yisrael"
+        ]
+      },
+      "reason": "The answers cross camps, so the top is deliberately wide: The Democrats, Meretz and Ra'am are mapped to the two top-ranked answers but to state regulation or direct support on prices, while Yashar LeYisrael and Yesh Atid are mapped to the US plan, open markets and universal service but to the current situation in Judea and Samaria. The excluded parties are mapped to sovereignty, a return to war in Gaza and a bigger role for religious law."
+    }
+  ]
+}

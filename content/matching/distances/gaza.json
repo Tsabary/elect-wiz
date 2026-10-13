@@ -1,0 +1,65 @@
+{
+  "issueId": "gaza",
+  "pairs": [
+    {
+      "a": "resume-fighting-full-control",
+      "b": "hold-positions-disarmament-first",
+      "closeness": 0.5,
+      "reason": "Both keep security in Israeli hands with no withdrawal while Hamas is armed; they differ on going back to war for all of Gaza, and on rebuilding Israeli communities and encouraging residents to leave."
+    },
+    {
+      "a": "resume-fighting-full-control",
+      "b": "advance-international-arrangement",
+      "closeness": 0.2,
+      "reason": "Both want Hamas out of power and disarmed, but one goes back to war for full Israeli control and the other withdraws gradually in favour of an international force and a Palestinian administration."
+    },
+    {
+      "a": "resume-fighting-full-control",
+      "b": "end-war-full-withdrawal",
+      "closeness": 0,
+      "reason": "One goes back to war, takes all of Gaza and rebuilds Israeli communities there; the other ends the war, withdraws fully and hands control to a Palestinian government."
+    },
+    {
+      "a": "resume-fighting-full-control",
+      "b": "defeat-hamas-then-security-control",
+      "closeness": 0.6,
+      "reason": "Both go back to war until Hamas is defeated and keep Israeli security control afterwards; they differ on Israeli communities and encouraging residents to leave, which one wants and the other rules out."
+    },
+    {
+      "a": "hold-positions-disarmament-first",
+      "b": "advance-international-arrangement",
+      "closeness": 0.4,
+      "reason": "Neither goes back to war and both require Hamas to disarm, but one refuses any withdrawal or foreign force before full disarmament and the other withdraws gradually behind an international force."
+    },
+    {
+      "a": "hold-positions-disarmament-first",
+      "b": "end-war-full-withdrawal",
+      "closeness": 0.2,
+      "reason": "Neither resumes full-scale war, but one keeps the army in place with pressure and no rebuilding while the other withdraws fully and allows unrestricted aid and rebuilding."
+    },
+    {
+      "a": "hold-positions-disarmament-first",
+      "b": "defeat-hamas-then-security-control",
+      "closeness": 0.6,
+      "reason": "Both keep security in Israeli hands and refuse to rely on others; they differ on whether to go back to war or hold the current lines and apply pressure."
+    },
+    {
+      "a": "advance-international-arrangement",
+      "b": "end-war-full-withdrawal",
+      "closeness": 0.6,
+      "reason": "Both end the fighting, withdraw the army and pass governing to Palestinians; they differ on whether withdrawal is gradual and tied to disarming Hamas, and on a Palestinian state."
+    },
+    {
+      "a": "advance-international-arrangement",
+      "b": "defeat-hamas-then-security-control",
+      "closeness": 0.4,
+      "reason": "Both end with a non-Hamas administration running daily life and no Israeli settlement, but one goes back to war and keeps Israeli security control while the other withdraws behind an international force."
+    },
+    {
+      "a": "end-war-full-withdrawal",
+      "b": "defeat-hamas-then-security-control",
+      "closeness": 0.2,
+      "reason": "Both reject settling Gaza and leave daily life to a non-Israeli administration, but they are opposed on going back to war, withdrawing the army and who holds security."
+    }
+  ]
+}

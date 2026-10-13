@@ -1,0 +1,41 @@
+{
+  "issueId": "religion-and-state",
+  "pairs": [
+    {
+      "a": "strengthen-jewish-character",
+      "b": "keep-status-quo",
+      "closeness": 0.5,
+      "reason": "Both keep marriage and conversion with the Rabbinate and limits on Shabbat, but one gives religious law a bigger role by law and the other opposes big changes in either direction."
+    },
+    {
+      "a": "strengthen-jewish-character",
+      "b": "more-choice-local-decisions",
+      "closeness": 0.2,
+      "reason": "Both keep the Rabbinate, but one makes it the only route and enforces Shabbat by law while the other opens civil and non-Orthodox alternatives and leaves Shabbat transport to cities."
+    },
+    {
+      "a": "strengthen-jewish-character",
+      "b": "separate-religion-and-state",
+      "closeness": 0,
+      "reason": "One gives Jewish religious law a bigger role in running the state; the other takes religion out of state law entirely."
+    },
+    {
+      "a": "keep-status-quo",
+      "b": "more-choice-local-decisions",
+      "closeness": 0.5,
+      "reason": "Both keep the Rabbinate and allow local variation on Shabbat, but one leaves it in sole charge of marriage and conversion and the other adds civil unions and non-Orthodox alternatives."
+    },
+    {
+      "a": "keep-status-quo",
+      "b": "separate-religion-and-state",
+      "closeness": 0.2,
+      "reason": "Neither gives religious law a bigger role, but one keeps the Rabbinate in charge and Shabbat limits and the other removes religion from state law."
+    },
+    {
+      "a": "more-choice-local-decisions",
+      "b": "separate-religion-and-state",
+      "closeness": 0.6,
+      "reason": "Both give people a civil alternative and open up Shabbat and the non-Orthodox streams; they differ on keeping the Rabbinate as a state body versus removing religion from state law entirely."
+    }
+  ]
+}

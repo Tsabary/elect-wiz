@@ -1,0 +1,41 @@
+{
+  "issueId": "haredi-enlistment",
+  "pairs": [
+    {
+      "a": "anchor-torah-study-exemption",
+      "b": "gradual-targets-by-agreement",
+      "closeness": 0.4,
+      "reason": "Both avoid forcing change on Haredim against their leaders and respect their way of life, but one keeps students out of service by law and the other sets enlistment targets backed by funding cuts."
+    },
+    {
+      "a": "anchor-torah-study-exemption",
+      "b": "universal-service-with-sanctions",
+      "closeness": 0,
+      "reason": "One lets full-time yeshiva students keep studying with no penalties; the other requires nearly all of them to serve and takes benefits from those who refuse."
+    },
+    {
+      "a": "anchor-torah-study-exemption",
+      "b": "voluntary-service-for-all",
+      "closeness": 0.5,
+      "reason": "Both mean yeshiva students are not forced to serve and face no penalties, but one is an exemption for Torah study and the other ends compulsory service for everyone; the directions differ and the lower is used."
+    },
+    {
+      "a": "gradual-targets-by-agreement",
+      "b": "universal-service-with-sanctions",
+      "closeness": 0.6,
+      "reason": "Both aim to bring Haredim into service with financial consequences; they differ on method, gradual targets by agreement versus an immediate duty on every 18-year-old."
+    },
+    {
+      "a": "gradual-targets-by-agreement",
+      "b": "voluntary-service-for-all",
+      "closeness": 0.4,
+      "reason": "Both lean on incentives rather than force, but one sets enlistment targets with funding cuts if missed and the other makes service voluntary for everyone with no benefits depending on it."
+    },
+    {
+      "a": "universal-service-with-sanctions",
+      "b": "voluntary-service-for-all",
+      "closeness": 0.2,
+      "reason": "Both apply one rule to everyone with no group exemption, but one makes service compulsory with loss of benefits and the other makes it voluntary with benefits independent of it."
+    }
+  ]
+}
