@@ -24,3 +24,28 @@ One section per party. Each Hebrew edition was written by a Stage 5a agent (Sonn
 - Validation: no error names the file ✔ (`pnpm validate:content` passed)
 - Trial verdict: Sonnet is good enough for the other parties, with an Opus 5b check kept. None of the 25 differences was a dropped/added claim or loaded wording, and all citations, tags and option IDs were exact. The 7 meaning-drift items were small word-choice or ambiguity slips, not changes to claims. Most fixes were naturalness edits.
 
+
+## haredi-public (checked 2026-10-13; EN researchedAsOf 2026-10-06)
+- Hebrew edition by: Stage 5a agent (Sonnet) · Parity check by: Stage 5b agent (Opus, different)
+- Sections/anchors: identical ✔ (frontmatter identical except `lang: he`; Sources list identical: 41 entries, same order, titles and URLs; all option IDs identical)
+- Claims compared: ~210 · Differences found: 21 · Fixed: 21 · Unresolved: 0
+| Anchor | Difference | Resolution |
+|---|---|---|
+| overview | Naturalness (2): "(באנגלית: HaTzibur HaCharedi)" labelled a transliteration as English; "אין שותפות לרשימה" (wrong noun for "list partners") | "(בתעתיק לאנגלית: …)"; "אין שותפים לרשימה" |
+| leadership | Meaning drift (2): "which this project's registry transliterates as 'Litner'" became "וכך הוא מתועתק ברישום" (unclear, implies the Hebrew form); same issue for Pardi ("ובמקביל ברישום הוא מתועתק") | Both now say the project's data transliterates the name into English as Litner / Pardi |
+| leadership | Meaning drift (2): "former administrative principal" lost "administrative"; "went back to complete his matriculation exams" lost "went back" | "מנהל אדמיניסטרטיבי לשעבר"; "וחזר להשלים בגרויות"; also removed stray niqqud in "פניני חן" |
+| leadership, other-womens-representation | Meaning drift (2): "media and internal pressure from Haredi women" became "pressure from the media and from Haredi women from within" (splits the source of pressure) | "לחץ תקשורתי ופנימי מצד נשים חרדיות" in both places |
+| issue-crime-in-arab-society | Citation/tag: [20–33, 37] moved from the searches sentence to "None of these addresses the issue" | Moved back to the searches sentence |
+| issue-gaza | Meaning drift: "policy position" rendered "עמדה מדינית" (reads as diplomatic position) | "עמדת מדיניות" |
+| issue-haredi-enlistment | Meaning drift: "service must be possible" weakened to "אפשר יהיה לשרת" | "שהשירות חייב להתאפשר" |
+| issue-haredi-enlistment | Naturalness (2): "מילואימניקים" (slang); "צורך של ביטחון הלאום" | "משרתי מילואים"; "צורך ביטחוני לאומי" |
+| issue-housing | Citation/tag: the English quotes "increase the number of construction starts fivefold" as platform wording; Hebrew dropped the quotation marks | Quotation marks restored |
+| other-haredi-education | Meaning drift: "better-trained teachers" became "מוכשרים יותר" (more talented); naturalness: "rooted in Torah" as "שבנוי על" | "בעלי הכשרה טובה יותר"; "שמושרש בתורה ובדרך ארץ" |
+| other-livelihood-and-welfare | Loaded wording/meaning drift: "labor unions" as "הסתדרויות עובדים" (evokes the Histadrut specifically) | "חובת החברות באיגודי עובדים" |
+| other-womens-representation | Naturalness: "Change over time" bullet was a verbless sentence; citation/tag: quote boundary of "no one is prouder than me" left "אין" outside the quote | Rewritten as a full sentence (same facts, dates, [19]/[23]); quote now "אין מי שגאה יותר ממני" |
+| coalition | Naturalness: "ושכשנשאל … ענה" (ungrammatical reported clause) | "וכשנשאל … ענה" |
+| information-availability | Loaded/ambiguous wording: "נושאי הסקר" for "survey issues" reads as an opinion poll (the site uses "סקרים" for polls and "שאלון" for the questionnaire) | "עשרת הנושאים שבשאלון" |
+- Author's flags: (a) changed to "שאלון" as above. (b) "חוזרים בתשובה" kept: it is the standard neutral Hebrew term for people who became religious later in life (also used in the admissions section as "חוזרות בתשובה"). (c) Tag forms "מעשה (שיחות):", "שינוי לאורך זמן:", "רקורד בעמידה בהתחייבויות קואליציוניות:" kept: consistent with the stage-5 table ("מעשה") and accurate equivalents.
+- Glossary: no `avoid.he` term used. "רדיפת לומדי התורה" (close to the avoided "רדיפת בני ישיבות") appears only in quotation marks, attributed "(ניסוח המפלגה)", where the English quotes the same words: allowed under the project ruling. No "נחקרה/שנחקרו". Dates day first throughout.
+- English questioned: none.
+- Validation: no error names the file ✔
