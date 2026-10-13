@@ -1,46 +1,40 @@
 import { expect, test, type Page } from "@playwright/test";
-import { answerAll, completeSurvey, issues, openSurvey, rankWithButtons } from "./helpers";
+import {
+  answerIssues,
+  completeSurvey,
+  isTallyRequest,
+  issues,
+  LOCALES,
+  openSurvey,
+  rankWithButtons,
+  versions,
+} from "./helpers";
 
-for (const locale of ["he", "en"] as const) {
-  test(`full flow in ${locale}: ranking → answers → anything else → result`, async ({ page }) => {
+const optionIds = (page: Page) =>
+  page
+    .getByTestId("answer-option")
+    .evaluateAll((els) => els.map((e) => e.getAttribute("data-option-id")));
+
+for (const locale of LOCALES) {
+  test(`full flow in ${locale}: ranking → answers → result`, async ({ page }) => {
     await openSurvey(page, locale);
     await expect(page.locator("html")).toHaveAttribute("dir", locale === "he" ? "rtl" : "ltr");
     await expect(page.getByTestId("pool-item")).toHaveCount(10);
     await rankWithButtons(page, 3);
     await expect(page.getByTestId("ranked-item")).toHaveCount(7);
-    await answerAll(page);
-    await page
-      .getByTestId("anything-else-text")
-      .fill(locale === "he" ? "תחבורה ציבורית" : "Public transport");
-    await expect(page.getByTestId("submit-survey")).toBeDisabled();
-    await page.getByTestId("anything-else-importance").locator('input[value="middle"]').check();
-    await page.getByTestId("submit-survey").click();
-    await expect(page.getByTestId("result-loading")).toBeVisible();
+    await answerIssues(page);
     await expect(page.getByTestId("result")).toBeVisible();
-    const entries = page.getByTestId("result-entry");
-    expect(await entries.count()).toBeGreaterThanOrEqual(3);
+    await expect(page.getByTestId("result-entry").first()).toBeVisible();
     await expect(page.getByTestId("disclaimer")).toBeVisible();
     // The top match shows its breakdown, one item per ranked issue.
-    await expect(entries.first().getByTestId("breakdown-item")).toHaveCount(7);
-    await expect(entries.first().getByTestId("anything-else-note")).toBeVisible();
-    // No edit or re-run affordances on the result.
-    await expect(page.getByTestId("step-back")).toHaveCount(0);
-    await expect(page.getByTestId("error-retry")).toHaveCount(0);
+    await expect(
+      page.getByTestId("result-entry").first().getByTestId("breakdown-item"),
+    ).toHaveCount(7);
+    // The survey screens are gone.
+    await expect(page.getByTestId("survey")).toHaveCount(0);
+    await expect(page.getByTestId("result-error")).toHaveCount(0);
   });
 }
-
-test("breakdown links land on the cited research anchor", async ({ page }) => {
-  await completeSurvey(page, "en");
-  const link = page.getByTestId("result-entry").first().getByTestId("breakdown-link").first();
-  const href = await link.getAttribute("href");
-  expect(href).toMatch(/^\/en\/parties\/[a-z0-9-]+#issue-[a-z0-9-]+$/);
-  const anchor = href!.split("#")[1];
-  await link.click();
-  await expect(page).toHaveURL(new RegExp(`#${anchor}$`));
-  const heading = page.locator(`[id="${anchor}"]`);
-  await expect(heading).toBeVisible();
-  await expect(heading).toBeInViewport();
-});
 
 test("a refresh after the result starts a new survey", async ({ page }) => {
   await completeSurvey(page, "en");
@@ -49,6 +43,42 @@ test("a refresh after the result starts a new survey", async ({ page }) => {
   await page.reload();
   await expect(page.getByTestId("survey")).toHaveAttribute("data-step", "ranking");
   await expect(page.getByTestId("ranked-item")).toHaveCount(0);
+});
+
+test("a saved survey from the old format (schema 1) is discarded", async ({ page }) => {
+  const all = issues();
+  const ranked = all.slice(0, 6).map((i: any) => i.id);
+  // What the previous version of the site saved: free-text answers and an "anything else" step.
+  const old = {
+    schemaVersion: 1,
+    surveyContentVersion: versions().surveyContentVersion,
+    issueSeed: 1,
+    optionSeed: 2,
+    ranked,
+    notImportant: all.slice(6).map((i: any) => i.id),
+    answers: Object.fromEntries(
+      all
+        .slice(0, 6)
+        .map((i: any) => [
+          i.id,
+          { selected: i.options[0].id, optionTexts: {}, ownText: "", chosen: "option" },
+        ]),
+    ),
+    anythingElse: { text: "Public transport", importance: "middle" },
+    step: { kind: "anything-else" },
+  };
+  await page.goto("/en/survey");
+  await page.evaluate((v) => localStorage.setItem("elect.survey", JSON.stringify(v)), old);
+  await page.reload();
+  await expect(page.getByTestId("survey")).toHaveAttribute("data-step", "ranking");
+  await expect(page.getByTestId("ranked-item")).toHaveCount(0);
+  await expect(page.getByTestId("not-important-item")).toHaveCount(0);
+  await expect(page.getByTestId("pool-item")).toHaveCount(all.length);
+  const saved = JSON.parse((await page.evaluate(() => localStorage.getItem("elect.survey")))!);
+  expect(saved.schemaVersion).toBe(2);
+  expect(saved.ranked).toEqual([]);
+  expect(saved.answers).toEqual({});
+  expect(saved).not.toHaveProperty("anythingElse");
 });
 
 test.describe("ranking", () => {
@@ -207,72 +237,37 @@ test.describe("ranking", () => {
 });
 
 test.describe("answers", () => {
-  test("resume after reload mid-survey restores answers, edits and position", async ({ page }) => {
+  test("each issue takes exactly one of its preset options, with nothing to edit or write", async ({
+    page,
+  }) => {
     await openSurvey(page, "en");
     await rankWithButtons(page, 2);
     await page.getByTestId("ranking-continue").click();
-    const optionOrder = await page
-      .getByTestId("answer-option")
-      .evaluateAll((els) => els.map((e) => e.getAttribute("data-option-id")).join(","));
-    // Edit the second option in place.
-    const option = page.getByTestId("answer-option").nth(1);
-    await option.getByTestId("option-text").fill("My edited wording");
-    await expect(option).toHaveAttribute("data-selected", "true");
-    await expect(option.getByTestId("edited-badge")).toBeVisible();
-    await page.getByTestId("step-next").click();
-    await expect(page.getByTestId("answer-progress")).toContainText("2");
-    await page.getByTestId("own-text").fill("My own answer");
-
-    await page.reload();
-    await expect(page.getByTestId("answer-progress")).toContainText("2");
-    await expect(page.getByTestId("own-text")).toHaveValue("My own answer");
-    await page.getByTestId("step-back").click();
-    await expect(page.getByTestId("answer-progress")).toContainText("1");
-    expect(
-      await page
-        .getByTestId("answer-option")
-        .evaluateAll((els) => els.map((e) => e.getAttribute("data-option-id")).join(",")),
-    ).toBe(optionOrder);
-    await expect(page.getByTestId("answer-option").nth(1).getByTestId("option-text")).toHaveValue(
-      "My edited wording",
-    );
-  });
-
-  test("submits final text, the starting option ID and the edited flag", async ({ page }) => {
-    await openSurvey(page, "en");
-    await rankWithButtons(page, 5);
-    await page.getByTestId("ranking-continue").click();
-    const option = page.getByTestId("answer-option").first();
-    const optionId = await option.getAttribute("data-option-id");
-    const issueId = await page.getByTestId("answer-step").getAttribute("data-issue-id");
-    await option.getByTestId("option-text").fill("Edited preset");
-    await page.getByTestId("step-next").click();
-    await page.getByTestId("own-text").fill("Written from scratch");
-    await page.getByTestId("step-next").click();
-    for (let i = 0; i < 3; i++) {
-      await page.getByTestId("answer-option").nth(2).locator("input").check();
-      await page.getByTestId("step-next").click();
+    const step = page.getByTestId("answer-step");
+    const issueId = (await step.getAttribute("data-issue-id"))!;
+    const expected = issues().find((i: any) => i.id === issueId);
+    const options = step.getByTestId("answer-option");
+    await expect(options).toHaveCount(expected.options.length);
+    // One radio per option, in one group; no text fields of any kind.
+    await expect(step.getByRole("radiogroup")).toHaveCount(1);
+    await expect(step.getByRole("radio")).toHaveCount(expected.options.length);
+    await expect(
+      step.locator('textarea, input:not([type="radio"]), [contenteditable]'),
+    ).toHaveCount(0);
+    for (const gone of ["own-text", "edited-badge", "anything-else-step", "anything-else-text"]) {
+      await expect(page.getByTestId(gone)).toHaveCount(0);
     }
-    const [req] = await Promise.all([
-      page.waitForRequest((r) => r.url().endsWith("/api/match") && r.method() === "POST"),
-      page.getByTestId("submit-survey").click(),
-    ]);
-    const body = req.postDataJSON();
-    expect(body.answers[0]).toEqual({
-      issueId,
-      text: "Edited preset",
-      startingOptionId: optionId,
-      edited: true,
-    });
-    expect(body.answers[1]).toMatchObject({
-      text: "Written from scratch",
-      startingOptionId: null,
-      edited: false,
-    });
-    expect(body.answers[2].edited).toBe(false);
-    expect(body.anythingElse).toBeNull();
-    expect(body.ranked).toHaveLength(5);
-    expect(body.notImportant).toHaveLength(5);
+    await expect(step.locator('[data-selected="true"]')).toHaveCount(0);
+
+    // Tapping anywhere on a card selects it; picking another replaces the choice.
+    await options.nth(0).click();
+    await expect(options.nth(0)).toHaveAttribute("data-selected", "true");
+    await expect(options.nth(0).getByRole("radio")).toBeChecked();
+    await options.nth(1).click();
+    await expect(options.nth(1)).toHaveAttribute("data-selected", "true");
+    await expect(options.nth(0)).toHaveAttribute("data-selected", "false");
+    await expect(step.locator('[data-selected="true"]')).toHaveCount(1);
+    await expect(step.getByRole("radio", { checked: true })).toHaveCount(1);
   });
 
   test("shows progress and needs an answer before continuing", async ({ page }) => {
@@ -289,8 +284,162 @@ test.describe("answers", () => {
     await expect(page.getByTestId("step-next")).toBeEnabled();
   });
 
+  test("answer screens follow the ranking order", async ({ page }) => {
+    await openSurvey(page, "en");
+    await rankWithButtons(page, 5);
+    const ranked = await page
+      .getByTestId("ranked-item")
+      .evaluateAll((els) => els.map((e) => e.getAttribute("data-issue-id")));
+    const seen: (string | null)[] = [];
+    await answerIssues(page, {
+      submit: false,
+      pick: (issueId) => {
+        seen.push(issueId);
+        return issues().find((i: any) => i.id === issueId).options[0].id;
+      },
+    });
+    expect(seen).toEqual(ranked);
+  });
+
+  test("back navigation keeps the answers and the ranking", async ({ page }) => {
+    await openSurvey(page, "en");
+    await rankWithButtons(page, 5);
+    const ranked = await page
+      .getByTestId("ranked-item")
+      .evaluateAll((els) => els.map((e) => e.getAttribute("data-issue-id")));
+    await page.getByTestId("ranking-continue").click();
+    const survey = page.getByTestId("survey");
+    const step = page.getByTestId("answer-step");
+
+    await expect(survey).toHaveAttribute("data-step", "answer-0");
+    const firstOrder = await optionIds(page);
+    await page.getByTestId("answer-option").nth(1).locator("input").check();
+    await page.getByTestId("step-next").click();
+    await expect(survey).toHaveAttribute("data-step", "answer-1");
+    await expect(step).toHaveAttribute("data-issue-id", ranked[1]!);
+    await page.getByTestId("answer-option").nth(2).locator("input").check();
+
+    // Back to the first answer: same options in the same order, same choice.
+    await page.getByTestId("step-back").click();
+    await expect(survey).toHaveAttribute("data-step", "answer-0");
+    await expect(step).toHaveAttribute("data-issue-id", ranked[0]!);
+    expect(await optionIds(page)).toEqual(firstOrder);
+    await expect(page.getByTestId("answer-option").nth(1)).toHaveAttribute("data-selected", "true");
+    await expect(page.getByTestId("step-next")).toBeEnabled();
+
+    // Back again: the ranking, as it was left.
+    await page.getByTestId("step-back").click();
+    await expect(survey).toHaveAttribute("data-step", "ranking");
+    expect(
+      await page
+        .getByTestId("ranked-item")
+        .evaluateAll((els) => els.map((e) => e.getAttribute("data-issue-id"))),
+    ).toEqual(ranked);
+    await expect(page.getByTestId("not-important-item")).toHaveCount(5);
+
+    // Forward again: both answers are still there.
+    await page.getByTestId("ranking-continue").click();
+    await expect(page.getByTestId("answer-option").nth(1)).toHaveAttribute("data-selected", "true");
+    await page.getByTestId("step-next").click();
+    await expect(survey).toHaveAttribute("data-step", "answer-1");
+    await expect(page.getByTestId("answer-option").nth(2)).toHaveAttribute("data-selected", "true");
+  });
+
+  test("resume after reload mid-survey restores the answers and the position", async ({ page }) => {
+    await openSurvey(page, "en");
+    await rankWithButtons(page, 2);
+    await page.getByTestId("ranking-continue").click();
+    const survey = page.getByTestId("survey");
+    const firstOrder = await optionIds(page);
+    await page.getByTestId("answer-option").nth(1).locator("input").check();
+    await page.getByTestId("step-next").click();
+    await expect(survey).toHaveAttribute("data-step", "answer-1");
+    const secondIssue = await page.getByTestId("answer-step").getAttribute("data-issue-id");
+    const secondOrder = await optionIds(page);
+    await page.getByTestId("answer-option").nth(0).locator("input").check();
+
+    await page.reload();
+    await expect(survey).toHaveAttribute("data-step", "answer-1");
+    await expect(page.getByTestId("answer-step")).toHaveAttribute("data-issue-id", secondIssue!);
+    expect(await optionIds(page)).toEqual(secondOrder);
+    await expect(page.getByTestId("answer-option").nth(0)).toHaveAttribute("data-selected", "true");
+    await page.getByTestId("step-back").click();
+    await expect(survey).toHaveAttribute("data-step", "answer-0");
+    expect(await optionIds(page)).toEqual(firstOrder);
+    await expect(page.getByTestId("answer-option").nth(1)).toHaveAttribute("data-selected", "true");
+
+    // The intro offers the saved survey, and it opens where it was left.
+    await page.goto("/en");
+    await page.getByTestId("start-survey").click();
+    await expect(survey).toHaveAttribute("data-step", "answer-0");
+    await page.getByTestId("step-back").click();
+    await expect(page.getByTestId("ranked-item")).toHaveCount(8);
+    await expect(page.getByTestId("not-important-item")).toHaveCount(2);
+  });
+
+  test("the last answer screen submits directly, and the answers stay on the device", async ({
+    page,
+  }) => {
+    await openSurvey(page, "en");
+    // Everything the page sends from here on, other than plain page and asset loads.
+    const sent: { url: string; body: string }[] = [];
+    page.on("request", (r) => {
+      if (r.method() !== "GET") sent.push({ url: r.url(), body: r.postData() ?? "" });
+    });
+    await rankWithButtons(page, 5);
+    const chosen: string[] = [];
+    await answerIssues(page, {
+      submit: false,
+      pick: (issueId) => {
+        const id = issues().find((i: any) => i.id === issueId).options[1].id as string;
+        chosen.push(id);
+        return id;
+      },
+    });
+    // Every screen but the last has "next"; the last has "submit" in its place.
+    await expect(page.getByTestId("survey")).toHaveAttribute("data-step", "answer-4");
+    await expect(page.getByTestId("step-next")).toHaveCount(0);
+    await expect(page.getByTestId("submit-survey")).toBeEnabled();
+    await page.getByTestId("step-back").click();
+    await expect(page.getByTestId("step-next")).toBeEnabled();
+    await expect(page.getByTestId("submit-survey")).toHaveCount(0);
+    await page.getByTestId("step-next").click();
+
+    await page.getByTestId("submit-survey").click();
+    // Straight to the result: no further step in between.
+    await expect(page.getByTestId("result")).toBeVisible();
+    await expect(
+      page.getByTestId("result-entry").first().getByTestId("breakdown-item"),
+    ).toHaveCount(5);
+    await expect(page.getByTestId("anything-else-step")).toHaveCount(0);
+    await expect(page.getByTestId("anything-else-note")).toHaveCount(0);
+
+    // The only calls out are the anonymous counts, and they carry no answers.
+    await expect.poll(() => sent.length).toBe(2);
+    for (const s of sent) {
+      expect(isTallyRequest({ url: () => s.url } as any), s.url).toBe(true);
+      for (const id of chosen) expect(s.body).not.toContain(id);
+      for (const i of issues()) expect(s.body).not.toContain(i.id);
+    }
+  });
+
+  test("the last answer screen needs an answer before it can be submitted", async ({ page }) => {
+    await openSurvey(page, "he");
+    await rankWithButtons(page, 5);
+    await page.getByTestId("ranking-continue").click();
+    for (let i = 0; i < 4; i++) {
+      await expect(page.getByTestId("survey")).toHaveAttribute("data-step", `answer-${i}`);
+      await page.getByTestId("answer-option").first().locator("input").check();
+      await page.getByTestId("step-next").click();
+    }
+    await expect(page.getByTestId("survey")).toHaveAttribute("data-step", "answer-4");
+    await expect(page.getByTestId("submit-survey")).toBeDisabled();
+    await page.getByTestId("answer-option").last().locator("input").check();
+    await expect(page.getByTestId("submit-survey")).toBeEnabled();
+  });
+
   // Issues have 3–6 options; the largest must stay usable on a phone.
-  for (const locale of ["he", "en"] as const) {
+  for (const locale of LOCALES) {
     test(`shows every option of the largest issue without overflow (${locale})`, async ({
       page,
     }) => {
@@ -315,12 +464,11 @@ test.describe("answers", () => {
         () => document.documentElement.scrollWidth - document.documentElement.clientWidth,
       );
       expect(overflow).toBeLessThanOrEqual(0);
-      // The last option and the write-your-own field can be reached and selected.
+      // The last option can be reached and selected.
       const last = options.last();
       await last.scrollIntoViewIfNeeded();
       await last.locator("input").check();
       await expect(last).toHaveAttribute("data-selected", "true");
-      await expect(page.getByTestId("own-text")).toBeVisible();
       await expect(page.getByTestId("step-next")).toBeEnabled();
     });
   }

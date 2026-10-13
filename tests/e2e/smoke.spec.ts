@@ -1,33 +1,5 @@
-import fs from "node:fs";
-import path from "node:path";
 import { expect, test } from "@playwright/test";
-
-/** A valid matching request built from the current content files. */
-function validMatchRequest(locale: "he" | "en" = "he") {
-  const dir = path.join(process.cwd(), "content", "issues");
-  const issues = fs
-    .readdirSync(dir)
-    .sort()
-    .map((f) => JSON.parse(fs.readFileSync(path.join(dir, f), "utf8")));
-  const versions = JSON.parse(
-    fs.readFileSync(path.join(process.cwd(), "content", "versions.json"), "utf8"),
-  );
-  const ranked = issues.slice(0, 6);
-  return {
-    locale,
-    surveyContentVersion: versions.surveyContentVersion as string,
-    ranked: ranked.map((i) => i.id),
-    notImportant: issues.slice(6).map((i) => i.id),
-    answers: ranked.map((i) => ({
-      issueId: i.id,
-      text: i.options[0][locale],
-      startingOptionId: i.options[0].id,
-      edited: false,
-    })),
-    anythingElse: null,
-    token: null,
-  };
-}
+import { issues, listedParties, LOCALES, researchedParties, versions } from "./helpers";
 
 test.describe("locale detection and switching", () => {
   test("Hebrew browser language lands on /he", async ({ browser }) => {
@@ -88,7 +60,7 @@ test.describe("direction", () => {
     await expect(page.locator("html")).toHaveAttribute("lang", "he");
     const button = page.getByTestId("language-switch");
     expect(await button.evaluate((el) => getComputedStyle(el).direction)).toBe("rtl");
-    await expect(page.getByRole("heading", { level: 1 })).toContainText("מפלגה");
+    await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
   });
 
   test("English renders LTR, including shadcn components", async ({ page }) => {
@@ -97,33 +69,88 @@ test.describe("direction", () => {
     await expect(page.locator("html")).toHaveAttribute("lang", "en");
     const button = page.getByTestId("language-switch");
     expect(await button.evaluate((el) => getComputedStyle(el).direction)).toBe("ltr");
-    await expect(page.getByRole("heading", { level: 1 })).toContainText("party");
+    await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
   });
 });
 
-test.describe("matching route (mock)", () => {
-  test("rejects an invalid body with a typed validation error", async ({ request }) => {
-    const res = await request.post("/api/match", { data: { hello: "world" } });
-    expect(res.status()).toBe(400);
-    expect(await res.json()).toMatchObject({ error: { code: "validation" } });
-  });
+test.describe("matching bundle route", () => {
+  for (const locale of LOCALES) {
+    test(`GET /api/matching/${locale} serves that language's bundle`, async ({ request }) => {
+      const res = await request.get(`/api/matching/${locale}`);
+      expect(res.status()).toBe(200);
+      expect(res.headers()["content-type"]).toContain("application/json");
+      const bundle = JSON.parse(await res.text());
+      expect(Object.keys(bundle).sort()).toEqual([
+        "config",
+        "distances",
+        "locale",
+        "matchingVersion",
+        "positions",
+        "surveyContentVersion",
+        "texts",
+      ]);
+      expect(bundle.locale).toBe(locale);
+      expect(bundle.surveyContentVersion).toBe(versions().surveyContentVersion);
+      expect(bundle.matchingVersion).toBe(versions().matchingVersion);
 
-  test("can be forced to simulate an error outside production", async ({ request }) => {
-    const res = await request.post("/api/match", {
-      data: validMatchRequest(),
-      headers: { "x-mock-scenario": "error-rate_limited" },
+      // One positions entry and one grid per issue; rows and texts for the researched parties only.
+      const issueIds = issues()
+        .map((i: any) => i.id as string)
+        .sort();
+      const researched = researchedParties()
+        .map((p) => p.id as string)
+        .sort();
+      expect(bundle.positions.map((p: any) => p.issueId)).toEqual(issueIds);
+      expect(bundle.distances.map((d: any) => d.issueId)).toEqual(issueIds);
+      for (const p of bundle.positions) {
+        expect(p.rows.map((r: any) => r.partyId)).toEqual(researched);
+      }
+      expect(bundle.texts.map((t: any) => t.partyId)).toEqual(researched);
+      for (const t of bundle.texts) {
+        expect(t.lang).toBe(locale);
+        expect(Object.keys(t.issues).sort()).toEqual(issueIds);
+      }
+      const text = JSON.stringify(bundle);
+      for (const p of listedParties()) expect(text).not.toContain(`"${p.id}"`);
+      expect(typeof bundle.config).toBe("object");
+
+      // The version parameter only busts caches: any value gets the current bundle.
+      const versioned = await request.get(`/api/matching/${locale}?v=anything-at-all`);
+      expect(versioned.status()).toBe(200);
+      expect(await versioned.json()).toEqual(bundle);
     });
-    expect(res.status()).toBe(429);
-    expect(await res.json()).toEqual({ error: { code: "rate_limited" } });
+  }
+
+  test("the two languages differ only in their texts", async ({ request }) => {
+    const [he, en] = await Promise.all(
+      LOCALES.map(async (l) => (await request.get(`/api/matching/${l}`)).json()),
+    );
+    expect(he.positions).toEqual(en.positions);
+    expect(he.distances).toEqual(en.distances);
+    expect(he.config).toEqual(en.config);
+    expect(he.texts).not.toEqual(en.texts);
+  });
+
+  test("an unknown locale is a 404", async ({ request }) => {
+    for (const path of ["/api/matching/fr", "/api/matching/xx", "/api/matching/he/extra"]) {
+      expect((await request.get(path)).status(), path).toBe(404);
+    }
   });
 });
 
-test("matching route returns a contract-shaped result for a valid request", async ({ request }) => {
-  const data = validMatchRequest();
-  const res = await request.post("/api/match", { data });
-  expect(res.status()).toBe(200);
-  const body = await res.json();
-  expect(body.entries.length).toBeGreaterThanOrEqual(3);
-  expect(body.entries[0].metadata.name).toBeTruthy();
-  expect(body.meta.surveyContentVersion).toBe(data.surveyContentVersion);
+test.describe("tally route", () => {
+  test("accepts a 'started' call and a 'result' call, with no content", async ({ request }) => {
+    const ids = researchedParties().map((p) => p.id);
+    for (const data of [{ kind: "started" }, { kind: "result", parties: ids.slice(0, 4) }]) {
+      const res = await request.post("/api/tally", { data });
+      expect(res.status()).toBe(204);
+      expect(await res.text()).toBe("");
+    }
+  });
+
+  test("rejects a malformed call", async ({ request }) => {
+    const res = await request.post("/api/tally", { data: { hello: "world" } });
+    expect(res.status()).toBe(400);
+    expect(await res.text()).toBe("");
+  });
 });

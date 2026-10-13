@@ -1,6 +1,17 @@
 import fs from "node:fs";
 import path from "node:path";
-import { expect, type Page } from "@playwright/test";
+import { expect, type Locator, type Page, type Request } from "@playwright/test";
+import {
+  placeholderAnswerSet,
+  type PlaceholderAnswerSet,
+  type PlaceholderCase,
+} from "../fixtures/matching";
+
+export { PLACEHOLDER_CASES, placeholderAnswerSet } from "../fixtures/matching";
+export type { PlaceholderAnswerSet, PlaceholderCase } from "../fixtures/matching";
+
+export type AppLocale = "he" | "en";
+export const LOCALES = ["he", "en"] as const;
 
 export const CONTENT = path.join(process.cwd(), "content");
 
@@ -14,27 +25,42 @@ export const issues = () =>
     .sort()
     .map((f) => readJson(`issues/${f}`));
 
-/** Active-corpus registry (placeholder until Task 4.1). */
-export const parties = (): any[] => {
-  const corpus = process.env.CONTENT_CORPUS === "real" ? "registry" : "placeholder/registry";
-  return readJson(`${corpus}/parties.json`).parties;
-};
-export const lists = (): any[] => {
-  const corpus = process.env.CONTENT_CORPUS === "real" ? "registry" : "placeholder/registry";
-  return readJson(`${corpus}/lists.json`).lists;
-};
+export const versions = (): {
+  surveyContentVersion: string;
+  researchVersion: string;
+  matchingVersion: string;
+} => readJson("versions.json");
+
+/** The suite runs on the placeholder corpus (see playwright.config.ts). */
+const registryDir = () =>
+  process.env.CONTENT_CORPUS === "real" ? "registry" : "placeholder/registry";
+
+/** Active-corpus registry: every party, researched and listed. */
+export const parties = (): any[] => readJson(`${registryDir()}/parties.json`).parties;
+export const lists = (): any[] => readJson(`${registryDir()}/lists.json`).lists;
+
+/** Parties with a research document, which are the ones the matching covers. */
+export const researchedParties = () => parties().filter((p) => p.tier === "researched");
+/** Parties on the ballot that were not researched: registry facts only, never matched. */
+export const listedParties = () => parties().filter((p) => p.tier === "listed");
+export const listOf = (partyId: string) => lists().find((l) => l.memberPartyIds.includes(partyId));
+
+// ------------------------------------------------------------------ survey
 
 /** Opens the survey with a fresh session. */
-export async function openSurvey(page: Page, locale: "he" | "en" = "en", query = "") {
-  await page.goto(`/${locale}/survey${query}`);
+export async function openSurvey(page: Page, locale: AppLocale = "en") {
+  await page.goto(`/${locale}/survey`);
   await page.evaluate(() => localStorage.clear());
-  await page.goto(`/${locale}/survey${query}`);
+  await page.goto(`/${locale}/survey`);
   await expect(page.getByTestId("survey")).toHaveAttribute("data-step", "ranking");
 }
 
+export const poolItem = (page: Page, issueId: string) =>
+  page.locator(`[data-testid="pool-item"][data-issue-id="${issueId}"]`);
+
 /** Ranks every issue with buttons: marks `skip` as "doesn't matter", adds the rest. */
 export async function rankWithButtons(page: Page, skip = 2, tap = false) {
-  const press = async (loc: ReturnType<Page["locator"]>) => (tap ? loc.tap() : loc.click());
+  const press = async (loc: Locator) => (tap ? loc.tap() : loc.click());
   for (let i = 0; i < skip; i++) {
     await press(page.getByTestId("pool-item").first().getByTestId("mark-not-important"));
   }
@@ -44,52 +70,115 @@ export async function rankWithButtons(page: Page, skip = 2, tap = false) {
   await expect(page.getByTestId("ranking-continue")).toBeEnabled();
 }
 
-/** Answers every issue with its first displayed option and goes to "anything else". */
-export async function answerAll(page: Page) {
+/**
+ * Ranks exactly the given issues, in the given order, and marks every other
+ * issue "doesn't matter". `from` skips the leading issues that are ranked already.
+ */
+export async function rankIssues(page: Page, ranked: readonly string[], from = 0) {
+  for (const [i, id] of ranked.entries()) {
+    if (i < from) continue;
+    await poolItem(page, id).getByTestId("add-to-ranking").click();
+    await expect(page.getByTestId("ranked-item").nth(i)).toHaveAttribute("data-issue-id", id);
+  }
+  while ((await page.getByTestId("pool-item").count()) > 0) {
+    const before = await page.getByTestId("pool-item").count();
+    await page.getByTestId("pool-item").first().getByTestId("mark-not-important").click();
+    await expect(page.getByTestId("pool-item")).toHaveCount(before - 1);
+  }
+  await expect(page.getByTestId("ranking-continue")).toBeEnabled();
+}
+
+export const answerOption = (page: Page, optionId: string) =>
+  page.locator(`[data-testid="answer-option"][data-option-id="${optionId}"]`);
+
+/**
+ * From the ranking screen: goes through one answer screen per ranked issue and
+ * picks an option on each. `pick` names the option for an issue; without it the
+ * first displayed option is picked. Stops on the last screen with its answer
+ * given, unless `submit` is set (the default), which sends the survey.
+ */
+export async function answerIssues(
+  page: Page,
+  opts: { pick?: (issueId: string) => string; submit?: boolean } = {},
+) {
+  const { pick, submit = true } = opts;
+  const total = await page.getByTestId("ranked-item").count();
   await page.getByTestId("ranking-continue").click();
-  for (;;) {
+  for (let i = 0; i < total; i++) {
+    await expect(page.getByTestId("survey")).toHaveAttribute("data-step", `answer-${i}`);
     const step = page.getByTestId("answer-step");
-    await expect(step).toBeVisible();
-    await step.getByTestId("answer-option").first().locator('input[type="radio"]').check();
-    await page.getByTestId("step-next").click();
-    if (await page.getByTestId("anything-else-step").isVisible()) break;
+    const issueId = (await step.getAttribute("data-issue-id"))!;
+    const option = pick
+      ? answerOption(page, pick(issueId))
+      : step.getByTestId("answer-option").first();
+    await option.locator('input[type="radio"]').check();
+    await expect(option).toHaveAttribute("data-selected", "true");
+    if (i < total - 1) await page.getByTestId("step-next").click();
+    else if (submit) await page.getByTestId("submit-survey").click();
   }
 }
 
-/** Runs the whole survey through to the result. */
-export async function completeSurvey(page: Page, locale: "he" | "en" = "en", query = "") {
-  await openSurvey(page, locale, query);
-  await rankWithButtons(page);
-  await answerAll(page);
-  await page.getByTestId("submit-survey").click();
+/** Runs the whole survey (first option everywhere) through to the result. */
+export async function completeSurvey(page: Page, locale: AppLocale = "en", skip = 2) {
+  await openSurvey(page, locale);
+  await rankWithButtons(page, skip);
+  await answerIssues(page);
 }
 
-/** A valid matching request built from the content files. */
-export function validMatchRequest(locale: "he" | "en" = "he") {
-  const all = issues();
-  const versions = readJson("versions.json");
-  const ranked = all.slice(0, 6);
-  return {
-    locale,
-    surveyContentVersion: versions.surveyContentVersion as string,
-    ranked: ranked.map((i: any) => i.id),
-    notImportant: all.slice(6).map((i: any) => i.id),
-    answers: ranked.map((i: any) => ({
-      issueId: i.id,
-      text: i.options[0][locale],
-      startingOptionId: i.options[0].id,
-      edited: false,
-    })),
-    anythingElse: null,
-    token: null,
-  };
+/**
+ * Answers the survey with one of the placeholder answer sets, by driving the
+ * UI, and returns the set with its recorded expected result.
+ */
+export async function completeCase(
+  page: Page,
+  locale: AppLocale,
+  id: PlaceholderCase,
+): Promise<PlaceholderAnswerSet> {
+  const set = placeholderAnswerSet(id);
+  await openSurvey(page, locale);
+  await rankIssues(page, set.ranked);
+  await answerIssues(page, { pick: (issueId) => set.answers[issueId] });
+  await expect(page.getByTestId("result")).toBeVisible();
+  return set;
 }
+
+// ------------------------------------------------------------------ result
+
+/** A full result card or a "show all" row, whichever shows this party. */
+export const resultEntry = (page: Page, partyId: string) =>
+  page.locator(
+    `[data-testid="result-entry"][data-party-id="${partyId}"], [data-testid="result-row"][data-party-id="${partyId}"]`,
+  );
+
+export const partyIdsOf = (loc: Locator) =>
+  loc.evaluateAll((els) => els.map((e) => e.getAttribute("data-party-id")));
+
+// ------------------------------------------------------------------ requests
+
+export const MATCHING_BUNDLE_URL = /\/api\/matching\//;
+export const isTallyRequest = (r: Request) => new URL(r.url()).pathname === "/api/tally";
+
+/** Collects the bodies of every tally call the page makes from now on. */
+export function recordTally(page: Page): { calls: any[] } {
+  const record = { calls: [] as any[] };
+  page.on("request", (r) => {
+    if (isTallyRequest(r)) record.calls.push({ method: r.method(), body: r.postDataJSON() });
+  });
+  return record;
+}
+
+// ------------------------------------------------------------------ clock
 
 /** Sets the non-production clock override for this browser context. */
 export async function setClock(page: Page, iso: string) {
   await page
     .context()
     .addCookies([{ name: "clock-override", value: encodeURIComponent(iso), url: baseUrl() }]);
+}
+
+/** Makes an open page re-check the time-based modes now (it otherwise does so every 15 seconds). */
+export async function recheckClock(page: Page) {
+  await page.evaluate(() => document.dispatchEvent(new Event("visibilitychange")));
 }
 
 export function baseUrl() {
