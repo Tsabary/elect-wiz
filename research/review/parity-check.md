@@ -466,3 +466,34 @@ Points the author flagged:
   - "אקורד סיום צורם ומריר במיוחד" is the original Hebrew wording of the same quote, as shown in source [36]'s title. It was kept.
   - No "נחקרה"/"שנחקרו", no "זמני/זמנית", and no Latin acronyms in the prose (Ynet and Ynetnews are outlet names). Dates are day first. Registry names are used for all parties and leaders.
 - Validation: no error names the file ✔ (the only errors concern research/he/byachad-bennett.md, which another agent is working on)
+
+## new-economic-party (checked 2026-10-13; EN researchedAsOf 2026-10-07)
+- Hebrew edition by: Stage 5a agent (Sonnet) · Parity check by: Stage 5b agent (Opus, different)
+- Sections/anchors: identical ✔ (all 9 sections and all 30 issue/other-position anchors, same order)
+- Claims compared: ~282 sentence-level claims in 145 paragraphs/bullets, plus 75 sources · Differences found: 21 · Fixed: 21 · Unresolved: 0
+- Citations: same `[n]` on every line (checked line by line, in order); Sources list identical (75 entries, same order, titles and URLs) ✔. Option IDs on all "closest option(s)" lines identical ✔. Evidence-tier tags identical on all 123 tagged items. The extra labels ("בדיקת עובדות", "רקע מתוארך (...)", "הצהרה (במסגרת רשמית)", "התחייבות רשמית (תמיכה בקבוצות מסוימות)", "התחייבות רשמית (רשימה משותפת)") each match a label that is in the English ✔.
+- Flagged items: "ערביי ישראל" appears only inside Zelekha's quote, attributed, where the English quotes the same words ("most of Israel's Arabs are loyal citizens"), so it's allowed under the ruling ✔. "צו זמני" translates "temporary" (not "tentative"), so it stays ✔. "Tentatively" is rendered "בהסתייגות", not זמני ✔. Candidate names (הנדל, וילף, אדומי, ווליבוביץ, לנגמן, גלבוע, ביטון, טרופר) match `content/registry/lists.json` and `content/research/he/the-reservists.md` ✔.
+
+| Anchor | Difference | Resolution |
+|---|---|---|
+| overview | Change over time: Tropper's "fairly significant left-wing views" was rendered "דעות שמאלניות למדי", which drops "significant" (meaning drift) | Changed to "דעות שמאל משמעותיות למדי" |
+| overview | The Hebrew added "(הוועדה)" after the committee's name, copying the English "(CEC)" abbreviation, but never used it later (naturalness) | Removed |
+| leadership | "IDF Military Intelligence research division" was rendered "אגף המחקר של אמ"ן", the wrong Hebrew unit name (naturalness) | Changed to "חטיבת המחקר של אמ"ן" |
+| leadership | "their records are not researched here" was rendered "הרקורד שלהם לא נחקר כאן", which breaks the owner's "נחקר" wording rule (loaded wording) | Changed to "הרקורד שלהם אינו נבדק כאן" |
+| issue-cost-of-living | 2 wording fixes: "חיסכון 'מסיבי' ביעילות" became "התייעלות 'מסיבית'", and "קונים של צי רכב" became "רוכשי ציי רכב" (naturalness) | Fixed |
+| issue-crime-in-arab-society | "קיימות ראיות מעטות ספציפיות" read as a word-for-word translation (naturalness) | Changed to "יש מעט ראיות ספציפיות" |
+| issue-judicial-system | The sentence saying the transcript could not be reached was clumsy (naturalness) | Changed to "לא ניתן היה לגשת לפרוטוקול הרשמי של הוועדה" |
+| issue-religion-and-state | 2 places: "kashrut certification" was rendered "הסמכת הכשרות", which in Hebrew reads as certifying rabbis, not certifying food. The closest-option line has the same problem (meaning drift) | Changed to "מתן תעודות הכשרות" in both places ("…לרבנים שהוסמכו לרבנות") |
+| issue-religion-and-state | The agunot/get phrase was repeated and clumsy (naturalness) | Changed to "ולמסורבות גט (נשים שבעליהן מסרבים לתת להן גט דתי)" |
+| other-health | "interns and residents" was rendered "המתמחים והמתמחים בהתמחות" (meaning drift) | Changed to "הסטאז'רים והמתמחים" |
+| other-welfare | "team" was rendered "קבוצה" (naturalness) | Changed to "צוות" |
+| other-environment-animals | 2 wording fixes: "חילוץ מינרלים" became "הפקת מינרלים", and "שילוחי" became "משלוחי" (naturalness) | Fixed |
+| other-agriculture | "farming cooperatives" was rendered "שיתופים חקלאיים" (naturalness) | Changed to "אגודות שיתופיות חקלאיות" |
+| coalition | 2 wording fixes: the sentence opening "ice דיווח" became "אתר ice דיווח", and "יתבעו" became "ידרשו" (naturalness) | Fixed |
+| legal | "summoned for questioning" was rendered "לחקירה", which in a section that says there were no criminal investigations reads as a criminal probe (loaded wording) | Changed to "לתשאול" |
+| legal | "State Attorney Moshe Lador" was rendered "המשנה לפרקליט המדינה" (meaning drift) | Changed to "פרקליט המדינה" |
+| (throughout) | 9 instances: glossary forms use gershayim (צה״ל, שב״כ, בג״ץ) but the file used ASCII quotes (glossary) | Standardised to the glossary forms (prose only; source titles unchanged) |
+
+- Kinds: meaning drift 5 · loaded wording 2 · dropped/added claim 0 · citation/tag 0 · glossary 1 (9 instances) · naturalness 13
+- English questioned: none
+- Validation: no error names the file ✔ (the 4 current errors all concern research/he/byachad-bennett.md)
