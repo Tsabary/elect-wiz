@@ -355,7 +355,7 @@ The owner also creates the small counter database for the anonymous counts befor
 - **Plan reference:** Rollout → track 3; Risk 8; PRD requirement 42.
 
 ### Task 4.3: Recheck the registry against the final lists of 18 October
-- [ ]
+- [ ] *(Run early on 2026-10-13 at the owner\'s request: all 38 lists and their ballot letters match the approved ballot slips, and three list names were corrected. The lists are not final until the publication of 18 October 2026, so a short repeat is still owed then; see `research/review/registry-recheck-2026-10-13.md`.)*
 - **What:** Compare `content/registry/lists.json` and `parties.json` with the Central Elections Committee's final publication of 18 October 2026 and apply any differences.
 - **Acceptance criteria:**
   - Every list's name, ballot letters, member parties, top candidates and status match the final publication, with the source recorded as the existing entries do.
