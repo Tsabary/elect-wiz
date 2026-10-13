@@ -123,3 +123,29 @@ Checked and found correct (no change):
 - **Hebrew labels outside the tag table (author flag):** each matches its English label: רקע = Background, הערכה = Assessment, היקף = Scope, מגבלות הראיות = Limits of the evidence, רקורד = Record, לא נמצאה עמדה מתועדת (אחרת) = No (other) documented position found. "הצהרות:" = "Statements:" is a plural of the tag.
 - **Glossary:** the required terms are used: חרדי, תלמידי ישיבות, גיוס, צה״ל, יהודה ושומרון, יישובים/התיישבות, החלת ריבונות ישראלית (with "המכונה גם סיפוח" exactly where the English says "also called annexation"), מתקפת 7 באוקטובר, ועדת חקירה ממלכתית, ועדה שתמונה באמצעות הכנסת, בג״ץ/בית המשפט העליון, ההלכה (החוק הדתי היהודי), השב״כ (…), מעצר בלי משפט, חוק יסוד. No avoid.he term appears outside the allowed uses above. The words "נחקרה"/"שנחקרו" do not appear. All dates are day first.
 - Validation: no error names the file ✔ (`pnpm validate:content` passed).
+
+## agudat-yisrael (checked 2026-10-13; EN researchedAsOf 2026-10-06)
+- Hebrew edition by: Stage 5a agent (Sonnet) · Parity check by: Stage 5b agent (Opus, different)
+- Sections/anchors: identical ✔ (frontmatter identical except `lang: he`; the files line up line for line)
+- Claims compared: ~330 · Differences found: 21 · Fixed: 21 · Unresolved: 0
+- Checked by script on every line: `[n]` citations identical on every line ✔; option IDs on every "closest option(s)" line identical ✔; Sources list (93 entries) byte-identical, with the same count, order and URLs ✔; evidence-tier tags identical ✔; no "נחקרה"/"שנחקרו" ✔; dates day first ✔.
+
+| Anchor | Difference | Resolution |
+|---|---|---|
+| issue-gaza, issue-october-7-inquiry | meaning drift (2): "tentative" was given as "זמנית" (temporary) | Changed to "הערכה זהירה" (Gaza: "הערכה זהירה, והראיות מעורבות") |
+| issue-gaza | meaning drift: "post-ceasefire choices" was given as "הבחירות שאחרי הפסקת האש", which reads as "the elections after the ceasefire" | Changed to "האפשרויות שעל הפרק אחרי הפסקת האש" |
+| leadership | meaning drift: "Gur and other Haredi Talmud Torah schools" was given as "of Gur and of other Haredi courts" | Changed to "תלמודי תורה של גור ותלמודי תורה חרדיים אחרים" |
+| other-haredi-education-daycare | meaning drift: "criteria for state daycare subsidies" was given as subsidies for state-run daycares ("מעונות יום ממלכתיים") | Changed to "הקריטריונים לסבסוד המדינה למעונות יום" |
+| coalition | meaning drift: "list leader" Asher was given as "יושב ראש הרשימה" | Changed to "ראש הרשימה" |
+| coalition | naturalness (flagged by the author): "Kept in 2022." was given as "קוים ב-2022.", which is ambiguous without niqqud (it reads as "קווים", lines) | Changed to "ההבטחה קוימה ב-2022." |
+| other-consumer-taxes | naturalness (flagged by the author): the quote "another wicked decree" was given as "עוד גזירה רשעה" (unidiomatic) | Changed to "עוד גזירה מרושעת", which is the source's own wording (title of [55]). It stays in quotation marks and attributed to Goldknopf; "גזירה" alone is not a glossary avoid term (the avoid term is "גזירת הגיוס") |
+| issue-judicial-system | naturalness: the quoted agreement wording "strengthen governability" was given as "לחזק את היכולת למשול" | Changed to "לחזק את המשילות", the standard Hebrew term |
+| overview, leadership, coalition, issue-cost-of-living, issue-haredi-enlistment, other-torah-study-funding, other-haredi-education-daycare, track-record | naturalness (13): literal or ungrammatical wording ("שמירה על תלמידי ישיבות מחוץ לשירות", "שני הגברים", "חדשות 12 דיווחה" ×2, "קיבל תפקיד שרים", "שר ירושלים ומורשת", "את המחויבויות חתמה", the broken quote "שאין \"ראוי עוד", "השאירה דחיות", "מימון ממלכתי", "התנגדו ... כאל קיצוצים", "מוחזק בחזרה") | Rewritten in plain Hebrew with the same meaning |
+
+Author's flags, verified with no change needed:
+- Council of Torah Sages: the English itself gives "מועצת גדולי התורה" for Agudat Yisrael's council, so the Hebrew is correct. "מועצת חכמי התורה" (used in shas/the-reservists) is Shas's council, a different body.
+- Tessler: the English uses "Yoel Yaakov Tessler" in his leadership heading and "Yaakov Tessler" elsewhere, and the Hebrew mirrors this exactly (יואל יעקב טסלר / יעקב טסלר). The registry has no Hebrew entry for Tessler. Left as it is.
+- "מגזר" appears only inside quotation marks (line 177 "מגזר מסוים", line 193 "המגזר", where the English quotes "sector" in both places) and in source titles. The glossary avoid term is "המגזר הערבי" only.
+- Avoid-list words inside quotes, all attributed and matching an English quotation (allowed under the project ruling): "פדיון שבויים" (Goldknopf, "redeeming captives"), "רדיפת עולם התורה" (Council letter), "הרדיפה הדתית" (Porush), "הרפורמה המשפטית" (Goldknopf, Tessler and Roth letter). There are no avoid-list words outside quotes.
+- Names follow the registry (יצחק גולדקנופ; the full forms יצחק זאב פינדרוס and משה עזריאל רוזנטל on the top-places line, which match lists.json).
+- Validation: no error names the file ✔ (`pnpm validate:content`: "Content validation passed")
