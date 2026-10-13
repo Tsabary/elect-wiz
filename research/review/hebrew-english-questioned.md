@@ -74,3 +74,14 @@ Each was checked against the party's English research document; changes were mad
 | atid-echad | `content/research/en/atid-echad.md` | Leadership and Track record vs. the Judea and Samaria contradiction bullet | The Likud–Religious Zionism coalition agreement is "signed on 1 December 2022" [20] in some places and "signed on 28 December 2022" [89] in another; probably an initial signing and the final signed copy, but the English should say which. The Hebrew mirrors the English. | 5b parity check (`research/review/parity-check.md`) | open, owner to decide |
 | byachad-bennett | `content/matching/texts/en/byachad-bennett.json` | judicial-system / `broad-agreed-constitutional-framework` | Stray comma in "the 26 September 2026, principles document" (pre-existing; not a names-and-roles edit, so left). | 7d parity check | open, owner to decide (trivial) |
 | hadash | `content/matching/texts/en/hadash.json` | text naming "President Herzog" | No first name, and the permitted sources for this party (registry, research) don't give one, so the Hebrew session left it ("הנשיא הרצוג"). If wanted, use the form already approved for the-reservists: "President Isaac Herzog" / "נשיא המדינה יצחק הרצוג". | 7d writer and parity check | open, owner to decide (low) |
+
+## Decisions on the fourth-batch items (2026-10-14)
+
+Every "open" row in the fourth-batch table is closed by this section. Changes were made in English and Hebrew together.
+
+1. **hadash, Faten Ghattas:** fixed. "he holds a doctorate" was a typo for "she"; the same bullet says "chose her". The Hebrew was already feminine.
+2. **hadash, "President Herzog":** fixed in both languages: "President Isaac Herzog" / "נשיא המדינה יצחק הרצוג".
+3. **atid-echad, coalition agreement dates:** both dates are sourced: the deal was signed on 1 December 2022 [20] and the final agreement was signed and tabled on 28 December 2022 [89]. The second mention now says "signed in its final form on 28 December 2022" / "שנחתם בנוסחו הסופי ב-28 בדצמבר 2022".
+4. **byachad-bennett, "Justice Alroni":** fixed in both research editions: "Justice Yosef Elron" / "השופט יוסף אלרון". Confirmed against source [72], which names him in full.
+5. **byachad-bennett, stray comma:** removed from the English text. The Hebrew needed no change.
+

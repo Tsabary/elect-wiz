@@ -31,7 +31,7 @@ researchedAsOf: 2026-10-07
 
 **Top of the Joint List (as of 6 October 2026).** The CEC filing published on 9 September 2026 lists the first places as: 1. Yousef Jabareen (Hadash), 2. Ahmad Tibi (Ta'al), 3. Sami Abu Shehadeh (Balad), 4. Faten Ghattas (Hadash), 5. Bakr Awawdeh (Balad), 6. Ofer Cassif (Hadash), 7. Youssef Atauna (Hadash) [1]. Abu Shehadeh withdrew his candidacy on 2 October 2026 during the Supreme Court hearing on his disqualification, so the candidates below him move up one place [12, 14]. Hadash's candidates near the top are therefore:
 - **Yousef Jabareen** (No. 1): see above.
-- **Dr. Faten Ghattas** (now No. 3): from Rameh in the Galilee; he holds a doctorate in political science and directs the Israel Cancer Association's activities in Arab society [10, 110]. Hadash's council chose her in September 2026 to replace Jafar Farah [10].
+- **Dr. Faten Ghattas** (now No. 3): from Rameh in the Galilee; she holds a doctorate in political science and directs the Israel Cancer Association's activities in Arab society [10, 110]. Hadash's council chose her in September 2026 to replace Jafar Farah [10].
 - **Ofer Cassif** (now No. 5): a Jewish member of Hadash, born in 1964, who has been a Knesset member since 30 April 2019 [25, 99]. He holds a PhD [25]. During the First Intifada (1987) he refused military service in the territories and was imprisoned [25].
 - **Youssef Atauna** (now No. 6): a former Hadash Knesset member from the Bedouin community in the Negev [2, 19, 21].
 - **Dr. Nahaya Wishahi** (No. 10 on the filed list, now No. 9): a lecturer in education, filed on behalf of Hadash [1, 110].
