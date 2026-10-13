@@ -8,7 +8,13 @@ import { PollInfo } from "@/components/research/poll-info";
 import { ResearchDocument } from "@/components/research/research-document";
 import { Link } from "@/i18n/navigation";
 import { routing, type Locale } from "@/i18n/routing";
-import { getList, getLists, getParties, getParty, getResearchDoc } from "@/lib/content/loaders";
+import {
+  getList,
+  getLists,
+  getParties,
+  getParty,
+  getResearchDocForLocale,
+} from "@/lib/content/loaders";
 import { listedPartyView } from "@/lib/content/party-view";
 import { pageMetadata } from "@/lib/site";
 import { resolveNow, timeModes } from "@/lib/time-modes";
@@ -48,8 +54,10 @@ export default async function PartyPage({ params }: PageProps<"/[locale]/parties
   if (!party || !list) notFound();
   // A listed party has no research document: its page shows registry facts only.
   const listed = party.tier === "listed";
-  const doc = listed ? null : getResearchDoc(partyId, locale);
+  // While Hebrew content is pending, the Hebrew page may get the English document.
+  const doc = listed ? null : getResearchDocForLocale(partyId, locale);
   if (!listed && !doc) notFound();
+  const fallbackDoc = !!doc && doc.lang !== locale;
 
   const t = await getTranslations("Research");
   const format = await getFormatter();
@@ -110,6 +118,15 @@ export default async function PartyPage({ params }: PageProps<"/[locale]/parties
             {t("listedNote")}
           </p>
         )}
+        {fallbackDoc && (
+          <p
+            role="note"
+            data-testid="content-fallback-notice"
+            className="bg-muted rounded-lg border px-4 py-3 text-sm font-medium"
+          >
+            {t("contentFallbackNotice")}
+          </p>
+        )}
         {summary.limitedInfo && (
           <p
             role="note"
@@ -122,7 +139,11 @@ export default async function PartyPage({ params }: PageProps<"/[locale]/parties
       </header>
 
       {doc ? (
-        <ResearchDocument doc={doc} afterOverview={<PollInfo list={list} modes={modes} />} />
+        <ResearchDocument
+          doc={doc}
+          pageLocale={locale}
+          afterOverview={<PollInfo list={list} modes={modes} />}
+        />
       ) : (
         // Registry facts and the party's own link only: no research, no poll information.
         <>

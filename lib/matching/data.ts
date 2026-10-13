@@ -55,7 +55,11 @@ export const matchingBundleSchema = z.object({
   /** One grid per issue. */
   distances: z.array(z.object({ issueId: idSchema, pairs: z.array(bundlePairSchema) })),
   config: matchingConfigSchema,
-  /** One entry per researched party, in `locale`: the parties the bundle matches. */
+  /**
+   * One entry per researched party: the parties the bundle matches. In `locale`,
+   * except for a party whose texts fell back to another language (see
+   * `BundleSource.fallbackTexts`); each entry's own `lang` says which.
+   */
   texts: z.array(partyTextsSchema),
 });
 export type MatchingBundle = z.infer<typeof matchingBundleSchema>;
@@ -72,6 +76,11 @@ export interface BundleSource {
   config: MatchingConfig;
   /** Result texts in `locale`. */
   texts: readonly PartyTexts[];
+  /**
+   * Texts in another language, used only for a party that has none in `locale`
+   * (the "Hebrew content pending" state). They keep their own `lang`.
+   */
+  fallbackTexts?: readonly PartyTexts[];
 }
 
 const byString = (a: string, b: string) => (a < b ? -1 : a > b ? 1 : 0);
@@ -79,6 +88,11 @@ const byString = (a: string, b: string) => (a < b ? -1 : a > b ? 1 : 0);
 /** Builds one language's bundle. Pure; the output order doesn't depend on the input order. */
 export function buildMatchingBundle(source: BundleSource): MatchingBundle {
   const parties = new Set(source.partyIds);
+  const own = source.texts.filter((t) => t.lang === source.locale && parties.has(t.partyId));
+  const covered = new Set(own.map((t) => t.partyId));
+  const fallback = (source.fallbackTexts ?? []).filter(
+    (t) => t.lang !== source.locale && parties.has(t.partyId) && !covered.has(t.partyId),
+  );
   return {
     matchingVersion: source.versions.matchingVersion,
     surveyContentVersion: source.versions.surveyContentVersion,
@@ -104,9 +118,7 @@ export function buildMatchingBundle(source: BundleSource): MatchingBundle {
         pairs: pairs.map(({ a, b, closeness }) => ({ a, b, closeness })),
       })),
     config: source.config,
-    texts: source.texts
-      .filter((t) => t.lang === source.locale && parties.has(t.partyId))
-      .sort((a, b) => byString(a.partyId, b.partyId)),
+    texts: [...own, ...fallback].sort((a, b) => byString(a.partyId, b.partyId)),
   };
 }
 
@@ -193,7 +205,13 @@ export function matchLocally(
       input,
       bundle.texts.map((t) => t.partyId).filter((id) => Object.hasOwn(parties, id)),
     );
-    const entries = scored.entries.map((e): MatchEntry => ({ ...e, metadata: parties[e.partyId] }));
+    const fallbackLang = new Map(
+      bundle.texts.filter((t) => t.lang !== bundle.locale).map((t) => [t.partyId, t.lang]),
+    );
+    const entries = scored.entries.map((e): MatchEntry => {
+      const textsLang = fallbackLang.get(e.partyId);
+      return { ...e, metadata: parties[e.partyId], ...(textsLang ? { textsLang } : {}) };
+    });
     if (entries.length === 0) return { ok: false, code: "bundle_load_failed" };
     return {
       ok: true,

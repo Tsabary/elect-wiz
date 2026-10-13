@@ -33,6 +33,8 @@ export function ResultView({
   const [top, ...rest] = result.entries.slice(0, FULL_ENTRIES);
   const others = result.entries.slice(FULL_ENTRIES);
   const issueById = new Map(issues.map((i) => [i.id, i]));
+  // Some party texts are in another language than the page (Hebrew content pending).
+  const hasFallbackTexts = result.entries.some((e) => e.textsLang);
 
   return (
     <article className="flex flex-col gap-6" data-testid="result" aria-labelledby="result-heading">
@@ -47,6 +49,16 @@ export function ResultView({
         </h1>
         <p className="text-muted-foreground">{t("intro")}</p>
       </header>
+
+      {hasFallbackTexts && (
+        <p
+          role="note"
+          data-testid="content-fallback-notice"
+          className="bg-muted rounded-xl border px-4 py-3 text-sm font-medium"
+        >
+          {t("contentFallbackNotice")}
+        </p>
+      )}
 
       {result.weakMatch && (
         <p

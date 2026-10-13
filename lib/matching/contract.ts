@@ -98,6 +98,12 @@ export interface PartyMetadata {
 
 export interface MatchEntry extends MatchEntryCore {
   metadata: PartyMetadata;
+  /**
+   * Set only when this party's explanations and points are in another language
+   * than the result's (the "Hebrew content pending" fallback): the view marks
+   * them with it and shows a notice.
+   */
+  textsLang?: "he" | "en";
 }
 
 /** A user's result: what the result view renders. */

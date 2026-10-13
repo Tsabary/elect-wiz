@@ -8,7 +8,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { cache } from "react";
 import { buildMatchingBundle, type MatchingBundle } from "@/lib/matching/data";
-import { activeCorpus, CORPUS_DIRS, type ResearchLang } from "./config";
+import { activeCorpus, CORPUS_DIRS, hebrewContentPending, type ResearchLang } from "./config";
 import { CONTENT_ROOT } from "./read-raw";
 import { parseResearchDoc, type ParsedResearchDoc } from "./research-parser";
 import {
@@ -85,6 +85,21 @@ export const getResearchDoc = cache((partyId: string, lang: ResearchLang): Resea
   return { ...doc, partyId, lang, researchedAsOf: doc.frontmatter.researchedAsOf ?? "" };
 });
 
+/** True while the active corpus may show English party content on the Hebrew site. */
+const hebrewPending = () => hebrewContentPending(getVersions(), activeCorpus());
+
+/**
+ * The research document a party's page shows in `locale`. While Hebrew content
+ * is pending and the party has no Hebrew document, this is the English one; the
+ * caller sees that from `doc.lang !== locale` and marks it as such.
+ */
+export function getResearchDocForLocale(partyId: string, locale: ResearchLang): ResearchDoc | null {
+  return (
+    getResearchDoc(partyId, locale) ??
+    (locale === "he" && hebrewPending() ? getResearchDoc(partyId, "en") : null)
+  );
+}
+
 const matchingDir = () => CORPUS_DIRS[activeCorpus()].matching;
 
 /** Every JSON file of a directory under the content root, in name order. */
@@ -101,6 +116,8 @@ function readJsonDir(relDir: string): unknown[] {
 /**
  * The matching bundle of the active corpus in one language: what the bundle
  * route serves and the browser scores from. Only researched parties are in it.
+ * While Hebrew content is pending, the Hebrew bundle carries the English texts
+ * of the parties that have no Hebrew ones yet.
  */
 export const getMatchingBundle = cache((lang: ResearchLang): MatchingBundle => {
   const dir = matchingDir();
@@ -115,5 +132,9 @@ export const getMatchingBundle = cache((lang: ResearchLang): MatchingBundle => {
     distances: readJsonDir(`${dir}/distances`).map((f) => distancesFileSchema.parse(f)),
     config: matchingConfigSchema.parse(readJson(`${dir}/config.json`)),
     texts: readJsonDir(`${dir}/texts/${lang}`).map((f) => partyTextsSchema.parse(f)),
+    fallbackTexts:
+      lang === "he" && hebrewPending()
+        ? readJsonDir(`${dir}/texts/en`).map((f) => partyTextsSchema.parse(f))
+        : undefined,
   });
 });

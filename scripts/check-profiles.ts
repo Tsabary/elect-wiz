@@ -11,27 +11,7 @@
  */
 import { activeCorpus } from "../lib/content/config";
 import { readRawContent } from "../lib/content/read-raw";
-import { parseCorpus } from "../lib/content/validate";
-import { formatProfileReport, runProfiles } from "../lib/matching/profile-check";
+import { profileCheck } from "./profiles";
 
 const name = activeCorpus();
-const corpus = parseCorpus(readRawContent(undefined, name), name);
-const { config, profiles } = corpus?.matching ?? {};
-
-if (!corpus || !config || !profiles) {
-  console.error(
-    `✖ Profile test: the ${name} corpus has no usable ` +
-      (!corpus ? "registry" : !config ? "matching/config.json" : "matching/profiles.json") +
-      ".",
-  );
-  process.exit(1);
-}
-
-const report = runProfiles({
-  data: { positions: corpus.matching.positions, distances: corpus.matching.distances, config },
-  profiles,
-  parties: corpus.parties.filter((p) => p.tier === "researched"),
-});
-console.log(`Profile test (corpus: ${name})\n`);
-console.log(formatProfileReport(report));
-process.exit(report.outcomes.every((o) => o.pass) ? 0 : 1);
+process.exit(profileCheck(readRawContent(undefined, name), name, true) ? 0 : 1);

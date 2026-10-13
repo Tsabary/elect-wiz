@@ -8,19 +8,33 @@ import { renderInlineMarkdown, renderMarkdown } from "@/lib/content/markdown";
  * every section and sub-section (identical across languages), and numbered
  * sources (`#source-N`) that inline citations link to.
  */
+const dirOf = (lang: string) => (lang === "he" ? "rtl" : "ltr");
+
 export async function ResearchDocument({
   doc,
+  pageLocale,
   afterOverview,
 }: {
   doc: ResearchDoc;
+  /**
+   * The page's language. When the document is in another one (the "Hebrew
+   * content pending" fallback), the document is marked with its own language
+   * and direction, and the interface parts inside it with the page's.
+   */
+  pageLocale?: string;
   /** Rendered at the end of the Overview section (the registry polling block). */
   afterOverview?: ReactNode;
 }) {
   const t = await getTranslations("Research");
+  const foreign = !!pageLocale && pageLocale !== doc.lang;
+  const docProps = foreign ? { lang: doc.lang, dir: dirOf(doc.lang) } : {};
+  const pageProps = foreign ? { lang: pageLocale, dir: dirOf(pageLocale) } : {};
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex flex-col gap-10" data-testid="research-document" {...docProps}>
       <nav aria-label={t("tocLabel")} className="rounded-xl border p-4">
-        <h2 className="mb-2 text-sm font-semibold">{t("tocLabel")}</h2>
+        <h2 className="mb-2 text-sm font-semibold" {...pageProps}>
+          {t("tocLabel")}
+        </h2>
         <ol className="flex flex-col gap-1.5 text-sm">
           {doc.sections.map((s) => (
             <li key={s.id}>
@@ -65,7 +79,9 @@ export async function ResearchDocument({
               {s.body.trim() && (
                 <div className="research-prose" dangerouslySetInnerHTML={{ __html: renderMarkdown(s.body) }} />
               )}
-              {s.id === "overview" && afterOverview}
+              {s.id === "overview" &&
+                afterOverview &&
+                (foreign ? <div {...pageProps}>{afterOverview}</div> : afterOverview)}
               {s.subsections.map((sub) => (
                 <section key={sub.id} aria-labelledby={sub.id} className="flex flex-col gap-2 pt-2">
                   <h3 id={sub.id} className="scroll-mt-28 text-lg font-semibold">
