@@ -6,11 +6,10 @@ type Size = "normal" | "compact";
 
 const LETTER_SIZE: Record<Size, Record<BallotLetterScale, string>> = {
   normal: {
-    wide: "text-4xl sm:text-[2.75rem]",
-    medium: "text-[1.75rem] sm:text-[2.125rem]",
+    regular: "text-[1.75rem] sm:text-[2.125rem]",
     narrow: "text-[1.375rem] sm:text-[1.625rem]",
   },
-  compact: { wide: "text-2xl", medium: "text-base", narrow: "text-xs" },
+  compact: { regular: "text-base", narrow: "text-xs" },
 };
 
 /**
