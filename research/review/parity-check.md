@@ -83,3 +83,43 @@ Author's flagged points:
 - (f) Nahaya Wishahi, written "נהאיה וישאחי": the spelling is unconfirmed. I can't check it from the two documents or the registry, since she is not in `lists.json` topCandidates. This is not a parity difference and is not counted as unresolved, but it is noted for owner follow-up. Other names match the registry, including "פאתן ג'טאס" (registry form). Former MK Basel Ghattas in the legal section is written "בסאל גטאס"; that inconsistent transliteration is noted but not changed, since neither form can be checked from the inputs.
 - Dates are day first throughout. No poll figures.
 - Validation: no error names the file ✔ (`pnpm validate:content` passed)
+
+## degel-hatorah (checked 2026-10-13; EN researchedAsOf 2026-10-07)
+- Hebrew edition by: Stage 5a agent (Sonnet) · Parity check by: Stage 5b agent (Opus, different)
+- Sections/anchors: identical ✔ (9 sections, 10 issue sub-sections, 8 other-positions sub-sections, same order)
+- Claims compared: ~240 · Differences found: 23 · Fixed: 23 · Unresolved: 0
+- Mechanical checks: the sequence of `[n]` citations is identical across the whole document; the option IDs on every "closest option(s)" line are identical; Sources 1–80 are identical (count, order, titles, URLs).
+
+| Anchor | Difference | Resolution |
+|---|---|---|
+| overview | Naturalness: the parenthesis repeated the bare name in quotes ("דגל התורה") after "באנגלית: Degel HaTorah". | Removed the repeated name. The English gloss "Banner of the Torah" is not needed in Hebrew. |
+| overview | Meaning drift (name): "הרב אלעזר מנחם שך" added a partial middle name that the English does not have. | Changed to "הרב אלעזר שך". |
+| overview | Naturalness: "כסיעה נפרדת, בנפרד מאגודת ישראל" (redundant). | Changed to "כסיעה עצמאית, נפרדת מאגודת ישראל". |
+| overview | Naturalness/consistency: the list was called "**יהדות התורה והשבת**" where the English says "United Torah Judaism". The document uses "יהדות התורה" everywhere else. | Changed to "**יהדות התורה**". The full registered name still follows in quotes. |
+| overview, leadership | Names (2 places): Elyakim Stark was spelled "אלקים", which reads as a divine name. The registry and the agudat-yisrael Hebrew edition spell it "אליקים". | Changed to "אליקים" in both places. |
+| leadership | Meaning drift: "MKs more loyal to it" (to the Rabbi's household) was rendered "נאמנים לו" (to him personally). | Changed to "נאמנים יותר לבית הרב". |
+| leadership | Meaning drift: "Top of the joint list" was rendered "ראש הרשימה המשותפת" (the head of the list, one person). | Changed to "המקומות הראשונים ברשימה המשותפת". |
+| leadership | Meaning drift: in "and was its director" (its = the Institute), "מנהלו" was ambiguous between the project and the Institute. | Changed to "ושימש מנהל המכון". |
+| issue-cost-of-living | Naturalness: "הזכיר ... כתלונות נגד הממשלה". | Changed to "ציין ... כטענות נגד הממשלה". |
+| issue-cost-of-living, other-haredi-education | Meaning drift (2 places): "secured about NIS 1 billion" was rendered "הבטיח", which in Hebrew mainly means "promised". | Changed to "השיג" in both places. |
+| issue-cost-of-living | Meaning drift: in "מדגל התורה דאז", "then" attached to the party rather than to the MK. | Changed to "וחבר הכנסת דאז מדגל התורה אליהו ברוכי". |
+| issue-gaza | Naturalness/meaning: "Tentative, mixed and dated" was rendered as feminine adjectives with no noun ("זהירה, מעורבת ומיושנת"). | Changed to "הערכה זהירה; הראיות מעורבות ומיושנות." |
+| issue-gaza | Naturalness: "הצדדו בסיום הלחימה ובהצבת החטופים" (unnatural verb). | Changed to "תמכו בסיום הלחימה ובהעמדת החטופים". |
+| issue-haredi-enlistment | Naturalness: "גרמה לממשלה להתחייב" (sounds coercive). | Changed to "השיגה התחייבות של הממשלה". |
+| other-lgbt | Consistency: the same Pindrus quote ("permissiveness regarding *arayot*") was worded differently from the Leadership section ("בכל הנוגע לעריות" vs "בעניין העריות"). | Unified to "ההפקרות בעניין העריות". |
+| issue-judicial-system | Loaded wording: "נדחפים השינויים" (being pushed) for "being pursued". | Changed to "מקודמים". |
+| other-death-penalty | Naturalness: "final reading" was rendered "בקריאה האחרונה". | Changed to "בקריאה השלישית", the standard Knesset term with the same meaning. |
+| coalition | Naturalness: "קיבלה את יושב ראש ועדת הכספים / ועדת הפנים" (it received the chair person). | Changed to "קיבלה את ראשות ועדת הכספים / ועדת הפנים". |
+| coalition | Meaning drift: "over the draft law" was rendered "בגלל הצעת החוק" (unspecified bill). | Changed to "בגלל חוק הגיוס". |
+| coalition | Naturalness: the bracketed insertion came after the name ("בנתניהו [ראש הממשלה בנימין]"). | Changed to "ב[ראש הממשלה בנימין] נתניהו". |
+| coalition | Meaning drift (quote consistency): the second citation of the same Lando quote dropped "any" ("אין לנו עוד אמון"). | Changed to "אין לנו עוד שום אמון בנתניהו", matching the first citation and the English. |
+
+Checked and found correct (no change):
+- **"Ten times" (author flag):** the dated list gives 1996, 1999, 2005, 2008, three in 2019, 2020, 2022 and 2026, which is 10. The one split that was not shortly before an election is 2005, which matches "each time but one". The English is consistent, so it is not questioned. One wording nit for the owner (not a parity issue): the sentence opens "Knesset faction records show…" while the 2026 split is sourced to [73], a House Committee session record, not to the faction records [72].
+- **"Moshe Azriel Rosenthal" (author flag):** the Hebrew "משה עזריאל רוזנטל" matches the registry `he` form (lists.json). The registry's `en` form is "Moshe Rosenthal", while the English document says "Moshe Azriel Rosenthal". This is a registry/English naming nit, not a parity difference; noted for the orchestrator.
+- **Pindrus as "יצחק זאב פינדרוס":** matches the registry `he` form.
+- **"המכון החרדי לענייני ציבור" (author flag):** it is a direct, plausible rendering of "Haredi Institute for Public Affairs". The Hebrew Knesset biography [11] could not be checked offline, so the form is still unconfirmed. Left as is.
+- **"עריקים" (author flag):** it appears only in the original source titles [2], [39], which must be kept, and as "שהוכרזו עריקים" for "declared deserters", the legal status of specific individuals. The glossary note allows this. Accepted.
+- **Hebrew labels outside the tag table (author flag):** each matches its English label: רקע = Background, הערכה = Assessment, היקף = Scope, מגבלות הראיות = Limits of the evidence, רקורד = Record, לא נמצאה עמדה מתועדת (אחרת) = No (other) documented position found. "הצהרות:" = "Statements:" is a plural of the tag.
+- **Glossary:** the required terms are used: חרדי, תלמידי ישיבות, גיוס, צה״ל, יהודה ושומרון, יישובים/התיישבות, החלת ריבונות ישראלית (with "המכונה גם סיפוח" exactly where the English says "also called annexation"), מתקפת 7 באוקטובר, ועדת חקירה ממלכתית, ועדה שתמונה באמצעות הכנסת, בג״ץ/בית המשפט העליון, ההלכה (החוק הדתי היהודי), השב״כ (…), מעצר בלי משפט, חוק יסוד. No avoid.he term appears outside the allowed uses above. The words "נחקרה"/"שנחקרו" do not appear. All dates are day first.
+- Validation: no error names the file ✔ (`pnpm validate:content` passed).
