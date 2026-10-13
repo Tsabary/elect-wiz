@@ -1,0 +1,125 @@
+{
+  "partyId": "haredi-public",
+  "lang": "en",
+  "issues": {
+    "cost-of-living": {
+      "anchor": "issue-cost-of-living",
+      "options": {
+        "open-market-competition-imports": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position. Its platform opens its economy chapter with \"a free market, competition, and low taxes\" and lists removing tariffs, import quotas and other barriers, recognising the standards of developed countries, and opening the car market to parallel imports."
+        },
+        "cut-taxes-and-government-spending": {
+          "agreement": "partially",
+          "text": "The party's platform partly matches your answer: it supports a \"simple, flat, and transparent tax system\", lowering capital gains tax to 20 percent, and reducing regulation. The research places the party closest to opening the market to competition and easier imports, with these tax steps alongside."
+        },
+        "active-state-regulation": {
+          "agreement": "disagrees",
+          "text": "The party's platform relies on a free market and competition, and the research found that it does not call for price supervision. It lists lower tariffs, easier imports and privatising the Port of Ashdod instead."
+        },
+        "direct-support-for-households": {
+          "agreement": "disagrees",
+          "text": "The party's platform does not call for raising benefits; it makes welfare benefits depend on \"full use of the recipient's earning capacity\", with exceptions for people who cannot work. On 25 August 2026 its campaign described its economic line as \"opportunities for a dignified livelihood instead of dependence on benefits\"."
+        }
+      }
+    },
+    "crime-in-arab-society": {
+      "anchor": "issue-crime-in-arab-society",
+      "unclear": {
+        "text": "The research found no documented position of the party on this issue, so it can't be compared with your answer."
+      }
+    },
+    "gaza": {
+      "anchor": "issue-gaza",
+      "unclear": {
+        "text": "The research found no documented position of the party on this issue, so it can't be compared with your answer."
+      }
+    },
+    "haredi-enlistment": {
+      "anchor": "issue-haredi-enlistment",
+      "options": {
+        "anchor-torah-study-exemption": {
+          "agreement": "partially",
+          "text": "The party shares the exemption element: its platform says full-time Torah students must be able to learn \"without having to fear arrest or any other interference\". It differs in that the platform also requires everyone who is not a full-time student to serve, and party leader Moti Litner said in an interview published on 14 August 2026 that \"the large majority\" should."
+        },
+        "gradual-targets-by-agreement": {
+          "agreement": "agrees",
+          "text": "The research places the party closest to this option, though it calls the evidence mixed between this and a legal exemption for full-time Torah students. Its platform would set up service tracks adapted to Haredi life; party leader Moti Litner, in an interview published on 14 August 2026, said \"positive incentives have very great power\" and opposed freezing state funding."
+        },
+        "universal-service-with-sanctions": {
+          "agreement": "partially",
+          "text": "The party shares the requirement to serve: its platform says anyone who does not devote his life to Torah study \"will be required to serve\". It differs on sanctions and exemptions: party leader Moti Litner opposes sanctions as a way to bring this about, and the party supports a law letting full-time Torah students keep studying without penalties."
+        },
+        "voluntary-service-for-all": {
+          "agreement": "disagrees",
+          "text": "The party's platform says that every individual who does not devote his life completely to Torah study \"will be required to serve in some capacity\", through tracks adapted to Haredi life. The research found no mechanism the party has published to enforce this."
+        }
+      }
+    },
+    "housing": {
+      "anchor": "issue-housing",
+      "options": {
+        "speed-up-planning-and-construction": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position. Its platform calls for \"shortening and simplifying planning and building-permit procedures\" and proposes a Haredi housing program that would \"increase the number of construction starts fivefold\"."
+        },
+        "state-led-affordable-rental": {
+          "agreement": "disagrees",
+          "text": "The party's documented housing position is faster planning and building permits and a national Haredi housing program. The research found no published party position on state-built rental housing or rent limits."
+        },
+        "direct-help-for-buyers": {
+          "agreement": "disagrees",
+          "text": "The party's documented housing position is faster planning and building permits and a national Haredi housing program. The research found no published party position on mortgage subsidies."
+        },
+        "develop-periphery-and-transport": {
+          "agreement": "partially",
+          "text": "This is a secondary element of the party's position. Its platform says new Haredi neighborhoods should be advanced only with employment areas and public transport, but it also opposes isolated Haredi housing projects in remote areas."
+        }
+      }
+    },
+    "iran-and-regional-security": {
+      "anchor": "issue-iran-and-regional-security",
+      "unclear": {
+        "text": "The research found no documented position of the party on this issue, so it can't be compared with your answer."
+      }
+    },
+    "judea-samaria": {
+      "anchor": "issue-judea-samaria",
+      "unclear": {
+        "text": "The research found no documented position of the party on this issue, so it can't be compared with your answer."
+      }
+    },
+    "judicial-system": {
+      "anchor": "issue-judicial-system",
+      "unclear": {
+        "text": "The research found no documented position of the party on this issue, so it can't be compared with your answer."
+      }
+    },
+    "october-7-inquiry": {
+      "anchor": "issue-october-7-inquiry",
+      "unclear": {
+        "text": "The research found no documented position of the party on this issue, so it can't be compared with your answer."
+      }
+    },
+    "religion-and-state": {
+      "anchor": "issue-religion-and-state",
+      "unclear": {
+        "text": "The research found no documented position of the party on this issue, so it can't be compared with your answer."
+      }
+    }
+  },
+  "points": [
+    {
+      "text": "The party's platform says Haredi education \"will remain independent\" while every Haredi child is entitled to foundational learning in English and mathematics, and on 3 September 2026 it published a five-year education plan that sets budgets for institutions that choose to teach core subjects.",
+      "anchor": "other-haredi-education"
+    },
+    {
+      "text": "The party's platform opposes discrimination in admission to kindergartens, schools, yeshivas and seminaries on grounds of origin, status or connections, and proposes reducing government and municipal funding for institutions that discriminate.",
+      "anchor": "other-admissions-discrimination"
+    },
+    {
+      "text": "The party's platform proposes career-guidance and employment centers in Haredi communities and training in high-tech and other well-paid sectors, with separate frameworks for men and women.",
+      "anchor": "other-livelihood-and-welfare"
+    }
+  ]
+}

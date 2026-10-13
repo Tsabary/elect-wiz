@@ -1,0 +1,219 @@
+{
+  "partyId": "eretz-yisrael-shelanu",
+  "lang": "en",
+  "issues": {
+    "cost-of-living": {
+      "anchor": "issue-cost-of-living",
+      "unclear": {
+        "text": "The research found no documented position of the party on this issue, so it can't be compared with your answer."
+      }
+    },
+    "crime-in-arab-society": {
+      "anchor": "issue-crime-in-arab-society",
+      "options": {
+        "emergency-powers-shin-bet": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded direction. On 15 July 2026 the government in which its candidate Minister Yitzhak Wasserlauf serves approved a plan bringing the Shin Bet into joint operations with the police against crime organizations, and in June 2023 its other candidate, MK Yitzhak Kroizer, backed a bill for holding people without trial on public-safety grounds."
+        },
+        "more-police-resources-normal-law": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: extraordinary measures. On 15 July 2026 the government in which its candidate Minister Yitzhak Wasserlauf serves approved a plan bringing the Shin Bet into joint operations with the police, and in June 2023 its other candidate, MK Yitzhak Kroizer, backed a bill for holding people without trial on public-safety grounds."
+        },
+        "invest-in-arab-communities-first": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: extraordinary measures. On 15 July 2026 the government in which its candidate Minister Yitzhak Wasserlauf serves approved a plan that moves about NIS 497 million from the five-year development plan for Arab society to new Shin Bet and police units."
+        }
+      }
+    },
+    "gaza": {
+      "anchor": "issue-gaza",
+      "options": {
+        "resume-fighting-full-control": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position. Its candidate Minister Yitzhak Wasserlauf voted in the government against the ceasefire and hostage deals on 17-18 January 2025 and 9-10 October 2025, and on 28 November 2024 he said Israel should return to settle in Gaza and spoke of encouraging Gazans to emigrate once the goals of the war are achieved."
+        },
+        "hold-positions-disarmament-first": {
+          "agreement": "partially",
+          "text": "The party's closest option is a return to war and control of all of Gaza, not holding current positions. It shares your opposition to withdrawals: its candidate Minister Yitzhak Wasserlauf resigned from the government on 19 January 2025 with a joint statement objecting that the hostage and ceasefire deal withdrew the IDF from parts of Gaza, and he voted against the deal of 9-10 October 2025 as well."
+        },
+        "advance-international-arrangement": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is different. Its candidate Minister Yitzhak Wasserlauf voted against the US-backed ceasefire and hostage deal in the government on 9-10 October 2025, as he had voted against the hostage and ceasefire deal on 17-18 January 2025."
+        },
+        "end-war-full-withdrawal": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is different. Its candidate Minister Yitzhak Wasserlauf voted against the hostage and ceasefire deal on 17-18 January 2025 and resigned from the government on 19 January 2025 with two other ministers, in a joint statement that called the deal \"a surrender to Hamas\" that withdrew the IDF from parts of Gaza."
+        },
+        "defeat-hamas-then-security-control": {
+          "agreement": "partially",
+          "text": "The party shares your call to return to war: Otzma Yehudit, the list it runs on, rejoined the government on 19 March 2025 after Israel resumed intensive fighting in Gaza. It differs on settlement and emigration, which you exclude: on 28 November 2024 its candidate Minister Yitzhak Wasserlauf said Israel should return to settle in Gaza and spoke of encouraging Gazans to emigrate."
+        }
+      }
+    },
+    "haredi-enlistment": {
+      "anchor": "issue-haredi-enlistment",
+      "options": {
+        "anchor-torah-study-exemption": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is different: support for Haredi enlistment in principle, though it shares your opposition to coercion. In February 2024 its candidate Minister Yitzhak Wasserlauf said Haredim who don't study Torah need to enlist, and in October 2024 Itamar Ben Gvir, who leads the Otzma Yehudit list the party runs on, said \"We believe in enlistment into the army, but not in coercion\"."
+        },
+        "gradual-targets-by-agreement": {
+          "agreement": "agrees",
+          "text": "The research places the party closest to this option, with voluntary service backed by incentives as a second element; the evidence is mixed and rests on statements. In February 2024 its candidate Minister Yitzhak Wasserlauf argued for dialogue and agreements and said Haredim who don't study Torah need to enlist; no Knesset vote by the party's candidates on an enlistment law was found."
+        },
+        "universal-service-with-sanctions": {
+          "agreement": "partially",
+          "text": "The party shares part of this: in February 2024 its candidate Minister Yitzhak Wasserlauf said Haredim who don't study Torah need to enlist. It differs on how: he argued for dialogue and agreements, and in October 2024 Itamar Ben Gvir, who leads the Otzma Yehudit list the party runs on, said \"We believe in enlistment into the army, but not in coercion\"."
+        },
+        "voluntary-service-for-all": {
+          "agreement": "partially",
+          "text": "This is a secondary element of the party's position in the research. In October 2024 Itamar Ben Gvir, who leads the Otzma Yehudit list the party runs on, said \"We believe in enlistment into the army, but not in coercion\", with benefits for those who serve as the first step, while its candidate Minister Yitzhak Wasserlauf said Haredim who don't study Torah need to enlist."
+        }
+      }
+    },
+    "housing": {
+      "anchor": "issue-housing",
+      "options": {
+        "speed-up-planning-and-construction": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded direction. On 28 July 2026 the Knesset passed the Planning and Building Law (Amendment No. 170), handled by the Interior Committee chaired by the party's candidate MK Yitzhak Kroizer, which lets a national planning sub-committee approve changing land use to housing; Kroizer said it releases planning bottlenecks for years ahead."
+        },
+        "state-led-affordable-rental": {
+          "agreement": "disagrees",
+          "text": "The party's documented housing measures are different. The Planning and Building Law (Amendment No. 170), passed on 28 July 2026 and handled by the Knesset committee chaired by its candidate MK Yitzhak Kroizer, lets a national planning sub-committee approve changing land use to housing, and Kroizer said it releases planning bottlenecks for years ahead."
+        },
+        "direct-help-for-buyers": {
+          "agreement": "disagrees",
+          "text": "The party's documented housing measures are different. The Planning and Building Law (Amendment No. 170), passed on 28 July 2026 and handled by the Knesset committee chaired by its candidate MK Yitzhak Kroizer, lets a national planning sub-committee approve changing land use to housing, and Kroizer said it releases planning bottlenecks for years ahead."
+        },
+        "develop-periphery-and-transport": {
+          "agreement": "partially",
+          "text": "The research places this as a secondary element of the party's position: in June 2023 its candidate MK Yitzhak Kroizer submitted a bill to let larger communities use admissions committees, saying growing the periphery is a national security interest. The ministry of its other candidate, Minister Yitzhak Wasserlauf, funded regional development, which the research says is not a housing-price measure."
+        }
+      }
+    },
+    "iran-and-regional-security": {
+      "anchor": "issue-iran-and-regional-security",
+      "options": {
+        "military-pressure-until-threats-removed": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position, but it rests on statements. On 13 August 2024 its candidate MK Yitzhak Kroizer called for Israel to strike Iran first, and at a security cabinet meeting reported on 9 June 2026 its other candidate, Minister Yitzhak Wasserlauf, said \"a disproportionate response is needed in Lebanon\"."
+        },
+        "force-plus-us-backed-agreements": {
+          "agreement": "partially",
+          "text": "The party shares the military pressure, but the research found no statement by either of its candidates supporting a negotiated agreement with Iran or Hezbollah. On 13 August 2024 MK Yitzhak Kroizer called for Israel to strike Iran first, and on 25 November 2024 Minister Yitzhak Wasserlauf promised northern border councils he would do everything to prevent the emerging ceasefire arrangement in Lebanon."
+        },
+        "prioritize-ending-multifront-war": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is different. On 25 November 2024 its candidate Minister Yitzhak Wasserlauf promised northern border councils he would do everything to prevent the emerging ceasefire arrangement in Lebanon, and at a security cabinet meeting reported on 9 June 2026 he said a disproportionate response was needed there."
+        },
+        "end-military-operations-regional-peace": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is different. On 13 August 2024 its candidate MK Yitzhak Kroizer called for Israel to strike Iran first, and at a security cabinet meeting reported on 9 June 2026 its other candidate, Minister Yitzhak Wasserlauf, said a disproportionate response was needed in Lebanon."
+        }
+      }
+    },
+    "judea-samaria": {
+      "anchor": "issue-judea-samaria",
+      "options": {
+        "full-sovereignty": {
+          "agreement": "agrees",
+          "text": "On 22 October 2025 the party's two candidates, Minister Yitzhak Wasserlauf and MK Yitzhak Kroizer, voted for a preliminary-reading bill to apply Israeli sovereignty to all areas of settlement in Judea and Samaria. Their votes on other sovereignty bills were mixed, and no statement by either on the future of the Palestinian Authority was found."
+        },
+        "partial-sovereignty-area-c": {
+          "agreement": "partially",
+          "text": "The party's closest option is sovereignty over all of Judea and Samaria; its record on partial steps is mixed. Its candidate Minister Yitzhak Wasserlauf voted for a bill to apply sovereignty to the Jordan Valley on 22 January 2025, days after Otzma Yehudit, the list he belongs to, left the government, and against one for Beitar Illit on 31 December 2025, after it had returned to the coalition."
+        },
+        "maintain-current-situation": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is different. On 22 October 2025 its two candidates, Minister Yitzhak Wasserlauf and MK Yitzhak Kroizer, voted for a bill to apply Israeli sovereignty to all areas of settlement in Judea and Samaria, and the Israel Democracy Institute summarises the aim of Otzma Yehudit, the list they run on, as applying sovereignty there."
+        },
+        "separation-two-states": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is different: applying Israeli sovereignty. On 22 October 2025 its two candidates, Minister Yitzhak Wasserlauf and MK Yitzhak Kroizer, voted for a bill to apply it to all areas of settlement in Judea and Samaria, and the Israel Democracy Institute summarises the aim of Otzma Yehudit, the list they run on, as applying sovereignty there."
+        },
+        "two-states-pre-1967-border": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is different: applying Israeli sovereignty. On 22 October 2025 its two candidates, Minister Yitzhak Wasserlauf and MK Yitzhak Kroizer, voted for a bill to apply it to all areas of settlement in Judea and Samaria, and the Israel Democracy Institute summarises the aim of Otzma Yehudit, the list they run on, as applying sovereignty there."
+        },
+        "one-equal-state": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is different: applying Israeli sovereignty. On 22 October 2025 its two candidates, Minister Yitzhak Wasserlauf and MK Yitzhak Kroizer, voted for a bill to apply it to all areas of settlement in Judea and Samaria, and the Israel Democracy Institute summarises the aim of Otzma Yehudit, the list they run on, as applying sovereignty there."
+        }
+      }
+    },
+    "judicial-system": {
+      "anchor": "issue-judicial-system",
+      "options": {
+        "continue-judicial-changes": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position. Its two candidates, Minister Yitzhak Wasserlauf and MK Yitzhak Kroizer, voted for the amendment limiting the \"reasonableness\" standard on 24 July 2023 and for the law changing the Judicial Selection Committee on 27 March 2025, which passed 67 to 1 with the opposition boycotting."
+        },
+        "broad-agreed-constitutional-framework": {
+          "agreement": "disagrees",
+          "text": "The party's documented record is different. Its two candidates, Minister Yitzhak Wasserlauf and MK Yitzhak Kroizer, voted for the changes to the judicial system passed by the coalition, including the law changing the Judicial Selection Committee on 27 March 2025, which passed 67 to 1 with the opposition boycotting."
+        },
+        "repeal-changes-protect-independence": {
+          "agreement": "disagrees",
+          "text": "The party's documented record is different. Its two candidates, Minister Yitzhak Wasserlauf and MK Yitzhak Kroizer, voted for the amendment limiting the \"reasonableness\" standard on 24 July 2023 and for the law changing the Judicial Selection Committee on 27 March 2025."
+        },
+        "keep-current-system-stability": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is to go further. On 4 August 2025 the government in which its candidate Minister Yitzhak Wasserlauf serves unanimously approved dismissing the attorney general, which the High Court annulled on 14 December 2025, and the Israel Democracy Institute lists choosing Supreme Court justices by politicians among the initiatives of Otzma Yehudit, the list the party runs on."
+        }
+      }
+    },
+    "october-7-inquiry": {
+      "anchor": "issue-october-7-inquiry",
+      "options": {
+        "state-commission-under-existing-law": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no stated position of the party's candidates on what this option proposes. Its tentative indication points to a commission appointed through the Knesset: on 24 December 2025 Minister Yitzhak Wasserlauf and MK Yitzhak Kroizer voted for a bill for such a commission, and on 5 May 2025 the government in which Wasserlauf serves decided not to set up a state commission of inquiry at that time."
+        },
+        "commission-appointed-by-knesset-balance": {
+          "agreement": "partially",
+          "text": "The research places the party here only tentatively, as an inference rather than a stated position. On 24 December 2025 its two candidates, Minister Yitzhak Wasserlauf and MK Yitzhak Kroizer, voted at preliminary reading for MK Ariel Kallner's bill for a \"state-national\" commission of inquiry, with members chosen by coalition-opposition agreement or split equally."
+        },
+        "commission-chosen-by-neutral-mechanism": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no documented position of the party on what this option proposes. Its only indication is tentative and points to a commission appointed through the Knesset: the party's two candidates, Minister Yitzhak Wasserlauf and MK Yitzhak Kroizer, voted for MK Ariel Kallner's bill on 24 December 2025 at its preliminary reading."
+        }
+      }
+    },
+    "religion-and-state": {
+      "anchor": "issue-religion-and-state",
+      "options": {
+        "strengthen-jewish-character": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded direction. Its two candidates, Minister Yitzhak Wasserlauf and MK Yitzhak Kroizer, voted for Basic Law: Torah Study on 13 July 2026, and the Israel Democracy Institute lists incorporating Jewish religious law into the legal system among the initiatives of Otzma Yehudit, the list they run on; no specific statements on Shabbat transport, civil marriage or conversion were found."
+        },
+        "keep-status-quo": {
+          "agreement": "partially",
+          "text": "The research places the party at a larger role for Jewish religious law, a neighbouring option. Its two candidates, Minister Yitzhak Wasserlauf and MK Yitzhak Kroizer, voted for Basic Law: Torah Study, passed on 13 July 2026, and the research found no specific statements on Shabbat transport, civil marriage or conversion."
+        },
+        "more-choice-local-decisions": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is different: a larger role for Jewish religious law. Its two candidates, Minister Yitzhak Wasserlauf and MK Yitzhak Kroizer, voted for Basic Law: Torah Study, passed on 13 July 2026, and in 2022 Wasserlauf criticised the Reform movement."
+        },
+        "separate-religion-and-state": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is different: a larger role for Jewish religious law. Its two candidates, Minister Yitzhak Wasserlauf and MK Yitzhak Kroizer, voted for Basic Law: Torah Study, passed on 13 July 2026, and the Israel Democracy Institute lists incorporating Jewish religious law into the legal system among the initiatives of Otzma Yehudit, the list they run on."
+        }
+      }
+    }
+  },
+  "points": [
+    {
+      "text": "The party's two candidates, Minister Yitzhak Wasserlauf and MK Yitzhak Kroizer, back the death penalty for terrorists, a flagship policy of Otzma Yehudit, the list they run on: both voted for the law the Knesset passed on 30 March 2026, by 62 to 48, setting it for a terrorist who commits premeditated murder as part of terrorist activity.",
+      "anchor": "other-death-penalty"
+    },
+    {
+      "text": "The party's candidate Yitzhak Wasserlauf has run the Ministry of the Negev, the Galilee and National Resilience since the start of the 37th government, apart from January to March 2025, and in May 2023 Otzma Yehudit, the list he belongs to, made its budget support conditional on an extra NIS 250 million for the ministry.",
+      "anchor": "other-negev-galilee"
+    },
+    {
+      "text": "Both of the party's candidates have gone up to the Temple Mount with Itamar Ben Gvir, who leads the Otzma Yehudit list they run on: Minister Yitzhak Wasserlauf on 13 August 2024, and Wasserlauf and MK Yitzhak Kroizer together on 26 May 2025.",
+      "anchor": "other-temple-mount"
+    }
+  ]
+}

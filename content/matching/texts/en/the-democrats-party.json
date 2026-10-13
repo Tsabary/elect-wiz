@@ -1,0 +1,234 @@
+{
+  "partyId": "the-democrats-party",
+  "lang": "en",
+  "issues": {
+    "cost-of-living": {
+      "anchor": "issue-cost-of-living",
+      "options": {
+        "open-market-competition-imports": {
+          "agreement": "disagrees",
+          "text": "The party's platform of August 2026 centres on state action instead: it pledges to expand the list of price-controlled products and to fight food, medicine and energy concentration, and Knesset member Lazimi submitted bills in May 2024 and January 2026 targeting excessive prices. It does share the aim of breaking up concentration."
+        },
+        "cut-taxes-and-government-spending": {
+          "agreement": "disagrees",
+          "text": "The party holds a different approach: its August 2026 platform pledges price controls, action against large companies and cheaper public services, and the research found no commitment in it to cut VAT or income tax."
+        },
+        "active-state-regulation": {
+          "agreement": "agrees",
+          "text": "That is the party's main approach. Its August 2026 platform pledges to expand price-controlled products and to break up concentration, and Lazimi submitted bills in May 2024 and January 2026 to let the Competition Authority act against excessive prices, though none has passed."
+        },
+        "direct-support-for-households": {
+          "agreement": "partially",
+          "text": "This is a secondary element of the party's position. Its August 2026 platform pledges cheaper public transport fares and public daycare for ages 0 to 3, and its MKs submitted a bill to raise the minimum wage in February 2023, but its main emphasis is state regulation of prices."
+        }
+      }
+    },
+    "crime-in-arab-society": {
+      "anchor": "issue-crime-in-arab-society",
+      "options": {
+        "emergency-powers-shin-bet": {
+          "agreement": "agrees",
+          "text": "This is the party's main position. Its August 2026 platform would declare a national state of emergency and set up a task force with broad powers that includes the Shin Bet; it does not mention holding suspects without trial, which is part of your answer."
+        },
+        "more-police-resources-normal-law": {
+          "agreement": "disagrees",
+          "text": "The party's August 2026 platform goes beyond normal policing: it would declare a national state of emergency and set up a task force with broad powers drawing on the Shin Bet, the IDF and the Prison Service. It does also propose more Arabic-speaking detectives and investigators."
+        },
+        "invest-in-arab-communities-first": {
+          "agreement": "partially",
+          "text": "This is a secondary element of the party's position. Its August 2026 platform includes education, welfare and rehabilitation measures, such as a unit called Team 49 and safety counsellors in every Arab school, but alongside an emergency task force rather than before it."
+        }
+      }
+    },
+    "gaza": {
+      "anchor": "issue-gaza",
+      "options": {
+        "resume-fighting-full-control": {
+          "agreement": "disagrees",
+          "text": "The party's August 2026 platform instead calls for demilitarizing Gaza and replacing Hamas rule through an arrangement with regional and international assistance, and criticizes the government's slogans about total victory."
+        },
+        "hold-positions-disarmament-first": {
+          "agreement": "disagrees",
+          "text": "The party holds a different position: its August 2026 platform seeks to demilitarize Gaza and replace Hamas through an arrangement with regional and international assistance. Like your answer, it says Israel will not hand its security to foreign actors and will keep its freedom to act."
+        },
+        "advance-international-arrangement": {
+          "agreement": "agrees",
+          "text": "That is the party's position. Its August 2026 platform calls for demilitarizing Gaza and replacing Hamas with regional and international assistance, and on 28 October 2025 Golan called for a Palestinian civil administration supported by Egypt, Saudi Arabia, Jordan and the Emirates."
+        },
+        "end-war-full-withdrawal": {
+          "agreement": "partially",
+          "text": "The party's August 2026 platform also calls for closing combat arenas through security and diplomatic arrangements, and on 28 October 2025 Golan called for a Palestinian civil administration in Gaza. It differs in that the platform keeps Israel's freedom to act on any violation and Golan called for strict Israeli and international supervision."
+        },
+        "defeat-hamas-then-security-control": {
+          "agreement": "disagrees",
+          "text": "The party holds a different position: its August 2026 platform seeks a diplomatic arrangement with regional and international assistance rather than a return to war. It does also want Hamas replaced, with a Palestinian civil administration, as Golan said on 28 October 2025."
+        }
+      }
+    },
+    "haredi-enlistment": {
+      "anchor": "issue-haredi-enlistment",
+      "options": {
+        "anchor-torah-study-exemption": {
+          "agreement": "disagrees",
+          "text": "The party's four MKs voted against the Basic Law declaring Torah study a foundational value on 13 July 2026, and against the law freezing enforcement against yeshiva students on 14 July 2026."
+        },
+        "gradual-targets-by-agreement": {
+          "agreement": "partially",
+          "text": "The party's four current MKs, then in the Labor Party and in the coalition, voted for a government enlistment bill setting targets at its first reading on 31 January 2022, but voted against reviving it on 11 June 2024. Its August 2026 platform pledges equal service for all citizens rather than a gradual path."
+        },
+        "universal-service-with-sanctions": {
+          "agreement": "agrees",
+          "text": "That is the party's position: its August 2026 platform pledges equal service for all citizens, military or civilian, and its four MKs voted against the law freezing enforcement against yeshiva students on 14 July 2026. The platform's sanctions are aimed at institutions and their funding rather than at individuals."
+        },
+        "voluntary-service-for-all": {
+          "agreement": "disagrees",
+          "text": "The party holds a different position: its August 2026 platform pledges equal service for all citizens, military or civilian, and its MKs voted against the law freezing enforcement against yeshiva students on 14 July 2026."
+        }
+      }
+    },
+    "housing": {
+      "anchor": "issue-housing",
+      "options": {
+        "speed-up-planning-and-construction": {
+          "agreement": "disagrees",
+          "text": "The party emphasizes a different approach: its August 2026 platform pledges a significant expansion of long-term rental and affordable public housing, and Lazimi submitted bills in 2022 to allocate homes for affordable and public housing and to limit rent increases."
+        },
+        "state-led-affordable-rental": {
+          "agreement": "agrees",
+          "text": "That is the party's main position. Its August 2026 platform pledges a significant expansion of long-term rental and affordable public housing, and Lazimi submitted bills in 2022 to allocate homes for affordable and public housing and to limit rent increases."
+        },
+        "direct-help-for-buyers": {
+          "agreement": "partially",
+          "text": "The party also wants state action to make housing affordable, but its August 2026 platform focuses on long-term rental and affordable public housing rather than help for buyers. On buying, Lazimi submitted a bill on public-housing tenants' right to buy their homes, which was being prepared for its final readings as of November 2025."
+        },
+        "develop-periphery-and-transport": {
+          "agreement": "partially",
+          "text": "This is a secondary element of the party's position. Its August 2026 platform pledges investment in jobs, transport and housing in the north and south and prefers urban renewal over new towns, but its main emphasis is state-led affordable rental."
+        }
+      }
+    },
+    "iran-and-regional-security": {
+      "anchor": "issue-iran-and-regional-security",
+      "options": {
+        "military-pressure-until-threats-removed": {
+          "agreement": "partially",
+          "text": "The party's August 2026 platform includes military moves against Iran and keeps Israel's freedom to act against Hezbollah if an arrangement is violated. It differs in pairing them with diplomacy, sanctions and an international force in Lebanon, rather than excluding deals."
+        },
+        "force-plus-us-backed-agreements": {
+          "agreement": "agrees",
+          "text": "That is the party's position. Its August 2026 platform combines military moves with diplomacy against Iran and an international force in Lebanon, and on 9 April 2026 Golan backed direct talks with Lebanon, saying political agreements are the way to bring true security."
+        },
+        "prioritize-ending-multifront-war": {
+          "agreement": "disagrees",
+          "text": "The party holds a different position: its August 2026 platform calls for diplomacy, sanctions and military moves against Iran, and on 6 April 2026 Golan called for combining military strength with a strategic diplomatic initiative."
+        },
+        "end-military-operations-regional-peace": {
+          "agreement": "disagrees",
+          "text": "The party backs diplomacy too, including direct talks with Lebanon on 9 April 2026, but not diplomacy alone: its August 2026 platform calls for military moves against Iran and keeps Israel's freedom to act if an arrangement with Lebanon is violated."
+        }
+      }
+    },
+    "judea-samaria": {
+      "anchor": "issue-judea-samaria",
+      "options": {
+        "full-sovereignty": {
+          "agreement": "disagrees",
+          "text": "The party's four MKs voted against a Knesset motion calling for applying sovereignty on 23 July 2025, and three of them voted against a sovereignty bill on 22 October 2025. Golan has said his goal is a two-state solution."
+        },
+        "partial-sovereignty-area-c": {
+          "agreement": "disagrees",
+          "text": "The party's four MKs voted against a motion for applying sovereignty on 23 July 2025, and its August 2026 platform pledges to stop the application of sovereignty. Golan said in July 2026 that his goal is a two-state solution."
+        },
+        "maintain-current-situation": {
+          "agreement": "disagrees",
+          "text": "Like your answer, the party opposes applying sovereignty, but it does not hold the current situation: in July 2026 Golan said his goal is a two-state solution, and its August 2026 platform would stop building and funding outposts and return powers in the area to the IDF and the Defense Ministry."
+        },
+        "separation-two-states": {
+          "agreement": "agrees",
+          "text": "That is the position the party's leader has stated: in July 2026 Golan said his goal is a two-state solution, and on 2 February 2026 he said the settlement blocs are part of Israel. The August 2026 platform calls for a diplomatic move with the Palestinians but does not use the words two states."
+        },
+        "two-states-pre-1967-border": {
+          "agreement": "partially",
+          "text": "The party shares the two-state goal Golan stated in July 2026, but he said on 2 February 2026 that the settlement blocs are part of Israel, and the research found no stated final border or evacuation of all settlements. The platform does not use the words two states."
+        },
+        "one-equal-state": {
+          "agreement": "disagrees",
+          "text": "The party holds a different position: in July 2026 Golan said his goal is a two-state solution, and the party's platform calls for a diplomatic process with the Palestinians."
+        }
+      }
+    },
+    "judicial-system": {
+      "anchor": "issue-judicial-system",
+      "options": {
+        "continue-judicial-changes": {
+          "agreement": "disagrees",
+          "text": "The party's four MKs voted against the law changing the Judicial Selection Committee on 27 March 2025, and its August 2026 platform pledges to map and repeal the laws linked to the changes to the judicial system."
+        },
+        "broad-agreed-constitutional-framework": {
+          "agreement": "partially",
+          "text": "The party's August 2026 platform also pledges to enact Basic Law: Legislation, setting the rules for judicial review of laws. Its main position, however, is to repeal the recent changes and anchor the independence of the courts and legal advisers in law."
+        },
+        "repeal-changes-protect-independence": {
+          "agreement": "agrees",
+          "text": "That is the party's main position. Its August 2026 platform pledges to map and repeal the laws linked to the changes to the judicial system and to anchor the independence of legal advisers in law, and its four MKs voted against the Judicial Selection Committee law on 27 March 2025."
+        },
+        "keep-current-system-stability": {
+          "agreement": "disagrees",
+          "text": "The party holds a different position: its four MKs voted against the law changing the Judicial Selection Committee on 27 March 2025, and its August 2026 platform pledges to repeal the laws linked to the judicial changes."
+        }
+      }
+    },
+    "october-7-inquiry": {
+      "anchor": "issue-october-7-inquiry",
+      "options": {
+        "state-commission-under-existing-law": {
+          "agreement": "agrees",
+          "text": "That is the party's position. Its platform states it will establish a state commission of inquiry into the events of October 7, and on 12 November 2025 three of its MKs voted for two bills to set one up, which were defeated."
+        },
+        "commission-appointed-by-knesset-balance": {
+          "agreement": "disagrees",
+          "text": "The party's position is a state commission of inquiry. Its four MKs voted against the coalition's bill for a commission appointed through the Knesset on 24 December 2025, and the opposition boycotted the first-reading vote on 6 July 2026."
+        },
+        "commission-chosen-by-neutral-mechanism": {
+          "agreement": "disagrees",
+          "text": "The party's position is a state commission of inquiry, set out in its platform and in bills submitted by Lazimi in 2024 and Rayten in 2025. Its MKs voted for such bills on 12 November 2025 and against the coalition's Knesset-appointed alternative on 24 December 2025."
+        }
+      }
+    },
+    "religion-and-state": {
+      "anchor": "issue-religion-and-state",
+      "options": {
+        "strengthen-jewish-character": {
+          "agreement": "disagrees",
+          "text": "The party holds a different position: its August 2026 platform pledges civil marriage and divorce for every citizen, an end to the Chief Rabbinate's exclusive control of conversion and kosher certification, and public transport every day of the week."
+        },
+        "keep-status-quo": {
+          "agreement": "disagrees",
+          "text": "The party holds a different position: its August 2026 platform pledges civil marriage and divorce for every citizen, an end to the Chief Rabbinate's exclusive control of conversion and kosher certification, and public transport every day of the week."
+        },
+        "more-choice-local-decisions": {
+          "agreement": "partially",
+          "text": "The party shares much of your answer: its August 2026 platform would end the Chief Rabbinate's exclusive control of conversion and kosher certification and let local authorities decide arrangements inside their own towns. It goes further, pledging civil marriage and divorce for every citizen and public transport every day of the week connecting all cities."
+        },
+        "separate-religion-and-state": {
+          "agreement": "agrees",
+          "text": "That is the party's main position. Its August 2026 platform pledges civil marriage and divorce for every citizen, equal funding for all religious streams and public transport every day of the week, and Kariv, Lazimi and Rayten submitted a Shabbat public transport bill in 2022."
+        }
+      }
+    }
+  },
+  "points": [
+    {
+      "text": "The party's August 2026 platform pledges equal rights in marriage, parenthood, surrogacy and adoption for LGBT people and a ban on conversion therapy for minors, and its MKs submitted bills banning conversion therapy for minors in 2022 and 2023.",
+      "anchor": "other-lgbt-rights"
+    },
+    {
+      "text": "Democrats MK Gilad Kariv filed a High Court petition against the law passed at the end of March 2026 that makes death the default sentence for Palestinians from Judea and Samaria convicted of deadly terror attacks, and the Jerusalem Post reports that he led the opposition's parliamentary fight against it.",
+      "anchor": "other-death-penalty"
+    },
+    {
+      "text": "The party's August 2026 platform pledges a Basic Law: The Environment and a climate law with targets of cutting greenhouse gas emissions by 50% by 2030 and 100% by 2050, and closing coal-fired power plants.",
+      "anchor": "other-environment"
+    }
+  ]
+}

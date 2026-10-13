@@ -1,0 +1,234 @@
+{
+  "partyId": "meretz",
+  "lang": "en",
+  "issues": {
+    "cost-of-living": {
+      "anchor": "issue-cost-of-living",
+      "options": {
+        "open-market-competition-imports": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: its 2022 platform calls for a complete halt to privatisation, higher taxes on capital and high earners, and regulation and supervision. It does share the aim of breaking up large business groups, which the platform calls for \"for reasons of competition\"."
+        },
+        "cut-taxes-and-government-spending": {
+          "agreement": "disagrees",
+          "text": "The party's 2022 platform calls for a broad welfare state, a strong public sector and higher taxes on capital and high earners, including a new 55% income-tax bracket above NIS 60,000 a month. It does propose exempting basic food and medicines from VAT and a reduced VAT rate on books."
+        },
+        "active-state-regulation": {
+          "agreement": "agrees",
+          "text": "This is the party's main recorded position. Its 2022 platform calls for \"regulation and supervision\", higher taxes on capital and high earners, and breaking up \"control pyramids\", and the union agreement it signed in July 2024 commits The Democrats to a social-democratic economic policy."
+        },
+        "direct-support-for-households": {
+          "agreement": "partially",
+          "text": "This is a secondary element of the party's position: its 2022 platform calls for higher child, disability and old-age allowances and 80% public-transport subsidies for some groups. The research calls the evidence mixed, because as a coalition party Meretz MKs voted against opposition bills on child allowances on 24 November 2021 and on the disability allowance on 1 December 2021."
+        }
+      }
+    },
+    "crime-in-arab-society": {
+      "anchor": "issue-crime-in-arab-society",
+      "options": {
+        "emergency-powers-shin-bet": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: its 2022 platform focuses on investment in Arab society and states that holding people without trial violates the right to a fair trial. The research found no statement by Meretz or Gaby Lasky on bringing the Shin Bet into the fight against crime."
+        },
+        "more-police-resources-normal-law": {
+          "agreement": "partially",
+          "text": "This is a secondary element of the party's position; its main one is investing in Arab communities. Its 2022 platform calls for stronger police presence in Arab communities together with a fundamental change in the ethos of police enforcement towards Arab citizens, and on 13 December 2021 all six Meretz MKs voted for a government bill widening the grounds for police searches without a court warrant."
+        },
+        "invest-in-arab-communities-first": {
+          "agreement": "agrees",
+          "text": "This is the party's main position. Its 2022 platform names poverty, unemployment and social alienation among the causes of violence and crime and calls for more resources for community programmes and welfare services in Arab society, and the government Meretz sat in adopted the roughly NIS 30 billion \"Takadum\" plan in October 2021."
+        }
+      }
+    },
+    "gaza": {
+      "anchor": "issue-gaza",
+      "options": {
+        "resume-fighting-full-control": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no documented Meretz position on resuming the war or taking control of Gaza. The nearest tentative indication is the July 2024 union agreement, which says Israel should work to hand Gaza to \"moderate Palestinian actors\" while preserving Israeli security interests."
+        },
+        "hold-positions-disarmament-first": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no documented Meretz position on staying in place until Hamas disarms, and no statement on the October 2025 ceasefire or its next stages. The tentative indication, from the July 2024 union agreement, points to handing Gaza to \"moderate Palestinian actors\" while preserving Israeli security interests."
+        },
+        "advance-international-arrangement": {
+          "agreement": "partially",
+          "text": "The research places the party here only tentatively: the union agreement Meretz signed in July 2024 says Israel should work to hand Gaza to \"moderate Palestinian actors\" while preserving Israeli security interests. That evidence predates the October 2025 ceasefire, and no Meretz statement on the US plan was found."
+        },
+        "end-war-full-withdrawal": {
+          "agreement": "partially",
+          "text": "The party's 2022 platform, written before the war, calls for lifting the closure of Gaza and describes it as part of a future Palestinian state, which overlaps with your answer. The research's closest match is a different, tentative one: the July 2024 union agreement's call to hand Gaza to \"moderate Palestinian actors\" while preserving Israeli security interests."
+        },
+        "defeat-hamas-then-security-control": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no documented Meretz position on returning to war until Hamas is destroyed. The tentative indication, from the July 2024 union agreement, points to handing Gaza to \"moderate Palestinian actors\" while preserving Israeli security interests."
+        }
+      }
+    },
+    "haredi-enlistment": {
+      "anchor": "issue-haredi-enlistment",
+      "options": {
+        "anchor-torah-study-exemption": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no documented Meretz position on a law exempting full-time yeshiva students from service. The tentative indication points to gradual enlistment targets, based on Meretz MKs' votes for a government bill in January 2022."
+        },
+        "gradual-targets-by-agreement": {
+          "agreement": "partially",
+          "text": "The research places the party here only tentatively, on its MKs' votes alone: five Meretz MKs voted on 17 January 2022 for a government bill setting enlistment targets for yeshiva students, with financial consequences if missed, and all six voted for the resubmitted version on 31 January 2022. No later Meretz position was found."
+        },
+        "universal-service-with-sanctions": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no documented Meretz position on requiring all 18-year-olds to serve with sanctions for refusal. The tentative indication points to gradual enlistment targets, based on Meretz MKs' votes for a government bill in January 2022."
+        },
+        "voluntary-service-for-all": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no settled Meretz position on making all service voluntary: on 22 December 2021 three Meretz MKs voted against another party's private bill to abolish compulsory military service, while Meretz MK Mossi Raz had tabled a bill with the same title. The tentative indication points to gradual enlistment targets, based on Meretz MKs' votes for a government bill in January 2022."
+        }
+      }
+    },
+    "housing": {
+      "anchor": "issue-housing",
+      "options": {
+        "speed-up-planning-and-construction": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: its 2022 platform blames high prices on government policy that relied mainly on the free market, and proposes publicly funded construction, affordable-housing clauses in every new plan and rent supervision."
+        },
+        "state-led-affordable-rental": {
+          "agreement": "agrees",
+          "text": "This is the party's main position: its 2022 platform proposes government-financed long-term rental housing that the government builds and maintains, affordable-housing clauses in every new plan, and \"supervision of rent\". As a coalition party, its MKs voted on 24 November 2021 against an opposition bill to increase the public-housing stock."
+        },
+        "direct-help-for-buyers": {
+          "agreement": "partially",
+          "text": "The party's position is on a neighbouring option: its 2022 platform puts government-built long-term rental housing and rent supervision first. It shares the aim of lower-priced homes through affordable-housing clauses in every new plan, but its listed measures do not include grants or larger mortgages for buyers."
+        },
+        "develop-periphery-and-transport": {
+          "agreement": "partially",
+          "text": "This is a secondary element of the party's position: its 2022 platform includes a national urban-renewal plan for 100,000 homes in city centres, and the research notes that its public-transport proposals also touch on this option. Its main housing position is state-led affordable rental housing."
+        }
+      }
+    },
+    "iran-and-regional-security": {
+      "anchor": "issue-iran-and-regional-security",
+      "options": {
+        "military-pressure-until-threats-removed": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no documented Meretz position on continuing attacks until the threats are removed, and no statement on the June 2025 or February 2026 wars with Iran or the 2026 fighting in Lebanon. The tentative indication points to security capabilities combined with political arrangements and regional alliances, from the July 2024 union agreement."
+        },
+        "force-plus-us-backed-agreements": {
+          "agreement": "partially",
+          "text": "The research places the party here only tentatively: the union agreement Meretz signed in July 2024 says Israel's security rests on \"advanced security capabilities, political arrangements and regional alliances\". That evidence predates the 2025-2026 wars and the research found no Meretz statement on them."
+        },
+        "prioritize-ending-multifront-war": {
+          "agreement": "partially",
+          "text": "The research places the party here only tentatively: its 2022 platform prefers the diplomatic path on Iran and \"a careful policy combining deterrence and restraint\" towards Hezbollah. That evidence predates the 2025-2026 wars and is mixed, and the research found no Meretz statement on them."
+        },
+        "end-military-operations-regional-peace": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no documented Meretz position on ending all military operations and withdrawing from Lebanon. The tentative indications point instead to security capabilities with political arrangements and alliances (July 2024 union agreement) and a preference for diplomacy with restraint (2022 platform)."
+        }
+      }
+    },
+    "judea-samaria": {
+      "anchor": "issue-judea-samaria",
+      "options": {
+        "full-sovereignty": {
+          "agreement": "disagrees",
+          "text": "The party holds the opposite position: all six Meretz MKs voted against bills to apply Israeli sovereignty to Judea and Samaria on 28 July 2021 and 22 June 2022, and its 2022 platform supports a Palestinian state and calls for stopping all settlement construction."
+        },
+        "partial-sovereignty-area-c": {
+          "agreement": "disagrees",
+          "text": "The party holds a different position: all six Meretz MKs voted against bills to apply Israeli sovereignty to Judea and Samaria on 28 July 2021 and 22 June 2022, and its 2022 platform supports a Palestinian state and calls for stopping all settlement construction."
+        },
+        "maintain-current-situation": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is different: its 2022 platform supports a Palestinian state in Judea and Samaria and Gaza, stopping all settlement construction regardless of negotiations and evacuating isolated settlements, and the union agreement it signed in July 2024 commits to two states."
+        },
+        "separation-two-states": {
+          "agreement": "agrees",
+          "text": "This is the party's main position. Its 2022 platform supports a Palestinian state on the basis of the pre-1967 line with 1:1 land swaps, under which most settlements are evacuated and most Israelis living beyond the Green Line become part of Israel, and its July 2024 union agreement commits to two states with a demilitarised Palestinian state."
+        },
+        "two-states-pre-1967-border": {
+          "agreement": "partially",
+          "text": "The party shares the pre-1967 line as the basis, a shared Jerusalem as capital of both states, and a halt to all settlement construction. It differs in that its 2022 platform keeps most Israelis living beyond the Green Line in Israel through land swaps and says most, not all, settlements will be evacuated."
+        },
+        "one-equal-state": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is two states: its 2022 platform supports a Palestinian state alongside Israel, and the union agreement it signed in July 2024 says it will \"strive for separation between us and the Palestinians\" on the basis of two states for two peoples."
+        }
+      }
+    },
+    "judicial-system": {
+      "anchor": "issue-judicial-system",
+      "options": {
+        "continue-judicial-changes": {
+          "agreement": "disagrees",
+          "text": "The party holds the opposite position: on 10 May 2021 and 14 July 2021 all six Meretz MKs voted against proposals letting the Knesset keep a law valid despite a court ruling, and its July 2024 union agreement commits to \"full separation of powers\" and the independence of the legal system."
+        },
+        "broad-agreed-constitutional-framework": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is different: its 2022 platform opposes \"any compromise on constitutional matters\" that would weaken basic democratic values, and on 10 May 2021 and 14 July 2021 all six Meretz MKs voted against proposals letting the Knesset keep a law valid despite a court ruling. It does share the call to complete a constitution through basic laws."
+        },
+        "repeal-changes-protect-independence": {
+          "agreement": "agrees",
+          "text": "This is the research's closest match to the party's position: all six Meretz MKs voted against proposals letting the Knesset keep a law valid despite a court ruling on 10 May 2021 and 14 July 2021, and its July 2024 union agreement commits to the independence of the legal system and of official watchdogs."
+        },
+        "keep-current-system-stability": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is different: its July 2024 union agreement commits to \"full separation of powers\" and the independence of the legal system, and Gaby Lasky co-founded the legal-aid network for people arrested at protests against the government's changes to the judicial system, organising from January 2023."
+        }
+      }
+    },
+    "october-7-inquiry": {
+      "anchor": "issue-october-7-inquiry",
+      "options": {
+        "state-commission-under-existing-law": {
+          "agreement": "partially",
+          "text": "The research places the party here only tentatively, on indirect evidence: Yair Golan, the joint list's leader (not Meretz), said on 20 July 2026 that the first government decision would be to establish a state commission of inquiry, and in January 2022 Gaby Lasky submitted a bill for a state commission on a different matter. No Meretz position on the October 7 inquiry itself was found."
+        },
+        "commission-appointed-by-knesset-balance": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no Meretz position on how the October 7 commission's members should be chosen. The tentative indication points to a state commission under existing law, from a statement by the joint list's leader Yair Golan (not Meretz) on 20 July 2026."
+        },
+        "commission-chosen-by-neutral-mechanism": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no Meretz position on how the October 7 commission's members should be chosen. The tentative indication points to a state commission under existing law, from a statement by the joint list's leader Yair Golan (not Meretz) on 20 July 2026."
+        }
+      }
+    },
+    "religion-and-state": {
+      "anchor": "issue-religion-and-state",
+      "options": {
+        "strengthen-jewish-character": {
+          "agreement": "disagrees",
+          "text": "The party holds the opposite position: its 2022 platform calls for separating religion from the state, civil marriage and divorce, and public transport on Shabbat, and says the Chief Rabbinate will cease to exist as a state-funded institution."
+        },
+        "keep-status-quo": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is for change: in 2022 Gaby Lasky initiated a Marriage and Divorce Bill and a bill to run public transport on the weekly day of rest, and the party's 2022 platform calls for civil marriage and divorce and for the Chief Rabbinate to cease to exist as a state-funded institution."
+        },
+        "more-choice-local-decisions": {
+          "agreement": "partially",
+          "text": "The party's position goes further than your answer. Its 2022 platform also lets people choose Orthodox, Reform or Conservative conversion, but it calls for civil marriage and divorce rather than civil unions, for public transport on Shabbat run \"taking into account the character of the local population\", and for the Chief Rabbinate to cease to exist as a state-funded institution, where your answer keeps it."
+        },
+        "separate-religion-and-state": {
+          "agreement": "agrees",
+          "text": "This is the party's main position. Its 2022 platform calls for separating religion from the state, with civil marriage and divorce, public transport on Shabbat and equal treatment of all streams of Judaism, and in 2022 Gaby Lasky initiated a Marriage and Divorce Bill and a bill to run public transport on the weekly day of rest, which did not advance."
+        }
+      }
+    }
+  },
+  "points": [
+    {
+      "text": "The party supports \"full and supervised\" legalisation of cannabis, including home growing, taxation and sale and erasing criminal records for past personal use, and all six of its MKs voted on 13 October 2021 for a bill regulating medical cannabis that passed its preliminary reading 54-42.",
+      "anchor": "other-cannabis"
+    },
+    {
+      "text": "The party's 2022 platform has a detailed chapter on LGBT rights, including equal recognition of same-sex partnerships and adoption rights, and on taking office as Health Minister in June 2021 Nitzan Horowitz of Meretz announced plans to remove the question that barred some gay men from donating blood.",
+      "anchor": "other-lgbt-rights"
+    },
+    {
+      "text": "In 2022 Gaby Lasky initiated bills to repeal the Nation-State Law and to make Arabic an official language, which were tabled but did not advance, and the party's 2022 platform also pledges to recognise the Arab minority as a national minority with collective rights.",
+      "anchor": "other-arab-equality-nation-state-law"
+    }
+  ]
+}

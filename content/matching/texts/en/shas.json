@@ -1,0 +1,234 @@
+{
+  "partyId": "shas",
+  "lang": "en",
+  "issues": {
+    "cost-of-living": {
+      "anchor": "issue-cost-of-living",
+      "options": {
+        "open-market-competition-imports": {
+          "agreement": "partially",
+          "text": "This is a secondary element of the party's position: Shas MKs were among the sponsors of a February 2023 bill applying the Food Competition Law fully to pharmacy chains, which became law in July 2024. The party's main emphasis is direct help for households, which your answer does not include."
+        },
+        "cut-taxes-and-government-spending": {
+          "agreement": "partially",
+          "text": "This is a secondary element of the party's position: its December 2022 coalition agreement included cancelling the taxes on single-use tableware and sugary drinks, which took effect on 1 January 2023. But seven Shas MKs voted for the order raising VAT to 18% on 11 March 2024, and the party's main emphasis is direct help for households."
+        },
+        "active-state-regulation": {
+          "agreement": "partially",
+          "text": "The party's main emphasis is direct help for low-income households rather than wider state supervision of prices, but its December 2022 coalition agreement did include freezing utility prices and municipal property taxes."
+        },
+        "direct-support-for-households": {
+          "agreement": "agrees",
+          "text": "That is the party's main recorded position: its December 2022 coalition agreement guaranteed at least NIS 1 billion for pre-loaded food cards for needy families, and Labor Minister Ben-Tzur signed the March 2024 order raising the minimum wage. Welfare Minister Margi also backed the March 2025 law creating a national authority to fight poverty."
+        }
+      }
+    },
+    "crime-in-arab-society": {
+      "anchor": "issue-crime-in-arab-society",
+      "options": {
+        "emergency-powers-shin-bet": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no Shas position on bringing in the Shin Bet or on special detention powers. The party's one documented action is different: in August 2023 Interior Minister Arbel pressed for the release of frozen grants to Arab local authorities."
+        },
+        "more-police-resources-normal-law": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no Shas position on giving the police more resources. The party's one documented action is different: in August 2023 Interior Minister Arbel pressed for the release of frozen grants to Arab local authorities."
+        },
+        "invest-in-arab-communities-first": {
+          "agreement": "partially",
+          "text": "The research places the party closest to your answer, but only tentatively, because it rests on one minister's action: in August 2023 Interior Minister Arbel pressed for the release of about NIS 300 million in frozen grants to Arab local authorities, and the finance minister then agreed to transfer NIS 200 million through supervision mechanisms."
+        }
+      }
+    },
+    "gaza": {
+      "anchor": "issue-gaza",
+      "options": {
+        "resume-fighting-full-control": {
+          "agreement": "disagrees",
+          "text": "The party has backed deals rather than a return to war: Labor Minister Ben-Tzur voted for the January 2025 hostage and ceasefire deal, and in October 2025 Deri welcomed the US-brokered ceasefire and hostage deal as \"a great miracle\"."
+        },
+        "hold-positions-disarmament-first": {
+          "agreement": "partially",
+          "text": "This is a secondary element of the party's position: in October 2025 Deri said IDF soldiers would stay in control of more than half of Gaza until Hamas is dismantled. But he said this would last until \"another force enters\", whereas your answer does not rely on foreign forces."
+        },
+        "advance-international-arrangement": {
+          "agreement": "agrees",
+          "text": "That is the party's main recorded position: Ben-Tzur voted for the January 2025 deal, and in October 2025 Deri welcomed the US-brokered ceasefire and hostage deal. Apart from that vote the evidence is statements, and no published Shas plan for Gaza's future was found."
+        },
+        "end-war-full-withdrawal": {
+          "agreement": "partially",
+          "text": "A Shas minister accepted ending the war as the price of a hostage deal: in July 2025 Welfare Minister Margi said a deal was needed \"even at the cost of ending the war\". But in October 2025 Deri said IDF soldiers would stay in control of more than half of Gaza, and he contrasted the deal with earlier proposals involving full withdrawal."
+        },
+        "defeat-hamas-then-security-control": {
+          "agreement": "disagrees",
+          "text": "The party has backed the ceasefire and hostage deals rather than a return to war: Ben-Tzur voted for the January 2025 deal, and Deri welcomed the October 2025 deal. The Jerusalem Post's 2026 election guide says Shas supports dismantling Hamas but opposes indefinite Israeli control of Gaza."
+        }
+      }
+    },
+    "haredi-enlistment": {
+      "anchor": "issue-haredi-enlistment",
+      "options": {
+        "anchor-torah-study-exemption": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position: all 11 Shas MKs voted for the law, passed on 14 July 2026, banning enforcement against yeshiva students who had not reported for service, which the Supreme Court struck down on 3 September 2026. Ynet reported in September 2026 that the party accepts men who leave yeshiva may be drafted."
+        },
+        "gradual-targets-by-agreement": {
+          "agreement": "disagrees",
+          "text": "The party instead backed an exemption: all 11 Shas MKs voted for the 14 July 2026 law banning enforcement against yeshiva students who had not reported for service. Shas MKs voiced support for an enlistment bill that kept exemptions for full-time yeshiva students, and in May 2026 the party rejected a later version of it."
+        },
+        "universal-service-with-sanctions": {
+          "agreement": "disagrees",
+          "text": "The party instead backed an exemption: all 11 Shas MKs voted for the 14 July 2026 law banning arrests and other enforcement against yeshiva students who had not reported for service, and for Basic Law: Torah Study on 13 July 2026."
+        },
+        "voluntary-service-for-all": {
+          "agreement": "partially",
+          "text": "The party shares your opposition to penalties for yeshiva students who do not serve: all 11 of its MKs voted for the 14 July 2026 law banning enforcement against them. But its position is an exemption for full-time yeshiva students, and Ynet reported in September 2026 that it accepts men who have left yeshiva may be drafted."
+        }
+      }
+    },
+    "housing": {
+      "anchor": "issue-housing",
+      "options": {
+        "speed-up-planning-and-construction": {
+          "agreement": "disagrees",
+          "text": "The party's main recorded housing position is direct help for buyers, such as a bill Deri co-sponsored letting public housing tenants buy their apartment at a subsidised price. The December 2022 coalition agreements did include a plan for 200,000 homes for the Haredi population by 2035, but no Shas measure on faster permits, releasing land or cutting fees was found."
+        },
+        "state-led-affordable-rental": {
+          "agreement": "partially",
+          "text": "The party has also dealt with public housing: Deri was among the sponsors of a bill, in a committee version published in November 2025, under which proceeds from tenants buying their apartments go to a fund for buying new public housing. But the bill helps tenants buy rather than rent, which is not what your answer proposes."
+        },
+        "direct-help-for-buyers": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position: Deri was among the sponsors of a bill letting public housing tenants buy their apartment at a subsidised price, and Globes reported that the December 2022 coalition agreements included grants of NIS 100,000 for buyers in outlying areas, mainly for the Haredi public."
+        },
+        "develop-periphery-and-transport": {
+          "agreement": "disagrees",
+          "text": "Your answer centres on investment in areas outside the center. The party's documented housing measures centre on direct help for buyers, such as a bill Deri co-sponsored letting public housing tenants buy their apartment at a subsidised price."
+        }
+      }
+    },
+    "iran-and-regional-security": {
+      "anchor": "issue-iran-and-regional-security",
+      "options": {
+        "military-pressure-until-threats-removed": {
+          "agreement": "partially",
+          "text": "Like your answer, the party would stay in Lebanon: in April 2026 Deri said the army would not leave until Hezbollah is disarmed. But on 8 April 2026 he also defended Netanyahu's decision to accept a ceasefire with Iran, and stressed the alliance with the United States, whereas your answer rules out deals."
+        },
+        "force-plus-us-backed-agreements": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position, based on Deri's statements: in April 2026 he defended the ceasefire with Iran, stressed the alliance with the United States, and said the army would stay in Lebanon until Hezbollah is disarmed and the agreement is fulfilled. No Shas platform on Iran or Lebanon was found."
+        },
+        "prioritize-ending-multifront-war": {
+          "agreement": "disagrees",
+          "text": "The party backed the April 2026 ceasefire with Iran, but Deri said the army would stay in Lebanon until Hezbollah is disarmed, and called the Iran campaign \"a war of no choice\" that had achieved major results. That differs from ending operations on all fronts first."
+        },
+        "end-military-operations-regional-peace": {
+          "agreement": "disagrees",
+          "text": "In April 2026 Deri said the army would not leave Lebanon until Hezbollah is disarmed and the agreement is fulfilled, and called the Iran campaign \"a war of no choice\" that had achieved major results."
+        }
+      }
+    },
+    "judea-samaria": {
+      "anchor": "issue-judea-samaria",
+      "options": {
+        "full-sovereignty": {
+          "agreement": "partially",
+          "text": "The party shares applying Israeli sovereignty and opposing a Palestinian state, but its July 2025 declaration, which ten Shas MKs voted for, called for sovereignty over the areas of Jewish settlement rather than all of Judea and Samaria. On binding sovereignty bills since 2023, Shas MKs voted against or did not vote."
+        },
+        "partial-sovereignty-area-c": {
+          "agreement": "agrees",
+          "text": "That is the party's closest recorded position, though the evidence is mixed: Shas co-submitted the July 2025 declaration calling for sovereignty over the areas of Jewish settlement, which passed 71–13 with ten Shas MKs in favour. The declaration has no legal force, and on binding sovereignty bills since 2023 Shas MKs voted against or did not vote."
+        },
+        "maintain-current-situation": {
+          "agreement": "partially",
+          "text": "This is a secondary element of the party's position: on binding sovereignty bills since 2023 its MKs voted against or did not vote, and Ynet noted in September 2026 that the party has no detailed plan and does not campaign on settlement. But Shas also co-submitted the July 2025 declaration calling for sovereignty over the areas of Jewish settlement, which your answer does not include."
+        },
+        "separation-two-states": {
+          "agreement": "disagrees",
+          "text": "In September 2026 Shas told Ynet that it opposes a Palestinian state. In July 2025 it co-submitted a Knesset declaration calling for sovereignty over the areas of Jewish settlement."
+        },
+        "two-states-pre-1967-border": {
+          "agreement": "disagrees",
+          "text": "In September 2026 Shas told Ynet that it opposes a Palestinian state. In July 2025 it co-submitted a Knesset declaration calling for sovereignty over the areas of Jewish settlement."
+        },
+        "one-equal-state": {
+          "agreement": "disagrees",
+          "text": "In July 2025 Shas co-submitted a Knesset declaration calling for Israeli sovereignty over the areas of Jewish settlement in Judea, Samaria and the Jordan Valley, and ten of its MKs voted for it."
+        }
+      }
+    },
+    "judicial-system": {
+      "anchor": "issue-judicial-system",
+      "options": {
+        "continue-judicial-changes": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position: all 11 Shas MKs voted for the law changing the committee that chooses judges on 27 March 2025, and for the law on the attorney general's legal opinions on 15 July 2026. In September 2026 Deri said the party was determined to \"fundamentally fix the judicial system\"."
+        },
+        "broad-agreed-constitutional-framework": {
+          "agreement": "disagrees",
+          "text": "The party has voted for judicial changes without a broad compromise: all 11 Shas MKs voted for the 27 March 2025 law changing the committee that chooses judges, passed with the opposition boycotting, and for the 15 July 2026 law on the attorney general's legal opinions."
+        },
+        "repeal-changes-protect-independence": {
+          "agreement": "disagrees",
+          "text": "All 11 Shas MKs voted for the 27 March 2025 law changing the committee that chooses judges, which this option would reverse, and for the 15 July 2026 law on the attorney general's legal opinions. In September 2026 Deri said the party was determined to \"fundamentally fix the judicial system\"."
+        },
+        "keep-current-system-stability": {
+          "agreement": "disagrees",
+          "text": "The party voted for the changes already passed, including the 27 March 2025 law on choosing judges and the 15 July 2026 law on the attorney general's legal opinions. But it wants to go further: in September 2026 Deri said the party was determined to \"fundamentally fix the judicial system\"."
+        }
+      }
+    },
+    "october-7-inquiry": {
+      "anchor": "issue-october-7-inquiry",
+      "options": {
+        "state-commission-under-existing-law": {
+          "agreement": "partially",
+          "text": "This is a secondary element of the party's position, resting on statements: in January 2025 two Shas MKs said a state commission of inquiry was needed, and Interior Minister Arbel backed one in August 2024. The party's votes run the other way, with its MKs voting against every opposition bill for one at a preliminary reading, most recently on 1 July 2026."
+        },
+        "commission-appointed-by-knesset-balance": {
+          "agreement": "agrees",
+          "text": "That is the party's main recorded position: eight Shas MKs voted on 24 December 2025 for the coalition's bill for a commission whose members would be picked through the Knesset. In October 2026 the party declined to tell Ynet which inquiry model it supports."
+        },
+        "commission-chosen-by-neutral-mechanism": {
+          "agreement": "partially",
+          "text": "The party shares having the Knesset take part in picking the members: eight Shas MKs voted on 24 December 2025 for the coalition's bill for a commission whose members would be picked through the Knesset. The research does not record that bill as using a neutral method such as the one your answer describes."
+        }
+      }
+    },
+    "religion-and-state": {
+      "anchor": "issue-religion-and-state",
+      "options": {
+        "strengthen-jewish-character": {
+          "agreement": "agrees",
+          "text": "That is the party's main recorded position: all 11 Shas MKs voted for Basic Law: Torah Study on 13 July 2026, and for the repeal of the 2021 kashrut reform on 15 July 2026. The Jerusalem Post reports that the party wants marriage to stay with the Rabbinate and conversion under Orthodox control."
+        },
+        "keep-status-quo": {
+          "agreement": "partially",
+          "text": "This is a secondary element of the party's position: the Jerusalem Post reports that it wants marriage to stay with the Rabbinate and opposes civil marriage. But the party has also changed current arrangements, with the 15 July 2026 repeal of the 2021 kashrut reform and the January 2025 Rabbis Law, which differs from keeping things mostly as they are."
+        },
+        "more-choice-local-decisions": {
+          "agreement": "disagrees",
+          "text": "All 11 Shas MKs voted on 15 July 2026 to repeal the 2021 kashrut reform, which had allowed kosher certification by bodies other than the Rabbinate. The Jerusalem Post reports that the party opposes civil marriage and alternatives to religious law, and favours Orthodox control of conversion."
+        },
+        "separate-religion-and-state": {
+          "agreement": "disagrees",
+          "text": "The Jerusalem Post reports that Shas opposes civil marriage and other alternatives to religious law and wants marriage to stay with the Rabbinate. All 11 of its MKs voted for Basic Law: Torah Study on 13 July 2026."
+        }
+      }
+    }
+  },
+  "points": [
+    {
+      "text": "The party secured promises of higher funding for Haredi schools, yeshivas and kollels in its 2022 coalition agreement, and backed the 2026 budget, passed on 30 March 2026, to which about NIS 800 million for Haredi programmes and institutions was added; the attorney general froze those funds.",
+      "anchor": "other-haredi-institutions"
+    },
+    {
+      "text": "The party works to commemorate its founder, Rabbi Ovadia Yosef: a law provides for state-funded events in his memory, and in September 2026 the Supreme Court rejected as moot a Shas petition against the attorney general's decision to block one such event.",
+      "anchor": "other-religious-services"
+    },
+    {
+      "text": "The party was founded to represent Sephardi Jews, and its 2026 list includes a candidate from the Bukharan Jewish community.",
+      "anchor": "other-sephardi-identity"
+    }
+  ]
+}

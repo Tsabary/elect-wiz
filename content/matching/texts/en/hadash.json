@@ -1,0 +1,234 @@
+{
+  "partyId": "hadash",
+  "lang": "en",
+  "issues": {
+    "cost-of-living": {
+      "anchor": "issue-cost-of-living",
+      "options": {
+        "open-market-competition-imports": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is different: its 2026 Joint List plan calls for a minimum wage of at least 70% of the average wage, rent capped at 20% of net income, higher tax on financial gains, ending tax benefits for large companies and cancelling privatisation programmes."
+        },
+        "cut-taxes-and-government-spending": {
+          "agreement": "disagrees",
+          "text": "The party's 2026 Joint List plan takes a different approach: higher wages and allowances, free education from birth to university, higher tax on financial gains and cancelling privatisation programmes. It does include cutting VAT to 10% and an income-tax exemption up to the average wage, and the only spending cut it names is in military spending."
+        },
+        "active-state-regulation": {
+          "agreement": "partially",
+          "text": "The party's 2026 Joint List plan includes rent capped at 20% of net income, ending tax benefits for large companies and higher tax on financial gains, which overlap with state intervention. The research treats this as a secondary element, with raising wages and benefits as the main one."
+        },
+        "direct-support-for-households": {
+          "agreement": "agrees",
+          "text": "That is the party's main recorded position. Its 2026 Joint List plan calls for a minimum wage of at least 70% of the average wage and a basic allowance of 25% of the average wage, and its MKs voted for a bill to raise the minimum wage to NIS 40 an hour in June 2022."
+        }
+      }
+    },
+    "crime-in-arab-society": {
+      "anchor": "issue-crime-in-arab-society",
+      "options": {
+        "emergency-powers-shin-bet": {
+          "agreement": "disagrees",
+          "text": "The party opposes involving the Shin Bet (Israel's internal security service): Ayman Odeh, then the party's leader, said in October 2021 that he did not want the Shin Bet for the Arabs, and its MKs voted against bills widening the state's powers against crime organisations in February 2024 and on 10 December 2025."
+        },
+        "more-police-resources-normal-law": {
+          "agreement": "partially",
+          "text": "The party's 2026 Joint List plan also proposes stronger police investigation units, action against illegal weapons and prosecution under ordinary law. Its main emphasis, though, is a new development plan for Arab society, and Ayman Odeh, then the party's leader, said in early 2026 that he had zero trust in the police."
+        },
+        "invest-in-arab-communities-first": {
+          "agreement": "agrees",
+          "text": "That is the party's main recorded position. Its 2026 Joint List plan proposes a new development plan for Arab society, and MK Aida Touma-Sliman objected in December 2025 to moving NIS 3.1 billion from the development plan for Arab communities to the police and other bodies."
+        }
+      }
+    },
+    "gaza": {
+      "anchor": "issue-gaza",
+      "options": {
+        "resume-fighting-full-control": {
+          "agreement": "disagrees",
+          "text": "The party calls for ending the war: the Joint List demands an immediate and complete halt to military operations in Gaza, withdrawal of all troops, and no Israeli control, sovereignty or settlement there. In January 2025 two of its MKs also rejected the idea of moving Gaza's residents to other countries."
+        },
+        "hold-positions-disarmament-first": {
+          "agreement": "disagrees",
+          "text": "The party holds that the army should withdraw: the Joint List demands an immediate and complete halt to military operations in Gaza, withdrawal of all troops and the lifting of the blockade, as reported in the party weekly on 7 October 2026."
+        },
+        "advance-international-arrangement": {
+          "agreement": "partially",
+          "text": "The party also wants the war ended and the army out of Gaza, but the Joint List demands an immediate and complete halt and withdrawal, where your answer has them in stages. The research found no party statement on the specific stages of the US plan, such as an international force or disarming Hamas."
+        },
+        "end-war-full-withdrawal": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position. The Joint List demands an immediate and complete halt to military operations, withdrawal of all troops and lifting of the blockade, and its leader said in September 2026 that it would push for negotiations on a Palestinian state alongside Israel."
+        },
+        "defeat-hamas-then-security-control": {
+          "agreement": "disagrees",
+          "text": "The party holds that fighting should stop and the army withdraw: the Joint List demands an immediate and complete halt to military operations in Gaza and withdrawal of all troops, and rejects Israeli control there, as reported on 7 October 2026."
+        }
+      }
+    },
+    "haredi-enlistment": {
+      "anchor": "issue-haredi-enlistment",
+      "options": {
+        "anchor-torah-study-exemption": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no party statement on whether yeshiva students should serve, and places the party only tentatively at voluntary service for all. The party's MKs voted against the government's bills on the military service of yeshiva students in June 2024 and July 2026, but Ayman Odeh, then the party's leader, said in December 2025 that these votes were cast to bring down the government."
+        },
+        "gradual-targets-by-agreement": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no party statement on whether Haredi yeshiva students should be required to serve, and places the party only tentatively at voluntary service for all, based on an April 2026 statement by its main component. Ayman Odeh, then the party's leader, said its votes against the government's bills on the military service of yeshiva students were cast to bring down the government."
+        },
+        "universal-service-with-sanctions": {
+          "agreement": "party-position-unclear",
+          "text": "The research places the party, tentatively, at voluntary service for all, based on an April 2026 statement by its main component rejecting any link between voting rights and military service. It found no party statement on whether yeshiva students should be required to serve."
+        },
+        "voluntary-service-for-all": {
+          "agreement": "partially",
+          "text": "The research places the party closest to your answer, but only tentatively: it rests on an April 2026 statement by its main component criticising a campaign to tie voting rights to military service. No party statement on whether Haredi yeshiva students should be required to serve was found."
+        }
+      }
+    },
+    "housing": {
+      "anchor": "issue-housing",
+      "options": {
+        "speed-up-planning-and-construction": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is state-led: its 2026 Joint List plan calls for public housing for everyone without a home, rent capped at 20% of net income, and large-scale building of homes for rent or discounted sale by government companies."
+        },
+        "state-led-affordable-rental": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position. Its 2026 Joint List plan calls for large-scale state building of homes for rent or discounted sale and rent capped at 20% of net income, and MK Youssef Atauna voted for a bill to limit rent increases in March 2023, and three of its MKs for a public-housing bill in November 2025."
+        },
+        "direct-help-for-buyers": {
+          "agreement": "partially",
+          "text": "The party's 2026 Joint List plan also includes a state mortgage bank and interest-free mortgages for young people and first-time buyers. Its plan centres on public housing and capped rents, which your answer does not include."
+        },
+        "develop-periphery-and-transport": {
+          "agreement": "disagrees",
+          "text": "The party's documented housing position is different: its 2026 Joint List plan calls for public housing, rent capped at 20% of net income and large-scale building of homes for rent or discounted sale by government companies."
+        }
+      }
+    },
+    "iran-and-regional-security": {
+      "anchor": "issue-iran-and-regional-security",
+      "options": {
+        "military-pressure-until-threats-removed": {
+          "agreement": "disagrees",
+          "text": "The party opposed the 2026 war with Iran, with MK Ofer Cassif writing \"No to war\" on 1 March 2026, and it welcomed the US-Iran agreement ending the war on 15 June 2026. It called on 8 June 2026 for an immediate halt to the escalation."
+        },
+        "force-plus-us-backed-agreements": {
+          "agreement": "disagrees",
+          "text": "The party welcomed the US-Iran agreement on 15 June 2026, but it opposed the 2026 war itself and on 8 June 2026 called for an immediate halt to the escalation, rather than continued military pressure. No party statement on Hezbollah's disarmament was found."
+        },
+        "prioritize-ending-multifront-war": {
+          "agreement": "partially",
+          "text": "The party also called for an immediate halt to the escalation, on 8 June 2026, but its position is the wider one of ending military operations and seeking regional peace through diplomacy; in August 2026 the Joint List called for ending Israel's hold on Lebanese territory."
+        },
+        "end-military-operations-regional-peace": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position. It opposed the 2026 war with Iran, called on 8 June 2026 for a peaceful agreement that ensures security for all peoples in the region, and in August 2026 the Joint List called for ending Israel's hold on Lebanese territory."
+        }
+      }
+    },
+    "judea-samaria": {
+      "anchor": "issue-judea-samaria",
+      "options": {
+        "full-sovereignty": {
+          "agreement": "disagrees",
+          "text": "The party's MKs voted against every sovereignty bill checked, including a Jordan Valley bill in January 2025 and the bill to apply sovereignty to Judea and Samaria that passed a preliminary reading in October 2025. The Joint List supports a Palestinian state alongside Israel."
+        },
+        "partial-sovereignty-area-c": {
+          "agreement": "disagrees",
+          "text": "The party opposes applying sovereignty: its MKs voted against a Jordan Valley sovereignty bill in January 2025 and against a Knesset motion supporting sovereignty in Judea, Samaria and the Jordan Valley in July 2025. The Joint List supports a Palestinian state alongside Israel."
+        },
+        "maintain-current-situation": {
+          "agreement": "disagrees",
+          "text": "The party holds that the situation should change: the Joint List supports a Palestinian state on the pre-1967 border and the evacuation of all settlements and outposts, according to the party weekly on 7 October 2026. Its MKs also voted for a proposed Basic Law to recognise a Palestinian state on 30 October 2024."
+        },
+        "separation-two-states": {
+          "agreement": "partially",
+          "text": "The party also supports two states, but on the pre-1967 border with all settlements and outposts evacuated, where your answer has the large settlement blocs staying in Israel. This is the Joint List position reported on 7 October 2026."
+        },
+        "two-states-pre-1967-border": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position. The Joint List supports a Palestinian state on the pre-1967 border with East Jerusalem as its capital and the evacuation of all settlements and outposts, and the party's MKs voted for a proposed Basic Law to recognise a Palestinian state on 30 October 2024."
+        },
+        "one-equal-state": {
+          "agreement": "disagrees",
+          "text": "The party supports two states: the Joint List backs a Palestinian state alongside Israel on the pre-1967 border, and the party's MKs voted for a proposed Basic Law to recognise a Palestinian state on 30 October 2024."
+        }
+      }
+    },
+    "judicial-system": {
+      "anchor": "issue-judicial-system",
+      "options": {
+        "continue-judicial-changes": {
+          "agreement": "disagrees",
+          "text": "The party's MKs voted against the changes to the judicial system at every stage checked, including the bill limiting the reasonableness test in July 2023, the 2025 law on choosing judges and the July 2026 law on the attorney general's legal opinions."
+        },
+        "broad-agreed-constitutional-framework": {
+          "agreement": "disagrees",
+          "text": "The research places the party at reversing the changes: its MKs voted against them at every stage checked. It also wants a constitution with stronger equality rights, and when it met President Herzog on 29 March 2023 during talks on the changes it rejected a return to the previous situation."
+        },
+        "repeal-changes-protect-independence": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position. Its MKs voted against the reasonableness bill in July 2023, the 2025 law on choosing judges and the July 2026 law on the attorney general's legal opinions."
+        },
+        "keep-current-system-stability": {
+          "agreement": "disagrees",
+          "text": "The party opposes the changes the government has passed: its MKs voted against the 2025 law on choosing judges and the July 2026 law on the attorney general's legal opinions, among others."
+        }
+      }
+    },
+    "october-7-inquiry": {
+      "anchor": "issue-october-7-inquiry",
+      "options": {
+        "state-commission-under-existing-law": {
+          "agreement": "agrees",
+          "text": "The party's MKs repeatedly voted for state commission of inquiry bills, including two on the October 7 attack on 17 July 2024 and a private bill in November 2025. The research places the party here based on these votes, as no detailed statement on the commission's make-up was found."
+        },
+        "commission-appointed-by-knesset-balance": {
+          "agreement": "disagrees",
+          "text": "Two of the party's MKs voted against the coalition's bill for a commission of inquiry into the October 7 attack whose members would be chosen through the Knesset, in December 2025. The party voted for state commission bills several times between July 2024 and July 2026."
+        },
+        "commission-chosen-by-neutral-mechanism": {
+          "agreement": "disagrees",
+          "text": "The party's MKs voted for state commission of inquiry bills on 17 July 2024, 19 March 2025 and 1 July 2026, which the research places under the existing law. No detailed party statement on how members should be chosen was found."
+        }
+      }
+    },
+    "religion-and-state": {
+      "anchor": "issue-religion-and-state",
+      "options": {
+        "strengthen-jewish-character": {
+          "agreement": "disagrees",
+          "text": "The party's MKs voted the other way: Ofer Cassif and Aida Touma-Sliman voted for a civil marriage and divorce bill in June 2023 and for a bill to run public transport on Shabbat in November 2025."
+        },
+        "keep-status-quo": {
+          "agreement": "disagrees",
+          "text": "The party's MKs voted for changes: Ofer Cassif and Aida Touma-Sliman voted for a civil marriage and divorce bill in June 2023 and for a bill to run public transport on Shabbat in November 2025."
+        },
+        "more-choice-local-decisions": {
+          "agreement": "partially",
+          "text": "The party's MKs also voted for civil marriage and for Shabbat public transport, but the research places the party at separating religion and state entirely, rather than keeping the Rabbinate with local choice. That placement rests on votes since 2023."
+        },
+        "separate-religion-and-state": {
+          "agreement": "agrees",
+          "text": "The party's MKs voted for a civil marriage and divorce bill in June 2023 and for a bill to run public transport on Shabbat in November 2025. The research notes that MKs did not all vote the same way on the 2023 civil marriage bill."
+        }
+      }
+    }
+  },
+  "points": [
+    {
+      "text": "The party's four MKs voted on 18 December 2024 for a bill to repeal Basic Law: Israel – the Nation State of the Jewish People, which was defeated 13–49, and equality for Arab citizens is one of its core principles.",
+      "anchor": "other-arab-equality"
+    },
+    {
+      "text": "The party's MKs Ayman Odeh, Ofer Cassif and Aida Touma-Sliman voted against the Death Penalty for Terrorists law, which passed its final reading on 30 March 2026, and Odeh and Touma-Sliman were among the original petitioners to the Supreme Court against it.",
+      "anchor": "other-death-penalty"
+    },
+    {
+      "text": "Youssef Atauna, then a Hadash MK and himself from the Negev, condemned in November 2024 the demolition of the unrecognised Bedouin village of Umm al-Hiran.",
+      "anchor": "other-bedouin-negev"
+    }
+  ]
+}

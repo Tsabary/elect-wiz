@@ -1,0 +1,234 @@
+{
+  "partyId": "likud-party",
+  "lang": "en",
+  "issues": {
+    "cost-of-living": {
+      "anchor": "issue-cost-of-living",
+      "options": {
+        "open-market-competition-imports": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded approach. Its economy minister's reform letting products that meet European Union standards be imported and sold without extra Israeli requirements passed in August 2024, and its campaign site lists a free market, less regulation and more competition as a pillar."
+        },
+        "cut-taxes-and-government-spending": {
+          "agreement": "partially",
+          "text": "The party's approach is a neighbouring one: a free market with less regulation and more competition, rather than tax cuts. On taxes its government moved the other way, raising VAT from 17% to 18% on 1 January 2025 to cover wartime defense costs, with the finance ministry held by a coalition partner."
+        },
+        "active-state-regulation": {
+          "agreement": "disagrees",
+          "text": "The party's campaign site calls for a free market with less regulation and more competition, and its main reform, passed in August 2024, opened imports to products meeting European Union standards."
+        },
+        "direct-support-for-households": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is opening the market to imports and competition, shown by the August 2024 import reform and its free-market platform pillar. The research records no household-support measure from the party on this issue."
+        }
+      }
+    },
+    "crime-in-arab-society": {
+      "anchor": "issue-crime-in-arab-society",
+      "options": {
+        "emergency-powers-shin-bet": {
+          "agreement": "agrees",
+          "text": "On 15 July 2026 the government approved a plan, proposed by the prime minister and a party minister among others, that brings the Shin Bet (Israel's internal security service) into the fight against organized crime in Arab communities. The research found no party position on holding crime bosses without trial."
+        },
+        "more-police-resources-normal-law": {
+          "agreement": "disagrees",
+          "text": "The party's government did move money to the police, NIS 220 million in December 2025, but its July 2026 plan also brought in the Shin Bet, which this option rules out."
+        },
+        "invest-in-arab-communities-first": {
+          "agreement": "disagrees",
+          "text": "The party's government moved about NIS 717 million out of Plan 550, the development programme for Arab communities, to policing and the Shin Bet: NIS 220 million in December 2025 and about NIS 497 million in July 2026."
+        }
+      }
+    },
+    "gaza": {
+      "anchor": "issue-gaza",
+      "options": {
+        "resume-fighting-full-control": {
+          "agreement": "partially",
+          "text": "This is a secondary element of the party's position; the research calls the evidence mixed. In May 2026 the prime minister directed the IDF to expand control of Gaza from 60% to 70%, and in May 2026 the defense minister said a plan for voluntary emigration from Gaza was advancing, but the party's main position is to hold current positions until Hamas disarms."
+        },
+        "hold-positions-disarmament-first": {
+          "agreement": "agrees",
+          "text": "This is the party's main position. On 29 September 2025 the prime minister accepted the US plan while saying Israel will keep security responsibility, including a security perimeter, and that further withdrawals would be linked to Hamas disarming."
+        },
+        "advance-international-arrangement": {
+          "agreement": "disagrees",
+          "text": "The prime minister accepted the US plan on 29 September 2025, but said Israel would keep security responsibility, including a security perimeter, for the foreseeable future, with further withdrawals linked to the extent of disarmament. In May 2026 he directed the IDF to expand its control of Gaza from 60% to 70%."
+        },
+        "end-war-full-withdrawal": {
+          "agreement": "disagrees",
+          "text": "The party holds the opposite: in September 2025 the prime minister said Israel would keep a security perimeter and tie withdrawals to disarmament, and in May 2026 he directed the IDF to expand its control of Gaza from 60% to 70%."
+        },
+        "defeat-hamas-then-security-control": {
+          "agreement": "partially",
+          "text": "The party also wants Israel to keep security control and said in September 2025 that Israel would finish the job itself if Hamas rejected the US plan. It differs in that its main position is to hold current positions rather than return to war, and the defense minister said in May 2026 that a plan for voluntary emigration from Gaza was advancing."
+        }
+      }
+    },
+    "haredi-enlistment": {
+      "anchor": "issue-haredi-enlistment",
+      "options": {
+        "anchor-torah-study-exemption": {
+          "agreement": "partially",
+          "text": "This is a secondary element of the party's position, and the research calls the evidence mixed. In July 2026 the coalition passed the Torah study basic law and 26 of the party's MKs voted for a temporary law freezing arrests of yeshiva students who did not report for service, but in August 2026 the prime minister said the freeze would not be continued and that men who do not study Torah must enlist or go to prison."
+        },
+        "gradual-targets-by-agreement": {
+          "agreement": "agrees",
+          "text": "That is the party's main position. In October 2025 the chair of the Knesset's Foreign Affairs and Defense Committee, a party MK, published an outline setting yearly enlistment targets rising to 8,500 by the fifth year, with sanctions phased in gradually, and the prime minister shared his position."
+        },
+        "universal-service-with-sanctions": {
+          "agreement": "partially",
+          "text": "In early August 2026 the prime minister said men who do not study Torah would have to enlist or go to prison, and promised a full conscription law that meets the IDF's needs. The party's own October 2025 outline kept the exemption age at 26 and phased sanctions in gradually, which the Israel Democracy Institute said does not set a general and equal duty."
+        },
+        "voluntary-service-for-all": {
+          "agreement": "disagrees",
+          "text": "The party's documented position includes enlistment targets and phased sanctions in its October 2025 outline, and in August 2026 the prime minister said men who do not study Torah would have to enlist or go to prison."
+        }
+      }
+    },
+    "housing": {
+      "anchor": "issue-housing",
+      "options": {
+        "speed-up-planning-and-construction": {
+          "agreement": "disagrees",
+          "text": "The party's documented housing action is a different approach: on 10 August 2026 it announced about 20,000 discounted homes and plots for IDF reservists. The research found no party plan to speed up planning and construction."
+        },
+        "state-led-affordable-rental": {
+          "agreement": "partially",
+          "text": "The party's documented action is discounted apartments for sale, such as the Target Price lottery programme in its August 2026 reservist plan, not state-built rental housing, and the research found no party plan for state rental housing. It shares only that the state arranges affordable homes directly."
+        },
+        "direct-help-for-buyers": {
+          "agreement": "agrees",
+          "text": "That is the party's main position. On 10 August 2026 the prime minister and the housing minister announced about 20,000 discounted homes and plots for IDF reservists, including about 16,000 apartments sold through the Target Price programme."
+        },
+        "develop-periphery-and-transport": {
+          "agreement": "partially",
+          "text": "This is a secondary element of the party's position. Its platform pillar promises investment in the periphery, housing, health and infrastructure, and its August 2026 reservist plan exempts plots in national priority areas near the borders from land-value payments, but its main housing action is discounted-price programmes for buyers."
+        }
+      }
+    },
+    "iran-and-regional-security": {
+      "anchor": "issue-iran-and-regional-security",
+      "options": {
+        "military-pressure-until-threats-removed": {
+          "agreement": "partially",
+          "text": "This is a secondary element of the party's position. On 9 April 2026 the prime minister said there would be no ceasefire in Lebanon during talks, and in March 2026 the defense minister said the IDF would hold a security zone up to the Litani River, but the party also negotiates, reaching a US-brokered framework with Lebanon in June 2026."
+        },
+        "force-plus-us-backed-agreements": {
+          "agreement": "agrees",
+          "text": "That is the party's main position. It launched a joint operation with the United States against Iran on 28 February 2026, announced direct negotiations with Lebanon on 9 April 2026 while continuing operations, and a US-brokered framework providing for gradual Israeli withdrawal and Hezbollah's disarmament was agreed in June 2026."
+        },
+        "prioritize-ending-multifront-war": {
+          "agreement": "disagrees",
+          "text": "The party's leader announced the operation against Iran on 28 February 2026, said on 9 April 2026 that there would be no ceasefire in Lebanon during the talks, and said on 5 October 2026 that Israel would keep striking Hezbollah and still has more missions."
+        },
+        "end-military-operations-regional-peace": {
+          "agreement": "disagrees",
+          "text": "In March 2026 the defense minister said the IDF would hold a security zone up to the Litani River, and as of late September 2026 Israel kept positions in southern Lebanon. In October 2026 the prime minister said Israel would keep striking Hezbollah while working towards peace with Lebanon."
+        }
+      }
+    },
+    "judea-samaria": {
+      "anchor": "issue-judea-samaria",
+      "options": {
+        "full-sovereignty": {
+          "agreement": "partially",
+          "text": "The party's platform promises strengthening settlement and sovereignty throughout the land, and it backed a non-binding motion in July 2025 calling for applying Israeli sovereignty to the settlements. But when bills to apply sovereignty came to a vote in October 2025, nearly all its MKs stayed away, so the research treats this as a secondary element."
+        },
+        "partial-sovereignty-area-c": {
+          "agreement": "partially",
+          "text": "The party backed a July 2025 motion calling for applying Israeli sovereignty to the settlements, and its platform promises sovereignty, but the research does not show a preference for a limited area, and its MKs voted against sovereignty bills for the Jordan Valley in March 2023 and January 2025. This is a secondary element of its position."
+        },
+        "maintain-current-situation": {
+          "agreement": "agrees",
+          "text": "That is the party's main position, though the research calls the evidence mixed. It keeps expanding settlements and in September 2025 the prime minister said there will be no Palestinian state, while its MKs voted against sovereignty bills in March 2023, January 2025 and December 2025; its platform page still promises sovereignty."
+        },
+        "separation-two-states": {
+          "agreement": "disagrees",
+          "text": "On 11 September 2025 the prime minister signed a framework to speed up building in Ma'ale Adumim, including the E1 plan, saying there will be no Palestinian state, and in August 2026 the party's housing minister published a tender for 1,234 homes in E1."
+        },
+        "two-states-pre-1967-border": {
+          "agreement": "disagrees",
+          "text": "In September 2025 the prime minister said recognizing a Palestinian state would endanger Israel's existence, and in a September 2025 signing he said there will be no Palestinian state. The party keeps building in settlements, including a tender for 1,234 homes in E1 in August 2026."
+        },
+        "one-equal-state": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is to strengthen settlements and, on its platform, sovereignty, with no Palestinian state. The research records no party support for one state with an equal vote for Jews and Palestinians."
+        }
+      }
+    },
+    "judicial-system": {
+      "anchor": "issue-judicial-system",
+      "options": {
+        "continue-judicial-changes": {
+          "agreement": "agrees",
+          "text": "That is the party's position. The coalition passed the law changing the Judicial Selection Committee on 27 March 2025, 67 to 1, and on 15 July 2026 the Knesset passed a law letting the government disregard the attorney general's legal opinions except in some criminal matters."
+        },
+        "broad-agreed-constitutional-framework": {
+          "agreement": "disagrees",
+          "text": "The party's coalition passed the law changing the Judicial Selection Committee on 27 March 2025, 67 to 1, after the opposition boycotted the vote, and the law on the attorney general's legal opinions passed on 15 July 2026. The research records no party proposal for a constitution or a framework agreed by broad compromise."
+        },
+        "repeal-changes-protect-independence": {
+          "agreement": "disagrees",
+          "text": "The party's coalition passed the Judicial Selection Committee law in March 2025, and in July 2026 passed a law lessening the attorney general's role. The latter takes effect on 1 January 2027."
+        },
+        "keep-current-system-stability": {
+          "agreement": "disagrees",
+          "text": "Your answer keeps the changes already passed, which the party's coalition passed, but stops there. The party's record is of continuing: after the Judicial Selection Committee law of March 2025, the government voted in August 2025 to dismiss the attorney general, and in July 2026 the Knesset passed the law on the attorney general's legal opinions."
+        }
+      }
+    },
+    "october-7-inquiry": {
+      "anchor": "issue-october-7-inquiry",
+      "options": {
+        "state-commission-under-existing-law": {
+          "agreement": "disagrees",
+          "text": "The prime minister opposes a state commission of inquiry, and on 16 November 2025 the government formed a ministerial committee to decide the inquiry's mandate instead of setting one up. In December 2025 a party MK presented a bill for a commission appointed through the Knesset."
+        },
+        "commission-appointed-by-knesset-balance": {
+          "agreement": "agrees",
+          "text": "That is the party's position. In December 2025 a party MK presented a six-member commission bill, with members agreed by an 80-MK majority or, failing that, split between coalition and opposition, and four bereaved-family representatives overseeing the work; by mid-July 2026 it had passed a first reading."
+        },
+        "commission-chosen-by-neutral-mechanism": {
+          "agreement": "partially",
+          "text": "The party's December 2025 bill also examines the political, security and judicial systems, but its members would be chosen by the Knesset: by an 80-MK majority or split between coalition and opposition, with the Knesset Speaker appointing the opposition's members if it refuses to take part."
+        }
+      }
+    },
+    "religion-and-state": {
+      "anchor": "issue-religion-and-state",
+      "options": {
+        "strengthen-jewish-character": {
+          "agreement": "partially",
+          "text": "This is a secondary element of the party's position. 28 of its MKs voted for the Torah study basic law on 13 July 2026, and its December 2022 coalition agreement with United Torah Judaism promised legislation on the value of Torah studies, but the research found no party move to enforce Shabbat by law or to add religious law to state law."
+        },
+        "keep-status-quo": {
+          "agreement": "agrees",
+          "text": "The research places the party closest to this option, and found no party bill or formal position on Shabbat public transport, civil marriage or conversion. The party did support the Torah study basic law in July 2026, which the research says goes somewhat towards a stronger Jewish character."
+        },
+        "more-choice-local-decisions": {
+          "agreement": "partially",
+          "text": "The party's position is a neighbouring one: keeping the current arrangements mostly as they are, which, like your answer, keeps the Rabbinate. The research found no party bill or formal position on civil marriage, Shabbat public transport or conversion."
+        },
+        "separate-religion-and-state": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is to keep the current arrangements mostly as they are. Its December 2022 coalition agreement with United Torah Judaism allowed gender-segregated public events, and 28 of its MKs voted for the Torah study basic law in July 2026."
+        }
+      }
+    }
+  },
+  "points": [
+    {
+      "text": "The party backs the death penalty for terrorists: on 30 March 2026 the Knesset passed, 62 to 48, a law making death by hanging the default sentence for Palestinians from Judea and Samaria convicted in military courts of deadly terror attacks, and all 31 of the party's MKs who voted supported it.",
+      "anchor": "other-death-penalty"
+    },
+    {
+      "text": "The party's communications minister has pushed changes to broadcasting: the coalition passed his broadcasting law on 16 July 2026, 53 to 48, expanding government regulation of broadcasting, easing cross-ownership limits and removing some content requirements, and he has pushed a bill to close the public broadcaster Kan if no private buyer is found within two years.",
+      "anchor": "other-media"
+    },
+    {
+      "text": "The party's platform states that United Jerusalem is Israel's capital forever.",
+      "anchor": "other-jerusalem"
+    }
+  ]
+}

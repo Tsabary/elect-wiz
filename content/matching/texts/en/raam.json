@@ -1,0 +1,219 @@
+{
+  "partyId": "raam",
+  "lang": "en",
+  "issues": {
+    "cost-of-living": {
+      "anchor": "issue-cost-of-living",
+      "options": {
+        "open-market-competition-imports": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no detailed published cost-of-living plan from the party, so it cannot be compared firmly with your answer. The tentative indication points elsewhere: private bills that Mansour Abbas co-initiated in the 25th Knesset to raise the minimum wage and to set a reduced VAT rate on basic food, neither of which passed."
+        },
+        "cut-taxes-and-government-spending": {
+          "agreement": "partially",
+          "text": "Party leader Mansour Abbas was among the initiators of a private bill in the 25th Knesset to set a reduced VAT rate on basic food products, which did not pass. The research treats this as thin and mixed evidence: the other bill he co-initiated, to raise the minimum wage, is direct help for households rather than a tax cut."
+        },
+        "active-state-regulation": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no detailed published cost-of-living plan from the party, so it cannot be compared firmly with your answer. The tentative indication points elsewhere: private bills that Mansour Abbas co-initiated in the 25th Knesset to raise the minimum wage and to set a reduced VAT rate on basic food, neither of which passed."
+        },
+        "direct-support-for-households": {
+          "agreement": "partially",
+          "text": "Mansour Abbas was among the initiators of a private bill in the 25th Knesset to raise the minimum wage and link it to labour productivity, which did not pass. The research places the party here as its closest option, but the evidence is thin and mixed, since the party also co-initiated a bill to cut VAT on basic food."
+        }
+      }
+    },
+    "crime-in-arab-society": {
+      "anchor": "issue-crime-in-arab-society",
+      "options": {
+        "emergency-powers-shin-bet": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: in June 2023 Abbas rejected proposals to bring the Shin Bet into the fight against crime and called for resources to be deployed immediately. In October 2021, as a coalition partner, he had supported such a plan, but the research found no vote or other action by the party on Shin Bet involvement."
+        },
+        "more-police-resources-normal-law": {
+          "agreement": "agrees",
+          "text": "That is among the party's main crime demands, and fighting crime is its central declared issue. In June 2023 Abbas called on the government to deploy resources immediately, in September 2023 he proposed house arrest and electronic monitoring of known offenders and more responsibility for national law enforcement, and the party filed no-confidence motions over crime, for example on 6 July 2026."
+        },
+        "invest-in-arab-communities-first": {
+          "agreement": "partially",
+          "text": "The party also seeks to restore budgets for Arab communities: its June 2021 coalition agreement included a NIS 2.5 billion plan to reduce crime and violence in Arab society through 2026. The research describes this as one of two main elements, alongside more police resources and enforcement under normal law, so it is not the party's sole emphasis."
+        }
+      }
+    },
+    "gaza": {
+      "anchor": "issue-gaza",
+      "options": {
+        "resume-fighting-full-control": {
+          "agreement": "disagrees",
+          "text": "The party's MKs voted against bills to define the Gaza Strip as a hostile area and ban trade with it in July 2025 and February 2026. It also co-filed a no-confidence motion on 5 May 2025 accusing the government of escalating the fighting, and in July 2024 party leader Mansour Abbas said in the Knesset that he wanted to stop the war."
+        },
+        "hold-positions-disarmament-first": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: on 5 May 2025 it co-filed a no-confidence motion accusing the government of escalating the fighting in Gaza and thwarting the continuation of the ceasefire agreement. In a clarification after a radio interview on 10 November 2025, party leader Mansour Abbas described a new security and governance reality in Gaza, with international forces and trained Palestinian forces."
+        },
+        "advance-international-arrangement": {
+          "agreement": "agrees",
+          "text": "That is the party's closest recorded position. In a clarification after a radio interview on 10 November 2025, party leader Mansour Abbas described a new security and governance reality in Gaza with international forces, trained Palestinian forces and a peace agreement, and in December 2025 the Times of Israel reported that he had endorsed US plans to demilitarize Gaza."
+        },
+        "end-war-full-withdrawal": {
+          "agreement": "partially",
+          "text": "The party shares the call to end the war: in July 2024 party leader Mansour Abbas said in the Knesset that he wanted to stop the war, and in February 2025 the party co-filed a no-confidence motion accusing the government of thwarting the hostage deal and ceasefire. The research treats this as a secondary element, with the party's main position at an international arrangement."
+        },
+        "defeat-hamas-then-security-control": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: on 5 May 2025 it co-filed a no-confidence motion accusing the government of escalating the fighting in Gaza, and in July 2024 party leader Mansour Abbas said in the Knesset that he wanted to stop the war. In December 2025 the Times of Israel reported that he had endorsed US plans to demilitarize Gaza but declined to call explicitly for Hamas's destruction."
+        }
+      }
+    },
+    "haredi-enlistment": {
+      "anchor": "issue-haredi-enlistment",
+      "options": {
+        "anchor-torah-study-exemption": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no stated current position of the party on whether Haredi yeshiva students should serve; its only indication, a tentative and indirect one, is the party's votes for yearly enlistment targets in January 2022, as a coalition member. All five of its MKs voted against the July 2026 law freezing enforcement against full-time yeshiva students, but the research says the party's votes against the government's bills do not show a position."
+        },
+        "gradual-targets-by-agreement": {
+          "agreement": "partially",
+          "text": "The research places the party here only tentatively, on indirect evidence: as coalition members, party leader Mansour Abbas and MK Walid Taha voted on 31 January 2022 for the government's bill setting yearly enlistment targets. In June 2024, in opposition, all five Ra'am MKs voted against the Netanyahu government's motion to revive that bill, and the party has not stated a current position."
+        },
+        "universal-service-with-sanctions": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no stated current position of the party on whether Haredi yeshiva students should serve; its only indication, a tentative and indirect one, is the party's votes for yearly enlistment targets in January 2022, as a coalition member. In September 2026 Ynet reported that the party opposes any enlistment law that would require young Arab citizens to serve in the IDF or do civilian service."
+        },
+        "voluntary-service-for-all": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no stated current position of the party on whether Haredi yeshiva students should serve, so it cannot be compared firmly with your answer. The only tentative indication is indirect: the party's votes for yearly enlistment targets in January 2022, as a coalition member."
+        }
+      }
+    },
+    "housing": {
+      "anchor": "issue-housing",
+      "options": {
+        "speed-up-planning-and-construction": {
+          "agreement": "agrees",
+          "text": "The party's housing agenda centres on this, applied mainly to Arab communities: its June 2021 coalition agreement committed the government to market 10,000 housing units a year there. In the 25th Knesset party leader Mansour Abbas was among the initiators of bills for special planning provisions for Arab towns and for equal allocation of state land to the Arab population by the Israel Land Authority; neither became law."
+        },
+        "state-led-affordable-rental": {
+          "agreement": "disagrees",
+          "text": "The party's documented housing approach is a different one: speeding up planning and building permits and releasing state land, applied mainly to Arab communities, together with stopping the demolition of homes built without permits. For example, its June 2021 coalition agreement committed the government to market 10,000 housing units a year in Arab communities."
+        },
+        "direct-help-for-buyers": {
+          "agreement": "partially",
+          "text": "In the 25th Knesset Abbas was among the initiators of a bill to let people withdraw savings from a study fund to buy a first apartment, which did not become law. The party's main housing agenda is different, focused on planning, land and demolitions in Arab communities."
+        },
+        "develop-periphery-and-transport": {
+          "agreement": "disagrees",
+          "text": "The party's documented housing approach is a different one: speeding up planning and building permits and releasing state land, applied mainly to Arab communities, together with stopping the demolition of homes built without permits. For example, its June 2021 coalition agreement committed the government to market 10,000 housing units a year in Arab communities."
+        }
+      }
+    },
+    "iran-and-regional-security": {
+      "anchor": "issue-iran-and-regional-security",
+      "unclear": {
+        "text": "The research found no documented position of the party on this issue, so it can't be compared with your answer."
+      }
+    },
+    "judea-samaria": {
+      "anchor": "issue-judea-samaria",
+      "options": {
+        "full-sovereignty": {
+          "agreement": "disagrees",
+          "text": "The party calls for Palestinian statehood and an end to the conflict. On 22 October 2025 its MKs voted against two bills to apply Israeli sovereignty, one on Judea and Samaria and one on Ma'ale Adumim."
+        },
+        "partial-sovereignty-area-c": {
+          "agreement": "disagrees",
+          "text": "The party calls for Palestinian statehood and an end to the conflict. On 22 October 2025 its MKs voted against two bills to apply Israeli sovereignty, one on Judea and Samaria and one on Ma'ale Adumim."
+        },
+        "maintain-current-situation": {
+          "agreement": "disagrees",
+          "text": "The party calls for a Palestinian state and an end to the conflict. On 18 July 2024 its MKs voted against a Knesset resolution opposing the creation of a Palestinian state, and on 30 October 2024 four of them voted for a bill for a Basic Law recognizing a Palestinian state, which was defeated."
+        },
+        "separation-two-states": {
+          "agreement": "agrees",
+          "text": "The research records the party as backing two states through a negotiated agreement, but its evidence cannot tell whether the party holds this option or the exact pre-1967 border. Four of its MKs voted on 30 October 2024 for a bill for a Basic Law recognizing a Palestinian state, which was defeated, and at the party's conference on 22 August 2026 its leader, Mansour Abbas, called on Israel to recognize one."
+        },
+        "two-states-pre-1967-border": {
+          "agreement": "agrees",
+          "text": "The research records the party as backing two states through a negotiated agreement, but its evidence cannot tell whether the party holds this option or one with land swaps keeping the large settlement blocs. Four of its MKs voted on 30 October 2024 for a bill for a Basic Law recognizing a Palestinian state, which was defeated, and no statement setting out the borders was found."
+        },
+        "one-equal-state": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is two states rather than one: four of its MKs voted on 30 October 2024 for a bill for a Basic Law recognizing a Palestinian state, and in 2022 party leader Mansour Abbas said the party would not give up its support for Palestinian statehood. In December 2021 he said that Israel was born as a Jewish state and that the question is the status of Arab citizens within it."
+        }
+      }
+    },
+    "judicial-system": {
+      "anchor": "issue-judicial-system",
+      "options": {
+        "continue-judicial-changes": {
+          "agreement": "disagrees",
+          "text": "The party's MKs voted against the first reading of the bill to change how judges are chosen on 20 February 2023, against the first reading of the bill cancelling the reasonableness ground on 11 July 2023, and against a bill to split the attorney general's role on 29 October 2025."
+        },
+        "broad-agreed-constitutional-framework": {
+          "agreement": "agrees",
+          "text": "The research finds this closest to the party's stated approach: during the compromise talks in May 2023, Abbas said he wanted to strengthen the judicial system, and he has suggested a judicial selection committee including representatives of the opposition and of Arab society. In September 2026 the party declined to give Ynet a current position."
+        },
+        "repeal-changes-protect-independence": {
+          "agreement": "partially",
+          "text": "The party's MKs voted against the first readings of the main changes in February and July 2023, and Abbas said in May 2023 that he wanted to strengthen the judicial system. The research found, however, that the party has not called for reversing the new judicial selection law."
+        },
+        "keep-current-system-stability": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: its MKs voted against the first readings of the bills to change how judges are chosen (20 February 2023) and to cancel the reasonableness ground (11 July 2023). Party leader Mansour Abbas has suggested a judicial selection committee that includes representatives of the opposition and of Arab society."
+        }
+      }
+    },
+    "october-7-inquiry": {
+      "anchor": "issue-october-7-inquiry",
+      "options": {
+        "state-commission-under-existing-law": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position: its MKs repeatedly voted for opposition bills to set up such a commission, on 17 July 2024, 12 November 2025 and 1 July 2026, and on 24 December 2025 voted against the coalition's alternative bill."
+        },
+        "commission-appointed-by-knesset-balance": {
+          "agreement": "disagrees",
+          "text": "On 24 December 2025 the party's MKs voted against the coalition's bill for a commission whose members would be picked through the Knesset rather than by the President of the Supreme Court. They had repeatedly voted for bills leaving the choice to the Supreme Court president."
+        },
+        "commission-chosen-by-neutral-mechanism": {
+          "agreement": "disagrees",
+          "text": "The party's MKs repeatedly voted for bills to set up a state commission of inquiry under the existing law, in which the President of the Supreme Court picks the members, on 17 July 2024, 12 November 2025 and 1 July 2026."
+        }
+      }
+    },
+    "religion-and-state": {
+      "anchor": "issue-religion-and-state",
+      "options": {
+        "strengthen-jewish-character": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no stated position of the party on this question, and its record on religion-and-state arrangements is mostly one of not taking part. The tentative indication is that it has not sought to strengthen the current arrangements: on 13 July 2026 the four of its MKs who voted opposed the Basic Law: Torah Study at its final reading."
+        },
+        "keep-status-quo": {
+          "agreement": "partially",
+          "text": "The research places the party here only tentatively, as an inference from votes and absences rather than a stated position: its MKs did not vote on the civil marriage bill (24 December 2025) or the Shabbat public transport bills (19 November 2025). On 13 July 2026 the four who voted opposed the Basic Law: Torah Study at its final reading."
+        },
+        "more-choice-local-decisions": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no stated position of the party on this question, and its record on religion-and-state arrangements is mostly one of not taking part. The tentative indication is that it has not pushed to change the current arrangements: its MKs did not vote on the civil marriage bill (24 December 2025) or the bills to run public transport on Shabbat (19 November 2025)."
+        },
+        "separate-religion-and-state": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no stated position of the party on this question, and its record on religion-and-state arrangements is mostly one of not taking part. The tentative indication is that it has not pushed to change the current arrangements: its MKs did not vote on the civil marriage bill (24 December 2025) or the bills to run public transport on Shabbat (19 November 2025)."
+        }
+      }
+    }
+  },
+  "points": [
+    {
+      "text": "The party's 2021 coalition agreement required the government to recognize three Bedouin villages in the Negev, which the government legalized on 3 November 2021, and in June 2026 the party co-filed a no-confidence motion over what the motion called the government's plan to expropriate the lands of Bedouin society in the Negev.",
+      "anchor": "other-negev-bedouin"
+    },
+    {
+      "text": "The party's MKs voted in December 2024 for a bill to repeal Basic Law: Israel – the Nation State of the Jewish People, and party leader Mansour Abbas was among the initiators of bills to make Arabic an official language and to add a right to equality to Basic Law: Human Dignity and Liberty.",
+      "anchor": "other-equality"
+    },
+    {
+      "text": "The party's 2021 coalition agreement produced a five-year development plan for Arab, Druze and Circassian communities, approved in October 2021 at about NIS 29.5 billion, and a 2026 review found that 53% of its budget had been allocated through 2024.",
+      "anchor": "other-arab-local-budgets"
+    }
+  ]
+}

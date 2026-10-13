@@ -1,0 +1,208 @@
+{
+  "partyId": "balad",
+  "lang": "en",
+  "issues": {
+    "cost-of-living": {
+      "anchor": "issue-cost-of-living",
+      "options": {
+        "open-market-competition-imports": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different. In June 2021 Balad chair Sami Abu Shehadeh, then an MK, and three other Joint List MKs tabled a bill to cut VAT to 1% on price-supervised basic foods, and its explanation says removing price supervision to encourage competition had led to \"disproportionate\" price rises."
+        },
+        "cut-taxes-and-government-spending": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach centres on higher wages, allowances and state intervention, not on cutting government spending. The Joint List's 2026 economic plan, which is not Balad's alone, does call for cutting VAT to 10% and exempting income up to the average wage from income tax, but also for raising tax on financial gains to 30% and cancelling privatisation programmes."
+        },
+        "active-state-regulation": {
+          "agreement": "partially",
+          "text": "The research places this as a secondary element of the party's position. In June 2021 Balad chair Sami Abu Shehadeh, then an MK, and three other Joint List MKs tabled a bill cutting VAT on price-supervised basic foods, and he co-sponsored a bill capping the gap between senior executives' pay and the median wage."
+        },
+        "direct-support-for-households": {
+          "agreement": "agrees",
+          "text": "This is the party's main documented position. Balad chair Sami Abu Shehadeh, then an MK, co-sponsored bills in May 2021 to link the minimum wage to the consumer price index and in May 2022 to raise it to NIS 7,280 a month, and the Joint List's 2026 plan, which is not Balad's alone, calls for raising the basic allowance to 25% of the average wage."
+        }
+      }
+    },
+    "crime-in-arab-society": {
+      "anchor": "issue-crime-in-arab-society",
+      "options": {
+        "emergency-powers-shin-bet": {
+          "agreement": "disagrees",
+          "text": "The research found no Balad statement on the July 2026 government decision to bring the Shin Bet (Israel's internal security service) into the fight against crime organizations. The party's documented approach is different: the Joint List's 2026 plan proposes a development plan for Arab society and stronger police investigation units, and does not mention the Shin Bet."
+        },
+        "more-police-resources-normal-law": {
+          "agreement": "partially",
+          "text": "The research places this as a secondary element of the party's position. In May 2021 Balad chair Sami Abu Shehadeh, then an MK, joined MKs from Yesh Atid, Ta'al and Ra'am in a bill on keeping suspects in serious illegal-weapons cases in custody until trial ends, and the Joint List's 2026 plan proposes stronger police investigation units and action against illegal weapons."
+        },
+        "invest-in-arab-communities-first": {
+          "agreement": "agrees",
+          "text": "This is the party's main documented position. The Joint List's 2026 plan to eradicate organised crime, which is not Balad's alone, proposes a new development plan for Arab society, and in 2021 Balad chair Sami Abu Shehadeh, then an MK, co-sponsored bills on Arab representation on planning bodies and a new city on state land in the north for Arab citizens."
+        }
+      }
+    },
+    "gaza": {
+      "anchor": "issue-gaza",
+      "options": {
+        "resume-fighting-full-control": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is the opposite. In April 2024 Balad chair Sami Abu Shehadeh said \"We are against the war\" and urged the United States to tell Israel \"to stop the war now\", and the Joint List's 2026 position, as reported on 7 October 2026, demands a complete halt to military operations in Gaza and the withdrawal of all troops."
+        },
+        "hold-positions-disarmament-first": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is different. In April 2024 Balad chair Sami Abu Shehadeh urged the United States to tell Israel \"to stop the war now\", and the Joint List's 2026 position, as reported on 7 October 2026, demands the withdrawal of all troops from Gaza and the lifting of the blockade."
+        },
+        "advance-international-arrangement": {
+          "agreement": "disagrees",
+          "text": "The party rejected the US plan as drafted. In October 2025 Balad chair Sami Abu Shehadeh called the Trump–Netanyahu plan for Gaza \"simply racist, ugly and very humiliating\" because, he said, the Palestinians and their leadership had no part in shaping it, and the Joint List's 2026 position, as reported on 7 October 2026, demands the withdrawal of all troops from Gaza."
+        },
+        "end-war-full-withdrawal": {
+          "agreement": "agrees",
+          "text": "This is the party's documented position, based on statements. In April 2024 Balad chair Sami Abu Shehadeh said \"We are against the war\" and urged the United States to tell Israel \"to stop the war now\", and the Joint List's 2026 position, as reported on 7 October 2026, demands a complete halt to military operations, the withdrawal of all troops and the lifting of the blockade."
+        },
+        "defeat-hamas-then-security-control": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is the opposite. In April 2024 Balad chair Sami Abu Shehadeh said \"We are against the war\" and urged the United States to tell Israel \"to stop the war now\", and the Joint List's 2026 position, as reported on 7 October 2026, demands the withdrawal of all troops from Gaza."
+        }
+      }
+    },
+    "haredi-enlistment": {
+      "anchor": "issue-haredi-enlistment",
+      "options": {
+        "anchor-torah-study-exemption": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no Balad statement on whether Haredi yeshiva students should be required to serve, so the party's position can't be compared with your answer. Its only, tentative indication points to voluntary service for all: a July 2026 statement that Arab citizens' rights \"may not be linked to service\"."
+        },
+        "gradual-targets-by-agreement": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no Balad statement on whether Haredi yeshiva students should serve; its only, tentative indication, a July 2026 statement on Arab citizens' rights, points to voluntary service for all. Balad chair Sami Abu Shehadeh, then an opposition MK, voted against a government bill setting enlistment targets on 17 January 2022, which the research says does not by itself show a position."
+        },
+        "universal-service-with-sanctions": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no Balad statement on whether Haredi yeshiva students should be required to serve, so the party's position can't be compared with your answer. Its only, tentative indication points to voluntary service for all: a July 2026 statement that Arab citizens' rights \"may not be linked to service\"."
+        },
+        "voluntary-service-for-all": {
+          "agreement": "partially",
+          "text": "The research places the party closest to your answer, but only tentatively, on indirect evidence. Balad's July 2026 statement said Arab citizens' rights \"may not be linked to service or to a declaration of political loyalty\", but it concerns Arab citizens, not Haredim, and no statement on Haredi service was found."
+        }
+      }
+    },
+    "housing": {
+      "anchor": "issue-housing",
+      "options": {
+        "speed-up-planning-and-construction": {
+          "agreement": "agrees",
+          "text": "This is the party's main documented position. In June 2021 Balad chair Sami Abu Shehadeh, then an MK, co-sponsored a bill for a new city on state land in the Northern District for Arab citizens and a bill to repeal the 2017 Kaminitz amendment on building without permits, and the Joint List's 2026 plan calls for large-scale building of homes by government companies."
+        },
+        "state-led-affordable-rental": {
+          "agreement": "partially",
+          "text": "The research places this as a secondary element of the party's position. The Joint List's 2026 economic plan, which is not Balad's alone, calls for public housing, rent capped at 20% of a household's net income and large-scale building of homes for rent or discounted sale by government companies."
+        },
+        "direct-help-for-buyers": {
+          "agreement": "disagrees",
+          "text": "The party's documented focus is different: land and planning for Arab towns, state-built housing and rent caps. The Joint List's 2026 plan does also include a state mortgage bank with interest-free mortgages for first-time buyers."
+        },
+        "develop-periphery-and-transport": {
+          "agreement": "disagrees",
+          "text": "The party's documented housing record centres on housing shortages in Arab towns, such as a June 2021 bill for a new city for Arab citizens and a bill on Arab representation on planning bodies, together with rent regulation, rather than on transport and jobs outside the Tel Aviv area."
+        }
+      }
+    },
+    "iran-and-regional-security": {
+      "anchor": "issue-iran-and-regional-security",
+      "options": {
+        "military-pressure-until-threats-removed": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is the opposite. In April 2024 Balad chair Sami Abu Shehadeh warned against \"opening a crazy war with the Iranians\" and said \"We want this to be the last war\", and Balad's September 2026 statement says he holds to \"stopping all wars\"."
+        },
+        "force-plus-us-backed-agreements": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is different. In April 2024 Balad chair Sami Abu Shehadeh said \"We want this to be the last war\", and in October 2023 he criticised normalization deals between Israel and Arab states that, in his view, skip over the Palestinian issue."
+        },
+        "prioritize-ending-multifront-war": {
+          "agreement": "partially",
+          "text": "The party shares your priority on ending the wars, but the research places it at the option that ends all military operations and seeks regional peace through diplomacy. In April 2024 Balad chair Sami Abu Shehadeh said \"We want this to be the last war\", and Balad's September 2026 statement says he holds to \"stopping all wars\"."
+        },
+        "end-military-operations-regional-peace": {
+          "agreement": "agrees",
+          "text": "This is the party's documented position, based on general statements; no statement specific to the 2026 war with Iran or the 2026 ground operation in Lebanon was found. In April 2024 Balad chair Sami Abu Shehadeh said \"We want this to be the last war\", and Balad's September 2026 statement says he holds to \"stopping all wars and achieving a just and comprehensive peace\"."
+        }
+      }
+    },
+    "judea-samaria": {
+      "anchor": "issue-judea-samaria",
+      "options": {
+        "full-sovereignty": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is the opposite. Balad chair Sami Abu Shehadeh, then an MK, voted against bills to apply Israeli sovereignty to Judea and Samaria on 28 July 2021 and 22 June 2022, and the Joint List's 2026 position, as reported on 7 October 2026, includes evacuating all settlements and outposts."
+        },
+        "partial-sovereignty-area-c": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is different. Balad chair Sami Abu Shehadeh, then an MK, voted against bills to apply Israeli sovereignty to Judea and Samaria on 28 July 2021 and 22 June 2022, and the Joint List's 2026 position, as reported on 7 October 2026, includes evacuating all settlements and outposts."
+        },
+        "maintain-current-situation": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is a change, not the current situation. The Joint List's 2026 position, as reported on 7 October 2026, is a Palestinian state on the pre-1967 border with the evacuation of all settlements and outposts, and Balad chair Sami Abu Shehadeh, then an MK, voted against applying Israeli sovereignty on 28 July 2021 and 22 June 2022."
+        },
+        "separation-two-states": {
+          "agreement": "partially",
+          "text": "The party shares your two-state outcome but differs on the border and the settlements. The Joint List's 2026 position, as reported on 7 October 2026, is a Palestinian state on the pre-1967 border with East Jerusalem as its capital and the evacuation of all settlements and outposts."
+        },
+        "two-states-pre-1967-border": {
+          "agreement": "agrees",
+          "text": "This is the party's documented position. Balad chair Sami Abu Shehadeh, then an MK, voted against bills to apply Israeli sovereignty to Judea and Samaria on 28 July 2021 and 22 June 2022, and the Joint List's 2026 position, as reported on 7 October 2026, is a Palestinian state on the pre-1967 border with East Jerusalem as its capital and all settlements evacuated."
+        },
+        "one-equal-state": {
+          "agreement": "partially",
+          "text": "The research places this as a secondary element, since the party's main documented position is two states on the pre-1967 border. Balad chair Sami Abu Shehadeh said in April 2024 \"one-state solution, two-state, I don't care\" as long as all are treated as equal human beings, and on 5 October 2026 that a state can be built \"on the basis of justice and equality for the two peoples\"."
+        }
+      }
+    },
+    "judicial-system": {
+      "anchor": "issue-judicial-system",
+      "options": {
+        "continue-judicial-changes": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is the opposite. In April 2023 Balad chair Sami Abu Shehadeh said of the changes \"We totally oppose this reform\", and on 14 July 2021, as an MK, he voted against an opposition bill to let a law stay valid despite a court ruling, which was defeated 50–62."
+        },
+        "broad-agreed-constitutional-framework": {
+          "agreement": "partially",
+          "text": "The party overlaps with your answer in wanting a constitution-level guarantee of equality, shown by its 2021 \"Basic Law: Equality\" bill, but its closest documented position is to reverse the changes and protect the courts' independence. In April 2023 Balad chair Sami Abu Shehadeh said of the changes \"We totally oppose this reform\"."
+        },
+        "repeal-changes-protect-independence": {
+          "agreement": "agrees",
+          "text": "This is the party's documented position, based on statements and a vote. In April 2023 Balad chair Sami Abu Shehadeh said of the changes \"We totally oppose this reform\", arguing that Arab citizens had relied on the courts, and on 14 July 2021, as an MK, he voted against a bill to let a law stay valid despite a court ruling."
+        },
+        "keep-current-system-stability": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is different. In April 2023 Balad chair Sami Abu Shehadeh said of the changes \"We totally oppose this reform\", while also criticising the protest movement against them and calling for \"a real democracy\" built on equality."
+        }
+      }
+    },
+    "october-7-inquiry": {
+      "anchor": "issue-october-7-inquiry",
+      "unclear": {
+        "text": "The research found no documented position of the party on who should appoint the members of an Israeli commission of inquiry into the October 7 attack, so it can't be compared with your answer."
+      }
+    },
+    "religion-and-state": {
+      "anchor": "issue-religion-and-state",
+      "unclear": {
+        "text": "The research found no documented position of the current party on civil marriage, the Chief Rabbinate, conversion or Shabbat arrangements from 2021 onwards, so it can't be compared with your answer."
+      }
+    }
+  },
+  "points": [
+    {
+      "text": "Balad's core demand is that Israel become \"a state of all its citizens\", and in June 2021 its chair Sami Abu Shehadeh, then an MK, was the sole sponsor of a bill to repeal Basic Law: Israel – the Nation-State of the Jewish People (2018).",
+      "anchor": "other-state-of-all-citizens"
+    },
+    {
+      "text": "On 5–6 July 2021 Balad chair Sami Abu Shehadeh, then an MK, voted with the rest of the Joint List against extending the Citizenship and Entry into Israel Law, which effectively barred residency or citizenship for Palestinians from Judea and Samaria and Gaza who marry Israeli citizens, and the extension failed 59–59.",
+      "anchor": "other-citizenship-law"
+    },
+    {
+      "text": "Balad opposes civilian national service for Arab citizens, calling such programs an attempt to tie their rights to loyalty, and in July 2026 it criticised Ra'am leader Mansour Abbas for promoting them.",
+      "anchor": "other-civil-service"
+    }
+  ]
+}

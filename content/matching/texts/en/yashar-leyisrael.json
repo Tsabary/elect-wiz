@@ -1,0 +1,234 @@
+{
+  "partyId": "yashar-leyisrael",
+  "lang": "en",
+  "issues": {
+    "cost-of-living": {
+      "anchor": "issue-cost-of-living",
+      "options": {
+        "open-market-competition-imports": {
+          "agreement": "agrees",
+          "text": "The party's economic programme promises to cancel import barriers and Israel-only standards that have no justification, open the market to parallel imports, and break the power of concentrated groups in the food and consumer markets. In June 2025 two of its top candidates co-sponsored a bill giving tax benefits to factories that compete in highly concentrated markets; it was stopped."
+        },
+        "cut-taxes-and-government-spending": {
+          "agreement": "partially",
+          "text": "The party's programme proposes lowering income tax, paid for by new taxes on products such as sweetened drinks, and in June 2023 three of the list's top candidates co-sponsored a bill to cut VAT on basic foods to 8% for two years, which did not advance. Its lead cost-of-living measures are import and competition reforms, which your answer does not include."
+        },
+        "active-state-regulation": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: its programme leads with opening the market to imports and competition and cutting red tape for producers and importers. It also promises to break the power of concentrated groups in the food and consumer markets."
+        },
+        "direct-support-for-households": {
+          "agreement": "partially",
+          "text": "The party's platform includes targeted help, such as a 15% pay raise for conscripts, priority for working and serving families in daycare subsidies, and higher old-age allowances for low-income pensioners. This is a secondary element of its position, and most of it is aimed at people who serve rather than at all low-income households."
+        }
+      }
+    },
+    "crime-in-arab-society": {
+      "anchor": "issue-crime-in-arab-society",
+      "options": {
+        "emergency-powers-shin-bet": {
+          "agreement": "disagrees",
+          "text": "The party's internal-security programme promises a national emergency plan built on a larger police force and a dedicated organized-crime enforcement system with its own units, prosecutors and courts. The research found no Yashar statement for or against the government's July 2026 decision to bring in the Shin Bet, or for or against holding suspects without trial."
+        },
+        "more-police-resources-normal-law": {
+          "agreement": "agrees",
+          "text": "The party's internal-security programme promises a multi-year plan to strengthen the police, with a four-year emergency budget for staff, investigators, intelligence and technology, and a dedicated enforcement system against organized crime."
+        },
+        "invest-in-arab-communities-first": {
+          "agreement": "partially",
+          "text": "The party's programme also calls for joint action with the leadership of Arab society, including compulsory civilian service for young Arab citizens, and on 24 June 2026 it presented a plan covering state education and civilian service. This overlaps with your answer, but the core of its position is a police and enforcement build-up."
+        }
+      }
+    },
+    "gaza": {
+      "anchor": "issue-gaza",
+      "options": {
+        "resume-fighting-full-control": {
+          "agreement": "disagrees",
+          "text": "In an interview published on 6 October 2026, party leader Gadi Eisenkot said he would advance President Trump's 20-point postwar plan from a position of strength. The research found no statement supporting renewed full-scale war, encouraging emigration from Gaza, or Israeli settlement in Gaza."
+        },
+        "hold-positions-disarmament-first": {
+          "agreement": "partially",
+          "text": "In an interview published on 6 October 2026, party leader Gadi Eisenkot said Hamas's total disarmament is a condition before governance is restored and Gaza rebuilt, which is close to your answer. He differs in that he would advance the US plan, and the Jerusalem Post reported in early September 2026 that he is open to the Palestinian Authority or another replacement taking over governance."
+        },
+        "advance-international-arrangement": {
+          "agreement": "agrees",
+          "text": "In an interview published on 6 October 2026, party leader Gadi Eisenkot said he would advance President Trump's 20-point postwar plan, with Hamas's total disarmament a condition before governance is restored and Gaza rebuilt. The Jerusalem Post reported in early September 2026 that he supports rebuilding in stages tied to actual disarmament."
+        },
+        "end-war-full-withdrawal": {
+          "agreement": "partially",
+          "text": "In an interview published on 6 October 2026, party leader Gadi Eisenkot said he would advance the US postwar plan, with Hamas's total disarmament a condition before governance is restored and Gaza rebuilt; your answer has rebuilding without restrictions. He shares part of your answer: the Jerusalem Post reported in early September 2026 that he is open to the Palestinian Authority or another replacement taking over governance from Hamas."
+        },
+        "defeat-hamas-then-security-control": {
+          "agreement": "disagrees",
+          "text": "In an interview published on 6 October 2026, party leader Gadi Eisenkot said he would advance President Trump's 20-point postwar plan from a position of strength, and in early September 2026 he was reported to be open to the Palestinian Authority or another replacement governing Gaza. The research found no statement supporting renewed full-scale war."
+        }
+      }
+    },
+    "haredi-enlistment": {
+      "anchor": "issue-haredi-enlistment",
+      "options": {
+        "anchor-torah-study-exemption": {
+          "agreement": "disagrees",
+          "text": "The party's 2026 platform promises a State Service for All law requiring every citizen to serve, with Torah-study deferrals capped at up to 3% of each age group, one year at a time, and loss of state benefits and criminal penalties for those who do not serve. On 9 May 2023 four of the list's top six candidates, then MKs, co-sponsored a bill requiring at least 24 months of service from every citizen."
+        },
+        "gradual-targets-by-agreement": {
+          "agreement": "partially",
+          "text": "The party shares the aim of bringing Haredim into service, and its platform says the IDF would choose conscripts while preserving their way of life. But it relies on a service requirement for every citizen, with loss of state benefits and criminal penalties, and on 11 June 2024 four of the list's top six candidates voted against reviving a 2022 bill that included alternative service tracks and funding cuts for yeshivas that miss enlistment quotas."
+        },
+        "universal-service-with-sanctions": {
+          "agreement": "agrees",
+          "text": "On 9 May 2023 four of the list's top six candidates, then MKs, co-sponsored the Israeli Service bill, requiring at least 24 months of service from every citizen, and the party's 2026 platform promises a State Service for All law. Under the platform, up to 3% of each age group could defer service to study Torah, and those who do not serve would lose state benefits."
+        },
+        "voluntary-service-for-all": {
+          "agreement": "disagrees",
+          "text": "The party's 2026 platform promises a State Service for All law requiring every citizen to serve, with loss of state benefits and criminal penalties for those who do not. On 9 May 2023 four of the list's top six candidates, then MKs, co-sponsored a bill requiring at least 24 months of service."
+        }
+      }
+    },
+    "housing": {
+      "anchor": "issue-housing",
+      "options": {
+        "speed-up-planning-and-construction": {
+          "agreement": "agrees",
+          "text": "The party's economic programme says it will \"flood the market with new apartments\" and tax land that is not being advanced for construction. It also plans to use the need for bomb shelters as an engine for rebuilding older buildings."
+        },
+        "state-led-affordable-rental": {
+          "agreement": "partially",
+          "text": "The party's youth programme promises to stop rents rising and bring them down and to make landlords, not tenants, pay brokerage fees, and reservists would get long-term rental projects. This is a secondary element of its position, which leads with building many more apartments."
+        },
+        "direct-help-for-buyers": {
+          "agreement": "partially",
+          "text": "The party's youth programme promises help for working and serving young couples buying a first home. This is a secondary element of its position, which leads with building many more apartments."
+        },
+        "develop-periphery-and-transport": {
+          "agreement": "partially",
+          "text": "The party's economic programme ties housing to transport, with a fast rail network linking the periphery to the centre and faster metro and light-rail lines in the big cities, and includes urban renewal. This comes alongside its lead approach of building many more apartments, not in place of it."
+        }
+      }
+    },
+    "iran-and-regional-security": {
+      "anchor": "issue-iran-and-regional-security",
+      "options": {
+        "military-pressure-until-threats-removed": {
+          "agreement": "partially",
+          "text": "In October 2026 party leader Gadi Eisenkot proposed a comprehensive plan to destroy Iran's nuclear capability, and in September 2026 he was reported to be willing in some circumstances to return to an eight-kilometre security zone in Lebanon. He differs from your answer in pairing force with arrangements: an intrusive inspection regime for Iran, US and French backing for the Lebanese army against Hezbollah, and wider ties with Arab states."
+        },
+        "force-plus-us-backed-agreements": {
+          "agreement": "agrees",
+          "text": "The party's ten-point plan calls for a new national security doctrine and for Israel to become a regional power while working to expand the circle of peace. In October 2026 party leader Gadi Eisenkot proposed a plan to destroy Iran's nuclear capability coordinated with the United States, and a multi-theater initiative with the American administration."
+        },
+        "prioritize-ending-multifront-war": {
+          "agreement": "disagrees",
+          "text": "In October 2026 party leader Gadi Eisenkot proposed a comprehensive plan to destroy Iran's nuclear capability, and in September 2026 he was reported to want a US commitment to strike any movement of Iran's enriched uranium. The Jerusalem Post also reported his concern over some 2,000 Hezbollah fighters still in southern Lebanon."
+        },
+        "end-military-operations-regional-peace": {
+          "agreement": "disagrees",
+          "text": "In October 2026 party leader Gadi Eisenkot proposed a comprehensive plan to destroy Iran's nuclear capability, and in September 2026 he was reported to be willing in some circumstances to return to an eight-kilometre security zone in Lebanon. The party's regional approach combines this with coordination with the United States."
+        }
+      }
+    },
+    "judea-samaria": {
+      "anchor": "issue-judea-samaria",
+      "options": {
+        "full-sovereignty": {
+          "agreement": "partially",
+          "text": "On 22 January 2025 Eisenkot and three other top candidates, then National Unity MKs, voted for applying Israeli sovereignty to the Jordan Valley, one key area and not all of Judea and Samaria, and Yashar has not said whether it holds that position. The Jewish Chronicle reports that Eisenkot opposes applying sovereignty to Judea and Samaria as a whole."
+        },
+        "partial-sovereignty-area-c": {
+          "agreement": "agrees",
+          "text": "On 22 January 2025 Eisenkot and three other top candidates, then National Unity MKs, voted for applying Israeli sovereignty to the Jordan Valley, and on 22 October 2025 two of them voted for applying it to Ma'ale Adumim. The research calls the evidence mixed: the votes were cast in another party, Yashar has not said whether it holds that position, and Eisenkot's 2026 statements point to keeping the current situation."
+        },
+        "maintain-current-situation": {
+          "agreement": "partially",
+          "text": "In 2026 party leader Gadi Eisenkot said there would be no Palestinian state in the next government, that he supports settlements that conform to Israel's security map and the law, and that Israeli security control would remain, which is close to your answer. But on 22 January 2025 he and three other top candidates voted for applying sovereignty to the Jordan Valley, and he says illegal outposts in Areas A and B would be evacuated immediately."
+        },
+        "separation-two-states": {
+          "agreement": "disagrees",
+          "text": "On 18 July 2024 Farkash-Hacohen and Tropper, two of the party's top candidates, voted for a Knesset resolution opposing the establishment of a Palestinian state west of the Jordan River, and in August 2026 Eisenkot pledged there would be no Palestinian state in the next government. He describes the arrangement he has in mind as autonomy or a state-minus under overriding Israeli security control."
+        },
+        "two-states-pre-1967-border": {
+          "agreement": "disagrees",
+          "text": "On 18 July 2024 Farkash-Hacohen and Tropper, two of the party's top candidates, voted for a Knesset resolution opposing the establishment of a Palestinian state west of the Jordan River, and in August 2026 Eisenkot pledged there would be no Palestinian state in the next government. He supports settlements that conform to Israel's security map and the law."
+        },
+        "one-equal-state": {
+          "agreement": "disagrees",
+          "text": "In October 2026 party leader Gadi Eisenkot described the arrangement he has in mind as autonomy or a state-minus under overriding Israeli security control, with the Palestinian Authority governing the Palestinian population. The Jewish Chronicle reports that he wants to preserve a Jewish majority and avoid a single state."
+        }
+      }
+    },
+    "judicial-system": {
+      "anchor": "issue-judicial-system",
+      "options": {
+        "continue-judicial-changes": {
+          "agreement": "disagrees",
+          "text": "On 20 February and 11 July 2023, four of the list's top six candidates, then MKs, voted against the first readings of the government's changes to the judicial system. In October 2026 Eisenkot said his government would cancel the law changing the Judicial Selection Committee and what he called \"measures aimed at weakening the attorney general\"."
+        },
+        "broad-agreed-constitutional-framework": {
+          "agreement": "partially",
+          "text": "The party's ten-point plan commits to a Basic Law: Legislation and to agreed rules of the game, and the Jewish Chronicle reports it supports a written constitution bringing the Basic Laws together. But its main position is to cancel the recent changes, which your answer does not include."
+        },
+        "repeal-changes-protect-independence": {
+          "agreement": "agrees",
+          "text": "On 20 February and 11 July 2023, four of the list's top six candidates, then MKs, voted against the first readings of the government's changes to the judicial system. In October 2026 Eisenkot said his government would immediately cancel the law changing the Judicial Selection Committee and what he called \"measures aimed at weakening the attorney general\"."
+        },
+        "keep-current-system-stability": {
+          "agreement": "disagrees",
+          "text": "On 20 February and 11 July 2023, four of the list's top six candidates, then MKs, voted against the first readings of the government's changes to the judicial system, and in October 2026 Eisenkot said his government would cancel the law changing the Judicial Selection Committee. The research found no vote or bill in which they supported the changes."
+        }
+      }
+    },
+    "october-7-inquiry": {
+      "anchor": "issue-october-7-inquiry",
+      "options": {
+        "state-commission-under-existing-law": {
+          "agreement": "agrees",
+          "text": "In June 2024 Farkash-Hacohen, the party's No. 3, sponsored a bill for a state commission of inquiry whose chair and members would be appointed by the President of the Supreme Court. In August 2026 Eisenkot presented a draft framework with the same approach, adding consultation with the deputy president, the President of Israel and the Knesset Speaker."
+        },
+        "commission-appointed-by-knesset-balance": {
+          "agreement": "disagrees",
+          "text": "The party's draft framework, presented by Eisenkot in August 2026, has the President of the Supreme Court decide the commission's members after consulting the deputy president, the President of Israel and the Knesset Speaker. Farkash-Hacohen's June 2024 bill took the same approach."
+        },
+        "commission-chosen-by-neutral-mechanism": {
+          "agreement": "disagrees",
+          "text": "The party's draft framework, presented by Eisenkot in August 2026, has the President of the Supreme Court decide the commission's members after consulting the deputy president, the President of Israel and the Knesset Speaker. Farkash-Hacohen's June 2024 bill took the same approach."
+        }
+      }
+    },
+    "religion-and-state": {
+      "anchor": "issue-religion-and-state",
+      "options": {
+        "strengthen-jewish-character": {
+          "agreement": "disagrees",
+          "text": "The party's immigration programme commits to widening the independence of local authorities and communities to shape Shabbat in the public sphere and to institutionalising civil unions. Matan Kahana, now the party's No. 5, led a kashrut reform as Minister of Religious Services, passed on 4 November 2021, that opened kosher certification to private bodies."
+        },
+        "keep-status-quo": {
+          "agreement": "partially",
+          "text": "The party would keep the Rabbinate, which overlaps with your answer, but it wants larger changes than small local ones. Its platform commits to institutionalising civil unions and to letting local authorities and communities shape Shabbat, and in 2021 Matan Kahana, now its No. 5, led a reform opening kosher certification to private bodies."
+        },
+        "more-choice-local-decisions": {
+          "agreement": "agrees",
+          "text": "Matan Kahana, now the party's No. 5, led a kashrut reform as Minister of Religious Services, passed on 4 November 2021, that opened kosher certification to private bodies under Chief Rabbinate standards. The party's platform also commits to institutionalising civil unions and to letting local authorities and communities shape Shabbat."
+        },
+        "separate-religion-and-state": {
+          "agreement": "partially",
+          "text": "The party's platform commits to institutionalising civil unions and to letting local authorities and communities shape Shabbat, and the Jewish Chronicle reports it favours civil marriage. But it would keep the Rabbinate: the 2021 kashrut reform led by Matan Kahana, now its No. 5, kept Chief Rabbinate standards and supervision, which differs from the full separation your answer describes."
+        }
+      }
+    }
+  },
+  "points": [
+    {
+      "text": "The party promises NIS 20 billion over three years for reservists, their families and employers and a cap of 50 reserve days a year, and in November 2024 the coalition voted down a bill led by Eisenkot to make all IDF servicemembers eligible for the Mimadim LeLimudim scholarship fund.",
+      "anchor": "other-reservists-and-soldiers"
+    },
+    {
+      "text": "Eisenkot and Yuli Edelstein sponsored the National Security Strategy Law, which passed its final readings on 10 June 2025 by 19 to 0 and requires the National Security Council to prepare a national security strategy for each new government.",
+      "anchor": "other-national-security-strategy"
+    },
+    {
+      "text": "The party sets a target of one million new immigrants in the first decade of its programme and two million by 2048, with a one-stop absorption body, fast-track recognition of degrees and professional licences, and a hybrid residency status for Israelis returning gradually.",
+      "anchor": "other-aliyah-and-emigration"
+    }
+  ]
+}

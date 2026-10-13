@@ -1,0 +1,234 @@
+{
+  "partyId": "taal",
+  "lang": "en",
+  "issues": {
+    "cost-of-living": {
+      "anchor": "issue-cost-of-living",
+      "options": {
+        "open-market-competition-imports": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different, though the evidence is a Joint List plan reported on 30 September 2026, not a Ta'al platform. That plan calls for a higher minimum wage, rent capped at 20% of household income, higher tax on financial gains and cancelling privatisation programmes."
+        },
+        "cut-taxes-and-government-spending": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: the Joint List plan reported on 30 September 2026, which is not a Ta'al platform, calls for higher wages and allowances, free education, higher tax on financial gains and cancelling privatisation programmes. It does include cutting VAT to 10% and an income tax exemption up to the average wage, and the spending cut it names is in military spending."
+        },
+        "active-state-regulation": {
+          "agreement": "partially",
+          "text": "The Joint List plan reported on 30 September 2026 includes rent capped at 20% of household income, ending tax benefits for large companies and raising tax on financial gains, which overlap with your answer. The research treats this as a secondary element, with higher wages and allowances as the main one."
+        },
+        "direct-support-for-households": {
+          "agreement": "agrees",
+          "text": "That is the party's main recorded position, though the evidence is a Joint List plan reported on 30 September 2026, not a Ta'al platform. The plan calls for a minimum wage of at least 70% of the average wage and a basic allowance of 25% of the average wage, and party leader Ahmad Tibi voted for the 22 June 2026 no-confidence motion on the cost of living."
+        }
+      }
+    },
+    "crime-in-arab-society": {
+      "anchor": "issue-crime-in-arab-society",
+      "options": {
+        "emergency-powers-shin-bet": {
+          "agreement": "disagrees",
+          "text": "In August 2023 party leader Ahmad Tibi said he has always opposed holding someone without trial, \"of Arabs and of Jews alike\", and in February 2024 he voted against the preliminary reading of a bill to expand measures against crime organisations. The research found no statement by Tibi or Ta'al on the July 2026 government decision to bring in the Shin Bet."
+        },
+        "more-police-resources-normal-law": {
+          "agreement": "partially",
+          "text": "The Joint List's crime plan also proposes stronger police investigation units and action against illegal weapons, and party leader Ahmad Tibi opposes holding someone without trial. The research treats this as a secondary element, with investing in Arab communities as the main one."
+        },
+        "invest-in-arab-communities-first": {
+          "agreement": "agrees",
+          "text": "That is the party's main recorded position. The crime plan of the Joint List, on which Ta'al runs, proposes a new five-year development plan for Arab society covering jobs, education, planning, business and infrastructure."
+        }
+      }
+    },
+    "gaza": {
+      "anchor": "issue-gaza",
+      "options": {
+        "resume-fighting-full-control": {
+          "agreement": "disagrees",
+          "text": "The Joint List, on which Ta'al runs, demands, according to a 7 October 2026 review, an immediate and complete halt to military operations in Gaza and full withdrawal, and rejects Israeli control, applying sovereignty or renewed settlement there. In February 2025 party leader Ahmad Tibi called a proposal to move Gaza's population out of the Strip \"dangerous delusions\"."
+        },
+        "hold-positions-disarmament-first": {
+          "agreement": "disagrees",
+          "text": "The Joint List, on which Ta'al runs, demands, according to a 7 October 2026 review, an immediate and complete halt to military operations in Gaza, full withdrawal of all troops and lifting of the blockade. In February 2024 party leader Ahmad Tibi argued that only negotiations, not military pressure, had brought hostages back alive."
+        },
+        "advance-international-arrangement": {
+          "agreement": "partially",
+          "text": "The party shares the idea of international and Arab help: in February 2024 party leader Ahmad Tibi said Gaza should be rebuilt with international and Arab help, with Palestinians choosing their own leaders. It differs on the path: the Joint List, on which Ta'al runs, demands, according to a 7 October 2026 review, an immediate and complete halt and full withdrawal, not a gradual one."
+        },
+        "end-war-full-withdrawal": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position, though the research rests on statements. The Joint List, on which Ta'al runs, demands, according to a 7 October 2026 review, an immediate and complete halt to military operations, full withdrawal and lifting of the blockade, with Gaza's future decided by the Palestinian people as part of a Palestinian state."
+        },
+        "defeat-hamas-then-security-control": {
+          "agreement": "disagrees",
+          "text": "The Joint List, on which Ta'al runs, demands, according to a 7 October 2026 review, an immediate and complete halt to military operations in Gaza and full withdrawal, and rejects Israeli control there. In February 2024 party leader Ahmad Tibi said only Palestinians should choose their leaders, preferably by election."
+        }
+      }
+    },
+    "haredi-enlistment": {
+      "anchor": "issue-haredi-enlistment",
+      "options": {
+        "anchor-torah-study-exemption": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no Ta'al position on whether Haredi yeshiva students should be required to serve. Party leader Ahmad Tibi called the dispute an internal Jewish matter in May 2024 and voted against the basic law declaring Torah study a foundational value on 13 July 2026; the research tentatively places the party closest to no one being forced to serve."
+        },
+        "gradual-targets-by-agreement": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no Ta'al position on whether Haredi yeshiva students should be required to serve. Party leader Ahmad Tibi called the dispute an internal Jewish matter in May 2024 and said in December 2025 he would not vote for the enlistment law, to bring down the government; the research tentatively places the party closest to no one being forced to serve."
+        },
+        "universal-service-with-sanctions": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no Ta'al position on whether Haredi yeshiva students should be required to serve. Party leader Ahmad Tibi called the dispute an internal Jewish matter in May 2024 and said in December 2025 he would not vote for the enlistment law, to bring down the government; the research tentatively places the party closest to no one being forced to serve."
+        },
+        "voluntary-service-for-all": {
+          "agreement": "partially",
+          "text": "The research places the party closest to your answer, but only tentatively, because it rests on indirect evidence. In February 2026 party leader Ahmad Tibi said he had sponsored a bill on exemption from service for reasons of conscience, and no Ta'al position on whether yeshiva students should be required to serve was found."
+        }
+      }
+    },
+    "housing": {
+      "anchor": "issue-housing",
+      "options": {
+        "speed-up-planning-and-construction": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: the September 2026 plan of the Joint List, on which Ta'al runs, calls for public housing for all who lack housing, rent capped at 20% of household income and large-scale building of rental or discounted homes by government companies. Ta'al's own emphasis, per the research, is on planning and demolitions in Arab communities."
+        },
+        "state-led-affordable-rental": {
+          "agreement": "agrees",
+          "text": "That is the party's closest recorded position. The September 2026 plan of the Joint List, on which Ta'al runs, calls for public housing for all who lack housing, rent capped at 20% of household income and large-scale building of rental or discounted homes by government companies."
+        },
+        "direct-help-for-buyers": {
+          "agreement": "partially",
+          "text": "The September 2026 plan of the Joint List, on which Ta'al runs, includes a state mortgage bank and cancelling mortgage interest for young people and first-time buyers, which overlaps with your answer. Its main elements, though, are public housing and a rent cap at 20% of household income."
+        },
+        "develop-periphery-and-transport": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: the September 2026 plan of the Joint List, on which Ta'al runs, calls for public housing for all who lack housing, rent capped at 20% of household income and building of rental or discounted homes by government companies. Ta'al's own emphasis, per the research, is on planning and demolitions in Arab communities."
+        }
+      }
+    },
+    "iran-and-regional-security": {
+      "anchor": "issue-iran-and-regional-security",
+      "options": {
+        "military-pressure-until-threats-removed": {
+          "agreement": "disagrees",
+          "text": "Asked in February 2026 about an attack on Iran, party leader Ahmad Tibi said \"I'm against wars\" and \"A diplomatic solution is better\", and that he rejects \"war for regime change\". The evidence is statements only."
+        },
+        "force-plus-us-backed-agreements": {
+          "agreement": "disagrees",
+          "text": "Asked in February 2026 about an attack on Iran, party leader Ahmad Tibi said \"I'm against wars\" and \"A diplomatic solution is better\", and he opposed what he called a \"neighbourhood bully\" policy by the government. The evidence is statements only."
+        },
+        "prioritize-ending-multifront-war": {
+          "agreement": "partially",
+          "text": "The party also opposes war and favours diplomacy: in February 2026 party leader Ahmad Tibi said \"I'm against wars\" and \"A diplomatic solution is better\". The research places it closer to ending all military operations and seeking regional peace through diplomacy, on statements only, and found no Ta'al statement on Hezbollah or Lebanon in 2026."
+        },
+        "end-military-operations-regional-peace": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position, on statements only. In February 2026 party leader Ahmad Tibi said \"I'm against wars\", that a diplomatic solution is better, and that he rejects \"war for regime change\"."
+        }
+      }
+    },
+    "judea-samaria": {
+      "anchor": "issue-judea-samaria",
+      "options": {
+        "full-sovereignty": {
+          "agreement": "disagrees",
+          "text": "On 22 October 2025 party leader Ahmad Tibi voted against the preliminary reading of the bill to apply Israeli sovereignty to the settlements in Judea and Samaria, and the Joint List supports a Palestinian state and evacuating all settlements."
+        },
+        "partial-sovereignty-area-c": {
+          "agreement": "disagrees",
+          "text": "On 22 October 2025 party leader Ahmad Tibi voted against the preliminary reading of the bill to apply Israeli sovereignty to the settlements in Judea and Samaria and against the bill to apply it to Ma'ale Adumim. The Joint List supports a Palestinian state and evacuating all settlements."
+        },
+        "maintain-current-situation": {
+          "agreement": "disagrees",
+          "text": "The party supports a Palestinian state: on 18 July 2024 party leader Ahmad Tibi voted against a Knesset resolution opposing one, and on 30 October 2024 for a proposed basic law to recognise one. The Joint List also supports removing checkpoints and evacuating all settlements."
+        },
+        "separation-two-states": {
+          "agreement": "partially",
+          "text": "The party shares two states through negotiation: Joint List chair Jabareen has said the list would push for renewed negotiations toward a Palestinian state alongside Israel. It differs on the border: the Joint List supports the pre-1967 border and evacuating all settlements, not keeping the large settlement blocs."
+        },
+        "two-states-pre-1967-border": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position. According to a 2026 review, the Joint List supports a Palestinian state on the pre-1967 border with East Jerusalem as its capital and evacuating all settlements, and on 22 October 2025 party leader Ahmad Tibi voted against the bill to apply Israeli sovereignty to the settlements."
+        },
+        "one-equal-state": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is two states: the Joint List supports a sovereign Palestinian state alongside Israel on the pre-1967 border, and on 30 October 2024 party leader Ahmad Tibi voted for a proposed basic law to recognise a Palestinian state."
+        }
+      }
+    },
+    "judicial-system": {
+      "anchor": "issue-judicial-system",
+      "options": {
+        "continue-judicial-changes": {
+          "agreement": "disagrees",
+          "text": "Party leader Ahmad Tibi voted against the first reading of the change to how judges are chosen on 20 February 2023, and against the law changing the attorney general's powers at its final reading on 15 July 2026. In March 2023 he said the party firmly opposes the changes to the judicial system."
+        },
+        "broad-agreed-constitutional-framework": {
+          "agreement": "disagrees",
+          "text": "The party's recorded position is opposing the changes rather than a compromise framework: party leader Ahmad Tibi voted against the change to how judges are chosen on 20 February 2023, and against the law changing the attorney general's powers at its final reading on 15 July 2026."
+        },
+        "repeal-changes-protect-independence": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position. Party leader Ahmad Tibi voted against the change to how judges are chosen on 20 February 2023 and against the law changing the attorney general's powers on 15 July 2026, though he has also criticised the Supreme Court's past record on Arab citizens' rights."
+        },
+        "keep-current-system-stability": {
+          "agreement": "disagrees",
+          "text": "Party leader Ahmad Tibi voted against the first reading of the change to how judges are chosen on 20 February 2023, and against the law changing the attorney general's powers at its final reading on 15 July 2026. In March 2023 he said the party firmly opposes the changes and will continue to."
+        }
+      }
+    },
+    "october-7-inquiry": {
+      "anchor": "issue-october-7-inquiry",
+      "options": {
+        "state-commission-under-existing-law": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position: party leader Ahmad Tibi voted for bills to set up a state commission of inquiry into the October 7 attack on 17 July 2024 and 12 November 2025. At the 5 October 2026 campaign launch he said the Joint List would vote right after the election to set one up."
+        },
+        "commission-appointed-by-knesset-balance": {
+          "agreement": "disagrees",
+          "text": "The party supports a state commission of inquiry instead: party leader Ahmad Tibi voted for bills to set one up on 17 July 2024 and 12 November 2025. At the 5 October 2026 campaign launch he said the Joint List would vote right after the election to set one up."
+        },
+        "commission-chosen-by-neutral-mechanism": {
+          "agreement": "disagrees",
+          "text": "The party supports a state commission of inquiry instead: party leader Ahmad Tibi voted for bills to set one up on 17 July 2024 and 12 November 2025. At the 5 October 2026 campaign launch he said the Joint List would vote right after the election to set one up."
+        }
+      }
+    },
+    "religion-and-state": {
+      "anchor": "issue-religion-and-state",
+      "options": {
+        "strengthen-jewish-character": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no published Ta'al position on the Chief Rabbinate, marriage and conversion, or Shabbat arrangements. The only tentative indication is two votes by party leader Ahmad Tibi, against a civil marriage bill on 7 June 2023 and for a Shabbat public transport bill on 19 November 2025, which the research reads as pointing to the status quo and to more choice."
+        },
+        "keep-status-quo": {
+          "agreement": "partially",
+          "text": "The research places the party here only tentatively, on two votes by its one long-serving MK, party leader Ahmad Tibi, and no stated party position. He voted against a civil marriage bill on 7 June 2023, but he also voted for a Shabbat public transport bill on 19 November 2025, which points toward more choice."
+        },
+        "more-choice-local-decisions": {
+          "agreement": "partially",
+          "text": "The research places the party here only tentatively, on two votes by its one long-serving MK, party leader Ahmad Tibi, and no stated party position. He voted for a Shabbat public transport bill on 19 November 2025, but he also voted against a civil marriage bill on 7 June 2023, which is closer to the status quo."
+        },
+        "separate-religion-and-state": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no published Ta'al position on the Chief Rabbinate, marriage and conversion, or Shabbat arrangements. The only tentative indication is two votes by party leader Ahmad Tibi, against a civil marriage bill on 7 June 2023 and for a Shabbat public transport bill on 19 November 2025, which the research reads as pointing to the status quo and to more choice."
+        }
+      }
+    }
+  },
+  "points": [
+    {
+      "text": "On 18 December 2024 party leader Ahmad Tibi voted for a bill to repeal the Basic Law: Israel - the Nation State of the Jewish People (defeated 13-49), and in February 2026 he said he wants to legislate a basic law on equality.",
+      "anchor": "other-arab-citizens-equality"
+    },
+    {
+      "text": "Party leader Ahmad Tibi voted against the bill imposing the death penalty on terrorists at its first reading on 10 November 2025 and at its final reading on 30 March 2026, when it passed 62-48 by the official record.",
+      "anchor": "other-death-penalty"
+    },
+    {
+      "text": "In March 2021 party leader Ahmad Tibi said he and Ta'al oppose pro-LGBT legislation, and on 14 January 2026 he voted against two bills to ban \"conversion therapy\" for minors, which were defeated 36-59 and 37-58.",
+      "anchor": "other-lgbt-rights"
+    }
+  ]
+}

@@ -1,0 +1,234 @@
+{
+  "partyId": "new-economic-party",
+  "lang": "en",
+  "issues": {
+    "cost-of-living": {
+      "anchor": "issue-cost-of-living",
+      "options": {
+        "open-market-competition-imports": {
+          "agreement": "agrees",
+          "text": "The party's current platform calls for removing all customs duties on food and all import quotas, and for declaring exclusive importers monopolies so that competition law applies to them. In September 2026 party leader Prof. Yaron Zelekha said he would \"cancel all import quotas\" and \"break up the exclusive importers\"."
+        },
+        "cut-taxes-and-government-spending": {
+          "agreement": "partially",
+          "text": "The party's current platform proposes cutting VAT from 18% to 17% in the first year and then to 12%, and cutting the top marginal income tax rate from 50% to 40% over five years. The research places these tax cuts alongside the means it names first for the party, opening the market to competition and imports, rather than as the party's lead position."
+        },
+        "active-state-regulation": {
+          "agreement": "disagrees",
+          "text": "The party's main stated means are competition and tax cuts rather than state price supervision, and in September 2026 party leader Prof. Yaron Zelekha said taxing bank profits is not the answer because without competition the cost passes to the public. Its platform does include some regulation, such as declaring exclusive importers monopolies and, in 2021, price supervision of natural gas."
+        },
+        "direct-support-for-households": {
+          "agreement": "disagrees",
+          "text": "The party's main stated means of lowering the cost of living are competition and tax cuts rather than direct help for households. Its platform does include some direct support, such as larger old-age allowances, especially for elderly people below the poverty line, and subsidised daycare."
+        }
+      }
+    },
+    "crime-in-arab-society": {
+      "anchor": "issue-crime-in-arab-society",
+      "options": {
+        "emergency-powers-shin-bet": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no statement by the party or party leader Prof. Yaron Zelekha on the July 2026 government plan to bring the Shin Bet (Israel's internal security service) into the fight against crime organisations, or on holding suspects without trial. The thin evidence, mainly from its 2021 platform, points if anything to a mix of policing under normal law and investment in Arab communities."
+        },
+        "more-police-resources-normal-law": {
+          "agreement": "partially",
+          "text": "The party's 2021 platform, re-filed for 2022, lists under internal security \"eradicating violence in Arab society\" and \"strengthening community policing\". The research places this only tentatively, as the evidence is thin and does not say whether policing or investment in Arab communities comes first."
+        },
+        "invest-in-arab-communities-first": {
+          "agreement": "partially",
+          "text": "The party's 2021 platform, re-filed for 2022, proposes closing gaps between Jewish and non-Jewish communities through differential education budgets and housing projects in Arab and Bedouin communities. The research places this only tentatively, as the evidence is thin and does not say whether investment or policing comes first."
+        }
+      }
+    },
+    "gaza": {
+      "anchor": "issue-gaza",
+      "options": {
+        "resume-fighting-full-control": {
+          "agreement": "partially",
+          "text": "In an August 2025 column party leader Prof. Yaron Zelekha wrote that, as long as Israel did not dismantle by force \"the rest of the terror army\" in Gaza, Hamas would attack again. The research found no position on resettling Gaza or on encouraging emigration from Gaza, and the platform names local control that is not Hamas as one acceptable arrangement."
+        },
+        "hold-positions-disarmament-first": {
+          "agreement": "partially",
+          "text": "The party's current platform opposes \"any withdrawal or concession, even the smallest\" from territories under Israeli control, which your answer shares. The research treats holding positions as a secondary element of the party's position, whose main evidence points to defeating Hamas by force."
+        },
+        "advance-international-arrangement": {
+          "agreement": "disagrees",
+          "text": "The party's documented position centres on defeating Hamas by force and opposing any withdrawal. Its current platform accepts an arrangement run by Arab states or an international body only on conditions, the first being an end to what it describes as incitement in Gaza's schools."
+        },
+        "end-war-full-withdrawal": {
+          "agreement": "disagrees",
+          "text": "The party's current platform says it will oppose \"any withdrawal or concession, even the smallest\" from territories under Israeli control. In an August 2025 column party leader Prof. Yaron Zelekha wrote that Hamas must be dismantled by force or it would attack again."
+        },
+        "defeat-hamas-then-security-control": {
+          "agreement": "agrees",
+          "text": "That is the party's main documented position: in an August 2025 column party leader Prof. Yaron Zelekha wrote that Israel must dismantle Hamas's remaining forces in Gaza by force, and its current platform opposes any withdrawal and names local control that is not Hamas as acceptable. The research found no position on resettling Gaza or on encouraging emigration."
+        }
+      }
+    },
+    "haredi-enlistment": {
+      "anchor": "issue-haredi-enlistment",
+      "options": {
+        "anchor-torah-study-exemption": {
+          "agreement": "disagrees",
+          "text": "The party's current platform says \"the Haredi public must enlist\" and that \"anyone who does not enlist will face personal punishment\", with no state support for institutions where people who have not enlisted study. It caps exemptions at \"at most 2,000 yeshiva students\"."
+        },
+        "gradual-targets-by-agreement": {
+          "agreement": "partially",
+          "text": "Like your answer, the party ties state funding to enlistment, and party leader Prof. Yaron Zelekha said in September 2026 that its list would offer extensive rewards to those who serve. It differs in that its current platform requires Haredim to enlist \"exactly as\" others do, with personal punishment for those who do not, rather than yearly targets."
+        },
+        "universal-service-with-sanctions": {
+          "agreement": "agrees",
+          "text": "The party's current platform says \"the Haredi public must enlist\", limits exemptions to \"at most 2,000 yeshiva students\", and says anyone who does not enlist \"will face personal punishment\" and should receive no state allowances or benefits. In September 2026 party leader Prof. Yaron Zelekha called for \"a full enlistment law for everyone\"."
+        },
+        "voluntary-service-for-all": {
+          "agreement": "disagrees",
+          "text": "The party's current platform says \"the Haredi public must enlist\" and that \"anyone who does not enlist will face personal punishment\". It shares incentives with your answer only in part: party leader Prof. Yaron Zelekha said in September 2026 that its list would offer extensive rewards to those who serve."
+        }
+      }
+    },
+    "housing": {
+      "anchor": "issue-housing",
+      "options": {
+        "speed-up-planning-and-construction": {
+          "agreement": "disagrees",
+          "text": "The party's current platform aims to lower home prices through faster economic growth that draws investors out of the housing market. In December 2024 party leader Prof. Yaron Zelekha wrote that the claim that \"not enough is being built\" is a \"spin by interested parties\"."
+        },
+        "state-led-affordable-rental": {
+          "agreement": "partially",
+          "text": "The party's platform proposes transferring public-housing apartments to about 60,000 families who have lived in them for decades and increasing rent assistance, and in April 2026 party leader Prof. Yaron Zelekha criticised the 2026 budget for lacking \"a fair rent law\". The research treats these as secondary to the party's main housing argument about growth and competition."
+        },
+        "direct-help-for-buyers": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no documented party position on grants or larger mortgages for buyers. The party's current platform says programmes such as \"zero VAT\" and \"Mechir LaMishtaken\" (the government's discounted-price apartment programme) failed to lower prices; the party's secondary housing proposals point to developing the periphery and transport and, in part, to state-led housing support."
+        },
+        "develop-periphery-and-transport": {
+          "agreement": "partially",
+          "text": "The party's 2021 platform supported housing projects and urban renewal in the periphery, and in April 2026 party leader Prof. Yaron Zelekha proposed a plan for the north including a high-speed rail line to the centre. The research treats this as secondary to the party's main housing argument about growth and competition."
+        }
+      }
+    },
+    "iran-and-regional-security": {
+      "anchor": "issue-iran-and-regional-security",
+      "options": {
+        "military-pressure-until-threats-removed": {
+          "agreement": "partially",
+          "text": "The research places the party closest to this option only tentatively, and for Iran only: it rests on a June 2026 column by party leader Prof. Yaron Zelekha calling for continued \"surgical\" strikes on people building a nuclear bomb, \"even if we are left alone\", alongside covert economic pressure. No position on Hezbollah or Lebanon was found."
+        },
+        "force-plus-us-backed-agreements": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no documented party position on pairing military pressure with US-backed deals. In a June 2026 column party leader Prof. Yaron Zelekha wrote that the US-brokered ceasefire with Iran was signed \"behind Israel's back\"; the tentative indication points to continued pressure on Iran."
+        },
+        "prioritize-ending-multifront-war": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no documented party position on ending the fighting on all fronts first. The evidence is limited to columns by party leader Prof. Yaron Zelekha, and its tentative indication points to continued pressure on Iran, including \"surgical\" strikes."
+        },
+        "end-military-operations-regional-peace": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no documented party position on ending all military operations or on withdrawing from Lebanon, and no statement on Hezbollah or the 2026 ground operation in southern Lebanon. The tentative indication, from columns by party leader Prof. Yaron Zelekha, points to continued pressure on Iran."
+        }
+      }
+    },
+    "judea-samaria": {
+      "anchor": "issue-judea-samaria",
+      "options": {
+        "full-sovereignty": {
+          "agreement": "disagrees",
+          "text": "The research places the party on a different option, keeping the current situation: its current platform opposes a Palestinian state and any withdrawal, supports strengthening Jewish settlement in Judea and Samaria, and demands that the Palestinian Authority reform its school system. No platform clause or statement on applying Israeli sovereignty to all or part of Judea and Samaria was found."
+        },
+        "partial-sovereignty-area-c": {
+          "agreement": "partially",
+          "text": "Like your answer, the party's current platform opposes a Palestinian state and supports strengthening Jewish settlement in Judea and Samaria. The research found no platform clause or statement on applying Israeli sovereignty, so it cannot confirm or exclude that step."
+        },
+        "maintain-current-situation": {
+          "agreement": "agrees",
+          "text": "The party's current platform opposes the establishment of a Palestinian state and \"any withdrawal or concession, even the smallest\", and says it will support strengthening Jewish settlement in Judea and Samaria. The research found no platform clause or statement on applying Israeli sovereignty."
+        },
+        "separation-two-states": {
+          "agreement": "disagrees",
+          "text": "The party's current platform says it will oppose the establishment of a Palestinian state and \"any withdrawal or concession, even the smallest\" from territories under Israeli control. It also supports strengthening Jewish settlement in Judea and Samaria."
+        },
+        "two-states-pre-1967-border": {
+          "agreement": "disagrees",
+          "text": "The party's current platform says it will oppose the establishment of a Palestinian state and \"any withdrawal or concession, even the smallest\" from territories under Israeli control. It supports strengthening Jewish settlement in Judea and Samaria, not evacuating settlements."
+        },
+        "one-equal-state": {
+          "agreement": "disagrees",
+          "text": "The research places the party on keeping the current situation while strengthening settlements, not on one state with equal rights for everyone between the Jordan River and the sea. Its current platform opposes the establishment of a Palestinian state and \"any withdrawal or concession, even the smallest\", and supports strengthening Jewish settlement in Judea and Samaria."
+        }
+      }
+    },
+    "judicial-system": {
+      "anchor": "issue-judicial-system",
+      "options": {
+        "continue-judicial-changes": {
+          "agreement": "disagrees",
+          "text": "In remarks to the Knesset Constitution, Law and Justice Committee on 31 January 2023, published by the party, party leader Prof. Yaron Zelekha said he did not support committee chair MK Simcha Rothman's bill giving the government full control of judicial appointments. He said he \"strongly opposes\" Rothman's bill, which he said would remove the courts' involvement in legislation, and called for \"broad agreement\"."
+        },
+        "broad-agreed-constitutional-framework": {
+          "agreement": "agrees",
+          "text": "That is the party's documented position: in remarks to the Knesset Constitution, Law and Justice Committee on 31 January 2023, published by the party, party leader Prof. Yaron Zelekha called for \"broad agreement\" on any change, with a limited, mutual override mechanism and a more balanced judicial-selection committee. No statement on the 2025 judicial-selection law was found."
+        },
+        "repeal-changes-protect-independence": {
+          "agreement": "disagrees",
+          "text": "In remarks to the Knesset Constitution, Law and Justice Committee on 31 January 2023, published by the party, party leader Prof. Yaron Zelekha said he supported changing the system as it then stood, which he said had not produced judges representing all parts of society, by \"broad agreement\". No statement on the 2025 judicial-selection law, which your answer would reverse, was found."
+        },
+        "keep-current-system-stability": {
+          "agreement": "disagrees",
+          "text": "In remarks to the Knesset Constitution, Law and Justice Committee on 31 January 2023, published by the party, party leader Prof. Yaron Zelekha said the system as it then stood should be changed by \"broad agreement\", and proposed a mutual override mechanism and a more balanced judicial-selection committee. No statement on the 2025 judicial-selection law, which your answer would keep, was found."
+        }
+      }
+    },
+    "october-7-inquiry": {
+      "anchor": "issue-october-7-inquiry",
+      "options": {
+        "state-commission-under-existing-law": {
+          "agreement": "disagrees",
+          "text": "In an interview published in September 2026, party leader Prof. Yaron Zelekha said he wants a state commission of inquiry with strong powers but \"I do not trust the President of the Supreme Court to appoint the members of this commission\", and that \"another constellation\" is needed."
+        },
+        "commission-appointed-by-knesset-balance": {
+          "agreement": "partially",
+          "text": "Like your answer, party leader Prof. Yaron Zelekha rejected appointment by the Supreme Court president in an interview published in September 2026. The research places the party's position on members chosen by a mechanism no political side controls, which he did not specify, rather than on appointment by the Knesset."
+        },
+        "commission-chosen-by-neutral-mechanism": {
+          "agreement": "agrees",
+          "text": "That is the party's documented position: in an interview published in September 2026, party leader Prof. Yaron Zelekha said a state commission of inquiry with strong powers should have members \"the whole people of Israel\" accepts, not appointed by the Supreme Court president. He did not specify the mechanism, and no formal party document was found."
+        }
+      }
+    },
+    "religion-and-state": {
+      "anchor": "issue-religion-and-state",
+      "options": {
+        "strengthen-jewish-character": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no documented party position on a bigger role for Jewish religious law in running the state. The party's published positions are limited to kashrut, Haredi education and some 2021 platform items, and its tentative indication favours keeping the Rabbinate while allowing alternatives."
+        },
+        "keep-status-quo": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no documented party position on keeping current arrangements as they are, and no position on civil marriage, conversion, Shabbat public transport or the Chief Rabbinate's role in marriage. The tentative indication favours keeping the Rabbinate while allowing alternatives."
+        },
+        "more-choice-local-decisions": {
+          "agreement": "partially",
+          "text": "The party's platform calls for privatising kashrut certification so that any rabbi certified as a rabbi can provide it under state supervision, which shares part of your answer. It opens certification to such rabbis rather than to non-Orthodox bodies, and no position on civil marriage, conversion or Shabbat public transport was found."
+        },
+        "separate-religion-and-state": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no documented party position on separating religion and state, and no position on civil marriage or Shabbat public transport; neither the platform nor the women's page proposes civil marriage. The tentative indication favours keeping the Rabbinate while allowing alternatives."
+        }
+      }
+    }
+  },
+  "points": [
+    {
+      "text": "The party's platform calls for declaring a climate emergency, with renewable-energy targets of 30% of electricity by 2030, 70% by 2040 and 100% by 2050 and a NIS 10 billion climate fund, and supports banning hunting.",
+      "anchor": "other-environment-animals"
+    },
+    {
+      "text": "Party leader Prof. Yaron Zelekha supports workers' right to organise but distinguishes committees in competitive companies from those in monopolies such as Israel Railways, Ashdod Port and the Airports Authority, which he says can hold the public hostage.",
+      "anchor": "other-labour"
+    },
+    {
+      "text": "The party's platform proposes freezing the accrual of new rights under budgetary (state-funded) pensions and moving expensive infrastructure projects from government companies to joint management with the private sector.",
+      "anchor": "other-taxes-and-budget"
+    }
+  ]
+}
