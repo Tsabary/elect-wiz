@@ -257,3 +257,32 @@ Author flags reviewed, no change needed:
 - Other avoid.he terms appear only inside attributed quotes whose English counterpart is quoted: "מדינת טרור ערבית" ("Arab terror state"), "ועדה... מוטה" ("biased commission"), and "ממלכתית-לאומית" / "ועדת חקירה לאומית" (the party's words). There is no "זמני/זמנית" for "tentative": the "זמני" forms present translate "temporary/temporarily". There is no "נחקר/נחקרה/שנחקרו".
 - Names: the Hebrew forms in the registry are used (סמוטריץ', פייגלין, סטרוק, רוטמן, צבי מור, the list and partner-party names). Names not in the registry match the other Hebrew files (איזנקוט, נעם סולברג, יצחק עמית, אריאל קלנר, מאי גולן, אורית סטרוק) or are the standard spellings (וולדיגר, סולומון, סוכות, אוהד טל, איתמר איתם, יצחק זגה, רעות בן חיים, יוסי בכר, יובל קרני, סלים ג'ובראן, ג'יי די ונס). "האיחוד הלאומי – תקומה" uses an en dash where the registry has a hyphen. The quoted registered name keeps the hyphen, and other Hebrew files use the en dash, so this was left as is.
 - Validation: no error names the file ✔ (`pnpm validate:content` passed)
+
+## shas (checked 2026-10-13; EN researchedAsOf 2026-10-07)
+- Hebrew edition by: Stage 5a agent (Sonnet) · Parity check by: Stage 5b agent (Opus, different)
+- Sections/anchors: identical ✔ (9 sections and 18 sub-sections, same order; issue headings match each issue's `he.title`)
+- Citations: the `[n]` sequence matches line by line; Sources lists identical (102 entries, same order and URLs) ✔ · Evidence-tier tags identical on every bullet (32 Action, 22 Statement, 6 Formal commitment, 4 Contradiction, plus Change over time and Background) ✔ · Option IDs on every "closest option(s)" line identical ✔ · No `avoid.he` terms; no "נחקרה/שנחקרו" ✔
+- Claims compared: 351 (344 sentences plus 7 track-record table rows) · Differences found: 45 · Fixed: 45 · Unresolved: 0
+| Anchor | Difference | Resolution |
+|---|---|---|
+| overview | Meaning drift: Deri "who was not a minister" rendered in the present tense ("שאינו שר") inside a past-tense passage | "שלא כיהן כשר" |
+| overview | Naturalness (4): "בהחלטות גדולות"; "חולים בבתי חולים"; a quote rendered "לא סיפקה את החוק" (calque of "failed to deliver"); "major" | "בהכרעות מרכזיות"; "מאושפזים בבתי חולים"; "נכשלה בהעברת החוק" |
+| leadership | Meaning drift (2): "acting Interior/Health Minister" rendered "שר ... בפועל", which reads as "de facto minister" | "ממלא מקום שר הפנים/הבריאות" |
+| leadership | Naturalness (3): "ובכאן דווח" (Kan was unrecognizable as the broadcaster's name); a clumsy "קבעה בניגוד לעמדתו ... כשהשאירה"; a grammar error "חברי הכנסת ותיקים" | "ותאגיד השידור כאן דיווח"; "וגברה על עמדתו של דרעי בשיבוץ אחד לפחות: היא השאירה..."; "הוותיקים" |
+| issue-haredi-enlistment | Meaning drift (3): Bismuth said yeshiva students "should be allowed to" keep studying, rendered "צריכים להמשיך ללמוד"; the bill "increasing enlistment, according to its supporters" rendered as a completed past fact ("הגדילה"); "the law's text ran until" rendered "נוסח החוק היה בתוקף עד" | "יש לאפשר ל..."; "תוך הגדלת הגיוס, לדברי תומכיה"; "לפי נוסחו, החוק היה אמור לחול עד" |
+| issue-religion-and-state | Meaning drift: "ritual-bath attendants" (both genders) rendered with the feminine form only ("בלניות") | "בלנים ובלניות במקוואות" |
+| issue-religion-and-state | Citation/tag: "joint statement" rendered "הצהרה משותפת" inside a Statement-tagged bullet, the same word as the tag | "הודעה משותפת" |
+| issue-religion-and-state | Naturalness: "התנגדו היסטורית" | "התנגדו לאורך השנים" |
+| issue-judicial-system | Meaning drift: the court "struck out" the Shas petition, rendered "דחה" (dismissed) | "מחק" |
+| issue-october-7-inquiry, issue-judea-samaria | Meaning drift (4): failed votes ("failed 51–53", "14–66", "32–56", "8–45") rendered "נכשלה ברוב של X מול Y", which implies the losing side was a majority | "נכשלה, X מול Y" |
+| issue-gaza | Naturalness: misspelled "ויכנס" in a quote | "וייכנס" |
+| issue-iran-and-regional-security | Glossary: Hezbollah gloss "הנתמך בידי איראן" differs from the mandatory glossary wording | "ארגון הטרור בלבנון שאיראן תומכת בו" |
+| issue-judea-samaria, information-availability | Citation/tag (3, raised by the author): "Knesset declaration" / "non-binding declaration" / "a declaration vote" rendered "הצהרה", the same word as the Statement tag, inside an Action bullet and on the closest-option line | "הצעה לגילוי דעת" / "גילוי דעת לא מחייב" / "הצבעה על גילוי דעת" (the closest-option line also kept "co-submitted and voted for": "הייתה בין מגישי ... והצביעה בעדו") |
+| issue-cost-of-living | Naturalness (5): gender error "שר הרווחה מרגי תמכה"; misspelled "בעקרון" (×3, in two quotes and the track-record table) | "תמך"; "בעיקרון" |
+| other-temple-mount | Naturalness: misspelled "ככוונים" | "כמכוונים" |
+| coalition | Meaning drift: Eisenkot's reply on "universal service" rendered "גיוס אוניברסלי" (universal draft) | "שירות אוניברסלי" |
+| legal | Meaning drift: label "Candidate challenge" rendered "ערעור על מועמד" (appeal); the matter was a request to strike a candidate | "בקשה לפסילת מועמד" |
+| legal | Naturalness (13): "Status:" rendered "מעמד:" (×7; it reads as a person's standing; raised by the author); "הורשע בלקיחת שוחד שביצע"; "מושב החורף ... של המושב השלישי" (the Knesset's term is "כנס"); "איבוד שכר" (×2); organization name "הידוש" (garbled transliteration of Hiddush); "קבוצת עתים" | "מצב ההליך:"; "הורשע בשוחד, עבירה שביצע..."; "כנס החורף/הקיץ"; "שלילת שכר"; "חידוש"; "ארגון עתים" |
+- Author's flags reviewed: "שינוי לאורך זמן" and "רקע (לפני 2021):" are faithful to the EN labels; no change needed. "מעמד:" was changed (see above). "הצהרה" for the Knesset declaration was changed to "גילוי דעת" (see above). "גיוס אוניברסלי" was changed to "שירות אוניברסלי" to match the EN "universal service". "באופן זמני" for "temporarily" is correct (it is not "tentative") and was kept. "השיג" is used for "secured", and the council is "מועצת חכמי התורה" throughout.
+- English questioned: none. The Iran "Closest option(s)" line having no [n] is consistent with the Gaza and other summary lines, which restate cited bullets. Yinon Azoulay "from seventh to second place" does not conflict with anything else in the document, and both languages match.
+- Validation: no error names the file ✔ (`pnpm validate:content` exits 0)
