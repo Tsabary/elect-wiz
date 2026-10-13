@@ -31,3 +31,9 @@ Each was checked against the party's English research document, fixed in English
 2. **degel-hatorah, Gafni and Maklev:** fixed in both gaza texts. Now "Moshe Gafni, who led the party until September 2026, and Uri Maklev, a longtime party MK, neither of whom is on its 2026 slate", with the Hebrew to match. Maklev is not called "MK" as of the 2025 statements, because the research doesn't give his post on that date. The research's own gaza section still says the two "led the party"; it was left as it is.
 3. **agudat-yisrael, Tessler as an MK on 11 March 2024:** no change. The research calls him "an MK since April 2019" and records his Knesset votes in 2024 from the per-MK voting records; a deputy minister can remain an MK. The loose phrase is the research's "returned to the Knesset in July 2025".
 4. **agudat-yisrael, Porush:** the research does date his departure (party founded 8 September 2026; "until then both men were inside Agudat Yisrael"), so he was a party MK on both vote dates. The three judicial-system texts now say "the party's three/four MKs at the time", in both languages, to mark that the line-up has since changed.
+
+## Found in the third batch (2026-10-13)
+
+| Party | File | Where | What looks wrong | Found by | Status |
+|---|---|---|---|---|---|
+| amcha-yisrael | `content/research/en/amcha-yisrael.md` | Leadership, candidate No. 13 | The English names No. 13 "Alam Ibrahim", following the party's site; the election committee list (source [1]) gives "אבראהים עלמאדין" (Ibrahim Alamaddin). The Hebrew follows the English. Low weight. | 5b parity check | open, owner to decide (low) |
