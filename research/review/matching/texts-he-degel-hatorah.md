@@ -79,3 +79,17 @@ No other person in either language is named by surname only or without a role ("
 Validation: `CONTENT_CORPUS=real pnpm validate:content` passed ("Content validation passed (active corpus: real)"); no error from the Hebrew file.
 
 Follow-up check (13.10.2026): `git diff HEAD -- content/matching/texts/` shows only the 16 touched Hebrew texts, each with exactly the suggested Hebrew and nothing else; English unchanged. Re-checked by script: skeleton (agreement values, anchors, option IDs, points) still identical; every option text now 1–2 sentences; "ללפחות", "בההסכם", "התנהלות", "ראשוני", "עמדה מפורסמת" no longer occur; "65 מול 51" remains only in continue-judicial-changes, where the English gives it. Validation re-run with `CONTENT_CORPUS=real pnpm validate:content`: passed, no error from the Hebrew file.
+
+## Re-check after owner corrections (e17b4c2, 13.10.2026)
+
+Checked by a Stage 7d parity checker (Opus) that wrote none of these files. Scope: the two gaza texts the owner changed in e17b4c2, re-read in full in both languages against the brief's points 4–10 and the owner's decision 2 of the second set in research/review/hebrew-english-questioned.md. These are the two texts this log said must be redone if the English changed.
+
+| # | Text | Result |
+|---|---|---|
+| R1 | gaza / hold-positions-disarmament-first | passes |
+| R2 | gaza / end-war-full-withdrawal | passes |
+
+- Owner's decision applied in both languages: Gafni alone "led the party until September 2026" ("שעמד בראש המפלגה עד ספטמבר 2026", the "ראש המפלגה" convention), Maklev is "a longtime party MK" ("חבר כנסת ותיק של המפלגה"), not "MK" as of 2025, and "neither of whom is on its 2026 slate" → "ששניהם אינם ברשימתה בבחירות 2026". Roles confirmed against the research's leadership section (Gafni chair until September 2026, replaced by Yaakov Asher; Maklev in the Knesset since 2008; both left off the slate on 5 September 2026).
+- Points 4–10: same facts, year, month, US-backed arrangement and hostages ("חטופים", the glossary term). The hedge is kept: "tentative" → "רמזים זהירים" (not "זמני"), and "no statement by the current chair was found" → "ולא נמצאה הצהרה של היו״ר הנוכחי" ("chair" → "יו״ר"). Read alone, each Hebrew text implies no stance, matching `party-position-unclear`. Nothing from `avoid.he`, nothing loaded. Two sentences each in both languages. No user address. The long subject before "תמכו" mirrors the English and reads naturally enough (note, no change).
+- Structure, agreement values and anchors re-compared by script after e17b4c2: identical; `lang` is `he`.
+- Validation: `CONTENT_CORPUS=real pnpm validate:content` (and the default `pnpm validate:content`) fails with 9–12 errors, all in Hebrew research files still being written by other sessions (content/research/he/eretz-yisrael-shelanu.md, raam.md, shas.md); none concerns content/matching/texts/.
