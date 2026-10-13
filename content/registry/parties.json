@@ -173,7 +173,11 @@
           "accessed": "2026-10-06",
           "authority": "cec"
         }
-      ]
+      ],
+      "platform": {
+        "url": "https://www.piratim.org/",
+        "checkedOn": "2026-10-13"
+      }
     },
     {
       "id": "amcha-yisrael",
@@ -245,7 +249,11 @@
           "accessed": "2026-10-06",
           "authority": "cec"
         }
-      ]
+      ],
+      "platform": {
+        "url": "https://www.ganeden.org.il/platform",
+        "checkedOn": "2026-10-13"
+      }
     },
     {
       "id": "womens-voice",
@@ -629,7 +637,11 @@
           "accessed": "2026-10-06",
           "authority": "cec"
         }
-      ]
+      ],
+      "platform": {
+        "url": "https://www.aniveata.org.il/",
+        "checkedOn": "2026-10-13"
+      }
     },
     {
       "id": "brit-olam",
@@ -677,7 +689,11 @@
           "accessed": "2026-10-06",
           "authority": "cec"
         }
-      ]
+      ],
+      "platform": {
+        "url": "https://hatikun.org.il/",
+        "checkedOn": "2026-10-13"
+      }
     },
     {
       "id": "bible-bloc",
@@ -1161,7 +1177,11 @@
           "accessed": "2026-10-06",
           "authority": "cec"
         }
-      ]
+      ],
+      "platform": {
+        "url": "https://hakahal.co.il/",
+        "checkedOn": "2026-10-13"
+      }
     },
     {
       "id": "degel-hatorah",
@@ -1257,7 +1277,11 @@
           "accessed": "2026-10-06",
           "authority": "cec"
         }
-      ]
+      ],
+      "platform": {
+        "url": "https://www.noamlisrael.org.il/",
+        "checkedOn": "2026-10-13"
+      }
     },
     {
       "id": "national-responsibility",
@@ -1281,7 +1305,11 @@
           "accessed": "2026-10-06",
           "authority": "cec"
         }
-      ]
+      ],
+      "platform": {
+        "url": "https://www.noamlisrael.org.il/",
+        "checkedOn": "2026-10-13"
+      }
     }
   ]
 }
