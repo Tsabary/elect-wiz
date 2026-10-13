@@ -1,0 +1,41 @@
+{
+  "issueId": "cost-of-living",
+  "pairs": [
+    {
+      "a": "open-market-competition-imports",
+      "b": "cut-taxes-and-government-spending",
+      "closeness": 0.6,
+      "reason": "Both rely on markets and less bureaucracy rather than state control; they differ on the lever, opening markets to competition versus cutting taxes and spending."
+    },
+    {
+      "a": "open-market-competition-imports",
+      "b": "active-state-regulation",
+      "closeness": 0.4,
+      "reason": "Both act against the large companies that dominate markets, but one does it through competition and rejects government control while the other supervises prices and taxes profits."
+    },
+    {
+      "a": "open-market-competition-imports",
+      "b": "direct-support-for-households",
+      "closeness": 0.4,
+      "reason": "Neither rules the other out, but one changes how markets work so prices fall over time and the other pays households and raises wages directly."
+    },
+    {
+      "a": "cut-taxes-and-government-spending",
+      "b": "active-state-regulation",
+      "closeness": 0,
+      "reason": "One shrinks the state and its taxes because people spend better than the state; the other has the state step in more, supervise prices and add a tax on profits."
+    },
+    {
+      "a": "cut-taxes-and-government-spending",
+      "b": "direct-support-for-households",
+      "closeness": 0.2,
+      "reason": "Both aim to leave households with more money, but one cuts government spending and the other raises allowances and subsidies."
+    },
+    {
+      "a": "active-state-regulation",
+      "b": "direct-support-for-households",
+      "closeness": 0.6,
+      "reason": "Both have the state act directly to ease prices; they differ on the target, supervising prices and companies versus allowances, wages and subsidies for households."
+    }
+  ]
+}

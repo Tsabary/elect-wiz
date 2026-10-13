@@ -1,0 +1,462 @@
+{
+  "issueId": "housing",
+  "rows": [
+    {
+      "partyId": "agudat-yisrael",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "direct-help-for-buyers",
+          "level": "main"
+        },
+        {
+          "optionId": "speed-up-planning-and-construction",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-housing",
+      "basis": "direct help for buyers stated first, \"together with\" building more through faster planning (rule 5)"
+    },
+    {
+      "partyId": "amcha-yisrael",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "develop-periphery-and-transport",
+          "level": "main"
+        },
+        {
+          "optionId": "direct-help-for-buyers",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-housing",
+      "basis": "\"Mainly\" periphery investment, \"with an element of\" direct help for those who served (rule 5)"
+    },
+    {
+      "partyId": "atid-echad",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "develop-periphery-and-transport",
+          "level": "main"
+        },
+        {
+          "optionId": "direct-help-for-buyers",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-housing",
+      "basis": "develop the periphery stated first, \"together with\" discounted land for young families and reservists (rule 5); caveat: rural and settlement focus, not the urban renewal or transport parts (rule 8)"
+    },
+    {
+      "partyId": "balad",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "speed-up-planning-and-construction",
+          "level": "main"
+        },
+        {
+          "optionId": "state-led-affordable-rental",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-housing",
+      "basis": "plan and build much more stated first, \"together with\" state-built housing and rent regulation (rule 5); caveat: applied especially to Arab communities (rule 8)"
+    },
+    {
+      "partyId": "blue-and-white",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "direct-help-for-buyers",
+          "level": "secondary"
+        },
+        {
+          "optionId": "develop-periphery-and-transport",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-housing",
+      "basis": "\"The limited evidence points to\" direct help for buyers \"together with\" the periphery; \"The evidence is thin\" (rule 2)"
+    },
+    {
+      "partyId": "byachad-bennett",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "speed-up-planning-and-construction",
+          "level": "either"
+        },
+        {
+          "optionId": "state-led-affordable-rental",
+          "level": "either"
+        },
+        {
+          "optionId": "direct-help-for-buyers",
+          "level": "either"
+        },
+        {
+          "optionId": "develop-periphery-and-transport",
+          "level": "either"
+        }
+      ],
+      "anchor": "issue-housing",
+      "basis": "\"The plan combines several options\" and \"does not give one option priority over the others\"; all four named, no first option (nearest rule 4; no rule fits cleanly)"
+    },
+    {
+      "partyId": "chomat-torat-yisrael",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "speed-up-planning-and-construction",
+          "level": "main"
+        },
+        {
+          "optionId": "direct-help-for-buyers",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-housing",
+      "basis": "build much more and faster stated first, \"with support for\" keeping eligibility for discounted-price buyer programmes (rule 5); caveat: framed around the Haredi community (rule 8)"
+    },
+    {
+      "partyId": "degel-hatorah",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "speed-up-planning-and-construction",
+          "level": "main"
+        },
+        {
+          "optionId": "state-led-affordable-rental",
+          "level": "secondary"
+        },
+        {
+          "optionId": "direct-help-for-buyers",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-housing",
+      "basis": "build much more and faster stated first; \"The agreement also includes\" long-term rental funding and mortgage help (rule 5, third option also secondary)"
+    },
+    {
+      "partyId": "eretz-yisrael-shelanu",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "speed-up-planning-and-construction",
+          "level": "main"
+        },
+        {
+          "optionId": "develop-periphery-and-transport",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-housing",
+      "basis": "build more and faster stated first, \"alongside\" developing the periphery (rule 5)"
+    },
+    {
+      "partyId": "hadash",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "state-led-affordable-rental",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-housing",
+      "basis": "one option stated plainly: the state building affordable and public housing and regulating the rental market (rule 3)"
+    },
+    {
+      "partyId": "haredi-public",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "speed-up-planning-and-construction",
+          "level": "main"
+        },
+        {
+          "optionId": "develop-periphery-and-transport",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-housing",
+      "basis": "build much more, faster stated first; transport and employment stress is \"partly like\" develop-periphery-and-transport (rule 5)"
+    },
+    {
+      "partyId": "israel-first",
+      "unclear": true,
+      "held": [],
+      "anchor": "issue-housing",
+      "basis": "No documented position found."
+    },
+    {
+      "partyId": "jewish-national-front",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "develop-periphery-and-transport",
+          "level": "secondary"
+        },
+        {
+          "optionId": "direct-help-for-buyers",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-housing",
+      "basis": "develop areas outside the centre, \"with\" land grants for combat soldiers as direct help; \"The evidence is limited\" (rule 2)"
+    },
+    {
+      "partyId": "likud-party",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "direct-help-for-buyers",
+          "level": "main"
+        },
+        {
+          "optionId": "develop-periphery-and-transport",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-housing",
+      "basis": "direct help for buyers stated first, \"with some emphasis on the periphery\" (rule 5); speeding up planning and state rental named only as \"No specific Likud plan ... was found\" (rule 7)"
+    },
+    {
+      "partyId": "meretz",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "state-led-affordable-rental",
+          "level": "main"
+        },
+        {
+          "optionId": "develop-periphery-and-transport",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-housing",
+      "basis": "state-led affordable rental with rent regulation stated first; urban-renewal and public-transport proposals \"also touch on\" develop-periphery-and-transport (rule 5)"
+    },
+    {
+      "partyId": "national-union-tkuma",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "speed-up-planning-and-construction",
+          "level": "main"
+        },
+        {
+          "optionId": "develop-periphery-and-transport",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-housing",
+      "basis": "building more and faster stated first, \"combined with\" developing the periphery (rule 5); caveat: framed as Jewish settlement in the Negev and Galilee (rule 8)"
+    },
+    {
+      "partyId": "new-economic-party",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "develop-periphery-and-transport",
+          "level": "secondary"
+        },
+        {
+          "optionId": "state-led-affordable-rental",
+          "level": "secondary"
+        }
+      ],
+      "ruledOut": [
+        "speed-up-planning-and-construction"
+      ],
+      "anchor": "issue-housing",
+      "basis": "main argument \"does not match any option closely\"; \"secondary proposals are closest to\" the periphery, \"with some elements of\" state-led support (\"partly\"); \"The evidence is mixed\"; no first option (no rule fits cleanly, closest placed secondary); building more is \"explicitly\" rejected (rule 7)"
+    },
+    {
+      "partyId": "new-hope",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "speed-up-planning-and-construction",
+          "level": "secondary"
+        },
+        {
+          "optionId": "direct-help-for-buyers",
+          "level": "secondary"
+        },
+        {
+          "optionId": "develop-periphery-and-transport",
+          "level": "secondary"
+        },
+        {
+          "optionId": "state-led-affordable-rental",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-housing",
+      "basis": "\"Tentative for the party today\": building more \"together with\" direct help; Golan plan \"also fits\" the periphery; rental steps \"overlap in part\" with state-led rental (rule 2, all secondary); caveat: no proposal to limit private-market rents was found (rule 8)"
+    },
+    {
+      "partyId": "raam",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "speed-up-planning-and-construction",
+          "level": "main"
+        },
+        {
+          "optionId": "direct-help-for-buyers",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-housing",
+      "basis": "speed up planning, permits and state land stated first; first-apartment bill \"also matches\" direct help for buyers (rule 5); caveat: applied mainly to Arab communities (rule 8)"
+    },
+    {
+      "partyId": "shas",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "direct-help-for-buyers",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-housing",
+      "basis": "one option stated plainly: help people buy directly through discounted purchases and grants (rule 3); caveat: much of the record targets the Haredi community (rule 8)"
+    },
+    {
+      "partyId": "taal",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "state-led-affordable-rental",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-housing",
+      "basis": "state-built affordable rental and rent regulation is the only option the line names (rule 3); \"more planning and land for Arab towns\" is mapped to no option: \"none of the options addresses\" it \"directly\""
+    },
+    {
+      "partyId": "the-democrats-party",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "state-led-affordable-rental",
+          "level": "main"
+        },
+        {
+          "optionId": "develop-periphery-and-transport",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-housing",
+      "basis": "state-built long-term affordable rental and rental regulation stated first, \"together with\" investment in the periphery (rule 5)"
+    },
+    {
+      "partyId": "the-reservists",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "direct-help-for-buyers",
+          "level": "secondary"
+        },
+        {
+          "optionId": "develop-periphery-and-transport",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-housing",
+      "basis": "direct help for buyers who served \"combined with\" developing the periphery; \"The evidence is limited\" (rule 2)"
+    },
+    {
+      "partyId": "yashar-leyisrael",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "speed-up-planning-and-construction",
+          "level": "main"
+        },
+        {
+          "optionId": "develop-periphery-and-transport",
+          "level": "secondary"
+        },
+        {
+          "optionId": "state-led-affordable-rental",
+          "level": "secondary"
+        },
+        {
+          "optionId": "direct-help-for-buyers",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-housing",
+      "basis": "build much more, faster stated first, \"combined with\" transport and the periphery; \"secondary elements of rental-market regulation and help for buyers who serve\" (rule 5, further options also secondary; the last two named in words, not by ID)"
+    },
+    {
+      "partyId": "yesh-atid",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "state-led-affordable-rental",
+          "level": "either"
+        },
+        {
+          "optionId": "speed-up-planning-and-construction",
+          "level": "either"
+        },
+        {
+          "optionId": "direct-help-for-buyers",
+          "level": "either"
+        },
+        {
+          "optionId": "develop-periphery-and-transport",
+          "level": "either"
+        }
+      ],
+      "anchor": "issue-housing",
+      "basis": "\"The evidence is mixed across several options\"; the plan \"includes\" all four, no first option stated (nearest rule 4; no rule fits cleanly)"
+    },
+    {
+      "partyId": "yesodot-yisrael",
+      "unclear": true,
+      "held": [],
+      "anchor": "issue-housing",
+      "basis": "No documented position found."
+    },
+    {
+      "partyId": "yisrael-beytenu",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "speed-up-planning-and-construction",
+          "level": "main"
+        },
+        {
+          "optionId": "direct-help-for-buyers",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-housing",
+      "basis": "build much more, faster stated first, \"combined with\" direct help through larger and longer mortgages (rule 5)"
+    },
+    {
+      "partyId": "zehut",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "speed-up-planning-and-construction",
+          "level": "main"
+        },
+        {
+          "optionId": "direct-help-for-buyers",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-housing",
+      "basis": "build much more, faster stated first; \"also has an element of\" direct help to buyers (rule 5); caveat: land distribution to Jewish families with preference for those who served (rule 8); 2014 zero-VAT vote is dated background, not used"
+    }
+  ]
+}

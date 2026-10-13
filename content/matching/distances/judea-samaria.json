@@ -1,0 +1,95 @@
+{
+  "issueId": "judea-samaria",
+  "pairs": [
+    {
+      "a": "full-sovereignty",
+      "b": "partial-sovereignty-area-c",
+      "closeness": 0.6,
+      "reason": "Both apply Israeli sovereignty and keep the settlements; they differ on how much territory, and on dismantling the Palestinian Authority versus leaving Palestinians to run daily affairs in the rest."
+    },
+    {
+      "a": "full-sovereignty",
+      "b": "maintain-current-situation",
+      "closeness": 0.4,
+      "reason": "Both strengthen settlements and rule out a Palestinian state, but they are opposed on each one's defining element: sovereignty over everything against \"without applying Israeli sovereignty\" and no dramatic move."
+    },
+    {
+      "a": "full-sovereignty",
+      "b": "separation-two-states",
+      "closeness": 0.2,
+      "reason": "Both make the large settlement blocs officially part of Israel, but they are opposed on a Palestinian state, on evacuating settlements and on sovereignty over the rest."
+    },
+    {
+      "a": "full-sovereignty",
+      "b": "two-states-pre-1967-border",
+      "closeness": 0,
+      "reason": "One makes the whole area part of Israel and expands the settlements; the other withdraws from all of it, evacuates every settlement and sets up a Palestinian state."
+    },
+    {
+      "a": "full-sovereignty",
+      "b": "one-equal-state",
+      "closeness": 0.2,
+      "reason": "Both put the whole land under one state with no separate Palestinian state, but one does so as the Jewish homeland with expanded settlements and the other with an equal vote for Jews and Palestinians."
+    },
+    {
+      "a": "partial-sovereignty-area-c",
+      "b": "maintain-current-situation",
+      "closeness": 0.6,
+      "reason": "Both keep the settlements and Israeli control with Palestinians running daily affairs and no Palestinian state; they differ on applying sovereignty to part of the area."
+    },
+    {
+      "a": "partial-sovereignty-area-c",
+      "b": "separation-two-states",
+      "closeness": 0.4,
+      "reason": "Both make settlement areas officially Israeli and avoid taking in a large Palestinian population, but one takes about 60% without a Palestinian state and the other agrees a state with land swaps and some evacuation."
+    },
+    {
+      "a": "partial-sovereignty-area-c",
+      "b": "two-states-pre-1967-border",
+      "closeness": 0.2,
+      "reason": "Both leave Palestinians governing themselves in some territory, but one makes the settlements and most of the land Israeli and the other evacuates every settlement and withdraws from all of it."
+    },
+    {
+      "a": "partial-sovereignty-area-c",
+      "b": "one-equal-state",
+      "closeness": 0,
+      "reason": "One applies sovereignty to part of the land so as not to take in the Palestinian population; the other is one state with an equal vote for everyone in all of it."
+    },
+    {
+      "a": "maintain-current-situation",
+      "b": "separation-two-states",
+      "closeness": 0.2,
+      "reason": "Opposed on a Palestinian state, sovereignty over the blocs and evacuating remote settlements; the only shared element is that most settlers stay."
+    },
+    {
+      "a": "maintain-current-situation",
+      "b": "two-states-pre-1967-border",
+      "closeness": 0.2,
+      "reason": "Neither applies Israeli sovereignty to the area, but one strengthens the settlements with no Palestinian state and the other evacuates all of them and withdraws fully."
+    },
+    {
+      "a": "maintain-current-situation",
+      "b": "one-equal-state",
+      "closeness": 0.2,
+      "reason": "Neither divides the land into two states now, but one keeps the present arrangements and avoids any dramatic move while the other replaces them with one state and an equal vote."
+    },
+    {
+      "a": "separation-two-states",
+      "b": "two-states-pre-1967-border",
+      "closeness": 0.6,
+      "reason": "Both set up a Palestinian state by Israeli withdrawal; they differ on the border and the settlements, most settlers staying with land swaps versus every settlement evacuated and East Jerusalem handed over."
+    },
+    {
+      "a": "separation-two-states",
+      "b": "one-equal-state",
+      "closeness": 0.2,
+      "reason": "Both end the present arrangement and give Palestinians full political rights, but one separates into two states to keep a Jewish majority and the other rejects separation for one shared state."
+    },
+    {
+      "a": "two-states-pre-1967-border",
+      "b": "one-equal-state",
+      "closeness": 0.2,
+      "reason": "Opposed on a Palestinian state, the border and the settlements; the one-state option is offered \"instead of two separate states\". Same value as the negotiated two-state option against one equal state."
+    }
+  ]
+}

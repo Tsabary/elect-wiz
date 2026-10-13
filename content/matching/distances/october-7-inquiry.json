@@ -1,0 +1,23 @@
+{
+  "issueId": "october-7-inquiry",
+  "pairs": [
+    {
+      "a": "state-commission-under-existing-law",
+      "b": "commission-appointed-by-knesset-balance",
+      "closeness": 0.2,
+      "reason": "Both want a commission to investigate, but one has the President of the Supreme Court pick the members and the other has the Knesset pick them because that choice would not be seen as fair."
+    },
+    {
+      "a": "state-commission-under-existing-law",
+      "b": "commission-chosen-by-neutral-mechanism",
+      "closeness": 0.4,
+      "reason": "Both want members chosen outside political control, with judges in the role, but one keeps the existing law and the other replaces it with a new method that runs through the Knesset and also covers the legal system."
+    },
+    {
+      "a": "commission-appointed-by-knesset-balance",
+      "b": "commission-chosen-by-neutral-mechanism",
+      "closeness": 0.6,
+      "reason": "Both choose the members through the Knesset in place of the Supreme Court president and aim at trust from both sides; they differ on whether political sides pick the members themselves."
+    }
+  ]
+}

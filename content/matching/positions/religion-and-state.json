@@ -1,0 +1,383 @@
+{
+  "issueId": "religion-and-state",
+  "rows": [
+    {
+      "partyId": "agudat-yisrael",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "strengthen-jewish-character",
+          "level": "main"
+        },
+        {
+          "optionId": "keep-status-quo",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-religion-and-state",
+      "basis": "strengthen-jewish-character stated plainly first; \"much of the signed agreement is framed as keeping and restoring the status quo\" names keep-status-quo second (rule 5)."
+    },
+    {
+      "partyId": "amcha-yisrael",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "keep-status-quo",
+          "level": "secondary"
+        },
+        {
+          "optionId": "more-choice-local-decisions",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-religion-and-state",
+      "basis": "Line opens \"Tentative: the evidence is too general to match one option firmly\"; position \"appears to fall between\" keep-status-quo and more-choice-local-decisions (rule 2). strengthen-jewish-character and separate-religion-and-state are named only to rule them out (rule 7)."
+    },
+    {
+      "partyId": "atid-echad",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "strengthen-jewish-character",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-religion-and-state",
+      "basis": "One option stated plainly, nothing else named (rule 3). Caveat: opposing coercion in private life \"suggests she would not enforce every point of that option by law\" (rule 8)."
+    },
+    {
+      "partyId": "balad",
+      "unclear": true,
+      "held": [],
+      "anchor": "issue-religion-and-state",
+      "basis": "No documented position found."
+    },
+    {
+      "partyId": "blue-and-white",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "more-choice-local-decisions",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-religion-and-state",
+      "basis": "One option stated plainly, resting on the November 2025 and February 2026 votes (rule 3). Caveat: the 2019 platform is older background and no statement on civil marriage since 2021 was found (rule 8)."
+    },
+    {
+      "partyId": "byachad-bennett",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "more-choice-local-decisions",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-religion-and-state",
+      "basis": "One option stated plainly, nothing else named (rule 3)."
+    },
+    {
+      "partyId": "chomat-torat-yisrael",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "strengthen-jewish-character",
+          "level": "main"
+        },
+        {
+          "optionId": "keep-status-quo",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-religion-and-state",
+      "basis": "strengthen-jewish-character stated plainly first; Porush \"has also framed some goals as restoring the status quo\" (keep-status-quo), \"but the party's founding aims go further\" (rule 5)."
+    },
+    {
+      "partyId": "degel-hatorah",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "strengthen-jewish-character",
+          "level": "main"
+        },
+        {
+          "optionId": "keep-status-quo",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-religion-and-state",
+      "basis": "strengthen-jewish-character stated plainly first; \"the party itself frames many of these steps as defending the existing arrangements\" names keep-status-quo second (rule 5). Caveat: no evidence on religious studies in state schools."
+    },
+    {
+      "partyId": "eretz-yisrael-shelanu",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "strengthen-jewish-character",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-religion-and-state",
+      "basis": "One option stated plainly, nothing else named (rule 3). Caveat: \"no specific statements on Shabbat transport, civil marriage or conversion were found\" (rule 8)."
+    },
+    {
+      "partyId": "hadash",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "separate-religion-and-state",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-religion-and-state",
+      "basis": "One option stated plainly, resting on Hadash MKs' votes since 2023 (rule 3). Caveat: the 2013 platform is dated background, and the MKs \"did not all vote the same way on the 2023 civil marriage bill\" (rule 8)."
+    },
+    {
+      "partyId": "haredi-public",
+      "unclear": true,
+      "held": [],
+      "anchor": "issue-religion-and-state",
+      "basis": "No documented position found."
+    },
+    {
+      "partyId": "israel-first",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "more-choice-local-decisions",
+          "level": "secondary"
+        },
+        {
+          "optionId": "keep-status-quo",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-religion-and-state",
+      "basis": "Line says \"the evidence is partial and mixed\", read as calling its own evidence thin (rule 2): more-choice-local-decisions named as closest on a 2026 statement and a 2021 view, while her 2025 votes against Shabbat public transport bills \"are closer to\" keep-status-quo. Nothing covers marriage or kosher certification."
+    },
+    {
+      "partyId": "jewish-national-front",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "strengthen-jewish-character",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-religion-and-state",
+      "basis": "Single option named, but the line says \"this is based on limited evidence\" (rule 2)."
+    },
+    {
+      "partyId": "likud-party",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "keep-status-quo",
+          "level": "main"
+        },
+        {
+          "optionId": "strengthen-jewish-character",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-religion-and-state",
+      "basis": "keep-status-quo stated plainly first; the Torah-study basic law and coalition commitments \"go somewhat towards\" strengthen-jewish-character (rule 5). Caveat: no Likud move to enforce Shabbat by law or add religious law to state law was found."
+    },
+    {
+      "partyId": "meretz",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "separate-religion-and-state",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-religion-and-state",
+      "basis": "One option stated plainly, nothing else named (rule 3)."
+    },
+    {
+      "partyId": "national-union-tkuma",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "strengthen-jewish-character",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-religion-and-state",
+      "basis": "One option stated plainly, nothing else named (rule 3)."
+    },
+    {
+      "partyId": "new-economic-party",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "more-choice-local-decisions",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-religion-and-state",
+      "basis": "Documented positions \"lean toward\" more-choice-local-decisions, and the line says \"the evidence is limited\" (rule 2). Caveat: the kashrut proposal opens certification to certified rabbis rather than to non-Orthodox bodies."
+    },
+    {
+      "partyId": "new-hope",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "keep-status-quo",
+          "level": "main"
+        },
+        {
+          "optionId": "strengthen-jewish-character",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-religion-and-state",
+      "basis": "\"Mostly keeping the current arrangements\" (keep-status-quo) first; the 2026 votes \"lean toward\" strengthen-jewish-character; \"the evidence is mixed\" (rule 5)."
+    },
+    {
+      "partyId": "raam",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "keep-status-quo",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-religion-and-state",
+      "basis": "Line opens \"Tentative\" and says the mapping \"is an inference from votes and absences, not from a stated position\" (rule 2)."
+    },
+    {
+      "partyId": "shas",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "strengthen-jewish-character",
+          "level": "main"
+        },
+        {
+          "optionId": "keep-status-quo",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-religion-and-state",
+      "basis": "strengthen-jewish-character stated plainly first; much of the record is about keeping existing Rabbinate powers, \"which overlaps with\" keep-status-quo (rule 5)."
+    },
+    {
+      "partyId": "taal",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "keep-status-quo",
+          "level": "secondary"
+        },
+        {
+          "optionId": "more-choice-local-decisions",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-religion-and-state",
+      "basis": "Line opens \"Tentative and mixed\": the vote against civil marriage \"is closest to\" keep-status-quo, the vote for Shabbat public transport \"points toward\" more-choice-local-decisions; rests on two votes by one MK and no stated party position (rule 2)."
+    },
+    {
+      "partyId": "the-democrats-party",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "separate-religion-and-state",
+          "level": "main"
+        },
+        {
+          "optionId": "more-choice-local-decisions",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-religion-and-state",
+      "basis": "Platform is \"closest to\" separate-religion-and-state; local decisions on Shabbat arrangements and continued state-funded religious services \"resemble\" more-choice-local-decisions (rule 5)."
+    },
+    {
+      "partyId": "the-reservists",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "more-choice-local-decisions",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-religion-and-state",
+      "basis": "\"based on Hendel's 2021 statements; the party has no current formal position on these questions\": rests on indirect evidence (rule 2)"
+    },
+    {
+      "partyId": "yashar-leyisrael",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "more-choice-local-decisions",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-religion-and-state",
+      "basis": "One option stated plainly, nothing else named (rule 3)."
+    },
+    {
+      "partyId": "yesh-atid",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "more-choice-local-decisions",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-religion-and-state",
+      "basis": "One option stated plainly, nothing else named (rule 3)."
+    },
+    {
+      "partyId": "yesodot-yisrael",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "more-choice-local-decisions",
+          "level": "main"
+        },
+        {
+          "optionId": "keep-status-quo",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-religion-and-state",
+      "basis": "more-choice-local-decisions stated first, resting \"mainly on his votes\"; his statements on settling Shabbat issues by agreement are \"closer to\" keep-status-quo, so \"the evidence is partly mixed\" (rule 5; votes rank above statements)."
+    },
+    {
+      "partyId": "yisrael-beytenu",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "more-choice-local-decisions",
+          "level": "main"
+        },
+        {
+          "optionId": "separate-religion-and-state",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-religion-and-state",
+      "basis": "more-choice-local-decisions stated plainly first; the party \"goes further than that option on marriage\", supporting civil marriage and divorce for everyone, \"which is part of\" separate-religion-and-state (rule 5)."
+    },
+    {
+      "partyId": "zehut",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "more-choice-local-decisions",
+          "level": "main"
+        },
+        {
+          "optionId": "strengthen-jewish-character",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-religion-and-state",
+      "basis": "Line opens \"Mixed\": the 2026 platform is \"closest to\" more-choice-local-decisions, but the same platform \"matches parts of\" strengthen-jewish-character (rule 5). The 2019 kashrut and marriage-registration plan is dated background only."
+    }
+  ]
+}

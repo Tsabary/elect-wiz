@@ -1,0 +1,392 @@
+{
+  "issueId": "judea-samaria",
+  "rows": [
+    {
+      "partyId": "agudat-yisrael",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "partial-sovereignty-area-c",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-judea-samaria",
+      "basis": "Sovereignty over the areas of settlement, \"closest to\" partial-sovereignty-area-c (rule 3); \"no evidence was found for\" the other elements of full-sovereignty (rule 7); caveat: adviser called the main vote a protest against the government (rule 8)"
+    },
+    {
+      "partyId": "amcha-yisrael",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "full-sovereignty",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-judea-samaria",
+      "basis": "Apply sovereignty and expand settlements, no Palestinian state: full-sovereignty stated plainly (rule 3); caveat: has not said what should happen to the Palestinian Authority, Oslo or Areas A and B (rule 8)"
+    },
+    {
+      "partyId": "atid-echad",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "full-sovereignty",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-judea-samaria",
+      "basis": "Full sovereignty, expanding settlements and dismantling the Palestinian Authority; one option, nothing else held (rule 3)"
+    },
+    {
+      "partyId": "balad",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "two-states-pre-1967-border",
+          "level": "main"
+        },
+        {
+          "optionId": "one-equal-state",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-judea-samaria",
+      "basis": "Pre-1967 border stated plainly as first option; leader's 2024 and 2026 statements \"also leave room for\" one-equal-state (rule 5)"
+    },
+    {
+      "partyId": "blue-and-white",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "partial-sovereignty-area-c",
+          "level": "main"
+        },
+        {
+          "optionId": "maintain-current-situation",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-judea-samaria",
+      "basis": "\"The record matches\" sovereignty over key areas only; 2022 \"shrink the conflict\" call and 2025 faction position \"also overlap with\" maintain-current-situation (rule 5)"
+    },
+    {
+      "partyId": "byachad-bennett",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "maintain-current-situation",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-judea-samaria",
+      "basis": "Keep things as they are, no Palestinian state and no sovereignty; statements and record in government \"both match this option\" (rule 3)"
+    },
+    {
+      "partyId": "chomat-torat-yisrael",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "partial-sovereignty-area-c",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-judea-samaria",
+      "basis": "Sovereignty over part of the area, here the main settlement cities (rule 3); \"no evidence was found\" for dismantling the Palestinian Authority, so full-sovereignty not held (rule 7); caveat: faction explained its votes as political protest (rule 8)"
+    },
+    {
+      "partyId": "degel-hatorah",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "maintain-current-situation",
+          "level": "main"
+        }
+      ],
+      "ruledOut": [
+        "partial-sovereignty-area-c",
+        "full-sovereignty"
+      ],
+      "anchor": "issue-judea-samaria",
+      "basis": "Keep things as they are, based on consistent votes against sovereignty bills 2023-2025, stated reason and settlement housing (rule 3); caveat: evidence on a final arrangement is \"otherwise thin\" (rule 8)"
+    },
+    {
+      "partyId": "eretz-yisrael-shelanu",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "full-sovereignty",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-judea-samaria",
+      "basis": "Sovereignty over all of Judea and Samaria and settlement expansion: full-sovereignty (rule 3); caveat: no documented position on dismantling the Palestinian Authority (rule 8)"
+    },
+    {
+      "partyId": "hadash",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "two-states-pre-1967-border",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-judea-samaria",
+      "basis": "Two states on the pre-1967 lines, all settlements evacuated, East Jerusalem as capital; rests on the 2026 Joint List position and votes since 2024 (rule 3)"
+    },
+    {
+      "partyId": "haredi-public",
+      "unclear": true,
+      "held": [],
+      "anchor": "issue-judea-samaria",
+      "basis": "No documented position found."
+    },
+    {
+      "partyId": "israel-first",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "full-sovereignty",
+          "level": "either"
+        },
+        {
+          "optionId": "partial-sovereignty-area-c",
+          "level": "either"
+        }
+      ],
+      "anchor": "issue-judea-samaria",
+      "basis": "Sovereignty over part \"or\" all of the area; statements and vote support sovereignty \"without saying how far\" (rule 4)"
+    },
+    {
+      "partyId": "jewish-national-front",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "full-sovereignty",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-judea-samaria",
+      "basis": "Make all of Judea and Samaria part of Israel and expand settlements: full-sovereignty (rule 3); caveat: no source shows a position on dismantling the Palestinian Authority (rule 8)"
+    },
+    {
+      "partyId": "likud-party",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "maintain-current-situation",
+          "level": "main"
+        },
+        {
+          "optionId": "full-sovereignty",
+          "level": "secondary"
+        },
+        {
+          "optionId": "partial-sovereignty-area-c",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-judea-samaria",
+      "basis": "Maintain-current-situation is first, backed by votes that \"have not followed through\"; platform and rhetoric point to full-sovereignty \"or\" partial-sovereignty-area-c as second element (rule 6, actions over statements)"
+    },
+    {
+      "partyId": "meretz",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "separation-two-states",
+          "level": "main"
+        },
+        {
+          "optionId": "two-states-pre-1967-border",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-judea-samaria",
+      "basis": "Negotiated two states with land swaps stated plainly; shared Jerusalem capital and settlement freeze \"contains elements of\" two-states-pre-1967-border (rule 5)"
+    },
+    {
+      "partyId": "national-union-tkuma",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "full-sovereignty",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-judea-samaria",
+      "basis": "Sovereignty over all of Judea and Samaria, expand settlements, dismantle the Palestinian Authority; one option (rule 3)"
+    },
+    {
+      "partyId": "new-economic-party",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "maintain-current-situation",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-judea-samaria",
+      "basis": "maintain-current-situation stated as closest; the line says full and partial sovereignty \"cannot be confirmed or excluded\", so it does not point to them as closest and they are not held"
+    },
+    {
+      "partyId": "new-hope",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "maintain-current-situation",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-judea-samaria",
+      "basis": "Keep the current situation, no Palestinian state, no sovereignty for now (rule 3); caveat: Sa'ar describes sovereignty as a possible later step coordinated with the United States (rule 8)"
+    },
+    {
+      "partyId": "raam",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "separation-two-states",
+          "level": "either"
+        },
+        {
+          "optionId": "two-states-pre-1967-border",
+          "level": "either"
+        }
+      ],
+      "anchor": "issue-judea-samaria",
+      "basis": "Negotiated two states; \"the evidence does not say whether\" land swaps keeping the blocs or the exact pre-1967 border (rule 4)"
+    },
+    {
+      "partyId": "shas",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "partial-sovereignty-area-c",
+          "level": "main"
+        },
+        {
+          "optionId": "maintain-current-situation",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-judea-samaria",
+      "basis": "\"The evidence is mixed\": non-binding declaration vote \"points to\" partial-sovereignty-area-c (named first); votes against or absent on every binding bill are \"closer to\" maintain-current-situation; both sides are votes, so line order kept (rule 5)"
+    },
+    {
+      "partyId": "taal",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "two-states-pre-1967-border",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-judea-samaria",
+      "basis": "Two states on the pre-1967 border, East Jerusalem as capital, all settlements evacuated; one option (rule 3)"
+    },
+    {
+      "partyId": "the-democrats-party",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "separation-two-states",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-judea-samaria",
+      "basis": "Negotiated two states with the large settlement blocs staying with Israel (rule 3); caveat: rests on statements, the 2026 platform does not say \"two states\" or name a border (rule 8)"
+    },
+    {
+      "partyId": "the-reservists",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "partial-sovereignty-area-c",
+          "level": "main"
+        },
+        {
+          "optionId": "maintain-current-situation",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-judea-samaria",
+      "basis": "Sovereignty over key areas such as the Jordan Valley, \"together with\" continued settlement and army freedom of action, \"elements of\" maintain-current-situation (rule 5)"
+    },
+    {
+      "partyId": "yashar-leyisrael",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "partial-sovereignty-area-c",
+          "level": "main"
+        },
+        {
+          "optionId": "maintain-current-situation",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-judea-samaria",
+      "basis": "\"The evidence is mixed\": votes on record (Action) match partial-sovereignty-area-c, 2026 statements point to maintain-current-situation (rule 5, actions over statements); caveat: votes were cast in another party before Yashar was founded and Yashar has not said whether it holds that position"
+    },
+    {
+      "partyId": "yesh-atid",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "maintain-current-situation",
+          "level": "main"
+        },
+        {
+          "optionId": "partial-sovereignty-area-c",
+          "level": "secondary"
+        },
+        {
+          "optionId": "separation-two-states",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-judea-samaria",
+      "basis": "\"The evidence is mixed\": 2026 statements plus the vote against the comprehensive bill point to maintain-current-situation (named first); votes for Ma'ale Adumim and Jordan Valley point to partial sovereignty; 2022 stated long-term goal was separation-two-states (rule 5, third option secondary)"
+    },
+    {
+      "partyId": "yesodot-yisrael",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "partial-sovereignty-area-c",
+          "level": "main"
+        },
+        {
+          "optionId": "maintain-current-situation",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-judea-samaria",
+      "basis": "\"The evidence is mixed\": votes for sovereignty over key areas point to partial-sovereignty-area-c (named first, actions); reported 2026 remarks and list leader's position are \"closer to\" maintain-current-situation (rule 5, actions over statements)"
+    },
+    {
+      "partyId": "yisrael-beytenu",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "partial-sovereignty-area-c",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-judea-samaria",
+      "basis": "Sovereignty over part of the area with full control of Area C (rule 3); caveat: gives the daily-affairs role to Jordan rather than to the Palestinians themselves (rule 8)"
+    },
+    {
+      "partyId": "zehut",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "full-sovereignty",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-judea-samaria",
+      "basis": "Make all of Judea and Samaria part of Israel, expand settlements, dismantle the Palestinian Authority; one option (rule 3)"
+    }
+  ]
+}

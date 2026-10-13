@@ -1,0 +1,23 @@
+{
+  "issueId": "crime-in-arab-society",
+  "pairs": [
+    {
+      "a": "emergency-powers-shin-bet",
+      "b": "more-police-resources-normal-law",
+      "closeness": 0.4,
+      "reason": "Both answer crime mainly with enforcement, but one says ordinary policing has failed and needs special powers, and the other rules out the Shin Bet and detention without trial."
+    },
+    {
+      "a": "emergency-powers-shin-bet",
+      "b": "invest-in-arab-communities-first",
+      "closeness": 0.2,
+      "reason": "Both treat the crime wave as needing major state action, but one relies on security-service powers and detention without trial and the other on social investment with local leaders."
+    },
+    {
+      "a": "more-police-resources-normal-law",
+      "b": "invest-in-arab-communities-first",
+      "closeness": 0.4,
+      "reason": "Both add state resources under normal law, but one puts them into policing and weapons collection and the other into education, jobs and housing, saying policing alone will not fix it."
+    }
+  ]
+}

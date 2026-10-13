@@ -1,0 +1,41 @@
+{
+  "issueId": "housing",
+  "pairs": [
+    {
+      "a": "speed-up-planning-and-construction",
+      "b": "state-led-affordable-rental",
+      "closeness": 0.4,
+      "reason": "Both want more homes built, but one relies on the market with less bureaucracy and the other on state building, required affordable units and limits on rent."
+    },
+    {
+      "a": "speed-up-planning-and-construction",
+      "b": "direct-help-for-buyers",
+      "closeness": 0.4,
+      "reason": "Neither rules the other out, but one lowers prices by adding supply and the other helps individual buyers pay through discounts, mortgages and grants."
+    },
+    {
+      "a": "speed-up-planning-and-construction",
+      "b": "develop-periphery-and-transport",
+      "closeness": 0.4,
+      "reason": "Neither rules the other out and both change conditions rather than pay households, but one says too few homes are built and the other says demand is crowded into the centre."
+    },
+    {
+      "a": "state-led-affordable-rental",
+      "b": "direct-help-for-buyers",
+      "closeness": 0.6,
+      "reason": "Both have the state provide below-market housing directly to people; they differ on the goal, long-term regulated rental versus home ownership."
+    },
+    {
+      "a": "state-led-affordable-rental",
+      "b": "develop-periphery-and-transport",
+      "closeness": 0.4,
+      "reason": "Both depend on state investment, but one builds and regulates rental housing and the other invests in transport, jobs and renewal outside the centre."
+    },
+    {
+      "a": "direct-help-for-buyers",
+      "b": "develop-periphery-and-transport",
+      "closeness": 0.4,
+      "reason": "Both depend on state money, but one goes to individual buyers as discounts, mortgages and grants and the other to transport, jobs and services in other regions."
+    }
+  ]
+}

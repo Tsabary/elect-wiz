@@ -1,0 +1,357 @@
+{
+  "issueId": "october-7-inquiry",
+  "rows": [
+    {
+      "partyId": "agudat-yisrael",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "commission-appointed-by-knesset-balance",
+          "level": "secondary"
+        }
+      ],
+      "ruledOut": [
+        "state-commission-under-existing-law"
+      ],
+      "anchor": "issue-october-7-inquiry",
+      "basis": "Line calls itself \"tentative\" (rule 2). Votes against a state commission \"rule out\" state-commission-under-existing-law (rule 7); the only option not ruled out is \"the alternative on the table\", commission-appointed-by-knesset-balance. Caveat: MKs \"not recorded as voting for it and the party has stated no preference\". No rule fit cleanly; every line gives at least one held option."
+    },
+    {
+      "partyId": "amcha-yisrael",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "commission-chosen-by-neutral-mechanism",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-october-7-inquiry",
+      "basis": "One option stated plainly, nothing else named (rule 3)."
+    },
+    {
+      "partyId": "atid-echad",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "commission-appointed-by-knesset-balance",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-october-7-inquiry",
+      "basis": "One option stated plainly, \"based on the government decision and coalition bill she is part of, and her recorded vote for that bill\" (rule 3). Caveat: \"Her own statements are limited\" (rule 8); the line rests on an action and does not call itself tentative."
+    },
+    {
+      "partyId": "balad",
+      "unclear": true,
+      "held": [],
+      "anchor": "issue-october-7-inquiry",
+      "basis": "No documented position found."
+    },
+    {
+      "partyId": "blue-and-white",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "state-commission-under-existing-law",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-october-7-inquiry",
+      "basis": "One option stated plainly, nothing else named (rule 3)."
+    },
+    {
+      "partyId": "byachad-bennett",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "state-commission-under-existing-law",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-october-7-inquiry",
+      "basis": "One option stated plainly, nothing else named (rule 3)."
+    },
+    {
+      "partyId": "chomat-torat-yisrael",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "commission-appointed-by-knesset-balance",
+          "level": "secondary"
+        }
+      ],
+      "ruledOut": [
+        "state-commission-under-existing-law"
+      ],
+      "anchor": "issue-october-7-inquiry",
+      "basis": "\"The evidence is thin and mixed\" and \"This line is tentative\" (rule 2); UTJ's reported support for the Kallner bill \"points to\" commission-appointed-by-knesset-balance. State commission named only as a \"bargaining threat\", not as closest; not held."
+    },
+    {
+      "partyId": "degel-hatorah",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "commission-appointed-by-knesset-balance",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-october-7-inquiry",
+      "basis": "One option stated plainly, nothing else named (rule 3)."
+    },
+    {
+      "partyId": "eretz-yisrael-shelanu",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "commission-appointed-by-knesset-balance",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-october-7-inquiry",
+      "basis": "Line calls itself \"an inference from the decisions of the government and coalition the candidates belong to and from their recorded votes\", \"not from anything they said\"; read as resting on indirect evidence (rule 2). \"The candidates have not stated their own positions.\""
+    },
+    {
+      "partyId": "hadash",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "state-commission-under-existing-law",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-october-7-inquiry",
+      "basis": "One option stated plainly (rule 3). Caveat: no detailed statement on the make-up found; \"this rests on the votes\", which are actions (rule 8)."
+    },
+    {
+      "partyId": "haredi-public",
+      "unclear": true,
+      "held": [],
+      "anchor": "issue-october-7-inquiry",
+      "basis": "No documented position found."
+    },
+    {
+      "partyId": "israel-first",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "commission-chosen-by-neutral-mechanism",
+          "level": "main"
+        },
+        {
+          "optionId": "commission-appointed-by-knesset-balance",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-october-7-inquiry",
+      "basis": "First option stated plainly; \"It is also close to\" commission-appointed-by-knesset-balance (rule 5). State commission not held: \"She rejects the Supreme Court president picking the members\" and her 2024 votes for it are set against \"her 2025 and 2026 votes and statements\", which \"do not\" support it (rule 7)."
+    },
+    {
+      "partyId": "jewish-national-front",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "commission-appointed-by-knesset-balance",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-october-7-inquiry",
+      "basis": "One option stated plainly (rule 3). Caveat: \"The cited evidence is mainly statements\", and the position on specific bills \"could not be confirmed from Knesset vote records\" (rule 8)."
+    },
+    {
+      "partyId": "likud-party",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "commission-appointed-by-knesset-balance",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-october-7-inquiry",
+      "basis": "One option stated plainly, nothing else named (rule 3)."
+    },
+    {
+      "partyId": "meretz",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "state-commission-under-existing-law",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-october-7-inquiry",
+      "basis": "\"Tentative\"; \"rests on indirect evidence\" (rule 2). No Meretz position on the October 7 inquiry itself was found."
+    },
+    {
+      "partyId": "national-union-tkuma",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "commission-appointed-by-knesset-balance",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-october-7-inquiry",
+      "basis": "One option stated plainly, nothing else named (rule 3)."
+    },
+    {
+      "partyId": "new-economic-party",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "commission-chosen-by-neutral-mechanism",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-october-7-inquiry",
+      "basis": "One option stated plainly (rule 3). Caveat: \"Zelekha did not specify the mechanism\" (rule 8). Supreme Court president picking the members is named only to rule it out (rule 7)."
+    },
+    {
+      "partyId": "new-hope",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "commission-appointed-by-knesset-balance",
+          "level": "main"
+        },
+        {
+          "optionId": "state-commission-under-existing-law",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-october-7-inquiry",
+      "basis": "\"The evidence is mixed\" (rule 5): \"votes since 2025 are closest to\" commission-appointed-by-knesset-balance, the first and more recent option; \"Its 2024 votes in opposition matched\" state-commission-under-existing-law. Caveat: Elkin objected to a design that lets the coalition pick all members."
+    },
+    {
+      "partyId": "raam",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "state-commission-under-existing-law",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-october-7-inquiry",
+      "basis": "One option stated plainly, nothing else named (rule 3)."
+    },
+    {
+      "partyId": "shas",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "commission-appointed-by-knesset-balance",
+          "level": "main"
+        },
+        {
+          "optionId": "state-commission-under-existing-law",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-october-7-inquiry",
+      "basis": "First option \"based on its MKs' votes against state-commission bills and for the coalition's bill\" (actions); \"Some Shas MKs' January 2025 statements supported\" state-commission-under-existing-law (statements only), so second (rule 5, actions over statements)."
+    },
+    {
+      "partyId": "taal",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "state-commission-under-existing-law",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-october-7-inquiry",
+      "basis": "One option stated plainly, nothing else named (rule 3)."
+    },
+    {
+      "partyId": "the-democrats-party",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "state-commission-under-existing-law",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-october-7-inquiry",
+      "basis": "One option stated plainly, nothing else named (rule 3)."
+    },
+    {
+      "partyId": "the-reservists",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "state-commission-under-existing-law",
+          "level": "main"
+        },
+        {
+          "optionId": "commission-chosen-by-neutral-mechanism",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-october-7-inquiry",
+      "basis": "First option stated plainly; emphasis on a broadly agreed make-up \"is an element of\" commission-chosen-by-neutral-mechanism (rule 5)."
+    },
+    {
+      "partyId": "yashar-leyisrael",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "state-commission-under-existing-law",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-october-7-inquiry",
+      "basis": "One option stated plainly (rule 3). Caveat: \"adds a consultation step with the President of Israel and the Knesset Speaker\" (rule 8)."
+    },
+    {
+      "partyId": "yesh-atid",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "state-commission-under-existing-law",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-october-7-inquiry",
+      "basis": "One option stated plainly, nothing else named (rule 3)."
+    },
+    {
+      "partyId": "yesodot-yisrael",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "state-commission-under-existing-law",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-october-7-inquiry",
+      "basis": "One option stated plainly, nothing else named (rule 3)."
+    },
+    {
+      "partyId": "yisrael-beytenu",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "state-commission-under-existing-law",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-october-7-inquiry",
+      "basis": "One option stated plainly, nothing else named (rule 3)."
+    },
+    {
+      "partyId": "zehut",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "commission-appointed-by-knesset-balance",
+          "level": "either"
+        },
+        {
+          "optionId": "commission-chosen-by-neutral-mechanism",
+          "level": "either"
+        }
+      ],
+      "anchor": "issue-october-7-inquiry",
+      "basis": "Statements \"rule out\" state-commission-under-existing-law (rule 7) and \"do not specify whether\" the Knesset or a neutral mechanism should pick the members (rule 4). Caveat: agreement with the Likud's position \"leans toward the Knesset-appointed model, but the evidence is limited to statements\"; no first option is stated clearly, so no main."
+    }
+  ]
+}

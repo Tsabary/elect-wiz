@@ -1,0 +1,380 @@
+{
+  "issueId": "judicial-system",
+  "rows": [
+    {
+      "partyId": "agudat-yisrael",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "continue-judicial-changes",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-judicial-system",
+      "basis": "One option stated plainly, nothing else named (rule 3). Line says it rests on the coalition agreement and recorded votes, including current candidates Goldknopf and Tessler in 2025 and 2026; the quoted statements are by Eichler, who no longer runs."
+    },
+    {
+      "partyId": "amcha-yisrael",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "continue-judicial-changes",
+          "level": "main"
+        },
+        {
+          "optionId": "broad-agreed-constitutional-framework",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-judicial-system",
+      "basis": "First option stated plainly; its call to define each branch's powers in law \"also touches on\" broad-agreed-constitutional-framework (rule 5). Caveat: the party's own proposals \"differ in detail from the changes passed since 2023\"."
+    },
+    {
+      "partyId": "atid-echad",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "continue-judicial-changes",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-judicial-system",
+      "basis": "One option stated plainly, nothing else named (rule 3)."
+    },
+    {
+      "partyId": "balad",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "repeal-changes-protect-independence",
+          "level": "main"
+        },
+        {
+          "optionId": "broad-agreed-constitutional-framework",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-judicial-system",
+      "basis": "First option stated plainly, \"rests on the chair's 2023 statements\"; the wish for a constitution-level guarantee of equality (2021 bill) \"overlaps with\" broad-agreed-constitutional-framework (rule 5)."
+    },
+    {
+      "partyId": "blue-and-white",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "broad-agreed-constitutional-framework",
+          "level": "main"
+        },
+        {
+          "optionId": "repeal-changes-protect-independence",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-judicial-system",
+      "basis": "First option stated plainly; votes against the attorney-general bills and the statement that the politicization of the committee \"will be cancelled\" \"also match\" repeal-changes-protect-independence (rule 5). Followed the line's order although the second option is the one backed by votes."
+    },
+    {
+      "partyId": "byachad-bennett",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "broad-agreed-constitutional-framework",
+          "level": "main"
+        },
+        {
+          "optionId": "repeal-changes-protect-independence",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-judicial-system",
+      "basis": "\"Combines\" the agreed framework \"with\" repealing the new law on choosing judges; \"the constitutional framework is the main theme\" so it is first (rule 5)."
+    },
+    {
+      "partyId": "chomat-torat-yisrael",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "continue-judicial-changes",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-judicial-system",
+      "basis": "One option stated plainly, nothing else named (rule 3)."
+    },
+    {
+      "partyId": "degel-hatorah",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "continue-judicial-changes",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-judicial-system",
+      "basis": "One option stated plainly, nothing else named (rule 3)."
+    },
+    {
+      "partyId": "eretz-yisrael-shelanu",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "continue-judicial-changes",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-judicial-system",
+      "basis": "One option stated plainly, nothing else named (rule 3)."
+    },
+    {
+      "partyId": "hadash",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "repeal-changes-protect-independence",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-judicial-system",
+      "basis": "One option stated plainly (rule 3). Line adds that Hadash \"also wants a constitution with stronger equality rights, which goes beyond restoring the system as it was\" but names no second option (caveat, rule 8)."
+    },
+    {
+      "partyId": "haredi-public",
+      "unclear": true,
+      "held": [],
+      "anchor": "issue-judicial-system",
+      "basis": "No documented position found."
+    },
+    {
+      "partyId": "israel-first",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "continue-judicial-changes",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-judicial-system",
+      "basis": "Line rests on indirect evidence: her votes \"cast as a coalition member\"; \"Israel First has not stated a position\" and her statement \"does not settle how far she supports further changes\" (rule 2). Line's wording is \"Keep the changes the government has passed\" but the option it names is continue-judicial-changes."
+    },
+    {
+      "partyId": "jewish-national-front",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "continue-judicial-changes",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-judicial-system",
+      "basis": "One option stated plainly, nothing else named (rule 3)."
+    },
+    {
+      "partyId": "likud-party",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "continue-judicial-changes",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-judicial-system",
+      "basis": "One option stated plainly, nothing else named (rule 3)."
+    },
+    {
+      "partyId": "meretz",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "repeal-changes-protect-independence",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-judicial-system",
+      "basis": "One option stated plainly, nothing else named (rule 3)."
+    },
+    {
+      "partyId": "national-union-tkuma",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "continue-judicial-changes",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-judicial-system",
+      "basis": "One option stated plainly, nothing else named (rule 3)."
+    },
+    {
+      "partyId": "new-economic-party",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "broad-agreed-constitutional-framework",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-judicial-system",
+      "basis": "One option stated plainly, nothing else named (rule 3). Caveat: \"rests mainly on the January 2023 committee remarks as published by the party\" and a matching February 2023 interview; no statement found on the 2025 judicial-selection law (rule 8)."
+    },
+    {
+      "partyId": "new-hope",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "continue-judicial-changes",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-judicial-system",
+      "basis": "\"The party's votes since 2025 support continuing the changes\"; one option, nothing else named (rule 3). Caveat: the judicial-selection law \"was framed as a compromise with an opposition veto over Supreme Court appointments\" (rule 8)."
+    },
+    {
+      "partyId": "raam",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "broad-agreed-constitutional-framework",
+          "level": "main"
+        },
+        {
+          "optionId": "repeal-changes-protect-independence",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-judicial-system",
+      "basis": "Stated approach of agreed rules on choosing judges \"is closest to\" broad-agreed-constitutional-framework; its votes \"also overlap with\" repeal-changes-protect-independence (rule 5). Caveat: voted against the main changes but \"has not called for reversing the new judicial selection law\". Followed the line's order although the second option is the one backed by votes."
+    },
+    {
+      "partyId": "shas",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "continue-judicial-changes",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-judicial-system",
+      "basis": "One option stated plainly, nothing else named (rule 3)."
+    },
+    {
+      "partyId": "taal",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "repeal-changes-protect-independence",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-judicial-system",
+      "basis": "One option stated plainly, nothing else named (rule 3). Caveat: Tibi \"combines this with criticism of the Supreme Court's past record on Arab citizens' rights\" (rule 8)."
+    },
+    {
+      "partyId": "the-democrats-party",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "repeal-changes-protect-independence",
+          "level": "main"
+        },
+        {
+          "optionId": "broad-agreed-constitutional-framework",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-judicial-system",
+      "basis": "First option stated plainly; the pledge to write Basic Law: Legislation \"also touches on\" broad-agreed-constitutional-framework (rule 5)."
+    },
+    {
+      "partyId": "the-reservists",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "broad-agreed-constitutional-framework",
+          "level": "main"
+        },
+        {
+          "optionId": "continue-judicial-changes",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-judicial-system",
+      "basis": "First option stated plainly; splitting the attorney general's role and giving the Knesset a say in the judges' committee \"overlap with\" continue-judicial-changes (rule 5)."
+    },
+    {
+      "partyId": "yashar-leyisrael",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "repeal-changes-protect-independence",
+          "level": "main"
+        },
+        {
+          "optionId": "broad-agreed-constitutional-framework",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-judicial-system",
+      "basis": "First option stated plainly; reported support for a written constitution and the planned Basic Law: Legislation \"overlap with\" broad-agreed-constitutional-framework (rule 5)."
+    },
+    {
+      "partyId": "yesh-atid",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "repeal-changes-protect-independence",
+          "level": "main"
+        },
+        {
+          "optionId": "broad-agreed-constitutional-framework",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-judicial-system",
+      "basis": "Repeal named first, \"combined with\" a written framework on when courts may intervene (rule 5, as \"together with\"). Line adds \"The evidence supports both\"; it does not say the evidence can't tell which, so not rule 4."
+    },
+    {
+      "partyId": "yesodot-yisrael",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "repeal-changes-protect-independence",
+          "level": "main"
+        },
+        {
+          "optionId": "broad-agreed-constitutional-framework",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-judicial-system",
+      "basis": "\"The evidence is mixed\" (rule 5): his votes, his bill and the list's pledge point to repeal-changes-protect-independence (actions, so first); \"his own platform language\" points to broad-agreed-constitutional-framework (second)."
+    },
+    {
+      "partyId": "yisrael-beytenu",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "broad-agreed-constitutional-framework",
+          "level": "main"
+        },
+        {
+          "optionId": "repeal-changes-protect-independence",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-judicial-system",
+      "basis": "First option stated plainly; rejecting any override clause \"is close to the emphasis on independent courts in\" repeal-changes-protect-independence (rule 5, partly like). Caveat: no source states whether it would repeal the 2025 judicial selection law."
+    },
+    {
+      "partyId": "zehut",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "continue-judicial-changes",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-judicial-system",
+      "basis": "One option stated plainly, nothing else named (rule 3). Caveat: Zehut's own proposals, such as direct election of justices, \"go beyond the changes described in that option\" (rule 8)."
+    }
+  ]
+}

@@ -1,0 +1,410 @@
+{
+  "issueId": "cost-of-living",
+  "rows": [
+    {
+      "partyId": "agudat-yisrael",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "direct-support-for-households",
+          "level": "main"
+        },
+        {
+          "optionId": "cut-taxes-and-government-spending",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-cost-of-living",
+      "basis": "direct-support \"with elements of\" cut-taxes (rule 5); \"the evidence is mixed\", mainly from a coalition agreement rather than a party program (source caveat, rule 8)"
+    },
+    {
+      "partyId": "amcha-yisrael",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "open-market-competition-imports",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-cost-of-living",
+      "basis": "one option stated plainly, nothing else named (rule 3)"
+    },
+    {
+      "partyId": "atid-echad",
+      "unclear": true,
+      "held": [],
+      "anchor": "issue-cost-of-living",
+      "basis": "No documented position found."
+    },
+    {
+      "partyId": "balad",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "direct-support-for-households",
+          "level": "main"
+        },
+        {
+          "optionId": "active-state-regulation",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-cost-of-living",
+      "basis": "direct-support stated first; \"some bills also fit\" active-state-regulation (rule 5)"
+    },
+    {
+      "partyId": "blue-and-white",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "direct-support-for-households",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-cost-of-living",
+      "basis": "\"Tentatively\" direct-support, resting only on votes for benefits aimed at specific groups, mainly reservists (rule 2); 2019 anti-monopoly pledge is older background and not held"
+    },
+    {
+      "partyId": "byachad-bennett",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "open-market-competition-imports",
+          "level": "main"
+        },
+        {
+          "optionId": "direct-support-for-households",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-cost-of-living",
+      "basis": "open-market stated plainly as \"the core of the current plan\" (rule 3); line adds without an option ID that the 2022 package in government \"also included direct help for households\"; \"the 2022 package in government also included direct help for households\" (rule 5, second option named in prose)"
+    },
+    {
+      "partyId": "chomat-torat-yisrael",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "direct-support-for-households",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-cost-of-living",
+      "basis": "one option stated plainly (rule 3); caveat: evidence is about support for Haredi families in particular, no position on competition, imports or general tax cuts found (rule 8)"
+    },
+    {
+      "partyId": "degel-hatorah",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "direct-support-for-households",
+          "level": "main"
+        },
+        {
+          "optionId": "cut-taxes-and-government-spending",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-cost-of-living",
+      "basis": "direct-support stated first; cancelling specific purchase taxes \"also touches on\" cut-taxes (rule 5); record \"does not show support for\" open-market (rule 7)"
+    },
+    {
+      "partyId": "eretz-yisrael-shelanu",
+      "unclear": true,
+      "held": [],
+      "anchor": "issue-cost-of-living",
+      "basis": "No documented position found."
+    },
+    {
+      "partyId": "hadash",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "direct-support-for-households",
+          "level": "main"
+        },
+        {
+          "optionId": "active-state-regulation",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-cost-of-living",
+      "basis": "direct-support \"combined with\" active-state-regulation (rule 5); rests on the 2026 Joint List plan and votes and bills since 2022, 2013 platform is dated background"
+    },
+    {
+      "partyId": "haredi-public",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "open-market-competition-imports",
+          "level": "main"
+        },
+        {
+          "optionId": "cut-taxes-and-government-spending",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-cost-of-living",
+      "basis": "open-market stated first, \"with the platform also matching\" cut-taxes (rule 5); platform \"does not call for\" price supervision or direct benefit increases (rule 7)"
+    },
+    {
+      "partyId": "israel-first",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "open-market-competition-imports",
+          "level": "main"
+        },
+        {
+          "optionId": "cut-taxes-and-government-spending",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-cost-of-living",
+      "basis": "open-market \"and\" cut-taxes, \"the statements support both\"; read as first option plus named second (rule 5); caveat: December 2024 vote for a tax-freeze law before these statements (rule 8); \"no support for\" price regulation or direct support (rule 7)"
+    },
+    {
+      "partyId": "jewish-national-front",
+      "unclear": true,
+      "held": [],
+      "anchor": "issue-cost-of-living",
+      "basis": "No documented position found."
+    },
+    {
+      "partyId": "likud-party",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "open-market-competition-imports",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-cost-of-living",
+      "basis": "stated approach and main reform \"favour\" open-market (rule 3); government raised VAT so the evidence \"does not support\" cut-taxes (rule 7)"
+    },
+    {
+      "partyId": "meretz",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "active-state-regulation",
+          "level": "main"
+        },
+        {
+          "optionId": "direct-support-for-households",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-cost-of-living",
+      "basis": "active-state-regulation \"combined with\" direct-support, \"the formal commitments fit both\" (rule 5); \"the evidence is mixed\": 2021 coalition votes against bills to raise allowances and expand public housing (rule 8)"
+    },
+    {
+      "partyId": "national-union-tkuma",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "open-market-competition-imports",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-cost-of-living",
+      "basis": "open-market stated plainly; \"stated approach and its main reforms point to competition\" (rule 3); line adds without an option ID that \"the record also includes temporary tax relief\""
+    },
+    {
+      "partyId": "new-economic-party",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "open-market-competition-imports",
+          "level": "main"
+        },
+        {
+          "optionId": "cut-taxes-and-government-spending",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-cost-of-living",
+      "basis": "open-market \"combined with\" cut-taxes (rule 5); line adds without option IDs that the party \"also proposes some state regulation ... and targeted support, but its main stated means are competition and tax cuts\""
+    },
+    {
+      "partyId": "new-hope",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "open-market-competition-imports",
+          "level": "secondary"
+        },
+        {
+          "optionId": "active-state-regulation",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-cost-of-living",
+      "basis": "\"Tentative\" open-market, resting on the 2021 plan, the November 2021 vote and the 2022 National Unity principles, none since September 2024 (rule 2); the 2021 plan \"also touch[es] on\" active-state-regulation, \"a small part of the plan\""
+    },
+    {
+      "partyId": "raam",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "direct-support-for-households",
+          "level": "secondary"
+        },
+        {
+          "optionId": "cut-taxes-and-government-spending",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-cost-of-living",
+      "basis": "\"The evidence is thin and mixed\" (rule 2): direct-support named first, and the VAT bill \"also points to\" cut-taxes on essentials"
+    },
+    {
+      "partyId": "shas",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "direct-support-for-households",
+          "level": "main"
+        },
+        {
+          "optionId": "cut-taxes-and-government-spending",
+          "level": "secondary"
+        },
+        {
+          "optionId": "open-market-competition-imports",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-cost-of-living",
+      "basis": "direct-support stated first; \"has also pushed for removing some consumer taxes\" (cut-taxes) and \"sponsored more competition in the pharmacy market\" (open-market), second and third named options (rule 5)"
+    },
+    {
+      "partyId": "taal",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "direct-support-for-households",
+          "level": "main"
+        },
+        {
+          "optionId": "active-state-regulation",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-cost-of-living",
+      "basis": "direct-support stated first; the joint list's plan \"also includes\" active-state-regulation (rule 5); caveat: evidence is a joint-list plan and opposition votes, not Ta'al-specific policy (rule 8)"
+    },
+    {
+      "partyId": "the-democrats-party",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "active-state-regulation",
+          "level": "main"
+        },
+        {
+          "optionId": "direct-support-for-households",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-cost-of-living",
+      "basis": "active-state-regulation \"together with\" direct-support (rule 5)"
+    },
+    {
+      "partyId": "the-reservists",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "open-market-competition-imports",
+          "level": "main"
+        },
+        {
+          "optionId": "direct-support-for-households",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-cost-of-living",
+      "basis": "open-market \"with\" targeted help, \"an element of\" direct-support (rule 5); caveat: aimed only at those who serve (rule 8)"
+    },
+    {
+      "partyId": "yashar-leyisrael",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "open-market-competition-imports",
+          "level": "main"
+        },
+        {
+          "optionId": "direct-support-for-households",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-cost-of-living",
+      "basis": "open-market stated first; platform \"also includes\" targeted support for people who serve and low-income pensioners (direct-support) (rule 5); line adds without an option ID \"an income-tax cut paired with new consumption taxes\""
+    },
+    {
+      "partyId": "yesh-atid",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "open-market-competition-imports",
+          "level": "main"
+        },
+        {
+          "optionId": "cut-taxes-and-government-spending",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-cost-of-living",
+      "basis": "open-market \"with some emphasis on\" cutting government spending and middle-class taxes (rule 5)"
+    },
+    {
+      "partyId": "yesodot-yisrael",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "open-market-competition-imports",
+          "level": "main"
+        },
+        {
+          "optionId": "direct-support-for-households",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-cost-of-living",
+      "basis": "\"Mainly\" open-market, \"with a secondary element of\" targeted help for working families and reservists (rule 5)"
+    },
+    {
+      "partyId": "yisrael-beytenu",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "open-market-competition-imports",
+          "level": "main"
+        },
+        {
+          "optionId": "direct-support-for-households",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-cost-of-living",
+      "basis": "open-market stated first; \"also proposes targeted help for working families, which overlaps with\" direct-support (rule 5)"
+    },
+    {
+      "partyId": "zehut",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "open-market-competition-imports",
+          "level": "main"
+        },
+        {
+          "optionId": "cut-taxes-and-government-spending",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-cost-of-living",
+      "basis": "open-market \"together with\" cut-taxes (rule 5)"
+    }
+  ]
+}
