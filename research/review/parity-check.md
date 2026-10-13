@@ -535,3 +535,33 @@ Points the author flagged:
   - "התובע הכללי" for "Chief Prosecutor": fits the bill's title. Kept.
   - Candidate names: Nos. 1 to 5 match the registry's `topCandidates`. The registry has no Hebrew forms for the other candidates.
 - Validation: no error names the file ✔ (`pnpm validate:content` exits 0)
+
+## atid-echad (checked 2026-10-13; EN researchedAsOf 2026-10-07)
+- Hebrew edition by: Stage 5a agent (Sonnet) · Parity check by: Stage 5b agent (Opus, different)
+- Sections/anchors: identical ✔ (9 sections, 10 issue sub-sections, 8 other-position sub-sections; issue headings match `he.title`)
+- Claims compared: ~340 (every sentence, bullet and table row) · Differences found: 31 · Fixed: 30 · Unresolved: 1
+- Checked by script and by reading: `[n]` citations identical line by line; evidence-tier tags on the same claims; option IDs on all 10 closest-option lines identical (tag reads exactly "**האפשרות/ות הקרובה/ות:**"); Sources list byte-identical to English (89 entries, same order and URLs); no `avoid.he` glossary term in the body; no "נחקרה/שנחקרו"; no "זמני/זמנית"; dates day first.
+
+| Anchor | Difference | Resolution |
+|---|---|---|
+| judicial-system | meaning drift: Judicial Selection Law tally "2 present but not voting" rendered "2 נמנעים" (abstained) | Fixed: "2 נכחו ולא הצביעו" |
+| legal | meaning drift: "individual candidates named in the request" rendered "המועמדים הבודדים" (reads as "the few/lone candidates") | Fixed: "המועמדים שנזכרו בשמם בבקשה" |
+| other-settlers-us | meaning drift (minor): "a certificate of honour" rendered "תעודת הצטיינות" (certificate of excellence) | Fixed: "תעודת כבוד" |
+| information-availability | loaded wording: "took over the registration" rendered "השתלט" (seized); plus 1 naturalness ("כלי עבור" → "מסגרת עבור", matching the overview's wording) | Fixed: "קיבל לידיו את הרישום"; 2 fixes |
+| haredi-enlistment, judea-samaria, october-7-inquiry | naturalness (project rule, no Latin acronyms in prose): "JTA", "AP", "N12" in body text | Fixed: "סוכנות הידיעות היהודית", "סוכנות הידיעות אסושייטד פרס", "חדשות 12" (3 fixes; Sources list left verbatim) |
+| overview | naturalness/grammar: "פעולה של שרה" (ministerial action), "שמיוחס לו הקמתה" | Fixed: "פעולה כשרה", "שמיוחסת לו" (2 fixes) |
+| leadership | naturalness: "שאר ראש הרשימה" | Fixed: "שאר צמרת הרשימה" (1) |
+| issue-cost-of-living, issue-haredi-enlistment, issue-religion-and-state | naturalness: "final reading" rendered "הקריאה האחרונה" | Fixed: "הקריאה השלישית" (5 occurrences) |
+| issue-cost-of-living | naturalness: tag "הקשר של שותפה" | Fixed: "הקשר מצד השותפים" (1) |
+| issue-haredi-enlistment | naturalness/grammar: "בעיניי זו עלבון", "ישנה מ-2021" | Fixed: "זה עלבון", "קודמת ל-2021" (2) |
+| issue-housing | naturalness/grammar: "מנהלי משרדים" (directors-general), "צמידתה למדד", "חמש בסיסי" | Fixed: "מנכ"לי משרדים", "הצמדתה", "חמישה בסיסי" (3) |
+| issue-judea-samaria | naturalness/grammar: gender agreement "הוציאה הרכב… והשאירה" | Fixed: "הוציא… והשאיר" (2) |
+| issue-october-7-inquiry | naturalness: "לקהות את דעת הקהל" | Fixed: "להקהות" (1) |
+| issue-religion-and-state | naturalness: "לא מוכנים לתת למכור" | Fixed: "לתת להם למכור" (1) |
+| coalition | naturalness: "שרטוט קווים אדומים" (×3), "את הישארות" | Fixed: "הצבת קווים אדומים", "את ההישארות" (4) |
+| track-record | spelling: "שקויימה" | Fixed: "שקוימה" (1) |
+| leadership / track-record vs issue-judea-samaria | English questioned: the same Likud–Religious Zionism coalition agreement is "signed on 1 December 2022" [20] in Leadership and the track-record table, but "signed on 28 December 2022" [89] in the Judea and Samaria contradiction bullet. The English contradicts itself on the signing date (likely: agreed/initial signing 1 Dec per the Ynetnews report, final signed copy tabled 28 Dec). Hebrew mirrors the English exactly. | Unresolved (English questioned): English should reconcile the dates or say which signing each refers to |
+
+- Not questioned: October 7 inquiry. The English says the government decided "not to set up a state commission of inquiry and instead to promote a commission of inquiry" whose composition reflects broad agreement; source [28]'s headline "תוקם ועדת חקירה לא ממלכתית" says the same thing, so the English is consistent. Hebrew wording matches the glossary ("ועדת חקירה ממלכתית").
+- Terms checked and kept: "מתיישבים" for settlers (neutral; no glossary entry, no avoid term); quoted "יישובים צעירים" (attributed as the ministry's own term), "מפלגת מדף" (attributed to the press), "טרור לאומני" (inside quotation marks, attributed to the security chiefs and to Strock's reply, as in the English); "גילוי דעת" for the Knesset declaratory motion; failed votes put the majority first ("נדחתה ברוב של 66 מול 14", "56 מול 32").
+- Validation: no error names the file ✔ (`pnpm validate:content` passed)
