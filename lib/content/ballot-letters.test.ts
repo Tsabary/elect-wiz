@@ -11,10 +11,10 @@ describe("ballot letter scale", () => {
     expect(ballotLetterCount("שׁס")).toBe(2);
   });
 
-  it("sets one and two letters at full size, and longer codes smaller", () => {
-    expect(ballotLetterScale("ט")).toBe("wide");
-    expect(ballotLetterScale("זץ")).toBe("wide");
-    expect(ballotLetterScale("אמת")).toBe("medium");
+  it("sets one, two and three letters at the same size, and only longer codes smaller", () => {
+    expect(ballotLetterScale("ט")).toBe("regular");
+    expect(ballotLetterScale("זץ")).toBe("regular");
+    expect(ballotLetterScale("אמת")).toBe("regular");
     expect(ballotLetterScale("ודעם")).toBe("narrow");
     expect(ballotLetterScale("ודעםם")).toBe("narrow");
   });

@@ -1,9 +1,10 @@
 /**
- * How large a ballot slip prints its letters. A list has one to four Hebrew
- * letters, and the slip is the same width whatever their number, so longer
- * codes are set smaller.
+ * How large a ballot slip prints its letters. Every list is set at the same
+ * size, chosen to fit three letters, so the slips look alike (owner decision
+ * 2026-10-13). Only a code of four or more letters, which no list has today,
+ * is set smaller so it still fits the slip.
  */
-export type BallotLetterScale = "wide" | "medium" | "narrow";
+export type BallotLetterScale = "regular" | "narrow";
 
 /** The number of letters as a reader counts them (final forms and marks included once each). */
 export function ballotLetterCount(letters: string): number {
@@ -11,7 +12,5 @@ export function ballotLetterCount(letters: string): number {
 }
 
 export function ballotLetterScale(letters: string): BallotLetterScale {
-  const count = ballotLetterCount(letters);
-  if (count <= 2) return "wide";
-  return count === 3 ? "medium" : "narrow";
+  return ballotLetterCount(letters) <= 3 ? "regular" : "narrow";
 }
