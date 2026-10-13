@@ -79,3 +79,18 @@ The Hebrew author added full names and roles in 27 English texts, and in a 28th 
 10. Form: every issue text has 1–2 sentences and every point one. No poll figures, option IDs, citations, links or Markdown. Dates are day first. Hebrew names match the registry (יצחק גולדקנופ, מאיר פרוש, יהדות התורה). No quoted phrases in the English to keep.
 
 Validation: `CONTENT_CORPUS=real pnpm validate:content` passed, and passed again after the fix round, with structure, agreement values and anchors re-checked by script. The Hebrew file raised no error (the only note was the expected one about Hebrew content still pending in content/versions.json).
+
+## Re-check after owner corrections (e17b4c2, 13 October 2026)
+
+Checked by a Stage 7d parity checker (Opus) that wrote none of these files. Scope: the three judicial-system texts naming Meir Porush that the owner changed in e17b4c2, re-read in full in both languages against the brief's points 4–10 and the owner's decision 4 of the second set in research/review/hebrew-english-questioned.md.
+
+| # | Text | Result |
+|---|---|---|
+| R1 | judicial-system / continue-judicial-changes | passes |
+| R2 | judicial-system / repeal-changes-protect-independence | passes |
+| R3 | judicial-system / keep-current-system-stability | passes |
+
+- Owner's decision applied in both languages: "the party's three MKs at the time" → "שלושת חברי הכנסת של המפלגה באותה תקופה" (15 July 2026 vote) and "the party's four MKs at the time" → "ארבעת חברי הכנסת של המפלגה באותה תקופה" (29 October 2025 vote), each followed by the same names in the same order. The counts agree with the research: four Agudat Yisrael MKs (Goldknopf, Tessler, Eichler, Porush) in October 2025; Eichler left the Knesset in January 2026, leaving three. Names in the registry's Hebrew forms; the role (MK) is given at first mention, and the later "גולדקנופ, טסלר ופרוש" in keep-current-system-stability follows a first mention in the same text.
+- Points 4–10: same dates (27 במרץ 2025, 29 באוקטובר 2025, 15 ביולי 2026; day first), vote directions, reading ("בקריאה טרומית") and content of each law. No hedging in either language. Read alone, R1 reads as agreement and R2–R3 as disagreement, matching the labels. "attorney general" uses the glossary's masculine generic form for the office ("היועץ המשפטי לממשלה"), correct since the texts name laws about the office, not the incumbent (note). Nothing from `avoid.he`, nothing loaded. 1–2 sentences each. No user address. "באותה תקופה" for a single vote date could also be "באותה עת"; both are natural (note, no change).
+- Structure, agreement values and anchors re-compared by script after e17b4c2: identical; `lang` is `he`.
+- Validation: `CONTENT_CORPUS=real pnpm validate:content` (and the default `pnpm validate:content`) fails with 9–12 errors, all in Hebrew research files still being written by other sessions (content/research/he/eretz-yisrael-shelanu.md, raam.md, shas.md); none concerns content/matching/texts/.
