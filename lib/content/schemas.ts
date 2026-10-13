@@ -69,6 +69,12 @@ export const versionsSchema = z.object({
   researchVersion: nonEmpty,
   /** Names the matching bundle for caching. Shown nowhere; never invalidates surveys. */
   matchingVersion: nonEmpty,
+  /**
+   * `"pending"` while the real corpus's Hebrew research editions and Hebrew
+   * result texts are still being written (see `hebrewContentPending` in
+   * `config.ts`). Absent means `"ready"`.
+   */
+  hebrewContent: z.enum(["pending", "ready"]).optional(),
 });
 export type Versions = z.infer<typeof versionsSchema>;
 

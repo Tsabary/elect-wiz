@@ -5,7 +5,13 @@
  */
 import type { z } from "zod";
 import { issueAgreement, MatchDataError } from "../matching/score";
-import { CORPUS_DIRS, RESEARCH_LANGS, type CorpusName, type ResearchLang } from "./config";
+import {
+  CORPUS_DIRS,
+  hebrewContentPending,
+  RESEARCH_LANGS,
+  type CorpusName,
+  type ResearchLang,
+} from "./config";
 import { findPollFigures } from "./poll-figures";
 import {
   hasClosestOptionsLine,
@@ -499,6 +505,8 @@ function validateResearch(
   registry: { parties: Party[] } | null,
   issueIds: string[],
   errors: ValidationError[],
+  /** Hebrew content is pending for this corpus: a missing Hebrew document is not an error. */
+  hebrewPending = false,
 ): ParsedResearch {
   const partyById = new Map(registry?.parties.map((p) => [p.id, p]) ?? []);
   const parsed: ParsedResearch = {};
@@ -532,6 +540,7 @@ function validateResearch(
     for (const p of registry.parties) {
       if (p.tier !== "researched") continue;
       for (const lang of RESEARCH_LANGS) {
+        if (lang === "he" && hebrewPending) continue;
         if (!parsed[p.id]?.[lang]) {
           errors.push({
             rule: "research-missing",
@@ -633,6 +642,8 @@ function validateMatching(
   issues: Issue[],
   research: ParsedResearch,
   errors: ValidationError[],
+  /** Hebrew content is pending for this corpus: Hebrew texts may point into the English document. */
+  hebrewPending = false,
 ): ParsedMatching {
   const { matching } = set;
   const parsed: ParsedMatching = {
@@ -816,7 +827,11 @@ function validateMatching(
 
       // Anchors are checked against the research document when it exists; a missing
       // document of the active corpus is already reported as `research-missing`.
-      const doc = research[texts.partyId]?.[lang];
+      // While Hebrew content is pending, Hebrew texts without a Hebrew document are
+      // checked against the English one, which the Hebrew site then shows.
+      const docs = research[texts.partyId];
+      const docLang: ResearchLang = !docs?.[lang] && hebrewPending && docs?.en ? "en" : lang;
+      const doc = docs?.[docLang];
       const checkAnchor = (anchor: string, where: string, expected: string | null) => {
         if (expected !== null ? anchor !== expected : !anchor.startsWith(OTHER_ANCHOR_PREFIX)) {
           errors.push({
@@ -830,7 +845,7 @@ function validateMatching(
           errors.push({
             rule: "texts-anchor",
             file: f.file,
-            message: `${where}: anchor "${anchor}" isn't in the party's ${lang} research document`,
+            message: `${where}: anchor "${anchor}" isn't in the party's ${docLang} research document`,
           });
         }
       };
@@ -960,6 +975,8 @@ function validateMatchingCompleteness(
   research: ParsedResearch,
   parsed: ParsedMatching,
   errors: ValidationError[],
+  /** Hebrew content is pending for this corpus: a party may have no Hebrew texts file yet. */
+  hebrewPending = false,
 ) {
   const dir = CORPUS_DIRS[set.name].matching;
   const researched = registry.parties.filter((p) => p.tier === "researched");
@@ -1046,6 +1063,8 @@ function validateMatchingCompleteness(
       const file = `${dir}/texts/${lang}/${party.id}.json`;
       const missing = (message: string) => errors.push({ rule: "texts-missing", file, message });
       if (!present.texts[lang].has(party.id)) {
+        // An existing Hebrew file is still checked in full below.
+        if (lang === "he" && hebrewPending) continue;
         missing(`researched party "${party.id}" has no ${lang} result texts`);
         continue;
       }
@@ -1179,6 +1198,7 @@ export function validateContent(content: RawContent): ValidationError[] {
     }
   }
 
+  let hebrewContent: "pending" | "ready" | undefined;
   if (!content.versions) {
     errors.push({
       rule: "versions-schema",
@@ -1195,15 +1215,25 @@ export function validateContent(content: RawContent): ValidationError[] {
           file: content.versions.file,
           message: formatZod(r.error),
         });
+      else hebrewContent = r.data.hebrewContent;
     }
   }
 
   for (const set of content.corpora) {
+    const hebrewPending = hebrewContentPending({ hebrewContent }, set.name);
     const registry = validateRegistry(set, errors);
-    const research = validateResearch(set, registry, issueIds, errors);
-    const matching = validateMatching(set, registry, issues, research, errors);
+    const research = validateResearch(set, registry, issueIds, errors, hebrewPending);
+    const matching = validateMatching(set, registry, issues, research, errors, hebrewPending);
     if (set.active && registry)
-      validateMatchingCompleteness(set, registry, issues, research, matching, errors);
+      validateMatchingCompleteness(
+        set,
+        registry,
+        issues,
+        research,
+        matching,
+        errors,
+        hebrewPending,
+      );
   }
   return errors;
 }

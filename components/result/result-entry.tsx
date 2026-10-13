@@ -18,6 +18,13 @@ const AGREEMENT_MARK: Record<AgreementLevel, string> = {
   "party-position-unclear": "?",
 };
 
+/**
+ * `lang` and `dir` for a party text shown in another language than the page
+ * (the "Hebrew content pending" fallback), so it is read and laid out correctly.
+ */
+const textLangProps = (lang: MatchEntry["textsLang"]) =>
+  lang ? ({ lang, dir: lang === "he" ? "rtl" : "ltr" } as const) : {};
+
 /** The registry facts under a party's name: joint list or ballot letters, poll note, limited information. */
 function EntryFacts({ entry, serverBlackout }: { entry: MatchEntry; serverBlackout: boolean }) {
   const t = useTranslations("Result");
@@ -76,6 +83,7 @@ function EntryDetails({
               key={b.issueId}
               item={b}
               partyId={entry.partyId}
+              textsLang={entry.textsLang}
               title={issueById.get(b.issueId)?.title ?? b.issueId}
             />
           ))}
@@ -215,7 +223,9 @@ function Points({ entry }: { entry: MatchEntry }) {
             className="flex flex-col gap-1.5 rounded-lg border p-3"
             data-testid="point"
           >
-            <p className="text-sm leading-relaxed">{point.text}</p>
+            <p className="text-sm leading-relaxed" {...textLangProps(entry.textsLang)}>
+              {point.text}
+            </p>
             <Link
               href={`/parties/${entry.partyId}#${point.anchor}`}
               className="inline-flex min-h-8 items-center self-start py-1 text-sm underline underline-offset-4"
@@ -234,10 +244,12 @@ function Points({ entry }: { entry: MatchEntry }) {
 function BreakdownItem({
   item,
   partyId,
+  textsLang,
   title,
 }: {
   item: IssueBreakdown;
   partyId: string;
+  textsLang: MatchEntry["textsLang"];
   title: string;
 }) {
   const t = useTranslations("Result");
@@ -264,7 +276,9 @@ function BreakdownItem({
           />
         </span>
       </div>
-      <p className="text-sm leading-relaxed">{item.explanation}</p>
+      <p className="text-sm leading-relaxed" {...textLangProps(textsLang)}>
+        {item.explanation}
+      </p>
       <Link
         href={`/parties/${partyId}#${item.anchor}`}
         className="inline-flex min-h-8 items-center self-start py-1 text-sm underline underline-offset-4"

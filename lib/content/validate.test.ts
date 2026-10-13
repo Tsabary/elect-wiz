@@ -118,6 +118,17 @@ describe("validateContent", () => {
       expect(rulesOf(c)).toContain("versions-schema");
     });
 
+    it("accepts the Hebrew-content switch and rejects an unknown value", () => {
+      for (const value of ["pending", "ready"]) {
+        const c = validContent();
+        editJson(c.versions, (d) => (d.hebrewContent = value));
+        expect(rulesOf(c)).toEqual([]);
+      }
+      const c = validContent();
+      editJson(c.versions, (d) => (d.hebrewContent = "soon"));
+      expect(rulesOf(c)).toEqual(["versions-schema"]);
+    });
+
     it("requires a matching version", () => {
       const c = validContent();
       editJson(c.versions, (d) => delete d.matchingVersion);
@@ -1000,6 +1011,95 @@ describe("validateContent", () => {
         for (const lang of ["en", "he"] as const) editJson(m(c).texts[lang][0], edit);
         expect([...new Set(rulesOf(c))]).toEqual(["texts-agreement"]);
       });
+    });
+  });
+
+  describe("Hebrew content pending", () => {
+    /** The valid corpus as the given corpus, in the given state, changed by `edit`. */
+    function rules(
+      state: "pending" | "ready" | undefined,
+      edit: (c: ReturnType<typeof validContent>) => void,
+      name: "real" | "placeholder" = "real",
+    ) {
+      const c = validContent();
+      corpus(c).name = name;
+      editJson(c.versions, (d) => (state ? (d.hebrewContent = state) : delete d.hebrewContent));
+      edit(c);
+      return rulesOf(c);
+    }
+    const noHebrew = (c: ReturnType<typeof validContent>) => {
+      corpus(c).research.he = [];
+      corpus(c).matching.texts.he = [];
+    };
+    const bothMissing = [...Array(3).fill("research-missing"), ...Array(3).fill("texts-missing")];
+
+    it("doesn't require Hebrew documents or Hebrew texts on the real corpus while pending", () => {
+      expect(rules("pending", noHebrew)).toEqual([]);
+      // Some parties done, others not.
+      expect(
+        rules("pending", (c) => {
+          corpus(c).research.he.pop();
+          corpus(c).matching.texts.he.shift();
+        }),
+      ).toEqual([]);
+    });
+
+    it("requires them when the switch is ready or absent", () => {
+      expect(rules("ready", noHebrew)).toEqual(bothMissing);
+      expect(rules(undefined, noHebrew)).toEqual(bothMissing);
+    });
+
+    it("never applies to the placeholder corpus", () => {
+      expect(rules("pending", noHebrew, "placeholder")).toEqual(bothMissing);
+    });
+
+    it("still requires the English documents and texts", () => {
+      expect(
+        rules("pending", (c) => {
+          noHebrew(c);
+          corpus(c).matching.texts.en.pop();
+        }),
+      ).toEqual(["texts-missing"]);
+      expect(
+        rules("pending", (c) => {
+          noHebrew(c);
+          corpus(c).research.en.pop();
+        }),
+      ).toContain("research-missing");
+    });
+
+    it("still checks the Hebrew documents and texts that exist", () => {
+      expect(
+        rules("pending", (c) =>
+          editDoc(c, "he", 0, (r) => r.replace("## Coalition {#coalition}", "## Coalition")),
+        ),
+      ).toContain("research-structure");
+      expect(
+        rules("pending", (c) => editJson(corpus(c).matching.texts.he[0], (d) => d.points.pop())),
+      ).toContain("texts-parity");
+      expect(
+        rules("pending", (c) =>
+          editJson(corpus(c).matching.texts.he[0], (d) => {
+            const issue = Object.values(d.issues).find((i: any) => i.options) as any;
+            const text = Object.values(issue.options)[0] as any;
+            text.agreement = text.agreement === "agrees" ? "disagrees" : "agrees";
+          }),
+        ),
+      ).toEqual(["texts-agreement"]);
+    });
+
+    it("checks Hebrew texts against the English document when the Hebrew one is missing", () => {
+      const edit = (c: ReturnType<typeof validContent>) => {
+        corpus(c).research.he = [];
+        editJson(corpus(c).matching.texts.he[0], (d) => (d.points[0].anchor = "other-not-there"));
+      };
+      const c = validContent();
+      corpus(c).name = "real";
+      editJson(c.versions, (d) => (d.hebrewContent = "pending"));
+      edit(c);
+      const errors = validateContent(c);
+      expect(errors.map((e) => e.rule)).toEqual(["texts-anchor", "texts-parity"]);
+      expect(errors[0].message).toContain("en research document");
     });
   });
 });

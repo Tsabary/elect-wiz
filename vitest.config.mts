@@ -10,6 +10,8 @@ export default defineConfig({
   },
   test: {
     environment: "node",
+    // Tests that read the active corpus from disk run on the fictional placeholder corpus.
+    env: { CONTENT_CORPUS: "placeholder" },
     include: ["**/*.test.ts", "**/*.test.tsx"],
     exclude: ["node_modules/**", ".next/**", "tests/e2e/**"],
   },

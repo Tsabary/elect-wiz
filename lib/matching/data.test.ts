@@ -56,6 +56,28 @@ describe("buildMatchingBundle", () => {
     expect(matchingBundleSchema.safeParse(b).success).toBe(true);
   });
 
+  it("fills in another language's texts only for a party that has none in the bundle's", () => {
+    const [first, ...others] = corpus.matching.texts.he;
+    const b = buildMatchingBundle({
+      locale: "he",
+      versions: VERSIONS,
+      partyIds: researched,
+      positions: corpus.matching.positions,
+      distances: corpus.matching.distances,
+      config: corpus.matching.config!,
+      texts: others,
+      fallbackTexts: corpus.matching.texts.en,
+    });
+    expect(b.locale).toBe("he");
+    expect(b.texts.map((t) => t.partyId)).toEqual([...researched].sort());
+    expect(b.texts.filter((t) => t.lang === "en")).toEqual([
+      corpus.matching.texts.en.find((t) => t.partyId === first.partyId),
+    ]);
+    expect(matchingBundleSchema.safeParse(b).success).toBe(true);
+    // Without fallback texts the party is simply not in the bundle.
+    expect(bundle("he").texts.every((t) => t.lang === "he")).toBe(true);
+  });
+
   it("carries only what the scoring reads from a row and a grid pair", () => {
     const b = bundle();
     for (const row of b.positions.flatMap((p) => p.rows)) {
@@ -249,6 +271,34 @@ describe("matchLocally", () => {
         expect(e.points.length).toBeGreaterThanOrEqual(2);
       }
     }
+  });
+
+  it("marks the entries whose texts are in another language than the bundle's", () => {
+    const set = placeholderAnswerSet("joint-list-top");
+    const [first, ...others] = corpus.matching.texts.he;
+    const mixed = buildMatchingBundle({
+      locale: "he",
+      versions: VERSIONS,
+      partyIds: researched,
+      positions: corpus.matching.positions,
+      distances: corpus.matching.distances,
+      config: corpus.matching.config!,
+      texts: others,
+      fallbackTexts: corpus.matching.texts.en,
+    });
+    const res = matchLocally(mixed, set, parties());
+    const plain = matchLocally(bundle("he"), set, parties());
+    if (!res.ok || !plain.ok) throw new Error("unexpected");
+    expect(res.result.entries.map((e) => e.partyId)).toEqual(set.entries);
+    for (const e of res.result.entries) {
+      expect(e.textsLang).toBe(e.partyId === first.partyId ? "en" : undefined);
+    }
+    const english = matchLocally(bundle("en"), set, parties());
+    if (!english.ok) throw new Error("unexpected");
+    const pick = (r: typeof res.result) => r.entries.find((e) => e.partyId === first.partyId)!;
+    expect(pick(res.result).breakdown).toEqual(pick(english.result).breakdown);
+    expect(pick(res.result).points).toEqual(pick(english.result).points);
+    expect(plain.result.entries.some((e) => "textsLang" in e)).toBe(false);
   });
 
   it("is deterministic for identical answers", () => {

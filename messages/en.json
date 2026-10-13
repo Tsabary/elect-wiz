@@ -220,6 +220,7 @@
     "researchedAsOf": "Researched as of",
     "limitedInfoTitle": "Limited information.",
     "limitedInfoBody": "Little public information exists about this party (for example, no voting record or no published platform), so this research is less complete than for other parties.",
+    "contentFallbackNotice": "The research on this party is shown in English for now. The Hebrew version will follow.",
     "listedNote": "This party was not researched in depth and is not included in the matching. This page shows only its official details.",
     "platformHeading": "The party’s own platform",
     "platformLink": "Open the party’s platform (external site)",
@@ -318,6 +319,7 @@
     "ballotLetters": "Ballot letters: {letters}",
     "limitedInfoTitle": "Limited information.",
     "limitedInfoBody": "Little public information exists about this party, so this match rests on less evidence than others.",
+    "contentFallbackNotice": "The texts about the parties' positions are shown in English for now. The Hebrew version will follow.",
     "showBreakdown": "Show the issue-by-issue explanation",
     "importance": "Your #{rank} issue",
     "agreement": {
