@@ -229,3 +229,31 @@ Author's flags, verified with no change needed:
 
 - English questioned: none
 - Validation: `pnpm validate:content` passed; no error names the file ✔
+
+## national-union-tkuma (checked 2026-10-13; EN researchedAsOf 2026-10-07)
+- Hebrew edition by: Stage 5a agent (Sonnet) · Parity check by: Stage 5b agent (Opus, different)
+- Sections/anchors: identical ✔ (15 sub-anchors and order match; the 12 option IDs match; Sources 1–105 identical in count, order, titles and URLs)
+- Claims compared: ~265 · Differences found: 17 · Fixed: 17 · Unresolved: 0
+| Anchor | Difference | Resolution |
+|---|---|---|
+| overview | naturalness (×4): "ותפעל בתחומי הביטחון וב"תיקונים..."" was awkward; the Hardal gloss "החלק הדתי-לאומי המקפיד יותר" was clumsy; "7 מהם שייכים" was in the wrong tense; Strock "רשומה כמי שהוגשה מטעם" | Rewrote: "ותפעל בתחום הביטחון ולמען "תיקונים במערכת המשפט""; "החלק המקפיד יותר בקיום מצוות בציבור הדתי-לאומי"; "ו-7 מהם היו של מפלגתו"; "רשומה כמועמדת מטעם עתיד אחד" |
+| leadership | meaning drift: Itam's "close to 700 reserve days" was given as "כ-700" (about) | Changed to "קרוב ל-700" |
+| leadership | meaning drift: Tal moved down for "new reserved places" became "places reserved for new candidates" | Changed to "ולמקומות שמורים חדשים" |
+| leadership | naturalness: Mor's forum "התנגדה לעסקות הפסקת אש חלקיות בעניין החטופים" | Changed to "לעסקות חלקיות לשחרור חטופים והפסקת אש" |
+| issue-crime-in-arab-society | naturalness: the quoted Smotrich sentence had broken agreement ("חלק גדול מהרשויות... נפל... בניגוד לרצונו") | Changed to "נפלו... בניגוד לרצונן". "במגזר הערבי" kept: it is inside the quote and the English quotes "Arab sector" |
+| issue-crime-in-arab-society | naturalness: closest-option gloss "סמכויות מסוג סמכויות נגד טרור" | Changed to "סמכויות כמו אלה שמשמשות נגד טרור" (matches the option's he text) |
+| issue-judicial-system | naturalness: typo inside the quote, "לממשול" | Changed to "למשול" |
+| issue-october-7-inquiry | glossary: "ועדה שתיבחר באמצעות הכנסת" instead of the glossary term | Changed to "ועדה שתמונה באמצעות הכנסת" |
+| issue-religion-and-state | naturalness: "וממשרד לשירותי דת" (missing article) | Changed to "ומהמשרד לשירותי דת" |
+| other-palestinian-authority | meaning drift: "clearance revenues" was rendered "כספי הסילוק" (wrong term) | Changed to "כספי הסליקה". The label "מעשה והצהרה" matches the English "Action and statement", so it was kept |
+| track-record | naturalness: "פריט אחר פריט" | Changed to "סעיף אחר סעיף". "בוצע / לא בוצע / בוצע חלקית" is natural and was kept |
+| legal | meaning drift: "in their personal capacity" was rendered "בתוקף אישיותם" ("by virtue of their personality") | Changed to "במעמדם האישי" |
+| legal | citation/tag: [92] had moved from the sanctions statement to the following editorial sentence | [92] moved back after the quote, as in the English |
+| information-availability | naturalness (×2): the redundant "מצע כתוב מלא (מצע)"; and "הדומיין... אירח רק דף מציין מקום", which is calqued and unnatural | Changed to "מצע בחירות כתוב ומלא לשנת 2026" and "באתר שנראה כאתר המפלגה היה רק דף ללא תוכן ממשי" |
+
+Author flags reviewed, no change needed:
+- "settler-dominated slate": the English quotes it and attributes it to Yuval Karni (Ynetnews), and the Hebrew does the same ("רשימה שנשלטת על ידי מתנחלים"). This is allowed under the quoted-and-attributed rule, so it was kept.
+- Labels "שינוי לאורך זמן" (Change over time), "מצב" (Status) and "מעשה והצהרה" each match an English label. "מצב:" is used in other Hebrew files too.
+- Other avoid.he terms appear only inside attributed quotes whose English counterpart is quoted: "מדינת טרור ערבית" ("Arab terror state"), "ועדה... מוטה" ("biased commission"), and "ממלכתית-לאומית" / "ועדת חקירה לאומית" (the party's words). There is no "זמני/זמנית" for "tentative": the "זמני" forms present translate "temporary/temporarily". There is no "נחקר/נחקרה/שנחקרו".
+- Names: the Hebrew forms in the registry are used (סמוטריץ', פייגלין, סטרוק, רוטמן, צבי מור, the list and partner-party names). Names not in the registry match the other Hebrew files (איזנקוט, נעם סולברג, יצחק עמית, אריאל קלנר, מאי גולן, אורית סטרוק) or are the standard spellings (וולדיגר, סולומון, סוכות, אוהד טל, איתמר איתם, יצחק זגה, רעות בן חיים, יוסי בכר, יובל קרני, סלים ג'ובראן, ג'יי די ונס). "האיחוד הלאומי – תקומה" uses an en dash where the registry has a hyphen. The quoted registered name keeps the hyphen, and other Hebrew files use the en dash, so this was left as is.
+- Validation: no error names the file ✔ (`pnpm validate:content` passed)
