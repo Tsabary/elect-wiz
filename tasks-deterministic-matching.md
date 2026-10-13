@@ -218,7 +218,7 @@ The owner also creates the small counter database for the anonymous counts befor
 - **Notes:** Day boundaries: use Israel time, so a day in the counts matches a day for the owner. The election-close check already exists in `lib/time-modes.ts`.
 
 ### Task 2.7: Rewrite the site copy in both languages and get the owner's approval
-- [ ]
+- [x] *(Copy approved by the owner on 2026-10-13: wording as in `research/review/site-copy-deterministic.md`, the "5–10 minutes" estimate kept, no party numbers in the copy.)*
 - **What:** Bring every piece of interface and page copy in line with the new product, in English and Hebrew, add the blackout swap on How this works, and take the result through the existing neutrality review and parity check to the owner.
 - **Acceptance criteria:**
   - `Answers` has no editing or write-your-own wording; `AnythingElse` is gone; `Home.steps` describes three steps; `MatchErrors` has only the two remaining messages; `Preview` has no simulated-results wording.
