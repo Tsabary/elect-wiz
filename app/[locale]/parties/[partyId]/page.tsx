@@ -2,6 +2,7 @@ import { ExternalLink } from "lucide-react";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getFormatter, getTranslations, setRequestLocale } from "next-intl/server";
+import { BallotSlip } from "@/components/parties/ballot-slip";
 import { JointListLabel } from "@/components/parties/joint-list-label";
 import { calendarDate } from "@/components/polls/poll-note";
 import { PollInfo } from "@/components/research/poll-info";
@@ -77,36 +78,30 @@ export default async function PartyPage({ params }: PageProps<"/[locale]/parties
         <h1 className="text-3xl font-bold text-balance" data-testid="party-name">
           {summary.name}
         </h1>
-        <dl className="grid gap-x-6 gap-y-2 rounded-xl border p-4 text-sm sm:grid-cols-[auto_1fr]">
-          <dt className="text-muted-foreground">{t("leader")}</dt>
-          <dd>{summary.leader}</dd>
-          <dt className="text-muted-foreground">{t("list")}</dt>
-          <dd>{summary.list.name}</dd>
-          {summary.list.ballotLetters && (
-            <>
-              <dt className="text-muted-foreground">{t("ballotLetters")}</dt>
-              <dd className="font-semibold">{summary.list.ballotLetters}</dd>
-            </>
-          )}
-          {researchedAsOf && (
-            <>
-              <dt className="text-muted-foreground">{t("researchedAsOf")}</dt>
-              <dd data-testid="researched-as-of">
-                {format.dateTime(calendarDate(researchedAsOf), {
-                  dateStyle: "long",
-                  timeZone: "UTC",
-                })}
-              </dd>
-            </>
-          )}
-        </dl>
+        {/* The list's ballot slip, as in the polling booth, beside the registry facts. */}
+        <div className="flex items-start gap-4 rounded-xl border p-4" data-testid="party-facts">
+          <BallotSlip letters={summary.list.ballotLetters} listName={summary.list.name} />
+          <dl className="grid min-w-0 grow content-start gap-x-6 gap-y-2 text-sm sm:grid-cols-[auto_1fr]">
+            <dt className="text-muted-foreground">{t("leader")}</dt>
+            <dd>{summary.leader}</dd>
+            <dt className="text-muted-foreground">{t("list")}</dt>
+            <dd>{summary.list.name}</dd>
+            {researchedAsOf && (
+              <>
+                <dt className="text-muted-foreground">{t("researchedAsOf")}</dt>
+                <dd data-testid="researched-as-of">
+                  {format.dateTime(calendarDate(researchedAsOf), {
+                    dateStyle: "long",
+                    timeZone: "UTC",
+                  })}
+                </dd>
+              </>
+            )}
+          </dl>
+        </div>
         {summary.list.isJoint && (
           <p className="rounded-lg border px-4 py-3 text-sm">
-            <JointListLabel
-              partners={summary.partners}
-              listName={summary.list.name}
-              ballotLetters={summary.list.ballotLetters}
-            />
+            <JointListLabel partners={summary.partners} listName={summary.list.name} />
           </p>
         )}
         {listed && (

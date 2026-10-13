@@ -2,6 +2,7 @@
 
 import { ArrowLeft, ArrowRight, ChevronDown } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
+import { BallotSlip } from "@/components/parties/ballot-slip";
 import { JointListLabel } from "@/components/parties/joint-list-label";
 import { PollNoteText } from "@/components/polls/poll-note";
 import type { ClientIssue } from "@/components/survey/types";
@@ -25,7 +26,10 @@ const AGREEMENT_MARK: Record<AgreementLevel, string> = {
 const textLangProps = (lang: MatchEntry["textsLang"]) =>
   lang ? ({ lang, dir: lang === "he" ? "rtl" : "ltr" } as const) : {};
 
-/** The registry facts under a party's name: joint list or ballot letters, poll note, limited information. */
+/**
+ * The registry facts under a party's name: joint list, poll note, limited
+ * information. The ballot letters are on the slip shown beside the name.
+ */
 function EntryFacts({ entry, serverBlackout }: { entry: MatchEntry; serverBlackout: boolean }) {
   const t = useTranslations("Result");
   const m = entry.metadata;
@@ -33,16 +37,7 @@ function EntryFacts({ entry, serverBlackout }: { entry: MatchEntry; serverBlacko
     <>
       {m.isJointList && (
         <p className="text-sm">
-          <JointListLabel
-            partners={m.partners}
-            listName={m.listName}
-            ballotLetters={m.ballotLetters}
-          />
-        </p>
-      )}
-      {!m.isJointList && m.ballotLetters && (
-        <p className="text-muted-foreground text-sm">
-          {t("ballotLetters", { letters: m.ballotLetters })}
+          <JointListLabel partners={m.partners} listName={m.listName} />
         </p>
       )}
       {m.pollNote && (
@@ -139,16 +134,23 @@ export function ResultEntryCard({
         isTop && "border-primary border-2",
       )}
     >
-      <header className="flex flex-col gap-2">
-        <p className="text-muted-foreground text-sm font-medium">
-          {isTop ? t("topMatchLabel") : t("runnerUpLabel", { n: position + 1 })}
-        </p>
-        <h2 id={headingId} className={cn("font-bold text-balance", isTop ? "text-2xl" : "text-xl")}>
-          <Link href={`/parties/${entry.partyId}`} className="underline-offset-4 hover:underline">
-            {entry.metadata.name}
-          </Link>
-        </h2>
-        <EntryFacts entry={entry} serverBlackout={serverBlackout} />
+      {/* The party's facts, with its list's ballot slip beside them. */}
+      <header className="flex items-start gap-4">
+        <div className="flex min-w-0 grow flex-col gap-2">
+          <p className="text-muted-foreground text-sm font-medium">
+            {isTop ? t("topMatchLabel") : t("runnerUpLabel", { n: position + 1 })}
+          </p>
+          <h2
+            id={headingId}
+            className={cn("font-bold text-balance", isTop ? "text-2xl" : "text-xl")}
+          >
+            <Link href={`/parties/${entry.partyId}`} className="underline-offset-4 hover:underline">
+              {entry.metadata.name}
+            </Link>
+          </h2>
+          <EntryFacts entry={entry} serverBlackout={serverBlackout} />
+        </div>
+        <BallotSlip letters={entry.metadata.ballotLetters} listName={entry.metadata.listName} />
       </header>
 
       {isTop ? (
@@ -191,7 +193,8 @@ export function ResultEntryRow({
           <span className="text-muted-foreground shrink-0 text-sm font-medium tabular-nums">
             {t("position", { n: position + 1 })}
           </span>
-          <span className="grow font-semibold">{entry.metadata.name}</span>
+          <span className="min-w-0 grow font-semibold">{entry.metadata.name}</span>
+          <BallotSlip letters={entry.metadata.ballotLetters} size="compact" />
           <ChevronDown
             className="size-4 shrink-0 transition-transform group-open:rotate-180"
             aria-hidden="true"

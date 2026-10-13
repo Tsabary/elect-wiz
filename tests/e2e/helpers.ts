@@ -153,6 +153,49 @@ export const resultEntry = (page: Page, partyId: string) =>
 export const partyIdsOf = (loc: Locator) =>
   loc.evaluateAll((els) => els.map((e) => e.getAttribute("data-party-id")));
 
+// ------------------------------------------------------------------ ballot slip
+
+const siteCopy = (locale: AppLocale) =>
+  JSON.parse(fs.readFileSync(path.join(process.cwd(), "messages", `${locale}.json`), "utf8"));
+
+/**
+ * Checks the one ballot slip inside `scope`: the list's letters, drawn in
+ * Hebrew right to left whatever the page language, named once for a screen
+ * reader, and (at the normal size) the list's name beneath.
+ */
+export async function expectBallotSlip(
+  scope: Locator,
+  locale: AppLocale,
+  list: { ballotLetters: string; name: Record<AppLocale, string> },
+  size: "normal" | "compact",
+) {
+  const slip = scope.getByTestId("ballot-slip");
+  await expect(slip).toHaveCount(1);
+  await expect(slip).toBeVisible();
+  await expect(slip).toHaveAttribute("data-letters", list.ballotLetters);
+  await expect(slip).toHaveAttribute("data-size", size);
+  // One accessible name; the drawn letters themselves are hidden from it.
+  const name = siteCopy(locale).Common.ballotLetters.replace("{letters}", list.ballotLetters);
+  const named = slip.getByRole("img", { name, exact: true });
+  await expect(named).toHaveCount(1);
+  const drawn = named.locator("[aria-hidden='true']");
+  await expect(drawn).toHaveText(list.ballotLetters);
+  await expect(drawn).toHaveAttribute("lang", "he");
+  await expect(drawn).toHaveAttribute("dir", "rtl");
+  await expect(drawn).toHaveCSS("direction", "rtl");
+  // Paper: white with black type, whatever the page's theme.
+  await expect(slip).toHaveCSS("background-color", "rgb(255, 255, 255)");
+  await expect(slip).toHaveCSS("color", "rgb(0, 0, 0)");
+  // The letters fit on the paper.
+  expect(
+    await slip.evaluate((el) => el.scrollWidth <= el.clientWidth + 1),
+    "letters fit the slip",
+  ).toBe(true);
+  const listName = slip.getByTestId("ballot-slip-name");
+  if (size === "normal") await expect(listName).toHaveText(list.name[locale]);
+  else await expect(listName).toHaveCount(0);
+}
+
 // ------------------------------------------------------------------ requests
 
 export const MATCHING_BUNDLE_URL = /\/api\/matching\//;

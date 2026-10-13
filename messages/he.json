@@ -30,8 +30,8 @@
   "Common": {
     "startSurvey": "להתחיל",
     "resumeSurvey": "להמשיך מהמקום שבו עצרת",
-    "jointList": "רצה ברשימה משותפת עם <partners></partners> בשם {list}, אותיות הפתק {letters}.",
-    "jointListNoLetters": "רצה ברשימה משותפת עם <partners></partners> בשם {list}."
+    "ballotLetters": "אותיות הפתק: {letters}",
+    "jointList": "רצה ברשימה משותפת עם <partners></partners> בשם {list}."
   },
   "Home": {
     "heading": "איזו מפלגה הכי קרובה לעמדות שלך?",
@@ -199,7 +199,6 @@
     "count": "{count, plural, one {מפלגה אחת} other {# מפלגות}}",
     "leader": "בהנהגת {name}",
     "jointGroup": "רשימה משותפת: {list}, יחד עם {partners}",
-    "ballotLetters": "אותיות הפתק: {letters}",
     "limitedInfoBadge": "מידע פומבי מועט",
     "tier": {
       "researched": "נחקרה · נכללת בהתאמה",
@@ -213,7 +212,6 @@
     "backToParties": "כל המפלגות",
     "leader": "יו״ר",
     "list": "רשימה",
-    "ballotLetters": "אותיות הפתק",
     "topCandidates": "המועמדים המובילים ברשימה",
     "researchedAsOf": "המחקר נכון לתאריך",
     "limitedInfoTitle": "מידע מועט.",
@@ -314,7 +312,6 @@
     "position": "מקום {n}",
     "showAll": "{count, plural, one {להצגת המפלגה הנוספת} other {להצגת # המפלגות הנוספות}}",
     "allPartiesNote": "מפלגות שסמוכות זו לזו בסדר הזה קרובות פעמים רבות לתשובות שלך כמעט באותה מידה, ולכן להבדל קטן במיקום אין משמעות רבה.",
-    "ballotLetters": "אותיות הפתק: {letters}",
     "limitedInfoTitle": "מידע מועט.",
     "limitedInfoBody": "על המפלגה הזו יש מעט מידע פומבי, ולכן ההתאמה אליה נשענת על פחות ראיות מאשר אחרות.",
     "contentFallbackNotice": "הטקסטים על עמדות המפלגות מוצגים בינתיים באנגלית. הגרסה העברית תתווסף בהמשך.",

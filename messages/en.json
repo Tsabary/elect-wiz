@@ -30,8 +30,8 @@
   "Common": {
     "startSurvey": "Start",
     "resumeSurvey": "Continue where you left off",
-    "jointList": "Running on a joint list with <partners></partners> as {list}, ballot letters {letters}.",
-    "jointListNoLetters": "Running on a joint list with <partners></partners> as {list}."
+    "ballotLetters": "Ballot letters: {letters}",
+    "jointList": "Running on a joint list with <partners></partners> as {list}."
   },
   "Home": {
     "heading": "Which party is closest to your positions?",
@@ -201,7 +201,6 @@
     "count": "{count, plural, one {# party} other {# parties}}",
     "leader": "Led by {name}",
     "jointGroup": "Joint list: {list}, with {partners}",
-    "ballotLetters": "Ballot letters: {letters}",
     "limitedInfoBadge": "Limited public information",
     "tier": {
       "researched": "Researched · included in the matching",
@@ -215,7 +214,6 @@
     "backToParties": "All parties",
     "leader": "Leader",
     "list": "List",
-    "ballotLetters": "Ballot letters",
     "topCandidates": "Top candidates on the list",
     "researchedAsOf": "Researched as of",
     "limitedInfoTitle": "Limited information.",
@@ -316,7 +314,6 @@
     "position": "#{n}",
     "showAll": "{count, plural, one {Show the one other party} other {Show the other # parties}}",
     "allPartiesNote": "Parties next to each other in this list are often almost equally near to your answers, so a small difference in order means little.",
-    "ballotLetters": "Ballot letters: {letters}",
     "limitedInfoTitle": "Limited information.",
     "limitedInfoBody": "Little public information exists about this party, so this match rests on less evidence than others.",
     "contentFallbackNotice": "The texts about the parties' positions are shown in English for now. The Hebrew version will follow.",
