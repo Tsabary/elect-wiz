@@ -7,17 +7,18 @@ export function SiteHeader() {
   const t = useTranslations("Nav");
   const m = useTranslations("Metadata");
   return (
-    <header className="bg-background/95 supports-backdrop-filter:bg-background/80 sticky top-0 z-40 backdrop-blur">
+    <header className="bg-background/95 supports-backdrop-filter:bg-background/85 border-foreground/15 sticky top-0 z-40 border-b backdrop-blur">
       <a
         href="#main"
-        className="focus:bg-background focus:ring-ring sr-only focus:not-sr-only focus:absolute focus:start-2 focus:top-2 focus:z-50 focus:rounded-md focus:p-2 focus:ring-2"
+        className="focus:bg-background focus:ring-ring sr-only focus:not-sr-only focus:absolute focus:start-2 focus:top-3 focus:z-50 focus:rounded-md focus:p-2 focus:ring-2"
       >
         {t("skipToContent")}
       </a>
-      <div className="mx-auto flex w-full max-w-3xl flex-wrap items-center gap-x-4 gap-y-1 px-4 py-2 sm:flex-nowrap">
+      <FlagStripes />
+      <div className="mx-auto flex w-full max-w-[70rem] flex-wrap items-center gap-x-6 px-4 pt-1.5 sm:flex-nowrap sm:py-1.5">
         <Link
           href="/"
-          className="focus-visible:ring-ring/50 flex min-h-11 items-center gap-2 rounded-md font-semibold outline-none focus-visible:ring-3"
+          className="focus-visible:ring-ring/50 display flex min-h-11 items-center gap-2.5 rounded-md text-xl outline-none focus-visible:ring-3"
         >
           <LogoMark />
           <span>{m("siteName")}</span>
@@ -27,7 +28,6 @@ export function SiteHeader() {
         </div>
         <MainNav className="order-3 w-full sm:order-2 sm:ms-auto sm:w-auto" />
       </div>
-      <FlagStripes />
     </header>
   );
 }
@@ -35,26 +35,39 @@ export function SiteHeader() {
 /** Two thin bands echoing the flag's stripes; the national palette, not a party's. */
 function FlagStripes() {
   return (
-    <div aria-hidden="true" className="flex flex-col gap-0.5">
-      <div className="bg-primary h-1" />
-      <div className="bg-primary h-1" />
+    <div aria-hidden="true" className="flex flex-col gap-[3px] pt-[3px]">
+      <div className="bg-primary h-[3px]" />
+      <div className="bg-primary h-[3px]" />
     </div>
   );
 }
 
-/** A neutral, abstract mark in the flag's blue: no party colours or symbols. */
+/** A slip going into the ballot box: the act of voting, with no party's colours or symbols. */
 function LogoMark() {
   return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" className="size-6 shrink-0">
-      <rect x="2" y="2" width="20" height="20" rx="6" className="fill-primary" />
-      <path
-        d="M7 12.5l3.2 3.2L17 8.8"
-        fill="none"
-        strokeWidth="2.4"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className="stroke-primary-foreground"
-      />
+    <svg viewBox="0 0 28 28" aria-hidden="true" className="size-7 shrink-0">
+      <g transform="rotate(-8 14 11)">
+        <rect
+          x="7.5"
+          y="1.5"
+          width="13"
+          height="18"
+          rx="1"
+          fill="#fff"
+          strokeWidth="1.6"
+          className="stroke-foreground"
+        />
+        <path
+          d="M10.8 8.6l2.4 2.5 4.2-4.9"
+          fill="none"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="stroke-foreground"
+        />
+      </g>
+      <path d="M2 15h24v9.5a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z" className="fill-primary" />
+      <rect x="6.5" y="17.6" width="15" height="1.9" rx="0.95" fill="#fff" fillOpacity="0.9" />
     </svg>
   );
 }

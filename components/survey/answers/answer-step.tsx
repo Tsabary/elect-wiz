@@ -64,21 +64,21 @@ export function AnswerStep({
     >
       <header className="flex flex-col gap-3">
         <div className="flex items-center justify-between gap-3 text-sm">
-          <p className="text-muted-foreground font-medium" data-testid="answer-progress">
+          <p className="font-bold" data-testid="answer-progress">
             {t("progress", { current: index + 1, total })}
           </p>
           <p className="text-muted-foreground">{t("rankBadge", { rank: index + 1 })}</p>
         </div>
         <ProgressBar value={index + 1} max={total} />
-        <div className="flex flex-wrap items-center justify-between gap-2">
-          <p className="font-medium">{issue.title}</p>
+        <div className="mt-3 flex flex-wrap items-center justify-between gap-2">
+          <p className="eyebrow">{issue.title}</p>
           <MoreInfo issue={issue} />
         </div>
         <h1
           id={`${uid}-q`}
           ref={headingRef}
           tabIndex={-1}
-          className="text-2xl leading-snug font-bold text-balance outline-none"
+          className="display text-3xl outline-none sm:text-4xl"
         >
           {issue.question}
         </h1>
@@ -103,8 +103,10 @@ export function AnswerStep({
               data-option-id={option.id}
               data-selected={selected}
               className={cn(
-                "has-[:focus-visible]:ring-ring/50 flex min-h-12 cursor-pointer items-start gap-3 rounded-xl border-2 p-3 transition-colors has-[:focus-visible]:ring-3",
-                selected ? "border-primary bg-accent/60" : "border-border hover:border-primary/40",
+                "bg-card has-[:focus-visible]:ring-ring/50 flex min-h-14 cursor-pointer items-start gap-3 rounded-sm border-2 p-4 transition-colors has-[:focus-visible]:ring-3",
+                selected
+                  ? "border-foreground shadow-[inset_4px_0_0_var(--primary)] rtl:shadow-[inset_-4px_0_0_var(--primary)]"
+                  : "border-foreground/15 hover:border-foreground/50",
               )}
             >
               <input
@@ -113,9 +115,9 @@ export function AnswerStep({
                 value={option.id}
                 checked={selected}
                 onChange={() => select(option.id)}
-                className="accent-foreground mt-0.5 size-5 shrink-0"
+                className="accent-primary mt-1 size-5 shrink-0"
               />
-              <span className="text-base leading-relaxed" data-testid="option-text">
+              <span className="text-[1.0625rem] leading-relaxed" data-testid="option-text">
                 {option.text}
               </span>
             </label>
@@ -155,7 +157,7 @@ export function StepNav({
 }) {
   const hintId = useId();
   return (
-    <div className="bg-background/95 sticky bottom-0 -mx-4 flex flex-col gap-2 border-t px-4 py-3 sm:static sm:mx-0 sm:border-0 sm:px-0">
+    <div className="bg-background/95 border-foreground/15 sticky bottom-0 -mx-4 flex flex-col gap-2 border-t px-4 py-3 sm:static sm:mx-0 sm:border-0 sm:px-0">
       {hint && (
         <p id={hintId} className="text-muted-foreground text-sm">
           {hint}
@@ -173,7 +175,7 @@ export function StepNav({
         </Button>
         <Button
           size="lg"
-          className="h-12 flex-[2] text-base sm:flex-none sm:px-8"
+          className="h-12 flex-[2] text-base font-bold sm:flex-none sm:px-10"
           onClick={onNext}
           disabled={nextDisabled}
           aria-describedby={hint ? hintId : undefined}

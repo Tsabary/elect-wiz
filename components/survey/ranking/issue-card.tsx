@@ -49,10 +49,7 @@ export function IssueCard(props: Props) {
       style={style}
       data-testid={props.mode === "ranked" ? "ranked-item" : "pool-item"}
       data-issue-id={issue.id}
-      className={cn(
-        "bg-card flex gap-2 rounded-xl border p-3 shadow-xs",
-        isDragging && "opacity-40",
-      )}
+      className={cn("sheet flex gap-2 p-3", isDragging && "opacity-40")}
     >
       <button
         ref={setActivatorNodeRef}
@@ -70,14 +67,14 @@ export function IssueCard(props: Props) {
         <div className="flex items-start gap-2">
           {props.mode === "ranked" && (
             <span
-              className="bg-primary text-primary-foreground mt-0.5 flex size-6 shrink-0 items-center justify-center rounded-full text-xs font-bold"
+              className="display text-primary min-w-6 shrink-0 text-center text-3xl leading-[0.8] tabular-nums"
               data-testid="rank-badge"
             >
               <span className="sr-only">{t("rankLabel")} </span>
               {props.rank}
             </span>
           )}
-          <h3 className="leading-snug font-semibold">{issue.title}</h3>
+          <h3 className="text-lg leading-snug font-bold">{issue.title}</h3>
         </div>
         <p className="text-muted-foreground text-sm leading-snug">{issue.description}</p>
         <div className="mt-1 flex flex-wrap items-center gap-1">
@@ -154,10 +151,10 @@ export function IssueCard(props: Props) {
 /** The floating copy of a card while it's dragged. */
 export function IssueCardOverlay({ issue }: { issue: ClientIssue }) {
   return (
-    <div className="bg-card flex cursor-grabbing gap-2 rounded-xl border p-3 shadow-lg">
+    <div className="sheet flex -rotate-1 cursor-grabbing gap-2 p-3 shadow-lg">
       <GripVertical className="text-muted-foreground size-5 shrink-0" aria-hidden="true" />
       <div className="flex flex-col gap-1">
-        <p className="font-semibold">{issue.title}</p>
+        <p className="text-lg font-bold">{issue.title}</p>
         <p className="text-muted-foreground text-sm">{issue.description}</p>
       </div>
     </div>
@@ -177,7 +174,7 @@ export function NotImportantCard({
     <li
       data-testid="not-important-item"
       data-issue-id={issue.id}
-      className="bg-muted/40 flex items-center justify-between gap-2 rounded-xl border border-dashed p-3"
+      className="border-foreground/30 flex items-center justify-between gap-2 rounded-sm border border-dashed py-1.5 ps-3 pe-1.5"
     >
       <span className="text-muted-foreground font-medium">{issue.title}</span>
       <Button

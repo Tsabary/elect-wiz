@@ -254,16 +254,16 @@ export function RankingStep({
   return (
     <section aria-labelledby="ranking-heading" className="flex flex-col gap-6">
       <header className="flex flex-col gap-2">
-        <p className="text-muted-foreground text-sm font-medium">{t("stepLabel")}</p>
+        <p className="eyebrow">{t("stepLabel")}</p>
         <h1
           id="ranking-heading"
           ref={headingRef}
           tabIndex={-1}
-          className="text-2xl font-bold outline-none sm:text-3xl"
+          className="display text-3xl outline-none sm:text-5xl"
         >
           {t("heading")}
         </h1>
-        <p className="text-muted-foreground max-w-prose">
+        <p className="text-muted-foreground max-w-prose leading-relaxed">
           {t("instructions", { max: MAX_NOT_IMPORTANT })}
         </p>
       </header>
@@ -321,15 +321,11 @@ export function RankingStep({
       </DndContext>
 
       <section aria-labelledby="not-important-heading" className="flex flex-col gap-3">
-        <h2 id="not-important-heading" className="text-lg font-semibold">
+        <h2 id="not-important-heading" className="text-xl font-bold">
           {t("notImportantHeading", { count: state.notImportant.length, max: MAX_NOT_IMPORTANT })}
         </h2>
         {limitHit && (
-          <p
-            role="alert"
-            data-testid="limit-message"
-            className="rounded-lg border border-dashed px-3 py-2 text-sm font-medium"
-          >
+          <p role="alert" data-testid="limit-message" className="note font-medium">
             {t("limitReached", { max: MAX_NOT_IMPORTANT })}
           </p>
         )}
@@ -344,7 +340,7 @@ export function RankingStep({
         )}
       </section>
 
-      <div className="bg-background/95 sticky bottom-0 -mx-4 flex flex-col gap-2 border-t px-4 py-3 sm:static sm:mx-0 sm:border-0 sm:px-0">
+      <div className="bg-background/95 border-foreground/15 sticky bottom-0 -mx-4 flex flex-col gap-2 border-t px-4 py-3 sm:static sm:mx-0 sm:border-0 sm:px-0">
         <p className="text-muted-foreground text-sm" id="ranking-status">
           {complete
             ? t("statusComplete", { count: state.ranked.length })
@@ -354,7 +350,7 @@ export function RankingStep({
         </p>
         <Button
           size="lg"
-          className="h-12 text-base"
+          className="h-12 text-base font-bold sm:self-start sm:px-10"
           disabled={!complete}
           aria-describedby="ranking-status"
           onClick={onContinue}
@@ -389,14 +385,14 @@ function RankedList({
   const { setNodeRef, isOver } = useDroppable({ id: "ranked", disabled: ids.length > 0 });
   return (
     <section aria-labelledby="ranked-heading" className="flex flex-col gap-3">
-      <h2 id="ranked-heading" className="text-lg font-semibold">
+      <h2 id="ranked-heading" className="text-xl font-bold">
         {label} <span className="text-muted-foreground font-normal">({count})</span>
       </h2>
       <SortableContext id="ranked" items={ids} strategy={verticalListSortingStrategy}>
         <ol
           ref={setNodeRef}
           data-testid="ranked-list"
-          className={`flex min-h-20 flex-col gap-2 rounded-xl border-2 border-dashed p-2 transition-colors ${isOver ? "border-primary/50 bg-accent/60" : "border-border"}`}
+          className={`flex min-h-20 flex-col gap-2 rounded-sm border-2 border-dashed p-2 transition-colors ${isOver ? "border-primary bg-accent/60" : "bg-kraft border-foreground/25"}`}
         >
           {ids.length === 0 && (
             <li className="text-muted-foreground flex min-h-16 items-center justify-center px-4 text-center text-sm">
@@ -426,7 +422,7 @@ function PoolList({
   const { setNodeRef } = useDroppable({ id: "pool", disabled: ids.length > 0 });
   return (
     <section aria-labelledby="pool-heading" className="flex flex-col gap-3">
-      <h2 id="pool-heading" className="text-lg font-semibold">
+      <h2 id="pool-heading" className="text-xl font-bold">
         {label} <span className="text-muted-foreground font-normal">({count})</span>
       </h2>
       <SortableContext id="pool" items={ids} strategy={verticalListSortingStrategy}>

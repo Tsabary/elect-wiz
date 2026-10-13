@@ -181,9 +181,9 @@ export function SurveyApp({
   if (!state || !step) {
     return (
       <div aria-busy="true" className="flex flex-col gap-4" data-testid="survey-loading">
-        <div className="bg-muted h-8 w-2/3 animate-pulse rounded" />
-        <div className="bg-muted h-24 animate-pulse rounded-xl" />
-        <div className="bg-muted h-24 animate-pulse rounded-xl" />
+        <div className="bg-kraft h-10 w-2/3 animate-pulse rounded-sm motion-reduce:animate-none" />
+        <div className="bg-kraft h-24 animate-pulse rounded-sm motion-reduce:animate-none" />
+        <div className="bg-kraft h-24 animate-pulse rounded-sm motion-reduce:animate-none" />
       </div>
     );
   }
@@ -218,7 +218,7 @@ export function SurveyApp({
   return (
     <div className="flex flex-col gap-6" data-testid="survey" data-step={stepKey}>
       {!store?.storageAvailable && (
-        <p role="note" className="text-muted-foreground rounded-lg border px-3 py-2 text-sm">
+        <p role="note" className="note">
           {t("noStorage")}
         </p>
       )}

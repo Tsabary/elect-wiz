@@ -31,7 +31,7 @@ export function PollInfo({ list, modes }: { list: List; modes: TimeModes }) {
               }),
               date: format.dateTime(calendarDate(line.asOf), { dateStyle: "long", timeZone: "UTC" }),
             })}{" "}
-            <a href={line.sourceUrl} rel="noopener noreferrer" target="_blank" className="underline underline-offset-4">
+            <a href={line.sourceUrl} rel="noopener noreferrer" target="_blank" className="link-plain">
               {t("source", { title: line.sourceTitle })}
             </a>
           </p>
@@ -47,7 +47,7 @@ export function PollInfo({ list, modes }: { list: List; modes: TimeModes }) {
             <ul className="mt-2 flex flex-col gap-2">
               {constituent.map((p, i) => (
                 <li key={i}>
-                  <a href={p.url} rel="noopener noreferrer" target="_blank" className="underline underline-offset-4">
+                  <a href={p.url} rel="noopener noreferrer" target="_blank" className="link-plain">
                     {p.pollster}
                   </a>
                   {" · "}
@@ -71,8 +71,8 @@ export function PollInfo({ list, modes }: { list: List; modes: TimeModes }) {
     );
 
   return (
-    <div className="bg-muted/50 mt-2 rounded-lg border p-4 text-sm">
-      <h3 className="mb-1 font-semibold">{t("heading")}</h3>
+    <div className="note mt-2 max-w-prose">
+      <h3 className="mb-1 font-bold">{t("heading")}</h3>
       {modes.blackout ? (
         fallback
       ) : content ? (

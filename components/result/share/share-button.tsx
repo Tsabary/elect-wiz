@@ -42,17 +42,16 @@ export function ShareButton({ partyIds, topName }: { partyIds: string[]; topName
   return (
     <section
       aria-labelledby="share-heading"
-      className="flex flex-col gap-3 rounded-xl border p-4"
+      className="bg-kraft flex flex-col gap-3 rounded-sm p-5 sm:p-7"
       data-testid="share"
     >
-      <h2 id="share-heading" className="font-semibold">
+      <h2 id="share-heading" className="display text-2xl sm:text-3xl">
         {t("heading")}
       </h2>
-      <p className="text-muted-foreground text-sm">{t("explainer")}</p>
+      <p className="max-w-prose text-sm leading-relaxed">{t("explainer")}</p>
       <Button
         size="lg"
-        variant="outline"
-        className="h-12 gap-2 self-start px-5 text-base"
+        className="mt-1 h-12 gap-2 self-start px-6 text-base font-bold"
         onClick={share}
         data-testid="share-button"
       >
@@ -72,7 +71,7 @@ export function ShareButton({ partyIds, topName }: { partyIds: string[]; topName
             readOnly
             value={url}
             dir="ltr"
-            className="rounded-md border px-2 py-1"
+            className="bg-card border-foreground/25 rounded-sm border px-2 py-1.5"
             onFocus={(e) => e.currentTarget.select()}
             data-testid="share-url"
           />

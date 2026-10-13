@@ -44,12 +44,12 @@ export function StartSurveyLink({
   }
 
   return (
-    <div className="flex flex-wrap items-center gap-3">
+    <div className="flex flex-wrap items-center gap-x-5 gap-y-4">
       <Link
         href="/survey"
         data-testid="start-survey"
         data-resume={resumable}
-        className={cn(buttonVariants({ size: "lg" }), "h-12 gap-2 px-6 text-base")}
+        className={cn(buttonVariants({ size: "lg" }), "cta h-14 gap-3 px-8 text-lg font-bold")}
       >
         {resumable ? t("resumeSurvey") : t("startSurvey")}
         <Arrow aria-hidden="true" />
@@ -58,7 +58,7 @@ export function StartSurveyLink({
         <Button
           variant="outline"
           size="lg"
-          className="h-12 gap-2 px-5 text-base"
+          className="border-foreground/30 h-14 gap-2 px-5 text-base"
           onClick={startOver}
           data-testid="home-start-over"
         >

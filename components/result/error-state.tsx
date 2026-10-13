@@ -27,7 +27,7 @@ export function ErrorState({
     <section
       role="alert"
       aria-labelledby="error-heading"
-      className="flex flex-col gap-4 rounded-xl border p-5"
+      className="sheet flex flex-col gap-4 p-5 sm:p-7"
       data-testid="result-error"
       data-error-code={code}
     >
@@ -35,7 +35,7 @@ export function ErrorState({
         id="error-heading"
         ref={headingRef}
         tabIndex={-1}
-        className="text-xl font-bold outline-none"
+        className="display text-3xl outline-none"
       >
         {t("MatchErrors.title")}
       </h1>

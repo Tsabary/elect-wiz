@@ -1,4 +1,4 @@
-import { ExternalLink } from "lucide-react";
+import { ArrowLeft, ArrowRight, ExternalLink } from "lucide-react";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getFormatter, getTranslations, setRequestLocale } from "next-intl/server";
@@ -64,32 +64,44 @@ export default async function PartyPage({ params }: PageProps<"/[locale]/parties
   const format = await getFormatter();
   const summary = listedPartyView(party, getParties(), getLists(), locale);
   const modes = timeModes(resolveNow());
+  const BackArrow = locale === "he" ? ArrowRight : ArrowLeft;
   const researchedAsOf = doc ? doc.researchedAsOf || party.researchedAsOf : null;
 
   return (
-    <article className="flex flex-col gap-8">
-      <nav aria-label={t("breadcrumbLabel")} className="text-sm">
-        <Link href="/parties" className="text-muted-foreground underline underline-offset-4">
-          {t("backToParties")}
-        </Link>
-      </nav>
+    <article className="col-wide flex flex-col gap-10">
+      <header className="flex flex-col gap-6">
+        <nav aria-label={t("breadcrumbLabel")} className="text-sm">
+          <Link
+            href="/parties"
+            className="text-muted-foreground hover:text-foreground inline-flex min-h-8 items-center gap-1.5 font-medium underline-offset-4 hover:underline"
+          >
+            <BackArrow className="size-4" aria-hidden="true" />
+            {t("backToParties")}
+          </Link>
+        </nav>
 
-      <header className="flex flex-col gap-4">
-        <h1 className="text-3xl font-bold text-balance" data-testid="party-name">
-          {summary.name}
-        </h1>
         {/* The list's ballot slip, as in the polling booth, beside the registry facts. */}
-        <div className="flex items-start gap-4 rounded-xl border p-4" data-testid="party-facts">
-          <BallotSlip letters={summary.list.ballotLetters} listName={summary.list.name} />
-          <dl className="grid min-w-0 grow content-start gap-x-6 gap-y-2 text-sm sm:grid-cols-[auto_1fr]">
+        <div
+          className="border-foreground grid grid-cols-[minmax(0,1fr)_auto] items-start gap-x-5 gap-y-5 border-b-2 pb-6 sm:gap-x-8"
+          data-testid="party-facts"
+        >
+          <h1 className="display text-4xl sm:text-5xl lg:text-6xl" data-testid="party-name">
+            {summary.name}
+          </h1>
+          <BallotSlip
+            letters={summary.list.ballotLetters}
+            listName={summary.list.name}
+            className="rotate-2 shadow-[0_10px_24px_-12px_rgb(10_20_50/0.5)] sm:row-span-2"
+          />
+          <dl className="col-span-2 grid max-w-2xl grid-cols-[auto_1fr] gap-x-6 gap-y-1.5 text-[0.9375rem] sm:col-span-1">
             <dt className="text-muted-foreground">{t("leader")}</dt>
-            <dd>{summary.leader}</dd>
+            <dd className="font-medium">{summary.leader}</dd>
             <dt className="text-muted-foreground">{t("list")}</dt>
-            <dd>{summary.list.name}</dd>
+            <dd className="font-medium">{summary.list.name}</dd>
             {researchedAsOf && (
               <>
                 <dt className="text-muted-foreground">{t("researchedAsOf")}</dt>
-                <dd data-testid="researched-as-of">
+                <dd className="font-medium" data-testid="researched-as-of">
                   {format.dateTime(calendarDate(researchedAsOf), {
                     dateStyle: "long",
                     timeZone: "UTC",
@@ -100,16 +112,12 @@ export default async function PartyPage({ params }: PageProps<"/[locale]/parties
           </dl>
         </div>
         {summary.list.isJoint && (
-          <p className="rounded-lg border px-4 py-3 text-sm">
+          <p className="max-w-3xl leading-relaxed">
             <JointListLabel partners={summary.partners} listName={summary.list.name} />
           </p>
         )}
         {listed && (
-          <p
-            role="note"
-            data-testid="listed-note"
-            className="bg-muted rounded-lg border px-4 py-3 text-sm"
-          >
+          <p role="note" data-testid="listed-note" className="note max-w-3xl">
             {t("listedNote")}
           </p>
         )}
@@ -117,17 +125,13 @@ export default async function PartyPage({ params }: PageProps<"/[locale]/parties
           <p
             role="note"
             data-testid="content-fallback-notice"
-            className="bg-muted rounded-lg border px-4 py-3 text-sm font-medium"
+            className="note max-w-3xl font-medium"
           >
             {t("contentFallbackNotice")}
           </p>
         )}
         {summary.limitedInfo && (
-          <p
-            role="note"
-            data-testid="limited-info"
-            className="bg-muted rounded-lg border px-4 py-3 text-sm"
-          >
+          <p role="note" data-testid="limited-info" className="note max-w-3xl">
             <strong>{t("limitedInfoTitle")}</strong> {t("limitedInfoBody")}
           </p>
         )}
@@ -144,10 +148,13 @@ export default async function PartyPage({ params }: PageProps<"/[locale]/parties
         <>
           {summary.topCandidates.length > 0 && (
             <section aria-labelledby="top-candidates" className="flex flex-col gap-3">
-              <h2 id="top-candidates" className="text-2xl font-semibold">
+              <h2 id="top-candidates" className="display text-2xl sm:text-3xl">
                 {t("topCandidates")}
               </h2>
-              <ol className="flex list-decimal flex-col gap-1 ps-6" data-testid="top-candidates">
+              <ol
+                className="marker:text-muted-foreground flex list-decimal flex-col gap-1.5 ps-6 text-lg marker:text-base"
+                data-testid="top-candidates"
+              >
                 {summary.topCandidates.map((name, i) => (
                   <li key={i}>{name}</li>
                 ))}
@@ -160,7 +167,7 @@ export default async function PartyPage({ params }: PageProps<"/[locale]/parties
               className="flex flex-col gap-2"
               data-testid="platform"
             >
-              <h2 id="party-platform" className="text-2xl font-semibold">
+              <h2 id="party-platform" className="display text-2xl sm:text-3xl">
                 {t("platformHeading")}
               </h2>
               <p className="text-muted-foreground text-sm" data-testid="platform-note">
@@ -171,7 +178,7 @@ export default async function PartyPage({ params }: PageProps<"/[locale]/parties
                 target="_blank"
                 rel="noopener noreferrer"
                 data-testid="platform-link"
-                className="inline-flex min-h-11 items-center gap-1 self-start font-medium underline underline-offset-4"
+                className="link inline-flex min-h-11 items-center gap-1 self-start"
               >
                 {t("platformLink")}
                 <ExternalLink className="size-4" aria-hidden="true" />

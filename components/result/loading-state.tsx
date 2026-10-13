@@ -23,16 +23,16 @@ export function LoadingState({ headingRef }: { headingRef: RefObject<HTMLHeading
           id="loading-heading"
           ref={headingRef}
           tabIndex={-1}
-          className="text-2xl font-bold outline-none"
+          className="display text-3xl outline-none"
         >
           {t("loadingTitle")}
         </h1>
         <p className="text-muted-foreground max-w-sm">{t("loadingBody")}</p>
       </div>
       <div className="flex w-full max-w-md flex-col gap-3" aria-hidden="true">
-        <div className="bg-muted h-20 animate-pulse rounded-xl motion-reduce:animate-none" />
-        <div className="bg-muted h-14 animate-pulse rounded-xl motion-reduce:animate-none" />
-        <div className="bg-muted h-14 animate-pulse rounded-xl motion-reduce:animate-none" />
+        <div className="bg-kraft h-20 animate-pulse rounded-sm motion-reduce:animate-none" />
+        <div className="bg-kraft h-14 animate-pulse rounded-sm motion-reduce:animate-none" />
+        <div className="bg-kraft h-14 animate-pulse rounded-sm motion-reduce:animate-none" />
       </div>
     </section>
   );

@@ -5,15 +5,11 @@ import { Link } from "@/i18n/navigation";
 export function ElectionOverBanner() {
   const t = useTranslations("TimeModes");
   return (
-    <div
-      role="status"
-      data-testid="election-over"
-      className="bg-muted flex flex-col gap-2 rounded-xl border p-4 sm:p-5"
-    >
-      <p className="font-semibold">{t("electionOverTitle")}</p>
+    <div role="status" data-testid="election-over" className="sheet flex flex-col gap-2 p-4 sm:p-5">
+      <p className="display text-xl">{t("electionOverTitle")}</p>
       <p className="text-muted-foreground">{t("electionOverBody")}</p>
       <p>
-        <Link href="/parties" className="font-medium underline underline-offset-4">
+        <Link href="/parties" className="link">
           {t("browseParties")}
         </Link>
       </p>

@@ -12,7 +12,7 @@ export function PreviewBanner() {
     <div
       role="note"
       data-testid="preview-banner"
-      className="bg-muted text-muted-foreground border-b px-4 py-2 text-center text-xs"
+      className="bg-kraft text-foreground border-foreground/15 border-b px-4 py-2 text-center text-xs font-medium"
     >
       {t("fictional")}
     </div>

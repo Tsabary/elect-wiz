@@ -9,7 +9,12 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-sans);
   --font-mono: ui-monospace, monospace;
-  --font-heading: var(--font-sans);
+  --font-heading: var(--font-display-he), var(--font-display-lat), ui-serif, Georgia, serif;
+  --color-ink: var(--ink);
+  --color-ink-foreground: var(--ink-foreground);
+  --color-ink-muted: var(--ink-muted);
+  --color-paper: var(--paper);
+  --color-kraft: var(--kraft);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -49,44 +54,61 @@
 }
 
 :root {
-  /* Israeli flag palette: flag blue (#0038b8) on white, with blue-tinted neutrals. */
+  /*
+   * The polling booth: white ballot paper and black type on a warm paper
+   * ground, with the flag's blue kept for the envelope, the stripes and the
+   * things you press. Ink and paper carry the page, so the blue reads as the
+   * state's and not as any list's.
+   */
   --flag-blue: oklch(0.412 0.206 262.9);
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.21 0.04 262);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.21 0.04 262);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.21 0.04 262);
+  /* Deep ink blue for the dark bands, and the type on them. */
+  --ink: oklch(0.215 0.065 265);
+  --ink-foreground: oklch(0.972 0.012 85);
+  --ink-muted: oklch(0.84 0.03 262);
+  /* The slip itself: always white, whatever surrounds it. */
+  --paper: oklch(1 0 0);
+  /* The booth's cardboard. */
+  --kraft: oklch(0.935 0.022 85);
+  --background: oklch(0.972 0.012 85);
+  --foreground: oklch(0.2 0.035 265);
+  --card: oklch(0.995 0.004 85);
+  --card-foreground: oklch(0.2 0.035 265);
+  --popover: oklch(0.995 0.004 85);
+  --popover-foreground: oklch(0.2 0.035 265);
   --primary: var(--flag-blue);
   --primary-foreground: oklch(1 0 0);
-  --secondary: oklch(0.965 0.014 262);
-  --secondary-foreground: oklch(0.3 0.09 262);
-  --muted: oklch(0.968 0.01 262);
-  --muted-foreground: oklch(0.46 0.04 262);
-  --accent: oklch(0.95 0.025 262);
+  --secondary: var(--kraft);
+  --secondary-foreground: oklch(0.2 0.035 265);
+  --muted: oklch(0.948 0.016 85);
+  --muted-foreground: oklch(0.42 0.03 265);
+  --accent: oklch(0.935 0.03 262);
   --accent-foreground: oklch(0.3 0.12 262);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.91 0.018 262);
-  --input: oklch(0.88 0.025 262);
+  --border: oklch(0.87 0.02 85);
+  --input: oklch(0.8 0.02 85);
   --ring: oklch(0.6 0.16 262);
   --chart-1: oklch(0.86 0.06 262);
   --chart-2: oklch(0.7 0.13 262);
   --chart-3: oklch(0.55 0.18 262);
   --chart-4: oklch(0.412 0.206 262.9);
   --chart-5: oklch(0.3 0.13 262);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.985 0.005 262);
-  --sidebar-foreground: oklch(0.21 0.04 262);
+  --radius: 0.25rem;
+  --sidebar: oklch(0.985 0.005 85);
+  --sidebar-foreground: oklch(0.2 0.035 265);
   --sidebar-primary: var(--flag-blue);
   --sidebar-primary-foreground: oklch(1 0 0);
-  --sidebar-accent: oklch(0.95 0.025 262);
+  --sidebar-accent: oklch(0.935 0.03 262);
   --sidebar-accent-foreground: oklch(0.3 0.12 262);
-  --sidebar-border: oklch(0.91 0.018 262);
+  --sidebar-border: oklch(0.87 0.02 85);
   --sidebar-ring: oklch(0.6 0.16 262);
 }
 
 .dark {
   --flag-blue: oklch(0.68 0.15 262);
+  --ink: oklch(0.13 0.03 262);
+  --ink-foreground: oklch(0.97 0.01 262);
+  --ink-muted: oklch(0.8 0.03 262);
+  --kraft: oklch(0.24 0.04 262);
   --background: oklch(0.17 0.03 262);
   --foreground: oklch(0.97 0.01 262);
   --card: oklch(0.22 0.04 262);
@@ -130,21 +152,157 @@
   html {
     @apply font-sans;
   }
+  ::selection {
+    background: color-mix(in oklch, var(--flag-blue) 22%, transparent);
+  }
 }
 
-/* Research documents rendered from markdown. */
 @layer components {
+  /*
+   * Page columns. Children sit in the reading column unless they ask for the
+   * wide one (`col-wide`) or the whole width (`col-full`). Below 72rem the wide
+   * column is the reading column.
+   */
+  .page-grid {
+    display: grid;
+    align-content: start;
+    grid-template-columns:
+      [full-start] minmax(1rem, 1fr)
+      [wide-start content-start] minmax(0, 48rem)
+      [content-end wide-end] minmax(1rem, 1fr)
+      [full-end];
+  }
+  @media (min-width: 72rem) {
+    .page-grid {
+      grid-template-columns:
+        [full-start] minmax(1rem, 1fr)
+        [wide-start] 10rem
+        [content-start] 48rem
+        [content-end] 10rem
+        [wide-end] minmax(1rem, 1fr)
+        [full-end];
+    }
+  }
+  .page-grid > * {
+    grid-column: content;
+    min-width: 0;
+  }
+  .page-grid > .col-wide {
+    grid-column: wide;
+  }
+  .page-grid > .col-full {
+    grid-column: full;
+  }
+
+  /* The one serif voice: every use of the heading font goes through this class,
+     so its weight, line height, wrapping and letter spacing are the same
+     everywhere. Hebrew is set a little looser than Latin. */
+  .display {
+    @apply font-heading leading-[1.1] font-bold text-balance;
+  }
+  .display:lang(en) {
+    letter-spacing: -0.015em;
+  }
+
+  /* A small label above a heading, led by the two stripes. */
+  .eyebrow {
+    @apply text-foreground flex items-center gap-2.5 text-sm font-bold;
+  }
+  .eyebrow::before {
+    content: "";
+    @apply border-primary h-[7px] w-6 shrink-0 border-y-2;
+  }
+  .on-ink .eyebrow,
+  .eyebrow.on-ink {
+    @apply text-ink-foreground;
+  }
+  .on-ink .eyebrow::before,
+  .eyebrow.on-ink::before {
+    border-color: currentColor;
+  }
+
+  /* A note set off from the text: cardboard ground, an ink rule at its start. */
+  .note {
+    @apply bg-kraft border-foreground border-s-[3px] px-4 py-3 text-sm leading-relaxed;
+  }
+
+  /* A sheet of paper lying on the page. */
+  .sheet {
+    @apply bg-card border-foreground/15 rounded-sm border shadow-[0_1px_0_rgb(0_0_0/0.04),0_6px_16px_-10px_rgb(20_30_60/0.25)];
+  }
+
+  .link {
+    @apply text-primary decoration-primary/40 hover:decoration-primary font-medium underline decoration-1 underline-offset-4;
+  }
+  .link-plain {
+    @apply decoration-foreground/40 hover:decoration-foreground underline decoration-1 underline-offset-4;
+  }
+
+  /* The main call to action: a pressed stamp, offset toward the text's end. */
+  .cta {
+    --cta-x: 5px;
+    @apply shadow-[var(--cta-x)_5px_0_var(--foreground)] transition-[translate,box-shadow] duration-150;
+  }
+  .cta:dir(rtl) {
+    --cta-x: -5px;
+  }
+  .cta:hover {
+    translate: calc(var(--cta-x) * 0.4) 2px;
+    box-shadow: calc(var(--cta-x) * 0.6) 3px 0 var(--foreground);
+  }
+  .cta:active {
+    translate: var(--cta-x) 5px;
+    box-shadow: 0 0 0 var(--foreground);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .cta {
+      transition: none;
+    }
+  }
+
+  /* A document with its contents beside it on wide screens. */
+  .doc-layout {
+    @apply flex flex-col gap-10;
+  }
+  @media (min-width: 72rem) {
+    .doc-layout {
+      display: grid;
+      grid-template-columns: 15rem minmax(0, 1fr);
+      column-gap: 4rem;
+      align-items: start;
+    }
+    .doc-layout > .doc-toc {
+      position: sticky;
+      top: 6rem;
+      max-height: calc(100dvh - 7.5rem);
+      overflow-y: auto;
+    }
+  }
+  .doc-toc a {
+    @apply text-muted-foreground hover:text-foreground block py-1 leading-snug underline-offset-4 hover:underline;
+  }
+
+  /* Research documents rendered from markdown. */
   .research-prose {
-    @apply flex max-w-prose flex-col gap-3 leading-relaxed;
+    @apply flex max-w-prose flex-col gap-4 text-[1.0625rem] leading-[1.75];
   }
   .research-prose a {
-    @apply text-primary underline underline-offset-4;
+    @apply text-primary decoration-primary/40 hover:decoration-primary underline decoration-1 underline-offset-4;
   }
   .research-prose ul {
     @apply list-disc ps-6;
   }
   .research-prose ol {
     @apply list-decimal ps-6;
+  }
+  .research-prose li + li {
+    @apply mt-2;
+  }
+  .research-prose li::marker {
+    @apply text-muted-foreground;
+  }
+  .research-prose blockquote {
+    @apply border-foreground/30 text-muted-foreground border-s-2 ps-4;
   }
   .research-prose sup.citations {
     @apply text-muted-foreground ms-0.5 text-[0.7em];
@@ -162,11 +320,33 @@
 h2:target,
 h3:target,
 li:target {
-  @apply bg-muted rounded-sm;
+  @apply bg-kraft rounded-sm;
+  box-shadow: 0 0 0 0.375rem var(--kraft);
 }
 
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;
+  }
+
+  /* The slip rising out of its envelope, once, when the page opens. */
+  .slip-rise {
+    animation: slip-rise 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) 0.15s both;
+  }
+  /* The matched slip landing on the result. */
+  .slip-drop {
+    animation: slip-drop 0.7s cubic-bezier(0.2, 0.9, 0.3, 1.2) 0.1s both;
+  }
+}
+
+@keyframes slip-rise {
+  from {
+    translate: 0 28%;
+  }
+}
+@keyframes slip-drop {
+  from {
+    translate: 0 -1.5rem;
+    rotate: -9deg;
   }
 }

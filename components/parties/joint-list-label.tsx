@@ -17,7 +17,7 @@ export function ListOfLinks({ items }: { items: { id: string; name: string }[] }
           <Link
             key={idx}
             href={`/parties/${item.id}`}
-            className="font-medium underline underline-offset-4"
+            className="font-medium underline decoration-current/40 decoration-1 underline-offset-4 hover:decoration-current"
           >
             {item.name}
           </Link>

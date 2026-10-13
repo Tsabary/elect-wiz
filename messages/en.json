@@ -58,7 +58,8 @@
     "neutralHeading": "Non-partisan and transparent",
     "neutralBody": "This tool has no party affiliation and no ads, and no party pays for it or has any say in its content. Every party included in the matching was researched in the same way, and every research page is open to read. Parties that were not researched in depth are shown with their official details only and are not included in the matching.",
     "decisionAid": "The result shows which parties’ documented positions are closest to the answers you give. It’s a decision aid, not a recommendation of who to vote for.",
-    "howItWorksLink": "Read how the issues were chosen, how the parties were researched and how matching works"
+    "howItWorksLink": "Read how the issues were chosen, how the parties were researched and how matching works",
+    "knessetPhotoAlt": "The Knesset building in Jerusalem, seen from the front"
   },
   "HowItWorks": {
     "title": "How this works",

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { BallotArt } from "@/components/brand/ballot-art";
 import { StartSurveyLink } from "@/components/home/start-survey-link";
 import { ElectionOverBanner } from "@/components/time/election-over-banner";
 import { ElectionGate } from "@/components/time/time-modes";
@@ -60,31 +61,31 @@ export default async function SharePage({ params }: PageProps<"/[locale]/share/[
   const { electionOver } = timeModes(resolveNow());
 
   return (
-    <div className="flex flex-col gap-8" data-testid="share-landing">
-      {top ? (
+    <div className="flex flex-col gap-12" data-testid="share-landing">
+      {top && (
         <section
-          className="border-primary flex flex-col gap-4 rounded-2xl border-2 p-5"
+          className="bg-ink text-ink-foreground on-ink -mx-4 flex flex-col gap-5 px-4 py-8 sm:mx-0 sm:rounded-sm sm:p-10"
           aria-labelledby="shared-heading"
         >
-          <p className="text-muted-foreground text-sm font-medium">{t("landingEyebrow")}</p>
-          <h1 id="shared-heading" className="text-3xl font-bold text-balance">
+          <p className="eyebrow">{t("landingEyebrow")}</p>
+          <h1 id="shared-heading" className="display text-4xl sm:text-6xl">
             <Link
               href={`/parties/${top.id}`}
-              className="underline-offset-4 hover:underline"
+              className="underline-offset-8 hover:underline"
               data-testid="shared-top"
             >
               {top.name}
             </Link>
           </h1>
           {rest.length > 0 && (
-            <div className="flex flex-col gap-2">
-              <p className="text-muted-foreground text-sm">{t("alsoClose")}</p>
-              <ul className="flex flex-col gap-1" data-testid="shared-rest">
+            <div className="border-ink-foreground/25 flex flex-col gap-2 border-t pt-4">
+              <p className="text-ink-muted text-sm font-medium">{t("alsoClose")}</p>
+              <ul className="flex flex-col" data-testid="shared-rest">
                 {rest.map((p) => (
                   <li key={p.id}>
                     <Link
                       href={`/parties/${p.id}`}
-                      className="font-medium underline underline-offset-4"
+                      className="decoration-ink-foreground/40 hover:decoration-ink-foreground inline-flex min-h-9 items-center text-lg font-medium underline decoration-1 underline-offset-4"
                     >
                       {p.name}
                     </Link>
@@ -93,27 +94,35 @@ export default async function SharePage({ params }: PageProps<"/[locale]/share/[
               </ul>
             </div>
           )}
-          <p className="text-muted-foreground text-sm">{t("landingNote")}</p>
+          <p className="text-ink-muted text-sm">{t("landingNote")}</p>
         </section>
-      ) : (
-        <h1 className="text-3xl font-bold">{t("landingGenericHeading")}</h1>
       )}
 
-      <section className="flex flex-col items-start gap-4" aria-labelledby="invite-heading">
-        <h2 id="invite-heading" className="text-2xl font-semibold">
-          {t("inviteHeading")}
-        </h2>
-        <p className="text-muted-foreground max-w-prose">{t("inviteBody")}</p>
-        <ElectionGate
-          serverOver={electionOver}
-          open={
-            <StartSurveyLink
-              surveyContentVersion={getVersions().surveyContentVersion}
-              dir={localeDirection[locale]}
-            />
-          }
-          closed={<ElectionOverBanner />}
-        />
+      <section
+        className="flex items-end justify-between gap-6"
+        aria-labelledby={top ? "invite-heading" : undefined}
+      >
+        <div className="flex flex-col items-start gap-5">
+          {top ? (
+            <h2 id="invite-heading" className="display text-3xl sm:text-5xl">
+              {t("inviteHeading")}
+            </h2>
+          ) : (
+            <h1 className="display text-4xl sm:text-6xl">{t("landingGenericHeading")}</h1>
+          )}
+          <p className="max-w-prose text-lg leading-relaxed">{t("inviteBody")}</p>
+          <ElectionGate
+            serverOver={electionOver}
+            open={
+              <StartSurveyLink
+                surveyContentVersion={getVersions().surveyContentVersion}
+                dir={localeDirection[locale]}
+              />
+            }
+            closed={<ElectionOverBanner />}
+          />
+        </div>
+        <BallotArt className="hidden text-[13px] sm:block" />
       </section>
     </div>
   );

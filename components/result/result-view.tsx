@@ -44,35 +44,27 @@ export function ResultView({
   const hasFallbackTexts = result.entries.some((e) => e.textsLang);
 
   return (
-    <article className="flex flex-col gap-6" data-testid="result" aria-labelledby="result-heading">
+    <article className="flex flex-col gap-8" data-testid="result" aria-labelledby="result-heading">
       <header className="flex flex-col gap-3">
         <h1
           id="result-heading"
           ref={headingRef}
           tabIndex={-1}
-          className="text-3xl font-bold outline-none"
+          className="display text-4xl outline-none sm:text-6xl"
         >
           {t("heading")}
         </h1>
-        <p className="text-muted-foreground">{t("intro")}</p>
+        <p className="text-muted-foreground max-w-prose text-lg leading-relaxed">{t("intro")}</p>
       </header>
 
       {hasFallbackTexts && (
-        <p
-          role="note"
-          data-testid="content-fallback-notice"
-          className="bg-muted rounded-xl border px-4 py-3 text-sm font-medium"
-        >
+        <p role="note" data-testid="content-fallback-notice" className="note font-medium">
           {t("contentFallbackNotice")}
         </p>
       )}
 
       {result.weakMatch && (
-        <p
-          role="note"
-          data-testid="weak-match"
-          className="bg-muted rounded-xl border px-4 py-3 font-medium"
-        >
+        <p role="note" data-testid="weak-match" className="note !text-base font-bold">
           {t("weakMatch")}
         </p>
       )}
@@ -88,7 +80,10 @@ export function ResultView({
 
       {rest.length > 0 && (
         <section aria-labelledby="runners-up-heading" className="flex flex-col gap-4">
-          <h2 id="runners-up-heading" className="text-xl font-semibold">
+          <h2
+            id="runners-up-heading"
+            className="display border-foreground border-t-2 pt-4 text-2xl sm:text-3xl"
+          >
             {t("runnersUpHeading")}
           </h2>
           {rest.map((entry, i) => (
@@ -105,10 +100,7 @@ export function ResultView({
 
       {others.length > 0 && (
         <details data-testid="all-parties">
-          <summary
-            data-testid="show-all"
-            className="cursor-pointer py-2.5 font-medium underline underline-offset-4"
-          >
+          <summary data-testid="show-all" className="link-plain cursor-pointer py-2.5 font-medium">
             {t("showAll", { count: others.length })}
           </summary>
           <div className="mt-3 flex flex-col gap-3">
@@ -134,7 +126,7 @@ export function ResultView({
       <p className="text-sm" data-testid="not-all-lists">
         {t.rich("notAllLists", {
           link: (chunks) => (
-            <Link href="/parties" className="underline underline-offset-4">
+            <Link href="/parties" className="link">
               {chunks}
             </Link>
           ),
@@ -143,12 +135,12 @@ export function ResultView({
 
       <aside
         data-testid="disclaimer"
-        className="rounded-xl border px-4 py-3 text-sm leading-relaxed"
+        className="border-foreground flex flex-col gap-1 border-y-2 py-4 text-sm leading-relaxed"
       >
-        <p className="font-semibold">{t("disclaimerTitle")}</p>
-        <p className="text-muted-foreground">{t("disclaimer")}</p>
-        <p className="mt-2">
-          <Link href="/how-it-works" className="underline underline-offset-4">
+        <p className="display text-lg">{t("disclaimerTitle")}</p>
+        <p className="text-muted-foreground max-w-prose">{t("disclaimer")}</p>
+        <p className="mt-1">
+          <Link href="/how-it-works" className="link">
             {t("howItWorksLink")}
           </Link>
         </p>

@@ -19,6 +19,14 @@ const AGREEMENT_MARK: Record<AgreementLevel, string> = {
   "party-position-unclear": "?",
 };
 
+/** The tag around the marker goes from filled to hollow with the agreement, in ink only. */
+const AGREEMENT_TAG: Record<AgreementLevel, string> = {
+  agrees: "bg-foreground text-background border-foreground",
+  partially: "bg-kraft border-foreground/40",
+  disagrees: "border-foreground/40",
+  "party-position-unclear": "border-foreground/40 border-dashed",
+};
+
 /**
  * `lang` and `dir` for a party text shown in another language than the page
  * (the "Hebrew content pending" fallback), so it is read and laid out correctly.
@@ -48,11 +56,7 @@ function EntryFacts({ entry, serverBlackout }: { entry: MatchEntry; serverBlacko
         </PollContent>
       )}
       {m.limitedInfo && (
-        <p
-          role="note"
-          className="bg-muted rounded-lg px-3 py-2 text-sm"
-          data-testid="result-limited-info"
-        >
+        <p role="note" className="note" data-testid="result-limited-info">
           <strong>{t("limitedInfoTitle")}</strong> {t("limitedInfoBody")}
         </p>
       )}
@@ -72,7 +76,7 @@ function EntryDetails({
   return (
     <>
       {breakdown.length > 0 && (
-        <ol className="flex flex-col gap-3" data-testid="breakdown">
+        <ol className="flex flex-col" data-testid="breakdown">
           {breakdown.map((b) => (
             <BreakdownItem
               key={b.issueId}
@@ -96,7 +100,7 @@ function ResearchLink({ entry }: { entry: MatchEntry }) {
   return (
     <Link
       href={`/parties/${entry.partyId}`}
-      className="inline-flex min-h-11 items-center gap-1 self-start text-sm font-medium underline underline-offset-4"
+      className="link inline-flex min-h-11 items-center gap-1 self-start"
       data-testid="research-link"
     >
       {t("readResearch", { name: entry.metadata.name })}
@@ -129,42 +133,56 @@ export function ResultEntryCard({
       aria-labelledby={headingId}
       data-testid="result-entry"
       data-party-id={entry.partyId}
-      className={cn(
-        "flex flex-col gap-4 rounded-2xl border p-4 sm:p-5",
-        isTop && "border-primary border-2",
-      )}
+      className={cn("sheet flex flex-col", isTop ? "overflow-hidden" : "gap-4 p-4 sm:p-5")}
     >
-      {/* The party's facts, with its list's ballot slip beside them. */}
-      <header className="flex items-start gap-4">
+      {/* The party's name, with its list's ballot slip beside it. The top match gets the dark band. */}
+      <header
+        className={cn(
+          "flex items-start gap-4",
+          isTop &&
+            "bg-ink text-ink-foreground on-ink items-center px-4 py-6 sm:gap-8 sm:px-7 sm:py-9",
+        )}
+      >
         <div className="flex min-w-0 grow flex-col gap-2">
-          <p className="text-muted-foreground text-sm font-medium">
+          <p className={isTop ? "eyebrow" : "text-muted-foreground text-sm font-bold"}>
             {isTop ? t("topMatchLabel") : t("runnerUpLabel", { n: position + 1 })}
           </p>
           <h2
             id={headingId}
-            className={cn("font-bold text-balance", isTop ? "text-2xl" : "text-xl")}
+            className={cn("display", isTop ? "text-4xl sm:text-5xl" : "text-2xl sm:text-3xl")}
           >
             <Link href={`/parties/${entry.partyId}`} className="underline-offset-4 hover:underline">
               {entry.metadata.name}
             </Link>
           </h2>
-          <EntryFacts entry={entry} serverBlackout={serverBlackout} />
+          {!isTop && <EntryFacts entry={entry} serverBlackout={serverBlackout} />}
         </div>
-        <BallotSlip letters={entry.metadata.ballotLetters} listName={entry.metadata.listName} />
+        <BallotSlip
+          letters={entry.metadata.ballotLetters}
+          listName={entry.metadata.listName}
+          className={cn(isTop && "slip-drop rotate-3 shadow-[0_14px_28px_-10px_rgb(0_0_0/0.7)]")}
+        />
       </header>
 
       {isTop ? (
-        details
-      ) : hasDetails(entry) ? (
-        <details className="group flex flex-col gap-3">
-          <summary className="cursor-pointer text-sm font-medium underline underline-offset-4">
-            {t("showBreakdown")}
-          </summary>
-          <div className="mt-3 flex flex-col gap-4">{details}</div>
-        </details>
-      ) : null}
-
-      <ResearchLink entry={entry} />
+        <div className="flex flex-col gap-5 p-4 sm:p-7">
+          <EntryFacts entry={entry} serverBlackout={serverBlackout} />
+          {details}
+          <ResearchLink entry={entry} />
+        </div>
+      ) : (
+        <>
+          {hasDetails(entry) ? (
+            <details className="group flex flex-col gap-3">
+              <summary className="link-plain cursor-pointer py-1 text-sm font-medium">
+                {t("showBreakdown")}
+              </summary>
+              <div className="mt-3 flex flex-col gap-4">{details}</div>
+            </details>
+          ) : null}
+          <ResearchLink entry={entry} />
+        </>
+      )}
     </section>
   );
 }
@@ -186,21 +204,21 @@ export function ResultEntryRow({
 }) {
   const t = useTranslations("Result");
   return (
-    <li data-testid="result-row" data-party-id={entry.partyId} className="rounded-xl border">
+    <li data-testid="result-row" data-party-id={entry.partyId} className="sheet">
       <details className="group">
         {/* A flex summary has no native marker, so the chevron shows the open state. */}
         <summary className="flex min-h-11 cursor-pointer list-none items-center gap-2 px-4 py-2.5 [&::-webkit-details-marker]:hidden">
-          <span className="text-muted-foreground shrink-0 text-sm font-medium tabular-nums">
+          <span className="text-muted-foreground min-w-7 shrink-0 text-sm font-bold tabular-nums">
             {t("position", { n: position + 1 })}
           </span>
-          <span className="min-w-0 grow font-semibold">{entry.metadata.name}</span>
+          <span className="min-w-0 grow font-bold">{entry.metadata.name}</span>
           <BallotSlip letters={entry.metadata.ballotLetters} size="compact" />
           <ChevronDown
-            className="size-4 shrink-0 transition-transform group-open:rotate-180"
+            className="size-4 shrink-0 transition-transform group-open:rotate-180 motion-reduce:transition-none"
             aria-hidden="true"
           />
         </summary>
-        <div className="flex flex-col gap-4 border-t px-4 py-4">
+        <div className="border-foreground/15 flex flex-col gap-4 border-t px-4 py-4">
           <div className="flex flex-col gap-2">
             <EntryFacts entry={entry} serverBlackout={serverBlackout} />
           </div>
@@ -218,20 +236,20 @@ function Points({ entry }: { entry: MatchEntry }) {
   if (entry.points.length === 0) return null;
   return (
     <div className="flex flex-col gap-2" data-testid="points">
-      <h3 className="font-semibold">{t("pointsHeading")}</h3>
-      <ul className="flex flex-col gap-3">
+      <h3 className="eyebrow">{t("pointsHeading")}</h3>
+      <ul className="flex flex-col">
         {entry.points.map((point, i) => (
           <li
             key={point.anchor}
-            className="flex flex-col gap-1.5 rounded-lg border p-3"
+            className="border-foreground/15 flex flex-col gap-1.5 border-t py-3 last:pb-0"
             data-testid="point"
           >
-            <p className="text-sm leading-relaxed" {...textLangProps(entry.textsLang)}>
+            <p className="leading-relaxed" {...textLangProps(entry.textsLang)}>
               {point.text}
             </p>
             <Link
               href={`/parties/${entry.partyId}#${point.anchor}`}
-              className="inline-flex min-h-8 items-center self-start py-1 text-sm underline underline-offset-4"
+              className="link inline-flex min-h-8 items-center self-start py-1 text-sm"
               aria-label={t("pointLinkAria", { n: i + 1, name: entry.metadata.name })}
               data-testid="point-link"
             >
@@ -258,33 +276,41 @@ function BreakdownItem({
   const t = useTranslations("Result");
   return (
     <li
-      className="flex flex-col gap-1.5 rounded-lg border p-3"
+      className="border-foreground/15 flex flex-col gap-2 border-t py-4 last:pb-0"
       data-testid="breakdown-item"
       data-issue-id={item.issueId}
       data-agreement={item.agreement}
     >
       <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1">
-        <h3 className="font-semibold">{title}</h3>
-        <span className="bg-muted inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-sm font-medium">
+        <h3 className="text-lg font-bold">{title}</h3>
+        <span
+          className={cn(
+            "inline-flex items-center gap-1.5 rounded-sm border px-2 py-0.5 text-sm font-bold",
+            AGREEMENT_TAG[item.agreement],
+          )}
+        >
           <span aria-hidden="true">{AGREEMENT_MARK[item.agreement]}</span>
           {t(`agreement.${item.agreement}`)}
         </span>
       </div>
       <div className="text-muted-foreground flex items-center gap-2 text-xs">
         <span>{t("importance", { rank: item.rank })}</span>
-        <span aria-hidden="true" className="bg-muted h-1.5 w-20 overflow-hidden rounded-full">
+        <span
+          aria-hidden="true"
+          className="bg-foreground/15 h-1.5 w-20 overflow-hidden rounded-full"
+        >
           <span
-            className="bg-primary/70 block h-full rounded-full"
+            className="bg-primary block h-full rounded-full"
             style={{ width: `${Math.round(item.weight * 100)}%` }}
           />
         </span>
       </div>
-      <p className="text-sm leading-relaxed" {...textLangProps(textsLang)}>
+      <p className="leading-relaxed" {...textLangProps(textsLang)}>
         {item.explanation}
       </p>
       <Link
         href={`/parties/${partyId}#${item.anchor}`}
-        className="inline-flex min-h-8 items-center self-start py-1 text-sm underline underline-offset-4"
+        className="link inline-flex min-h-8 items-center self-start py-1 text-sm"
         aria-label={t("readInResearchAria", { title })}
         data-testid="breakdown-link"
       >

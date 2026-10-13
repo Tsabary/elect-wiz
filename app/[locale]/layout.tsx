@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Heebo } from "next/font/google";
+import localFont from "next/font/local";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
@@ -18,6 +19,37 @@ const fontSans = Heebo({
   subsets: ["hebrew", "latin"],
   variable: "--font-sans",
   display: "swap",
+});
+
+// Noto Serif Hebrew for headings: a contemporary Hebrew serif, with a matching Latin.
+// One family per script, each limited to its own characters. Both are preloaded
+// (Hebrew pages need the Latin file too, for digits) so headings never flash a fallback.
+const fontDisplayHebrew = localFont({
+  src: [{ path: "../../assets/fonts/noto-serif-hebrew-hebrew-700-normal.woff2", weight: "700" }],
+  variable: "--font-display-he",
+  display: "swap",
+  preload: true,
+  // No generated fallback family: it would catch the Latin letters before the Latin family does.
+  adjustFontFallback: false,
+  declarations: [
+    {
+      prop: "unicode-range",
+      value: "U+0307-0308, U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F",
+    },
+  ],
+});
+const fontDisplayLatin = localFont({
+  src: [{ path: "../../assets/fonts/noto-serif-hebrew-latin-700-normal.woff2", weight: "700" }],
+  variable: "--font-display-lat",
+  display: "swap",
+  preload: true,
+  declarations: [
+    {
+      prop: "unicode-range",
+      value:
+        "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+    },
+  ],
 });
 
 /** Message namespaces client components use; the rest stay on the server. */
@@ -43,7 +75,7 @@ export function generateStaticParams() {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#ffffff",
+  themeColor: "#f8f4eb",
 };
 
 export async function generateMetadata({ params }: LayoutProps<"/[locale]">): Promise<Metadata> {
@@ -77,7 +109,11 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
   );
 
   return (
-    <html lang={locale} dir={dir} className={`${fontSans.variable} h-full antialiased`}>
+    <html
+      lang={locale}
+      dir={dir}
+      className={`${fontSans.variable} ${fontDisplayHebrew.variable} ${fontDisplayLatin.variable} h-full antialiased`}
+    >
       <body className="bg-background text-foreground flex min-h-full flex-col font-sans">
         <NextIntlClientProvider messages={clientMessages}>
           <DirectionProvider direction={dir}>
@@ -87,7 +123,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
               <main
                 id="main"
                 tabIndex={-1}
-                className="mx-auto w-full max-w-3xl flex-1 px-4 py-6 outline-none sm:py-10"
+                className="page-grid w-full flex-1 pt-8 pb-24 outline-none sm:pt-12 sm:pb-28"
               >
                 {children}
               </main>

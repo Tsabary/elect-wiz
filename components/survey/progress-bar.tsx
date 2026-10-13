@@ -1,12 +1,16 @@
+import { cn } from "@/lib/utils";
+
 /** Visual progress bar; the textual progress ("4 of 8") is announced separately. */
 export function ProgressBar({ value, max }: { value: number; max: number }) {
-  const pct = Math.max(0, Math.min(100, (value / max) * 100));
+  // One segment per question, filled up to the current one.
   return (
-    <div aria-hidden="true" className="bg-muted h-1.5 w-full overflow-hidden rounded-full">
-      <div
-        className="bg-primary h-full rounded-full transition-[width]"
-        style={{ width: `${pct}%` }}
-      />
+    <div aria-hidden="true" className="flex w-full gap-1">
+      {Array.from({ length: max }, (_, i) => (
+        <div
+          key={i}
+          className={cn("h-1.5 flex-1 rounded-full", i < value ? "bg-primary" : "bg-foreground/15")}
+        />
+      ))}
     </div>
   );
 }

@@ -27,10 +27,10 @@ export function MainNav({ className }: { className?: string }) {
                 href={item.href}
                 aria-current={active ? "page" : undefined}
                 className={cn(
-                  "focus-visible:ring-ring/50 flex min-h-11 items-center rounded-md px-2 text-sm whitespace-nowrap outline-none focus-visible:ring-3",
+                  "focus-visible:ring-ring/50 flex min-h-11 items-center rounded-md px-2 text-[0.9375rem] whitespace-nowrap outline-none focus-visible:ring-3",
                   active
-                    ? "text-primary font-semibold underline decoration-2 underline-offset-8"
-                    : "text-muted-foreground hover:text-foreground",
+                    ? "text-foreground decoration-primary font-bold underline decoration-[3px] underline-offset-[10px]"
+                    : "text-muted-foreground hover:text-foreground font-medium",
                 )}
               >
                 {t(item.key)}
