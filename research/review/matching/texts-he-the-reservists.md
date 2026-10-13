@@ -4,7 +4,7 @@
 - Hebrew texts by: Stage 7d author agent, Sonnet · Parity check by: Stage 7d parity checker agent, Opus (different)
 - Structure, agreement values and anchors: identical ✔
 - Texts compared: 41 option texts + 0 unclear + 3 points (whole file; re-read in full in the follow-up check of 13.10.2026) · must-fix: 0 · should-fix: 17 (17 fixed, 0 open) · notes: 10
-- Result: pass after fixes (all 17 should-fix items fixed and confirmed on 13.10.2026: #1–13 in the first check, F3–F6 in the follow-up; 0 open)
+- Result: pass after fixes (all 17 earlier should-fix items, #1–13 and F3–F6, and R1 from the re-check after e17b4c2 fixed and confirmed on 13.10.2026; 0 open)
 
 ## Findings
 
@@ -101,3 +101,17 @@ Not changed: "President Herzog" in october-7-inquiry / commission-chosen-by-neut
 - The Hebrew role phrases are natural and add nothing beyond the English. No "נחקרה"/"שנחקרו", no `avoid.he` term, and dates day first in the touched texts.
 
 Fix confirmation (13.10.2026): re-read both files. The three Tropper edits are in the English and Hebrew exactly as suggested in F3–F5, and the Hebrew for F6 reads "לנשיא המדינה הרצוג" (the alternative), so it matches the English "President Herzog". No other text changed: `git diff HEAD` shows 3 lines in the English and 4 in the Hebrew. Structure, agreement values and anchors are still identical (script). Validation re-run with `CONTENT_CORPUS=real pnpm validate:content`: 8 errors (down from 21 because other Hebrew research files were finished in the meantime), all in the unfinished files content/research/he/agudat-yisrael.md and degel-hatorah.md, and none about the-reservists texts.
+
+## Re-check after owner corrections (e17b4c2, 13.10.2026)
+
+Checked by a Stage 7d parity checker (Opus) that wrote none of these files. Scope: the one text the owner changed in e17b4c2, re-read in full in both languages against the brief's points 4–10 and the owner's decision 1 of the second set in research/review/hebrew-english-questioned.md.
+
+| # | Text | Result | English says | Hebrew says | Suggested Hebrew | Status |
+|---|---|---|---|---|---|---|
+| R1 | october-7-inquiry / commission-chosen-by-neutral-mechanism | change passes; one should-fix (parity, wording older than e17b4c2) | The party's emphasis on a broadly agreed make-up | הדגש של המפלגה על הרכב מוסכם | הדגש של המפלגה על הרכב שיושג בהסכמה רחבה, שבא לידי ביטוי … (the rest unchanged). "מוסכם" drops "broadly"; the two sibling texts in this issue already render "broad agreement" as "שיושג בהסכמה רחבה". | fixed (confirmed 13.10.2026: `git diff HEAD` shows only this Hebrew text changed, exactly as suggested; English unchanged; structure, agreement values and anchors still identical by script) |
+
+- Owner's decision applied: the English now reads "President Isaac Herzog" and the Hebrew "לנשיא המדינה יצחק הרצוג", as decided. Name and role confirmed against content/research/en/the-reservists.md (16 October 2025 letter to "President Isaac Herzog"); he is not a party figure, so the registry has no entry for him.
+- Points 4–10 for the rest of the text: same facts, dates (16 באוקטובר 2025, day first; October 2026), source (Ynet) and contrast ("rather than a separate neutral method" → "ולא שיטה ניטרלית נפרדת"). Hedging unchanged. Read alone, the Hebrew reads as partial agreement (overlap, but a different appointing body), matching `partially`. No glossary term missed ("the commission" is a back-reference), nothing from `avoid.he`, nothing loaded. One sentence. No user address.
+- Structure, agreement values and anchors re-compared by script after e17b4c2: identical; `lang` is `he`.
+- Validation: `CONTENT_CORPUS=real pnpm validate:content` (and the default `pnpm validate:content`) fails with 9–12 errors, all in Hebrew research files still being written by other sessions (content/research/he/eretz-yisrael-shelanu.md, raam.md, shas.md); none concerns content/matching/texts/.
+
