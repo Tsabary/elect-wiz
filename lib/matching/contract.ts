@@ -197,11 +197,20 @@ export interface AnythingElseNote {
   anchor: string;
 }
 
+/** An "also worth knowing" point about a recommended party. */
+export interface MatchPoint {
+  text: string;
+  /** An `other-…` anchor in the party's research document. */
+  anchor: string;
+}
+
 /** What a matching implementation produces. Contains no registry facts. */
 export interface MatchEntryCore {
   partyId: string;
   breakdown: IssueBreakdown[];
   anythingElseNote?: AnythingElseNote | null;
+  /** 2–3 points from the matching content (local scoring only; the mock sets none). */
+  points?: MatchPoint[];
 }
 
 export interface MatchOutputCore {

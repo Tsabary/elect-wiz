@@ -11,6 +11,7 @@
         "he": "נפתלי בנט",
         "en": "Naftali Bennett"
       },
+      "tier": "researched",
       "limitedInfo": false,
       "researchedAsOf": "2026-10-06",
       "sources": [
@@ -34,6 +35,7 @@
         "he": "יאיר לפיד",
         "en": "Yair Lapid"
       },
+      "tier": "researched",
       "limitedInfo": false,
       "researchedAsOf": "2026-10-07",
       "sources": [
@@ -64,6 +66,7 @@
         "he": "גדי איזנקוט",
         "en": "Gadi Eisenkot"
       },
+      "tier": "researched",
       "limitedInfo": false,
       "researchedAsOf": "2026-10-07",
       "sources": [
@@ -87,6 +90,7 @@
         "he": "חילי (יחיאל משה) טרופר",
         "en": "Chili Tropper"
       },
+      "tier": "researched",
       "limitedInfo": false,
       "researchedAsOf": "2026-10-07",
       "sources": [
@@ -110,6 +114,7 @@
         "he": "איתן שוילי",
         "en": "Eitan Shvili"
       },
+      "tier": "listed",
       "limitedInfo": false,
       "researchedAsOf": null,
       "sources": [
@@ -133,6 +138,7 @@
         "he": "בשארה שליאן",
         "en": "Bishara Shlayan"
       },
+      "tier": "listed",
       "limitedInfo": false,
       "researchedAsOf": null,
       "sources": [
@@ -156,6 +162,7 @@
         "he": "אוהד שם טוב",
         "en": "Ohad Shem Tov"
       },
+      "tier": "listed",
       "limitedInfo": false,
       "researchedAsOf": null,
       "sources": [
@@ -179,6 +186,7 @@
         "he": "עופר וינטר",
         "en": "Ofer Winter"
       },
+      "tier": "researched",
       "limitedInfo": false,
       "researchedAsOf": "2026-10-07",
       "sources": [
@@ -202,6 +210,7 @@
         "he": "שרן השכל",
         "en": "Sharren Haskel"
       },
+      "tier": "researched",
       "limitedInfo": false,
       "researchedAsOf": "2026-10-07",
       "sources": [
@@ -225,6 +234,7 @@
         "he": "ישוע ישראל בן דוד",
         "en": "Yeshua Israel Ben David"
       },
+      "tier": "listed",
       "limitedInfo": false,
       "researchedAsOf": null,
       "sources": [
@@ -248,6 +258,7 @@
         "he": "עמיר ישראל שדמי",
         "en": "Amir Israel Shadmi"
       },
+      "tier": "listed",
       "limitedInfo": false,
       "researchedAsOf": null,
       "sources": [
@@ -271,6 +282,7 @@
         "he": "אבי שקד",
         "en": "Avi Shaked"
       },
+      "tier": "listed",
       "limitedInfo": false,
       "researchedAsOf": null,
       "sources": [
@@ -294,6 +306,7 @@
         "he": "אביגדור ליברמן",
         "en": "Avigdor Liberman"
       },
+      "tier": "researched",
       "limitedInfo": false,
       "researchedAsOf": "2026-10-07",
       "sources": [
@@ -317,6 +330,7 @@
         "he": "לריסה עמיר",
         "en": "Larissa Amir"
       },
+      "tier": "listed",
       "limitedInfo": false,
       "researchedAsOf": null,
       "sources": [
@@ -340,6 +354,7 @@
         "he": "נפתלי גולדמן",
         "en": "Naftali Goldman"
       },
+      "tier": "listed",
       "limitedInfo": false,
       "researchedAsOf": null,
       "sources": [
@@ -363,6 +378,7 @@
         "he": "איתמר בן גביר",
         "en": "Itamar Ben Gvir"
       },
+      "tier": "researched",
       "limitedInfo": false,
       "researchedAsOf": "2026-10-07",
       "sources": [
@@ -386,6 +402,7 @@
         "he": "יצחק וסרלאוף",
         "en": "Yitzhak Wasserlauf"
       },
+      "tier": "researched",
       "limitedInfo": false,
       "researchedAsOf": "2026-10-07",
       "sources": [
@@ -409,6 +426,7 @@
         "he": "אביטל אופק",
         "en": "Avital Ofek"
       },
+      "tier": "listed",
       "limitedInfo": false,
       "researchedAsOf": null,
       "sources": [
@@ -432,6 +450,7 @@
         "he": "יועז הנדל",
         "en": "Yoaz Hendel"
       },
+      "tier": "researched",
       "limitedInfo": false,
       "researchedAsOf": "2026-10-07",
       "sources": [
@@ -455,6 +474,7 @@
         "he": "ירון זליכה",
         "en": "Yaron Zelekha"
       },
+      "tier": "researched",
       "limitedInfo": false,
       "researchedAsOf": "2026-10-07",
       "sources": [
@@ -478,6 +498,7 @@
         "he": "יאיר גולן",
         "en": "Yair Golan"
       },
+      "tier": "researched",
       "limitedInfo": false,
       "researchedAsOf": "2026-10-06",
       "sources": [
@@ -501,6 +522,7 @@
         "he": "גבי לסקי",
         "en": "Gaby Lasky"
       },
+      "tier": "researched",
       "limitedInfo": false,
       "researchedAsOf": "2026-10-07",
       "sources": [
@@ -524,6 +546,7 @@
         "he": "מנסור עבאס",
         "en": "Mansour Abbas"
       },
+      "tier": "researched",
       "limitedInfo": false,
       "researchedAsOf": "2026-10-07",
       "sources": [
@@ -547,6 +570,7 @@
         "he": "אריה דרעי",
         "en": "Aryeh Deri"
       },
+      "tier": "researched",
       "limitedInfo": false,
       "researchedAsOf": "2026-10-07",
       "sources": [
@@ -570,6 +594,7 @@
         "he": "מוטי ליטנר",
         "en": "Moti Litner"
       },
+      "tier": "researched",
       "limitedInfo": true,
       "researchedAsOf": "2026-10-06",
       "sources": [
@@ -593,6 +618,7 @@
         "he": "אלון גלעדי",
         "en": "Alon Giladi"
       },
+      "tier": "listed",
       "limitedInfo": false,
       "researchedAsOf": null,
       "sources": [
@@ -616,6 +642,7 @@
         "he": "עופר ליפשיץ",
         "en": "Ofer Lifshitz"
       },
+      "tier": "listed",
       "limitedInfo": false,
       "researchedAsOf": null,
       "sources": [
@@ -639,6 +666,7 @@
         "he": "משה סלומוביץ",
         "en": "Moshe Salomovich"
       },
+      "tier": "listed",
       "limitedInfo": false,
       "researchedAsOf": null,
       "sources": [
@@ -662,6 +690,7 @@
         "he": "משה ליפקין",
         "en": "Moshe Lipkin"
       },
+      "tier": "listed",
       "limitedInfo": false,
       "researchedAsOf": null,
       "sources": [
@@ -685,6 +714,7 @@
         "he": "סמיון גרפמן",
         "en": "Semion Grafman"
       },
+      "tier": "listed",
       "limitedInfo": false,
       "researchedAsOf": null,
       "sources": [
@@ -708,6 +738,7 @@
         "he": "ניסים לוק",
         "en": "Nissim Louk"
       },
+      "tier": "listed",
       "limitedInfo": false,
       "researchedAsOf": null,
       "sources": [
@@ -731,6 +762,7 @@
         "he": "מיכאל טופצ'יאשוילי",
         "en": "Michael Topchiashvili"
       },
+      "tier": "listed",
       "limitedInfo": false,
       "researchedAsOf": null,
       "sources": [
@@ -754,6 +786,7 @@
         "he": "אליהו באומרינד",
         "en": "Eliyahu Baumrind"
       },
+      "tier": "listed",
       "limitedInfo": false,
       "researchedAsOf": null,
       "sources": [
@@ -777,6 +810,7 @@
         "he": "בנימין נתניהו",
         "en": "Benjamin Netanyahu"
       },
+      "tier": "researched",
       "limitedInfo": false,
       "researchedAsOf": "2026-10-07",
       "sources": [
@@ -800,6 +834,7 @@
         "he": "גדעון סער",
         "en": "Gideon Sa'ar"
       },
+      "tier": "researched",
       "limitedInfo": false,
       "researchedAsOf": "2026-10-12",
       "sources": [
@@ -830,6 +865,7 @@
         "he": "בני גנץ",
         "en": "Benny Gantz"
       },
+      "tier": "researched",
       "limitedInfo": false,
       "researchedAsOf": "2026-10-07",
       "sources": [
@@ -853,6 +889,7 @@
         "he": "בצלאל סמוטריץ'",
         "en": "Bezalel Smotrich"
       },
+      "tier": "researched",
       "limitedInfo": false,
       "researchedAsOf": "2026-10-07",
       "sources": [
@@ -876,6 +913,7 @@
         "he": "משה פייגלין",
         "en": "Moshe Feiglin"
       },
+      "tier": "researched",
       "limitedInfo": false,
       "researchedAsOf": "2026-10-07",
       "sources": [
@@ -899,6 +937,7 @@
         "he": "אורית סטרוק",
         "en": "Orit Strock"
       },
+      "tier": "researched",
       "limitedInfo": false,
       "researchedAsOf": "2026-10-07",
       "sources": [
@@ -922,6 +961,7 @@
         "he": "יובל אלמלך",
         "en": "Yuval Elmalech"
       },
+      "tier": "listed",
       "limitedInfo": false,
       "researchedAsOf": null,
       "sources": [
@@ -945,6 +985,7 @@
         "he": "גדי יברקן",
         "en": "Gadi Yevarkan"
       },
+      "tier": "listed",
       "limitedInfo": false,
       "researchedAsOf": null,
       "sources": [
@@ -968,6 +1009,7 @@
         "he": "משה גרין",
         "en": "Moshe Green"
       },
+      "tier": "listed",
       "limitedInfo": false,
       "researchedAsOf": null,
       "sources": [
@@ -991,6 +1033,7 @@
         "he": "אלקנא פדרמן",
         "en": "Elkana Federman"
       },
+      "tier": "listed",
       "limitedInfo": false,
       "researchedAsOf": null,
       "sources": [
@@ -1014,6 +1057,7 @@
         "he": "יוסף ג'בארין",
         "en": "Yousef Jabareen"
       },
+      "tier": "researched",
       "limitedInfo": false,
       "researchedAsOf": "2026-10-07",
       "sources": [
@@ -1044,6 +1088,7 @@
         "he": "אחמד טיבי",
         "en": "Ahmad Tibi"
       },
+      "tier": "researched",
       "limitedInfo": false,
       "researchedAsOf": "2026-10-07",
       "sources": [
@@ -1074,6 +1119,7 @@
         "he": "סאמי אבו שחאדה",
         "en": "Sami Abu Shehadeh"
       },
+      "tier": "researched",
       "limitedInfo": false,
       "researchedAsOf": "2026-10-07",
       "sources": [
@@ -1104,6 +1150,7 @@
         "he": "שלמה אלבוים",
         "en": "Shlomo Elboim"
       },
+      "tier": "listed",
       "limitedInfo": false,
       "researchedAsOf": null,
       "sources": [
@@ -1127,6 +1174,7 @@
         "he": "יעקב אשר",
         "en": "Yaakov Asher"
       },
+      "tier": "researched",
       "limitedInfo": false,
       "researchedAsOf": "2026-10-07",
       "sources": [
@@ -1150,6 +1198,7 @@
         "he": "יצחק גולדקנופ",
         "en": "Yitzhak Goldknopf"
       },
+      "tier": "researched",
       "limitedInfo": false,
       "researchedAsOf": "2026-10-06",
       "sources": [
@@ -1173,6 +1222,7 @@
         "he": "מאיר פרוש",
         "en": "Meir Porush"
       },
+      "tier": "researched",
       "limitedInfo": false,
       "researchedAsOf": "2026-10-07",
       "sources": [
@@ -1196,6 +1246,7 @@
         "he": "אבי מעוז",
         "en": "Avi Maoz"
       },
+      "tier": "listed",
       "limitedInfo": false,
       "researchedAsOf": null,
       "sources": [
@@ -1219,6 +1270,7 @@
         "he": "אליהו ליבמן",
         "en": "Eliyahu Libman"
       },
+      "tier": "listed",
       "limitedInfo": false,
       "researchedAsOf": null,
       "sources": [

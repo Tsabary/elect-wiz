@@ -3,8 +3,9 @@
  *
  * The repository holds two registry+research corpora side by side:
  *
- * - `real`: the CEC-verified registry (`content/registry/`) and the party research
- *   (`content/research/{en,he}/`). Filled by the research pipeline (Stage 0, 2–6).
+ * - `real`: the CEC-verified registry (`content/registry/`), the party research
+ *   (`content/research/{en,he}/`) and the matching content (`content/matching/`).
+ *   Filled by the research pipeline (Stage 0, 2–6) and the matching content jobs.
  * - `placeholder`: an obviously fictional corpus (`content/placeholder/...`) so the
  *   website can be built and reviewed before research exists.
  *
@@ -26,9 +27,16 @@ export function activeCorpus(env: Record<string, string | undefined> = process.e
   return v === "real" || v === "placeholder" ? v : DEFAULT_ACTIVE_CORPUS;
 }
 
-export const CORPUS_DIRS: Record<CorpusName, { registry: string; research: string }> = {
-  real: { registry: "registry", research: "research" },
-  placeholder: { registry: "placeholder/registry", research: "placeholder/research" },
+export const CORPUS_DIRS: Record<
+  CorpusName,
+  { registry: string; research: string; matching: string }
+> = {
+  real: { registry: "registry", research: "research", matching: "matching" },
+  placeholder: {
+    registry: "placeholder/registry",
+    research: "placeholder/research",
+    matching: "placeholder/matching",
+  },
 };
 
 export const RESEARCH_LANGS = ["en", "he"] as const;

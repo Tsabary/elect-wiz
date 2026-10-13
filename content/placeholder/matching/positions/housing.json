@@ -1,0 +1,81 @@
+{
+  "issueId": "housing",
+  "rows": [
+    {
+      "partyId": "blue-horizon",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "speed-up-planning-and-construction",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-housing",
+      "basis": "Fictional: taken from the placeholder research's closest-option line."
+    },
+    {
+      "partyId": "olive-branch",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "state-led-affordable-rental",
+          "level": "either"
+        },
+        {
+          "optionId": "direct-help-for-buyers",
+          "level": "either"
+        }
+      ],
+      "anchor": "issue-housing",
+      "basis": "Fictional: taken from the placeholder research's closest-option line."
+    },
+    {
+      "partyId": "green-valley",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "direct-help-for-buyers",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-housing",
+      "basis": "Fictional: taken from the placeholder research's closest-option line."
+    },
+    {
+      "partyId": "cedar-tradition",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "develop-periphery-and-transport",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-housing",
+      "basis": "Fictional: taken from the placeholder research's closest-option line."
+    },
+    {
+      "partyId": "lighthouse",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "develop-periphery-and-transport",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-housing",
+      "basis": "Fictional: taken from the placeholder research's closest-option line."
+    },
+    {
+      "partyId": "pebble-citizens",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "direct-help-for-buyers",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-housing",
+      "basis": "Fictional: taken from the placeholder research's closest-option line."
+    }
+  ]
+}

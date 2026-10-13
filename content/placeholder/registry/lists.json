@@ -124,6 +124,32 @@
         }
       ],
       "notes": "FICTIONAL not-polled, limited-information list."
+    },
+    {
+      "id": "quiet-harbor",
+      "name": { "he": "רשימת הנמל השקט (בדיונית)", "en": "Quiet Harbor List (fictional)" },
+      "ballotLetters": "נך",
+      "memberPartyIds": ["quiet-harbor"],
+      "topCandidates": [
+        { "he": "תמר להמחשה", "en": "Tamar Illustration" },
+        { "he": "אלון לדוגמה", "en": "Alon Specimen" }
+      ],
+      "status": "approved",
+      "poll": {
+        "status": "not_polled",
+        "source": {
+          "title": "Fictional polling average (placeholder data)",
+          "url": "https://example.org/placeholder-polls"
+        },
+        "asOf": "2026-10-01"
+      },
+      "sources": [
+        {
+          "title": "Placeholder registry entry (fictional)",
+          "url": "https://example.org/placeholder-registry"
+        }
+      ],
+      "notes": "FICTIONAL listed-only list: on the ballot, not researched and not matched."
     }
   ]
 }

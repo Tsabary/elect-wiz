@@ -1,0 +1,72 @@
+{
+  "issueId": "religion-and-state",
+  "rows": [
+    {
+      "partyId": "blue-horizon",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "strengthen-jewish-character",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-religion-and-state",
+      "basis": "Fictional: taken from the placeholder research's closest-option line."
+    },
+    {
+      "partyId": "olive-branch",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "keep-status-quo",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-religion-and-state",
+      "basis": "Fictional: taken from the placeholder research's closest-option line."
+    },
+    {
+      "partyId": "green-valley",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "more-choice-local-decisions",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-religion-and-state",
+      "basis": "Fictional: taken from the placeholder research's closest-option line."
+    },
+    {
+      "partyId": "cedar-tradition",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "separate-religion-and-state",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-religion-and-state",
+      "basis": "Fictional: taken from the placeholder research's closest-option line."
+    },
+    {
+      "partyId": "lighthouse",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "keep-status-quo",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-religion-and-state",
+      "basis": "Fictional: taken from the placeholder research's closest-option line."
+    },
+    {
+      "partyId": "pebble-citizens",
+      "unclear": true,
+      "held": [],
+      "anchor": "issue-religion-and-state",
+      "basis": "Fictional: the placeholder research says no documented position was found."
+    }
+  ]
+}

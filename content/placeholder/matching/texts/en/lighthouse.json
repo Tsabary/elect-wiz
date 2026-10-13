@@ -1,0 +1,230 @@
+{
+  "partyId": "lighthouse",
+  "lang": "en",
+  "issues": {
+    "cost-of-living": {
+      "anchor": "issue-cost-of-living",
+      "options": {
+        "open-market-competition-imports": {
+          "agreement": "agrees",
+          "text": "This fictional party's documented position is the option you chose. Placeholder text."
+        },
+        "cut-taxes-and-government-spending": {
+          "agreement": "partially",
+          "text": "This fictional party's documented position partly overlaps with the option you chose: \"Open the market to more competition: make it easier to import goods, accept products approved in Europe without extra Israeli requirements, cut red tape, and break up the few large companies that dominate many markets. Competition, not government control, is what brings prices down over time.\" Placeholder text."
+        },
+        "active-state-regulation": {
+          "agreement": "disagrees",
+          "text": "This fictional party's documented position is far from the option you chose: \"Open the market to more competition: make it easier to import goods, accept products approved in Europe without extra Israeli requirements, cut red tape, and break up the few large companies that dominate many markets. Competition, not government control, is what brings prices down over time.\" Placeholder text."
+        },
+        "direct-support-for-households": {
+          "agreement": "disagrees",
+          "text": "This fictional party's documented position is far from the option you chose: \"Open the market to more competition: make it easier to import goods, accept products approved in Europe without extra Israeli requirements, cut red tape, and break up the few large companies that dominate many markets. Competition, not government control, is what brings prices down over time.\" Placeholder text."
+        }
+      }
+    },
+    "crime-in-arab-society": {
+      "anchor": "issue-crime-in-arab-society",
+      "options": {
+        "emergency-powers-shin-bet": {
+          "agreement": "disagrees",
+          "text": "This fictional party's documented position is far from the option you chose: \"Invest in Arab communities first: restore and increase funding for education, jobs, housing and local councils so young people have alternatives to crime, working with local leaders. Crime grows out of years of neglect, and more policing alone won't fix it.\" Placeholder text."
+        },
+        "more-police-resources-normal-law": {
+          "agreement": "partially",
+          "text": "This fictional party's documented position partly overlaps with the option you chose: \"Invest in Arab communities first: restore and increase funding for education, jobs, housing and local councils so young people have alternatives to crime, working with local leaders. Crime grows out of years of neglect, and more policing alone won't fix it.\" Placeholder text."
+        },
+        "invest-in-arab-communities-first": {
+          "agreement": "agrees",
+          "text": "This fictional party's documented position is the option you chose. Placeholder text."
+        }
+      }
+    },
+    "gaza": {
+      "anchor": "issue-gaza",
+      "options": {
+        "resume-fighting-full-control": {
+          "agreement": "disagrees",
+          "text": "This fictional party's documented position is far from the option you chose: \"Go back to war until Hamas is destroyed, then keep Israeli security control while a local administration without Hamas runs daily life. Israel shouldn't settle Gaza or encourage residents to leave, but it can't leave security to anyone else.\" Placeholder text."
+        },
+        "hold-positions-disarmament-first": {
+          "agreement": "disagrees",
+          "text": "This fictional party's documented position is far from the option you chose: \"Go back to war until Hamas is destroyed, then keep Israeli security control while a local administration without Hamas runs daily life. Israel shouldn't settle Gaza or encourage residents to leave, but it can't leave security to anyone else.\" Placeholder text."
+        },
+        "advance-international-arrangement": {
+          "agreement": "partially",
+          "text": "This fictional party's documented position partly overlaps with the option you chose: \"Go back to war until Hamas is destroyed, then keep Israeli security control while a local administration without Hamas runs daily life. Israel shouldn't settle Gaza or encourage residents to leave, but it can't leave security to anyone else.\" Placeholder text."
+        },
+        "end-war-full-withdrawal": {
+          "agreement": "agrees",
+          "text": "This fictional party's documented position is close to the option you chose: \"Go back to war until Hamas is destroyed, then keep Israeli security control while a local administration without Hamas runs daily life. Israel shouldn't settle Gaza or encourage residents to leave, but it can't leave security to anyone else.\" Placeholder text."
+        },
+        "defeat-hamas-then-security-control": {
+          "agreement": "agrees",
+          "text": "This fictional party's documented position is the option you chose. Placeholder text."
+        }
+      }
+    },
+    "haredi-enlistment": {
+      "anchor": "issue-haredi-enlistment",
+      "options": {
+        "anchor-torah-study-exemption": {
+          "agreement": "partially",
+          "text": "This fictional party's documented position partly overlaps with the option you chose: \"Bring Haredim into the army gradually: set yearly enlistment targets, create army units suited to a religious lifestyle, offer incentives, and cut yeshiva funding only if the targets aren't met. Real change will only work through agreement with Haredi leaders, without tearing society apart.\" Placeholder text."
+        },
+        "gradual-targets-by-agreement": {
+          "agreement": "agrees",
+          "text": "This fictional party's documented position is the option you chose. Placeholder text."
+        },
+        "universal-service-with-sanctions": {
+          "agreement": "partially",
+          "text": "This fictional party's documented position partly overlaps with the option you chose: \"Bring Haredim into the army gradually: set yearly enlistment targets, create army units suited to a religious lifestyle, offer incentives, and cut yeshiva funding only if the targets aren't met. Real change will only work through agreement with Haredi leaders, without tearing society apart.\" Placeholder text."
+        },
+        "voluntary-service-for-all": {
+          "agreement": "disagrees",
+          "text": "This fictional party's documented position is far from the option you chose: \"Bring Haredim into the army gradually: set yearly enlistment targets, create army units suited to a religious lifestyle, offer incentives, and cut yeshiva funding only if the targets aren't met. Real change will only work through agreement with Haredi leaders, without tearing society apart.\" Placeholder text."
+        }
+      }
+    },
+    "housing": {
+      "anchor": "issue-housing",
+      "options": {
+        "speed-up-planning-and-construction": {
+          "agreement": "disagrees",
+          "text": "This fictional party's documented position is far from the option you chose: \"Make other parts of the country more attractive: invest in transport, jobs and services outside the Tel Aviv area, and renew old neighborhoods in existing cities. Prices are high because demand is crowded into the center; making other areas attractive eases the pressure.\" Placeholder text."
+        },
+        "state-led-affordable-rental": {
+          "agreement": "disagrees",
+          "text": "This fictional party's documented position is far from the option you chose: \"Make other parts of the country more attractive: invest in transport, jobs and services outside the Tel Aviv area, and renew old neighborhoods in existing cities. Prices are high because demand is crowded into the center; making other areas attractive eases the pressure.\" Placeholder text."
+        },
+        "direct-help-for-buyers": {
+          "agreement": "partially",
+          "text": "This fictional party's documented position partly overlaps with the option you chose: \"Make other parts of the country more attractive: invest in transport, jobs and services outside the Tel Aviv area, and renew old neighborhoods in existing cities. Prices are high because demand is crowded into the center; making other areas attractive eases the pressure.\" Placeholder text."
+        },
+        "develop-periphery-and-transport": {
+          "agreement": "agrees",
+          "text": "This fictional party's documented position is the option you chose. Placeholder text."
+        }
+      }
+    },
+    "iran-and-regional-security": {
+      "anchor": "issue-iran-and-regional-security",
+      "options": {
+        "military-pressure-until-threats-removed": {
+          "agreement": "party-position-unclear",
+          "text": "Only a tentative indication was found for this fictional party, and it points to: \"Keep up military pressure while negotiating, and use it to reach US-backed deals, such as disarming Hezbollah and peace deals with Arab countries. Pull back only once a deal with real security guarantees is in place. Military gains need to be turned into lasting agreements alongside allies.\" Placeholder text."
+        },
+        "force-plus-us-backed-agreements": {
+          "agreement": "partially",
+          "text": "This fictional party's documented position is the option you chose. Placeholder text."
+        },
+        "prioritize-ending-multifront-war": {
+          "agreement": "party-position-unclear",
+          "text": "Only a tentative indication was found for this fictional party, and it points to: \"Keep up military pressure while negotiating, and use it to reach US-backed deals, such as disarming Hezbollah and peace deals with Arab countries. Pull back only once a deal with real security guarantees is in place. Military gains need to be turned into lasting agreements alongside allies.\" Placeholder text."
+        },
+        "end-military-operations-regional-peace": {
+          "agreement": "party-position-unclear",
+          "text": "Only a tentative indication was found for this fictional party, and it points to: \"Keep up military pressure while negotiating, and use it to reach US-backed deals, such as disarming Hezbollah and peace deals with Arab countries. Pull back only once a deal with real security guarantees is in place. Military gains need to be turned into lasting agreements alongside allies.\" Placeholder text."
+        }
+      }
+    },
+    "judea-samaria": {
+      "anchor": "issue-judea-samaria",
+      "options": {
+        "full-sovereignty": {
+          "agreement": "disagrees",
+          "text": "This fictional party's documented position is far from the option you chose: \"Two states on the exact pre-1967 border: Israel withdraws from all of Judea and Samaria and East Jerusalem, every settlement is evacuated, and East Jerusalem becomes the Palestinian capital. Only ending Israeli control over all the land taken in 1967 can bring a just peace.\" Placeholder text."
+        },
+        "partial-sovereignty-area-c": {
+          "agreement": "partially",
+          "text": "This fictional party's documented position partly overlaps with the option you chose: \"Two states on the exact pre-1967 border: Israel withdraws from all of Judea and Samaria and East Jerusalem, every settlement is evacuated, and East Jerusalem becomes the Palestinian capital. Only ending Israeli control over all the land taken in 1967 can bring a just peace.\" Placeholder text."
+        },
+        "maintain-current-situation": {
+          "agreement": "partially",
+          "text": "This fictional party's documented position partly overlaps with the option you chose: \"Two states on the exact pre-1967 border: Israel withdraws from all of Judea and Samaria and East Jerusalem, every settlement is evacuated, and East Jerusalem becomes the Palestinian capital. Only ending Israeli control over all the land taken in 1967 can bring a just peace.\" Placeholder text."
+        },
+        "separation-two-states": {
+          "agreement": "agrees",
+          "text": "This fictional party's documented position is close to the option you chose: \"Two states on the exact pre-1967 border: Israel withdraws from all of Judea and Samaria and East Jerusalem, every settlement is evacuated, and East Jerusalem becomes the Palestinian capital. Only ending Israeli control over all the land taken in 1967 can bring a just peace.\" Placeholder text."
+        },
+        "two-states-pre-1967-border": {
+          "agreement": "agrees",
+          "text": "This fictional party's documented position is the option you chose. Placeholder text."
+        },
+        "one-equal-state": {
+          "agreement": "agrees",
+          "text": "This fictional party's documented position is close to the option you chose: \"Two states on the exact pre-1967 border: Israel withdraws from all of Judea and Samaria and East Jerusalem, every settlement is evacuated, and East Jerusalem becomes the Palestinian capital. Only ending Israeli control over all the land taken in 1967 can bring a just peace.\" Placeholder text."
+        }
+      }
+    },
+    "judicial-system": {
+      "anchor": "issue-judicial-system",
+      "options": {
+        "continue-judicial-changes": {
+          "agreement": "agrees",
+          "text": "This fictional party's documented position is the option you chose. Placeholder text."
+        },
+        "broad-agreed-constitutional-framework": {
+          "agreement": "partially",
+          "text": "This fictional party's documented position partly overlaps with the option you chose: \"Give the government and the Knesset more power over the courts: elected officials get a bigger say in choosing judges, judges get less power to cancel laws or government decisions, and the attorney general's legal opinions stop binding the government. Elected representatives, not appointed officials, should have the final say.\" Placeholder text."
+        },
+        "repeal-changes-protect-independence": {
+          "agreement": "disagrees",
+          "text": "This fictional party's documented position is far from the option you chose: \"Give the government and the Knesset more power over the courts: elected officials get a bigger say in choosing judges, judges get less power to cancel laws or government decisions, and the attorney general's legal opinions stop binding the government. Elected representatives, not appointed officials, should have the final say.\" Placeholder text."
+        },
+        "keep-current-system-stability": {
+          "agreement": "disagrees",
+          "text": "This fictional party's documented position is far from the option you chose: \"Give the government and the Knesset more power over the courts: elected officials get a bigger say in choosing judges, judges get less power to cancel laws or government decisions, and the attorney general's legal opinions stop binding the government. Elected representatives, not appointed officials, should have the final say.\" Placeholder text."
+        }
+      }
+    },
+    "october-7-inquiry": {
+      "anchor": "issue-october-7-inquiry",
+      "options": {
+        "state-commission-under-existing-law": {
+          "agreement": "disagrees",
+          "text": "This fictional party's documented position is far from the option you chose: \"A neutral method that no political side controls picks the members, for example retired judges elected by the Knesset in a secret vote. The investigation would cover the government, the army and security services, and the legal system alike. Only such a body can be trusted by both sides.\" Placeholder text."
+        },
+        "commission-appointed-by-knesset-balance": {
+          "agreement": "partially",
+          "text": "This fictional party's documented position partly overlaps with the option you chose: \"A neutral method that no political side controls picks the members, for example retired judges elected by the Knesset in a secret vote. The investigation would cover the government, the army and security services, and the legal system alike. Only such a body can be trusted by both sides.\" Placeholder text."
+        },
+        "commission-chosen-by-neutral-mechanism": {
+          "agreement": "agrees",
+          "text": "This fictional party's documented position is the option you chose. Placeholder text."
+        }
+      }
+    },
+    "religion-and-state": {
+      "anchor": "issue-religion-and-state",
+      "options": {
+        "strengthen-jewish-character": {
+          "agreement": "partially",
+          "text": "This fictional party's documented position partly overlaps with the option you chose: \"Keep the current arrangements mostly as they are: the Rabbinate stays in charge of marriage and conversion, and most public transport stays closed on Shabbat, with only small local changes. These arrangements are a compromise that lets religious and secular Israelis live together, and big changes either way would deepen the divide.\" Placeholder text."
+        },
+        "keep-status-quo": {
+          "agreement": "agrees",
+          "text": "This fictional party's documented position is the option you chose. Placeholder text."
+        },
+        "more-choice-local-decisions": {
+          "agreement": "partially",
+          "text": "This fictional party's documented position partly overlaps with the option you chose: \"Keep the current arrangements mostly as they are: the Rabbinate stays in charge of marriage and conversion, and most public transport stays closed on Shabbat, with only small local changes. These arrangements are a compromise that lets religious and secular Israelis live together, and big changes either way would deepen the divide.\" Placeholder text."
+        },
+        "separate-religion-and-state": {
+          "agreement": "disagrees",
+          "text": "This fictional party's documented position is far from the option you chose: \"Keep the current arrangements mostly as they are: the Rabbinate stays in charge of marriage and conversion, and most public transport stays closed on Shabbat, with only small local changes. These arrangements are a compromise that lets religious and secular Israelis live together, and big changes either way would deepen the divide.\" Placeholder text."
+        }
+      }
+    }
+  },
+  "points": [
+    {
+      "text": "Supports expanding fictional national parks. Placeholder text.",
+      "anchor": "other-environment"
+    },
+    {
+      "text": "Backs a fictional national network of cycling paths. Placeholder text.",
+      "anchor": "other-transport"
+    }
+  ]
+}

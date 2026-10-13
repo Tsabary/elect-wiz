@@ -1,0 +1,95 @@
+{
+  "issueId": "judea-samaria",
+  "pairs": [
+    {
+      "a": "full-sovereignty",
+      "b": "partial-sovereignty-area-c",
+      "closeness": 0.8,
+      "reason": "Fictional: 1 of 5 steps apart in the option list."
+    },
+    {
+      "a": "full-sovereignty",
+      "b": "maintain-current-situation",
+      "closeness": 0.6,
+      "reason": "Fictional: 2 of 5 steps apart in the option list."
+    },
+    {
+      "a": "full-sovereignty",
+      "b": "separation-two-states",
+      "closeness": 0.4,
+      "reason": "Fictional: 3 of 5 steps apart in the option list."
+    },
+    {
+      "a": "full-sovereignty",
+      "b": "two-states-pre-1967-border",
+      "closeness": 0.2,
+      "reason": "Fictional: 4 of 5 steps apart in the option list."
+    },
+    {
+      "a": "full-sovereignty",
+      "b": "one-equal-state",
+      "closeness": 0,
+      "reason": "Fictional: 5 of 5 steps apart in the option list."
+    },
+    {
+      "a": "partial-sovereignty-area-c",
+      "b": "maintain-current-situation",
+      "closeness": 0.8,
+      "reason": "Fictional: 1 of 5 steps apart in the option list."
+    },
+    {
+      "a": "partial-sovereignty-area-c",
+      "b": "separation-two-states",
+      "closeness": 0.6,
+      "reason": "Fictional: 2 of 5 steps apart in the option list."
+    },
+    {
+      "a": "partial-sovereignty-area-c",
+      "b": "two-states-pre-1967-border",
+      "closeness": 0.4,
+      "reason": "Fictional: 3 of 5 steps apart in the option list."
+    },
+    {
+      "a": "partial-sovereignty-area-c",
+      "b": "one-equal-state",
+      "closeness": 0.2,
+      "reason": "Fictional: 4 of 5 steps apart in the option list."
+    },
+    {
+      "a": "maintain-current-situation",
+      "b": "separation-two-states",
+      "closeness": 0.8,
+      "reason": "Fictional: 1 of 5 steps apart in the option list."
+    },
+    {
+      "a": "maintain-current-situation",
+      "b": "two-states-pre-1967-border",
+      "closeness": 0.6,
+      "reason": "Fictional: 2 of 5 steps apart in the option list."
+    },
+    {
+      "a": "maintain-current-situation",
+      "b": "one-equal-state",
+      "closeness": 0.4,
+      "reason": "Fictional: 3 of 5 steps apart in the option list."
+    },
+    {
+      "a": "separation-two-states",
+      "b": "two-states-pre-1967-border",
+      "closeness": 0.8,
+      "reason": "Fictional: 1 of 5 steps apart in the option list."
+    },
+    {
+      "a": "separation-two-states",
+      "b": "one-equal-state",
+      "closeness": 0.6,
+      "reason": "Fictional: 2 of 5 steps apart in the option list."
+    },
+    {
+      "a": "two-states-pre-1967-border",
+      "b": "one-equal-state",
+      "closeness": 0.8,
+      "reason": "Fictional: 1 of 5 steps apart in the option list."
+    }
+  ]
+}

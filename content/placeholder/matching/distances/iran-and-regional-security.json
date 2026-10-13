@@ -1,0 +1,41 @@
+{
+  "issueId": "iran-and-regional-security",
+  "pairs": [
+    {
+      "a": "military-pressure-until-threats-removed",
+      "b": "force-plus-us-backed-agreements",
+      "closeness": 0.67,
+      "reason": "Fictional: 1 of 3 steps apart in the option list."
+    },
+    {
+      "a": "military-pressure-until-threats-removed",
+      "b": "prioritize-ending-multifront-war",
+      "closeness": 0.33,
+      "reason": "Fictional: 2 of 3 steps apart in the option list."
+    },
+    {
+      "a": "military-pressure-until-threats-removed",
+      "b": "end-military-operations-regional-peace",
+      "closeness": 0,
+      "reason": "Fictional: 3 of 3 steps apart in the option list."
+    },
+    {
+      "a": "force-plus-us-backed-agreements",
+      "b": "prioritize-ending-multifront-war",
+      "closeness": 0.67,
+      "reason": "Fictional: 1 of 3 steps apart in the option list."
+    },
+    {
+      "a": "force-plus-us-backed-agreements",
+      "b": "end-military-operations-regional-peace",
+      "closeness": 0.33,
+      "reason": "Fictional: 2 of 3 steps apart in the option list."
+    },
+    {
+      "a": "prioritize-ending-multifront-war",
+      "b": "end-military-operations-regional-peace",
+      "closeness": 0.67,
+      "reason": "Fictional: 1 of 3 steps apart in the option list."
+    }
+  ]
+}

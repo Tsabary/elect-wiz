@@ -1,0 +1,65 @@
+{
+  "issueId": "gaza",
+  "pairs": [
+    {
+      "a": "resume-fighting-full-control",
+      "b": "hold-positions-disarmament-first",
+      "closeness": 0.75,
+      "reason": "Fictional: 1 of 4 steps apart in the option list."
+    },
+    {
+      "a": "resume-fighting-full-control",
+      "b": "advance-international-arrangement",
+      "closeness": 0.5,
+      "reason": "Fictional: 2 of 4 steps apart in the option list."
+    },
+    {
+      "a": "resume-fighting-full-control",
+      "b": "end-war-full-withdrawal",
+      "closeness": 0.25,
+      "reason": "Fictional: 3 of 4 steps apart in the option list."
+    },
+    {
+      "a": "resume-fighting-full-control",
+      "b": "defeat-hamas-then-security-control",
+      "closeness": 0,
+      "reason": "Fictional: 4 of 4 steps apart in the option list."
+    },
+    {
+      "a": "hold-positions-disarmament-first",
+      "b": "advance-international-arrangement",
+      "closeness": 0.75,
+      "reason": "Fictional: 1 of 4 steps apart in the option list."
+    },
+    {
+      "a": "hold-positions-disarmament-first",
+      "b": "end-war-full-withdrawal",
+      "closeness": 0.5,
+      "reason": "Fictional: 2 of 4 steps apart in the option list."
+    },
+    {
+      "a": "hold-positions-disarmament-first",
+      "b": "defeat-hamas-then-security-control",
+      "closeness": 0.25,
+      "reason": "Fictional: 3 of 4 steps apart in the option list."
+    },
+    {
+      "a": "advance-international-arrangement",
+      "b": "end-war-full-withdrawal",
+      "closeness": 0.75,
+      "reason": "Fictional: 1 of 4 steps apart in the option list."
+    },
+    {
+      "a": "advance-international-arrangement",
+      "b": "defeat-hamas-then-security-control",
+      "closeness": 0.5,
+      "reason": "Fictional: 2 of 4 steps apart in the option list."
+    },
+    {
+      "a": "end-war-full-withdrawal",
+      "b": "defeat-hamas-then-security-control",
+      "closeness": 0.75,
+      "reason": "Fictional: 1 of 4 steps apart in the option list."
+    }
+  ]
+}

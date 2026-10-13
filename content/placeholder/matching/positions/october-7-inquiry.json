@@ -1,0 +1,67 @@
+{
+  "issueId": "october-7-inquiry",
+  "rows": [
+    {
+      "partyId": "blue-horizon",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "state-commission-under-existing-law",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-october-7-inquiry",
+      "basis": "Fictional: taken from the placeholder research's closest-option line."
+    },
+    {
+      "partyId": "olive-branch",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "commission-appointed-by-knesset-balance",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-october-7-inquiry",
+      "basis": "Fictional: taken from the placeholder research's closest-option line."
+    },
+    {
+      "partyId": "green-valley",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "commission-appointed-by-knesset-balance",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-october-7-inquiry",
+      "basis": "Fictional: taken from the placeholder research's closest-option line."
+    },
+    {
+      "partyId": "cedar-tradition",
+      "unclear": true,
+      "held": [],
+      "anchor": "issue-october-7-inquiry",
+      "basis": "Fictional: the placeholder research says no documented position was found."
+    },
+    {
+      "partyId": "lighthouse",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "commission-chosen-by-neutral-mechanism",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-october-7-inquiry",
+      "basis": "Fictional: taken from the placeholder research's closest-option line."
+    },
+    {
+      "partyId": "pebble-citizens",
+      "unclear": true,
+      "held": [],
+      "anchor": "issue-october-7-inquiry",
+      "basis": "Fictional: the placeholder research says no documented position was found."
+    }
+  ]
+}

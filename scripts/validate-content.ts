@@ -4,15 +4,21 @@
  *
  * Usage: tsx scripts/validate-content.ts [contentRoot]
  * Set CONTENT_CORPUS=real|placeholder to choose the active corpus.
+ *
+ * Once the content is valid, the self-match test runs on the active corpus
+ * (plan-deterministic-matching.md, Testing strategy). `pnpm check:self-match`
+ * runs it alone, also on a corpus that is still incomplete.
  */
 import path from "node:path";
 import { activeCorpus } from "../lib/content/config";
 import { readRawContent } from "../lib/content/read-raw";
 import { validateContent } from "../lib/content/validate";
+import { DEFAULT_SELF_MATCH_REPORT, selfMatch } from "./self-match";
 
 const root = path.resolve(process.argv[2] ?? path.join(process.cwd(), "content"));
 const active = activeCorpus();
-const errors = validateContent(readRawContent(root, active));
+const content = readRawContent(root, active);
+const errors = validateContent(content);
 
 if (errors.length > 0) {
   console.error(
@@ -23,3 +29,10 @@ if (errors.length > 0) {
   process.exit(1);
 }
 console.log(`✓ Content validation passed (active corpus: ${active}).`);
+
+if (!selfMatch(content, active, DEFAULT_SELF_MATCH_REPORT[active])) {
+  console.error(
+    "\nFix the positions or grids above; the build is blocked until self-match passes.\n",
+  );
+  process.exit(1);
+}

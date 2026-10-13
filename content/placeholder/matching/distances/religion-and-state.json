@@ -1,0 +1,41 @@
+{
+  "issueId": "religion-and-state",
+  "pairs": [
+    {
+      "a": "strengthen-jewish-character",
+      "b": "keep-status-quo",
+      "closeness": 0.67,
+      "reason": "Fictional: 1 of 3 steps apart in the option list."
+    },
+    {
+      "a": "strengthen-jewish-character",
+      "b": "more-choice-local-decisions",
+      "closeness": 0.33,
+      "reason": "Fictional: 2 of 3 steps apart in the option list."
+    },
+    {
+      "a": "strengthen-jewish-character",
+      "b": "separate-religion-and-state",
+      "closeness": 0,
+      "reason": "Fictional: 3 of 3 steps apart in the option list."
+    },
+    {
+      "a": "keep-status-quo",
+      "b": "more-choice-local-decisions",
+      "closeness": 0.67,
+      "reason": "Fictional: 1 of 3 steps apart in the option list."
+    },
+    {
+      "a": "keep-status-quo",
+      "b": "separate-religion-and-state",
+      "closeness": 0.33,
+      "reason": "Fictional: 2 of 3 steps apart in the option list."
+    },
+    {
+      "a": "more-choice-local-decisions",
+      "b": "separate-religion-and-state",
+      "closeness": 0.67,
+      "reason": "Fictional: 1 of 3 steps apart in the option list."
+    }
+  ]
+}

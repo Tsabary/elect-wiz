@@ -1,0 +1,76 @@
+{
+  "issueId": "judea-samaria",
+  "rows": [
+    {
+      "partyId": "blue-horizon",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "full-sovereignty",
+          "level": "main"
+        },
+        {
+          "optionId": "partial-sovereignty-area-c",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-judea-samaria",
+      "basis": "Fictional: taken from the placeholder research's closest-option line."
+    },
+    {
+      "partyId": "olive-branch",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "maintain-current-situation",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-judea-samaria",
+      "basis": "Fictional: taken from the placeholder research's closest-option line."
+    },
+    {
+      "partyId": "green-valley",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "separation-two-states",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-judea-samaria",
+      "basis": "Fictional: taken from the placeholder research's closest-option line."
+    },
+    {
+      "partyId": "cedar-tradition",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "one-equal-state",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-judea-samaria",
+      "basis": "Fictional: taken from the placeholder research's closest-option line."
+    },
+    {
+      "partyId": "lighthouse",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "two-states-pre-1967-border",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-judea-samaria",
+      "basis": "Fictional: taken from the placeholder research's closest-option line."
+    },
+    {
+      "partyId": "pebble-citizens",
+      "unclear": true,
+      "held": [],
+      "anchor": "issue-judea-samaria",
+      "basis": "Fictional: the placeholder research says no documented position was found."
+    }
+  ]
+}

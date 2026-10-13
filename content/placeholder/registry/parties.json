@@ -5,6 +5,7 @@
       "name": { "he": "האופק הכחול (בדיונית)", "en": "Blue Horizon (fictional)" },
       "listId": "blue-horizon",
       "leader": { "he": "דנה דוגמה", "en": "Dana Example" },
+      "tier": "researched",
       "limitedInfo": false,
       "researchedAsOf": "2026-10-06"
     },
@@ -13,6 +14,7 @@
       "name": { "he": "תנועת ענף הזית (בדיונית)", "en": "Olive Branch Movement (fictional)" },
       "listId": "olive-and-valley",
       "leader": { "he": "נועה לדוגמה", "en": "Noa Sample" },
+      "tier": "researched",
       "limitedInfo": false,
       "researchedAsOf": "2026-10-06"
     },
@@ -21,6 +23,7 @@
       "name": { "he": "איחוד העמק הירוק (בדיונית)", "en": "Green Valley Union (fictional)" },
       "listId": "olive-and-valley",
       "leader": { "he": "סמיר דמו", "en": "Samir Demo" },
+      "tier": "researched",
       "limitedInfo": false,
       "researchedAsOf": "2026-10-06"
     },
@@ -29,6 +32,7 @@
       "name": { "he": "מסורת הארז (בדיונית)", "en": "Cedar Tradition (fictional)" },
       "listId": "cedar-tradition",
       "leader": { "he": "אברהם בדיון", "en": "Avraham Fiction" },
+      "tier": "researched",
       "limitedInfo": false,
       "researchedAsOf": "2026-10-06"
     },
@@ -37,6 +41,7 @@
       "name": { "he": "המגדלור (בדיונית)", "en": "The Lighthouse (fictional)" },
       "listId": "lighthouse",
       "leader": { "he": "מיכל משל", "en": "Michal Mashal" },
+      "tier": "researched",
       "limitedInfo": false,
       "researchedAsOf": "2026-10-06"
     },
@@ -45,8 +50,22 @@
       "name": { "he": "רשימת אזרחי החלוק (בדיונית)", "en": "Pebble Citizens' List (fictional)" },
       "listId": "pebble-citizens",
       "leader": { "he": "רון מדומה", "en": "Ron Imaginary" },
+      "tier": "researched",
       "limitedInfo": true,
       "researchedAsOf": "2026-10-06"
+    },
+    {
+      "id": "quiet-harbor",
+      "name": { "he": "רשימת הנמל השקט (בדיונית)", "en": "Quiet Harbor List (fictional)" },
+      "listId": "quiet-harbor",
+      "leader": { "he": "תמר להמחשה", "en": "Tamar Illustration" },
+      "tier": "listed",
+      "limitedInfo": false,
+      "researchedAsOf": null,
+      "platform": {
+        "url": "https://example.org/placeholder/quiet-harbor/platform",
+        "checkedOn": "2026-10-13"
+      }
     }
   ]
 }

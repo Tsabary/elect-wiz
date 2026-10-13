@@ -1,0 +1,41 @@
+{
+  "issueId": "haredi-enlistment",
+  "pairs": [
+    {
+      "a": "anchor-torah-study-exemption",
+      "b": "gradual-targets-by-agreement",
+      "closeness": 0.67,
+      "reason": "Fictional: 1 of 3 steps apart in the option list."
+    },
+    {
+      "a": "anchor-torah-study-exemption",
+      "b": "universal-service-with-sanctions",
+      "closeness": 0.33,
+      "reason": "Fictional: 2 of 3 steps apart in the option list."
+    },
+    {
+      "a": "anchor-torah-study-exemption",
+      "b": "voluntary-service-for-all",
+      "closeness": 0,
+      "reason": "Fictional: 3 of 3 steps apart in the option list."
+    },
+    {
+      "a": "gradual-targets-by-agreement",
+      "b": "universal-service-with-sanctions",
+      "closeness": 0.67,
+      "reason": "Fictional: 1 of 3 steps apart in the option list."
+    },
+    {
+      "a": "gradual-targets-by-agreement",
+      "b": "voluntary-service-for-all",
+      "closeness": 0.33,
+      "reason": "Fictional: 2 of 3 steps apart in the option list."
+    },
+    {
+      "a": "universal-service-with-sanctions",
+      "b": "voluntary-service-for-all",
+      "closeness": 0.67,
+      "reason": "Fictional: 1 of 3 steps apart in the option list."
+    }
+  ]
+}

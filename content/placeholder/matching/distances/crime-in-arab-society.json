@@ -1,0 +1,23 @@
+{
+  "issueId": "crime-in-arab-society",
+  "pairs": [
+    {
+      "a": "emergency-powers-shin-bet",
+      "b": "more-police-resources-normal-law",
+      "closeness": 0.5,
+      "reason": "Fictional: 1 of 2 steps apart in the option list."
+    },
+    {
+      "a": "emergency-powers-shin-bet",
+      "b": "invest-in-arab-communities-first",
+      "closeness": 0,
+      "reason": "Fictional: 2 of 2 steps apart in the option list."
+    },
+    {
+      "a": "more-police-resources-normal-law",
+      "b": "invest-in-arab-communities-first",
+      "closeness": 0.5,
+      "reason": "Fictional: 1 of 2 steps apart in the option list."
+    }
+  ]
+}
