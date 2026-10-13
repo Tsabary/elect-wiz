@@ -4,6 +4,17 @@ Last updated 2026-10-12. Nothing is running. The 28 larger parties are researche
 
 This note is for the next orchestrating agent, which may be a Claude Code cloud session. Read it fully before starting. It records what earlier sessions decided that isn't obvious from the repository.
 
+## 0. Change of direction (2026-10-13): deterministic matching
+
+Read this first; it overrides what the sections below say about the matching backend, the 24 small parties and the owner's review.
+
+- **The plan in force** is `plan-deterministic-matching.md` (PRD: `prd-deterministic-matching.md`), and the active task list is `tasks-deterministic-matching.md`. Work is on the branch `deterministic-matching`, uncommitted as of this note.
+- **Decided by the owner:** matching uses fixed rules with no AI at run time; users pick one preset option per issue (no free text, no "anything else"); only the 28 researched parties are matched, and the other 24 are listed with official details and a link to their own platform, not researched; the owner reviews no content (separate checking agents do); the result shows the top five with the rest behind "show all"; anonymous daily counts of surveys started and results are kept.
+- **Done (tasks 1.1–1.4, 2.1, 3.1–3.5):** registry tiers; matching content formats and validation; the scoring function; stage 7 pipeline instructions (`research/pipeline/stage-7-matching-content.md`); placeholder matching content, self-match test and profile test; party positions and option-distance grids for all 10 issues; 16 voter profiles (all pass); **English result texts and "also worth knowing" points for all 28 parties**, each checked by a separate agent, corrected and confirmed. Logs are in `research/review/matching/`.
+- **Ready for the owner's Hebrew cloud session:** (1) Hebrew research editions for the 28 parties, per `research/pipeline/stage-5-hebrew-edition.md`; (2) Hebrew result texts, per stage 7d and the briefs `stage-7d-hebrew-texts-brief.md` and `stage-7d-hebrew-parity-brief.md`, from `content/matching/texts/en/`. Hebrew is not done by the orchestrator of the other tasks.
+- **Still to do here:** task 1.5 (the notes below and the old plan and task list still describe the old direction), the website tasks 2.2–2.8, and tasks 4.1–4.3 and 5.1–5.2.
+- **Rules settled while writing the texts** (all in code, config or the logs): the "partly agrees" cut-off is 0.45; an option a party isn't linked to reads "position unclear" when the party's own position is only tentative; an option the research says a party rejected is recorded as `ruledOut` on its positions row, always reads "disagrees" and scores at most 0.4 (see `research/review/matching/ruled-out-options.md`); result texts write dates day first and give each person's name and role at first mention.
+
 ## 1. Where things stand
 
 | Phase (from `tasks-israeli-election-party-matcher.md`) | Status |
