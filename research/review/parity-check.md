@@ -429,3 +429,40 @@ Points the author flagged:
 | information-availability | naturalness (2): "המפלגה הקומוניסטית של ישראל" → "הישראלית"; "הותאמו לדיווחים" → "הוצלבו עם דיווחים" | Fixed |
 - Also checked and correct as flagged by the author: Cassif's "הפיכה פשיסטית במלוא עוזה" stays quoted and attributed; "כיבוש" appears only in attributed phrasing ("מה שכינה הכיבוש") and in a source title; the attorney general is feminine for the incumbent; "Tentative" = "בהסתייגות" (no זמני/זמנית); failed votes put the majority first; names match the registry (פאתן ג'טאס, יוסף ג'בארין, אלתג'מוע אלווטני אלדמוקרטי); no "נחקרה/שנחקרו"; no avoid.he term (the only hit, "שחורים", is part of the proper name "הפנתרים השחורים"); no Latin acronyms in prose; dates day first.
 - Validation: no error names the file ✔ (the 4 remaining errors are all about research/he/byachad-bennett.md)
+
+## yisrael-beytenu (checked 2026-10-13; EN researchedAsOf 2026-10-07)
+- Hebrew edition by: Stage 5a agent (Sonnet) · Parity check by: Stage 5b agent (Opus, different)
+- Sections/anchors: identical ✔ (frontmatter identical except `lang: he`; issue headings match each issue's `he.title`)
+- Claims compared: 277 prose claims + 89 source entries · Differences found: 29 · Fixed: 29 · Unresolved: 0
+- Every line has the same numbers and the same `[n]` citations as the English, and the same evidence-tier tags. The Sources list is identical (89 entries, same order, same URLs). Option IDs on all 10 closest-option lines are identical.
+
+| Anchor | Difference | Resolution |
+|---|---|---|
+| overview | Naturalness: the Hebrew kept the English gloss `(באנגלית "Israel Our Home")`, a translation of the party name that is redundant for Hebrew readers | Removed |
+| overview | Naturalness: in the Ballot paragraph the Hebrew list name was repeated as its own parenthetical gloss | Removed the duplicate parenthetical |
+| overview | Meaning drift: "the people who serve in the IDF" was translated "ששירתו" (past tense) | Changed to "שמשרתים" |
+| leadership | Naturalness: misspelling "גוף היעוץ" | Changed to "גוף הייעוץ" |
+| leadership | Meaning drift (name): the No. 5 heading read "יוליה מלינובסקי קונין", while the English and the rest of the Hebrew file use "Yulia Malinovsky" / "יוליה מלינובסקי" | Changed to "יוליה מלינובסקי" for internal consistency. Note: amcha-yisrael.md uses "מלינובסקי קונין" |
+| issue-haredi-enlistment | Naturalness: two grammar errors ("אחד מהדרישות", "לבחירות שנייה") | Changed to "אחת הדרישות" and "לבחירות שניות" |
+| issue-haredi-enlistment | Meaning drift: the English says "evading service"; the Hebrew "הימנעות" is softer | Changed to "התחמקות משירות" (the avoided term "השתמטות" was not used) |
+| issue-haredi-enlistment | Meaning drift: "draft law" (a conscription law) was translated "טיוטת חוק" (a draft bill), and "equitable" as "הוגנת" | Changed to "חוק גיוס "מקיף, רחב ושוויוני"" |
+| issue-judea-samaria | Naturalness/convention: a passed vote was given as "25 מול 24" without "ברוב של" | Changed to "ברוב של 25 מול 24" |
+| issue-judea-samaria | Meaning drift: "security and administrative responsibility" was translated "ביטחונית ואזרחית" | Changed to "ביטחונית ומנהלית" |
+| issues, other-death-penalty, track-record, information-availability | Naturalness: "final reading" was translated "בקריאה האחרונה" (8 instances) | Changed to the standard Knesset term "בקריאה השלישית" (8 fixes) |
+| issue-religion-and-state | Naturalness: "they do not decide the line below" was translated "אינן קובעות את הקביעה שלהלן", and the kashrut bullet had a dangling modifier ("כשר האוצר, חוק ההסדרים…") | Rewrote both sentences with the same meaning (2 fixes) |
+| issue-cost-of-living | Naturalness: misspelling "שאיפשר" | Changed to "שאפשר" |
+| issue-cost-of-living | Meaning drift: "excise tax on coal" was translated with the generic "המס" | Changed to "הבלו על הפחם" |
+| other-aliyah-seniors | Loaded wording: the heading used "קשישים" for "senior citizens" | Changed to "אזרחים ותיקים", the neutral term already used elsewhere in the file |
+| other-reservists | Meaning drift: "those who serve" was translated "מי ששירתו" (past tense) | Changed to "מי שמשרתים" |
+| other-lgbt | Naturalness: a subject-verb agreement error ("ותמכה" with plural MKs), and the tag "**מידע מוגבל.**" was followed by a sentence fragment | Changed to "ותמכו" and "המידע על עמדתה הנוכחית של המפלגה מוגבל." (2 fixes) |
+| coalition | Naturalness: "rejecting a proposal" was translated "סירב להצעה" | Changed to "דחה הצעה" |
+| legal | Naturalness: "has not been named a suspect" was translated "לא נקרא חשוד" | Changed to "לא הוגדר חשוד" |
+
+- Checked with no change needed:
+  - Ma'ale Adumim: the English gives 31 to 9 (Knesset record) and 32 to 9 (Times of Israel), each attributed. The Hebrew matches, so the English is not self-contradictory.
+  - Death-penalty "Contradiction": the English says "six of its MKs" (not "all") on 13 October 2021, and "seven" voted on 28 July 2021. This is consistent within the document, so the English is not questioned.
+  - Glossary avoid-terms appear only inside attributed quotes that match the English quotes: "בין ציונות להשתמטות", "ועדה פוליטית" (twice) and "כפייה דתית". "ברירת המחדל" is a false positive.
+  - Failed votes give the majority first, and passed votes use "ברוב של X מול Y".
+  - "אקורד סיום צורם ומריר במיוחד" is the original Hebrew wording of the same quote, as shown in source [36]'s title. It was kept.
+  - No "נחקרה"/"שנחקרו", no "זמני/זמנית", and no Latin acronyms in the prose (Ynet and Ynetnews are outlet names). Dates are day first. Registry names are used for all parties and leaders.
+- Validation: no error names the file ✔ (the only errors concern research/he/byachad-bennett.md, which another agent is working on)
