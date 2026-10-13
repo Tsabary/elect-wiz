@@ -4,11 +4,12 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { SurveyApp } from "@/components/survey/survey-app";
 import type { ClientIssue } from "@/components/survey/types";
 import type { Locale } from "@/i18n/routing";
-import { getIssues, getVersions } from "@/lib/content/loaders";
+import { getIssues, getLists, getParties, getVersions } from "@/lib/content/loaders";
+import { researchedPartyMetadata } from "@/lib/content/party-view";
 import { pageMetadata } from "@/lib/site";
 import { resolveNow, timeModes } from "@/lib/time-modes";
 
-// Time-sensitive (election-over): revalidate about every 5 minutes.
+// Time-sensitive (election-over, poll blackout): revalidate about every 5 minutes.
 export const revalidate = 300;
 
 export async function generateMetadata({
@@ -32,7 +33,7 @@ export async function generateMetadata({
 export default async function SurveyPage({ params }: PageProps<"/[locale]/survey">) {
   const locale = (await params).locale as Locale;
   setRequestLocale(locale);
-  const { electionOver } = timeModes(resolveNow());
+  const { electionOver, blackout } = timeModes(resolveNow());
   if (electionOver) redirect(`/${locale}`);
 
   const issues: ClientIssue[] = getIssues().map((i) => ({
@@ -44,11 +45,17 @@ export default async function SurveyPage({ params }: PageProps<"/[locale]/survey
     options: i.options.map((o) => ({ id: o.id, text: o[locale] })),
   }));
 
+  const versions = getVersions();
+
   return (
     <SurveyApp
       issues={issues}
-      surveyContentVersion={getVersions().surveyContentVersion}
+      // Registry facts for the result. Poll notes are already left out during the blackout.
+      parties={researchedPartyMetadata(getParties(), getLists(), locale, blackout)}
+      surveyContentVersion={versions.surveyContentVersion}
+      matchingVersion={versions.matchingVersion}
       serverElectionOver={electionOver}
+      serverBlackout={blackout}
     />
   );
 }

@@ -8,11 +8,9 @@ const SECTIONS = [
   "summary",
   "answers",
   "device",
-  "ai",
   "counts",
   "sharing",
   "cookies",
-  "abuse",
   "hosting",
   "terms",
 ];

@@ -1,9 +1,11 @@
 "use client";
 
 /**
- * The survey flow: ranking → one answer screen per ranked issue → "anything
- * else" → submission → result. Runs fully in the browser; progress lives only in
- * on-device storage until the user submits (PRD FR25).
+ * The survey flow: ranking → one answer screen per ranked issue → result. Runs
+ * fully in the browser: progress lives only in on-device storage (PRD FR25),
+ * and the result is computed here from the matching bundle, so the answers
+ * never leave the device. The only calls out are the two anonymous counts
+ * (`lib/tally/client.ts`).
  */
 import { useLocale, useTranslations } from "next-intl";
 import { useCallback, useEffect, useRef, useState, useSyncExternalStore } from "react";
@@ -12,10 +14,16 @@ import { ErrorState } from "@/components/result/error-state";
 import { LoadingState } from "@/components/result/loading-state";
 import { useOnElectionOver } from "@/components/time/time-modes";
 import { useRouter } from "@/i18n/navigation";
-import type { MatchErrorCode, MatchRequest, MatchResponse } from "@/lib/matching/contract";
-import { submitMatch } from "@/lib/matching/client";
+import type { MatchErrorCode, MatchResponse, PartyMetadata } from "@/lib/matching/contract";
 import {
-  buildMatchRequest,
+  loadMatchingBundle,
+  matchLocally,
+  type BundleLoadResult,
+  type BundleLocale,
+} from "@/lib/matching/data";
+import type { MatchInput } from "@/lib/matching/score";
+import {
+  buildMatchInput,
   goTo,
   normalizeStep,
   type SurveyState,
@@ -23,41 +31,47 @@ import {
 } from "@/lib/survey/state";
 import { browserLocalStorage, createSurveyStorage } from "@/lib/survey/storage";
 import { createSurveyStore, type SurveyStore } from "@/lib/survey/store";
+import { tallyResult, tallySurveyStarted } from "@/lib/tally/client";
 import { AnswerStep } from "./answers/answer-step";
-import { AnythingElseStep } from "./anything-else/anything-else-step";
 import { RankingStep } from "./ranking/ranking-step";
 import type { ClientIssue } from "./types";
 
 type Phase =
   | { kind: "survey" }
-  | { kind: "submitting"; request: Omit<MatchRequest, "token"> }
-  | { kind: "result"; result: MatchResponse; request: Omit<MatchRequest, "token"> }
-  | { kind: "error"; code: MatchErrorCode; request: Omit<MatchRequest, "token"> };
-
-/** Development/preview only: `?mockScenario=` forces a mock result or error (ignored in production). */
-function mockScenarioFromUrl(): string | undefined {
-  if (typeof window === "undefined") return undefined;
-  return new URLSearchParams(window.location.search).get("mockScenario") ?? undefined;
-}
+  /** Submitted before the matching bundle arrived. */
+  | { kind: "loading" }
+  | { kind: "result"; result: MatchResponse }
+  | { kind: "error"; code: MatchErrorCode; input: MatchInput };
 
 const serverSnapshot = () => null;
 
 export function SurveyApp({
   issues,
+  parties,
   surveyContentVersion,
+  matchingVersion,
   serverElectionOver,
+  serverBlackout,
 }: {
   issues: ClientIssue[];
+  /** Registry facts for the researched parties, by party ID, with the blackout applied on the server. */
+  parties: Record<string, PartyMetadata>;
   surveyContentVersion: string;
+  /** Only names the matching bundle for caching; a newer bundle is used as it comes. */
+  matchingVersion: string;
   serverElectionOver: boolean;
+  serverBlackout: boolean;
 }) {
-  const locale = useLocale() as "he" | "en";
+  const locale = useLocale() as BundleLocale;
   const t = useTranslations("Survey");
   const router = useRouter();
   const [store] = useState<SurveyStore | null>(() =>
     typeof window === "undefined"
       ? null
-      : createSurveyStore(surveyContentVersion, createSurveyStorage(browserLocalStorage())),
+      : createSurveyStore(surveyContentVersion, createSurveyStorage(browserLocalStorage()), {
+          // Anonymous count, fire-and-forget: once per new survey, at its first ranking change.
+          onStarted: () => tallySurveyStarted(),
+        }),
   );
   const state = useSyncExternalStore(
     store?.subscribe ?? (() => () => {}),
@@ -77,11 +91,11 @@ export function SurveyApp({
       ? phase.kind
       : step?.kind === "answer"
         ? `answer-${step.index}`
-        : (step?.kind ?? "loading");
+        : (step?.kind ?? "starting");
 
   // Move focus to the new screen's heading and scroll to the top on every step change.
   useEffect(() => {
-    if (stepKey === "loading") return;
+    if (stepKey === "starting") return;
     window.scrollTo({ top: 0, behavior: "instant" });
     headingRef.current?.focus({ preventScroll: true });
   }, [stepKey]);
@@ -89,22 +103,57 @@ export function SurveyApp({
   const update = useCallback((fn: (s: SurveyState) => SurveyState) => store?.set(fn), [store]);
   const go = (next: SurveyStep) => update((s) => goTo(s, next));
 
-  async function send(request: Omit<MatchRequest, "token">) {
-    setPhase({ kind: "submitting", request });
-    const res = await submitMatch(request, { mockScenario: mockScenarioFromUrl() });
+  // The matching bundle: one request, shared by the prefetch and the submit.
+  // A failed request is forgotten, so the next call tries again.
+  const bundleRequest = useRef<Promise<BundleLoadResult> | null>(null);
+  const bundleResult = useRef<BundleLoadResult | null>(null);
+  const loadBundle = useCallback(() => {
+    bundleRequest.current ??= loadMatchingBundle({
+      locale,
+      matchingVersion,
+      surveyContentVersion,
+    }).then((res) => {
+      if (res.ok) bundleResult.current = res;
+      else bundleRequest.current = null;
+      return res;
+    });
+    return bundleRequest.current;
+  }, [locale, matchingVersion, surveyContentVersion]);
+
+  // Start fetching when the user reaches the first answer screen, so the result
+  // normally appears with no wait.
+  const answering = step?.kind === "answer";
+  useEffect(() => {
+    if (answering) void loadBundle();
+  }, [answering, loadBundle]);
+
+  function show(loaded: BundleLoadResult, input: MatchInput) {
+    const res = loaded.ok ? matchLocally(loaded.bundle, input, parties) : loaded;
     if (res.ok) {
       // The result is shown once; a refresh starts a new survey (PRD, plan Data model §5).
       store?.clear();
-      setPhase({ kind: "result", result: res.result, request });
+      setPhase({ kind: "result", result: res.result });
+      // Anonymous count, fire-and-forget: the top parties' IDs only, never the answers.
+      tallyResult(res.result.entries.map((e) => e.partyId));
     } else {
-      setPhase({ kind: "error", code: res.code, request });
+      // Whatever was loaded couldn't be used: "try again" fetches it afresh.
+      bundleRequest.current = null;
+      bundleResult.current = null;
+      setPhase({ kind: "error", code: res.code, input });
     }
+  }
+
+  async function match(input: MatchInput) {
+    // The loading state shows only if the bundle hasn't arrived yet.
+    if (bundleResult.current) return show(bundleResult.current, input);
+    setPhase({ kind: "loading" });
+    show(await loadBundle(), input);
   }
 
   function submit() {
     if (!state) return;
-    const request = buildMatchRequest(state, issues, locale);
-    if (request) void send(request);
+    const input = buildMatchInput(state, issues);
+    if (input) void match(input);
   }
 
   function restart() {
@@ -125,16 +174,23 @@ export function SurveyApp({
     );
   }
 
-  if (phase.kind === "submitting") return <LoadingState headingRef={headingRef} />;
+  if (phase.kind === "loading") return <LoadingState headingRef={headingRef} />;
   if (phase.kind === "result") {
-    return <ResultView result={phase.result} issues={issues} headingRef={headingRef} />;
+    return (
+      <ResultView
+        result={phase.result}
+        issues={issues}
+        serverBlackout={serverBlackout}
+        headingRef={headingRef}
+      />
+    );
   }
   if (phase.kind === "error") {
     return (
       <ErrorState
         code={phase.code}
         headingRef={headingRef}
-        onRetry={() => void send(phase.request)}
+        onRetry={() => void match(phase.input)}
         onRestart={restart}
       />
     );
@@ -171,21 +227,7 @@ export function SurveyApp({
           onBack={() =>
             go(step.index === 0 ? { kind: "ranking" } : { kind: "answer", index: step.index - 1 })
           }
-          onNext={() =>
-            go(
-              step.index + 1 < ranked.length
-                ? { kind: "answer", index: step.index + 1 }
-                : { kind: "anything-else" },
-            )
-          }
-          headingRef={headingRef}
-        />
-      )}
-      {step.kind === "anything-else" && (
-        <AnythingElseStep
-          state={state}
-          onChange={update}
-          onBack={() => go({ kind: "answer", index: ranked.length - 1 })}
+          onNext={() => go({ kind: "answer", index: step.index + 1 })}
           onSubmit={submit}
           headingRef={headingRef}
         />

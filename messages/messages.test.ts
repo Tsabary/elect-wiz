@@ -6,15 +6,20 @@ import { describe, expect, it } from "vitest";
 import en from "./en.json";
 import he from "./he.json";
 
-type Tree = { [k: string]: string | string[] | Tree };
+type Tree = { [k: string]: string | (string | Tree)[] | Tree };
 
 function flatten(tree: Tree, prefix = ""): Record<string, string> {
   const out: Record<string, string> = {};
   for (const [k, v] of Object.entries(tree)) {
     const key = prefix ? `${prefix}.${k}` : k;
     if (typeof v === "string") out[key] = v;
-    else if (Array.isArray(v)) v.forEach((s, i) => (out[`${key}[${i}]`] = s));
-    else Object.assign(out, flatten(v, key));
+    else if (Array.isArray(v)) {
+      // An entry is a string, or an object (a poll-derived paragraph with its neutral replacement).
+      v.forEach((s, i) => {
+        if (typeof s === "string") out[`${key}[${i}]`] = s;
+        else Object.assign(out, flatten(s, `${key}[${i}]`));
+      });
+    } else Object.assign(out, flatten(v, key));
   }
   return out;
 }
@@ -27,8 +32,8 @@ function args(message: string): string[] {
   return [...names].sort();
 }
 
-const flatEn = flatten(en as Tree);
-const flatHe = flatten(he as Tree);
+const flatEn = flatten(en as unknown as Tree);
+const flatHe = flatten(he as unknown as Tree);
 
 describe("site copy parity", () => {
   it("has the same keys in Hebrew and English", () => {
@@ -47,6 +52,17 @@ describe("site copy parity", () => {
     }
   });
 
+  it("never says which lists polled at what level (the criterion for researching a list is not published)", () => {
+    // Owner decision 2026-10-13: the copy doesn't state the polling level used to
+    // choose the researched lists, so the "official details only" label can never
+    // be read as a poll result (research/legal-findings.md §3.1).
+    for (const [key, v] of Object.entries({ ...flatEn, ...flatHe })) {
+      expect(v, key).not.toMatch(
+        /\b1%|polling at \d|בסקרים \d|measurable public presence|נוכחות ציבורית/,
+      );
+    }
+  });
+
   it("names no operator: no email addresses or personal contact details", () => {
     for (const v of [...Object.values(flatEn), ...Object.values(flatHe)]) {
       expect(v).not.toMatch(/[\w.+-]+@[\w-]+\.[\w.]+/);
@@ -55,12 +71,33 @@ describe("site copy parity", () => {
   });
 
   it("offers no contact channel (owner decision, 2026-10-06)", () => {
-    for (const tree of [en, he] as Tree[]) {
+    for (const tree of [en, he] as unknown as Tree[]) {
       const privacy = (tree.Privacy as Tree).sections as Tree;
       expect(privacy).not.toHaveProperty("contact");
     }
     for (const v of Object.values(flatEn)) {
       expect(v).not.toMatch(/contact address|get in touch|let us know/i);
+    }
+  });
+
+  it("describes the site without AI at use time (deterministic matching, 2026-10-13)", () => {
+    for (const tree of [en, he] as unknown as Tree[]) {
+      const privacy = (tree.Privacy as Tree).sections as Tree;
+      expect(privacy).not.toHaveProperty("ai");
+      expect(privacy).not.toHaveProperty("abuse");
+      expect(tree).not.toHaveProperty("AnythingElse");
+    }
+    // No leftover "to be completed" placeholders.
+    expect(Object.keys(flatEn).filter((k) => k.endsWith(".placeholder"))).toEqual([]);
+    for (const [key, v] of Object.entries({ ...flatEn, ...flatHe })) {
+      expect(v.trim().startsWith("["), key).toBe(false);
+    }
+    for (const v of Object.values(flatEn)) {
+      expect(v).not.toMatch(/AI provider|anything else|write your own|adjust its wording/i);
+      expect(v).not.toMatch(/every party on the ballot is researched|can take a little while/i);
+    }
+    for (const v of Object.values(flatHe)) {
+      expect(v).not.toMatch(/ספק בינה מלאכותית|עוד משהו|כותבים עמדה משלך|זה עשוי לקחת/);
     }
   });
 });

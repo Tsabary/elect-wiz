@@ -1,6 +1,6 @@
 /**
  * On-device persistence of survey progress (PRD FR25). Local storage only;
- * nothing leaves the device until the user submits.
+ * nothing leaves the device.
  *
  * Every access is wrapped: if storage is unavailable (private mode, disabled,
  * quota), the survey still works, just without resume.
@@ -43,7 +43,6 @@ function looksLikeState(v: unknown): v is SurveyState {
     Array.isArray(s.notImportant) &&
     !!s.answers &&
     typeof s.answers === "object" &&
-    !!s.anythingElse &&
     !!s.step
   );
 }

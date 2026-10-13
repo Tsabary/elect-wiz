@@ -3,8 +3,6 @@ import { getTranslations } from "next-intl/server";
 interface Section {
   title: string;
   paragraphs: string[];
-  /** Copy that can only be finalized later (e.g. after the D1 decision). Shown as a marked placeholder. */
-  placeholder?: string;
 }
 
 /**
@@ -54,14 +52,6 @@ export async function ProsePage({
                 {p}
               </p>
             ))}
-            {s.placeholder && (
-              <p
-                data-placeholder="post-d1"
-                className="text-muted-foreground max-w-prose rounded-lg border border-dashed px-4 py-3 text-sm"
-              >
-                {s.placeholder}
-              </p>
-            )}
           </section>
         );
       })}

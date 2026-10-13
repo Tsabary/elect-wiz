@@ -29,7 +29,6 @@ const CLIENT_NAMESPACES = [
   "Survey",
   "Ranking",
   "Answers",
-  "AnythingElse",
   "Result",
   "Polls",
   "MatchErrors",

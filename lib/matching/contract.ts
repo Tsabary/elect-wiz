@@ -1,9 +1,9 @@
 /**
- * The matching contract (plan "APIs & interfaces", Phase 1 §1). Fixed now; the
- * mock implements it in Phase 1 and the real backend replaces the
- * implementation in Phase 2 without UI changes.
+ * The matching contract (plan-deterministic-matching.md, "APIs & interfaces"
+ * §2 and §7): the shape of a result and the two failures that can still happen.
+ * Matching runs in the browser (`score.ts`) from the matching bundle
+ * (`data.ts`); nothing here is ever sent to a server.
  */
-import { z } from "zod";
 import type { PollNote } from "@/lib/content/polls";
 
 // ------------------------------------------------------------------ limits
@@ -11,164 +11,37 @@ import type { PollNote } from "@/lib/content/polls";
 export const MIN_RANKED = 5;
 export const MAX_RANKED = 10;
 export const MAX_NOT_IMPORTANT = 5;
-/** Per free-text answer (and the "anything else" text). */
-export const MAX_ANSWER_CHARS = 1000;
-/**
- * Total size cap: the raw request body, checked before parsing. Sized to fit
- * the largest legitimate request (10 answers + "anything else" at the
- * per-answer cap, in Hebrew at 2 bytes per character) with headroom.
- */
-export const MAX_BODY_BYTES = 32 * 1024;
-/** Client-side timeout; a timeout is shown as `upstream_failure`. */
-export const CLIENT_TIMEOUT_MS = 60_000;
 
 // ------------------------------------------------------------------ errors
 
 export const ERROR_CODES = [
-  "validation",
+  /** The matching bundle could not be loaded (network failure, timeout, unreadable file). */
+  "bundle_load_failed",
+  /** The bundle was built for other survey content than the survey the user answered. */
   "content_version_mismatch",
-  "abuse_check_failed",
-  "rate_limited",
-  "at_capacity",
-  "election_over",
-  "upstream_failure",
 ] as const;
 export type MatchErrorCode = (typeof ERROR_CODES)[number];
 
 export interface ErrorInfo {
-  status: number;
-  /** What the UI offers: "retry" calls the token hook and resubmits; "restart" starts a new survey. */
-  action: "retry" | "restart" | "none";
+  /** What the UI offers: "retry" loads the bundle again; "restart" starts a new survey. */
+  action: "retry" | "restart";
 }
 
 export const ERROR_INFO: Record<MatchErrorCode, ErrorInfo> = {
-  validation: { status: 400, action: "restart" },
-  content_version_mismatch: { status: 409, action: "restart" },
-  abuse_check_failed: { status: 403, action: "retry" },
-  rate_limited: { status: 429, action: "retry" },
-  at_capacity: { status: 503, action: "retry" },
-  election_over: { status: 410, action: "none" },
-  upstream_failure: { status: 502, action: "retry" },
+  bundle_load_failed: { action: "retry" },
+  content_version_mismatch: { action: "restart" },
 };
 
-export function isMatchErrorCode(v: unknown): v is MatchErrorCode {
-  return typeof v === "string" && (ERROR_CODES as readonly string[]).includes(v);
+export function errorInfo(code: MatchErrorCode): ErrorInfo {
+  return ERROR_INFO[code];
 }
 
-export interface MatchErrorBody {
-  error: { code: MatchErrorCode; details?: string[] };
+/** next-intl message key for an error code, under the `MatchErrors` namespace. */
+export function errorMessageKey(code: MatchErrorCode): `MatchErrors.${MatchErrorCode}` {
+  return `MatchErrors.${code}`;
 }
 
-// ------------------------------------------------------------------ request
-
-export const ANYTHING_ELSE_IMPORTANCE = ["above-top", "middle", "minor"] as const;
-export type AnythingElseImportance = (typeof ANYTHING_ELSE_IMPORTANCE)[number];
-
-export const answerSchema = z.object({
-  issueId: z.string(),
-  /** The user's final answer text (a preset as written, an edited preset, or their own text). */
-  text: z.string().max(MAX_ANSWER_CHARS, `answer exceeds ${MAX_ANSWER_CHARS} characters`),
-  /** The preset option the answer started from, or null for a write-your-own answer. */
-  startingOptionId: z.string().nullable(),
-  edited: z.boolean(),
-});
-export type MatchAnswer = z.infer<typeof answerSchema>;
-
-export const matchRequestSchema = z.object({
-  locale: z.enum(["he", "en"]),
-  surveyContentVersion: z.string().min(1),
-  /** Issue IDs ranked 1 (most important) … n. */
-  ranked: z.array(z.string()).min(MIN_RANKED).max(MAX_RANKED),
-  /** "Doesn't matter to me" issue IDs. */
-  notImportant: z.array(z.string()).max(MAX_NOT_IMPORTANT),
-  answers: z.array(answerSchema),
-  anythingElse: z
-    .object({
-      text: z
-        .string()
-        .max(MAX_ANSWER_CHARS, `"anything else" exceeds ${MAX_ANSWER_CHARS} characters`),
-      importance: z.enum(ANYTHING_ELSE_IMPORTANCE),
-    })
-    .nullable()
-    .optional(),
-  /** Abuse-protection token from the token-provider hook. Null under the mock. */
-  token: z.string().max(4096).nullable(),
-});
-export type MatchRequest = z.infer<typeof matchRequestSchema>;
-
-export interface ValidationContext {
-  surveyContentVersion: string;
-  /** Issue ID → its option IDs. */
-  issues: ReadonlyMap<string, readonly string[]>;
-}
-
-export type ValidationOutcome =
-  | { ok: true; request: MatchRequest }
-  | { ok: false; code: "validation" | "content_version_mismatch"; details: string[] };
-
-/** Validates a parsed JSON body against the contract and the current survey content. */
-export function validateMatchRequest(body: unknown, ctx: ValidationContext): ValidationOutcome {
-  const parsed = matchRequestSchema.safeParse(body);
-  if (!parsed.success) {
-    // A stale client is told to restart even if the rest of its payload is off.
-    const version = (body as { surveyContentVersion?: unknown } | null)?.surveyContentVersion;
-    if (typeof version === "string" && version !== ctx.surveyContentVersion) {
-      return {
-        ok: false,
-        code: "content_version_mismatch",
-        details: ["survey content was updated"],
-      };
-    }
-    return {
-      ok: false,
-      code: "validation",
-      details: parsed.error.issues.map((i) => `${i.path.join(".") || "(root)"}: ${i.message}`),
-    };
-  }
-  const req = parsed.data;
-  if (req.surveyContentVersion !== ctx.surveyContentVersion) {
-    return { ok: false, code: "content_version_mismatch", details: ["survey content was updated"] };
-  }
-
-  const details: string[] = [];
-  const known = ctx.issues;
-  const ranked = new Set(req.ranked);
-  const notImportant = new Set(req.notImportant);
-
-  for (const id of [...req.ranked, ...req.notImportant]) {
-    if (!known.has(id)) details.push(`unknown issue id "${id}"`);
-  }
-  if (ranked.size !== req.ranked.length) details.push("ranked issues must be unique (no ties)");
-  if (notImportant.size !== req.notImportant.length)
-    details.push('"doesn\'t matter" issues must be unique');
-  for (const id of notImportant)
-    if (ranked.has(id)) details.push(`issue "${id}" is both ranked and "doesn't matter"`);
-  const covered = new Set([...ranked, ...notImportant]);
-  for (const id of known.keys())
-    if (!covered.has(id)) details.push(`issue "${id}" is neither ranked nor "doesn't matter"`);
-
-  const answered = new Set<string>();
-  for (const a of req.answers) {
-    if (!ranked.has(a.issueId)) {
-      details.push(`answer for issue "${a.issueId}", which isn't ranked`);
-      continue;
-    }
-    if (answered.has(a.issueId)) details.push(`more than one answer for issue "${a.issueId}"`);
-    answered.add(a.issueId);
-    if (a.startingOptionId !== null && !known.get(a.issueId)?.includes(a.startingOptionId)) {
-      details.push(`unknown option "${a.startingOptionId}" for issue "${a.issueId}"`);
-    }
-    if (a.startingOptionId === null && a.edited) {
-      details.push(`answer for "${a.issueId}" is marked edited but has no starting option`);
-    }
-  }
-  for (const id of ranked)
-    if (!answered.has(id)) details.push(`missing answer for ranked issue "${id}"`);
-
-  return details.length ? { ok: false, code: "validation", details } : { ok: true, request: req };
-}
-
-// ------------------------------------------------------------------ response
+// ------------------------------------------------------------------ result
 
 export const AGREEMENT_LEVELS = [
   "agrees",
@@ -182,46 +55,35 @@ export interface IssueBreakdown {
   issueId: string;
   /** The user's rank for this issue (1 = most important). */
   rank: number;
-  /** Computed weight, if the matching architecture produces one. */
-  weight?: number;
+  /** Display weight, (n − rank + 1) / n: the top issue is 1. */
+  weight: number;
   agreement: AgreementLevel;
-  /** Explanation in the request's UI language. */
+  /** The text for the option the user chose, in the bundle's language. */
   explanation: string;
   /** Anchor in the party's research document (e.g. "issue-cost-of-living"). */
   anchor: string;
 }
 
-export interface AnythingElseNote {
-  explanation: string;
-  /** A section-3 or section-4 anchor. */
-  anchor: string;
-}
-
-/** An "also worth knowing" point about a recommended party. */
+/** An "also worth knowing" point about a party. */
 export interface MatchPoint {
   text: string;
   /** An `other-…` anchor in the party's research document. */
   anchor: string;
 }
 
-/** What a matching implementation produces. Contains no registry facts. */
+/** What the scoring produces for one party. Contains no registry facts. */
 export interface MatchEntryCore {
   partyId: string;
+  /** One item per ranked issue, in rank order. */
   breakdown: IssueBreakdown[];
-  anythingElseNote?: AnythingElseNote | null;
-  /** 2–3 points from the matching content (local scoring only; the mock sets none). */
-  points?: MatchPoint[];
+  /** 2–3 points from the matching content. */
+  points: MatchPoint[];
 }
 
-export interface MatchOutputCore {
-  /** Top match first, then 2–3 runners-up. */
-  entries: MatchEntryCore[];
-  weakMatch: boolean;
-  /** True when no answer was usable: the entries are the closest matches and weakMatch is set. */
-  noUsableAnswers: boolean;
-}
-
-/** Factual metadata attached by the route from the registry, never by the matcher. */
+/**
+ * Registry facts about a researched party, built on the server by
+ * `partyMetadata` (`lib/content/party-view.ts`), never by the scoring.
+ */
 export interface PartyMetadata {
   name: string;
   listId: string;
@@ -238,12 +100,22 @@ export interface MatchEntry extends MatchEntryCore {
   metadata: PartyMetadata;
 }
 
+/** A user's result: what the result view renders. */
 export interface MatchResponse {
+  /** Every researched party in score order, top match first. */
   entries: MatchEntry[];
   weakMatch: boolean;
-  noUsableAnswers: boolean;
-  meta: { surveyContentVersion: string; researchVersion: string; blackout: boolean };
+  meta: { surveyContentVersion: string; matchingVersion: string };
 }
 
-export const MIN_ENTRIES = 3;
-export const MAX_ENTRIES = 4;
+/**
+ * How many leading entries count as "the top few": what a share link and
+ * the tally carry and what the profile test's `inTop4` looks at. It doesn't cap the result.
+ */
+export const TOP_ENTRIES = 4;
+
+/**
+ * How many leading entries the result shows as full cards; the rest sit behind
+ * the "show all" control (owner decision 2026-10-13).
+ */
+export const FULL_ENTRIES = 5;

@@ -3,11 +3,11 @@
  * comma-separated top match party IDs, in result order. Nothing else is encoded:
  * never answers (PRD), never poll data (research/legal-findings.md §3.1).
  */
-import { MAX_ENTRIES } from "@/lib/matching/contract";
+import { TOP_ENTRIES } from "@/lib/matching/contract";
 
 export const SHARE_SEPARATOR = ",";
 /** At most this many party IDs are kept from a share URL. */
-export const MAX_SHARED_PARTIES = MAX_ENTRIES;
+export const MAX_SHARED_PARTIES = TOP_ENTRIES;
 
 /** Builds the share path for a locale and the result's party IDs. */
 export function sharePath(locale: string, partyIds: readonly string[]): string {
@@ -16,8 +16,10 @@ export function sharePath(locale: string, partyIds: readonly string[]): string {
 }
 
 /**
- * Parses the `partyIds` path segment. Keeps only IDs present in the registry, in
- * order, without duplicates, up to the cap. Anything else is ignored.
+ * Parses the `partyIds` path segment. Keeps only the IDs in `knownPartyIds`, in
+ * order, without duplicates, up to the cap. Anything else is ignored. Callers
+ * pass the researched parties only, so a hand-made link can't present a listed
+ * party as someone's match.
  */
 export function parseSharedParties(
   segment: string | undefined | null,

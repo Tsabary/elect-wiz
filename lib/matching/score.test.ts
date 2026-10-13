@@ -11,7 +11,7 @@ import {
   type PositionRow,
   type PositionsFile,
 } from "@/lib/content/schemas";
-import { MAX_ENTRIES } from "./contract";
+import { TOP_ENTRIES } from "./contract";
 import {
   agreementLabel,
   closeness,
@@ -272,11 +272,12 @@ describe("weights", () => {
 describe("scoreMatch", () => {
   const SIX = { p1: "a", p2: "a:either,b:either", p3: "a:secondary", p4: "b", p5: "", p6: "d" };
 
-  it("returns the 4 highest-scoring parties in order", () => {
+  it("returns every party in score order, each with its breakdown", () => {
     const result = scoreMatch(dataFor(SIX), allA, Object.keys(SIX));
-    expect(MAX_ENTRIES).toBe(4);
-    // 1, 0.85, 0.6, 0.5; then 0.25 (unclear) and 0 are left out.
-    expect(result.entries.map((e) => e.partyId)).toEqual(["p1", "p2", "p3", "p4"]);
+    // 1, 0.85, 0.6, 0.5, 0.25 (unclear), 0: nothing is cut off after the top few.
+    expect(result.entries.map((e) => e.partyId)).toEqual(["p1", "p2", "p3", "p4", "p5", "p6"]);
+    expect(result.entries.length).toBeGreaterThan(TOP_ENTRIES);
+    for (const e of result.entries) expect(e.breakdown).toHaveLength(allA.ranked.length);
     expect(result.weakMatch).toBe(false);
   });
 

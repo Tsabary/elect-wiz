@@ -1,31 +1,38 @@
 "use client";
 
 /**
- * The result (PRD Step 4): top match plus 2–3 runners-up, a per-issue breakdown,
- * factual notes from the registry, a disclaimer and sharing. Deliberately no
- * "edit answers" or "try again" affordances.
+ * The result (PRD Step 4): top match plus the next closest parties, a per-issue
+ * breakdown, factual notes from the registry, a disclaimer and sharing.
+ * Deliberately no "edit answers" or "try again" affordances.
+ *
+ * The result carries every researched party in score order: the first
+ * `FULL_ENTRIES` are shown as full cards, the rest as compact rows behind a
+ * "show all" control. Share links carry the first `TOP_ENTRIES` only.
  */
 import { useTranslations } from "next-intl";
 import type { RefObject } from "react";
-import type { MatchResponse } from "@/lib/matching/contract";
+import { FULL_ENTRIES, TOP_ENTRIES, type MatchResponse } from "@/lib/matching/contract";
 import type { ClientIssue } from "@/components/survey/types";
 import { Link } from "@/i18n/navigation";
-import { ResultEntryCard } from "./result-entry";
+import { ResultEntryCard, ResultEntryRow } from "./result-entry";
 import { ShareButton } from "./share/share-button";
 
 export function ResultView({
   result,
   issues,
+  serverBlackout,
   headingRef,
 }: {
   result: MatchResponse;
   issues: ClientIssue[];
+  /** The blackout state the page was rendered with; `PollContent` re-checks it in the browser. */
+  serverBlackout: boolean;
   headingRef: RefObject<HTMLHeadingElement | null>;
 }) {
   const t = useTranslations("Result");
-  const [top, ...rest] = result.entries;
+  const [top, ...rest] = result.entries.slice(0, FULL_ENTRIES);
+  const others = result.entries.slice(FULL_ENTRIES);
   const issueById = new Map(issues.map((i) => [i.id, i]));
-  const totalRanked = Math.max(0, ...result.entries.flatMap((e) => e.breakdown.map((b) => b.rank)));
 
   return (
     <article className="flex flex-col gap-6" data-testid="result" aria-labelledby="result-heading">
@@ -56,8 +63,7 @@ export function ResultView({
           entry={top}
           position={0}
           issueById={issueById}
-          totalRanked={totalRanked}
-          serverBlackout={result.meta.blackout}
+          serverBlackout={serverBlackout}
         />
       )}
 
@@ -72,12 +78,49 @@ export function ResultView({
               entry={entry}
               position={i + 1}
               issueById={issueById}
-              totalRanked={totalRanked}
-              serverBlackout={result.meta.blackout}
+              serverBlackout={serverBlackout}
             />
           ))}
         </section>
       )}
+
+      {others.length > 0 && (
+        <details data-testid="all-parties">
+          <summary
+            data-testid="show-all"
+            className="cursor-pointer py-2.5 font-medium underline underline-offset-4"
+          >
+            {t("showAll", { count: others.length })}
+          </summary>
+          <div className="mt-3 flex flex-col gap-3">
+            <p className="text-muted-foreground text-sm" data-testid="all-parties-note">
+              {t("allPartiesNote")}
+            </p>
+            <ol className="flex flex-col gap-2" data-testid="all-parties-list">
+              {others.map((entry, i) => (
+                <ResultEntryRow
+                  key={entry.partyId}
+                  entry={entry}
+                  position={FULL_ENTRIES + i}
+                  issueById={issueById}
+                  serverBlackout={serverBlackout}
+                />
+              ))}
+            </ol>
+          </div>
+        </details>
+      )}
+
+      {/* No poll wording, so it stays up during the blackout. */}
+      <p className="text-sm" data-testid="not-all-lists">
+        {t.rich("notAllLists", {
+          link: (chunks) => (
+            <Link href="/parties" className="underline underline-offset-4">
+              {chunks}
+            </Link>
+          ),
+        })}
+      </p>
 
       <aside
         data-testid="disclaimer"
@@ -93,7 +136,7 @@ export function ResultView({
       </aside>
 
       <ShareButton
-        partyIds={result.entries.map((e) => e.partyId)}
+        partyIds={result.entries.slice(0, TOP_ENTRIES).map((e) => e.partyId)}
         topName={top?.metadata.name ?? ""}
       />
     </article>

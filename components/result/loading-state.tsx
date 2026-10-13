@@ -4,7 +4,7 @@ import { Loader2 } from "lucide-react";
 import { useTranslations } from "next-intl";
 import type { RefObject } from "react";
 
-/** Shown for the whole time the result is being prepared (up to the 60 s client timeout). */
+/** Shown only when the user submits before the matching data has arrived. */
 export function LoadingState({ headingRef }: { headingRef: RefObject<HTMLHeadingElement | null> }) {
   const t = useTranslations("Result");
   return (

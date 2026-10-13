@@ -1,4 +1,7 @@
 import { describe, expect, it } from "vitest";
+import { researchedPartyIds } from "@/lib/content/party-view";
+import { partiesFileSchema } from "@/lib/content/schemas";
+import placeholderParties from "@/content/placeholder/registry/parties.json";
 import { hasRtl, visualRtl } from "./bidi";
 import { MAX_SHARED_PARTIES, parseSharedParties, sharePath } from "./params";
 
@@ -35,6 +38,25 @@ describe("share URLs", () => {
     expect(parseSharedParties(undefined, KNOWN)).toEqual([]);
     expect(parseSharedParties("a".repeat(2000), KNOWN)).toEqual([]);
     expect(parseSharedParties(KNOWN.join(","), KNOWN)).toHaveLength(MAX_SHARED_PARTIES);
+  });
+});
+
+describe("share links and party tiers", () => {
+  const parties = partiesFileSchema.parse(placeholderParties).parties;
+  const shareable = researchedPartyIds(parties);
+
+  it("ignore a listed party's ID", () => {
+    expect(parties.find((p) => p.id === "quiet-harbor")?.tier).toBe("listed");
+    expect(parseSharedParties("quiet-harbor", shareable)).toEqual([]);
+    expect(parseSharedParties("quiet-harbor,lighthouse,blue-horizon", shareable)).toEqual([
+      "lighthouse",
+      "blue-horizon",
+    ]);
+  });
+
+  it("keep every researched party's ID", () => {
+    for (const id of shareable) expect(parseSharedParties(id, shareable)).toEqual([id]);
+    expect(shareable).toHaveLength(parties.length - 1);
   });
 });
 

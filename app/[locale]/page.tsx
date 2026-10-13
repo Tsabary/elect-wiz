@@ -28,7 +28,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
   setRequestLocale(locale);
   const t = await getTranslations("Home");
   const { electionOver } = timeModes(resolveNow());
-  const steps = ["rank", "answer", "anythingElse", "result"] as const;
+  const steps = ["rank", "answer", "result"] as const;
 
   return (
     <div className="flex flex-col gap-10">
