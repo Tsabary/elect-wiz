@@ -149,3 +149,29 @@ Author's flags, verified with no change needed:
 - Avoid-list words inside quotes, all attributed and matching an English quotation (allowed under the project ruling): "פדיון שבויים" (Goldknopf, "redeeming captives"), "רדיפת עולם התורה" (Council letter), "הרדיפה הדתית" (Porush), "הרפורמה המשפטית" (Goldknopf, Tessler and Roth letter). There are no avoid-list words outside quotes.
 - Names follow the registry (יצחק גולדקנופ; the full forms יצחק זאב פינדרוס and משה עזריאל רוזנטל on the top-places line, which match lists.json).
 - Validation: no error names the file ✔ (`pnpm validate:content`: "Content validation passed")
+
+## taal (checked 2026-10-13; EN researchedAsOf 2026-10-07)
+- Hebrew edition by: Stage 5a agent (Sonnet) · Parity check by: Stage 5b agent (Opus, different)
+- Sections/anchors: identical ✔ (all 29 anchors, same order; Hebrew headings per the 5a table and issue `he.title`)
+- Claims compared: ~300 · Differences found: 28 · Fixed: 28 · Unresolved: 0
+| Anchor | Difference | Resolution |
+|---|---|---|
+| issue-haredi-enlistment, issue-religion-and-state | meaning drift: "Tentative" given as "זמנית" (= temporary) in 2 Closest option(s) lines and 2 "the mapping is tentative" sentences | Changed to "בהסתייגות" / "ההתאמה אינה ודאית" |
+| overview | meaning drift: Bin Said's charge that Tibi ran the party "in an individual manner" given as "בדרך אישית" (reads as "personally") | Changed to "באופן יחידני" |
+| leadership | meaning drift: "Top of the Joint List" given as "ראש הרשימה" (the single head) | Changed to "צמרת הרשימה המשותפת" |
+| other-wartime-speech | meaning drift (strength): Vivian Silver "was killed" given as "שנרצחה" | Changed to "שנהרגה" to match the English |
+| other-security-prisoners | meaning drift (strength): "unanswered for months" given as "חודשים ארוכים" | Changed to "במשך חודשים" |
+| coalition | meaning drift: "recalling the 1992 outside support for Rabin" given as "ונזכר" (he remembered); the next quote was broken ("ושה"נעשה") | Changed to "והזכיר את התמיכה..., ואמר: "נעשה..." |
+| issue-october-7-inquiry | glossary: "Knesset-based inquiry" given as "ועדה חלופית שתפעל מטעם הכנסת", not the glossary term | Changed to "ועדת חקירה חלופית שתמונה באמצעות הכנסת" |
+| issue-judicial-system | glossary/naturalness: "settlements" in the list of Supreme Court rulings given as bare "יישובים" (reads as "towns") | Changed to the glossary form "ההתיישבות" |
+| overview, leadership, legal, information-availability | names: "הייתם זחלקה" ×5; the standard Hebrew spelling of the family name (also used in this project's Balad file) is זחאלקה | Changed to "הייתם זחאלקה" |
+| leadership | names: "אוסמה סעדי"; standard Hebrew form is "אוסאמה סעדי" | Fixed |
+| issue-housing, other-arab-citizens-equality, track-record | names: "חוק קמניץ" ×3; standard spelling is "חוק קמיניץ" | Fixed |
+| leadership | names: Wye River Memorandum given as "הסכם ואי ריבר" | Changed to "מזכר ואי ריבר" |
+| overview, leadership, legal | naturalness (16 edits): English gloss "(באנגלית: Ta'al, the Arab Movement for Renewal)" removed; "לקחה את שמה" → "אימצה"; "מנהיגה ותיק" → "מנהיגה הוותיק"; "היסטוריית הברית" → "הבריתות"; ambiguous CEC short form "(הוועדה)" ×6 → "ועדת הבחירות" (it clashed with "ועדת הפיוס" and the Ethics Committee); "בקבלה בקשה" → "וקיבלה בכך בקשה"; "לפי בקשה... לפי הסעיף" → "בעקבות בקשה..., לפי הסעיף"; "בעל תפקיד במפלגה" → "בתע"ל"; Comptroller "החזיק בידו" ×2 → "עיכב". Also in issue-cost-of-living: "מגיל לידה ועד דוקטורט" → "מהלידה ועד הדוקטורט" and nested parentheses on the 2025 budget date → semicolons; issue-iran: "תקיפה באיראן" → "תקיפת איראן"; issue-judicial-system: "מעריץ את התמדת" → "מעריך את התמדתם"; coalition: "לא הכוס תה שלי" → "לא כוס התה שלי", "ראש ממשלה מעבר" → "ראש ממשלת מעבר" | Fixed in Hebrew |
+- Checked with no difference: evidence-tier tags (14 Action, 4 Formal commitment, 26 Statement, 1 Context, 1 Background, 10 Closest option(s), same claims; no Contradiction or Limited-information tags in either); the full `[n]` sequence (193 citation groups) matches the English token for token; Sources list identical (116 entries, same order, titles and URLs); option IDs on every Closest option(s) line identical; all numbers, vote tallies and dates match and dates are day-first; no "נחקרה"/"שנחקרו".
+- Author's flagged quoted terms: **all kept, each meets the ruling.** "להפיכה המשטרית" (glossary avoid "הפיכה משטרית") is inside Tibi's attributed quote ("אמר טיבי") where the English quotes "regime overhaul", with the same bracketed gloss [שינויים במערכת המשפט]. "התנחלויות" (Feb 2024) and "אזרחים פלסטינים של ישראל" are not on any `avoid.he` list (the settlements avoid-list is קולוניות / מושבות כיבוש); both are inside attributed quotes where the English quotes "settlements" and "Palestinian citizens of Israel". The same ruling also covers three other quoted avoid-list terms: "טיהור אתני" ("מה שכינה", EN quotes "ethnic cleansing"), "לסיים את הכיבוש" (Feb 2024 quote, EN "ending the occupation") and "מיסוד האפרטהייד" (Hadash–Ta'al quote). No unquoted or unattributed use of any avoid term was found; "המגזר הערבי" and "ערביי ישראל" do not appear.
+- Names not in the registry: דראושה, ע'סאן עבדאללה, אעתימאד קעדאן, לית' כבהא, יוסף עטאונה, סמיר בן סעיד, וליד דקה, אנסטסיה מיכאלי and ויויאן סילבר are standard Hebrew spellings. Two were corrected (זחאלקה, אוסאמה סעדי; rows above). Registry names (Jabareen, Tibi, Ghattas, Awawdeh, Cassif, Abu Shehadeh, the Joint List, ballot letters ודם) all match.
+- English oddities the author kept: the doubled "see the Haredi enlistment section" in the Religion-and-state Action bullet is redundant but not wrong, and the Hebrew mirrors it. The 25 March vs 24 March budget-vote date is explicitly explained in the English body and source 107, so it is not an error.
+- English questioned: none.
+- Validation: no error names the file ✔ (`pnpm validate:content` passed)
