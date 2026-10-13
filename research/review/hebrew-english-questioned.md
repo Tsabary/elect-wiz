@@ -46,3 +46,21 @@ Each was checked against the party's English research document, fixed in English
 | shas | `content/matching/texts/en/shas.json` (label from `content/matching/positions/judea-samaria.json`) | judea-samaria / `partial-sovereignty-area-c` | Labelled `agrees` with a "mixed evidence" hedge, while the text says Shas MKs voted against or did not vote on binding sovereignty bills and `maintain-current-situation` is `partially` on the same evidence. Borderline. | 7d parity check | open, owner to decide (low) |
 | shas | `content/matching/texts/en/shas.json` | texts naming Yaakov Margi ("Welfare Minister") and Moshe Arbel ("Interior Minister") | These roles were already in the checked English; neither the registry nor the research's leadership section states them (nothing contradicts them). Worth confirming against the full research. | 7d parity check | open, owner to decide (low) |
 | jewish-national-front | `content/matching/texts/en/jewish-national-front.json` | crime-in-arab-society / `emergency-powers-shin-bet` and `invest-in-arab-communities-first` | Say "Minister Golan" with no first name; neither the registry nor the research's leadership section names this minister (the registry's only Golan is Yair Golan of The Democrats), so the Hebrew session can't add it, and Hebrew must pick a grammatical gender. The Hebrew uses "השרה גולן" (feminine), which the English doesn't state. Suggest giving the full name in the English; the Hebrew then follows. | 7d writer and parity check (`research/review/matching/texts-he-jewish-national-front.md`) | open, owner to decide |
+
+## Decisions on the batch-2 items (2026-10-13)
+
+Each was checked against the party's English research document; changes were made in English and Hebrew together and reviewed by a separate checking agent. Every "open" row in the table above is closed by this section.
+
+1. **amcha-yisrael, candidate No. 13:** fixed in both research editions. The committee's list (source [1], which prints the family name first) reads "אבראהים עלמאדין", so the candidate is Alamaddin Ibrahim / עלמאדין אבראהים. The earlier "Alam Ibrahim" shortened the given name.
+2. **raam, judea-samaria labels:** no change, by design. The row holds both options at `either` because the research can't tell them apart, and an `either` option is labelled `agrees`. Each text says so in its first sentence.
+3. **eretz-yisrael-shelanu, Wasserlauf on 22 January 2025:** fixed in both languages. The text no longer calls him "Minister" for that vote and says he had resigned days earlier and was a minister again by the December 2025 vote. No other text uses the title for a date when he wasn't a minister.
+4. **eretz-yisrael-shelanu, "MK Ariel Kallner":** no change. The research's October 7 section has "MK Ariel Kallner's bill".
+5. **eretz-yisrael-shelanu, Ben Gvir's title:** stays removed. The texts already say he leads the Otzma Yehudit list.
+6. **yesh-atid, "two related episodes":** fixed in both research editions: "Three earlier episodes are relevant:" / "שלושה אירועים קודמים רלוונטיים:". This closes the one unresolved item in yesh-atid's entry in `research/review/parity-check.md`.
+7. **shas, housing label:** no change. The research names only `direct-help-for-buyers`; `disagrees` on another option means the party's documented position is a different one, not that it opposes the option, and the text doesn't claim opposition.
+8. **shas, judea-samaria label:** no change. The row follows the research's own order and matches the earlier positions review; the text states that the evidence is mixed.
+9. **shas, Margi and Arbel:** no change. The research's issue sections give "Welfare Minister Yaakov Margi" (March and July 2025) and "Interior Minister Moshe Arbel" (August 2023, August 2024).
+10. **jewish-national-front, "Minister Golan":** fixed in both texts and both languages: "Social Equality Minister May Golan" / "השרה לשוויון חברתי מאי גולן", as the research's crime section has it.
+
+**For later batches:** a name or role may also be confirmed from the issue section of the research that the text is about, not only from the leadership section. A label is computed from the position rows; flag one only when the position row looks wrong against the research's "Closest option(s)" line.
+

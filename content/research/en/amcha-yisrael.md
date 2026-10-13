@@ -47,7 +47,7 @@ Winter has said he is entering politics to become defense minister: "I tried to 
 9. **Aviv Ezra**, founder of the reservists' movement "Dor HaNitzahon" (Generation of Victory), whose Knesset lobby, the party says, advanced laws giving reservists priority in university admission and public-service hiring [4].
 10. **Col. (res.) Eli Gino**, who served about 27 years in the Givati Brigade and, the party says, more than 1,000 reserve days since the war began, including as Givati's chief of staff [4].
 11. **Sigal Kraunik-Atia**, a member of Kibbutz Be'eri whose husband, Arik Kraunik, the kibbutz's security coordinator, was killed on 7 October 2023 [4, 11].
-12–18. Eric Matthew Rubin, Alam Ibrahim, Moshe Har-Zion, Lilach Eidelberg, Moshe Toledano, Raz Malka and Dor Yitzhak Levi [1].
+12–18. Eric Matthew Rubin, Alamaddin Ibrahim, Moshe Har-Zion, Lilach Eidelberg, Moshe Toledano, Raz Malka and Dor Yitzhak Levi [1].
 
 ## Positions on the issues {#issues}
 
