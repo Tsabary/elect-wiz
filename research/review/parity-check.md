@@ -49,3 +49,37 @@ One section per party. Each Hebrew edition was written by a Stage 5a agent (Sonn
 - Glossary: no `avoid.he` term used. "רדיפת לומדי התורה" (close to the avoided "רדיפת בני ישיבות") appears only in quotation marks, attributed "(ניסוח המפלגה)", where the English quotes the same words: allowed under the project ruling. No "נחקרה/שנחקרו". Dates day first throughout.
 - English questioned: none.
 - Validation: no error names the file ✔
+
+## balad (checked 2026-10-13; EN researchedAsOf 2026-10-07)
+- Hebrew edition by: Stage 5a agent (Sonnet) · Parity check by: Stage 5b agent (Opus, different)
+- Sections/anchors: identical ✔ (all 9 sections and 18 sub-anchors in the same order; frontmatter matches except `lang: he`)
+- Claims compared: ~280 (every sentence and bullet in every section; 94 sources) · Differences found: 16 · Fixed: 16 · Unresolved: 0
+- Citations: the `[n]` sequence across the document is identical to the English; Sources list is identical (94 entries, same order, titles and URLs). Evidence-tier tags match claim for claim. Option IDs on all "closest option(s)" lines match (14 IDs).
+
+| Anchor | Difference | Resolution |
+|---|---|---|
+| issue-haredi-enlistment | meaning drift: "Tentative" was rendered "באופן זמני" (temporarily), and "The mapping is tentative" as "ההתאמה זמנית" | Changed to "בהסתייגות:" and "ההתאמה אינה ודאית" |
+| issue-cost-of-living, issue-housing | meaning drift (2): "net income" was rendered "ההכנסה הפנויה" (disposable income) | Changed to "ההכנסה נטו של משק הבית" in both places |
+| issue-crime-in-arab-society | meaning drift: "the harms it blames on the current government's policies" was rendered "הפגיעות שהיא מטילה על מדיניות הממשלה" (harms it imposes on the policies) | Changed to "הנזקים שהיא תולה במדיניות הממשלה הנוכחית" |
+| issue-gaza | meaning drift: "urged the United States" was rendered "דרש מ" (demanded; stronger) | Changed to "קרא לארצות הברית לומר לישראל" |
+| issue-gaza | meaning drift: quote "against the attack of civilians" was rendered "לפגיעה באזרחים" (harming; softer) | Changed to "לתקיפת אזרחים" |
+| legal | meaning drift: "revolting" was rendered "מקוממים" (outrageous) | Changed to "מעוררי שאט נפש" |
+| other-land-and-negev | meaning drift: "the removal of Bedouin citizens" was rendered "העברתם" (relocation; softer) | Changed to "פינוים" |
+| issue-gaza | glossary / loaded wording: "בסיום הכיבוש" contains the avoid.he term "סיום הכיבוש" outside quotation marks (English attributes it as "the party's term" but doesn't quote it); the gloss also used "שנכבשו" for "taken" | Reworded as "בסיום מה שהמפלגה מכנה הכיבוש (כלומר השליטה הישראלית בשטחים שישראל תפסה ב-1967)", which keeps the English attribution and avoids the exact avoid string. The attributed "what he called the occupation" in issue-judicial-system ("ממה שהוא כינה כיבוש") matches the English and was kept |
+| issue-judea-samaria | glossary: the pre-1967-border term was used without its mandated "(הקו הירוק)" | Changed to "(הגבול שלפני 1967, הקו הירוק)" |
+| overview, legal | naturalness (2): "a majority was likely to uphold" was rendered "שרוב צפוי" (unclear: a majority of whom?) | "שרוב השופטים צפוי" / "שרובם צפוי" |
+| overview | naturalness: "בין מנהיגיה הקודמים הידועים נוסף" | "בין מנהיגיה הידועים בעבר נמנה גם" |
+| issue-crime-in-arab-society | naturalness: "עבירות נשק חמורות שלא כדין" | "עבירות חמורות של נשק בלתי חוקי" |
+| other-workers-and-welfare | naturalness: "גמלאות להגנה על היריון" | the standard term "גמלת שמירת היריון" |
+| coalition | naturalness: "Balad cited" was rendered "הסתמכה על" (relied on) | "נימקה זאת ב..." |
+| track-record | naturalness: "מותב של 11 שופטי בית המשפט העליון" | "הרכב של 11 שופטים בבית המשפט העליון" |
+
+Author's flagged points:
+- (a) The English has the bold `**No documented position found.**` at issue-october-7-inquiry and issue-religion-and-state. The Hebrew `**לא נמצאה עמדה מתועדת.**` matches it in both places. In issue-crime-in-arab-society the English sentence is not bold, and neither is the Hebrew. No change.
+- (b) "התנחלויות" appears only inside the quoted bill title `"חוק פינוי ההתנחלויות"` (the English quotes "Settlements Evacuation") and in the Hebrew title of source 34. Everywhere else the Hebrew uses "יישובים". Accepted under the ruling.
+- (c) Occupation: fixed as in the table row above.
+- (d) Terror wording: there are three "טרור" uses and each matches the English word for word. Overview: "Hezbollah, the Iran-backed terror organization in Lebanon" is "חיזבאללה, ארגון הטרור בלבנון שאיראן תומכת בו". Coalition: Eisenkot's condition, "recognition of Hamas as a terror organization that must be dismantled", is "הכרה בחמאס כארגון טרור שיש לפרקו", attributed to Eisenkot as in the English. Legal: the CEC ground "supporting the armed struggle of a terror organization" is "תמיכה במאבק מזוין של ארגון טרור". Nothing is added or dropped. No change.
+- (e) "נחקר" appears once (legal: "הוא נחקר בחקירה זו"). The English says "he was questioned in that investigation", so it is allowed. Neither "נחקרה" nor "שנחקרו" appears anywhere, and the party investigation is headed "חקירת מימון המפלגה". No change.
+- (f) Nahaya Wishahi, written "נהאיה וישאחי": the spelling is unconfirmed. I can't check it from the two documents or the registry, since she is not in `lists.json` topCandidates. This is not a parity difference and is not counted as unresolved, but it is noted for owner follow-up. Other names match the registry, including "פאתן ג'טאס" (registry form). Former MK Basel Ghattas in the legal section is written "בסאל גטאס"; that inconsistent transliteration is noted but not changed, since neither form can be checked from the inputs.
+- Dates are day first throughout. No poll figures.
+- Validation: no error names the file ✔ (`pnpm validate:content` passed)
