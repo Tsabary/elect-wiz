@@ -331,7 +331,7 @@ The owner also creates the small counter database for the anonymous counts befor
 **Exit criteria:** the research audits are done; every listed party has a verified platform link or a recorded "none found"; the registry matches the Central Elections Committee's final lists.
 
 ### Task 4.1: Run the outstanding audits of the research for the 28 parties
-- [ ]
+- [x] *(Dropped by the owner on 2026-10-13. Every research document was fact-checked by a separate agent, the 28 were consistency-reviewed with three fix rounds and that review was audited, and the result-text checks re-read every issue section against the research without finding a wrong position. A further process audit adds little.)*
 - **What:** Run the Phase 3 audits that `research/NEXT-STEPS.md` lists as not started, for the research and fact-check of the 28 researched parties, as defined in `tasks-israeli-election-party-matcher.md` (Tasks 3.1 and 3.2).
 - **Acceptance criteria:**
   - Each audit named in those tasks has been run by an agent that was neither an author nor a fact-checker of the documents it audits.
@@ -343,7 +343,7 @@ The owner also creates the small counter database for the anonymous counts befor
 - **Notes:** If the owner approves a correction to a party, that party's positions rows, English texts and Hebrew must be re-run in that order.
 
 ### Task 4.2: Find and verify platform links for the 24 listed parties
-- [ ]
+- [x]
 - **What:** Run the platform-links job from Task 1.4: one agent finds each listed party's own official site or platform page; a different agent verifies each link.
 - **Acceptance criteria:**
   - Each of the 24 listed parties in `content/registry/parties.json` has either a platform link with its check date or no link, with "none found" and what was searched recorded in a log.
@@ -373,7 +373,7 @@ The owner also creates the small counter database for the anonymous counts befor
 **Exit criteria:** the site builds and passes every check on the real corpus, and the blackout and election-over modes are verified. Starts only when Phases 2–4 are checked off and the owner's Hebrew research editions and Hebrew result texts have landed.
 
 ### Task 5.1: Switch the site to the real corpus
-- [ ]
+- [ ] *(Done on 2026-10-13 for English: the real corpus is the default, versions are set, and validation, self-match and the profile check run in the build. Open until the owner\'s Hebrew content lands and `hebrewContent` in `content/versions.json` is set to `ready`.)*
 - **What:** Make `real` the active corpus, set the versions, and get every check passing on it.
 - **Acceptance criteria:**
   - The default active corpus is `real`; the placeholder corpus remains in the repo for tests only, and the test runs select it explicitly.

@@ -54,7 +54,7 @@ Key files:
 - **Issues (locked):** `content/issues/*.json`, `content/glossary.json`.
 - **Registry:** `content/registry/lists.json` (38 lists) and `content/registry/parties.json` (52 parties). Recheck against the CEC's final publication of 18 Oct (Task 4.3 of `tasks-deterministic-matching.md`). Sources in `research/ground-truth.md`.
 - **Legal:** `research/legal-findings.md`. Poll blackout from 2026-10-23T12:00+03:00.
-- **Corpora:** the site uses the placeholder corpus by default (`CONTENT_CORPUS`). Real research is in `content/research/{en,he}/`. Validate the real corpus with `CONTENT_CORPUS=real pnpm validate:content`; the 24 unresearched parties are expected to report `research-missing` until the validation rules for listed-only parties (in `tasks-deterministic-matching.md`) say otherwise.
+- **Corpora:** the site uses the **real** corpus by default since 2026-10-13 (`DEFAULT_ACTIVE_CORPUS` in `lib/content/config.ts`); unit and end-to-end tests select the placeholder corpus explicitly. `content/versions.json` carries `"hebrewContent": "pending"`: while it is set, missing Hebrew research documents and Hebrew result texts are not validation errors, and the Hebrew site shows the English party content under a short notice. **When the Hebrew content lands, set it to `"ready"` (or delete the field) and bump `researchVersion` and `matchingVersion`; no code change is needed.** Validate with `pnpm validate:content`.
 
 ## 2. The 24 small parties: cancelled
 
