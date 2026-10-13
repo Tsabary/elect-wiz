@@ -1,0 +1,41 @@
+{
+  "issueId": "cost-of-living",
+  "pairs": [
+    {
+      "a": "open-market-competition-imports",
+      "b": "cut-taxes-and-government-spending",
+      "closeness": 0.67,
+      "reason": "Fictional: 1 of 3 steps apart in the option list."
+    },
+    {
+      "a": "open-market-competition-imports",
+      "b": "active-state-regulation",
+      "closeness": 0.33,
+      "reason": "Fictional: 2 of 3 steps apart in the option list."
+    },
+    {
+      "a": "open-market-competition-imports",
+      "b": "direct-support-for-households",
+      "closeness": 0,
+      "reason": "Fictional: 3 of 3 steps apart in the option list."
+    },
+    {
+      "a": "cut-taxes-and-government-spending",
+      "b": "active-state-regulation",
+      "closeness": 0.67,
+      "reason": "Fictional: 1 of 3 steps apart in the option list."
+    },
+    {
+      "a": "cut-taxes-and-government-spending",
+      "b": "direct-support-for-households",
+      "closeness": 0.33,
+      "reason": "Fictional: 2 of 3 steps apart in the option list."
+    },
+    {
+      "a": "active-state-regulation",
+      "b": "direct-support-for-households",
+      "closeness": 0.67,
+      "reason": "Fictional: 1 of 3 steps apart in the option list."
+    }
+  ]
+}

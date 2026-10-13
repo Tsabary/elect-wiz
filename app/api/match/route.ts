@@ -16,7 +16,12 @@ export async function POST(request: Request): Promise<Response> {
   const now = resolveNow({ env: process.env, override: requestClockOverride(request) });
   const versions = getVersions();
   return handleMatchRequest(request, {
-    corpus: { issues: getIssues(), parties: getParties(), lists: getLists() },
+    // Only researched parties are matched; listed ones have no research page to link to.
+    corpus: {
+      issues: getIssues(),
+      parties: getParties().filter((p) => p.tier === "researched"),
+      lists: getLists(),
+    },
     surveyContentVersion: versions.surveyContentVersion,
     researchVersion: versions.researchVersion,
     implementation: selectImplementation(),

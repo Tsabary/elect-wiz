@@ -1,0 +1,138 @@
+{
+  "profiles": [
+    {
+      "id": "joint-list-top",
+      "description": "Picks the third option on five issues.",
+      "ranked": [
+        "gaza",
+        "haredi-enlistment",
+        "housing",
+        "iran-and-regional-security",
+        "judicial-system"
+      ],
+      "answers": {
+        "gaza": "advance-international-arrangement",
+        "haredi-enlistment": "universal-service-with-sanctions",
+        "housing": "direct-help-for-buyers",
+        "iran-and-regional-security": "prioritize-ending-multifront-war",
+        "judicial-system": "repeal-changes-protect-independence"
+      },
+      "expect": {
+        "topAnyOf": [
+          "green-valley"
+        ],
+        "inTop4": [
+          "olive-branch"
+        ],
+        "notInTop4": [
+          "pebble-citizens"
+        ]
+      },
+      "reason": "Green Valley holds the third option on all five; its joint-list partner Olive Branch sits one option away."
+    },
+    {
+      "id": "below-threshold-top",
+      "description": "Shares The Lighthouse's own mix of positions.",
+      "ranked": [
+        "gaza",
+        "housing",
+        "judea-samaria",
+        "crime-in-arab-society",
+        "october-7-inquiry"
+      ],
+      "answers": {
+        "gaza": "defeat-hamas-then-security-control",
+        "housing": "develop-periphery-and-transport",
+        "judea-samaria": "two-states-pre-1967-border",
+        "crime-in-arab-society": "invest-in-arab-communities-first",
+        "october-7-inquiry": "commission-chosen-by-neutral-mechanism"
+      },
+      "expect": {
+        "topAnyOf": [
+          "lighthouse"
+        ],
+        "inTop4": [
+          "cedar-tradition"
+        ]
+      },
+      "reason": "The Lighthouse, whose list polls below the threshold, holds all five options; Cedar Tradition shares three and is unclear on the inquiry."
+    },
+    {
+      "id": "limited-information-top",
+      "description": "Cares most about the three issues Pebble Citizens has a position on.",
+      "ranked": [
+        "cost-of-living",
+        "crime-in-arab-society",
+        "housing",
+        "gaza",
+        "haredi-enlistment"
+      ],
+      "answers": {
+        "cost-of-living": "cut-taxes-and-government-spending",
+        "crime-in-arab-society": "emergency-powers-shin-bet",
+        "housing": "direct-help-for-buyers",
+        "gaza": "defeat-hamas-then-security-control",
+        "haredi-enlistment": "voluntary-service-for-all"
+      },
+      "expect": {
+        "topAnyOf": [
+          "pebble-citizens"
+        ]
+      },
+      "reason": "Pebble Citizens holds the first three options and has no documented position on the other two, where no other party is close enough to overtake it."
+    },
+    {
+      "id": "weak-match",
+      "description": "Alternates between the last and the first option, which no party does.",
+      "ranked": [
+        "cost-of-living",
+        "gaza",
+        "haredi-enlistment",
+        "judicial-system",
+        "religion-and-state"
+      ],
+      "answers": {
+        "cost-of-living": "direct-support-for-households",
+        "gaza": "resume-fighting-full-control",
+        "haredi-enlistment": "anchor-torah-study-exemption",
+        "judicial-system": "keep-current-system-stability",
+        "religion-and-state": "strengthen-jewish-character"
+      },
+      "expect": {
+        "topAnyOf": [
+          "green-valley",
+          "blue-horizon",
+          "olive-branch"
+        ],
+        "notInTop4": [
+          "lighthouse"
+        ]
+      },
+      "reason": "Every party is far from this voter on at least two of the five issues, so the top score stays below the weak-match level."
+    },
+    {
+      "id": "unclear-position",
+      "description": "Picks the last option everywhere and ranks the October 7 inquiry.",
+      "ranked": [
+        "gaza",
+        "haredi-enlistment",
+        "housing",
+        "iran-and-regional-security",
+        "october-7-inquiry"
+      ],
+      "answers": {
+        "gaza": "defeat-hamas-then-security-control",
+        "haredi-enlistment": "voluntary-service-for-all",
+        "housing": "develop-periphery-and-transport",
+        "iran-and-regional-security": "end-military-operations-regional-peace",
+        "october-7-inquiry": "commission-chosen-by-neutral-mechanism"
+      },
+      "expect": {
+        "topAnyOf": [
+          "cedar-tradition"
+        ]
+      },
+      "reason": "Cedar Tradition holds the last option on four issues and has no documented position on the inquiry."
+    }
+  ]
+}

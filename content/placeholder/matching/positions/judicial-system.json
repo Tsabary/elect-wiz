@@ -1,0 +1,72 @@
+{
+  "issueId": "judicial-system",
+  "rows": [
+    {
+      "partyId": "blue-horizon",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "continue-judicial-changes",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-judicial-system",
+      "basis": "Fictional: taken from the placeholder research's closest-option line."
+    },
+    {
+      "partyId": "olive-branch",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "broad-agreed-constitutional-framework",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-judicial-system",
+      "basis": "Fictional: taken from the placeholder research's closest-option line."
+    },
+    {
+      "partyId": "green-valley",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "repeal-changes-protect-independence",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-judicial-system",
+      "basis": "Fictional: taken from the placeholder research's closest-option line."
+    },
+    {
+      "partyId": "cedar-tradition",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "keep-current-system-stability",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-judicial-system",
+      "basis": "Fictional: taken from the placeholder research's closest-option line."
+    },
+    {
+      "partyId": "lighthouse",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "continue-judicial-changes",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-judicial-system",
+      "basis": "Fictional: taken from the placeholder research's closest-option line."
+    },
+    {
+      "partyId": "pebble-citizens",
+      "unclear": true,
+      "held": [],
+      "anchor": "issue-judicial-system",
+      "basis": "Fictional: the placeholder research says no documented position was found."
+    }
+  ]
+}

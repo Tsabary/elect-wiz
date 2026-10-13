@@ -18,49 +18,65 @@ Led by Ron Imaginary (fictional person) [1].
 
 ### Cost of living {#issue-cost-of-living}
 
-No published position, voting record or platform statement on this issue was found for this fictional party [1].
+**Evidence: Statement.** This fictional party has acted or spoken on this issue [1].
+
+**Closest option(s):** Cut taxes, such as VAT (the tax added to almost everything you buy) and income tax, and cut government spending and bureaucracy, leaving more money in people's pockets. People spend their own money better than the state does. (`cut-taxes-and-government-spending`)
+
+Placeholder text for UI development only. It describes no real party.
 
 ### Crime in Arab society {#issue-crime-in-arab-society}
 
-No published position, voting record or platform statement on this issue was found for this fictional party [1].
+**Evidence: Action.** This fictional party has acted or spoken on this issue [2].
+
+**Closest option(s):** Use extraordinary measures against organized crime: bring in the Shin Bet (Israel's internal security service) to investigate crime organizations in Arab communities, and give the police a new power to hold any suspected crime boss in Israel, Arab or Jewish, without trial. Ordinary policing has failed, and only powers like those used against terrorism can break these organizations. (`emergency-powers-shin-bet`)
+
+Placeholder text for UI development only. It describes no real party.
 
 ### Gaza Strip policy {#issue-gaza}
 
-No published position, voting record or platform statement on this issue was found for this fictional party [1].
+**No documented position found.** No published position, voting record or platform statement on this issue was found for this fictional party [1].
 
 ### Haredi military enlistment {#issue-haredi-enlistment}
 
-No published position, voting record or platform statement on this issue was found for this fictional party [1].
+**No documented position found.** No published position, voting record or platform statement on this issue was found for this fictional party [1].
 
 ### Housing {#issue-housing}
 
-No published position, voting record or platform statement on this issue was found for this fictional party [1].
+**Evidence: Action.** This fictional party has acted or spoken on this issue [2].
+
+**Closest option(s):** Help people buy directly: discounted-price apartment programs, bigger and longer mortgages, and grants for young couples and those who served. Owning a home is the key to financial security, and the state should help people get there. (`direct-help-for-buyers`)
+
+Placeholder text for UI development only. It describes no real party.
 
 ### Iran, Hezbollah and the region {#issue-iran-and-regional-security}
 
-No published position, voting record or platform statement on this issue was found for this fictional party [1].
+**No documented position found.** No published position, voting record or platform statement on this issue was found for this fictional party [1].
 
 ### Judea and Samaria {#issue-judea-samaria}
 
-No published position, voting record or platform statement on this issue was found for this fictional party [1].
+**No documented position found.** No published position, voting record or platform statement on this issue was found for this fictional party [1].
 
 ### Judicial system {#issue-judicial-system}
 
-No published position, voting record or platform statement on this issue was found for this fictional party [1].
+**No documented position found.** No published position, voting record or platform statement on this issue was found for this fictional party [1].
 
 ### October 7 inquiry {#issue-october-7-inquiry}
 
-No published position, voting record or platform statement on this issue was found for this fictional party [1].
+**No documented position found.** No published position, voting record or platform statement on this issue was found for this fictional party [1].
 
 ### Religion and state {#issue-religion-and-state}
 
-No published position, voting record or platform statement on this issue was found for this fictional party [1].
+**No documented position found.** No published position, voting record or platform statement on this issue was found for this fictional party [1].
 
 ## Other notable positions {#other-positions}
 
 ### Environment {#other-environment}
 
 Supports expanding fictional national parks [3].
+
+### Transport {#other-transport}
+
+Backs a fictional national network of cycling paths [3].
 
 ## Coalition stance {#coalition}
 

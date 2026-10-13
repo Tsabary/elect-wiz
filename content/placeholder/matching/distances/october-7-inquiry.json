@@ -1,0 +1,23 @@
+{
+  "issueId": "october-7-inquiry",
+  "pairs": [
+    {
+      "a": "state-commission-under-existing-law",
+      "b": "commission-appointed-by-knesset-balance",
+      "closeness": 0.5,
+      "reason": "Fictional: 1 of 2 steps apart in the option list."
+    },
+    {
+      "a": "state-commission-under-existing-law",
+      "b": "commission-chosen-by-neutral-mechanism",
+      "closeness": 0,
+      "reason": "Fictional: 2 of 2 steps apart in the option list."
+    },
+    {
+      "a": "commission-appointed-by-knesset-balance",
+      "b": "commission-chosen-by-neutral-mechanism",
+      "closeness": 0.5,
+      "reason": "Fictional: 1 of 2 steps apart in the option list."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "levels": {
+    "main": 1,
+    "either": 0.85,
+    "secondary": 0.6
+  },
+  "unclear": 0.25,
+  "agreement": {
+    "agrees": 0.75,
+    "partially": 0.35
+  },
+  "weakMatchBelow": 0.6,
+  "ruledOutMax": 0.3
+}

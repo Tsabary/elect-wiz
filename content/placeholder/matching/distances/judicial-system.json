@@ -1,0 +1,41 @@
+{
+  "issueId": "judicial-system",
+  "pairs": [
+    {
+      "a": "continue-judicial-changes",
+      "b": "broad-agreed-constitutional-framework",
+      "closeness": 0.67,
+      "reason": "Fictional: 1 of 3 steps apart in the option list."
+    },
+    {
+      "a": "continue-judicial-changes",
+      "b": "repeal-changes-protect-independence",
+      "closeness": 0.33,
+      "reason": "Fictional: 2 of 3 steps apart in the option list."
+    },
+    {
+      "a": "continue-judicial-changes",
+      "b": "keep-current-system-stability",
+      "closeness": 0,
+      "reason": "Fictional: 3 of 3 steps apart in the option list."
+    },
+    {
+      "a": "broad-agreed-constitutional-framework",
+      "b": "repeal-changes-protect-independence",
+      "closeness": 0.67,
+      "reason": "Fictional: 1 of 3 steps apart in the option list."
+    },
+    {
+      "a": "broad-agreed-constitutional-framework",
+      "b": "keep-current-system-stability",
+      "closeness": 0.33,
+      "reason": "Fictional: 2 of 3 steps apart in the option list."
+    },
+    {
+      "a": "repeal-changes-protect-independence",
+      "b": "keep-current-system-stability",
+      "closeness": 0.67,
+      "reason": "Fictional: 1 of 3 steps apart in the option list."
+    }
+  ]
+}

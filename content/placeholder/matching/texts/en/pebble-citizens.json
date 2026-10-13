@@ -1,0 +1,117 @@
+{
+  "partyId": "pebble-citizens",
+  "lang": "en",
+  "issues": {
+    "cost-of-living": {
+      "anchor": "issue-cost-of-living",
+      "options": {
+        "open-market-competition-imports": {
+          "agreement": "partially",
+          "text": "This fictional party's documented position partly overlaps with the option you chose: \"Cut taxes, such as VAT (the tax added to almost everything you buy) and income tax, and cut government spending and bureaucracy, leaving more money in people's pockets. People spend their own money better than the state does.\" Placeholder text."
+        },
+        "cut-taxes-and-government-spending": {
+          "agreement": "agrees",
+          "text": "This fictional party's documented position is the option you chose. Placeholder text."
+        },
+        "active-state-regulation": {
+          "agreement": "partially",
+          "text": "This fictional party's documented position partly overlaps with the option you chose: \"Cut taxes, such as VAT (the tax added to almost everything you buy) and income tax, and cut government spending and bureaucracy, leaving more money in people's pockets. People spend their own money better than the state does.\" Placeholder text."
+        },
+        "direct-support-for-households": {
+          "agreement": "disagrees",
+          "text": "This fictional party's documented position is far from the option you chose: \"Cut taxes, such as VAT (the tax added to almost everything you buy) and income tax, and cut government spending and bureaucracy, leaving more money in people's pockets. People spend their own money better than the state does.\" Placeholder text."
+        }
+      }
+    },
+    "crime-in-arab-society": {
+      "anchor": "issue-crime-in-arab-society",
+      "options": {
+        "emergency-powers-shin-bet": {
+          "agreement": "agrees",
+          "text": "This fictional party's documented position is the option you chose. Placeholder text."
+        },
+        "more-police-resources-normal-law": {
+          "agreement": "partially",
+          "text": "This fictional party's documented position partly overlaps with the option you chose: \"Use extraordinary measures against organized crime: bring in the Shin Bet (Israel's internal security service) to investigate crime organizations in Arab communities, and give the police a new power to hold any suspected crime boss in Israel, Arab or Jewish, without trial. Ordinary policing has failed, and only powers like those used against terrorism can break these organizations.\" Placeholder text."
+        },
+        "invest-in-arab-communities-first": {
+          "agreement": "disagrees",
+          "text": "This fictional party's documented position is far from the option you chose: \"Use extraordinary measures against organized crime: bring in the Shin Bet (Israel's internal security service) to investigate crime organizations in Arab communities, and give the police a new power to hold any suspected crime boss in Israel, Arab or Jewish, without trial. Ordinary policing has failed, and only powers like those used against terrorism can break these organizations.\" Placeholder text."
+        }
+      }
+    },
+    "gaza": {
+      "anchor": "issue-gaza",
+      "unclear": {
+        "text": "No documented position on this issue was found for this fictional party. Placeholder text."
+      }
+    },
+    "haredi-enlistment": {
+      "anchor": "issue-haredi-enlistment",
+      "unclear": {
+        "text": "No documented position on this issue was found for this fictional party. Placeholder text."
+      }
+    },
+    "housing": {
+      "anchor": "issue-housing",
+      "options": {
+        "speed-up-planning-and-construction": {
+          "agreement": "disagrees",
+          "text": "This fictional party's documented position is far from the option you chose: \"Help people buy directly: discounted-price apartment programs, bigger and longer mortgages, and grants for young couples and those who served. Owning a home is the key to financial security, and the state should help people get there.\" Placeholder text."
+        },
+        "state-led-affordable-rental": {
+          "agreement": "partially",
+          "text": "This fictional party's documented position partly overlaps with the option you chose: \"Help people buy directly: discounted-price apartment programs, bigger and longer mortgages, and grants for young couples and those who served. Owning a home is the key to financial security, and the state should help people get there.\" Placeholder text."
+        },
+        "direct-help-for-buyers": {
+          "agreement": "agrees",
+          "text": "This fictional party's documented position is the option you chose. Placeholder text."
+        },
+        "develop-periphery-and-transport": {
+          "agreement": "partially",
+          "text": "This fictional party's documented position partly overlaps with the option you chose: \"Help people buy directly: discounted-price apartment programs, bigger and longer mortgages, and grants for young couples and those who served. Owning a home is the key to financial security, and the state should help people get there.\" Placeholder text."
+        }
+      }
+    },
+    "iran-and-regional-security": {
+      "anchor": "issue-iran-and-regional-security",
+      "unclear": {
+        "text": "No documented position on this issue was found for this fictional party. Placeholder text."
+      }
+    },
+    "judea-samaria": {
+      "anchor": "issue-judea-samaria",
+      "unclear": {
+        "text": "No documented position on this issue was found for this fictional party. Placeholder text."
+      }
+    },
+    "judicial-system": {
+      "anchor": "issue-judicial-system",
+      "unclear": {
+        "text": "No documented position on this issue was found for this fictional party. Placeholder text."
+      }
+    },
+    "october-7-inquiry": {
+      "anchor": "issue-october-7-inquiry",
+      "unclear": {
+        "text": "No documented position on this issue was found for this fictional party. Placeholder text."
+      }
+    },
+    "religion-and-state": {
+      "anchor": "issue-religion-and-state",
+      "unclear": {
+        "text": "No documented position on this issue was found for this fictional party. Placeholder text."
+      }
+    }
+  },
+  "points": [
+    {
+      "text": "Supports expanding fictional national parks. Placeholder text.",
+      "anchor": "other-environment"
+    },
+    {
+      "text": "Backs a fictional national network of cycling paths. Placeholder text.",
+      "anchor": "other-transport"
+    }
+  ]
+}

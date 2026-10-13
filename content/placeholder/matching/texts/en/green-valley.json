@@ -1,0 +1,230 @@
+{
+  "partyId": "green-valley",
+  "lang": "en",
+  "issues": {
+    "cost-of-living": {
+      "anchor": "issue-cost-of-living",
+      "options": {
+        "open-market-competition-imports": {
+          "agreement": "partially",
+          "text": "This fictional party's documented position partly overlaps with the option you chose: \"Cut taxes, such as VAT (the tax added to almost everything you buy) and income tax, and cut government spending and bureaucracy, leaving more money in people's pockets. People spend their own money better than the state does.\" Placeholder text."
+        },
+        "cut-taxes-and-government-spending": {
+          "agreement": "partially",
+          "text": "This fictional party's documented position partly overlaps with the option you chose: \"Have the state step in more: supervise the prices of basic food and essential services, act more strongly against big companies that overcharge, and tax unusually high profits. Without active regulation, big companies keep prices high.\" Placeholder text."
+        },
+        "active-state-regulation": {
+          "agreement": "agrees",
+          "text": "This fictional party's documented position is the option you chose. Placeholder text."
+        },
+        "direct-support-for-households": {
+          "agreement": "partially",
+          "text": "This fictional party's documented position partly overlaps with the option you chose: \"Have the state step in more: supervise the prices of basic food and essential services, act more strongly against big companies that overcharge, and tax unusually high profits. Without active regulation, big companies keep prices high.\" Placeholder text."
+        }
+      }
+    },
+    "crime-in-arab-society": {
+      "anchor": "issue-crime-in-arab-society",
+      "options": {
+        "emergency-powers-shin-bet": {
+          "agreement": "partially",
+          "text": "This fictional party's documented position partly overlaps with the option you chose: \"Give the police far more resources, but no special powers: many more officers and investigators and a major campaign to collect illegal weapons, all under normal law. The police can solve this if they're properly staffed and equipped, with no need for the Shin Bet or detention without trial.\" Placeholder text."
+        },
+        "more-police-resources-normal-law": {
+          "agreement": "agrees",
+          "text": "This fictional party's documented position is the option you chose. Placeholder text."
+        },
+        "invest-in-arab-communities-first": {
+          "agreement": "partially",
+          "text": "This fictional party's documented position partly overlaps with the option you chose: \"Give the police far more resources, but no special powers: many more officers and investigators and a major campaign to collect illegal weapons, all under normal law. The police can solve this if they're properly staffed and equipped, with no need for the Shin Bet or detention without trial.\" Placeholder text."
+        }
+      }
+    },
+    "gaza": {
+      "anchor": "issue-gaza",
+      "options": {
+        "resume-fighting-full-control": {
+          "agreement": "partially",
+          "text": "This fictional party's documented position partly overlaps with the option you chose: \"Move forward with the US plan: an international force and a new Palestinian administration without Hamas, backed by Arab countries, while Hamas is gradually disarmed and the army gradually withdraws. A diplomatic deal will lock in the military gains and open the way to peace deals with more Arab countries.\" Placeholder text."
+        },
+        "hold-positions-disarmament-first": {
+          "agreement": "agrees",
+          "text": "This fictional party's documented position is close to the option you chose: \"Move forward with the US plan: an international force and a new Palestinian administration without Hamas, backed by Arab countries, while Hamas is gradually disarmed and the army gradually withdraws. A diplomatic deal will lock in the military gains and open the way to peace deals with more Arab countries.\" Placeholder text."
+        },
+        "advance-international-arrangement": {
+          "agreement": "agrees",
+          "text": "This fictional party's documented position is the option you chose. Placeholder text."
+        },
+        "end-war-full-withdrawal": {
+          "agreement": "agrees",
+          "text": "This fictional party's documented position is close to the option you chose: \"Move forward with the US plan: an international force and a new Palestinian administration without Hamas, backed by Arab countries, while Hamas is gradually disarmed and the army gradually withdraws. A diplomatic deal will lock in the military gains and open the way to peace deals with more Arab countries.\" Placeholder text."
+        },
+        "defeat-hamas-then-security-control": {
+          "agreement": "partially",
+          "text": "This fictional party's documented position partly overlaps with the option you chose: \"Move forward with the US plan: an international force and a new Palestinian administration without Hamas, backed by Arab countries, while Hamas is gradually disarmed and the army gradually withdraws. A diplomatic deal will lock in the military gains and open the way to peace deals with more Arab countries.\" Placeholder text."
+        }
+      }
+    },
+    "haredi-enlistment": {
+      "anchor": "issue-haredi-enlistment",
+      "options": {
+        "anchor-torah-study-exemption": {
+          "agreement": "disagrees",
+          "text": "This fictional party's documented position is far from the option you chose: \"Require every 18-year-old, including Haredim, to serve in the army or in civilian national service, with exemptions only for a small number of outstanding Torah scholars. Those who refuse lose state benefits. The army needs the soldiers, and the burden should be shared equally.\" Placeholder text."
+        },
+        "gradual-targets-by-agreement": {
+          "agreement": "partially",
+          "text": "This fictional party's documented position partly overlaps with the option you chose: \"Require every 18-year-old, including Haredim, to serve in the army or in civilian national service, with exemptions only for a small number of outstanding Torah scholars. Those who refuse lose state benefits. The army needs the soldiers, and the burden should be shared equally.\" Placeholder text."
+        },
+        "universal-service-with-sanctions": {
+          "agreement": "agrees",
+          "text": "This fictional party's documented position is the option you chose. Placeholder text."
+        },
+        "voluntary-service-for-all": {
+          "agreement": "partially",
+          "text": "This fictional party's documented position partly overlaps with the option you chose: \"Require every 18-year-old, including Haredim, to serve in the army or in civilian national service, with exemptions only for a small number of outstanding Torah scholars. Those who refuse lose state benefits. The army needs the soldiers, and the burden should be shared equally.\" Placeholder text."
+        }
+      }
+    },
+    "housing": {
+      "anchor": "issue-housing",
+      "options": {
+        "speed-up-planning-and-construction": {
+          "agreement": "disagrees",
+          "text": "This fictional party's documented position is far from the option you chose: \"Help people buy directly: discounted-price apartment programs, bigger and longer mortgages, and grants for young couples and those who served. Owning a home is the key to financial security, and the state should help people get there.\" Placeholder text."
+        },
+        "state-led-affordable-rental": {
+          "agreement": "partially",
+          "text": "This fictional party's documented position partly overlaps with the option you chose: \"Help people buy directly: discounted-price apartment programs, bigger and longer mortgages, and grants for young couples and those who served. Owning a home is the key to financial security, and the state should help people get there.\" Placeholder text."
+        },
+        "direct-help-for-buyers": {
+          "agreement": "agrees",
+          "text": "This fictional party's documented position is the option you chose. Placeholder text."
+        },
+        "develop-periphery-and-transport": {
+          "agreement": "partially",
+          "text": "This fictional party's documented position partly overlaps with the option you chose: \"Help people buy directly: discounted-price apartment programs, bigger and longer mortgages, and grants for young couples and those who served. Owning a home is the key to financial security, and the state should help people get there.\" Placeholder text."
+        }
+      }
+    },
+    "iran-and-regional-security": {
+      "anchor": "issue-iran-and-regional-security",
+      "options": {
+        "military-pressure-until-threats-removed": {
+          "agreement": "disagrees",
+          "text": "This fictional party's documented position is far from the option you chose: \"Stop attacking now and reach ceasefires on all fronts, using force only to respond if Israel is attacked. Ending the long war comes first, even before the threats are fully removed, because its human and economic cost is too heavy.\" Placeholder text."
+        },
+        "force-plus-us-backed-agreements": {
+          "agreement": "partially",
+          "text": "This fictional party's documented position partly overlaps with the option you chose: \"Stop attacking now and reach ceasefires on all fronts, using force only to respond if Israel is attacked. Ending the long war comes first, even before the threats are fully removed, because its human and economic cost is too heavy.\" Placeholder text."
+        },
+        "prioritize-ending-multifront-war": {
+          "agreement": "agrees",
+          "text": "This fictional party's documented position is the option you chose. Placeholder text."
+        },
+        "end-military-operations-regional-peace": {
+          "agreement": "partially",
+          "text": "This fictional party's documented position partly overlaps with the option you chose: \"Stop attacking now and reach ceasefires on all fronts, using force only to respond if Israel is attacked. Ending the long war comes first, even before the threats are fully removed, because its human and economic cost is too heavy.\" Placeholder text."
+        }
+      }
+    },
+    "judea-samaria": {
+      "anchor": "issue-judea-samaria",
+      "options": {
+        "full-sovereignty": {
+          "agreement": "partially",
+          "text": "This fictional party's documented position partly overlaps with the option you chose: \"Two states through a negotiated agreement, where most settlers stay: the large settlement blocs near the pre-1967 border become part of Israel, Israel gives the Palestinians other land in exchange, and only the smaller, remote settlements are evacuated. This will end the conflict and keep Israel democratic with a Jewish majority.\" Placeholder text."
+        },
+        "partial-sovereignty-area-c": {
+          "agreement": "partially",
+          "text": "This fictional party's documented position partly overlaps with the option you chose: \"Two states through a negotiated agreement, where most settlers stay: the large settlement blocs near the pre-1967 border become part of Israel, Israel gives the Palestinians other land in exchange, and only the smaller, remote settlements are evacuated. This will end the conflict and keep Israel democratic with a Jewish majority.\" Placeholder text."
+        },
+        "maintain-current-situation": {
+          "agreement": "agrees",
+          "text": "This fictional party's documented position is close to the option you chose: \"Two states through a negotiated agreement, where most settlers stay: the large settlement blocs near the pre-1967 border become part of Israel, Israel gives the Palestinians other land in exchange, and only the smaller, remote settlements are evacuated. This will end the conflict and keep Israel democratic with a Jewish majority.\" Placeholder text."
+        },
+        "separation-two-states": {
+          "agreement": "agrees",
+          "text": "This fictional party's documented position is the option you chose. Placeholder text."
+        },
+        "two-states-pre-1967-border": {
+          "agreement": "agrees",
+          "text": "This fictional party's documented position is close to the option you chose: \"Two states through a negotiated agreement, where most settlers stay: the large settlement blocs near the pre-1967 border become part of Israel, Israel gives the Palestinians other land in exchange, and only the smaller, remote settlements are evacuated. This will end the conflict and keep Israel democratic with a Jewish majority.\" Placeholder text."
+        },
+        "one-equal-state": {
+          "agreement": "partially",
+          "text": "This fictional party's documented position partly overlaps with the option you chose: \"Two states through a negotiated agreement, where most settlers stay: the large settlement blocs near the pre-1967 border become part of Israel, Israel gives the Palestinians other land in exchange, and only the smaller, remote settlements are evacuated. This will end the conflict and keep Israel democratic with a Jewish majority.\" Placeholder text."
+        }
+      }
+    },
+    "judicial-system": {
+      "anchor": "issue-judicial-system",
+      "options": {
+        "continue-judicial-changes": {
+          "agreement": "disagrees",
+          "text": "This fictional party's documented position is far from the option you chose: \"Reverse the recent changes, including the new law on choosing judges, and protect the independence of the courts and the attorney general in a basic law (a law with constitutional status). Independent courts are a key check on government power and protect citizens' rights.\" Placeholder text."
+        },
+        "broad-agreed-constitutional-framework": {
+          "agreement": "partially",
+          "text": "This fictional party's documented position partly overlaps with the option you chose: \"Reverse the recent changes, including the new law on choosing judges, and protect the independence of the courts and the attorney general in a basic law (a law with constitutional status). Independent courts are a key check on government power and protect citizens' rights.\" Placeholder text."
+        },
+        "repeal-changes-protect-independence": {
+          "agreement": "agrees",
+          "text": "This fictional party's documented position is the option you chose. Placeholder text."
+        },
+        "keep-current-system-stability": {
+          "agreement": "partially",
+          "text": "This fictional party's documented position partly overlaps with the option you chose: \"Reverse the recent changes, including the new law on choosing judges, and protect the independence of the courts and the attorney general in a basic law (a law with constitutional status). Independent courts are a key check on government power and protect citizens' rights.\" Placeholder text."
+        }
+      }
+    },
+    "october-7-inquiry": {
+      "anchor": "issue-october-7-inquiry",
+      "options": {
+        "state-commission-under-existing-law": {
+          "agreement": "partially",
+          "text": "This fictional party's documented position partly overlaps with the option you chose: \"The Knesset picks the members, either by broad agreement or split equally between the government's supporters and the opposition, with bereaved families involved. A commission picked by the Supreme Court president wouldn't be seen as fair by much of the public.\" Placeholder text."
+        },
+        "commission-appointed-by-knesset-balance": {
+          "agreement": "agrees",
+          "text": "This fictional party's documented position is the option you chose. Placeholder text."
+        },
+        "commission-chosen-by-neutral-mechanism": {
+          "agreement": "partially",
+          "text": "This fictional party's documented position partly overlaps with the option you chose: \"The Knesset picks the members, either by broad agreement or split equally between the government's supporters and the opposition, with bereaved families involved. A commission picked by the Supreme Court president wouldn't be seen as fair by much of the public.\" Placeholder text."
+        }
+      }
+    },
+    "religion-and-state": {
+      "anchor": "issue-religion-and-state",
+      "options": {
+        "strengthen-jewish-character": {
+          "agreement": "disagrees",
+          "text": "This fictional party's documented position is far from the option you chose: \"Keep the Rabbinate, but let people choose alternatives: civil unions for couples who don't want a religious wedding, each city decides on Shabbat public transport, and non-Orthodox or private bodies can also give kosher certificates and perform conversions. Religious services should be available, but no one should be forced to use them.\" Placeholder text."
+        },
+        "keep-status-quo": {
+          "agreement": "partially",
+          "text": "This fictional party's documented position partly overlaps with the option you chose: \"Keep the Rabbinate, but let people choose alternatives: civil unions for couples who don't want a religious wedding, each city decides on Shabbat public transport, and non-Orthodox or private bodies can also give kosher certificates and perform conversions. Religious services should be available, but no one should be forced to use them.\" Placeholder text."
+        },
+        "more-choice-local-decisions": {
+          "agreement": "agrees",
+          "text": "This fictional party's documented position is the option you chose. Placeholder text."
+        },
+        "separate-religion-and-state": {
+          "agreement": "partially",
+          "text": "This fictional party's documented position partly overlaps with the option you chose: \"Keep the Rabbinate, but let people choose alternatives: civil unions for couples who don't want a religious wedding, each city decides on Shabbat public transport, and non-Orthodox or private bodies can also give kosher certificates and perform conversions. Religious services should be available, but no one should be forced to use them.\" Placeholder text."
+        }
+      }
+    }
+  },
+  "points": [
+    {
+      "text": "Supports expanding fictional national parks. Placeholder text.",
+      "anchor": "other-environment"
+    },
+    {
+      "text": "Backs a fictional national network of cycling paths. Placeholder text.",
+      "anchor": "other-transport"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "issueId": "housing",
+  "pairs": [
+    {
+      "a": "speed-up-planning-and-construction",
+      "b": "state-led-affordable-rental",
+      "closeness": 0.67,
+      "reason": "Fictional: 1 of 3 steps apart in the option list."
+    },
+    {
+      "a": "speed-up-planning-and-construction",
+      "b": "direct-help-for-buyers",
+      "closeness": 0.33,
+      "reason": "Fictional: 2 of 3 steps apart in the option list."
+    },
+    {
+      "a": "speed-up-planning-and-construction",
+      "b": "develop-periphery-and-transport",
+      "closeness": 0,
+      "reason": "Fictional: 3 of 3 steps apart in the option list."
+    },
+    {
+      "a": "state-led-affordable-rental",
+      "b": "direct-help-for-buyers",
+      "closeness": 0.67,
+      "reason": "Fictional: 1 of 3 steps apart in the option list."
+    },
+    {
+      "a": "state-led-affordable-rental",
+      "b": "develop-periphery-and-transport",
+      "closeness": 0.33,
+      "reason": "Fictional: 2 of 3 steps apart in the option list."
+    },
+    {
+      "a": "direct-help-for-buyers",
+      "b": "develop-periphery-and-transport",
+      "closeness": 0.67,
+      "reason": "Fictional: 1 of 3 steps apart in the option list."
+    }
+  ]
+}

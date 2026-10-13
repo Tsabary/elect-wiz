@@ -1,0 +1,77 @@
+{
+  "issueId": "crime-in-arab-society",
+  "rows": [
+    {
+      "partyId": "blue-horizon",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "emergency-powers-shin-bet",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-crime-in-arab-society",
+      "basis": "Fictional: taken from the placeholder research's closest-option line."
+    },
+    {
+      "partyId": "olive-branch",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "more-police-resources-normal-law",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-crime-in-arab-society",
+      "basis": "Fictional: taken from the placeholder research's closest-option line."
+    },
+    {
+      "partyId": "green-valley",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "more-police-resources-normal-law",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-crime-in-arab-society",
+      "basis": "Fictional: taken from the placeholder research's closest-option line."
+    },
+    {
+      "partyId": "cedar-tradition",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "invest-in-arab-communities-first",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-crime-in-arab-society",
+      "basis": "Fictional: taken from the placeholder research's closest-option line."
+    },
+    {
+      "partyId": "lighthouse",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "invest-in-arab-communities-first",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-crime-in-arab-society",
+      "basis": "Fictional: taken from the placeholder research's closest-option line."
+    },
+    {
+      "partyId": "pebble-citizens",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "emergency-powers-shin-bet",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-crime-in-arab-society",
+      "basis": "Fictional: taken from the placeholder research's closest-option line."
+    }
+  ]
+}

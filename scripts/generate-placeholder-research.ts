@@ -2,15 +2,16 @@
  * Generates the FICTIONAL placeholder research documents
  * (`content/placeholder/research/{en,he}/<party-id>.md`) from the current issues
  * and the placeholder registry, so the placeholder corpus always has one
- * sub-section per issue. Re-run after the issues change:
+ * sub-section per issue. Each party's stand comes from `placeholder-positions.ts`,
+ * which the matching generator reads too. Re-run both after the issues change:
  *
  *   pnpm exec tsx scripts/generate-placeholder-research.ts
- *
- * Deleted together with the placeholder corpus in Task 4.1.
+ *   pnpm exec tsx scripts/generate-placeholder-matching.ts
  */
 import fs from "node:fs";
 import path from "node:path";
 import { issueSchema, partiesFileSchema, type Issue, type Party } from "../lib/content/schemas";
+import { standOn } from "./placeholder-positions";
 
 const root = path.join(process.cwd(), "content");
 const outDir = path.join(root, "placeholder", "research");
@@ -29,16 +30,6 @@ const lists = JSON.parse(
   fs.readFileSync(path.join(root, "placeholder", "registry", "lists.json"), "utf8"),
 ).lists as { id: string; memberPartyIds: string[]; name: { he: string; en: string } }[];
 
-/** Which option each fictional party leans to, as an index offset. */
-const PROFILE: Record<string, number> = {
-  "blue-horizon": 0,
-  "olive-branch": 1,
-  "green-valley": 2,
-  "cedar-tradition": 3,
-  lighthouse: 1,
-  "pebble-citizens": -1, // limited information
-};
-
 const TIERS = {
   en: ["Action", "Formal commitment", "Statement"],
   he: ["מעשה", "התחייבות רשמית", "הצהרה"],
@@ -50,28 +41,52 @@ function doc(p: Party, lang: "en" | "he"): string {
   const partners = list.memberPartyIds
     .filter((id) => id !== p.id)
     .map((id) => parties.find((x) => x.id === id)!);
-  const offset = PROFILE[p.id] ?? 0;
+  const offset = parties.indexOf(p);
   const he = lang === "he";
   const L = (en: string, heText: string) => (he ? heText : en);
 
   const issueSubs = issues
     .map((issue, i) => {
       const t = issue[lang];
-      if (offset < 0) {
-        return `### ${t.title} {#issue-${issue.id}}\n\n${L(
-          "No published position, voting record or platform statement on this issue was found for this fictional party [1].",
-          "לא נמצאו עמדה מפורסמת, רקורד הצבעות או מצע בנושא זה עבור המפלגה הבדיונית הזו [1].",
-        )}\n`;
-      }
-      const opt = issue.options[(offset + i) % issue.options.length];
-      const tier = TIERS[lang][(offset + i) % 3];
-      return `### ${t.title} {#issue-${issue.id}}\n\n**${L("Evidence", "ראיה")}: ${tier}.** ${L(
-        `This fictional party's position is closest to: "${opt.en}"`,
-        `עמדת המפלגה הבדיונית הזו הכי קרובה ל: "${opt.he}"`,
-      )} [${(i % 3) + 1}].\n\n${L(
+      const heading = `### ${t.title} {#issue-${issue.id}}`;
+      const note = L(
         "Placeholder text for UI development only. It describes no real party.",
         "טקסט ממלא מקום לפיתוח הממשק בלבד. אינו מתאר מפלגה אמיתית.",
-      )}\n`;
+      );
+      const stand = standOn(p.id, issue);
+      // The wording the validation looks for: a documented position has a
+      // "Closest option(s)" line, an undocumented one says so.
+      if (!stand) {
+        return `${heading}\n\n${L(
+          "**No documented position found.** No published position, voting record or platform statement on this issue was found for this fictional party [1].",
+          "**לא נמצאה עמדה מתועדת.** לא נמצאו עמדה מפורסמת, רקורד הצבעות או מצע בנושא זה עבור המפלגה הבדיונית הזו [1].",
+        )}\n`;
+      }
+      const tier = TIERS[lang][(offset + i) % 3];
+      const named = (level: string) =>
+        stand.filter((h) => h.level === level).map((h) => `${h.option[lang]} (\`${h.option.id}\`)`);
+      const [first] = [...named("main"), ...named("secondary")];
+      const closest =
+        named("either").length > 0
+          ? L(
+              `${named("either").join(" or ")}; the fictional evidence can't tell them apart.`,
+              `${named("either").join(" או ")}; הראיות הבדיוניות אינן מאפשרות להכריע ביניהן.`,
+            )
+          : named("main").length === 0
+            ? L(
+                `Tentative. ${first} The fictional evidence is indirect.`,
+                `באופן זהיר. ${first} הראיות הבדיוניות עקיפות.`,
+              )
+            : named("secondary").length > 0
+              ? L(
+                  `${first} With elements of: ${named("secondary").join(" ")}`,
+                  `${first} עם מרכיבים של: ${named("secondary").join(" ")}`,
+                )
+              : first;
+      return `${heading}\n\n**${L("Evidence", "ראיה")}: ${tier}.** ${L(
+        "This fictional party has acted or spoken on this issue",
+        "המפלגה הבדיונית הזו פעלה או התבטאה בנושא זה",
+      )} [${(i % 3) + 1}].\n\n**${L("Closest option(s)", "האפשרות הקרובה ביותר")}:** ${closest}\n\n${note}\n`;
     })
     .join("\n");
 
@@ -110,6 +125,10 @@ ${issueSubs}
 
 ${L("Supports expanding fictional national parks [3].", "תומכת בהרחבת גנים לאומיים בדיוניים [3].")}
 
+### ${L("Transport", "תחבורה")} {#other-transport}
+
+${L("Backs a fictional national network of cycling paths [3].", "תומכת ברשת ארצית בדיונית של שבילי אופניים [3].")}
+
 ## ${L("Coalition stance", "עמדה לגבי קואליציה")} {#coalition}
 
 ${L("Has said it would join any coalition that adopts its fictional platform [2].", "הצהירה שתצטרף לכל קואליציה שתאמץ את המצע הבדיוני שלה [2].")}
@@ -144,12 +163,15 @@ ${
 `;
 }
 
+// Listed parties have no research documents.
+const researched = parties.filter((p) => p.tier === "researched");
+
 for (const lang of ["en", "he"] as const) {
   const dir = path.join(outDir, lang);
   fs.rmSync(dir, { recursive: true, force: true });
   fs.mkdirSync(dir, { recursive: true });
-  for (const p of parties) fs.writeFileSync(path.join(dir, `${p.id}.md`), doc(p, lang));
+  for (const p of researched) fs.writeFileSync(path.join(dir, `${p.id}.md`), doc(p, lang));
 }
 console.log(
-  `Wrote ${parties.length * 2} placeholder research documents for ${issues.length} issues.`,
+  `Wrote ${researched.length * 2} placeholder research documents for ${issues.length} issues.`,
 );

@@ -172,3 +172,12 @@ export function researchProse(doc: ParsedResearchDoc): { anchor: string; text: s
   }
   return out;
 }
+
+/**
+ * True when an issue sub-section names the option(s) the party is closest to.
+ * Every sub-section with a documented position has a "Closest option(s)" line
+ * (Stage 4); one that says "No documented position found" has none.
+ */
+export function hasClosestOptionsLine(body: string): boolean {
+  return /Closest option\(s\)/i.test(body);
+}

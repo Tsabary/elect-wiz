@@ -1,0 +1,81 @@
+{
+  "issueId": "cost-of-living",
+  "rows": [
+    {
+      "partyId": "blue-horizon",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "open-market-competition-imports",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-cost-of-living",
+      "basis": "Fictional: taken from the placeholder research's closest-option line."
+    },
+    {
+      "partyId": "olive-branch",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "cut-taxes-and-government-spending",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-cost-of-living",
+      "basis": "Fictional: taken from the placeholder research's closest-option line."
+    },
+    {
+      "partyId": "green-valley",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "active-state-regulation",
+          "level": "main"
+        },
+        {
+          "optionId": "cut-taxes-and-government-spending",
+          "level": "secondary"
+        }
+      ],
+      "anchor": "issue-cost-of-living",
+      "basis": "Fictional: taken from the placeholder research's closest-option line."
+    },
+    {
+      "partyId": "cedar-tradition",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "direct-support-for-households",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-cost-of-living",
+      "basis": "Fictional: taken from the placeholder research's closest-option line."
+    },
+    {
+      "partyId": "lighthouse",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "open-market-competition-imports",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-cost-of-living",
+      "basis": "Fictional: taken from the placeholder research's closest-option line."
+    },
+    {
+      "partyId": "pebble-citizens",
+      "unclear": false,
+      "held": [
+        {
+          "optionId": "cut-taxes-and-government-spending",
+          "level": "main"
+        }
+      ],
+      "anchor": "issue-cost-of-living",
+      "basis": "Fictional: taken from the placeholder research's closest-option line."
+    }
+  ]
+}

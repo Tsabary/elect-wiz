@@ -30,6 +30,18 @@ export function readCorpusSet(root: string, name: CorpusName, active: boolean): 
     research: Object.fromEntries(
       RESEARCH_LANGS.map((lang) => [lang, readDir(root, `${dirs.research}/${lang}`, ".md")]),
     ) as RawCorpusSet["research"],
+    matching: {
+      positions: readDir(root, `${dirs.matching}/positions`, ".json"),
+      distances: readDir(root, `${dirs.matching}/distances`, ".json"),
+      texts: Object.fromEntries(
+        RESEARCH_LANGS.map((lang) => [
+          lang,
+          readDir(root, `${dirs.matching}/texts/${lang}`, ".json"),
+        ]),
+      ) as RawCorpusSet["matching"]["texts"],
+      config: readIfExists(root, `${dirs.matching}/config.json`),
+      profiles: readIfExists(root, `${dirs.matching}/profiles.json`),
+    },
   };
 }
 
