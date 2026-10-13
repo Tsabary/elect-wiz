@@ -197,3 +197,35 @@ Author's flags, verified with no change needed:
 | other-agriculture | Naturalness: the heading "יבוא בעלי חיים חיים" | Changed to "חקלאות ויבוא חי של בעלי חיים" |
 | track-record | Naturalness: "לא הוצג במחקר זה ש..." | Changed to "המחקר לא הראה ש..." |
 - Validation: no error names the file ✔ (the only errors are about research/he/blue-and-white.md, another agent's unfinished file)
+
+## raam (checked 2026-10-13; EN researchedAsOf 2026-10-07)
+- Hebrew edition by: Stage 5a agent (Sonnet) · Parity check by: Stage 5b agent (Opus, different)
+- Sections/anchors: identical ✔ (29 headings, same order; frontmatter identical except `lang: he`)
+- Claims compared: ~310 sentences across all sections, plus 91 Sources entries · Differences found: 17 · Fixed: 17 · Unresolved: 0
+- Checked and identical, no change needed: every `[n]` on every line; all 91 Sources entries (numbers, order, titles, URLs); every option ID on the "closest option(s)" lines; evidence-tier tags on every bullet; issue headings match `he.title`; all numbers, vote tallies and dates (day first). "Secured" is rendered "השיגה". "Tentative" is rendered "בהסתייגות" / "לא ודאית", never "זמני/ת". No "נחקרה/שנחקרו". No `avoid.he` glossary terms.
+- Labels the author flagged: "**הקשר:**" (Context) and "**שינוי לאורך זמן:**" (Change over time) match the forms used in the other Hebrew files ✔. "The rest of the top of the list includes …" → "במקומות הבאים ברשימה נמצאים …" (positions 6–9) says the same thing ✔ (not counted as a difference).
+- Names not in the registry: יאסר חוג'יראת, איברהים א-טורי, עבד אל-כרים מסרי and עבד אל-כרים עזאם are standard Hebrew spellings, and no other Hebrew file uses a different form ✔. Dahamsha and Ghanaim were changed (see table).
+
+| Anchor | Difference | Resolution |
+|---|---|---|
+| overview, leadership, issues, other-positions, coalition, legal, information-availability | glossary/names: "יואב סגלוביץ'" (12×) differed from the registry form "יואב סגלוביץ" | Changed to the registry form everywhere |
+| overview, religion-and-state | names: "יחיא דהמשה" (2×) is not the usual Hebrew spelling of this family name | Changed to "דהאמשה", the standard Hebrew spelling (as for former Ra'am MK עבד אל-מאלכ דהאמשה) |
+| track-record | names: "מאזן ג'נאים" (3×) differs from the Knesset's Hebrew spelling | Changed to "מאזן גנאים" |
+| overview | naturalness / slight meaning drift: "religious council" was rendered "מועצת הדת" (2×), which in Israel means a municipal religious council; "general conference" was rendered "ועידת המפלגה" | Changed to "המועצה הדתית של התנועה" and "הוועידה הכללית של המפלגה" |
+| overview | naturalness: "governing coalition" was rendered "קואליציה שולטת" | Changed to "קואליציה ממשלתית" |
+| leadership | meaning drift: "its first-ever primary" was rendered "פריימריז ראשונים מסוגם" ("first of their kind") | Changed to "הפריימריז הראשונים בתולדותיה" |
+| leadership | naturalness: typo "בוהוועדה" | Changed to "בוועדה" |
+| issue-cost-of-living | meaning drift: "opposition motions" was narrowed to "הצעות אי-אמון של האופוזיציה" | Changed to "הצעות של האופוזיציה" |
+| issue-crime-in-arab-society | naturalness: "תוכנית הפשיעה" ("the crime plan", taken literally) | Changed to "התוכנית למאבק בפשיעה" |
+| issue-iran-and-regional-security | meaning drift: "Knesset motions and votes" was narrowed to "הצעות האי-אמון וההצבעות" | Changed to "ההצעות וההצבעות של רע"ם בכנסת" |
+| issue-judicial-system | meaning drift: "linking any support to action against crime" was rendered ambiguously ("קשר כל תמיכה בפעולה …", which can read as "linked any support in action") | Changed to "קשר כל תמיכה לפעולה נגד הפשיעה" |
+| issue-judicial-system | naturalness: the redundant "הסכמה על כללים מוסכמים" ("agreement on agreed rules") | Changed to "הגעה לכללים מוסכמים" |
+| other-equality, track-record | naturalness/terminology: "temporary provision" was rendered "ההוראה הזמנית" (2×), not the legal term | Changed to "הוראת השעה" |
+| other-arab-local-budgets (heading text) | naturalness: ungrammatical "והתוכנית החומש" | Changed to "ותוכנית החומש" (anchor unchanged) |
+| other-lgbt | meaning drift: Segalovitz's first-person quote "go my own way" was put in quotation marks as a third-person paraphrase ("ילך בדרכו שלו") and was inconsistent with the leadership section | Changed to: ילך "בדרך שלי" |
+| coalition | meaning drift: "while leaving the door open" was rendered as a future act ("ויותירו") | Changed to "אך השאירו את הדלת פתוחה" |
+| track-record | naturalness: "בקואליציה השלטת"; "יושבי ראש לוועדת הפנים ולוועדה …" (2 fixes, same kind) | Changed to "בקואליציה" and "ראשות ועדת הפנים והוועדה …" |
+| information-availability | naturalness: the English gloss "(מצע)" was carried into the Hebrew after the word "מצע" itself | Removed the duplicate gloss |
+
+- English questioned: none
+- Validation: `pnpm validate:content` passed; no error names the file ✔
