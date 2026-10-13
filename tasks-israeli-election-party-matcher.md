@@ -1,5 +1,7 @@
 # Tasks: Israeli Election Party Matcher
 
+> **Active task list from 2026-10-13: `tasks-deterministic-matching.md`.** The direction changed to deterministic matching (plan: `plan-deterministic-matching.md`). Phases 1 and 2 here are done. Phase 3 is done for the 28 researched parties only. The owner review in Task 4.1 and all of Phase 5 are dropped. Use the notes under the tasks below; do not start cancelled work from this list.
+
 > **Source plan:** `plan-israeli-election-party-matcher.md`
 > **Source PRD:** `prd-israeli-election-party-matcher.md`
 
@@ -386,6 +388,8 @@ Each task is self-contained. From the task alone you should know what to do, how
 - The research version is set.
 
 ### Task 3.1: Run Stage 2 party research for every party
+
+> **Update 2026-10-13:** complete for the 28 researched parties; cancelled for the other 24, which are listed with official details and a link to their own platform instead. See `tasks-deterministic-matching.md`.
 - [ ]
 - **What:** Following `research/pipeline/` Stage 2 instructions, run one independent research agent per registry party (joint-list members separately), with web search and fetch. Each writes `content/research/en/<party-id>.md` in the fixed skeleton with all approved issue sub-sections.
 - **Acceptance criteria:**
@@ -399,6 +403,8 @@ Each task is self-contained. From the task alone you should know what to do, how
 - **Notes:** Prioritize lists likely to pass the threshold first, so owner review can start early (Risks §3). Documents must be thorough; don't shorten them for efficiency (PRD).
 
 ### Task 3.2: Run the Stage 3 fact-check for every party
+
+> **Update 2026-10-13:** complete for the 28 researched parties; cancelled for the other 24. See `tasks-deterministic-matching.md`.
 - [ ]
 - **What:** Following Stage 3 instructions, run a **different** agent per party than its Stage 2 author. It verifies every substantive claim against its cited source and removes or corrects anything unsupported. Legal and ethical claims are checked against court or official sources only. It checks for poll figures, verifies joint-list claims, and sets the limited-information flag in the registry where warranted. It writes a per-party fact-check log to `research/fact-check/<party-id>.md`.
 - **Acceptance criteria:**
@@ -455,6 +461,8 @@ Each task is self-contained. From the task alone you should know what to do, how
 - The registry has been re-checked against CEC.
 
 ### Task 4.1: Integrate the real corpus, deploy the preview, and run the owner review and correction loop
+
+> **Update 2026-10-13:** the owner review and correction loop is dropped; separate checking agents do the checking instead. The registry recheck and the switch to the real corpus remain, now tracked in `tasks-deterministic-matching.md` Tasks 4.3 and 5.1.
 - [ ]
 - **What:**
   - Remove all placeholder content and confirm that the site renders the real issues, registry, polls and research in both languages.
@@ -482,6 +490,8 @@ Each task is self-contained. From the task alone you should know what to do, how
 - The owner has recorded the D1 decision.
 
 ### Task 5.1: Measure the corpus and build the matching evaluation set
+
+> **CANCELLED 2026-10-13.** Matching is now deterministic, so there is no model to measure. See `tasks-deterministic-matching.md`.
 - [ ]
 - **What:**
   - Measure the corpus size: full research and a condensed per-issue view, in tokens, for the candidate models.
@@ -498,6 +508,8 @@ Each task is self-contained. From the task alone you should know what to do, how
 - **Plan reference:** Testing strategy §5; Risks & technical decisions, Decisions §1 ("Inputs").
 
 ### Task 5.2: Prototype the candidates and produce the D1 decision memo
+
+> **CANCELLED 2026-10-13.** Decision gate D1 is dropped; matching is deterministic. See `tasks-deterministic-matching.md` and `plan-deterministic-matching.md`.
 - [ ]
 - **What:**
   - Build throwaway prototypes of the matching candidates outside the production code path: architecture A (single holistic call) and architecture B (precomputed party × option alignment, per-request mapping, deterministic aggregation, explanation for the top 3–4). Run them on at least the candidate models the plan lists (Claude Opus 5.5 and Sonnet 5.5), plus any other provider the owner asks to include. Every candidate must include the owner-required answer-normalization step (plan, Decisions §1): an earlier AI step that turns each raw answer (e.g., "all of the above", "mix of 1 and 3") into explicit positions before the matching step sees anything.

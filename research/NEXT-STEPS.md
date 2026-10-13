@@ -1,19 +1,27 @@
 # Handoff: where the project stands and how to continue
 
-Last updated 2026-10-12. Nothing is running. The 28 larger parties are researched, fact-checked and consistency-reviewed; the 24 small parties and the Hebrew editions are still to do (see Phase 3 progress). Everything is committed on `main` and pushed to the private GitHub repo `origin`; there are no other branches.
+Last updated 2026-10-13. Nothing is running. The 28 larger parties are researched, fact-checked and consistency-reviewed; the 24 small parties will not be researched (cancelled); the Hebrew content is for the owner's cloud session (see section 0). `main` is pushed to the private GitHub repo `origin`; the current work is on the branch `deterministic-matching` (see section 0).
 
 This note is for the next orchestrating agent, which may be a Claude Code cloud session. Read it fully before starting. It records what earlier sessions decided that isn't obvious from the repository.
 
 ## 0. Change of direction (2026-10-13): deterministic matching
 
-Read this first; it overrides what the sections below say about the matching backend, the 24 small parties and the owner's review.
+Read this first. The sections below were written for the old direction and have been trimmed to match; where they still say anything different, this section wins.
 
-- **The plan in force** is `plan-deterministic-matching.md` (PRD: `prd-deterministic-matching.md`), and the active task list is `tasks-deterministic-matching.md`. Work is on the branch `deterministic-matching`, uncommitted as of this note.
-- **Decided by the owner:** matching uses fixed rules with no AI at run time; users pick one preset option per issue (no free text, no "anything else"); only the 28 researched parties are matched, and the other 24 are listed with official details and a link to their own platform, not researched; the owner reviews no content (separate checking agents do); the result shows the top five with the rest behind "show all"; anonymous daily counts of surveys started and results are kept.
+- **The plan in force** is `plan-deterministic-matching.md` (PRD: `prd-deterministic-matching.md`), and the active task list is `tasks-deterministic-matching.md`. Work is on the branch `deterministic-matching`.
+- **Decided by the owner:** matching uses fixed rules with no AI at run time; users pick one preset option per issue (no free text, no "anything else"); only the 28 researched parties are matched, and the other 24 are listed with official details and a link to their own platform, not researched; the owner reviews no content (separate checking agents do), so the old decision gate D1 (which AI design to use) and Phase 5 are dropped; the result shows the top five with the rest behind "show all"; anonymous daily counts of surveys started and results are kept.
 - **Done (tasks 1.1–1.4, 2.1, 3.1–3.5):** registry tiers; matching content formats and validation; the scoring function; stage 7 pipeline instructions (`research/pipeline/stage-7-matching-content.md`); placeholder matching content, self-match test and profile test; party positions and option-distance grids for all 10 issues; 16 voter profiles (all pass); **English result texts and "also worth knowing" points for all 28 parties**, each checked by a separate agent, corrected and confirmed. Logs are in `research/review/matching/`.
-- **Ready for the owner's Hebrew cloud session:** (1) Hebrew research editions for the 28 parties, per `research/pipeline/stage-5-hebrew-edition.md`; (2) Hebrew result texts, per stage 7d and the briefs `stage-7d-hebrew-texts-brief.md` and `stage-7d-hebrew-parity-brief.md`, from `content/matching/texts/en/`. Hebrew is not done by the orchestrator of the other tasks.
-- **Still to do here:** task 1.5 (the notes below and the old plan and task list still describe the old direction), the website tasks 2.2–2.8, and tasks 4.1–4.3 and 5.1–5.2.
+- **Ready for the owner's Hebrew cloud session:** (1) Hebrew research editions for the 28 parties, per `research/pipeline/stage-5-hebrew-edition.md`; (2) Hebrew result texts, per stage 7d and the briefs `stage-7d-hebrew-texts-brief.md` and `stage-7d-hebrew-parity-brief.md`, from `content/matching/texts/en/`. All Hebrew content is done by the owner in a cloud session, not by the orchestrator of the other tasks.
+- **Still to do here:** the website tasks 2.2–2.8 and the tasks in phases 4 and 5 of `tasks-deterministic-matching.md` (listed-party links, registry recheck of 18 October, switch to the real corpus).
 - **Rules settled while writing the texts** (all in code, config or the logs): the "partly agrees" cut-off is 0.45; an option a party isn't linked to reads "position unclear" when the party's own position is only tentative; an option the research says a party rejected is recorded as `ruledOut` on its positions row, always reads "disagrees" and scores at most 0.4 (see `research/review/matching/ruled-out-options.md`); result texts write dates day first and give each person's name and role at first mention.
+
+### Counter store (for the anonymous counts)
+
+The site counts, per day, surveys started and results shown, and per party how often it was the top match and a runner-up (task 2.6; `lib/tally/`, `POST /api/tally`). Until a store is connected the route accepts the calls and counts nothing, so this is needed only before launch (task 5.2).
+
+- **What to create:** one Upstash Redis database (the free tier is enough), for example through the Vercel Marketplace.
+- **The two settings the site reads** (server side only; set them as deployment secrets): `UPSTASH_REDIS_REST_URL` and `UPSTASH_REDIS_REST_TOKEN`, with the REST URL and the standard (read-write) REST token from the database's page. Connecting the database through Vercel may add them under these same names.
+- **Reading the counts:** in the Upstash console's data browser. Each day is one hash named `tally:<YYYY-MM-DD>` (the date in Israel), with the fields `started`, `results`, `top:<partyId>` and `runner-up:<partyId>`. The counts are approximate: the endpoint is public and each count is of calls, not of people.
 
 ## 1. Where things stand
 
@@ -22,42 +30,40 @@ Read this first; it overrides what the sections below say about the matching bac
 | Phase 1: foundations and ground truth (1.1–1.7) | Done, audited, committed. The Vercel preview deploy is deliberately set aside by the owner. |
 | Phase 2: website pages and flows (2.1–2.10) | Done, audited, committed. Site copy (2.9) approved by the owner. |
 | Task 1.5: the 10 survey issues | Approved by the owner, locked (`824284b`). `surveyContentVersion` = `2026-10-06.1`. |
-| **Phase 3: party research (3.1–3.5)** | **In progress.** See below. |
-| Phase 4: load the real corpus and run the owner review (4.1) | Waits on Phase 3. Owner-gated. |
-| Phase 5: D1 decision gate (5.1–5.2) | Waits on Phase 4. Owner-gated, and it spends API money, so agree a budget first. |
+| Phase 3: party research (3.1–3.5) | Done for the 28 researched parties (3.4, the Hebrew editions, is for the owner's cloud session). Cancelled for the other 24. |
+| Phase 4: real corpus and owner review (4.1) | Owner review dropped. Registry recheck and corpus switch continue as Tasks 4.3 and 5.1 of `tasks-deterministic-matching.md`. |
+| Phase 5: D1 decision gate (5.1–5.2) | Cancelled. Matching is deterministic; there is no D1. |
 
-### Phase 3 progress
+The active task list is `tasks-deterministic-matching.md`. The old list and plan carry notes pointing to it.
+
+### Phase 3 progress (28 parties)
 
 - **3.5 poll snapshot:** done, audited, committed (`4da942a`). All 38 lists recorded from CEC-filed polls. Log: `research/poll-snapshot.md`.
 - **3.1 research and 3.2 fact-check:** done for **28 of 52 parties**, committed as WIP snapshots (`decb3f2` for the first 22; `3fd584d` for the next 6, done in a cloud session), **not yet audited**. Each document was fact-checked by a different agent from its author. `limitedInfo` and `researchedAsOf` are set in the registry for these 28 (only `haredi-public` is `limitedInfo: true`).
   - Done: likud-party, new-hope, byachad-bennett, yesh-atid, yashar-leyisrael, yesodot-yisrael, yisrael-beytenu, shas, degel-hatorah, agudat-yisrael, the-democrats-party, raam, hadash, taal, balad, blue-and-white, jewish-national-front, national-union-tkuma, the-reservists, amcha-yisrael, haredi-public, israel-first.
   - Done 2026-10-07 (cloud session, Opus authors and Opus fact-checkers): meretz, eretz-yisrael-shelanu, zehut, atid-echad, chomat-torat-yisrael, new-economic-party. About 8,200–10,200 words and 53–81 sources each; all `limitedInfo: false`. **knesset.gov.il was geo-blocked from the cloud container**, so their 25th-Knesset votes rest on press reports; see §2a for the re-check list.
-  - **Next: 24 small parties** (lists polled under 1%), researched with **Sonnet** by owner decision, fact-checked with **Opus**: lazuz, national-responsibility, ahi-movement, color-black, beit-yemini, tzomet, hakahal, together-we-will-succeed, tekuma, sharshar, ihud-bnei-habrit, pirates, gan-eden, womens-voice, just-law, shema, new-order, you-and-me, brit-olam, hatikun, bible-bloc, betach, orot-hashachar, demokratura.
-- **3.3 consistency review (Stage 4), for the 28 done parties: done and audited** (2026-10-12). Four group reviewers and a lead reviewer, none an author or fact-checker; three fix rounds; the final audit passed with one note. Log and rules: `research/review/consistency-review.md` (see "Rules decided"). Rulebook for reviewers: `research/pipeline/agent-briefs/stage-4-brief.md`. Group logs, metrics and digest: `research/review/consistency/`. Task 3.3 stays unticked until the 24 small parties have had the scoped Stage 4 against these 28, applying the same rules.
+  - **Cancelled (2026-10-13): the other 24 parties are not researched.** They are listed with official details and a link to their own platform (`tasks-deterministic-matching.md` Task 4.2). They are: lazuz, national-responsibility, ahi-movement, color-black, beit-yemini, tzomet, hakahal, together-we-will-succeed, tekuma, sharshar, ihud-bnei-habrit, pirates, gan-eden, womens-voice, just-law, shema, new-order, you-and-me, brit-olam, hatikun, bible-bloc, betach, orot-hashachar, demokratura. Do not start Stage 2 or Stage 3 for them.
+- **3.3 consistency review (Stage 4), for the 28 done parties: done and audited** (2026-10-12). Four group reviewers and a lead reviewer, none an author or fact-checker; three fix rounds; the final audit passed with one note. Log and rules: `research/review/consistency-review.md` (see "Rules decided"). Rulebook for reviewers: `research/pipeline/agent-briefs/stage-4-brief.md`. Group logs, metrics and digest: `research/review/consistency/`. With the 24 small parties cancelled, the review of the 28 is the whole of 3.3.
   - **Follow-ups done on 2026-10-12** (see "Follow-ups (2026-10-12)" in `research/review/consistency-review.md`): new-hope's targeted re-run for its 2021–22 term in government, fact-checked by a different agent; the signed December 2022 Likud–Religious Zionist Party agreement (clause 118) now cited directly; the signed Likud–Otzma Yehudit agreement read in full (no sovereignty clause, so the March 2023 vote stays Change over time for jewish-national-front and eretz-yisrael-shelanu); the Knesset Ethics Committee decisions of 12 May 2026 applied from the official texts to every sanctioned leader or named candidate; one-time status recheck of pending legal items, each dated "as of 12 October 2026". By owner decision the pages are then frozen: no further rechecks unless the owner asks.
   - **Still open:** (1) raam's 2021 platform was not found online, so its five 2021–22 coalition-line votes stay unlabelled; the remaining routes are the party itself or a library copy. (2) Pending in real life as of 12 October 2026: the Kariv file (the-democrats-party), Haddad's case (amcha-yisrael), Cassif's sentencing set for January 2027 (hadash). (3) Ethics Committee decisions published on dates other than 12 May 2026 were not searched. (4) new-hope is now the longest document (about 15,000 words) because its government record was researched more deeply than its peers'; deepening blue-and-white and yisrael-beytenu to match is the owner's call. (5) Owner to confirm: the new-hope Contradiction resting on Sa'ar's December 2020 statement that he would not sit under Lapid as prime minister.
-- **3.4 Hebrew editions and parity check, and the Phase 3 audits:** not started.
+- **3.4 Hebrew editions and parity check:** not started here; the owner does it in a cloud session (section 0). The owner does not review content, so separate checking agents do.
 
 Key files:
 - **Agent briefs:** `research/pipeline/agent-briefs/stage-2-brief.md` (research) and `stage-3-brief.md` (fact-check). These hold the owner's quality bar and everything learned so far. Give each agent the brief plus its party ID.
 - **Pipeline instructions:** `research/pipeline/README.md` plus one file per stage (Stages 2–6).
 - **Issues (locked):** `content/issues/*.json`, `content/glossary.json`.
-- **Registry:** `content/registry/lists.json` (38 lists) and `content/registry/parties.json` (52 parties). Recheck against the CEC's final publication of 18 Oct (Task 4.1). Sources in `research/ground-truth.md`.
+- **Registry:** `content/registry/lists.json` (38 lists) and `content/registry/parties.json` (52 parties). Recheck against the CEC's final publication of 18 Oct (Task 4.3 of `tasks-deterministic-matching.md`). Sources in `research/ground-truth.md`.
 - **Legal:** `research/legal-findings.md`. Poll blackout from 2026-10-23T12:00+03:00.
-- **Corpora:** the site uses the placeholder corpus by default (`CONTENT_CORPUS`). Real research is in `content/research/{en,he}/`. Validate the real corpus with `CONTENT_CORPUS=real pnpm validate:content`; until Phase 3 is complete, the only expected errors are `research-missing`.
+- **Corpora:** the site uses the placeholder corpus by default (`CONTENT_CORPUS`). Real research is in `content/research/{en,he}/`. Validate the real corpus with `CONTENT_CORPUS=real pnpm validate:content`; the 24 unresearched parties are expected to report `research-missing` until the validation rules for listed-only parties (in `tasks-deterministic-matching.md`) say otherwise.
 
-## 2. How to run the next step (the 24 small parties)
+## 2. The 24 small parties: cancelled
 
-The owner has put these on hold until the week of 2026-10-12. Start only when the owner says so. The same process was used for the 28 parties already done.
+**Cancelled on 2026-10-13. Do not run this step.** The 24 small parties are not researched or fact-checked; they are listed with a link to their own platform. The Stage 2 and Stage 3 process that was used for the 28 parties stays in `research/pipeline/` for the Hebrew editions and any later audit.
 
-1. For each of the 24 parties listed in §1, spawn **one Stage 2 research agent** with **`model: sonnet`** (owner decision for the small parties) and `research/pipeline/agent-briefs/stage-2-brief.md` plus the party ID. Run about 3–6 agents at a time.
-2. When a document lands, read the author's report. Small parties often have little public information; that is fine if the author searched hard and says so. If the author missed available evidence (for example a candidate's Knesset votes), send it back to the **same** author to deepen it.
-3. Then spawn a **different** agent with **`model: opus`** as the Stage 3 fact-checker, with `research/pipeline/agent-briefs/stage-3-brief.md`, the party ID, and the author's open points. Tell it the document was written by a lighter model, so to check with particular care.
-4. When the fact-check is done, set `limitedInfo` (from the log header) and `researchedAsOf` (from the document frontmatter) for that party in `content/registry/parties.json`. Change nothing else in that file.
-5. **Knesset votes:** knesset.gov.il is geo-blocked from cloud containers. If a small party's candidates have 2023–2026 Knesset votes and the run is in the cloud, list those votes for a local re-check (as in §2a).
-6. Run `CONTENT_CORPUS=real pnpm validate:content`. Only `research-missing` errors may remain.
-7. Commit with a message naming the phase (e.g. "WIP Phase 3: research and fact-check for the small parties"), ending with `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`. Never change git config; the repo-local identity is deliberately non-identifying. In a cloud session, work on the session's own branch; the owner merges to `main`.
-8. Stop and report to the owner. After all 52 parties are done, the remaining Phase 3 steps are the consistency review (3.3, Stage 4, covering all 52 documents and the notes in §3), the Hebrew editions and parity check (3.4, Stage 5), setting `researchVersion`, and the Phase 3 audits. Each needs the owner's go-ahead.
+Operational notes from that process that still apply to any research, fact-check or Hebrew work:
+- **Knesset votes:** knesset.gov.il is geo-blocked from cloud containers. If the run is in the cloud, list any 2023–2026 Knesset votes for a local re-check (as in §2a).
+- **Registry:** `limitedInfo` and `researchedAsOf` are set in `content/registry/parties.json` from the fact-check log header and the document frontmatter. Change nothing else in that file.
+- **Commits:** name the phase in the message (e.g. "WIP Phase 3: ..."), ending with the `Co-Authored-By` line the session was given. Never change git config; the repo-local identity is deliberately non-identifying. In a cloud session, work on the session's own branch; the owner merges to `main`.
 
 Rules that always apply:
 - **The agent that wrote a document never checks it.** Fact-check, consistency review and parity check are each done by different agents.
@@ -80,7 +86,7 @@ Lists per party:
 
 ## 3. Notes for the consistency review (Stage 4) and for the owner
 
-Collected from the Stage 2 and 3 reports so far.
+Collected from the Stage 2 and 3 reports. The Stage 4 review of the 28 documents is done (§1); these notes remain as the record, and apply to any later audit or to the Hebrew parity check.
 
 **Stage 4 must:**
 - **Apply the recency rule (owner decision, 2026-10-07)** to all documents: each "Closest option(s)" line rests on evidence from 2021 onwards and the current leadership; older history is dated background only (see `research/pipeline/stage-2-party-research.md`, section 3). The 28 documents written so far predate the rule and must be checked against it.
@@ -108,7 +114,7 @@ Collected from the Stage 2 and 3 reports so far.
 - 15 small lists are recorded as "polled 0.0%" because a single Channel 16 poll named every list individually. The owner may prefer "not polled" for these, which would be a change to the Stage 6 rule.
 - The locked Haredi-enlistment issue text doesn't mention Security Service Law Amendment 28 (14 July 2026), which froze arrests of yeshiva students until 30 November 2026. Changing it would be an issue change, which only the owner can decide.
 
-**For Task 4.1 (registry recheck):**
+**For the registry recheck (Task 4.3 of `tasks-deterministic-matching.md`):**
 - The Shas list name in `lists.json` differs from the CEC PDF ("שומרי תורה … מרן הרב").
 - Recheck the appeal over Dror Amos (Shas).
 - Ta'al's candidates: Ahmad Darawshe, and Samir Bin Said's move to Hadash.
@@ -121,7 +127,7 @@ Collected from the Stage 2 and 3 reports so far.
 - **Keep it short.** Summarise, and point only to the parts that matter.
 - **The operator stays anonymous.** No owner name anywhere: not on the site, in metadata, in commits or in content. There is no contact channel by owner decision.
 - **The working name** "Party Matcher" / "התאמת מפלגות" stays for now.
-- **The matching backend is deliberately undecided until D1** (Phase 5). Don't build it. Recorded owner requirements for any option: an answer-normalization step before matching, and recency (parties are judged on current positions and leadership; evidence from 2021 onwards outweighs older evidence). See the plan, Decisions §1.
+- **The matching backend is decided: fixed rules, no AI at run time** (section 0). The old D1 gate and its answer-normalization requirement are gone, because users pick preset options. Recency still holds: parties are judged on current positions and leadership, and evidence from 2021 onwards outweighs older evidence.
 
 ## 5. Operational quirks
 
