@@ -13,3 +13,9 @@ The Stage 5b check of the-reservists' Hebrew research edition questioned nothing
 
 1. **crime-in-arab-society / `emergency-powers-shin-bet`:** changed. Eight parties (the-reservists among them) are now recorded as holding that option only in part, so its label is `partially`. Their English texts were rewritten and checked. The one existing Hebrew text for it (the-reservists) was rewritten to match and still needs a parity check.
 2. **Names without a role:** the Hebrew session now fixes these as it goes. The Hebrew writer may add a person's full name and role at first mention to the English text as well as the Hebrew, from the registry and the research's "Leadership and key candidates" section only; see `research/HEBREW-SESSION.md`, Job 2. The-reservists' texts that name Hendel should be completed this way in both languages.
+
+## Found while applying the names-and-roles rule (2026-10-13)
+
+| Party | File | Where | What looks wrong | Found by | Status |
+|---|---|---|---|---|---|
+| the-reservists | `content/matching/texts/en/the-reservists.json` | october-7-inquiry / `commission-chosen-by-neutral-mechanism` | The English says "President Herzog" with no first name. The permitted sources (registry, the research's leadership section) cover only party figures, so the Hebrew session can't add "Isaac". The Hebrew was brought to parity ("לנשיא המדינה הרצוג"). If the owner wants the full name, change the English to "President Isaac Herzog" and the Hebrew to "לנשיא המדינה יצחק הרצוג". | 7d follow-up parity check | open, owner to decide (not blocking) |
