@@ -70,3 +70,4 @@ Each was checked against the party's English research document; changes were mad
 | Party | File | Where | What looks wrong | Found by | Status |
 |---|---|---|---|---|---|
 | hadash | `content/research/en/hadash.md` | Leadership, the Faten Ghattas bullet | Says "he holds a doctorate… and directs", then "chose her"; the registry and the rest of the English treat Faten Ghattas as a woman, so "he" looks like a typo for "she". The Hebrew uses the feminine throughout. | 5b parity check (`research/review/parity-check.md`) | open, owner to decide |
+| byachad-bennett | `content/research/en/byachad-bennett.md` | the 18 May 2022 High Court ruling | Names "Justice Alroni"; probably Justice Yosef Elron (to verify against source [72]). The parked Hebrew draft writes "השופט אלרון". | 5a writer | open, owner to decide (low) |
