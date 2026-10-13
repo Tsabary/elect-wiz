@@ -1,0 +1,234 @@
+{
+  "partyId": "national-union-tkuma",
+  "lang": "en",
+  "issues": {
+    "cost-of-living": {
+      "anchor": "issue-cost-of-living",
+      "options": {
+        "open-market-competition-imports": {
+          "agreement": "agrees",
+          "text": "This matches the party's approach: as finance minister, Smotrich signed an order raising the VAT and import-tax exemption on personal imports from $75 to $150 from 24 December 2025, and said in August 2026 that the way to solve the cost of living is \"competition, competition, competition\". The dairy reform he promoted was taken off the agenda in March 2026."
+        },
+        "cut-taxes-and-government-spending": {
+          "agreement": "partially",
+          "text": "The party has also used tax relief: Smotrich signed a temporary cut in the gasoline excise tax on 6 September 2026, and said in October 2025 that he planned tax cuts. The research places the party's main approach on competition and imports, and VAT rose from 17% to 18% at the start of 2025."
+        },
+        "active-state-regulation": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is to open markets to competition and imports, as in the import-tax exemption order Smotrich signed for 24 December 2025 and the dairy reform his ministry promoted, which was taken off the agenda in March 2026. The research says the party's stated approach and main reforms point to competition."
+        },
+        "direct-support-for-households": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is competition and imports, not direct help to households: Smotrich signed an order raising the import-tax exemption from 24 December 2025, and said in August 2026 that competition is the only way to solve the cost of living."
+        }
+      }
+    },
+    "crime-in-arab-society": {
+      "anchor": "issue-crime-in-arab-society",
+      "options": {
+        "emergency-powers-shin-bet": {
+          "agreement": "agrees",
+          "text": "The party's record points this way: the government in which it serves approved a plan on 15 July 2026 to bring the Shin Bet into the fight against crime in Arab society, though no separate party statement on that decision was found. In his 27 August 2026 plan Smotrich called for using the Shin Bet against illegal weapons and for defining their possession as terrorism by a temporary order."
+        },
+        "more-police-resources-normal-law": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach goes beyond normal law: Smotrich's 27 August 2026 plan called for involving the Shin Bet and for defining possession of illegal weapons as terrorism by a temporary order. The plan approved on 15 July 2026 by the government in which the party serves also gives most of its funding to the Shin Bet, with a smaller share for the police."
+        },
+        "invest-in-arab-communities-first": {
+          "agreement": "disagrees",
+          "text": "The party's evidence focuses on enforcement and on controlling budgets: in August 2023 Smotrich froze a budget for Arab local authorities until oversight mechanisms were in place. The research found no support from the party for an investment-first approach."
+        }
+      }
+    },
+    "gaza": {
+      "anchor": "issue-gaza",
+      "options": {
+        "resume-fighting-full-control": {
+          "agreement": "agrees",
+          "text": "This is the party's position: Smotrich and Strock voted against the government decision approving the ceasefire and hostage deal on 9 October 2025, and on 19 January 2026 Smotrich called for full Israeli control, the destruction of Hamas and permanent Israeli settlement in Gaza, with residents allowed to leave."
+        },
+        "hold-positions-disarmament-first": {
+          "agreement": "partially",
+          "text": "The party shares your opposition to withdrawing before Hamas disarms: on 3 August 2026 Smotrich and Strock demanded that the international force not enter Gaza until its purpose, authority and missions were amended, with Smotrich arguing that the roadmap requires the IDF to withdraw first. It differs in seeking a return to war, full control and Israeli settlement in Gaza rather than holding current positions."
+        },
+        "advance-international-arrangement": {
+          "agreement": "disagrees",
+          "text": "The party opposes this path: on 3 August 2026 Smotrich and Strock wrote to Netanyahu demanding that the decision to let the international force into Gaza be revoked, and on 9 October 2025 they voted against the government decision approving the US-brokered ceasefire and hostage deal. In January 2026 Smotrich called the Trump plan bad for the State of Israel."
+        },
+        "end-war-full-withdrawal": {
+          "agreement": "disagrees",
+          "text": "The party holds the opposite: on 19 January 2026 Smotrich called for full Israeli control and the destruction of Hamas in Gaza, and on 9 October 2025 he and Strock voted against the government decision approving the ceasefire and hostage deal."
+        },
+        "defeat-hamas-then-security-control": {
+          "agreement": "partially",
+          "text": "The party shares your call to go back to war until Hamas is destroyed: on 19 January 2026 Smotrich called for giving Hamas a short ultimatum and then attacking Gaza with full force. It differs in also calling for permanent Israeli settlement in Gaza and for allowing residents to leave, which your answer excludes."
+        }
+      }
+    },
+    "haredi-enlistment": {
+      "anchor": "issue-haredi-enlistment",
+      "options": {
+        "anchor-torah-study-exemption": {
+          "agreement": "agrees",
+          "text": "The party's votes point this way: all seven of its MKs voted for the Basic Law: Torah Study on 13 July 2026, and four voted on 14 July 2026 for the temporary law freezing enforcement against yeshiva students who do not report. The research calls the evidence mixed, since Smotrich's stated position is gradual enlistment by agreement."
+        },
+        "gradual-targets-by-agreement": {
+          "agreement": "partially",
+          "text": "This is the party's stated position, which the research treats as a secondary element: in August 2026 Smotrich said he would seek a framework to enlist Haredim with the consent of the Haredi leadership. Its votes in 2025 and 2026 protected yeshiva students from enforcement, which is closer to an exemption."
+        },
+        "universal-service-with-sanctions": {
+          "agreement": "disagrees",
+          "text": "The party's MKs voted against opposition bills tying benefits to enlistment on 22 October 2025 and a financial sanctions bill on 4 February 2026. In August 2026 Smotrich said arrests do not bring Haredim to the army."
+        },
+        "voluntary-service-for-all": {
+          "agreement": "partially",
+          "text": "The overlap is narrow and comes from votes: the party's MKs voted against opposition bills tying benefits to enlistment on 22 October 2025, and four of them voted on 14 July 2026 for a temporary law freezing enforcement against yeshiva students who do not report. Its stated aim is different: in August 2026 Smotrich said he would seek a framework to enlist Haredim, with the consent of the Haredi leadership."
+        }
+      }
+    },
+    "housing": {
+      "anchor": "issue-housing",
+      "options": {
+        "speed-up-planning-and-construction": {
+          "agreement": "agrees",
+          "text": "This is the party's closest option: in October 2025 Smotrich said a government-approved real-estate plan would increase housing supply by tens of thousands of units. His 27 August 2026 plan for the Negev and Galilee also calls for hundreds of thousands of housing units and government control over the Planning Administration and the Israel Land Authority, though it targets new Jewish communities."
+        },
+        "state-led-affordable-rental": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is to increase supply and develop the Negev and Galilee: in October 2025 Smotrich said a government-approved plan would add tens of thousands of units, and his 27 August 2026 plan calls for hundreds of thousands of units in those regions."
+        },
+        "direct-help-for-buyers": {
+          "agreement": "disagrees",
+          "text": "In May 2025 the Finance Ministry proposed narrowing the discounted apartment programme, with Smotrich's office saying the old programme discriminated against periphery residents. In October 2025 Smotrich advised buyers to bargain with contractors and not to rush to buy."
+        },
+        "develop-periphery-and-transport": {
+          "agreement": "partially",
+          "text": "The research treats this as a secondary element of the party's position, which shares your focus on areas outside the centre. Its 27 August 2026 plan for the Negev and Galilee centres on new Jewish communities and housing units, rather than the transport, jobs and services your answer describes."
+        }
+      }
+    },
+    "iran-and-regional-security": {
+      "anchor": "issue-iran-and-regional-security",
+      "options": {
+        "military-pressure-until-threats-removed": {
+          "agreement": "agrees",
+          "text": "This is the party's position, resting on Smotrich's statements since no vote was found: he called the June 2026 US-Iran framework agreement bad for Israel, and said on 23 June 2026 there would be no Israeli withdrawal from the security zone in Lebanon as long as Hezbollah exists."
+        },
+        "force-plus-us-backed-agreements": {
+          "agreement": "partially",
+          "text": "The party shares your call for sustained military pressure but differs on agreements and withdrawal. After the June 2026 US-Iran framework agreement Smotrich said Israel was not a partner to it and should not withdraw from any captured territory in Lebanon, and on 23 June 2026 he said Hezbollah must be dismantled, not only disarmed."
+        },
+        "prioritize-ending-multifront-war": {
+          "agreement": "disagrees",
+          "text": "The party's documented position, from Smotrich's statements, is to keep up military pressure: on 23 June 2026 he said there would be no withdrawal from the security zone in Lebanon as long as Hezbollah exists, and that Hezbollah must be dismantled."
+        },
+        "end-military-operations-regional-peace": {
+          "agreement": "disagrees",
+          "text": "The party holds the opposite, according to Smotrich's statements: on 23 June 2026 he said there would be no Israeli withdrawal from the security zone in Lebanon as long as Hezbollah exists, and on 27 September 2026 he said he would like Israel to apply its sovereignty to southern Lebanon up to the Litani."
+        }
+      }
+    },
+    "judea-samaria": {
+      "anchor": "issue-judea-samaria",
+      "options": {
+        "full-sovereignty": {
+          "agreement": "agrees",
+          "text": "This is the party's position: all seven of its MKs voted for a bill applying Israeli sovereignty to Judea and Samaria on 22 October 2025, and the government in which Smotrich holds civilian authority approved 34 new settlements in March 2026. In February 2026 he named sovereignty and abolishing the Oslo Accords as goals, and in September 2026 called for dismantling the Palestinian Authority."
+        },
+        "partial-sovereignty-area-c": {
+          "agreement": "partially",
+          "text": "The party shares your goal of applying sovereignty, but to all of Judea and Samaria rather than part of it. Its MKs voted against Yisrael Beytenu bills for the Jordan Valley on 15 March 2023 and 22 January 2025, as opposition bills; for the 2023 vote, Strock said the whole coalition supports sovereignty."
+        },
+        "maintain-current-situation": {
+          "agreement": "disagrees",
+          "text": "The party seeks to change the situation: all seven of its MKs voted for a bill applying Israeli sovereignty to Judea and Samaria on 22 October 2025, and in February 2026 Smotrich named abolishing the Oslo Accords and moving toward sovereignty as goals."
+        },
+        "separation-two-states": {
+          "agreement": "disagrees",
+          "text": "The party holds a different position: in February 2026 Smotrich named abolishing the Oslo Accords and moving toward sovereignty as goals, and all seven of its MKs voted for a sovereignty bill on 22 October 2025. In September 2026 he called for dismantling the Palestinian Authority."
+        },
+        "two-states-pre-1967-border": {
+          "agreement": "disagrees",
+          "text": "The party holds the opposite: the government in which Smotrich holds civilian authority approved 34 new settlements in March 2026, and in August 2025 he said that without the E1 area a Palestinian state with East Jerusalem as its capital is impossible."
+        },
+        "one-equal-state": {
+          "agreement": "disagrees",
+          "text": "The party holds a different position: all seven of its MKs voted for a bill applying Israeli sovereignty to Judea and Samaria on 22 October 2025, and in September 2026 Smotrich called for dismantling the Palestinian Authority."
+        }
+      }
+    },
+    "judicial-system": {
+      "anchor": "issue-judicial-system",
+      "options": {
+        "continue-judicial-changes": {
+          "agreement": "agrees",
+          "text": "This is the party's position: its MKs voted for the law changing the Judicial Selection Committee on 27 March 2025 and the Attorney General law on 15 July 2026, and on 15 September 2026 Smotrich and Rothman published a plan to split the attorney general's role and add an override clause."
+        },
+        "broad-agreed-constitutional-framework": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is to continue the changes: its MKs voted for the Judicial Selection Committee law on 27 March 2025, and the party said carrying out its 15 September 2026 plan would be a condition for joining the next coalition. That plan does include regulating judicial review of laws and an override clause."
+        },
+        "repeal-changes-protect-independence": {
+          "agreement": "disagrees",
+          "text": "The party voted for the changes your answer would reverse: its MKs voted for the law changing the Judicial Selection Committee on 27 March 2025, and its 15 September 2026 plan proposes abolishing appointment committees and giving ministers more power over senior appointments."
+        },
+        "keep-current-system-stability": {
+          "agreement": "disagrees",
+          "text": "The party wants further changes: on 15 September 2026 Smotrich and Rothman published a plan that includes splitting the attorney general's role, adding an override clause and abolishing appointment committees, after its MKs voted for the Attorney General law on 15 July 2026."
+        }
+      }
+    },
+    "october-7-inquiry": {
+      "anchor": "issue-october-7-inquiry",
+      "options": {
+        "state-commission-under-existing-law": {
+          "agreement": "disagrees",
+          "text": "The party's MKs voted against opposition bills for a state commission of inquiry on 17 July 2024 and 12 November 2025. In October 2026 the party told Ynetnews it would under no circumstances support one, and objected to members being appointed by the Supreme Court president."
+        },
+        "commission-appointed-by-knesset-balance": {
+          "agreement": "agrees",
+          "text": "The research places the party closest to a commission picked through the Knesset: on 24 December 2025 all seven of its MKs voted for MK Ariel Kallner's commission-of-inquiry bill, which passed its preliminary reading 53-48. In October 2026 the party said it objects to the Supreme Court president appointing members."
+        },
+        "commission-chosen-by-neutral-mechanism": {
+          "agreement": "partially",
+          "text": "The party shares your objection to the Supreme Court president appointing the members, which it stated in October 2026. It differs in the route it backs: its MKs voted for MK Ariel Kallner's bill on 24 December 2025, and the research places it closest to a commission picked through the Knesset."
+        }
+      }
+    },
+    "religion-and-state": {
+      "anchor": "issue-religion-and-state",
+      "options": {
+        "strengthen-jewish-character": {
+          "agreement": "agrees",
+          "text": "The party's votes widen the role of religious institutions: its MKs voted for the Religious Courts Jurisdiction (Arbitration) Law on 24 March 2026, and against a bill to run public transport on Shabbat on 19 November 2025. In February 2026 it announced it would vote for a bill giving the Chief Rabbinate full control over prayer at the Western Wall."
+        },
+        "keep-status-quo": {
+          "agreement": "partially",
+          "text": "The party shares your opposition to loosening current arrangements: its MKs voted against a bill to run public transport on Shabbat on 19 November 2025 and a bill to let city rabbis perform conversions on 17 May 2023. It differs in that its votes also widen the role of religious institutions, as with the Religious Courts Jurisdiction (Arbitration) Law of 24 March 2026."
+        },
+        "more-choice-local-decisions": {
+          "agreement": "disagrees",
+          "text": "The party has consistently opposed loosening the current arrangements: its MKs voted against a bill to run public transport on Shabbat on 19 November 2025, and for the Religious Courts Jurisdiction (Arbitration) Law on 24 March 2026."
+        },
+        "separate-religion-and-state": {
+          "agreement": "disagrees",
+          "text": "The party holds the opposite: its MKs voted for the Religious Courts Jurisdiction (Arbitration) Law on 24 March 2026 and against a bill to run public transport on Shabbat on 19 November 2025, and in February 2026 it announced support for a Chief Rabbinate bill on the Western Wall."
+        }
+      }
+    }
+  },
+  "points": [
+    {
+      "text": "All seven of the party's MKs voted for the Death Penalty for Terrorists Law, which passed its final reading 62-48 on 30 March 2026.",
+      "anchor": "other-death-penalty"
+    },
+    {
+      "text": "The party's plan of 27 August 2026 for the Negev and Galilee calls for 1 million additional Jewish residents, 40 new communities and dozens of farms there.",
+      "anchor": "other-negev-galilee"
+    },
+    {
+      "text": "On 31 August 2026 Smotrich backed hesder-yeshiva soldiers jailed for refusing to board an armoured vehicle with a female paramedic, saying they acted in line with the IDF's Joint Service Order.",
+      "anchor": "other-religious-soldiers"
+    }
+  ]
+}

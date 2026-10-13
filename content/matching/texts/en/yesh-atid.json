@@ -1,0 +1,234 @@
+{
+  "partyId": "yesh-atid",
+  "lang": "en",
+  "issues": {
+    "cost-of-living": {
+      "anchor": "issue-cost-of-living",
+      "options": {
+        "open-market-competition-imports": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position. The government it was part of passed a 2021 reform that cut tariffs on fruit and vegetables and recognised European standards for produce imports, and the joint list's plan promises to remove import barriers and break up monopolies along the food supply chain."
+        },
+        "cut-taxes-and-government-spending": {
+          "agreement": "partially",
+          "text": "This is a secondary element of the party's position. Its leader's March 2025 economic plan called for cutting coalition funds, merging ministries and lowering taxes on the middle class, but the party's main emphasis is on freer imports and competition."
+        },
+        "active-state-regulation": {
+          "agreement": "disagrees",
+          "text": "The party's documented emphasis is different: a 2021 reform that cut tariffs and recognised European standards for produce imports, and a joint list plan built on removing import barriers and breaking up monopolies. The research did not find a party commitment to price supervision of basic goods or a tax on high profits."
+        },
+        "direct-support-for-households": {
+          "agreement": "disagrees",
+          "text": "The party's documented emphasis is different: opening the market to imports and competition, as in its government's 2021 tariff reform and the joint list's 2026 plan, together with lower taxes on the middle class in its leader's March 2025 plan. The research on this issue records no party commitment to raising welfare allowances or the minimum wage."
+        }
+      }
+    },
+    "crime-in-arab-society": {
+      "anchor": "issue-crime-in-arab-society",
+      "options": {
+        "emergency-powers-shin-bet": {
+          "agreement": "agrees",
+          "text": "The research describes the evidence as mixed between this and investing in Arab communities. The party's and the joint list's 2026 plans bring in the Shin Bet alongside the police, but they do not include holding suspects without trial, which is part of your answer."
+        },
+        "more-police-resources-normal-law": {
+          "agreement": "disagrees",
+          "text": "The party's platform and the joint list's plan both bring in the Shin Bet alongside the police, which your answer rules out, and the party's record in government included large investment in Arab communities. The joint list's plan does share one element with your answer, a national operation to collect illegal weapons."
+        },
+        "invest-in-arab-communities-first": {
+          "agreement": "agrees",
+          "text": "In 2021 the government the party was part of adopted Resolution 549, with about NIS 2 billion over five years for prevention, policing and community work in seven Arab communities, and Resolution 550, a roughly NIS 27 billion development plan for Arab society. The research describes the evidence as mixed between this and bringing in the Shin Bet alongside the police."
+        }
+      }
+    },
+    "gaza": {
+      "anchor": "issue-gaza",
+      "options": {
+        "resume-fighting-full-control": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: on 3 December 2025 its leader sponsored a Knesset motion adopting the US plan, which passed 39-0 with all the party's MKs voting for it, and the joint list's plan says Israel has no interest in running Gaza."
+        },
+        "hold-positions-disarmament-first": {
+          "agreement": "partially",
+          "text": "The joint list's plan says Israel will not move 'a millimeter' from the yellow line until Hamas is fully disarmed, which matches your answer. This is a secondary element: the party's own main position is the US plan, adopted in a Knesset motion on 3 December 2025, and an Egyptian-run administration, which relies on outside parties."
+        },
+        "advance-international-arrangement": {
+          "agreement": "agrees",
+          "text": "On 3 December 2025 the party's leader sponsored a Knesset motion adopting the US plan, which passed 39-0 with all the party's MKs voting for it. In February 2025 he also proposed an Egyptian-led administration for Gaza in place of Hamas, with the Palestinian Authority able to take part later after reform."
+        },
+        "end-war-full-withdrawal": {
+          "agreement": "partially",
+          "text": "The party shares only part of this: it backed in December 2025 a US plan that hints at a possible future path to Palestinian statehood, and its leader said in February 2025 that the Palestinian Authority could take part later after reform. It differs on withdrawal, since the joint list's plan says Israel will not move from the yellow line until Hamas is fully disarmed."
+        },
+        "defeat-hamas-then-security-control": {
+          "agreement": "disagrees",
+          "text": "The party's own documented position is the US plan it backed on 3 December 2025 and a proposal by its leader in February 2025 for Egypt to run Gaza's civilian and security affairs for eight years, rather than Israel keeping security control. The joint list's plan does also say Israel would attack whenever Hamas rearms, and Bennett, the joint list's leader, said in an interview published in July 2026 that the IDF would need to stay in Gaza 'for years'."
+        }
+      }
+    },
+    "haredi-enlistment": {
+      "anchor": "issue-haredi-enlistment",
+      "options": {
+        "anchor-torah-study-exemption": {
+          "agreement": "disagrees",
+          "text": "The party's MKs voted against the Basic Law declaring Torah study a foundational value on 13 July 2026, and its 2026 platform commits to a draft law for everyone, saying whoever does not enlist will not get a single shekel from the state."
+        },
+        "gradual-targets-by-agreement": {
+          "agreement": "partially",
+          "text": "The party shares the aim of bringing Haredim into service and cutting state money for those who do not enlist, but not the gradual, agreed route. Since 2024 it has voted against reviving a 2022 bill that lowered the exemption age and opposed the coalition's enlistment bill, and in May 2026 its leader called talk of compromises with the Haredim a mistake."
+        },
+        "universal-service-with-sanctions": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position. Its MKs voted against the Basic Law on Torah study on 13 July 2026, and its 2026 platform commits to a draft law for everyone, under which whoever does not enlist gets no state money."
+        },
+        "voluntary-service-for-all": {
+          "agreement": "disagrees",
+          "text": "The party's 2026 platform commits to a draft law for everyone and says whoever does not enlist will not get a single shekel from the state. Its leader said the same on 4 May 2025, and the party opposed the coalition's 2025-2026 enlistment bill."
+        }
+      }
+    },
+    "housing": {
+      "anchor": "issue-housing",
+      "options": {
+        "speed-up-planning-and-construction": {
+          "agreement": "agrees",
+          "text": "The joint list's housing plan promises a local zoning plan within 18 months and a building permit within three months, and would release land held by the Israel Land Authority. The plan also covers state-backed rental, help for buyers and the periphery, and the research does not single out one of these as the party's main approach."
+        },
+        "state-led-affordable-rental": {
+          "agreement": "agrees",
+          "text": "The joint list's housing plan includes about 100,000 long-term rental homes within a decade, with 40% of them subsidised at 30% below market price. The plan also covers faster planning, help for buyers and the periphery, and the research does not single out one of these as the party's main approach."
+        },
+        "direct-help-for-buyers": {
+          "agreement": "agrees",
+          "text": "The joint list's housing plan includes a benefit of NIS 1 million towards a home for active reservists, and the party leader's March 2025 plan included housing programs for young families. The joint list's plan also covers rental, faster planning and the periphery, and the research does not single out one of these as the party's main approach."
+        },
+        "develop-periphery-and-transport": {
+          "agreement": "agrees",
+          "text": "The joint list's housing plan sets a national goal of moving one million Israelis to outlying areas within a decade and would cut urban renewal projects from over a decade to about five years. The party leader's March 2025 plan also included investment in public transport, and the research does not single out one housing approach as the party's main one."
+        }
+      }
+    },
+    "iran-and-regional-security": {
+      "anchor": "issue-iran-and-regional-security",
+      "options": {
+        "military-pressure-until-threats-removed": {
+          "agreement": "partially",
+          "text": "The party's leader backed the US and Israeli strikes on Iran on 28 February 2026 and said Iran's ballistic and nuclear programs should be obliterated, and the joint list's rule is that if Hezbollah strikes Israel, Israel strikes Iran. It differs on deals: the joint list also pledges to strengthen the Abraham Accords and pursue normalization with Saudi Arabia."
+        },
+        "force-plus-us-backed-agreements": {
+          "agreement": "agrees",
+          "text": "The joint list's plan pledges to strengthen the Abraham Accords and pursue normalization with Saudi Arabia, which the party's leader called a central objective in August 2026, alongside military action against Iran that he backed on 28 February 2026. He criticised the US-Iran ceasefire in April 2026 and the emerging US-Iran deal in May 2026."
+        },
+        "prioritize-ending-multifront-war": {
+          "agreement": "disagrees",
+          "text": "The party's leader backed the strikes on Iran on 28 February 2026 as a just war, and in April and May 2026 called the US-Iran ceasefire a diplomatic disaster and the Lebanon ceasefire a farce. In June 2026 he did say that war alone cannot become the automatic response to every problem."
+        },
+        "end-military-operations-regional-peace": {
+          "agreement": "disagrees",
+          "text": "The party's leader backed the strikes on Iran on 28 February 2026, and in May 2026 said that either there is a ceasefire or Israel responds with disproportionate force to every attack on it. The party does pursue regional peace through normalization with Saudi Arabia, but alongside military action rather than through diplomacy alone."
+        }
+      }
+    },
+    "judea-samaria": {
+      "anchor": "issue-judea-samaria",
+      "options": {
+        "full-sovereignty": {
+          "agreement": "disagrees",
+          "text": "On 22 October 2025 the party's leader and ten other MKs voted against the bill to apply sovereignty to all of Judea and Samaria. The party did vote that day for applying sovereignty to Ma'ale Adumim, and its leader said on 26 May 2026 that there will be no two-state solution in the coming years."
+        },
+        "partial-sovereignty-area-c": {
+          "agreement": "partially",
+          "text": "This is a secondary element of the party's position and rests on votes on specific areas: its leader and 15 other MKs voted for applying sovereignty to Ma'ale Adumim on 22 October 2025, and 13 MKs voted for applying it to the Jordan Valley on 22 January 2025. Neither the party's platform nor the joint list's plans set out a position on sovereignty."
+        },
+        "maintain-current-situation": {
+          "agreement": "agrees",
+          "text": "On 22 October 2025 the party's leader and ten other MKs voted against the bill to apply sovereignty to all of Judea and Samaria, and on 26 May 2026 he said there will be no two-state solution in the coming years. The research notes the evidence is mixed, and neither the platform nor the joint list's plans set out a final-status position."
+        },
+        "separation-two-states": {
+          "agreement": "partially",
+          "text": "As prime minister, the party's leader told the UN on 22 September 2022 that a two-state solution was right for Israel, on condition that the Palestinian state be peaceful. This is a secondary element: on 26 May 2026 he said there will be no two-state solution in the coming years, and no platform clause sets out a final-status position."
+        },
+        "two-states-pre-1967-border": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is different: its leader said on 26 May 2026 that there will be no two-state solution in the coming years, and in 2022 he supported two states only on condition that the Palestinian state be peaceful. Neither the platform nor the joint list's plans call for withdrawal to the pre-1967 border or for evacuating settlements."
+        },
+        "one-equal-state": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is different: its leader said in 2022 that a two-state solution was right for Israel, on condition that the Palestinian state be peaceful, and on 26 May 2026 that there will be no two-state solution in the coming years. Neither statement describes a single state."
+        }
+      }
+    },
+    "judicial-system": {
+      "anchor": "issue-judicial-system",
+      "options": {
+        "continue-judicial-changes": {
+          "agreement": "disagrees",
+          "text": "All the party's MKs voted against the first readings of the Judicial Selection Committee amendment on 20 February 2023 and the reasonableness amendment on 11 July 2023. The party boycotted the final vote on the Judicial Selection Law on 27 March 2025, petitioned the Supreme Court against it, and its platform commits to repeal the current government's changes to the judicial system."
+        },
+        "broad-agreed-constitutional-framework": {
+          "agreement": "partially",
+          "text": "The party's platform commits to a constitution including a Basic Law: Legislation, and the joint list said in September 2026 that it would set how basic laws are made, by what majority and when the Supreme Court may intervene. This is a secondary element: the party's main position is to repeal the recent changes."
+        },
+        "repeal-changes-protect-independence": {
+          "agreement": "agrees",
+          "text": "The party boycotted the final vote on the Judicial Selection Law on 27 March 2025 and petitioned the Supreme Court against it, and its platform commits to repeal all of the current government's judicial changes. The joint list said in September 2026 that it would repeal the new law on choosing judges."
+        },
+        "keep-current-system-stability": {
+          "agreement": "disagrees",
+          "text": "The party petitioned the Supreme Court against the Judicial Selection Law right after its final vote on 27 March 2025, and its platform commits to repeal all of the current government's changes to the judicial system."
+        }
+      }
+    },
+    "october-7-inquiry": {
+      "anchor": "issue-october-7-inquiry",
+      "options": {
+        "state-commission-under-existing-law": {
+          "agreement": "agrees",
+          "text": "The party's leader and its MKs who voted backed opposition bills to set up a state commission of inquiry, which were defeated on 17 July 2024 and 1 July 2026, and its platform commits to one."
+        },
+        "commission-appointed-by-knesset-balance": {
+          "agreement": "disagrees",
+          "text": "All the party's MKs voted against the coalition's bill for a commission appointed through the Knesset at its preliminary reading on 24 December 2025, and the opposition boycotted the revised bill's first reading on 6 July 2026. The party instead backs a state commission of inquiry under the existing law."
+        },
+        "commission-chosen-by-neutral-mechanism": {
+          "agreement": "disagrees",
+          "text": "The party instead backs a state commission of inquiry under the existing law: its leader and its MKs who voted supported opposition bills for one, defeated on 17 July 2024 and 1 July 2026, and its platform commits to it."
+        }
+      }
+    },
+    "religion-and-state": {
+      "anchor": "issue-religion-and-state",
+      "options": {
+        "strengthen-jewish-character": {
+          "agreement": "disagrees",
+          "text": "The party's MKs who voted backed two bills on public transport on Shabbat on 19 November 2025 and opposed the law of 15 July 2026 that reversed the 2021 kashrut reform. Its platform commits to public transport on Shabbat in secular areas and to advancing civil marriage."
+        },
+        "keep-status-quo": {
+          "agreement": "partially",
+          "text": "The party would keep the Rabbinate, which overlaps with your answer, but it wants larger changes than small local ones: its platform commits to civil marriage and Shabbat public transport in secular areas, and on 23 March 2026 its leader said the status quo was 'dead, buried'."
+        },
+        "more-choice-local-decisions": {
+          "agreement": "agrees",
+          "text": "The party's MKs who voted backed two bills on public transport on Shabbat on 19 November 2025 and opposed the law of 15 July 2026 that reversed the 2021 kashrut reform. The joint list's plan includes civil unions and lets each local authority decide on Shabbat public transport."
+        },
+        "separate-religion-and-state": {
+          "agreement": "partially",
+          "text": "The party shares civil marriage and Shabbat public transport with your answer, as in its platform and its backing of two Shabbat public transport bills on 19 November 2025. It differs in scope: the transport is for secular areas of local authorities that want it, and the joint list's plan also supports state Orthodox conversion according to Torah law."
+        }
+      }
+    }
+  },
+  "points": [
+    {
+      "text": "In November 2021 the party's MKs who voted backed a government bill limiting a prime minister to eight years in office, which passed its first reading 66-48 but did not complete its readings before the Knesset dissolved in June 2022; the party's platform commits to term limits.",
+      "anchor": "other-constitution-term-limits"
+    },
+    {
+      "text": "The party's platform promises compulsory core studies in all schools, and the joint list's plan would set a shared core of 60% of studies and give public funding only to schools that teach the full core.",
+      "anchor": "other-education"
+    },
+    {
+      "text": "The joint list's 'Those Who Serve Law' would give reservists and those who served benefits that include free daycare for active reservists' children aged 0-3, a 50% discount on electricity, water and property tax for active reservists, and a free first degree.",
+      "anchor": "other-reservists"
+    }
+  ]
+}

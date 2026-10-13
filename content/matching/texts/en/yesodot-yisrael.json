@@ -1,0 +1,204 @@
+{
+  "partyId": "yesodot-yisrael",
+  "lang": "en",
+  "issues": {
+    "cost-of-living": {
+      "anchor": "issue-cost-of-living",
+      "options": {
+        "open-market-competition-imports": {
+          "agreement": "agrees",
+          "text": "That is the party's main recorded position. The Magen David Plan, which party leader Chili Tropper co-presented on 5 August 2026, commits to lowering prices by \"encouraging competition, dismantling monopolies, and reducing market concentration\" and to opening the economy to imports, and the Yashar joint list's economic plan pledges to open the market to parallel imports."
+        },
+        "cut-taxes-and-government-spending": {
+          "agreement": "partially",
+          "text": "The party shares your aim of less regulation: the Magen David Plan of 5 August 2026 calls for reducing regulation. Its main emphasis, though, is on competition, imports and market concentration rather than on cutting taxes or government spending."
+        },
+        "active-state-regulation": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: the Magen David Plan of 5 August 2026 calls for reducing regulation, opening the economy to imports and removing trade barriers. It also calls for dismantling monopolies and reducing market concentration, and the research found no call from the party for supervising prices or taxing high profits."
+        },
+        "direct-support-for-households": {
+          "agreement": "partially",
+          "text": "This is a secondary element of the party's position. The Magen David Plan includes targeted help for working parents and reservists, and the joint list's economic plan gives reservists and working families priority in state support and daycare subsidies, but both put opening markets to competition and imports first."
+        }
+      }
+    },
+    "crime-in-arab-society": {
+      "anchor": "issue-crime-in-arab-society",
+      "options": {
+        "emergency-powers-shin-bet": {
+          "agreement": "agrees",
+          "text": "Part of the record points here: the Magen David Plan, which party leader Chili Tropper co-presented on 5 August 2026, proposes a dedicated Shin Bet division against crime in Arab society. The research calls the evidence mixed: on 10 December 2025 Tropper voted against a bill to let crime organizations be declared terror organizations, and the Yashar joint list's plan does not mention the Shin Bet."
+        },
+        "more-police-resources-normal-law": {
+          "agreement": "agrees",
+          "text": "Part of the party's record points here: on 10 December 2025 party leader Chili Tropper voted against a bill that would let crime organizations be declared terror organizations, and the Yashar joint list's plan builds up the police with a four-year emergency budget. The research calls the evidence mixed: the Magen David Plan he co-presented on 5 August 2026 proposes a dedicated Shin Bet division."
+        },
+        "invest-in-arab-communities-first": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is enforcement: the Magen David Plan of 5 August 2026 proposes a dedicated Shin Bet division, a governance authority under the National Security Ministry and heavier sentences, and the Yashar joint list's plan builds up the police. The research found no position from party leader Chili Tropper on investing in Arab communities as a way to fight crime."
+        }
+      }
+    },
+    "gaza": {
+      "anchor": "issue-gaza",
+      "options": {
+        "resume-fighting-full-control": {
+          "agreement": "disagrees",
+          "text": "The party's recorded position is different. In January 2024 party leader Chili Tropper, then a minister in the emergency government, said Israel should be in Gaza \"only in the security sense\" and should not govern its civilian life, and that Israeli military rule would be \"the recipe for getting bogged down in the Gaza mud\"."
+        },
+        "hold-positions-disarmament-first": {
+          "agreement": "partially",
+          "text": "Part of the record is consistent with your answer: on 1 August 2026 the Yashar joint list's leader, Gadi Eisenkot, said Israel \"must not accept a reality in which Hamas survives, rearms\". The party's main recorded position, from party leader Chili Tropper in January 2024, is Israeli security control with a local administration without Hamas, and the research calls the evidence mixed."
+        },
+        "advance-international-arrangement": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: in January 2024 party leader Chili Tropper said \"a local force that is not Hamas\" should run civilian affairs under Israeli security supervision, and on 1 August 2026 Yashar joint list leader Gadi Eisenkot criticised the Board of Peace framework meant to carry out the US plan. No statement from the party on Gaza after the October 2025 ceasefire was found."
+        },
+        "end-war-full-withdrawal": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different. In January 2024 party leader Chili Tropper, then a minister in the emergency government, said Israel should keep security freedom of action in Gaza and that \"stopping the war is not a price Israel can pay\"."
+        },
+        "defeat-hamas-then-security-control": {
+          "agreement": "agrees",
+          "text": "That is the party's closest recorded position. In January 2024 party leader Chili Tropper, then a minister in the emergency government, said Israel should be in Gaza \"only in the security sense\" and that \"a local force that is not Hamas\" should run civilian affairs; the research describes the evidence as mixed and mostly from 2024."
+        }
+      }
+    },
+    "haredi-enlistment": {
+      "anchor": "issue-haredi-enlistment",
+      "options": {
+        "anchor-torah-study-exemption": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is different. Party leader Chili Tropper voted on 14 July 2026 against the final readings of the Security Service Law (Amendment No. 28 – temporary provision), and said in July 2026: \"If you chose not to serve, the state should not finance you.\""
+        },
+        "gradual-targets-by-agreement": {
+          "agreement": "partially",
+          "text": "The party shares the idea of benefits for those who serve and of service tracks suited to different populations, in the Magen David Plan of 5 August 2026. Where it differs, the plan applies sanctions to those who do not serve, and the research places the party closest to universal service with sanctions rather than yearly targets."
+        },
+        "universal-service-with-sanctions": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position. Party leader Chili Tropper voted for the \"Mandatory Service for All\" bill on 17 May 2023 and, on 22 October 2025, for three opposition bills conditioning benefits for yeshiva students on meeting Security Service Law obligations, and the Magen David Plan he co-presented on 5 August 2026 commits to sanctions for those who do not serve."
+        },
+        "voluntary-service-for-all": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is different. The Magen David Plan of 5 August 2026 commits to \"an equal service model\" in which every citizen serves, with benefits for those who serve and sanctions for those who do not, and party leader Chili Tropper voted for the \"Mandatory Service for All\" bill on 17 May 2023."
+        }
+      }
+    },
+    "housing": {
+      "anchor": "issue-housing",
+      "unclear": {
+        "text": "The research found no documented position of the party on this issue, so it can't be compared with your answer."
+      }
+    },
+    "iran-and-regional-security": {
+      "anchor": "issue-iran-and-regional-security",
+      "unclear": {
+        "text": "The research found no documented position of the party on this issue, so it can't be compared with your answer."
+      }
+    },
+    "judea-samaria": {
+      "anchor": "issue-judea-samaria",
+      "options": {
+        "full-sovereignty": {
+          "agreement": "partially",
+          "text": "The party shares your aim of expanding settlement: the Magen David Plan of 5 August 2026 includes expanding legal settlement. Party leader Chili Tropper voted for bills applying Israeli sovereignty to the Jordan Valley (22 January 2025), Ma'ale Adumim (22 October 2025) and Beitar Illit (31 December 2025), but no vote of his for applying it to all of Judea and Samaria was found."
+        },
+        "partial-sovereignty-area-c": {
+          "agreement": "agrees",
+          "text": "That is the party's main recorded position, though the research calls the evidence mixed. Party leader Chili Tropper voted for bills applying Israeli sovereignty to the Jordan Valley (15 March 2023 and 22 January 2025), Ma'ale Adumim (22 October 2025) and Beitar Illit (31 December 2025), but no vote of his for applying it to all of Judea and Samaria was found."
+        },
+        "maintain-current-situation": {
+          "agreement": "partially",
+          "text": "Part of the record points here: Maariv reported on 30 September 2026 that the party does not intend to change the situation significantly beyond acting to \"shrink the conflict\". The research calls the evidence mixed: party leader Chili Tropper voted for bills applying Israeli sovereignty to the Jordan Valley, Ma'ale Adumim and Beitar Illit, which your answer does not include."
+        },
+        "separation-two-states": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is different. Maariv reported on 30 September 2026 that party leader Chili Tropper and his party firmly oppose a Palestinian state in Judea and Samaria, and on 18 July 2024 he voted for a Knesset resolution, adopted 68–9, opposing a Palestinian state west of the Jordan."
+        },
+        "two-states-pre-1967-border": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is different. In July 2026 party leader Chili Tropper said \"Evacuating settlements in Judea and Samaria is not on the agenda as far as we're concerned\", and on 18 July 2024 he voted for a Knesset resolution, adopted 68–9, opposing a Palestinian state west of the Jordan."
+        },
+        "one-equal-state": {
+          "agreement": "disagrees",
+          "text": "The party's closest recorded position is different: applying Israeli sovereignty to key areas only. Party leader Chili Tropper voted for bills applying it to the Jordan Valley (22 January 2025) and Ma'ale Adumim (22 October 2025), and the Magen David Plan of 5 August 2026 includes expanding legal settlement."
+        }
+      }
+    },
+    "judicial-system": {
+      "anchor": "issue-judicial-system",
+      "options": {
+        "continue-judicial-changes": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is different. Party leader Chili Tropper voted against the first readings of the 2023 changes to the judicial system, against each section of the 27 March 2025 law on choosing judges, and, on 15 July 2026, against the final reading of the Attorney General (Opinions, Representation and Supervision) Law."
+        },
+        "broad-agreed-constitutional-framework": {
+          "agreement": "partially",
+          "text": "Part of the record points here: the Magen David Plan of 5 August 2026 calls for a \"Zionist constitution\" and for regulating relations between the branches, and Srugim reported that party leader Chili Tropper believes changes should be adopted by broad agreement. The research calls the evidence mixed: his votes against the 2023 and 2025 changes point to reversing them."
+        },
+        "repeal-changes-protect-independence": {
+          "agreement": "agrees",
+          "text": "That is the party's main recorded position, though the research calls the evidence mixed. Party leader Chili Tropper voted against the 2023 changes to the judicial system and, on 27 March 2025, against each section of the law on choosing judges, and in December 2024 he led a bill to make the most senior Supreme Court justice Court President if the selection committee chooses none within 60 days."
+        },
+        "keep-current-system-stability": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is different. Party leader Chili Tropper voted against each section of the 27 March 2025 law on choosing judges, and in July 2026 said Basic Law: Legislation and Basic Law: The Judiciary should be advanced."
+        }
+      }
+    },
+    "october-7-inquiry": {
+      "anchor": "issue-october-7-inquiry",
+      "options": {
+        "state-commission-under-existing-law": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position. Party leader Chili Tropper voted for opposition bills to set up a state commission of inquiry on 17 July 2024, 12 November 2025 and 1 July 2026, and on 5 August 2026 the Yashar joint list's leader, Gadi Eisenkot, pledged that the President of the Supreme Court would appoint its members."
+        },
+        "commission-appointed-by-knesset-balance": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is different. On 24 December 2025 party leader Chili Tropper voted against the preliminary reading of the bill for a \"state-national\" commission, whose members would be chosen through the Knesset, and he voted for bills for a state commission of inquiry on 17 July 2024, 12 November 2025 and 1 July 2026."
+        },
+        "commission-chosen-by-neutral-mechanism": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is different: on 5 August 2026 the Yashar joint list's leader, Gadi Eisenkot, pledged a state commission whose members would be appointed by the President of the Supreme Court \"in consultation with other judges\". Party leader Chili Tropper voted for bills for a state commission of inquiry on 17 July 2024, 12 November 2025 and 1 July 2026."
+        }
+      }
+    },
+    "religion-and-state": {
+      "anchor": "issue-religion-and-state",
+      "options": {
+        "strengthen-jewish-character": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different. On 28 June 2023 party leader Chili Tropper voted against a bill that, according to the Israel Democracy Institute, would strengthen the Chief Rabbinate Council in choosing local rabbis, and on 19 November 2025 he voted for two bills titled \"Operation of Public Transport on Shabbat\", which the research could check only by title."
+        },
+        "keep-status-quo": {
+          "agreement": "partially",
+          "text": "Part of the record points here: in November 2022 party leader Chili Tropper said change on football on Shabbat should come through \"a deep process\" with \"mutual respect\". His votes, such as for two bills titled \"Operation of Public Transport on Shabbat\" on 19 November 2025, point to more choice and local decisions, and the research calls the evidence partly mixed."
+        },
+        "more-choice-local-decisions": {
+          "agreement": "agrees",
+          "text": "This is the party's closest recorded position, resting mainly on party leader Chili Tropper's votes, which the research could mostly check only by title, and the research calls the evidence partly mixed. He voted for two bills titled \"Operation of Public Transport on Shabbat\" on 19 November 2025 and for the \"Marriage and Divorce Bill\" on 7 June 2023."
+        },
+        "separate-religion-and-state": {
+          "agreement": "partially",
+          "text": "The party may share part of your answer on Shabbat: party leader Chili Tropper voted for two bills titled \"Operation of Public Transport on Shabbat\" on 19 November 2025, which the research could check only by title. Its closest recorded position, though, keeps the Rabbinate with alternatives and local choice, and no statement from Tropper or the party on civil marriage was found."
+        }
+      }
+    }
+  },
+  "points": [
+    {
+      "text": "Party leader Chili Tropper co-sponsored a bill in December 2024 to bar anyone who has served eight consecutive years as prime minister from serving again, and the Magen David Plan he co-presented calls for limiting the terms of elected officials.",
+      "anchor": "other-governance-term-limits"
+    },
+    {
+      "text": "In November 2024 party leader Chili Tropper co-sponsored, with other MKs, a bill to amend Basic Law: The Knesset that would count support for a \"lone attacker\" as grounds for barring a candidate and would allow a party inside a joint list to be disqualified on its own.",
+      "anchor": "other-terror-supporters-elections"
+    },
+    {
+      "text": "On 30 March 2026 party leader Chili Tropper voted against each section and against the final reading of the Death Penalty for Terrorists Law, which the Knesset passed 62–48; no statement explaining the vote was found.",
+      "anchor": "other-death-penalty"
+    }
+  ]
+}

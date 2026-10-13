@@ -1,0 +1,234 @@
+{
+  "partyId": "the-reservists",
+  "lang": "en",
+  "issues": {
+    "cost-of-living": {
+      "anchor": "issue-cost-of-living",
+      "options": {
+        "open-market-competition-imports": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position. Its platform says Israel's strength rests on a free economy and on encouraging competition, and promises to fight monopolies \"by breaking up or limiting the power of dominant bodies\"; its August 2026 \"Magen David\" plan, presented with former partner Chili Tropper, adds opening the economy to imports."
+        },
+        "cut-taxes-and-government-spending": {
+          "agreement": "partially",
+          "text": "The party's August 2026 plan, presented with former partner Chili Tropper, shares the goal of reducing regulation, but the party's documented emphasis is on competition, breaking up monopolies and opening the economy to imports rather than on cutting taxes and government spending."
+        },
+        "active-state-regulation": {
+          "agreement": "disagrees",
+          "text": "The party's platform and its August 2026 plan, presented with former partner Chili Tropper, center on a free economy, encouraging competition, reducing regulation and opening the economy to imports, which is a different approach from state supervision of prices."
+        },
+        "direct-support-for-households": {
+          "agreement": "partially",
+          "text": "This is a secondary element of the party's position: its August 2026 plan promises targeted support for working parents and reservists, and its platform makes military or national service a main criterion for discounts on daycare, mortgages and municipal tax, but its main line is competition and its support is aimed at those who serve."
+        }
+      }
+    },
+    "crime-in-arab-society": {
+      "anchor": "issue-crime-in-arab-society",
+      "options": {
+        "emergency-powers-shin-bet": {
+          "agreement": "agrees",
+          "text": "The party's \"10-point plan\" for what it calls the eighth front includes a new Shin Bet division to fight crime in Arab society, and its August 2026 plan repeats this. The research notes that the party's published plans do not mention holding suspects without trial."
+        },
+        "more-police-resources-normal-law": {
+          "agreement": "disagrees",
+          "text": "The party's \"10-point plan\" makes fighting crime in Arab society a core mission of the Shin Bet, and its platform says the Shin Bet should lead enforcement \"until the police are rebuilt\", which this option rules out; the party also proposes local police forces and more police stations."
+        },
+        "invest-in-arab-communities-first": {
+          "agreement": "disagrees",
+          "text": "The party's \"10-point plan\" centers on enforcement through the Shin Bet, police, courts and sentencing, and the research notes that the party's published plans do not include a separate development-investment plan for Arab communities."
+        }
+      }
+    },
+    "gaza": {
+      "anchor": "issue-gaza",
+      "options": {
+        "resume-fighting-full-control": {
+          "agreement": "partially",
+          "text": "The party's platform shares part of this: it calls for full Israeli control along the perimeter and for a government office to encourage voluntary emigration of Gaza residents. The research found that the party has not said whether it supports going back to full-scale war, and its platform does not call for rebuilding Israeli communities inside Gaza."
+        },
+        "hold-positions-disarmament-first": {
+          "agreement": "agrees",
+          "text": "The research places the party closest to this option: its platform calls for full Israeli control along the perimeter, on the high ground and on the Philadelphi corridor, for army freedom of action inside Gaza, and says Israel should rely only on itself for security. The research adds that the evidence is mixed, because the party has not said whether it supports going back to full-scale war."
+        },
+        "advance-international-arrangement": {
+          "agreement": "disagrees",
+          "text": "The party's platform says Israel should rely only on itself for security and calls for continued Israeli control and freedom of action in Gaza; the research notes that it does not address the US plan's international force or a new Palestinian administration."
+        },
+        "end-war-full-withdrawal": {
+          "agreement": "disagrees",
+          "text": "The party's platform calls for full Israeli control along the perimeter and on the Philadelphi corridor and for army freedom of action inside Gaza, and in April 2025 Hendel wrote that Israel must \"sit there, create a buffer and exact a price\"."
+        },
+        "defeat-hamas-then-security-control": {
+          "agreement": "partially",
+          "text": "The party shares Israeli security control of Gaza, but its platform also calls for a government office to encourage voluntary emigration of Gaza residents, which this option rules out, and the research found that the party has not said whether it supports going back to full-scale war."
+        }
+      }
+    },
+    "haredi-enlistment": {
+      "anchor": "issue-haredi-enlistment",
+      "options": {
+        "anchor-torah-study-exemption": {
+          "agreement": "disagrees",
+          "text": "The party's platform calls for \"an equal enlistment law for all\" at 18, with temporary exemptions only after a test for outstanding Torah scholars, academics and top athletes, and with sanctions on those who do not serve; this is the party's central issue."
+        },
+        "gradual-targets-by-agreement": {
+          "agreement": "partially",
+          "text": "The party shares service frameworks suited to the Haredi way of life, and in August 2026 Hendel pointed to separate frameworks such as the Netzah Yehuda battalion as working solutions, but its platform requires service at 18 for everyone, with sanctions on those who do not serve, rather than yearly targets set by agreement."
+        },
+        "universal-service-with-sanctions": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position: its platform calls for every citizen to serve at 18 in the army or civilian service under \"an equal enlistment law for all\", with exemptions for outstanding Torah scholars, academics and top athletes and loss of state benefits for those who do not serve. Its proposed sanctions go further than this option, including loss of the right to vote and to be elected."
+        },
+        "voluntary-service-for-all": {
+          "agreement": "disagrees",
+          "text": "The party's platform requires every citizen to serve at 18 in the army or civilian service, and lists sanctions for those who do not, including losing state allowances, tax and municipal tax discounts and the right to vote and to be elected."
+        }
+      }
+    },
+    "housing": {
+      "anchor": "issue-housing",
+      "options": {
+        "speed-up-planning-and-construction": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no documented party position on what this option proposes: the party has not published a dedicated housing plan and has not addressed building permits or overall housing supply. Its housing-related commitments are mostly benefits for people who serve and moving population out of the center."
+        },
+        "state-led-affordable-rental": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no documented party position on what this option proposes: the party has not published a dedicated housing plan and has not addressed rental regulation. Its housing-related commitments are mostly benefits for people who serve, including subsidized rent for reservists, and moving population out of the center."
+        },
+        "direct-help-for-buyers": {
+          "agreement": "partially",
+          "text": "The research places the party near this option, though tentatively, because it has no dedicated housing plan: its platform uses service as a main criterion for mortgage discounts and the subsidized-housing program and offers land to reservists, and its August 2026 plan promised subsidies for buying land for those who serve."
+        },
+        "develop-periphery-and-transport": {
+          "agreement": "partially",
+          "text": "The research places the party near this option, though tentatively, because it has no dedicated housing plan: its platform offers corporate-tax breaks to technology companies that employ most of their staff in the Negev, the Galilee or the Jordan Valley, and in October 2026 Hendel said he wants to move population from the center to those areas."
+        }
+      }
+    },
+    "iran-and-regional-security": {
+      "anchor": "issue-iran-and-regional-security",
+      "options": {
+        "military-pressure-until-threats-removed": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position. Its platform calls for an \"aggressive security policy that moves the decision to enemy territory\", says the mission against Iran \"is not finished\", and calls for full control of the high ridges in Lebanon and for a campaign to disarm Hezbollah if it is not disarmed under the agreement; on 7 May 2026 Hendel said \"we have not finished the job in Lebanon\"."
+        },
+        "force-plus-us-backed-agreements": {
+          "agreement": "partially",
+          "text": "The party's platform includes regional cooperation to weaken the Iranian axis, but this is a smaller element: its main line is an offensive security policy to remove the threats, including a campaign in Lebanon if Hezbollah is not disarmed under the agreement."
+        },
+        "prioritize-ending-multifront-war": {
+          "agreement": "disagrees",
+          "text": "The party's platform calls for an \"aggressive security policy\" that replaces containment with initiative and offense, and on 2 March 2026 Hendel said Israel needs to destroy Iran's military capabilities and nuclear infrastructure."
+        },
+        "end-military-operations-regional-peace": {
+          "agreement": "disagrees",
+          "text": "The party's platform calls for full control of the high ridges in Lebanon and the Hermon peak and for a campaign in Lebanon if Hezbollah is not disarmed, and on 7 May 2026 Hendel said \"we have not finished the job in Lebanon\"."
+        }
+      }
+    },
+    "judea-samaria": {
+      "anchor": "issue-judea-samaria",
+      "options": {
+        "full-sovereignty": {
+          "agreement": "partially",
+          "text": "The party shares support for settlement and opposition to a Palestinian state, but in September 2026 its joint list told Ynet it supports sovereignty \"through deeds, not words\" and would back applying Israeli sovereignty where it is possible, for example to the Jordan Valley or a settlement bloc, a narrower step than this option."
+        },
+        "partial-sovereignty-area-c": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position. In September 2026 its joint list told Ynet it supports applying sovereignty where possible, for example to the Jordan Valley, a settlement bloc or another strategic area, and its platform calls for \"winning the struggle\" over land in Area C."
+        },
+        "maintain-current-situation": {
+          "agreement": "partially",
+          "text": "The party shares continued strengthening of settlement and army freedom of action, but in September 2026 its joint list told Ynet it would support applying sovereignty to areas such as the Jordan Valley where possible, which this option excludes."
+        },
+        "separation-two-states": {
+          "agreement": "disagrees",
+          "text": "The party's platform promises to \"act to prevent a Palestinian state in diplomatic channels\", and in 2026 Hendel told the Jerusalem Post \"We will not allow a Palestinian state to be established\"; in September 2026 its joint list told Ynet that settlements built with state and army approval will stay."
+        },
+        "two-states-pre-1967-border": {
+          "agreement": "disagrees",
+          "text": "The party's platform promises to \"act to prevent a Palestinian state in diplomatic channels\", and in September 2026 its joint list told Ynet that on evacuation as part of an agreement the answer is \"No\" and that everything approved by the state and the army will stay."
+        },
+        "one-equal-state": {
+          "agreement": "disagrees",
+          "text": "The party's platform calls for strengthening settlement in Judea and Samaria and for sovereignty \"through deeds\", and in September 2026 its joint list told Ynet it would support applying Israeli sovereignty to strategic areas such as the Jordan Valley where possible."
+        }
+      }
+    },
+    "judicial-system": {
+      "anchor": "issue-judicial-system",
+      "options": {
+        "continue-judicial-changes": {
+          "agreement": "partially",
+          "text": "The party shares some elements, such as splitting the attorney general's role and a Knesset say in the committee that selects judges, but its platform calls for corrections \"under broad agreements and in a joint public process\", and in September 2026 its joint list told Ynet the Knesset override should need more than 72 of 120 members."
+        },
+        "broad-agreed-constitutional-framework": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position. Its platform promises \"corrections in the justice system under broad agreements and in a joint public process\" and a \"Basic Law: Legislation\", and in September 2026 its joint list told Ynet the Knesset should be able to override a Supreme Court ruling cancelling a law only with a majority of more than 72 of 120 members."
+        },
+        "repeal-changes-protect-independence": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: in September 2026 its joint list told Ynet \"We are in favor of changes in the justice system\", with a Basic Law: Legislation as the first step, a narrowed \"reasonableness\" ground and a \"balanced\" make-up, set by Knesset members, for the committee that selects judges."
+        },
+        "keep-current-system-stability": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: in September 2026 its joint list told Ynet \"We are in favor of changes in the justice system\", and its platform lists a Basic Law: Legislation, external review of the justice system and splitting the attorney general's role."
+        }
+      }
+    },
+    "october-7-inquiry": {
+      "anchor": "issue-october-7-inquiry",
+      "options": {
+        "state-commission-under-existing-law": {
+          "agreement": "agrees",
+          "text": "The party called on 15 October 2025 for a state commission of inquiry to be set up immediately, and in October 2026 its joint list told Ynet it favors one appointed by the Supreme Court, preferably Justice Noam Sohlberg, while also preferring a make-up reached by broad agreement."
+        },
+        "commission-appointed-by-knesset-balance": {
+          "agreement": "disagrees",
+          "text": "In October 2026 the party's joint list told Ynet that a state commission of inquiry should be appointed by the Supreme Court, preferably Justice Noam Sohlberg, rather than by the Knesset, though it also prefers a composition reached by broad agreement."
+        },
+        "commission-chosen-by-neutral-mechanism": {
+          "agreement": "partially",
+          "text": "The party's emphasis on a broadly agreed make-up, shown in its 16 October 2025 letter asking President Herzog to host talks on the commission's composition, overlaps with this option, but in October 2026 its joint list told Ynet the Supreme Court should appoint the commission rather than a separate neutral method."
+        }
+      }
+    },
+    "religion-and-state": {
+      "anchor": "issue-religion-and-state",
+      "options": {
+        "strengthen-jewish-character": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no documented party position on what this option proposes: the party's platform and 2026 statements do not address marriage, conversion, kosher certification or Shabbat. The tentative evidence, statements by Hendel in September 2021 when he was communications minister, points toward keeping the Rabbinate while allowing alternatives."
+        },
+        "keep-status-quo": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no documented party position on what this option proposes: the party's platform and 2026 statements do not address marriage, conversion, kosher certification or Shabbat. The tentative evidence, statements by Hendel in September 2021 when he was communications minister, points toward keeping the Rabbinate while allowing alternatives."
+        },
+        "more-choice-local-decisions": {
+          "agreement": "partially",
+          "text": "The research places the party closest to this option, but tentatively: it rests on statements by Hendel in September 2021, when he was communications minister, that mayors should decide on Shabbat public transport and that an alternative is needed for those who cannot marry, and the party has no current formal position on these questions."
+        },
+        "separate-religion-and-state": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no documented party position on what this option proposes: the party's platform and 2026 statements do not address marriage, conversion, kosher certification or Shabbat. The tentative evidence, statements by Hendel in September 2021 when he was communications minister, points toward keeping the Rabbinate while allowing alternatives."
+        }
+      }
+    }
+  },
+  "points": [
+    {
+      "text": "The party's platform proposes priority for reservists in public-sector jobs and for reservists' businesses in state tenders, compensation for employers of reservists and support for small businesses run by reservists, and its August 2026 plan adds full funding of bachelor's and master's degrees for those who serve.",
+      "anchor": "other-reservist-benefits"
+    },
+    {
+      "text": "The party's platform calls for strengthening Israeli defense industries and producing weapons in Israel, and for enlarging the regular army, the career army and the reserves.",
+      "anchor": "other-defense-industry"
+    },
+    {
+      "text": "The party lists a dedicated \"PTSD plan\" among its work plans, and its August 2026 plan promised to expand rehabilitation and mental-health services, support bereaved families and create special tracks back to study and work for those hurt in the fighting.",
+      "anchor": "other-wounded-and-mental-health"
+    }
+  ]
+}

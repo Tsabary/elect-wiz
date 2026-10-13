@@ -1,0 +1,234 @@
+{
+  "partyId": "yisrael-beytenu",
+  "lang": "en",
+  "issues": {
+    "cost-of-living": {
+      "anchor": "issue-cost-of-living",
+      "options": {
+        "open-market-competition-imports": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position: as finance minister, Liberman promoted the import reform passed in the November 2021 Arrangements Law, which let products meeting foreign standards in without additional Israeli testing, and the platform calls for ending the status of exclusive importers and eliminating monopolies in the food market."
+        },
+        "cut-taxes-and-government-spending": {
+          "agreement": "partially",
+          "text": "The party shares part of this: five of its MKs, including Liberman, voted against raising VAT from 17% to 18% on 11 March 2024, and its platform calls for reducing regulation and cutting the number of government ministries. Its main recorded emphasis is on competition and imports."
+        },
+        "active-state-regulation": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is to open the market and reduce regulation, as in its September 2025 document of principles, and no party proposal for price supervision or a tax on high profits was found. It does share the aim of acting against dominant companies, as its platform calls for regulating parallel imports and eliminating food-market monopolies."
+        },
+        "direct-support-for-households": {
+          "agreement": "partially",
+          "text": "The party also proposes direct help: Liberman's January 2026 economic plan included a negative income tax for low earners and a 20% rise in income-support allowances, and in February 2022 he and Bennett presented a NIS 4.4 billion plan with a tax credit for working parents. This is a secondary element beside the party's main emphasis on competition and imports."
+        }
+      }
+    },
+    "crime-in-arab-society": {
+      "anchor": "issue-crime-in-arab-society",
+      "options": {
+        "emergency-powers-shin-bet": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position: its platform calls for legislation allowing administrative detention (detention without trial) of heads of crime organizations and the use of spyware, and in September 2025 and September 2026 Liberman called for involving the Shin Bet. The platform does not limit these measures to Arab communities."
+        },
+        "more-police-resources-normal-law": {
+          "agreement": "partially",
+          "text": "The party also calls for more police, with 3,000 more officers in its platform, but it pairs this with special powers, such as detention without trial of crime bosses and Shin Bet involvement, which your answer rules out."
+        },
+        "invest-in-arab-communities-first": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is enforcement: its platform calls for zero tolerance, a national headquarters against organized crime, dedicated courts, administrative detention and 3,000 more police officers, and Liberman proposed Shin Bet involvement in September 2025 and September 2026. No party proposal for investing in Arab communities as the first step was found."
+        }
+      }
+    },
+    "gaza": {
+      "anchor": "issue-gaza",
+      "options": {
+        "resume-fighting-full-control": {
+          "agreement": "partially",
+          "text": "The party shares the call to renew the war: on 5 October 2026 Liberman said there is no alternative to the complete elimination of Hamas by the IDF. It differs on control, as its platform hands responsibility for Gaza to an agreed international body, and the research records no party position on encouraging residents to leave or rebuilding Israeli communities there."
+        },
+        "hold-positions-disarmament-first": {
+          "agreement": "partially",
+          "text": "The party shares the emphasis on keeping the IDF's freedom of action in Gaza, but its documented position is to renew the war until Hamas is eliminated, as Liberman said after the attack of 19 October 2025 and in his plan of 5 October 2026, rather than to hold current positions until Hamas disarms."
+        },
+        "advance-international-arrangement": {
+          "agreement": "disagrees",
+          "text": "The party shares one element: its platform and its September 2025 document of principles propose transferring responsibility for Gaza to an international body, the latter in coordination with the United States. It does not support the plan itself, as it wants the IDF to eliminate Hamas first, and in August 2026 Liberman criticized the US-led Board of Peace plan, saying it would let about $160 million reach Hamas's military wing, an account the IDF disputed in part."
+        },
+        "end-war-full-withdrawal": {
+          "agreement": "disagrees",
+          "text": "The party holds the opposite: on 5 October 2026 Liberman said there is no alternative to the complete elimination of Hamas by the IDF, and in October 2025 he said Israel should have announced it was renewing the war. Its platform also keeps the IDF's freedom of action in Gaza."
+        },
+        "defeat-hamas-then-security-control": {
+          "agreement": "agrees",
+          "text": "That is the party's closest recorded option: on 5 October 2026 Liberman said Hamas, military and civilian wings, must be eliminated by the IDF, after which an external body would govern Gaza, and the platform keeps the IDF's freedom of action. The party hands civil responsibility to an international body rather than a local administration."
+        }
+      }
+    },
+    "haredi-enlistment": {
+      "anchor": "issue-haredi-enlistment",
+      "options": {
+        "anchor-torah-study-exemption": {
+          "agreement": "disagrees",
+          "text": "All six party MKs voted against Basic Law: Torah Study on 13 July 2026 and against the law barring arrests of Haredi men who do not report for service on 14 July 2026, and Liberman pledged to cancel the Basic Law in the next government. The platform calls instead for compulsory service at 18 for every citizen."
+        },
+        "gradual-targets-by-agreement": {
+          "agreement": "partially",
+          "text": "The party shares the aim of bringing Haredim into service, and its platform proposes a dedicated framework for them within the Home Front Command or civilian national service. It calls, however, for compulsory service at 18 with loss of benefits for those who do not serve, rather than yearly targets set by agreement."
+        },
+        "universal-service-with-sanctions": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position: its platform calls for compulsory service at 18 for every citizen, military or civilian, with loss of allowances, housing and property-tax discounts for those who do not serve, and all six MKs voted against Basic Law: Torah Study on 13 July 2026. Liberman's January 2026 letter to opposition leaders specified no quotas or exemptions."
+        },
+        "voluntary-service-for-all": {
+          "agreement": "disagrees",
+          "text": "The party holds the opposite: its platform calls for compulsory service at 18 for every citizen, with loss of rights and benefits for those who do not serve, and all six MKs voted against Basic Law: Torah Study on 13 July 2026."
+        }
+      }
+    },
+    "housing": {
+      "anchor": "issue-housing",
+      "options": {
+        "speed-up-planning-and-construction": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position: its platform names increasing housing supply as the main solution, with industrialized construction to shorten building times. No party vote specific to housing was found in the research."
+        },
+        "state-led-affordable-rental": {
+          "agreement": "disagrees",
+          "text": "The party's platform names increasing housing supply as the main solution, and the research records no party position on affordable-unit requirements or rent limits. It does share one element, as the platform includes expanding long-term rental projects."
+        },
+        "direct-help-for-buyers": {
+          "agreement": "partially",
+          "text": "Liberman's January 2026 economic plan proposed mortgages of 90% of a home's value, repayable over up to 40 years, for homes worth less than NIS 2.5 million, which matches part of your answer. This is a secondary element beside the party's main emphasis on building more homes."
+        },
+        "develop-periphery-and-transport": {
+          "agreement": "disagrees",
+          "text": "The party's recorded housing positions are to increase supply and to offer larger, longer mortgages. The research records no party housing proposal on transport, jobs or neighborhood renewal; the platform's support for settlement in the Negev and Galilee is part of its broader Zionist settlement vision."
+        }
+      }
+    },
+    "iran-and-regional-security": {
+      "anchor": "issue-iran-and-regional-security",
+      "options": {
+        "military-pressure-until-threats-removed": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position: on 3 March 2026 Liberman said the operation against Iran must end with the overthrow of the regime and the elimination of Hezbollah, and on 16 April 2026 he called the Lebanon ceasefire a betrayal of the residents of the north. The platform calls for a missile corps and stronger air defense."
+        },
+        "force-plus-us-backed-agreements": {
+          "agreement": "partially",
+          "text": "The party shares the use of military pressure, but its recorded statements reject stopping short of removing the threats: on 9 April 2026 Liberman called the Iran ceasefire a partial achievement, and on 16 June 2026 he said a US-Iran agreement turns Iran into a nuclear power and that Israel can tell Trump no."
+        },
+        "prioritize-ending-multifront-war": {
+          "agreement": "disagrees",
+          "text": "On 16 April 2026 Liberman said it is forbidden to end the war without a clear decision and the elimination of Hezbollah, and called the Lebanon ceasefire a betrayal of the residents of the north."
+        },
+        "end-military-operations-regional-peace": {
+          "agreement": "disagrees",
+          "text": "The party holds the opposite: on 9 April 2026 Liberman said it is a matter of time until Israel returns for another round with Iran, and the platform calls for expanding military capabilities, including a missile corps."
+        }
+      }
+    },
+    "judea-samaria": {
+      "anchor": "issue-judea-samaria",
+      "options": {
+        "full-sovereignty": {
+          "agreement": "partially",
+          "text": "The party supports applying sovereignty to specific areas: all six MKs voted for the Ma'ale Adumim bill and for a bill covering the areas of settlement in Judea and Samaria on 22 October 2025. It does not call for all of Judea and Samaria; on 23 September 2026 Liberman said Israel keeps absolute control of Area C, and he proposed that Jordan take responsibility for Areas A and B."
+        },
+        "partial-sovereignty-area-c": {
+          "agreement": "agrees",
+          "text": "That is the party's closest recorded option: the Ma'ale Adumim sovereignty bill sponsored by Liberman passed a preliminary reading on 22 October 2025, and on 23 September 2026 he said Israel keeps absolute control of Area C. The party's proposal gives Jordan, rather than the Palestinians, the administration of Areas A and B."
+        },
+        "maintain-current-situation": {
+          "agreement": "partially",
+          "text": "The party shares keeping Israeli security responsibility throughout, as in Liberman's plan of 5 October 2026. It differs by supporting the application of sovereignty to specific areas, as in its MKs' votes on 22 October 2025, and by proposing to dismantle the Palestinian Authority."
+        },
+        "separation-two-states": {
+          "agreement": "disagrees",
+          "text": "The party's 2026 proposals take a different direction: on 5 October 2026 Liberman presented a plan to dismantle the Palestinian Authority, cancel the Oslo Accords and give Jordan responsibility for daily affairs in Areas A and B, and the platform prefers a comprehensive regional package deal to a bilateral agreement with the Palestinians."
+        },
+        "two-states-pre-1967-border": {
+          "agreement": "disagrees",
+          "text": "The party holds otherwise: all six MKs voted for sovereignty bills on 22 October 2025, and Liberman's plan of 5 October 2026 cancels the Oslo Accords, dismantles the Palestinian Authority and keeps Israeli security responsibility throughout."
+        },
+        "one-equal-state": {
+          "agreement": "disagrees",
+          "text": "The party holds a different position: it supports applying Israeli sovereignty to specific areas, as in its MKs' votes on 22 October 2025, and on 5 October 2026 Liberman presented a plan to dismantle the Palestinian Authority and give Jordan responsibility for daily affairs in Areas A and B."
+        }
+      }
+    },
+    "judicial-system": {
+      "anchor": "issue-judicial-system",
+      "options": {
+        "continue-judicial-changes": {
+          "agreement": "disagrees",
+          "text": "The party holds the opposite: all six MKs voted against the law on the attorney general's legal opinions on 15 July 2026, and its platform opposes the override clause and proposes a constitution and a constitutional court instead."
+        },
+        "broad-agreed-constitutional-framework": {
+          "agreement": "agrees",
+          "text": "That is the party's closest recorded option: its platform calls for a constitution and a constitutional court, and a September 2026 overview reports a plan to put a written constitution to a national referendum, with amendments needing at least 80 of 120 MKs. The party differs by rejecting any override clause."
+        },
+        "repeal-changes-protect-independence": {
+          "agreement": "partially",
+          "text": "The party shares the emphasis on independent courts: its September 2025 document of principles describes a constitution as defending the independence of the judicial system, and all six MKs voted against the law on the attorney general's legal opinions on 15 July 2026. No source was found stating whether it would repeal the 2025 judicial selection law."
+        },
+        "keep-current-system-stability": {
+          "agreement": "disagrees",
+          "text": "The party does not support keeping the current system: all six MKs voted against the law on the attorney general's legal opinions on 15 July 2026, and its platform proposes a new constitution and a constitutional court. No source was found stating whether it would repeal the 2025 judicial selection law."
+        }
+      }
+    },
+    "october-7-inquiry": {
+      "anchor": "issue-october-7-inquiry",
+      "options": {
+        "state-commission-under-existing-law": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position: in its written answer to an October 2026 Ynet questionnaire it supported a state commission of inquiry exactly according to the existing law, and its MKs voted for opposition bills for such a commission on 17 July 2024, 12 November 2025 and 1 July 2026."
+        },
+        "commission-appointed-by-knesset-balance": {
+          "agreement": "disagrees",
+          "text": "Five party MKs voted against the coalition's bill for a commission picked through the Knesset on 24 December 2025, and the party's position is a state commission under the existing law, in which the President of the Supreme Court chooses the members."
+        },
+        "commission-chosen-by-neutral-mechanism": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is a state commission of inquiry exactly according to the existing law, under which the President of the Supreme Court chooses the members, as in its written answer to an October 2026 Ynet questionnaire. The research records no party position on a different neutral mechanism."
+        }
+      }
+    },
+    "religion-and-state": {
+      "anchor": "issue-religion-and-state",
+      "options": {
+        "strengthen-jewish-character": {
+          "agreement": "disagrees",
+          "text": "The party holds the opposite direction: its platform calls for civil marriage and divorce for every citizen and for Shabbat public transport by local decision, and all six MKs voted against the law letting rabbinical courts arbitrate civil disputes on 24 March 2026."
+        },
+        "keep-status-quo": {
+          "agreement": "partially",
+          "text": "The party keeps the Chief Rabbinate, with its platform calling for one Chief Rabbi for Israel, but it wants larger changes than your answer allows: civil marriage and divorce for every citizen, Shabbat public transport by local decision, and private kosher certification, whose repeal all six MKs voted against on 15 July 2026."
+        },
+        "more-choice-local-decisions": {
+          "agreement": "agrees",
+          "text": "That is the party's closest recorded option: the 2021 Arrangements Law, promoted by Liberman, opened kosher certification to private bodies alongside the Chief Rabbinate, and the platform calls for Shabbat public transport by local decision. The party goes further on marriage, supporting civil marriage and divorce for everyone."
+        },
+        "separate-religion-and-state": {
+          "agreement": "partially",
+          "text": "The party shares part of this: its platform calls for civil marriage and divorce for every citizen and for Shabbat public transport by local decision. It does not call for full separation, as the platform also keeps one Chief Rabbi for Israel and adopts the Nissim Report on conversion."
+        }
+      }
+    }
+  },
+  "points": [
+    {
+      "text": "The party supports the death penalty for terrorists: it says it first submitted such a bill in March 2015, and Liberman, Forer, Malinovsky and Sova voted for the law the Knesset passed on 30 March 2026, although six of its MKs voted against an opposition bill on the subject on 13 October 2021 while the party was in the coalition.",
+      "anchor": "other-death-penalty"
+    },
+    {
+      "text": "The party's platform calls for limiting a prime minister to two terms, cutting the number of ministers and barring anyone under indictment from forming a government.",
+      "anchor": "other-governance"
+    },
+    {
+      "text": "The party's platform proposes cancelling child allowances from the fifth child onward, and its January 2026 economic plan proposed a significant cut in child allowances, which it presents alongside cutting state subsidies to the Haredi sector.",
+      "anchor": "other-welfare"
+    }
+  ]
+}

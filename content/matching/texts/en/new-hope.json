@@ -1,0 +1,234 @@
+{
+  "partyId": "new-hope",
+  "lang": "en",
+  "issues": {
+    "cost-of-living": {
+      "anchor": "issue-cost-of-living",
+      "options": {
+        "open-market-competition-imports": {
+          "agreement": "partially",
+          "text": "The research places the party closest to your answer, but tentatively: it rests on the party's plan for the March 2021 election, its MKs' votes for the Economic Plan Law on 4 November 2021 (which aligned import requirements with European Union standards), and the 2022 National Unity principles. None of this evidence dates from after September 2024."
+        },
+        "cut-taxes-and-government-spending": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no documented party position on cutting taxes and spending to lower prices. Its tentative indication of the party's position, from 2021 and 2022 evidence, points to more competition and easier imports."
+        },
+        "active-state-regulation": {
+          "agreement": "partially",
+          "text": "The party's plan for the March 2021 election would have given the Consumer Protection Authority more power to punish businesses, which touches on your answer. The research treats this as a small part of a plan that centres on competition and imports, and as a tentative placement."
+        },
+        "direct-support-for-households": {
+          "agreement": "party-position-unclear",
+          "text": "In November and December 2021 the party's MKs who voted opposed opposition bills to raise child and disability allowances; Sa'ar said in June 2022 that the party would have liked to vote for such bills but was bound by coalition discipline and budget constraints. The research found no party position of its own on this approach, and its tentative indication, from 2021 and 2022 evidence, points to competition and imports."
+        }
+      }
+    },
+    "crime-in-arab-society": {
+      "anchor": "issue-crime-in-arab-society",
+      "options": {
+        "emergency-powers-shin-bet": {
+          "agreement": "partially",
+          "text": "On 10 December 2025 Elkin, Haskel and Hasson voted for a bill, passed in a preliminary reading, that Maariv described as letting the police and the Shin Bet use Shin Bet tools against crime organizations. The research places this tentatively, as no party statement explains the vote and no proposal by Sa'ar for a Shin Bet role or holding suspects without trial was found."
+        },
+        "more-police-resources-normal-law": {
+          "agreement": "partially",
+          "text": "As justice minister in 2021 and 2022, Sa'ar worked through criminal law and police powers, and a minimum-sentence law on illegal weapons passed on 7 December 2021. The research places this tentatively, and notes that his bill on searches without a court warrant went further than your answer's \"no special powers\"."
+        },
+        "invest-in-arab-communities-first": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no statement by the party's leaders on funding for Arab communities as a way to reduce crime. The party's documented record is about enforcement, such as tougher sentences and wider police powers."
+        }
+      }
+    },
+    "gaza": {
+      "anchor": "issue-gaza",
+      "options": {
+        "resume-fighting-full-control": {
+          "agreement": "disagrees",
+          "text": "Sa'ar, as foreign minister, said on 14 July 2025 that Israel has no intention of controlling Gaza in the long term, and on 23 October 2025 that Israel is committed to the success of President Trump's plan. The research found no statement by Sa'ar or Elkin calling for settlement in Gaza; on emigration, Sa'ar said in September 2026 that Israel would not force anyone to leave and would not oppose those who choose to."
+        },
+        "hold-positions-disarmament-first": {
+          "agreement": "partially",
+          "text": "Sa'ar has insisted that Hamas disarm first, saying on 23 October 2025 \"We will not compromise on it\", and has described the Palestinian Authority as still sponsoring terrorism. The party's main documented position, however, is to support the US plan with its international arrangement, and your answer is a secondary element of its position."
+        },
+        "advance-international-arrangement": {
+          "agreement": "agrees",
+          "text": "That is the party's closest documented position, resting mostly on statements: on 23 October 2025 Sa'ar, as foreign minister, said Israel is committed to the success of President Trump's plan, while insisting that Hamas disarm and Gaza be demilitarized."
+        },
+        "end-war-full-withdrawal": {
+          "agreement": "partially",
+          "text": "The party's documented position is a neighbouring one: supporting the US plan for Gaza, on condition that Hamas disarms first. Sa'ar said on 14 July 2025 that Israel has no intention of controlling Gaza in the long term, but he describes the Palestinian Authority as still sponsoring terrorism, whereas your answer hands control to a Palestinian government as a step toward a Palestinian state."
+        },
+        "defeat-hamas-then-security-control": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is a different one: supporting the US plan for Gaza, with Hamas disarmed first. On 14 July 2025 Sa'ar said that if Hamas is ready to lay down its arms \"we can do it on a political path\", and that Israel has no intention of controlling Gaza in the long term."
+        }
+      }
+    },
+    "haredi-enlistment": {
+      "anchor": "issue-haredi-enlistment",
+      "options": {
+        "anchor-torah-study-exemption": {
+          "agreement": "agrees",
+          "text": "The research calls the evidence mixed and gives more weight to the party's most recent actions. Elkin, Buskila and Hasson voted for \"Basic Law: Torah Study\", which passed on 13 July 2026, and for the temporary law of 14 July 2026 suspending enforcement against yeshiva students, which the High Court of Justice struck down on 3 September 2026."
+        },
+        "gradual-targets-by-agreement": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is a different one: Elkin, Buskila and Hasson voted for the Torah-study basic law on 13 July 2026 and, on 14 July 2026, for a temporary law suspending enforcement against yeshiva students. The research records no party position on yearly enlistment targets."
+        },
+        "universal-service-with-sanctions": {
+          "agreement": "partially",
+          "text": "In June 2024, in opposition, Sa'ar said that if a good enlistment law cannot be passed it is better to pass none. This is a secondary element of the party's position: in the November 2024 coalition agreement it gave up the right to vote differently on enlistment bills, and in July 2026 three of its four MKs voted for a law suspending enforcement against yeshiva students."
+        },
+        "voluntary-service-for-all": {
+          "agreement": "partially",
+          "text": "The party's main documented position is a neighbouring one: in July 2026 three of its four MKs voted for a temporary law suspending enforcement against yeshiva students, so that group would not be compelled to serve. It does not share your answer's wider principle: the suspension depended on at least 45 study hours a week, and the same MKs voted to extend men's mandatory service from 30 to 32 months."
+        }
+      }
+    },
+    "housing": {
+      "anchor": "issue-housing",
+      "options": {
+        "speed-up-planning-and-construction": {
+          "agreement": "partially",
+          "text": "The research places the party tentatively near your answer, on the basis of Ze'ev Elkin's 2021 to 2022 term as housing minister and not a current party platform. In August 2021 the Knesset extended the fast-track planning route for preferred housing sites, which he had backed, and in September 2023 he said the root of the solution is to increase supply dramatically."
+        },
+        "state-led-affordable-rental": {
+          "agreement": "partially",
+          "text": "The party's plan for the March 2021 election included 100,000 rental apartments within ten years through an organised long-term rental market, and Elkin said in 2023 that his ministry promoted long-term rentals at a fixed, index-linked rent. The research found no proposal by him to limit rents in the private market, and the placement is tentative."
+        },
+        "direct-help-for-buyers": {
+          "agreement": "partially",
+          "text": "On 9 September 2021 the Israel Land Council approved Elkin's \"Target Price 2.1\" program, which gives eligible buyers a 20% discount of up to NIS 300,000, and in September 2023 he supported keeping it. The research treats this as one tentative element of the party's housing position, resting on his 2021 to 2022 term and not on a current platform."
+        },
+        "develop-periphery-and-transport": {
+          "agreement": "partially",
+          "text": "The party's plan for the March 2021 election included urban renewal of 5,000 buildings with an emphasis on the periphery, and Elkin led a government plan approved on 16 April 2026 to develop the Golan Heights, including housing construction. The placement is tentative, and the research notes that the Golan plan is not presented as a housing-price policy."
+        }
+      }
+    },
+    "iran-and-regional-security": {
+      "anchor": "issue-iran-and-regional-security",
+      "options": {
+        "military-pressure-until-threats-removed": {
+          "agreement": "partially",
+          "text": "Sa'ar said on 10 March 2026 that the aim of the war with Iran is to remove existential threats to Israel for the long term, and on 2 September 2026 that Israel \"will not allow\" Iran to achieve nuclear weapons. The party's documented position is a neighbouring one, combining force with US-backed agreements: in July 2026 Sa'ar announced further talks with Lebanon under a US-brokered framework."
+        },
+        "force-plus-us-backed-agreements": {
+          "agreement": "agrees",
+          "text": "That is the party's documented position, resting on statements: in July 2026 Sa'ar announced a further round of talks with Lebanon under a US-brokered framework that provides for disarming Hezbollah and a gradual Israeli withdrawal, which Israel ties to progress in dismantling Hezbollah's military capabilities."
+        },
+        "prioritize-ending-multifront-war": {
+          "agreement": "disagrees",
+          "text": "Sa'ar said on 10 March 2026 that Israel is not looking for an endless war, but that it would continue until Israel and its partners think it appropriate to stop. He described the aim as removing existential threats from Iran to Israel for the long term, which differs from putting an end to the fighting first."
+        },
+        "end-military-operations-regional-peace": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is to combine military pressure with US-backed agreements. On 30 September 2024 Sa'ar defended the government's escalation against Hezbollah in a Knesset speech, and Israel ties its withdrawal from southern Lebanon to progress in dismantling Hezbollah's military capabilities."
+        }
+      }
+    },
+    "judea-samaria": {
+      "anchor": "issue-judea-samaria",
+      "options": {
+        "full-sovereignty": {
+          "agreement": "disagrees",
+          "text": "On 30 April 2026 Sa'ar said Israel does not intend to apply sovereignty in Judea and Samaria at least in the coming months, and would do so only in coordination with the United States. The party's MKs who voted also opposed, with the coalition, opposition bills to apply sovereignty to the Jordan Valley (22 January 2025, Buskila) and to Beitar Illit (31 December 2025, Elkin and Hasson)."
+        },
+        "partial-sovereignty-area-c": {
+          "agreement": "partially",
+          "text": "Sa'ar describes applying sovereignty as a possible later step, in coordination with the United States, and on 23 July 2025 all four of the party's MKs voted for the motion adopted after a Knesset debate on applying sovereignty. The party's recorded position for now is no sovereignty, and its MKs voted against sovereignty bills for the Jordan Valley in January 2025 and for Beitar Illit in December 2025."
+        },
+        "maintain-current-situation": {
+          "agreement": "agrees",
+          "text": "That is the party's documented position. On 30 April 2026 Sa'ar said Israel does not intend to apply sovereignty in the coming months, that the government opposes a Palestinian state, and that it is advancing measures on the ground in the settlements."
+        },
+        "separation-two-states": {
+          "agreement": "disagrees",
+          "text": "On 30 April 2026 Sa'ar said the government opposes a Palestinian state, and in July 2025 he described the Palestinian Authority as still sponsoring terrorism and incitement. The party's documented position is to keep the current situation, with continued settlement."
+        },
+        "two-states-pre-1967-border": {
+          "agreement": "disagrees",
+          "text": "On 30 April 2026 Sa'ar said the government opposes a Palestinian state and is advancing measures on the ground in the settlements. In November 2021 Elkin, as housing minister, said the government \"was not formed as the government of a freeze in Judea and Samaria\"."
+        },
+        "one-equal-state": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is to keep the current situation, with continued settlement and no sovereignty for now. On 30 April 2026 Sa'ar said the government opposes a Palestinian state, and the research records no statement by the party in favour of one state with equal rights."
+        }
+      }
+    },
+    "judicial-system": {
+      "anchor": "issue-judicial-system",
+      "options": {
+        "continue-judicial-changes": {
+          "agreement": "agrees",
+          "text": "The party's votes since 2025 support this. On 15 July 2026 Elkin, Hasson, Buskila and Haskel voted for the law under which the government may decide that the attorney general's opinions are not binding, except in criminal matters, and on 27 March 2025 the party's MKs voted for the new law on choosing judges, which Sa'ar co-authored."
+        },
+        "broad-agreed-constitutional-framework": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is a different one: changing the judicial system through legislation. Sa'ar co-authored the 27 March 2025 law on choosing judges, which he presented as a compromise and which the research says gives the opposition a veto over Supreme Court appointments; it passed after the opposition boycotted the vote, and the research records no party proposal for a constitution."
+        },
+        "repeal-changes-protect-independence": {
+          "agreement": "disagrees",
+          "text": "Sa'ar co-authored the new law on choosing judges with Justice Minister Yariv Levin, and the party's MKs voted for it on 27 March 2025. On 15 July 2026 Elkin, Hasson, Buskila and Haskel also voted for the law letting the government decide that the attorney general's opinions are not binding, except in criminal matters."
+        },
+        "keep-current-system-stability": {
+          "agreement": "disagrees",
+          "text": "The party has voted for further changes since the law on choosing judges passed on 27 March 2025. In October 2025 its MKs voted in a preliminary reading for a bill to split the attorney general's role, on 2 June 2026 for the Attorney General and Chief Prosecutor bill in its first reading, and on 15 July 2026 for the law letting the government decide the attorney general's opinions are not binding."
+        }
+      }
+    },
+    "october-7-inquiry": {
+      "anchor": "issue-october-7-inquiry",
+      "options": {
+        "state-commission-under-existing-law": {
+          "agreement": "partially",
+          "text": "On 17 July 2024, in opposition, Sa'ar, Elkin, Haskel and Buskila voted for two bills to set up a state commission of inquiry. This is a secondary element of the party's position: after the party rejoined the coalition, every New Hope MK who voted on similar bills voted against them in March 2025, November 2025 and July 2026."
+        },
+        "commission-appointed-by-knesset-balance": {
+          "agreement": "agrees",
+          "text": "The party's votes since 2025 are closest to this, though the research calls the evidence mixed and notes that Elkin objected to a design that lets the coalition pick all members. On 24 December 2025 Buskila voted in a preliminary reading for the coalition's bill, which proposes a commission whose members are picked through the Knesset."
+        },
+        "commission-chosen-by-neutral-mechanism": {
+          "agreement": "partially",
+          "text": "The party's recorded position is a neighbouring one: a commission appointed through the Knesset. Ze'ev Elkin, however, cast the only vote against the coalition's bill for such a commission in the Ministerial Committee for Legislation in December 2025, warning that if the opposition boycotted, the coalition would appoint all the members."
+        }
+      }
+    },
+    "religion-and-state": {
+      "anchor": "issue-religion-and-state",
+      "options": {
+        "strengthen-jewish-character": {
+          "agreement": "partially",
+          "text": "This is a secondary element of the party's position, which the research calls mixed. Elkin, Buskila and Hasson voted for \"Basic Law: Torah Study\" on 13 July 2026 and for the Religious Courts (Arbitration) Law on 24 March 2026, which lean toward a larger role for religion."
+        },
+        "keep-status-quo": {
+          "agreement": "agrees",
+          "text": "The research places the party mostly here, though it calls the evidence mixed. On 19 November 2025 Elkin, Haskel and Hasson voted against two bills to run public transport on Shabbat, in their preliminary reading."
+        },
+        "more-choice-local-decisions": {
+          "agreement": "partially",
+          "text": "The party's recorded position is mostly to keep the current arrangements, a neighbouring option to yours. On 19 November 2025 Elkin, Haskel and Hasson voted against bills to run public transport on Shabbat, and no position on civil marriage was found after January 2021, when Sa'ar said the party would hold discussions on marriage equality."
+        },
+        "separate-religion-and-state": {
+          "agreement": "disagrees",
+          "text": "The party's documented votes point toward keeping or increasing the role of religion. On 19 November 2025 Elkin, Haskel and Hasson voted against bills to run public transport on Shabbat, and in 2026 Elkin, Buskila and Hasson voted for \"Basic Law: Torah Study\" and the Religious Courts (Arbitration) Law."
+        }
+      }
+    }
+  },
+  "points": [
+    {
+      "text": "On 5 March 2025 Sa'ar, Elkin, Buskila and Haskel voted in a preliminary reading for a bill to regulate the use of cannabis for medical purposes, a subject on which the party's November 2024 coalition agreement lets it vote differently from the coalition.",
+      "anchor": "other-medical-cannabis"
+    },
+    {
+      "text": "Ze'ev Elkin, as a minister in the Finance Ministry, heads the directorate for rebuilding the north, backed the Tekuma law supporting the Gaza border area through 2028, and led the Golan development plan approved in April 2026.",
+      "anchor": "other-north-south-rehabilitation"
+    },
+    {
+      "text": "The party's MKs voted in July 2026 for a temporary law extending men's regular military service from 30 to 32 months through June 2029, with extra payments for affected soldiers.",
+      "anchor": "other-military-service-length"
+    }
+  ]
+}

@@ -1,0 +1,234 @@
+{
+  "partyId": "zehut",
+  "lang": "en",
+  "issues": {
+    "cost-of-living": {
+      "anchor": "issue-cost-of-living",
+      "options": {
+        "open-market-competition-imports": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position: its 2026 platform commits to cancelling tariffs and import quotas, opening imports and dismantling monopolies, and on 29 September 2026 party leader Moshe Feiglin launched a video campaign against the agricultural production boards, which he said raise food prices."
+        },
+        "cut-taxes-and-government-spending": {
+          "agreement": "partially",
+          "text": "The party's 2026 platform includes this: a \"flat tax\" at a single rate \"as low as possible\", a uniform cut in corporate tax and restraint in public spending. The research names it together with, and after, the party's commitment to opening markets and imports."
+        },
+        "active-state-regulation": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: its 2026 platform rejects price supervision and subsidies as the main tool and calls for less state involvement in the economy. It does share a commitment to fighting monopolies."
+        },
+        "direct-support-for-households": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is lower prices through open markets and lower taxes: its 2026 platform rejects subsidies as the main tool and calls for restraint in public spending."
+        }
+      }
+    },
+    "crime-in-arab-society": {
+      "anchor": "issue-crime-in-arab-society",
+      "options": {
+        "emergency-powers-shin-bet": {
+          "agreement": "agrees",
+          "text": "The party's 2026 platform matches the Shin Bet part of your answer: it would define protection rackets as terrorism of the most serious level and hand their handling to the Shin Bet. It does not match the rest: the same platform says \"the use of administrative detention will be abolished\", so it opposes holding suspects without trial, which is part of your answer."
+        },
+        "more-police-resources-normal-law": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: its 2026 platform would define protection rackets as terrorism and hand their handling to the Shin Bet, rather than leave it to the police under normal law. It does share a commitment to a determined operation against illegal weapons."
+        },
+        "invest-in-arab-communities-first": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is enforcement: its 2026 platform treats protection rackets as \"a sovereign threat, not ordinary crime\" and would hand them to the Shin Bet, and it does not propose new investment programmes for Arab communities."
+        }
+      }
+    },
+    "gaza": {
+      "anchor": "issue-gaza",
+      "options": {
+        "resume-fighting-full-control": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position: its 2026 platform calls for \"conquest, expulsion and settlement\" in Gaza, and on 16 January 2025 Feiglin said \"there is no victory except conquest, expulsion, sovereignty and settlement\". The party goes further than your answer, speaking of \"expulsion\" as well as voluntary emigration, and of applying full Israeli sovereignty to Gaza."
+        },
+        "hold-positions-disarmament-first": {
+          "agreement": "partially",
+          "text": "The party shares part of this: on 20 May 2025 Feiglin called humanitarian aid into Gaza \"direct aid to the enemy\", and in August 2026 he criticised placing Israel's security \"in American hands\". It differs on the army's position: its 2026 platform calls for conquering Gaza and applying Israeli sovereignty there, not holding current lines."
+        },
+        "advance-international-arrangement": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: its 2026 platform calls for \"conquest, expulsion and settlement\" in Gaza and rejects temporary ceasefires, and in August 2026 Feiglin criticised placing Israel's security \"in American hands\"."
+        },
+        "end-war-full-withdrawal": {
+          "agreement": "disagrees",
+          "text": "The party holds the opposite: its 2026 platform calls for \"conquest, expulsion and settlement\" in Gaza and rejects temporary ceasefires, and on 20 May 2025 Feiglin called the humanitarian aid the government allowed in \"direct aid to the enemy\"."
+        },
+        "defeat-hamas-then-security-control": {
+          "agreement": "partially",
+          "text": "The party shares the return to war and Israeli control of Gaza, but differs on what follows: your answer rules out settling Gaza or encouraging residents to leave, while the party's 2026 platform calls for \"conquest, expulsion and settlement\" there, with an emigration package for residents, and for applying full Israeli sovereignty."
+        }
+      }
+    },
+    "haredi-enlistment": {
+      "anchor": "issue-haredi-enlistment",
+      "options": {
+        "anchor-torah-study-exemption": {
+          "agreement": "partially",
+          "text": "The party shares part of this: its 2026 platform calls Torah study \"a founding national value\", proposes no sanctions for not serving and does not tie yeshiva funding to enlistment. It differs in proposing about a month of compulsory service for everyone, and in October 2024 Feiglin wrote that \"it is clear that the Haredim need to enlist\"."
+        },
+        "gradual-targets-by-agreement": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is service by choice: its 2026 platform proposes about a month of compulsory service for everyone and voluntary longer service, and does not tie yeshiva funding or benefits to enlistment, rather than yearly targets agreed with Haredi leaders."
+        },
+        "universal-service-with-sanctions": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: its 2026 platform proposes about a month of compulsory service for everyone but keeps longer service voluntary, and proposes no sanctions for not serving. In October 2024 Feiglin did write that Haredim \"need to enlist\"."
+        },
+        "voluntary-service-for-all": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position: its 2026 platform keeps longer service a matter of choice, with expanded career service for those who want it, and proposes no sanctions for not serving. It does include about a month of compulsory basic training for everyone."
+        }
+      }
+    },
+    "housing": {
+      "anchor": "issue-housing",
+      "options": {
+        "speed-up-planning-and-construction": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position: its 2026 platform would break the Israel Land Authority's monopoly on land and planning, release state land directly (to Jewish families, as written), move planning powers to the local level, cut bureaucracy and cancel purchase tax and building levies; on 29 September 2026 Feiglin again called for dismantling the authority."
+        },
+        "state-led-affordable-rental": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is to reduce the state's role: its 2026 platform would dismantle the Israel Land Authority, release land for free construction and cancel purchase tax and building levies."
+        },
+        "direct-help-for-buyers": {
+          "agreement": "partially",
+          "text": "The party's plan has an element of direct help: its 2026 platform would distribute state land to Jewish families, and a party page adds \"affirmative action for those who serve and carry the burden\", as your answer includes help for those who served. Its main emphasis is on releasing land and cutting bureaucracy."
+        },
+        "develop-periphery-and-transport": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: it centres on releasing state land and cutting bureaucracy. Its 2026 platform does also open Judea and Samaria, the Negev and the Galilee to large-scale Jewish construction with transport infrastructure."
+        }
+      }
+    },
+    "iran-and-regional-security": {
+      "anchor": "issue-iran-and-regional-security",
+      "options": {
+        "military-pressure-until-threats-removed": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position: its 2026 platform calls for \"victory, not managing rounds\", with no \"arrangements\" with an enemy that continues to arm and no temporary ceasefires. Against Iran it calls for hitting military capabilities and the civilian infrastructure that, in its words, \"economically fuels the aspiration to destroy Israel\"."
+        },
+        "force-plus-us-backed-agreements": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: its 2026 platform rejects \"arrangements\" with an enemy that continues to arm and calls for independence from US military aid, where your answer uses force to reach US-backed agreements. It does share keeping up military pressure."
+        },
+        "prioritize-ending-multifront-war": {
+          "agreement": "disagrees",
+          "text": "The party holds the opposite: its 2026 platform calls for \"victory, not managing rounds\" and says Israel will not settle for temporary ceasefires."
+        },
+        "end-military-operations-regional-peace": {
+          "agreement": "disagrees",
+          "text": "The party holds the opposite: its 2026 platform calls for \"victory, not managing rounds\", rejects temporary ceasefires and calls for hitting Iran's military capabilities and the civilian infrastructure that, in its words, \"economically fuels the aspiration to destroy Israel\"."
+        }
+      }
+    },
+    "judea-samaria": {
+      "anchor": "issue-judea-samaria",
+      "options": {
+        "full-sovereignty": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position: its 2026 platform calls for applying sovereignty over Judea and Samaria, eliminating the \"Authority\" model (the Palestinian Authority) and strengthening settlement, and the May 2026 alliance programme with Michael Ben-Ari included \"full Israeli sovereignty\"."
+        },
+        "partial-sovereignty-area-c": {
+          "agreement": "partially",
+          "text": "The party shares applying sovereignty to the settlements, but differs on the scope: its 2026 platform calls for full Israeli sovereignty and \"full and exclusive control\", not sovereignty over part of the area with Palestinians running their own affairs in the rest."
+        },
+        "maintain-current-situation": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: its 2026 platform calls for cancelling the Oslo Accords, a return to the situation before the agreements and applying full sovereignty."
+        },
+        "separation-two-states": {
+          "agreement": "disagrees",
+          "text": "The party holds the opposite: its 2026 platform says \"no additional Arab state will ever be established between the Jordan and the sea\" and calls for applying full sovereignty and cancelling the Oslo Accords."
+        },
+        "two-states-pre-1967-border": {
+          "agreement": "disagrees",
+          "text": "The party holds the opposite: its 2026 platform says \"no additional Arab state will ever be established between the Jordan and the sea\" and calls for strengthening settlement and applying full sovereignty."
+        },
+        "one-equal-state": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: its 2026 platform offers Arab residents under Israeli sovereignty an emigration package, permanent residency without automatic voting rights, or citizenship after proof of loyalty, and calls its opposition to automatic voting rights \"a matter of principle\"."
+        }
+      }
+    },
+    "judicial-system": {
+      "anchor": "issue-judicial-system",
+      "options": {
+        "continue-judicial-changes": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position, and it goes further than the changes in your answer: its 2026 platform says the High Court \"will not be allowed to strike down a law passed by the Knesset\", the reasonableness standard \"will be abolished\", the attorney general will be \"an adviser only\", and Supreme Court justices will be elected directly by the public every ten years."
+        },
+        "broad-agreed-constitutional-framework": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is to reduce the courts' power directly: its 2026 platform bars the High Court from striking down a Knesset law and has the government appoint and dismiss the attorney general. Its governance page also supports a constitution with \"real separation of powers\"."
+        },
+        "repeal-changes-protect-independence": {
+          "agreement": "disagrees",
+          "text": "The party holds the opposite: its 2026 platform would abolish the reasonableness standard, bar the High Court from striking down a Knesset law, make the attorney general \"an adviser only\" and have justices elected directly by the public."
+        },
+        "keep-current-system-stability": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is sweeping change: its 2026 platform would abolish the reasonableness standard, bar the High Court from striking down a Knesset law and have Supreme Court justices elected directly by the public every ten years."
+        }
+      }
+    },
+    "october-7-inquiry": {
+      "anchor": "issue-october-7-inquiry",
+      "options": {
+        "state-commission-under-existing-law": {
+          "agreement": "disagrees",
+          "text": "The research found only statements: on 10 May 2026 Feiglin said an inquiry \"cannot rely on\" the High Court, and on 3 September 2026 he said an inquiry commission must be established but \"the High Court is a political party\". The research reads these as ruling out members picked by the President of the Supreme Court."
+        },
+        "commission-appointed-by-knesset-balance": {
+          "agreement": "agrees",
+          "text": "The research cannot tell this option apart from selection by a neutral mechanism: in statements of 10 May and 3 September 2026 Feiglin agreed with the Likud that an inquiry cannot rely on the High Court, but he did not say who should pick the members. The research reads the statements as leaning toward this option, and found no party text on the question."
+        },
+        "commission-chosen-by-neutral-mechanism": {
+          "agreement": "agrees",
+          "text": "The research cannot tell this option apart from appointment by the Knesset: in statements of 10 May and 3 September 2026 Feiglin agreed with the Likud that an inquiry cannot rely on the High Court, but he did not say who should pick the members. The research reads the statements as leaning toward Knesset appointment, and found no party text on the question."
+        }
+      }
+    },
+    "religion-and-state": {
+      "anchor": "issue-religion-and-state",
+      "options": {
+        "strengthen-jewish-character": {
+          "agreement": "partially",
+          "text": "The party shares part of this: its 2026 platform says state institutions are bound by Jewish religious law and prefers \"fully halachic but lenient\" conversion. It differs on enforcement, saying the state's Jewish identity \"will be expressed through freedom and choice and not through coercion\" and leaving the character of Shabbat to each community."
+        },
+        "keep-status-quo": {
+          "agreement": "partially",
+          "text": "The party holds neighbouring positions rather than this one. Its 2026 platform keeps a Jewish character in state bodies, for example kosher food and Shabbat activity in the IDF only for operational needs, but would let each community decide the character of Shabbat and would change the Law of Return."
+        },
+        "more-choice-local-decisions": {
+          "agreement": "agrees",
+          "text": "The research finds this the closest option to the party's 2026 platform, which says Jewish identity will be expressed \"through freedom and choice and not through coercion\" and lets each community decide \"the character of Shabbat at the community level\". The same platform wants state institutions bound by Jewish religious law and prefers \"fully halachic but lenient\" conversion."
+        },
+        "separate-religion-and-state": {
+          "agreement": "partially",
+          "text": "The party shares less state intervention and community-level decisions on Shabbat, but its 2026 platform says state institutions are bound by Jewish religious law and would change the Law of Return, where your answer takes religion out of state law."
+        }
+      }
+    }
+  },
+  "points": [
+    {
+      "text": "The party's 2026 platform says the first law it would pass renames the state \"Israel: The State of the Jewish People\", with equal human rights for every resident but national rights in its sovereign territory reserved for the Jewish people and citizenship conditional on loyalty.",
+      "anchor": "other-citizenship-and-minorities"
+    },
+    {
+      "text": "The party's 2026 platform says it \"will work for a sensible regulation of the use of cannabis\".",
+      "anchor": "other-cannabis"
+    },
+    {
+      "text": "The party's 2026 platform would expand gun licensing and repeal the biometric database law, and it opposes a central-bank digital currency and restrictions on holding cash.",
+      "anchor": "other-civil-liberties"
+    }
+  ]
+}

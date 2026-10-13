@@ -1,0 +1,204 @@
+{
+  "partyId": "chomat-torat-yisrael",
+  "lang": "en",
+  "issues": {
+    "cost-of-living": {
+      "anchor": "issue-cost-of-living",
+      "options": {
+        "open-market-competition-imports": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different, and the research found no position on competition, imports or general tax cuts. Its evidence is about support for Haredi families: on 27 May 2026 Meir Porush, now the party's leader, voted for a United Torah Judaism (UTJ) bill to base daycare subsidies on the mother's status."
+        },
+        "cut-taxes-and-government-spending": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different, and the research found no position on competition, imports or general tax cuts. Its evidence is about support for Haredi families: on 27 May 2026 Meir Porush, now the party's leader, voted for a United Torah Judaism (UTJ) bill to base daycare subsidies on the mother's status."
+        },
+        "active-state-regulation": {
+          "agreement": "partially",
+          "text": "The party holds a neighbouring option, direct help for households, rather than price supervision. Like your answer it involves state action to ease costs for families, but its evidence is subsidies: on 27 May 2026 Meir Porush, now the party's leader, voted for a United Torah Judaism bill on daycare subsidies."
+        },
+        "direct-support-for-households": {
+          "agreement": "agrees",
+          "text": "That is the party's closest documented position, though its evidence concerns Haredi families in particular. On 27 May 2026 Meir Porush, now the party's leader, voted for a United Torah Judaism (UTJ) bill to base daycare subsidies on the mother's status, and in September 2026 he criticised attempts to cancel daycare subsidies and the denial of property-tax discounts for Haredi families."
+        }
+      }
+    },
+    "crime-in-arab-society": {
+      "anchor": "issue-crime-in-arab-society",
+      "unclear": {
+        "text": "The research found no documented position of the party on this issue, so it can't be compared with your answer."
+      }
+    },
+    "gaza": {
+      "anchor": "issue-gaza",
+      "unclear": {
+        "text": "The research found no documented position of the party on this issue, so it can't be compared with your answer."
+      }
+    },
+    "haredi-enlistment": {
+      "anchor": "issue-haredi-enlistment",
+      "options": {
+        "anchor-torah-study-exemption": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position, shown by its leader's record as a United Torah Judaism MK before the party existed. Meir Porush voted for Basic Law: Torah Study (13 July 2026) and for a five-month law suspending arrests of yeshiva students who had not reported for enlistment (14 July 2026), which the Supreme Court struck down on 3 September 2026."
+        },
+        "gradual-targets-by-agreement": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different. Before the party existed, Meir Porush, now its leader, voted on 14 July 2026 for a five-month law suspending arrests of yeshiva students who had not reported for enlistment, later struck down by the Supreme Court, and in December 2025 said of MK Boaz Bismuth's enlistment bill: \"This is a bad draft law; it ought to be torn up.\""
+        },
+        "universal-service-with-sanctions": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different. Meir Porush, now its leader, said in an August 2025 interview, \"Whoever sits and studies should get a deferral,\" and on 14 July 2026, before the party existed, voted for a five-month law suspending arrests of yeshiva students who had not reported for enlistment, which the Supreme Court later struck down."
+        },
+        "voluntary-service-for-all": {
+          "agreement": "partially",
+          "text": "The party shares one element of your answer, no penalties for yeshiva students who do not serve: before the party existed, Meir Porush, now its leader, voted on 14 July 2026 for a five-month law suspending their arrests, which the Supreme Court later struck down. It differs in seeking a law that lets full-time yeshiva students keep studying, not voluntary service for everyone."
+        }
+      }
+    },
+    "housing": {
+      "anchor": "issue-housing",
+      "options": {
+        "speed-up-planning-and-construction": {
+          "agreement": "agrees",
+          "text": "That is the party's main housing position, shown by a statement framed around the Haredi community. In September 2026 its leader Meir Porush said Haredi housing \"will be at the top of the priorities\" and promised to \"dismantle from the foundation\" the planning barriers that hold up Haredi zoning plans."
+        },
+        "state-led-affordable-rental": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different. In September 2026 its leader Meir Porush called for building huge new cities and expanding existing ones such as Beitar Illit, Elad and Beit Shemesh, and promised to remove planning barriers; the proposals are framed around the Haredi community."
+        },
+        "direct-help-for-buyers": {
+          "agreement": "partially",
+          "text": "The research treats this as a secondary element of the party's position, whose main emphasis is building faster. On 24 May 2026 Meir Porush, now its leader, criticised criteria that excluded men who are required to enlist but have not done so from the discounted-price apartment programme, saying they discriminate against Torah learners."
+        },
+        "develop-periphery-and-transport": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different. In September 2026 its leader Meir Porush said Haredi housing would be a top priority and promised to remove the planning barriers that keep zoning plans stuck for years in planning committees; the proposals are framed around the Haredi community."
+        }
+      }
+    },
+    "iran-and-regional-security": {
+      "anchor": "issue-iran-and-regional-security",
+      "options": {
+        "military-pressure-until-threats-removed": {
+          "agreement": "partially",
+          "text": "The research places the party here tentatively, on one statement: in September 2026 its leader Meir Porush said US President Donald Trump \"went out with us on two crazy operations in Iran\" that \"saved the State of Israel\". The research could not tell this apart from pressure combined with US-backed agreements."
+        },
+        "force-plus-us-backed-agreements": {
+          "agreement": "partially",
+          "text": "The research places the party here tentatively, on one statement: in September 2026 its leader Meir Porush praised US President Donald Trump's operations with Israel in Iran, while criticising him for starting to negotiate with Iran. The research could not tell this apart from military pressure with no deals."
+        },
+        "prioritize-ending-multifront-war": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no documented party position on what this option proposes. Its tentative indication is a September 2026 statement by party leader Meir Porush praising US-Israeli operations in Iran, which points toward keeping up military pressure."
+        },
+        "end-military-operations-regional-peace": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no documented party position on what this option proposes, and no statement by the party or its leader on Hezbollah, Lebanon or a regional agreement. Its tentative indication is a September 2026 statement by party leader Meir Porush praising US-Israeli operations in Iran."
+        }
+      }
+    },
+    "judea-samaria": {
+      "anchor": "issue-judea-samaria",
+      "options": {
+        "full-sovereignty": {
+          "agreement": "partially",
+          "text": "The party holds a neighbouring option, applying sovereignty to part of the area. As an Agudat Yisrael MK in United Torah Judaism, before the party existed, Meir Porush, now its leader, voted on 22 October 2025 for a bill to apply sovereignty to the settlement areas; the research found no evidence of support for dismantling the Palestinian Authority, the other element of your option."
+        },
+        "partial-sovereignty-area-c": {
+          "agreement": "agrees",
+          "text": "That is the party's closest recorded position: in March 2026 Meir Porush, now its leader, tabled a bill to apply Israeli law to four cities, Modi'in Illit, Beitar Illit, Ma'ale Adumim and Ariel. The research also records his votes against two narrower sovereignty bills in late 2025."
+        },
+        "maintain-current-situation": {
+          "agreement": "partially",
+          "text": "The party shares your support for strengthening settlements and your opposition to a Palestinian state: Meir Porush, now its leader, spoke as a minister in March 2023 of advancing settlement, and in September 2026 of campaigning against a Palestinian state. It differs in seeking to apply sovereignty, which your answer excludes: in March 2026 he tabled a bill applying Israeli law to four cities."
+        },
+        "separation-two-states": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is different. In March 2026 Meir Porush, now its leader, tabled a bill to apply Israeli law to four cities in Judea and Samaria, and in September 2026 he said he had \"always been an active campaigner on every occasion against the establishment of a Palestinian state\"."
+        },
+        "two-states-pre-1967-border": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is different. In March 2026 Meir Porush, now its leader, tabled a bill to apply Israeli law to four cities in Judea and Samaria, and in September 2026 he said he had \"always been an active campaigner on every occasion against the establishment of a Palestinian state\"."
+        },
+        "one-equal-state": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is different. Meir Porush, now its leader, tabled a bill in March 2026 to apply Israeli law to four cities in Judea and Samaria, and on 22 October 2025, as an Agudat Yisrael MK in United Torah Judaism before the party existed, voted for a bill to apply sovereignty to the settlement areas."
+        }
+      }
+    },
+    "judicial-system": {
+      "anchor": "issue-judicial-system",
+      "options": {
+        "continue-judicial-changes": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position, shown before the party existed. On 15 July 2026 the Knesset record shows Meir Porush, now the party's leader, and all seven United Torah Judaism (UTJ) MKs voting for the law making the attorney general's legal opinions non-binding on the government, which passed 65 to 51."
+        },
+        "broad-agreed-constitutional-framework": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different. On 15 July 2026 Meir Porush, now its leader, voted for the law making the attorney general's legal opinions non-binding, and in September 2026 he said United Torah Judaism supports \"all the moves on the legal matter\"."
+        },
+        "repeal-changes-protect-independence": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different. On 15 July 2026 Meir Porush, now its leader, voted for the law making the attorney general's legal opinions non-binding, and in September 2026 he said United Torah Judaism supports \"all the moves on the legal matter\"."
+        },
+        "keep-current-system-stability": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different. In September 2026 its leader Meir Porush said the solution is \"to dismantle the dangerous and dictatorial power of the legal system\" by legislation, and that United Torah Judaism supports \"all the moves on the legal matter\"."
+        }
+      }
+    },
+    "october-7-inquiry": {
+      "anchor": "issue-october-7-inquiry",
+      "options": {
+        "state-commission-under-existing-law": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different, though the research calls its placement tentative. On 12 November 2025 Meir Porush, now its leader, voted against three opposition bills to set up a state commission of inquiry, all of which failed."
+        },
+        "commission-appointed-by-knesset-balance": {
+          "agreement": "partially",
+          "text": "The research places the party here tentatively. Before the party existed, Ynet reported that the Haredim voted on 6 July 2026, at first reading, for MK Ariel Kallner's bill on a commission appointed through the Knesset; Meir Porush, now the party's leader, abstained at its preliminary reading on 24 December 2025, and neither he nor the party has stated a position."
+        },
+        "commission-chosen-by-neutral-mechanism": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no documented party position on what this option proposes. Its tentative indication points to a commission appointed through the Knesset with equal coalition and opposition appointment, based on reported Haredi support for MK Ariel Kallner's bill on 6 July 2026; the party's leader Meir Porush has stated no position."
+        }
+      }
+    },
+    "religion-and-state": {
+      "anchor": "issue-religion-and-state",
+      "options": {
+        "strengthen-jewish-character": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position. In July 2026, before the party existed, the Haredi parties secured passage of a law cancelling the 2021 kashrut reform and returning control of kosher certification to the Chief Rabbinate, and its founding aims include protecting \"the sanctity of Shabbat in the public space\"."
+        },
+        "keep-status-quo": {
+          "agreement": "partially",
+          "text": "The research treats this as a secondary element of the party's position. As Minister of Jerusalem and Jewish Tradition in March 2023, Meir Porush, now its leader, spoke of keeping the status quo, but the party's founding aims go further, including preserving the Jewish character of the land in marriage, conversion and modesty."
+        },
+        "more-choice-local-decisions": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is different. Its founding aims include preserving \"the Jewish character of the land in matters of marriage, conversion and modesty\", and in September 2026 the Jerusalem Post summarised United Torah Judaism's positions as opposing civil marriage and Shabbat public transport."
+        },
+        "separate-religion-and-state": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is different. Its founding aims include preserving \"the Jewish character of the land in matters of marriage, conversion and modesty\" and protecting \"the sanctity of Shabbat in the public space\", and its leader Meir Porush said in September 2026 he is committed first to the laws of the Torah."
+        }
+      }
+    }
+  },
+  "points": [
+    {
+      "text": "The party's founding aims include securing \"the funding and independence of education and Torah institutions without interference in their content\", and its leader Meir Porush said in September 2026 that he would demand extending to more ministries the use of government budgets for Haredi projects.",
+      "anchor": "other-torah-education"
+    },
+    {
+      "text": "Party leader Meir Porush said in September 2026 that his main goal for the next term is \"community independence and expansion\": strengthening Haredi local authorities, expanding their powers and giving them the budgetary and statutory tools to care for their residents.",
+      "anchor": "other-local-government"
+    },
+    {
+      "text": "When the law allowing the death penalty for terrorists passed its final reading on 30 March 2026, by 62 to 48, Meir Porush, now the party's leader and then an MK in Agudat Yisrael and United Torah Judaism, was the only MK to abstain.",
+      "anchor": "other-death-penalty"
+    }
+  ]
+}

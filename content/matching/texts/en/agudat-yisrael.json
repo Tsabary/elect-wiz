@@ -1,0 +1,219 @@
+{
+  "partyId": "agudat-yisrael",
+  "lang": "en",
+  "issues": {
+    "cost-of-living": {
+      "anchor": "issue-cost-of-living",
+      "options": {
+        "open-market-competition-imports": {
+          "agreement": "disagrees",
+          "text": "The party's documented emphasis is different: the 28 December 2022 coalition agreement signed for UTJ budgets NIS 1 billion a year for food-purchase cards for needy families, and the party's leader promised in October 2022 to cancel the sweetened-drinks tax. The same agreement does also commit to easier import of goods approved in Europe and more competition in the food market."
+        },
+        "cut-taxes-and-government-spending": {
+          "agreement": "partially",
+          "text": "The party's documented position includes tax cuts, but the research treats this as a secondary element of a mixed position. The government cancelled the taxes on sweetened drinks and disposable tableware in early January 2023 under the coalition agreement, and two of the party's MKs at the time, Eichler and Tessler, voted for the 11 March 2024 order raising VAT from 17% to 18%."
+        },
+        "active-state-regulation": {
+          "agreement": "partially",
+          "text": "The party's documented position includes some state price freezes, which overlap with your answer: the 28 December 2022 coalition agreement signed for UTJ commits to freezing electricity and water prices and local property taxes in 2023. The research places the party's main emphasis elsewhere, on direct help for low-income families, and notes there is no separate party economic program."
+        },
+        "direct-support-for-households": {
+          "agreement": "agrees",
+          "text": "That is the party's closest documented position. The 28 December 2022 coalition agreement signed for UTJ budgets NIS 1 billion a year for food-purchase cards for needy families, and in July 2022 the party's leader Goldknopf called for state funding of rent for Haredi kindergartens."
+        }
+      }
+    },
+    "crime-in-arab-society": {
+      "anchor": "issue-crime-in-arab-society",
+      "options": {
+        "emergency-powers-shin-bet": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no documented party position on what this option proposes, and no statement by the party on bringing the Shin Bet into the fight against crime organizations. Its only evidence is a general commitment in the 2022 coalition agreement signed for UTJ to allocate resources and tools for enforcement against crime in Arab society."
+        },
+        "more-police-resources-normal-law": {
+          "agreement": "partially",
+          "text": "The research places the party closest to your answer, but only tentatively, on evidence that is thin and not specific to the party. That evidence is the 2022 coalition agreement signed for UTJ, which commits to allocating resources and tools for enforcement and eradicating crime in Arab society; no statement by the party on the issue was found."
+        },
+        "invest-in-arab-communities-first": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no documented party position on what this option proposes. The only indication, tentative, is a general commitment in the 2022 coalition agreement signed for UTJ to allocate resources and tools for enforcement against crime in Arab society."
+        }
+      }
+    },
+    "gaza": {
+      "anchor": "issue-gaza",
+      "options": {
+        "resume-fighting-full-control": {
+          "agreement": "partially",
+          "text": "The research places the party closest to your answer only tentatively, on indirect evidence. On 28 January 2024 Goldknopf, then housing minister, called for renewed Jewish settlement in the Gaza Strip, but in January 2025 he and the party's other minister left written votes in the government in favour of the hostage release and ceasefire agreement."
+        },
+        "hold-positions-disarmament-first": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no statement, vote or party decision on disarming Hamas or on the post-ceasefire choices, so it found no documented party position on what this option proposes. The tentative indication points to Goldknopf's 28 January 2024 call for renewed Jewish settlement in the Gaza Strip."
+        },
+        "advance-international-arrangement": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no party statement on the US plan or an international force, and no party decision, vote or statement on the post-ceasefire choices. The tentative indication points to Goldknopf's 28 January 2024 call for renewed Jewish settlement in the Gaza Strip."
+        },
+        "end-war-full-withdrawal": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no party decision, vote or statement on the post-ceasefire choices, so it found no documented party position on what this option proposes. The tentative indication points to Goldknopf's 28 January 2024 call for renewed Jewish settlement in the Gaza Strip."
+        },
+        "defeat-hamas-then-security-control": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no documented party position on what this option proposes. The tentative indication points to Goldknopf's 28 January 2024 call for renewed Jewish settlement in the Gaza Strip, which this option does not include, while he voted in January 2025 for the hostage release and ceasefire agreement."
+        }
+      }
+    },
+    "haredi-enlistment": {
+      "anchor": "issue-haredi-enlistment",
+      "options": {
+        "anchor-torah-study-exemption": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position. Goldknopf and Tessler voted for the temporary law passed on 14 July 2026 freezing arrests of full-time yeshiva students, which the High Court of Justice struck down on 3 September 2026, and in November 2025 Goldknopf said the party would not support any bill that includes sanctions on Torah students."
+        },
+        "gradual-targets-by-agreement": {
+          "agreement": "disagrees",
+          "text": "The party opposes enlistment targets: in January 2026 its Council of Torah Sages republished a decision saying any law setting sanctions or targets must be opposed with full force. In November 2025, after the chair of the Knesset's Foreign Affairs and Defense Committee presented a bill with enlistment targets and sanctions, Goldknopf said the party would not support any bill that includes sanctions."
+        },
+        "universal-service-with-sanctions": {
+          "agreement": "disagrees",
+          "text": "The party holds that full-time Torah students should be exempt without sanctions: in January 2026 its Council of Torah Sages republished a decision calling a law setting sanctions unacceptable. In November 2025 Goldknopf said the party would not support any bill that includes sanctions, and on 28 January 2026 its three MKs voted against the 2026 budget in its first reading over the issue."
+        },
+        "voluntary-service-for-all": {
+          "agreement": "partially",
+          "text": "The party shares your opposition to penalties for those who do not serve: in November 2025 Goldknopf said it would not support any bill with sanctions on Torah students. Its documented position is narrower than your answer: it concerns full-time yeshiva students, for whom, the Israel Democracy Institute noted in March 2026, the party's MKs wanted the arrangement to stay voluntary and comprehensive as before."
+        }
+      }
+    },
+    "housing": {
+      "anchor": "issue-housing",
+      "options": {
+        "speed-up-planning-and-construction": {
+          "agreement": "partially",
+          "text": "Faster building is part of the party's documented position, but the research treats it as secondary to direct help for buyers. The 2022 coalition agreement signed for UTJ commits to a reform shortening planning and construction procedures and to removing barriers for local authorities to build."
+        },
+        "state-led-affordable-rental": {
+          "agreement": "partially",
+          "text": "The party's documented position shares your aim of state help with affordable housing, but through a different route: discounted-price programs for first-time buyers, which ran while Goldknopf was housing minister from December 2022 to June 2025. The research found no party position on state-built rental or on regulating rents."
+        },
+        "direct-help-for-buyers": {
+          "agreement": "agrees",
+          "text": "That is the party's closest documented position. An Israel Democracy Institute study reported in February 2026 found that under Goldknopf as housing minister a larger share of the homes in Target Price, the subsidized program for first-time buyers, was in Haredi areas than under previous governments; his office said he had acted to correct a long-standing gap."
+        },
+        "develop-periphery-and-transport": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: direct help for buyers through discounted-price programs, together with faster planning, which the 2022 coalition agreement signed for UTJ commits to."
+        }
+      }
+    },
+    "iran-and-regional-security": {
+      "anchor": "issue-iran-and-regional-security",
+      "unclear": {
+        "text": "The research found no documented position of the party on this issue, so it can't be compared with your answer."
+      }
+    },
+    "judea-samaria": {
+      "anchor": "issue-judea-samaria",
+      "options": {
+        "full-sovereignty": {
+          "agreement": "partially",
+          "text": "The party shares applying Israeli sovereignty to the settlement areas and expanding settlements: its four MKs voted on 22 October 2025 for a bill to apply Israeli law and sovereignty to the areas of settlement in Judea and Samaria, and on 5 May 2025 Goldknopf, then housing minister, pledged to act to expand settlement. The research found no evidence for the option's other elements, and nothing on what the party proposes for the Palestinian Authority."
+        },
+        "partial-sovereignty-area-c": {
+          "agreement": "agrees",
+          "text": "The party's four MKs voted on 22 October 2025 for a bill to apply Israeli law and sovereignty to the areas of settlement in Judea and Samaria, and Goldknopf and Tessler voted that day for a bill to apply sovereignty to Ma'ale Adumim. The party's MKs did not back every sovereignty bill, and an adviser to Goldknopf said the party backed the first of these bills to highlight the government's hypocrisy."
+        },
+        "maintain-current-situation": {
+          "agreement": "partially",
+          "text": "The party shares strengthening the settlements: on 5 May 2025 Goldknopf, then housing minister, pledged to act to expand settlement. It differs on sovereignty, which the option excludes: the party's MKs voted for a sovereignty motion on 23 July 2025 and for sovereignty bills on 22 October 2025."
+        },
+        "separation-two-states": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is applying Israeli sovereignty to the areas of settlement and expanding settlements: its four MKs voted on 22 October 2025 for a bill to apply Israeli law and sovereignty to those areas, and on 5 May 2025 Goldknopf, then housing minister, pledged to act to expand settlement."
+        },
+        "two-states-pre-1967-border": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is applying Israeli sovereignty to the areas of settlement, which its four MKs voted for on 22 October 2025. On 5 May 2025 Goldknopf, then housing minister, pledged to act to expand settlement."
+        },
+        "one-equal-state": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is applying Israeli sovereignty to the areas of settlement, which its four MKs voted for on 22 October 2025. In October 2022 Goldknopf also said UTJ would stand at the right hand of the settlements."
+        }
+      }
+    },
+    "judicial-system": {
+      "anchor": "issue-judicial-system",
+      "options": {
+        "continue-judicial-changes": {
+          "agreement": "agrees",
+          "text": "That is the party's recorded position. Its MKs voted for the 27 March 2025 law changing how judges are chosen, and Goldknopf, Tessler and Porush voted on 15 July 2026 for the law under which the government may decide that the attorney general's legal opinions do not bind it, except in criminal matters."
+        },
+        "broad-agreed-constitutional-framework": {
+          "agreement": "disagrees",
+          "text": "The party's documented position is to continue the changes passed by the coalition: its MKs voted for the 2023 law limiting the courts' reasonableness review and the 27 March 2025 law changing how judges are chosen. The 2022 coalition agreement signed for UTJ commits to supporting the justice minister's bills on these matters."
+        },
+        "repeal-changes-protect-independence": {
+          "agreement": "disagrees",
+          "text": "The party's MKs voted for the 27 March 2025 law changing how judges are chosen, which this option would reverse. Goldknopf, Tessler, Eichler and Porush also voted on 29 October 2025 for a bill to split the attorney general's role, in its preliminary reading."
+        },
+        "keep-current-system-stability": {
+          "agreement": "disagrees",
+          "text": "The party's MKs voted for a further change: on 29 October 2025 Goldknopf, Tessler, Eichler and Porush voted, in its preliminary reading, for a bill to split the attorney general's role. Goldknopf, Tessler and Porush also voted on 15 July 2026 for the law on the attorney general's legal opinions, one of the changes already passed."
+        }
+      }
+    },
+    "october-7-inquiry": {
+      "anchor": "issue-october-7-inquiry",
+      "options": {
+        "state-commission-under-existing-law": {
+          "agreement": "disagrees",
+          "text": "The party's MKs voted against the opposition bills for a state commission of inquiry under the existing law whenever they are recorded as voting, including Goldknopf and Tessler on 1 July 2026. The research found no statement or party decision on the inquiry, so the model the party itself prefers is not documented."
+        },
+        "commission-appointed-by-knesset-balance": {
+          "agreement": "partially",
+          "text": "The research places the party closest to your answer only tentatively. Its MKs voted against the bills for a state commission of inquiry, and the alternative on the table was a commission appointed through the Knesset, but they are not recorded as voting for it: when the coalition's bill passed its preliminary reading on 24 December 2025, Goldknopf and Tessler are not recorded as voting and Porush, then one of the party's MKs, abstained."
+        },
+        "commission-chosen-by-neutral-mechanism": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no statement or party decision by the party on the inquiry, and no documented position on what this option proposes. Its MKs voted against opposition bills for a state commission of inquiry whenever they are recorded as voting, including on 1 July 2026."
+        }
+      }
+    },
+    "religion-and-state": {
+      "anchor": "issue-religion-and-state",
+      "options": {
+        "strengthen-jewish-character": {
+          "agreement": "agrees",
+          "text": "That is the party's closest documented position. In July 2026 Goldknopf and Tessler voted for the law returning kashrut certification to the Chief Rabbinate, and the 2022 coalition agreement signed for UTJ keeps conversion under the Chief Rabbinate's authority and commits the government to act to honor Shabbat."
+        },
+        "keep-status-quo": {
+          "agreement": "partially",
+          "text": "Keeping the status quo is a secondary element of the party's position in the research. The 2022 coalition agreement signed for UTJ says the religious status quo will be kept as it has been for decades, but also commits to legislation to correct harm to it and to cancel the previous government's kashrut reform."
+        },
+        "more-choice-local-decisions": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: in July 2026 Goldknopf and Tessler voted for the law that cancelled private kashrut certification and returned the authority to the Chief Rabbinate and local rabbis. The 2022 coalition agreement signed for UTJ also keeps conversion under the Chief Rabbinate's authority."
+        },
+        "separate-religion-and-state": {
+          "agreement": "disagrees",
+          "text": "The party's documented position gives religious bodies a larger role: the 2022 coalition agreement signed for UTJ keeps conversion under the Chief Rabbinate, expands the powers of rabbinical courts and commits the government to act to honor Shabbat. In July 2026 Goldknopf and Tessler voted for the law returning kashrut certification to the Chief Rabbinate."
+        }
+      }
+    }
+  },
+  "points": [
+    {
+      "text": "The 2022 coalition agreement signed for UTJ raised the funding formula for yeshiva students and married kollel students.",
+      "anchor": "other-torah-study-funding"
+    },
+    {
+      "text": "The 2022 coalition agreement signed for UTJ protects the independence of Haredi education and of schools exempt from the core curriculum, and promises classroom, kindergarten and daycare building in Haredi areas.",
+      "anchor": "other-haredi-education-daycare"
+    },
+    {
+      "text": "The 2022 coalition agreement signed for UTJ commits to amending the law so that separate services, events and spaces for men and women are allowed for religious reasons.",
+      "anchor": "other-gender-separation"
+    }
+  ]
+}

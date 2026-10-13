@@ -1,0 +1,208 @@
+{
+  "partyId": "atid-echad",
+  "lang": "en",
+  "issues": {
+    "cost-of-living": {
+      "anchor": "issue-cost-of-living",
+      "unclear": {
+        "text": "The research found no documented position of the party on this issue, so it can't be compared with your answer."
+      }
+    },
+    "crime-in-arab-society": {
+      "anchor": "issue-crime-in-arab-society",
+      "unclear": {
+        "text": "The research found no documented position of the party on this issue, so it can't be compared with your answer."
+      }
+    },
+    "gaza": {
+      "anchor": "issue-gaza",
+      "options": {
+        "resume-fighting-full-control": {
+          "agreement": "agrees",
+          "text": "That is the closest match to the position of the party's only candidate, Orit Strock. Ynet reported in May 2026 that she voted against stopping the war and against the Trump plan in October 2025, and on 21 March 2023 she said the disengagement \"will be reversed\" and spoke of a return to Gaza, which she called part of the Land of Israel."
+        },
+        "hold-positions-disarmament-first": {
+          "agreement": "partially",
+          "text": "This is a secondary element of the position of the party's only candidate, Orit Strock. In May 2026 she said the current situation has positive elements, with Israel controlling more than half of Gaza and destroying terror infrastructure there, but her stated aim of settlement in Gaza goes beyond your answer."
+        },
+        "advance-international-arrangement": {
+          "agreement": "disagrees",
+          "text": "The documented position of the party's only candidate, Orit Strock, is different. Ynet reported in May 2026 that she voted against the Trump plan in October 2025, and she told Ynet that every day \"600 trucks enter Gaza when there is no need for that amount\"."
+        },
+        "end-war-full-withdrawal": {
+          "agreement": "disagrees",
+          "text": "The documented position of the party's only candidate, Orit Strock, is to continue the war until Hamas is destroyed. Ynet reported in May 2026 that she voted against stopping the war in Gaza, and on 1 May 2024 she told Army Radio that a hostage deal then under discussion would throw the war away."
+        },
+        "defeat-hamas-then-security-control": {
+          "agreement": "partially",
+          "text": "The party's only candidate, Orit Strock, shares the aim of destroying Hamas: on 1 May 2024 she named destroying its military, governmental and economic capabilities among the war's goals. She differs on settlement: asked in May 2026 about Israeli settlement in Gaza, she said what was done in Judea and Samaria \"was also considered unrealistic\"."
+        }
+      }
+    },
+    "haredi-enlistment": {
+      "anchor": "issue-haredi-enlistment",
+      "options": {
+        "anchor-torah-study-exemption": {
+          "agreement": "disagrees",
+          "text": "In May 2026 Orit Strock, the party's only candidate, said \"With us, Torah learners enlist\" and that Torah study is not a substitute for military service. She also said she does not believe Haredim can be enlisted through \"beatings, arrests and sanctions\"."
+        },
+        "gradual-targets-by-agreement": {
+          "agreement": "agrees",
+          "text": "In May 2026 the party's only candidate, Orit Strock, said Torah learners should also serve but that Haredim cannot be enlisted through \"beatings, arrests and sanctions\", and argued for a route through agreement. Walla reported on 10 December 2025 that the MKs of her faction, Religious Zionism, agreed the coalition draft bill needed changes but that the government should not be brought down."
+        },
+        "universal-service-with-sanctions": {
+          "agreement": "partially",
+          "text": "The party's only candidate, Orit Strock, shares the principle that Haredim should serve: in May 2026 she said Torah learners should also serve and that their study is not a substitute for service. She differs on sanctions, saying she does not believe Haredim can be enlisted through \"beatings, arrests and sanctions\"."
+        },
+        "voluntary-service-for-all": {
+          "agreement": "disagrees",
+          "text": "In May 2026 Orit Strock, the party's only candidate, said \"You won't hear me say that Torah learners don't need to enlist\" and that \"whoever does not study Torah must enlist\". She favours reaching enlistment through agreement with Haredi leaders, not leaving service to individual choice."
+        }
+      }
+    },
+    "housing": {
+      "anchor": "issue-housing",
+      "options": {
+        "speed-up-planning-and-construction": {
+          "agreement": "disagrees",
+          "text": "The documented approach is different: land discounts and new communities in outlying areas, such as the land-discount outline prepared by a team that the party's only candidate, Minister Orit Strock, led, which the Israel Land Authority council discussed on 13 September 2023. The research states that she has not set out a national plan for housing prices."
+        },
+        "state-led-affordable-rental": {
+          "agreement": "disagrees",
+          "text": "The documented approach is different: land discounts for young families and new rural communities, such as the land-discount outline prepared by a team that the party's only candidate, Minister Orit Strock, led, which the Israel Land Authority council discussed on 13 September 2023. The research states that she has not set out a national plan for housing prices."
+        },
+        "direct-help-for-buyers": {
+          "agreement": "partially",
+          "text": "This is a secondary element of the housing record of the party's only candidate, Minister Orit Strock. The land-discount outline her team prepared, which the Israel Land Authority council discussed on 13 September 2023, included an extra 10% discount for reservists, but it concerns land in national priority areas such as the Negev and the Galilee, not mortgages or grants."
+        },
+        "develop-periphery-and-transport": {
+          "agreement": "agrees",
+          "text": "That is the recorded focus of the party's only candidate, Minister Orit Strock: the Settlement Division under her ministry advanced the new Lower Galilee community of Shibolet, approved for deposit on 24 July 2024, and she led the team that prepared the 2023 outline on land discounts. The research notes her focus is rural and settlement areas, not transport or urban renewal."
+        }
+      }
+    },
+    "iran-and-regional-security": {
+      "anchor": "issue-iran-and-regional-security",
+      "options": {
+        "military-pressure-until-threats-removed": {
+          "agreement": "partially",
+          "text": "The research places the party's only candidate, Orit Strock, closest to your answer, but on limited evidence. On 4 June 2026 she told the security cabinet, of a proposed arrangement with Lebanon, that \"there will be no agreement, Hezbollah will not move beyond the Litani\"; the evidence is limited to Lebanon and to cabinet statements, and the research found no detailed statement by her on Iran."
+        },
+        "force-plus-us-backed-agreements": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no documented position on US-backed agreements of this kind. Its tentative indication, from statements on Lebanon by the party's only candidate, Orit Strock, in the security cabinet on 4 June 2026, points to keeping up military pressure on Hezbollah."
+        },
+        "prioritize-ending-multifront-war": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no documented position on ending the fighting on all fronts. Its tentative indication, from statements by the party's only candidate, Orit Strock, in the security cabinet on 4 June 2026, points to a harsh response to Hezbollah attacks."
+        },
+        "end-military-operations-regional-peace": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no documented position on ending all military operations and withdrawing from Lebanon. Its tentative indication, from statements by the party's only candidate, Orit Strock, in the security cabinet on 4 June 2026, points to keeping up pressure on Hezbollah and to changing the border."
+        }
+      }
+    },
+    "judea-samaria": {
+      "anchor": "issue-judea-samaria",
+      "options": {
+        "full-sovereignty": {
+          "agreement": "agrees",
+          "text": "That matches the record of the party's only candidate, Minister Orit Strock: she voted for the Knesset's July 2025 motion calling on the government to apply sovereignty, and she called the government's approval of 22 new settlements on 29 May 2025 a promise kept. In May 2026 she said the Palestinian Authority \"needs to be dismantled\"."
+        },
+        "partial-sovereignty-area-c": {
+          "agreement": "partially",
+          "text": "The position of the party's only candidate, Orit Strock, is a neighbouring one: she supports applying sovereignty to all of Judea and Samaria and voted for the Knesset's July 2025 motion calling for it. She voted with the coalition against opposition bills to apply sovereignty to the Jordan Valley on 15 March 2023, saying the coalition would advance it \"at the appropriate time\", and on 22 January 2025."
+        },
+        "maintain-current-situation": {
+          "agreement": "disagrees",
+          "text": "The documented position of the party's only candidate, Orit Strock, is to apply Israeli sovereignty, not to leave things as they are. In May 2026 she said \"We did not apply sovereignty. That is a point where we did not succeed\", and in July 2024 she wrote that Israel must take \"the further step: applying our own sovereignty\"."
+        },
+        "separation-two-states": {
+          "agreement": "disagrees",
+          "text": "The documented position of the party's only candidate, Orit Strock, is to apply Israeli sovereignty to Judea and Samaria and to reject a Palestinian state. In July 2024 she welcomed the Knesset's vote opposing a Palestinian state west of the Jordan River and wrote that Israel must now apply its own sovereignty."
+        },
+        "two-states-pre-1967-border": {
+          "agreement": "disagrees",
+          "text": "The documented position of the party's only candidate, Orit Strock, is to expand settlement, not evacuate it: she called the government's approval of 22 new settlements on 29 May 2025 a promise kept. In May 2026 she said the goal was to turn back the withdrawals of Oslo and the disengagement."
+        },
+        "one-equal-state": {
+          "agreement": "disagrees",
+          "text": "The documented position of the party's only candidate, Orit Strock, is to apply Israeli sovereignty to Judea and Samaria, as she wrote in July 2024, and to dismantle the Palestinian Authority, as she said in May 2026, with Palestinian cities and villages returning to local municipal rule."
+        }
+      }
+    },
+    "judicial-system": {
+      "anchor": "issue-judicial-system",
+      "options": {
+        "continue-judicial-changes": {
+          "agreement": "agrees",
+          "text": "That is the recorded position of the party's only candidate, Orit Strock. Knesset records show her voting for the law cancelling the \"reasonableness\" ground for judicial review (passed 24 July 2023), the Judicial Selection Law (27 March 2025) and the law making the attorney general's legal opinions advisory to the government (15 July 2026)."
+        },
+        "broad-agreed-constitutional-framework": {
+          "agreement": "disagrees",
+          "text": "The record of the party's only candidate, Orit Strock, is of changes passed by the coalition: she voted for the 2023 reasonableness law and the 2025 Judicial Selection Law, both passed with the opposition boycotting, and for the 2026 attorney-general law. The one point in common is her vote on 10 May 2021, at the preliminary reading, for bills adding an override clause."
+        },
+        "repeal-changes-protect-independence": {
+          "agreement": "disagrees",
+          "text": "The documented position of the party's only candidate, Orit Strock, is to keep and continue these changes. She voted for the Judicial Selection Law on 27 March 2025 and for the 2026 attorney-general law, and said at a rally on 12 March 2023 that \"we have no intention of retreating\" from the changes."
+        },
+        "keep-current-system-stability": {
+          "agreement": "disagrees",
+          "text": "The documented position of the party's only candidate, Orit Strock, is to continue the changes, not stop at the current system. She said at a rally on 12 March 2023 that \"we have no intention of retreating\", and she voted for the 2023 reasonableness law, the 2025 Judicial Selection Law and the 2026 attorney-general law, which your answer would keep."
+        }
+      }
+    },
+    "october-7-inquiry": {
+      "anchor": "issue-october-7-inquiry",
+      "options": {
+        "state-commission-under-existing-law": {
+          "agreement": "disagrees",
+          "text": "On 16 November 2025 the government, in which the party's only candidate, Orit Strock, is a minister, decided not to set up a state commission of inquiry (individual votes were not reported). She voted for the coalition bill for a commission chosen through the Knesset at its preliminary reading on 24 December 2025."
+        },
+        "commission-appointed-by-knesset-balance": {
+          "agreement": "agrees",
+          "text": "That is the model in the coalition bill that passed first reading on 6 July 2026, 59 to 0 with the opposition boycotting: six members chosen by a two-thirds Knesset majority or split three and three between coalition and opposition. The party's only candidate, Orit Strock, voted for the bill at its preliminary reading on 24 December 2025."
+        },
+        "commission-chosen-by-neutral-mechanism": {
+          "agreement": "partially",
+          "text": "The documented approach is a neighbouring one: the coalition bill that the party's only candidate, Orit Strock, voted for on 24 December 2025 has the Knesset choose the members, by a two-thirds majority or, failing that, three by the coalition and three by the opposition. That involves the Knesset, as your answer does, but the political sides choose the members themselves."
+        }
+      }
+    },
+    "religion-and-state": {
+      "anchor": "issue-religion-and-state",
+      "options": {
+        "strengthen-jewish-character": {
+          "agreement": "agrees",
+          "text": "Knesset records show the party's only candidate, Orit Strock, voting for Basic Law: Torah Study at all three of its votes, the last on 13 July 2026, and in 2022 she said the state's official processes should follow Jewish religious law. She also said \"we are not in favour of coercion\", which the research reads as suggesting she would not enforce every point of your option by law."
+        },
+        "keep-status-quo": {
+          "agreement": "partially",
+          "text": "The research records the party's only candidate, Orit Strock, as supporting a strong role for the Chief Rabbinate, which your answer keeps. She goes further than mostly keeping current arrangements: she voted for Basic Law: Torah Study, which passed on 13 July 2026, and in 2022 said the state's official processes should follow Jewish religious law."
+        },
+        "more-choice-local-decisions": {
+          "agreement": "disagrees",
+          "text": "The documented position of the party's only candidate, Orit Strock, is a bigger role for Jewish religious law: she voted for Basic Law: Torah Study, which passed on 13 July 2026, and in 2022 said the state's official processes should follow it. In the same 2022 statement she said \"we are not in favour of coercion\" but that the public sphere should be run as a Jewish state."
+        },
+        "separate-religion-and-state": {
+          "agreement": "disagrees",
+          "text": "The documented position of the party's only candidate, Orit Strock, is the reverse: in 2022 she said the public sphere should be run as a Jewish state and the state's official processes should follow Jewish religious law. She also voted for Basic Law: Torah Study, which passed on 13 July 2026."
+        }
+      }
+    }
+  },
+  "points": [
+    {
+      "text": "As the minister responsible for civilian national service, Orit Strock, the party's only candidate, launched a reform in January 2025 that replaced eight separate service organizations with one national selection system and added optional evening study in Judaism, Zionism and heritage.",
+      "anchor": "other-national-service"
+    },
+    {
+      "text": "The party's only candidate, Minister Orit Strock, supports the 2023 law that expanded admissions committees, which screen new residents, to communities of up to 700 families.",
+      "anchor": "other-admissions-committees"
+    },
+    {
+      "text": "In May 2026 the party's only candidate, Minister Orit Strock, said she hears rabbis in her community, \"even moderate ones\", protesting mixed-gender service in the Armored Corps, and that the army should take account of the whole spectrum of the public.",
+      "anchor": "other-mixed-service"
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "partyId": "israel-first",
+  "lang": "en",
+  "issues": {
+    "cost-of-living": {
+      "anchor": "issue-cost-of-living",
+      "options": {
+        "open-market-competition-imports": {
+          "agreement": "agrees",
+          "text": "In July 2026 party leader MK Sharren Haskel said her economic philosophy is \"less taxes, less regulation, less government involvement, less bureaucracy\", and in August 2026 she said Israel has to cut down massively on bureaucracy and regulation, which fits your answer. The party has no detailed published platform, so this rests on her statements."
+        },
+        "cut-taxes-and-government-spending": {
+          "agreement": "partially",
+          "text": "In August 2026 party leader MK Sharren Haskel called for lower taxes and a smaller, more efficient state budget, which fits your answer. The research treats this as a secondary element of the party's position, and notes that on 24 December 2024, as a coalition MK and before these statements, she voted for a budget law freezing tax updates and setting a surtax."
+        },
+        "active-state-regulation": {
+          "agreement": "disagrees",
+          "text": "The party's stated approach is deregulation and lower taxes, as its leader MK Sharren Haskel said in July and August 2026. The party has not said whether it supports price supervision or taxes on high profits."
+        },
+        "direct-support-for-households": {
+          "agreement": "disagrees",
+          "text": "The party's stated approach is deregulation and lower taxes, and its website says it will review and cancel allowances, grants and incentives that, in its view, discourage people from joining the labour market. The party has not said whether it supports larger welfare payments."
+        }
+      }
+    },
+    "crime-in-arab-society": {
+      "anchor": "issue-crime-in-arab-society",
+      "unclear": {
+        "text": "The research found no documented position of the party on crime in Arab communities, so it can't be compared with your answer."
+      }
+    },
+    "gaza": {
+      "anchor": "issue-gaza",
+      "options": {
+        "resume-fighting-full-control": {
+          "agreement": "disagrees",
+          "text": "In August 2026 party leader MK Sharren Haskel said that the position of Jonathan Pollard, who has joined the party but is not on its list, to remove Gaza's Palestinian residents, apply Israeli sovereignty over Gaza and settle it with Israelis, \"is not the stand of Israel First\". The party has not stated a view on a return to full-scale fighting."
+        },
+        "hold-positions-disarmament-first": {
+          "agreement": "partially",
+          "text": "In August 2026 party leader MK Sharren Haskel said that without the destruction and full disarmament of Hamas, Israel cannot advance to the second stage in Gaza, which matches the disarmament condition in your answer. The research calls the evidence only partial and treats this as a secondary element of the party's position; she has not addressed foreign forces."
+        },
+        "advance-international-arrangement": {
+          "agreement": "party-position-unclear",
+          "text": "The party has not stated a view on an international security force or a new Palestinian administration. The tentative indication is party leader MK Sharren Haskel's August 2026 statement that Israel cannot advance to the second stage in Gaza without Hamas's full disarmament."
+        },
+        "end-war-full-withdrawal": {
+          "agreement": "disagrees",
+          "text": "In August 2026 party leader MK Sharren Haskel said that without the destruction and full disarmament of Hamas there is no step Israel can take to advance to the second stage in Gaza. In February 2025, as deputy foreign minister, she said that what others were proposing would reward Hamas's terrorism with Palestinian statehood."
+        },
+        "defeat-hamas-then-security-control": {
+          "agreement": "party-position-unclear",
+          "text": "The party has not stated a view on a return to full-scale fighting. The tentative indication is the August 2026 statement by party leader MK Sharren Haskel that Israel cannot advance to the second stage in Gaza without Hamas's full disarmament."
+        }
+      }
+    },
+    "haredi-enlistment": {
+      "anchor": "issue-haredi-enlistment",
+      "options": {
+        "anchor-torah-study-exemption": {
+          "agreement": "disagrees",
+          "text": "On 14 July 2026 party leader MK Sharren Haskel voted against the coalition law barring the arrest and prosecution of Haredi men who have not enlisted, and resigned as deputy foreign minister. In August 2026 she said: \"We are a right-wing party that refuses to compromise on exemption bills.\""
+        },
+        "gradual-targets-by-agreement": {
+          "agreement": "partially",
+          "text": "On 16 December 2025 party leader MK Sharren Haskel said she had proposed a compromise with a six-month trial of enlistment without sanctions, followed by \"harsh sanctions\" if it did not work, which partly resembles your answer. The research treats this as a secondary element; the party's main position is service for every 18-year-old, with benefits tied to service."
+        },
+        "universal-service-with-sanctions": {
+          "agreement": "agrees",
+          "text": "This is the party's main recorded position: its website promotes \"equal service\", and in August 2026 party leader MK Sharren Haskel set out a proposed law denying government benefits to people who did not serve. On 14 July 2026 she voted against the law barring the arrest of Haredi men who have not enlisted."
+        },
+        "voluntary-service-for-all": {
+          "agreement": "disagrees",
+          "text": "The party's website promotes \"equal service\", in which service obligations are not set by membership of a community. In August 2026 party leader MK Sharren Haskel set out a proposed law denying government benefits to people who did not serve, which ties benefits to service."
+        }
+      }
+    },
+    "housing": {
+      "anchor": "issue-housing",
+      "unclear": {
+        "text": "The research found no documented position of the party on housing, so it can't be compared with your answer."
+      }
+    },
+    "iran-and-regional-security": {
+      "anchor": "issue-iran-and-regional-security",
+      "options": {
+        "military-pressure-until-threats-removed": {
+          "agreement": "partially",
+          "text": "The party's first stated principle is \"strong security and victory without compromise\", which is close to your answer. The research places this only as a secondary element, because party leader MK Sharren Haskel supports the US-backed arrangement between Israel and Lebanon."
+        },
+        "force-plus-us-backed-agreements": {
+          "agreement": "partially",
+          "text": "In August 2026 party leader MK Sharren Haskel said the US-backed agreement between Israel and Lebanon offers the Lebanese people a \"one-time opportunity\", and that Israel does not want to stay in Lebanon forever. The research calls the evidence partial and places this as a secondary element of the party's position."
+        },
+        "prioritize-ending-multifront-war": {
+          "agreement": "party-position-unclear",
+          "text": "The research does not record a party position on this option; its tentative indication is the party's principle of \"strong security and victory without compromise\", and the August 2026 statements of party leader MK Sharren Haskel supporting the US-backed Israel-Lebanon arrangement."
+        },
+        "end-military-operations-regional-peace": {
+          "agreement": "party-position-unclear",
+          "text": "The research does not record a party position on this option; its tentative indication is the party's principle of \"strong security and victory without compromise\", and the August 2026 statements of party leader MK Sharren Haskel supporting the US-backed Israel-Lebanon arrangement."
+        }
+      }
+    },
+    "judea-samaria": {
+      "anchor": "issue-judea-samaria",
+      "options": {
+        "full-sovereignty": {
+          "agreement": "agrees",
+          "text": "On 23 July 2025 party leader MK Sharren Haskel voted to adopt the summary of a Knesset debate on applying sovereignty in Judea, Samaria and the Jordan Valley, and on 5 August 2026 she said: \"I believe in sovereignty in Judea and Samaria.\" She has not published how far she would apply it, so the research records the party as holding either this option or the Area C option."
+        },
+        "partial-sovereignty-area-c": {
+          "agreement": "agrees",
+          "text": "On 23 July 2025 party leader MK Sharren Haskel voted to adopt the summary of a Knesset debate on applying sovereignty in Judea, Samaria and the Jordan Valley, and on 5 August 2026 she said: \"I believe in sovereignty in Judea and Samaria.\" She has not published how far she would apply it, so the research records the party as holding either this option or full sovereignty."
+        },
+        "maintain-current-situation": {
+          "agreement": "partially",
+          "text": "Al-Monitor reports that party leader MK Sharren Haskel supports the settlement enterprise, and the research finds she opposes a Palestinian state, as in your answer. But on 5 August 2026 she said she believes in applying sovereignty in Judea and Samaria, which your answer does not include."
+        },
+        "separation-two-states": {
+          "agreement": "disagrees",
+          "text": "On 5 August 2026 party leader MK Sharren Haskel said she believes in sovereignty in Judea and Samaria, and on 6 October 2025 she said the conflict \"is not a territorial conflict\" and cannot be resolved with territory. The research finds she opposes a Palestinian state."
+        },
+        "two-states-pre-1967-border": {
+          "agreement": "disagrees",
+          "text": "On 5 August 2026 party leader MK Sharren Haskel said she believes in sovereignty in Judea and Samaria, and on 6 October 2025 she said the conflict \"is not a territorial conflict\" and cannot be resolved with territory. The research finds she opposes a Palestinian state."
+        },
+        "one-equal-state": {
+          "agreement": "disagrees",
+          "text": "On 5 August 2026 party leader MK Sharren Haskel said she believes in sovereignty in Judea and Samaria, and in May 2026 she wrote to Prime Minister Benjamin Netanyahu asking that Israel formally declare the Oslo Accords void. The research records no statement by her on one state with equal rights and an equal vote for Jews and Palestinians."
+        }
+      }
+    },
+    "judicial-system": {
+      "anchor": "issue-judicial-system",
+      "options": {
+        "continue-judicial-changes": {
+          "agreement": "partially",
+          "text": "Israel First has stated no position, so the research places it here only tentatively, on votes by party leader MK Sharren Haskel as a coalition MK: for a law changing the committee that picks judges (27 March 2025) and a law letting the government decide that the attorney general's opinions do not bind it (15 July 2026). In December 2025 she said High Court rulings must be respected."
+        },
+        "broad-agreed-constitutional-framework": {
+          "agreement": "party-position-unclear",
+          "text": "Israel First has no stated position on this issue, and no statement by party leader MK Sharren Haskel on the 2023 judicial changes was found. The tentative indication is her votes as a coalition MK for a law changing the committee that picks judges (27 March 2025) and a law letting the government decide that the attorney general's opinions do not bind it (15 July 2026)."
+        },
+        "repeal-changes-protect-independence": {
+          "agreement": "party-position-unclear",
+          "text": "Israel First has no stated position on this issue, and no statement by party leader MK Sharren Haskel on the 2023 judicial changes was found. The tentative indication is her votes as a coalition MK for a law changing the committee that picks judges (27 March 2025) and a law letting the government decide that the attorney general's opinions do not bind it (15 July 2026)."
+        },
+        "keep-current-system-stability": {
+          "agreement": "party-position-unclear",
+          "text": "Israel First has no stated position on this issue, and no statement by party leader MK Sharren Haskel on the 2023 judicial changes was found. The tentative indication is her votes as a coalition MK for a law changing the committee that picks judges (27 March 2025) and a law letting the government decide that the attorney general's opinions do not bind it (15 July 2026)."
+        }
+      }
+    },
+    "october-7-inquiry": {
+      "anchor": "issue-october-7-inquiry",
+      "options": {
+        "state-commission-under-existing-law": {
+          "agreement": "disagrees",
+          "text": "On 18 November 2025 party leader MK Sharren Haskel said half the country does not believe in the Supreme Court president, and as a coalition MK she voted against bills to set up a state commission on 12 November 2025 and 1 July 2026. On 16 December 2025 she said she supports a state commission, but that it must be acceptable to the majority of the public."
+        },
+        "commission-appointed-by-knesset-balance": {
+          "agreement": "partially",
+          "text": "On 18 November 2025 party leader MK Sharren Haskel proposed a five-member commission with three members chosen by survivors and bereaved families, and on 16 December 2025 she said a commission must be acceptable to the majority of the public, which is close to your answer. Her model gives the appointments to the President of the State and the families, and does not mention the Knesset."
+        },
+        "commission-chosen-by-neutral-mechanism": {
+          "agreement": "agrees",
+          "text": "On 18 November 2025 party leader MK Sharren Haskel proposed a five-member commission: a chair appointed by the President of the State, who would be a former IDF comptroller; a former president or deputy president of the Supreme Court; and three members chosen by survivors and bereaved families. She rejects a commission appointed by the government alone and one picked by the Supreme Court president."
+        }
+      }
+    },
+    "religion-and-state": {
+      "anchor": "issue-religion-and-state",
+      "options": {
+        "strengthen-jewish-character": {
+          "agreement": "party-position-unclear",
+          "text": "The research does not record a party position on this option; the tentative indications are the party's 31 August 2026 stance opposing broad government funding of Shabbat transport and supporting independence for local authorities, and party leader MK Sharren Haskel's votes against two Shabbat public transport bills on 19 November 2025."
+        },
+        "keep-status-quo": {
+          "agreement": "partially",
+          "text": "On 19 November 2025 party leader MK Sharren Haskel, then a coalition MK, voted against two bills to run public transport on Shabbat, which matches your answer. The research treats this as a secondary element: the party's 31 August 2026 stance, supporting independence for local authorities, points to more local choice."
+        },
+        "more-choice-local-decisions": {
+          "agreement": "partially",
+          "text": "On 31 August 2026 the party supported independence for local authorities and private companies running profitable Shabbat lines, as in your answer. The research treats this as secondary and partial, because nothing covers marriage or kosher certification and the party's leader voted against Shabbat transport bills in November 2025."
+        },
+        "separate-religion-and-state": {
+          "agreement": "party-position-unclear",
+          "text": "No documented party position was found on civil marriage, the Chief Rabbinate's role in marriage and conversion, or kosher certification. The tentative indications are the party's 31 August 2026 stance on Shabbat transport (independence for local authorities, no broad government subsidy) and party leader MK Sharren Haskel's votes against two Shabbat transport bills on 19 November 2025."
+        }
+      }
+    }
+  },
+  "points": [
+    {
+      "text": "Party leader MK Sharren Haskel has made cannabis legalization a key personal agenda item: on 5 March 2025 she voted in a preliminary reading for a bill to regulate the medical use of cannabis, and on 3 September 2026 Israel First and the Green Leaf party announced a joint run promoting cannabis legalization and reform of the medical-cannabis system.",
+      "anchor": "other-cannabis-and-individual-liberty"
+    },
+    {
+      "text": "The party presents itself as a voice for people who serve, with party leader MK Sharren Haskel describing \"a movement that stands up for those who do serve the country, that has their backs\", and on 3 September 2026 it promised, with Green Leaf, to promote research and treatment of post-trauma and mental health with a focus on fighters.",
+      "anchor": "other-reservists-veterans-and-war-injured"
+    },
+    {
+      "text": "On 20 June 2022 the Knesset Education Committee, which party leader MK Sharren Haskel chaired at the time, approved draft regulations banning the keeping of egg-laying hens in cages from 2037.",
+      "anchor": "other-civil-liberties-lgbt-animals-environment"
+    }
+  ]
+}

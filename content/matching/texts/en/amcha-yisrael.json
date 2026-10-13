@@ -1,0 +1,234 @@
+{
+  "partyId": "amcha-yisrael",
+  "lang": "en",
+  "issues": {
+    "cost-of-living": {
+      "anchor": "issue-cost-of-living",
+      "options": {
+        "open-market-competition-imports": {
+          "agreement": "agrees",
+          "text": "The party holds this option. Its founding document lists among its ten first steps lowering the cost of living by \"breaking up centers of concentration and monopoly power, opening the markets to real competition, and removing import barriers and unnecessary regulation\", and its economic chapter commits to a free market and fewer barriers for small and medium businesses."
+        },
+        "cut-taxes-and-government-spending": {
+          "agreement": "partially",
+          "text": "The party's economic chapter promises tax benefits for work, service and contribution, which overlaps with your answer. Its lead cost-of-living step is competition and import reform, and the research found no statements on VAT or income-tax cuts in general."
+        },
+        "active-state-regulation": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: its founding document puts competition first, by opening markets, breaking up concentrated power and removing import barriers and \"unnecessary regulation\". The research found no statements on price controls."
+        },
+        "direct-support-for-households": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: its founding document leads with a free market, competition and fewer import barriers. The research found no statements on raising welfare allowances or the minimum wage."
+        }
+      }
+    },
+    "crime-in-arab-society": {
+      "anchor": "issue-crime-in-arab-society",
+      "options": {
+        "emergency-powers-shin-bet": {
+          "agreement": "partially",
+          "text": "The research places the party tentatively between this option and more police resources. Its founding document promises stronger enforcement, a package of laws against crime organizations and a national coordinating body, but no statement on Shin Bet involvement or holding suspects without trial was found."
+        },
+        "more-police-resources-normal-law": {
+          "agreement": "partially",
+          "text": "The research places the party tentatively between this option and special powers. Its founding document promises stronger enforcement against crime organizations, illegal weapons and arms smuggling, applying to crime nationally, but it does not say whether the party supports Shin Bet involvement or special detention powers."
+        },
+        "invest-in-arab-communities-first": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no documented party position on putting investment in Arab communities first, and no statement on the five-year development plan for Arab communities. The tentative indication points to tougher enforcement and an anti-crime law package."
+        }
+      }
+    },
+    "gaza": {
+      "anchor": "issue-gaza",
+      "options": {
+        "resume-fighting-full-control": {
+          "agreement": "agrees",
+          "text": "The party holds this option. Its founding document makes receiving \"all the powers to lead the voluntary emigration\" of Gaza residents the first of its ten first steps, and on 5 October 2026 party leader Ofer Winter said Israel should \"destroy Hamas and facilitate voluntary emigration from Gaza\"."
+        },
+        "hold-positions-disarmament-first": {
+          "agreement": "partially",
+          "text": "Like your answer, the party opposes ending the war while Hamas can recover: at its launch on 25 August 2026 party leader Ofer Winter said \"We won't end a war while the enemy has the ability to recover\". It goes further than holding positions: on 29 September 2026 he said \"Take them apart now, don't wait\", and its founding document seeks to lead voluntary emigration from Gaza."
+        },
+        "advance-international-arrangement": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: its founding document commits to leading a plan for voluntary emigration from the Gaza Strip, and on 25 August 2026 party leader Ofer Winter said \"There is one solution in Gaza: migration\". On 5 October 2026 he said Israel should \"destroy Hamas\"."
+        },
+        "end-war-full-withdrawal": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: at its launch on 25 August 2026 party leader Ofer Winter said \"We won't end a war while the enemy has the ability to recover\", and its founding document commits to leading voluntary emigration from the Gaza Strip."
+        },
+        "defeat-hamas-then-security-control": {
+          "agreement": "partially",
+          "text": "The party shares the aim of destroying Hamas: on 5 October 2026 party leader Ofer Winter said Israel should \"destroy Hamas and facilitate voluntary emigration from Gaza\". It differs on the second part of your answer, since its founding document commits to leading voluntary emigration and Winter has backed Jewish settlement in Gaza afterwards."
+        }
+      }
+    },
+    "haredi-enlistment": {
+      "anchor": "issue-haredi-enlistment",
+      "options": {
+        "anchor-torah-study-exemption": {
+          "agreement": "disagrees",
+          "text": "The party's founding document says shared service \"will be the rule and not the exception\". On 7 September 2026, replying to Agudat Yisrael leader Yitzhak Goldknopf's demand for a full exemption for yeshiva students, party leader Ofer Winter said \"those who do not serve, do not study and do not contribute will not enjoy benefits\"."
+        },
+        "gradual-targets-by-agreement": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: on 2 September 2026 party leader Ofer Winter said he wants Haredim integrated into the IDF \"without compromises and without delays\", and on 27 August 2026 that this would happen \"with or without Haredi political activists\". Its plan does include religious accommodations for Haredi soldiers and greater benefits for those who serve."
+        },
+        "universal-service-with-sanctions": {
+          "agreement": "agrees",
+          "text": "The party holds this option. Its founding document says no one will stand outside the circle of shared commitment, with military or national service for all and room for outstanding Torah students, and on 7 September 2026 party leader Ofer Winter said \"those who do not serve, do not study and do not contribute will not enjoy benefits\"."
+        },
+        "voluntary-service-for-all": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: its founding document says \"no one will stand outside the circle of shared commitment\" and proposes a \"Basic Law: Service\" under which every citizen serves the state. On 7 September 2026 party leader Ofer Winter said those who do not serve will not enjoy benefits."
+        }
+      }
+    },
+    "housing": {
+      "anchor": "issue-housing",
+      "options": {
+        "speed-up-planning-and-construction": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: its founding document leads with urban renewal and development in border and priority areas, plus public transport and infrastructure. The research found no statement on building permits or planning in central Israel."
+        },
+        "state-led-affordable-rental": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: its founding document promises urban renewal in cities and towns at the edges of the country, and employment incentives and transport in border and priority areas. The research found no statement on affordable rental housing or rent regulation."
+        },
+        "direct-help-for-buyers": {
+          "agreement": "partially",
+          "text": "The party's founding document promises priority for those who contribute to security, including through the allocation of land and benefits in border areas, which overlaps with help for those who served. This is a secondary element of its position, and the research found no statement on general mortgage assistance."
+        },
+        "develop-periphery-and-transport": {
+          "agreement": "agrees",
+          "text": "The party holds this option. Its founding document promises to expand urban renewal in cities and towns at the edges of the country, and employment incentives, quality education and efficient transport in border and priority areas, and lists developing public transport infrastructure among its ten first steps."
+        }
+      }
+    },
+    "iran-and-regional-security": {
+      "anchor": "issue-iran-and-regional-security",
+      "options": {
+        "military-pressure-until-threats-removed": {
+          "agreement": "partially",
+          "text": "The research places the party closest to your answer, but only tentatively: it rests on the party's general security doctrine, which says Israel should no longer manage the conflict \"from round to round\", and no statement on the US-Iran talks or the Lebanon ceasefire arrangements was found."
+        },
+        "force-plus-us-backed-agreements": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no documented party position on combining military pressure with US-backed agreements, and no statement on the US-Iran talks or the Lebanon ceasefire arrangements. The tentative indication, from its general security doctrine, points to continued military action until threats are removed."
+        },
+        "prioritize-ending-multifront-war": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: at its launch on 25 August 2026 party leader Ofer Winter said \"We won't end a war while the enemy has the ability to recover\", and its founding document says Israel should no longer manage the conflict \"from round to round\". The research found no statement specific to the Iran talks."
+        },
+        "end-military-operations-regional-peace": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: at its launch on 25 August 2026 party leader Ofer Winter said \"We won't wait for the threat, we'll remove it\" and \"We won't end a war while the enemy has the ability to recover, we will deny it that\". The research found no statement specific to the Lebanon ceasefire arrangements."
+        }
+      }
+    },
+    "judea-samaria": {
+      "anchor": "issue-judea-samaria",
+      "options": {
+        "full-sovereignty": {
+          "agreement": "agrees",
+          "text": "The party holds this option. In written answers published on 28 September 2026 it said \"a Palestinian state will never be established alongside us\" and that the state must \"apply sovereignty in Judea and Samaria and everywhere in the land\"; it has not said what should happen to the Palestinian Authority."
+        },
+        "partial-sovereignty-area-c": {
+          "agreement": "partially",
+          "text": "Like your answer, the party supports applying sovereignty and on 6 October 2026 promised stronger governance and enforcement in Area C. It differs on scope: its written answers published on 28 September 2026 speak of sovereignty \"in Judea and Samaria and everywhere in the land\"."
+        },
+        "maintain-current-situation": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: in written answers published on 28 September 2026 it said the state must \"apply sovereignty in Judea and Samaria and everywhere in the land\", and on 6 October 2026 it told Arutz Sheva that it \"supports applying sovereignty over Judea and Samaria\". Like your answer, it would expand settlements."
+        },
+        "separation-two-states": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: on 6 October 2026 it told Arutz Sheva that it \"firmly opposes a Palestinian state and supports applying sovereignty over Judea and Samaria\", and in written answers published on 28 September 2026 it said a Palestinian state \"will never be established alongside us\"."
+        },
+        "two-states-pre-1967-border": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: in written answers published on 28 September 2026 it said evacuating settlements is \"an existential danger and not a solution\" and that \"a Palestinian state will never be established alongside us\"."
+        },
+        "one-equal-state": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: its founding document says \"the land of the Land of Israel belongs to the People of Israel\", and in written answers published on 28 September 2026 the party said the state must \"apply sovereignty in Judea and Samaria and everywhere in the land\" and that it supports establishing settlements there."
+        }
+      }
+    },
+    "judicial-system": {
+      "anchor": "issue-judicial-system",
+      "options": {
+        "continue-judicial-changes": {
+          "agreement": "agrees",
+          "text": "The research places the party closest to this option. Its founding document calls for a court of appeal over the High Court of Justice and for splitting the attorney general's role, though these differ in detail from the changes passed since 2023, and no statement on the 2025 law on choosing judges was found."
+        },
+        "broad-agreed-constitutional-framework": {
+          "agreement": "partially",
+          "text": "The party's founding document promises to \"define in law the powers of the branches of government\", which touches on a clear constitutional framework. This is a secondary element: its main proposals are a court of appeal over the High Court of Justice and splitting the attorney general's role."
+        },
+        "repeal-changes-protect-independence": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: its founding document calls for a court of appeal over the High Court of Justice and for splitting the attorney general's role, and on 25 August 2026 party leader Ofer Winter called for \"significant change\" in the justice system. No statement on the 2025 law on choosing judges was found."
+        },
+        "keep-current-system-stability": {
+          "agreement": "disagrees",
+          "text": "The party's documented approach is different: on 25 August 2026 party leader Ofer Winter called for \"significant change\" in the justice system, and its founding document proposes a court of appeal over the High Court of Justice and splitting the attorney general's role."
+        }
+      }
+    },
+    "october-7-inquiry": {
+      "anchor": "issue-october-7-inquiry",
+      "options": {
+        "state-commission-under-existing-law": {
+          "agreement": "disagrees",
+          "text": "The party's proposal published on 5 October 2026 differs: all 120 Knesset members would elect two judges as chair and deputy chair by secret ballot, rather than the President of the Supreme Court picking members. Its founding document also asks that the commission have \"all the powers of a state commission of inquiry\"."
+        },
+        "commission-appointed-by-knesset-balance": {
+          "agreement": "partially",
+          "text": "Like your answer, the party's proposal published on 5 October 2026 has the Knesset choose the chair and deputy chair, and includes three family representatives. It differs in method: all 120 members vote by secret ballot for judges, and the party says it wants no \"distribution of appointments between political camps\"."
+        },
+        "commission-chosen-by-neutral-mechanism": {
+          "agreement": "agrees",
+          "text": "The party holds this option. Its proposal published on 5 October 2026 has all 120 Knesset members elect two judges as chair and deputy chair by secret ballot, and the inquiry could examine the government, the Knesset, the security services, intelligence and the justice system."
+        }
+      }
+    },
+    "religion-and-state": {
+      "anchor": "issue-religion-and-state",
+      "options": {
+        "strengthen-jewish-character": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no documented party position on enforcing Jewish religious law by statute, or on the Chief Rabbinate or public transport on Shabbat. The tentative indication, from a founding document that describes a state in which Judaism \"invites and does not coerce\", points to somewhere between keeping the current arrangements and more local choice."
+        },
+        "keep-status-quo": {
+          "agreement": "partially",
+          "text": "The research places the party tentatively between this option and local choice. Its founding document describes a state in which Judaism \"invites and does not coerce\", but no position on civil marriage, the Chief Rabbinate, conversion or public transport on Shabbat was found."
+        },
+        "more-choice-local-decisions": {
+          "agreement": "partially",
+          "text": "The research places the party tentatively between this option and keeping the current arrangements. Its founding document describes a state in which Judaism \"invites and does not coerce\", but no position on civil marriage, the Chief Rabbinate, conversion or public transport on Shabbat was found."
+        },
+        "separate-religion-and-state": {
+          "agreement": "party-position-unclear",
+          "text": "The research found no documented party position on civil marriage, the Chief Rabbinate, conversion or public transport on Shabbat, and no call to separate religion and state. The tentative indication, from a founding document that describes a state in which Judaism \"invites and does not coerce\", points to somewhere between keeping the current arrangements and more local choice."
+        }
+      }
+    }
+  },
+  "points": [
+    {
+      "text": "The party's founding document promises a \"differential rewards\" system based on the type, length and risk of service, with tax benefits for those who serve and incentives for businesses that employ them.",
+      "anchor": "other-service-rewards"
+    },
+    {
+      "text": "The party's founding document makes \"an initiating, national and professional\" international diplomacy and public-diplomacy system one of its ten first steps, and Yoseph Haddad, its second candidate, is its candidate for public diplomacy minister.",
+      "anchor": "other-public-diplomacy"
+    },
+    {
+      "text": "The party's founding document promises to give local authorities more powers and resources and to devolve the running of schools to local authorities and schools, while the Education Ministry keeps the core curriculum, regulation and measurement.",
+      "anchor": "other-periphery-local-government"
+    }
+  ]
+}
