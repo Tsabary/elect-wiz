@@ -207,6 +207,7 @@ export const matchingConfigJson = () => ({
   agreement: { agrees: 0.75, partially: 0.35 },
   weakMatchBelow: 0.6,
   ruledOutMax: 0.3,
+  inPart: 0.7,
 });
 
 /** The issues where each fixture party has no documented position. */

@@ -35,6 +35,7 @@ const CONFIG: MatchingConfig = {
   agreement: { agrees: 0.75, partially: 0.35 },
   weakMatchBelow: 0.6,
   ruledOutMax: 0.3,
+  inPart: 0.7,
 };
 
 /** Six issues, each with options a–d on a line: neighbours 0.5, two apart 0.2, the ends 0. */
@@ -126,6 +127,21 @@ describe("issueScore", () => {
     expect(issueScore({ ...row("p", "i1", "a"), ruledOut: ["b"] }, "a", grid("i1"), CONFIG)).toBe(
       1,
     );
+  });
+
+  it("counts an option the party holds only in part for less, wherever it is the best match", () => {
+    const partRow = {
+      ...row("p", "i1", "a"),
+      held: [{ optionId: "a", level: "main", inPart: true }],
+    };
+    const inPart = (optionId: string) =>
+      issueScore(partRow as typeof partRow & ReturnType<typeof row>, optionId, grid("i1"), CONFIG);
+    expect(inPart("a")).toBeCloseTo(CONFIG.inPart);
+    expect(inPart("b")).toBeCloseTo(CONFIG.inPart * 0.5);
+    // Picking it reads as partial agreement, not agreement.
+    expect(
+      issueAgreement(partRow as typeof partRow & ReturnType<typeof row>, "a", grid("i1"), CONFIG),
+    ).toBe("partially");
   });
 
   it("gives an either option the either value", () => {

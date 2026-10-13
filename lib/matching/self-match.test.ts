@@ -57,7 +57,7 @@ describe("selfMatchOption", () => {
           ["b", "main"],
         ]),
       ),
-    ).toEqual({ optionId: "b", level: "main" });
+    ).toEqual({ optionId: "b", level: "main", inPart: false });
     expect(
       selfMatchOption(
         row([
@@ -66,10 +66,11 @@ describe("selfMatchOption", () => {
           ["b", "either"],
         ]),
       ),
-    ).toEqual({ optionId: "b", level: "either" });
+    ).toEqual({ optionId: "b", level: "either", inPart: false });
     expect(selfMatchOption(row([["c", "secondary"]]))).toEqual({
       optionId: "c",
       level: "secondary",
+      inPart: false,
     });
   });
 

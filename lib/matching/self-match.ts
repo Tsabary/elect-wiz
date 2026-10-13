@@ -39,6 +39,8 @@ export interface SelfMatchIssue {
   optionId: string;
   /** The party's own level on that option. */
   level: PositionLevel;
+  /** The party holds that option only in part. */
+  inPart: boolean;
   /** The party's own score on the issue. */
   score: number;
 }
@@ -85,15 +87,18 @@ export interface SelfMatchReport {
 /**
  * The option a party's self-match voter picks on an issue: its highest-level
  * held option (`main`, else `either`, else `secondary`), ties by option ID.
- * Null for an unclear row.
+ * Null for an unclear row. `inPart` says the party holds that option only in
+ * part, so, like a non-`main` level, being outscored on it is not a failure.
  */
 export function selfMatchOption(
   row: PositionRow,
-): { optionId: string; level: PositionLevel } | null {
+): { optionId: string; level: PositionLevel; inPart: boolean } | null {
   if (row.unclear) return null;
   for (const level of POSITION_LEVELS) {
-    const ids = row.held.filter((h) => h.level === level).map((h) => h.optionId);
-    if (ids.length > 0) return { optionId: [...ids].sort()[0], level };
+    const held = row.held
+      .filter((h) => h.level === level)
+      .sort((a, b) => (a.optionId < b.optionId ? -1 : 1));
+    if (held.length > 0) return { optionId: held[0].optionId, level, inPart: !!held[0].inPart };
   }
   return null;
 }
@@ -157,7 +162,7 @@ export function runSelfMatch(input: SelfMatchInput): SelfMatchReport {
         .map((pick, i) => ({ ...pick, otherScore: otherScores[i] }))
         .filter((p) => p.otherScore > p.score + EPSILON);
       for (const p of higher) {
-        if (p.level !== "main") continue;
+        if (p.level !== "main" || p.inPart) continue;
         report.failures.push({
           partyId,
           issueId: p.issueId,

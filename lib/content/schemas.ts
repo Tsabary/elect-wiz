@@ -230,6 +230,12 @@ export type PositionLevel = (typeof POSITION_LEVELS)[number];
 export const heldOptionSchema = z.object({
   optionId: idSchema,
   level: z.enum(POSITION_LEVELS),
+  /**
+   * True when the research shows the party holds only part of what the option
+   * proposes (it backs one of the option's measures and not another). The
+   * option then counts for less, and choosing it reads as partial agreement.
+   */
+  inPart: z.boolean().optional(),
 });
 export type HeldOption = z.infer<typeof heldOptionSchema>;
 
@@ -352,6 +358,8 @@ export const matchingConfigSchema = z
      * however close it is to the option the party holds.
      */
     ruledOutMax: unit,
+    /** What an option the party holds only in part is worth, as a share of its level. */
+    inPart: unit,
   })
   .refine((v) => v.agreement.partially <= v.agreement.agrees, {
     path: ["agreement"],

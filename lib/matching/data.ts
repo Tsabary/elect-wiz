@@ -107,7 +107,9 @@ export function buildMatchingBundle(source: BundleSource): MatchingBundle {
           .map(({ partyId, unclear, held, ruledOut }) => ({
             partyId,
             unclear,
-            held: held.map(({ optionId, level }) => ({ optionId, level })),
+            held: held.map(({ optionId, level, inPart }) =>
+              inPart ? { optionId, level, inPart } : { optionId, level },
+            ),
             ...(ruledOut?.length ? { ruledOut: [...ruledOut] } : {}),
           })),
       })),

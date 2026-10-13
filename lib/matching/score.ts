@@ -123,7 +123,12 @@ export function issueScore(
 ): number {
   if (row.unclear || row.held.length === 0) return config.unclear;
   const score = Math.max(
-    ...row.held.map((h) => config.levels[h.level] * closeness(grid, h.optionId, optionId)),
+    ...row.held.map(
+      (h) =>
+        config.levels[h.level] *
+        (h.inPart ? config.inPart : 1) *
+        closeness(grid, h.optionId, optionId),
+    ),
   );
   // Being near an option the party rejected is common ground, not a partial match.
   return row.ruledOut?.includes(optionId) ? Math.min(score, config.ruledOutMax) : score;
