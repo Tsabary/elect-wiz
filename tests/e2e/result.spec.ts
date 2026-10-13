@@ -1,130 +1,481 @@
-import { expect, test } from "@playwright/test";
-import { completeSurvey, lists, parties } from "./helpers";
+import { expect, test, type Locator, type Page } from "@playwright/test";
+import {
+  answerIssues,
+  completeCase,
+  completeSurvey,
+  listOf,
+  listedParties,
+  LOCALES,
+  MATCHING_BUNDLE_URL,
+  openSurvey,
+  parties,
+  partyIdsOf,
+  PLACEHOLDER_CASES,
+  rankWithButtons,
+  researchedParties,
+  resultEntry,
+  type AppLocale,
+} from "./helpers";
 
-for (const locale of ["he", "en"] as const) {
-  test.describe(`result cases (${locale})`, () => {
-    test("joint list: labelled with partner links and no partner score", async ({ page }) => {
-      await completeSurvey(page, locale, "?mockScenario=joint-list");
-      const top = page.getByTestId("result-entry").first();
-      const partyId = (await top.getAttribute("data-party-id"))!;
-      const list = lists().find((l: any) => l.memberPartyIds.includes(partyId));
+/** How many parties the result shows as full cards; the rest sit behind "show all". */
+const FULL = 5;
+
+const issueIdsOf = (loc: Locator) =>
+  loc.evaluateAll((els) => els.map((e) => e.getAttribute("data-issue-id")));
+
+/** The `id` attributes present in a party page's server-rendered HTML. */
+async function partyPageIds(page: Page, locale: AppLocale, partyId: string): Promise<Set<string>> {
+  const res = await page.request.get(`/${locale}/parties/${partyId}`);
+  expect(res.status(), `party page of ${partyId}`).toBe(200);
+  return new Set([...(await res.text()).matchAll(/\sid="([^"]+)"/g)].map((m) => m[1]));
+}
+
+for (const locale of LOCALES) {
+  test.describe(`result cases from the placeholder answer sets (${locale})`, () => {
+    // What every answer set must produce: the recorded order, split into the
+    // five full cards and the rest behind "show all", and the recorded labels.
+    for (const id of PLACEHOLDER_CASES) {
+      test(`${id}: the recorded parties, in the recorded order`, async ({ page }) => {
+        const set = await completeCase(page, locale, id);
+        expect(set.entries).toHaveLength(researchedParties().length);
+
+        const cards = page.getByTestId("result-entry");
+        await expect(cards).toHaveCount(FULL);
+        expect(await partyIdsOf(cards)).toEqual(set.entries.slice(0, FULL));
+        await expect(page.getByTestId("weak-match")).toHaveCount(set.weakMatch ? 1 : 0);
+
+        // The top match's breakdown is open: one item per ranked issue, in rank order.
+        const top = cards.first();
+        await expect(top.getByTestId("breakdown")).toBeVisible();
+        expect(await issueIdsOf(top.getByTestId("breakdown-item"))).toEqual(set.ranked);
+
+        // The rest of the researched parties are behind "show all", in order.
+        const rows = page.getByTestId("result-row");
+        await expect(page.getByTestId("all-parties")).not.toHaveAttribute("open", /.*/);
+        await expect(rows.first()).toBeHidden();
+        await page.getByTestId("show-all").click();
+        await expect(page.getByTestId("all-parties-note")).toBeVisible();
+        await expect(page.getByTestId("all-parties-list")).toBeVisible();
+        expect(await partyIdsOf(rows)).toEqual(set.entries.slice(FULL));
+        await expect(rows.first()).toBeVisible();
+
+        // Every researched party appears exactly once; a listed party never does.
+        const shown = [...(await partyIdsOf(cards)), ...(await partyIdsOf(rows))];
+        expect([...shown].sort()).toEqual(
+          researchedParties()
+            .map((p) => p.id)
+            .sort(),
+        );
+        for (const p of listedParties()) expect(shown).not.toContain(p.id);
+
+        // Each party has one breakdown item per ranked issue, and the recorded
+        // "party position unclear" items are labelled so.
+        for (const partyId of set.entries) {
+          const entry = resultEntry(page, partyId);
+          await expect(entry.getByTestId("breakdown-item")).toHaveCount(set.ranked.length);
+        }
+        for (const [partyId, issueId] of set.unclear) {
+          await expect(
+            resultEntry(page, partyId).locator(
+              `[data-testid="breakdown-item"][data-issue-id="${issueId}"]`,
+            ),
+          ).toHaveAttribute("data-agreement", "party-position-unclear");
+        }
+      });
+    }
+
+    test("joint list: the top match is labelled with its list and a link to its partner", async ({
+      page,
+    }) => {
+      const set = await completeCase(page, locale, "joint-list-top");
+      const [topId] = set.entries;
+      const list = listOf(topId);
       expect(list.memberPartyIds.length).toBeGreaterThan(1);
+      const top = page.getByTestId("result-entry").first();
+      await expect(top).toHaveAttribute("data-party-id", topId);
       const label = top.getByTestId("joint-list-label");
+      await expect(label).toBeVisible();
       await expect(label).toContainText(list.name[locale]);
       await expect(label).toContainText(list.ballotLetters);
-      const partnerId = list.memberPartyIds.find((id: string) => id !== partyId);
+      const partnerId = list.memberPartyIds.find((x: string) => x !== topId);
       const partnerName = parties().find((p) => p.id === partnerId).name[locale];
       await expect(label.getByRole("link", { name: partnerName })).toHaveAttribute(
         "href",
         `/${locale}/parties/${partnerId}`,
       );
-      // The partner gets no separate entry unless it was matched on its own merits.
-      const entryIds = await page
-        .getByTestId("result-entry")
-        .evaluateAll((els) => els.map((e) => e.getAttribute("data-party-id")));
-      expect(entryIds.filter((id) => id === partyId)).toHaveLength(1);
-    });
-
-    test("below-threshold note, with the poll date", async ({ page }) => {
-      await completeSurvey(page, locale, "?mockScenario=below-threshold");
-      const note = page
-        .getByTestId("result-entry")
-        .first()
-        .getByTestId("poll-note-below-threshold");
-      await expect(note).toBeVisible();
-      await expect(note).toContainText("3.25");
-      await expect(note).toContainText("2026");
-    });
-
-    test("not-polled note", async ({ page }) => {
-      await completeSurvey(page, locale, "?mockScenario=not-polled");
+      // The partner is a runner-up on its own merits, with its own entry and label.
+      expect(set.entries.slice(1, FULL)).toContain(partnerId);
+      const partner = resultEntry(page, partnerId);
+      await expect(partner).toHaveCount(1);
       await expect(
-        page.getByTestId("result-entry").first().getByTestId("poll-note-not-polled"),
+        partner.getByTestId("joint-list-label").locator(`a[href="/${locale}/parties/${topId}"]`),
       ).toBeVisible();
+      // A party running alone carries no joint-list label.
+      const alone = set.entries.find((x) => listOf(x).memberPartyIds.length === 1)!;
+      await expect(resultEntry(page, alone).getByTestId("joint-list-label")).toHaveCount(0);
     });
 
-    test("limited-information flag", async ({ page }) => {
-      await completeSurvey(page, locale, "?mockScenario=limited-info");
-      await expect(
-        page.getByTestId("result-entry").first().getByTestId("result-limited-info"),
-      ).toBeVisible();
-    });
-
-    test("weak match message", async ({ page }) => {
-      await completeSurvey(page, locale, "?mockScenario=weak-match");
-      await expect(page.getByTestId("weak-match")).toBeVisible();
-      await expect(
-        page.getByTestId("result-entry").first().getByTestId("breakdown-item").first(),
-      ).toBeVisible();
-    });
-
-    test("no usable answers: closest matches with the weak-match message, no breakdown", async ({
+    test("below threshold: the top match carries the note, other parties don't", async ({
       page,
     }) => {
-      await completeSurvey(page, locale, "?mockScenario=no-usable-answers");
-      await expect(page.getByTestId("weak-match")).toBeVisible();
-      expect(await page.getByTestId("result-entry").count()).toBeGreaterThanOrEqual(3);
-      await expect(page.getByTestId("breakdown-item")).toHaveCount(0);
+      const set = await completeCase(page, locale, "below-threshold-top");
+      const [topId] = set.entries;
+      const poll = listOf(topId).poll;
+      expect(poll.status).toBe("polled");
+      expect(poll.percent).toBeLessThan(3.25);
+      const top = page.getByTestId("result-entry").first();
+      const note = top.getByTestId("poll-note-below-threshold");
+      await expect(note).toBeVisible();
+      // The registry's own figure, not a rounded or invented one.
+      await expect(note).toContainText(String(poll.percent));
+      await expect(page.getByTestId("poll-note-below-threshold")).toHaveCount(1);
+    });
+
+    test("limited information: the top match is flagged, and so is no fully researched party", async ({
+      page,
+    }) => {
+      const set = await completeCase(page, locale, "limited-information-top");
+      const [topId] = set.entries;
+      expect(parties().find((p) => p.id === topId).limitedInfo).toBe(true);
+      const top = page.getByTestId("result-entry").first();
+      await expect(top.getByTestId("result-limited-info")).toBeVisible();
+      // This list was also not polled, which is said on the same card.
+      expect(listOf(topId).poll.status).toBe("not_polled");
+      await expect(top.getByTestId("poll-note-not-polled")).toBeVisible();
+      for (const partyId of set.entries) {
+        const limited = parties().find((p) => p.id === partyId).limitedInfo;
+        await expect(resultEntry(page, partyId).getByTestId("result-limited-info")).toHaveCount(
+          limited ? 1 : 0,
+        );
+      }
+    });
+
+    test("weak match: the message shows above a normal result", async ({ page }) => {
+      await completeCase(page, locale, "weak-match");
+      const message = page.getByTestId("weak-match");
+      await expect(message).toBeVisible();
+      await expect(message).not.toBeEmpty();
+      // It sits outside the party cards: it is about the result, not one party.
+      await expect(page.getByTestId("result-entry").getByTestId("weak-match")).toHaveCount(0);
+      const top = page.getByTestId("result-entry").first();
+      await expect(top.getByTestId("breakdown-item").first()).toBeVisible();
+      await expect(top.getByTestId("points")).toBeVisible();
+    });
+
+    test("unclear position: the breakdown says so on that issue, and still links to the research", async ({
+      page,
+    }) => {
+      const set = await completeCase(page, locale, "unclear-position");
+      const [[partyId, issueId]] = set.unclear;
+      expect(partyId).toBe(set.entries[0]);
+      const top = page.getByTestId("result-entry").first();
+      const item = top.locator(`[data-testid="breakdown-item"][data-issue-id="${issueId}"]`);
+      await expect(item).toBeVisible();
+      await expect(item).toHaveAttribute("data-agreement", "party-position-unclear");
+      await expect(item.getByTestId("breakdown-link")).toHaveAttribute(
+        "href",
+        `/${locale}/parties/${partyId}#issue-${issueId}`,
+      );
+      // The other issues got a real comparison.
+      const levels = await top
+        .getByTestId("breakdown-item")
+        .evaluateAll((els) => els.map((e) => e.getAttribute("data-agreement")));
+      expect(levels.filter((l) => l === "party-position-unclear")).toHaveLength(set.unclear.length);
+      for (const l of levels) {
+        expect(["agrees", "partially", "disagrees", "party-position-unclear"]).toContain(l);
+      }
+    });
+
+    test("every party shows 2–3 points, each linked to an existing `other-…` section of its research", async ({
+      page,
+    }) => {
+      const set = await completeCase(page, locale, "joint-list-top");
+      // The top match's points are in view without opening anything.
+      const top = page.getByTestId("result-entry").first();
+      await expect(top.getByTestId("points")).toBeVisible();
+      await expect(top.getByTestId("point").first()).toBeVisible();
+
+      for (const partyId of set.entries) {
+        const entry = resultEntry(page, partyId);
+        await expect(entry.getByTestId("points")).toHaveCount(1);
+        const hrefs = await entry
+          .getByTestId("point-link")
+          .evaluateAll((els) => els.map((e) => e.getAttribute("href")!));
+        expect(hrefs.length, partyId).toBeGreaterThanOrEqual(2);
+        expect(hrefs.length, partyId).toBeLessThanOrEqual(3);
+        await expect(entry.getByTestId("point")).toHaveCount(hrefs.length);
+        expect(new Set(hrefs).size, `${partyId}: distinct anchors`).toBe(hrefs.length);
+        const ids = await partyPageIds(page, locale, partyId);
+        for (const href of hrefs) {
+          const [path, anchor] = href.split("#");
+          expect(path).toBe(`/${locale}/parties/${partyId}`);
+          expect(anchor).toMatch(/^other-[a-z0-9-]+$/);
+          expect(ids.has(anchor), `${href} exists on the party page`).toBe(true);
+        }
+      }
+
+      // A runner-up's points sit inside its collapsed details.
+      const runnerUp = page.getByTestId("result-entry").nth(1);
+      await expect(runnerUp.getByTestId("points")).toBeHidden();
+      await runnerUp.locator("summary").click();
+      await expect(runnerUp.getByTestId("points")).toBeVisible();
+      await expect(runnerUp.getByTestId("breakdown-item").first()).toBeVisible();
+
+      // Following a point lands on that section of the research page.
+      const link = top.getByTestId("point-link").first();
+      const anchor = (await link.getAttribute("href"))!.split("#")[1];
+      await link.click();
+      await expect(page).toHaveURL(new RegExp(`/${locale}/parties/${set.entries[0]}#${anchor}$`));
+      await expect(page.locator(`[id="${anchor}"]`)).toBeInViewport();
+    });
+
+    test("a 'show all' row opens to the same facts, breakdown and points as a card", async ({
+      page,
+    }) => {
+      // Here the limited-information party is the one behind "show all".
+      const set = await completeCase(page, locale, "below-threshold-top");
+      const lastId = set.entries[set.entries.length - 1];
+      await page.getByTestId("show-all").click();
+      const row = page.locator(`[data-testid="result-row"][data-party-id="${lastId}"]`);
+      await expect(row).toBeVisible();
+      await expect(row.getByTestId("breakdown")).toBeHidden();
+      await row.locator("summary").click();
+      await expect(row.getByTestId("breakdown")).toBeVisible();
+      await expect(row.getByTestId("breakdown-item")).toHaveCount(set.ranked.length);
+      await expect(row.getByTestId("points")).toBeVisible();
+      await expect(row.getByTestId("research-link")).toHaveAttribute(
+        "href",
+        `/${locale}/parties/${lastId}`,
+      );
+      // "Show all" closes again.
+      await page.getByTestId("show-all").click();
+      await expect(row).toBeHidden();
+    });
+
+    test("the 'not all lists' note links to the Parties page", async ({ page }) => {
+      await completeCase(page, locale, "weak-match");
+      const note = page.getByTestId("not-all-lists");
+      await expect(note).toBeVisible();
+      await expect(note.getByRole("link")).toHaveCount(1);
+      await expect(note.getByRole("link")).toHaveAttribute("href", `/${locale}/parties`);
+      // It names no poll figure.
+      expect(await note.innerText()).not.toContain("%");
+      await note.getByRole("link").click();
+      await expect(page).toHaveURL(new RegExp(`/${locale}/parties$`));
+      // That page does list the parties the matching left out.
+      await expect(page.locator('[data-testid="party-link"][data-tier="listed"]')).toHaveCount(
+        listedParties().length,
+      );
+    });
+
+    test("breakdown and research links lead to existing places in the research", async ({
+      page,
+    }) => {
+      const set = await completeCase(page, locale, "unclear-position");
+      for (const partyId of set.entries) {
+        const entry = resultEntry(page, partyId);
+        await expect(entry.getByTestId("research-link")).toHaveAttribute(
+          "href",
+          `/${locale}/parties/${partyId}`,
+        );
+        const hrefs = await entry
+          .getByTestId("breakdown-link")
+          .evaluateAll((els) => els.map((e) => e.getAttribute("href")!));
+        expect(hrefs).toEqual(set.ranked.map((i) => `/${locale}/parties/${partyId}#issue-${i}`));
+        const ids = await partyPageIds(page, locale, partyId);
+        for (const href of hrefs) expect(ids.has(href.split("#")[1]), href).toBe(true);
+      }
+      // Following one scrolls to that issue's section.
+      const link = page.getByTestId("result-entry").first().getByTestId("breakdown-link").nth(2);
+      const anchor = (await link.getAttribute("href"))!.split("#")[1];
+      await link.click();
+      await expect(page).toHaveURL(new RegExp(`#${anchor}$`));
+      const heading = page.locator(`[id="${anchor}"]`);
+      await expect(heading).toBeVisible();
+      await expect(heading).toBeInViewport();
+    });
+
+    test("the result offers no way to edit the answers or run the matching again", async ({
+      page,
+    }) => {
+      await completeCase(page, locale, "joint-list-top");
+      const result = page.getByTestId("result");
+      for (const gone of [
+        "step-back",
+        "step-next",
+        "submit-survey",
+        "ranking-continue",
+        "answer-step",
+        "answer-option",
+        "error-retry",
+        "error-restart",
+        "anything-else-note",
+      ]) {
+        await expect(page.getByTestId(gone)).toHaveCount(0);
+      }
+      // The only button on the result is sharing; nothing links back into the survey.
+      await page.getByTestId("show-all").click();
+      await expect(result.getByRole("button")).toHaveCount(1);
+      await expect(result.getByTestId("share-button")).toBeVisible();
+      await expect(result.locator(`a[href*="/survey"]`)).toHaveCount(0);
+      await expect(result.locator("form, input, textarea, select")).toHaveCount(0);
+      await expect(page.getByTestId("disclaimer")).toBeVisible();
     });
   });
 }
 
-const RETRY = ["abuse_check_failed", "rate_limited", "at_capacity", "upstream_failure"];
-const RESTART = ["validation", "content_version_mismatch"];
-
-for (const locale of ["he", "en"] as const) {
+for (const locale of LOCALES) {
   test.describe(`error states (${locale})`, () => {
-    for (const code of RETRY) {
-      test(`${code}: localized message and "try again" resubmits`, async ({ page }) => {
-        await completeSurvey(page, locale, `?mockScenario=error-${code}`);
-        const error = page.getByTestId("result-error");
-        await expect(error).toHaveAttribute("data-error-code", code);
-        await expect(page.getByTestId("error-restart")).toHaveCount(0);
-        // Survey progress is kept while an error is shown.
-        expect(await page.evaluate(() => localStorage.getItem("elect.survey"))).not.toBeNull();
+    test("the matching data fails to load: 'try again' loads it and shows the result", async ({
+      page,
+    }) => {
+      let fail = true;
+      let requests = 0;
+      await page.route(MATCHING_BUNDLE_URL, (route) => {
+        requests++;
+        return fail ? route.abort("failed") : route.continue();
+      });
+      await completeSurvey(page, locale);
+      const error = page.getByTestId("result-error");
+      await expect(error).toHaveAttribute("data-error-code", "bundle_load_failed");
+      await expect(error).toHaveAttribute("role", "alert");
+      await expect(error.getByRole("heading", { level: 1 })).toBeFocused();
+      await expect(page.getByTestId("error-retry")).toBeVisible();
+      await expect(page.getByTestId("error-restart")).toHaveCount(0);
+      await expect(page.getByTestId("result")).toHaveCount(0);
+      // The answers are kept while the error shows.
+      const saved = JSON.parse((await page.evaluate(() => localStorage.getItem("elect.survey")))!);
+      expect(saved.ranked).toHaveLength(8);
+      expect(Object.keys(saved.answers)).toHaveLength(8);
+
+      // Still failing: the same error again, after a new request.
+      const before = requests;
+      await page.getByTestId("error-retry").click();
+      await expect.poll(() => requests).toBeGreaterThan(before);
+      await expect(error).toHaveAttribute("data-error-code", "bundle_load_failed");
+
+      // Back up: the result, with the answers given before.
+      fail = false;
+      await page.getByTestId("error-retry").click();
+      await expect(page.getByTestId("result")).toBeVisible();
+      await expect(page.getByTestId("result-error")).toHaveCount(0);
+      await expect(
+        page.getByTestId("result-entry").first().getByTestId("breakdown-item"),
+      ).toHaveCount(8);
+    });
+
+    test("the matching data is not a usable file: the same error, with 'try again'", async ({
+      page,
+    }) => {
+      let mode: "status" | "garbage" | "wrong-shape" = "status";
+      await page.route(MATCHING_BUNDLE_URL, (route) =>
+        mode === "status"
+          ? route.fulfill({ status: 500, body: "" })
+          : mode === "garbage"
+            ? route.fulfill({ status: 200, contentType: "application/json", body: "<html>" })
+            : route.fulfill({ status: 200, json: { hello: "world" } }),
+      );
+      await completeSurvey(page, locale);
+      const error = page.getByTestId("result-error");
+      for (const next of ["garbage", "wrong-shape"] as const) {
+        await expect(error).toHaveAttribute("data-error-code", "bundle_load_failed");
+        mode = next;
         const [req] = await Promise.all([
-          page.waitForRequest((r) => r.url().endsWith("/api/match")),
+          page.waitForRequest(MATCHING_BUNDLE_URL),
           page.getByTestId("error-retry").click(),
         ]);
-        expect(req.method()).toBe("POST");
-        await expect(page.getByTestId("result-error")).toBeVisible();
-      });
-    }
+        expect(req.method()).toBe("GET");
+        await page.waitForLoadState("networkidle");
+      }
+      await expect(error).toHaveAttribute("data-error-code", "bundle_load_failed");
+      await expect(page.getByTestId("error-retry")).toBeVisible();
+    });
 
-    for (const code of RESTART) {
-      test(`${code}: offers a restart, not a retry`, async ({ page }) => {
-        await completeSurvey(page, locale, `?mockScenario=error-${code}`);
-        await expect(page.getByTestId("result-error")).toHaveAttribute("data-error-code", code);
-        await expect(page.getByTestId("error-retry")).toHaveCount(0);
-        await page.getByTestId("error-restart").click();
-        await expect(page.getByTestId("survey")).toHaveAttribute("data-step", "ranking");
-        await expect(page.getByTestId("ranked-item")).toHaveCount(0);
+    test("the matching data was built for other survey content: restart, not retry", async ({
+      page,
+    }) => {
+      await page.route(MATCHING_BUNDLE_URL, async (route) => {
+        const res = await route.fetch();
+        const bundle = await res.json();
+        await route.fulfill({
+          response: res,
+          json: { ...bundle, surveyContentVersion: "some-other-version" },
+        });
       });
-    }
-
-    test("election_over: no retry or restart", async ({ page }) => {
-      await completeSurvey(page, locale, "?mockScenario=error-election_over");
-      await expect(page.getByTestId("result-error")).toHaveAttribute(
-        "data-error-code",
-        "election_over",
-      );
+      await completeSurvey(page, locale);
+      const error = page.getByTestId("result-error");
+      await expect(error).toHaveAttribute("data-error-code", "content_version_mismatch");
       await expect(page.getByTestId("error-retry")).toHaveCount(0);
-      await expect(page.getByTestId("error-restart")).toHaveCount(0);
+      await expect(page.getByTestId("result")).toHaveCount(0);
+      await page.getByTestId("error-restart").click();
+      await expect(page.getByTestId("survey")).toHaveAttribute("data-step", "ranking");
+      await expect(page.getByTestId("ranked-item")).toHaveCount(0);
+      await expect(page.getByTestId("not-important-item")).toHaveCount(0);
+      await expect(page.getByTestId("pool-item")).toHaveCount(10);
     });
   });
 }
 
-test("a network timeout or failure shows upstream_failure", async ({ page }) => {
-  await page.route("**/api/match", (route) => route.abort("failed"));
+test("a newer matching version than the page expected is simply used", async ({ page }) => {
+  await page.route(MATCHING_BUNDLE_URL, async (route) => {
+    const res = await route.fetch();
+    await route.fulfill({
+      response: res,
+      json: { ...(await res.json()), matchingVersion: "a-later-version" },
+    });
+  });
   await completeSurvey(page, "en");
-  await expect(page.getByTestId("result-error")).toHaveAttribute(
-    "data-error-code",
-    "upstream_failure",
-  );
+  await expect(page.getByTestId("result")).toBeVisible();
+  await expect(page.getByTestId("result-error")).toHaveCount(0);
+});
+
+test("the matching data is fetched once, ahead of the submit, from the versioned address", async ({
+  page,
+}) => {
+  const urls: string[] = [];
+  page.on("request", (r) => {
+    if (MATCHING_BUNDLE_URL.test(r.url())) urls.push(r.url());
+  });
+  await openSurvey(page, "he");
+  await rankWithButtons(page, 5);
+  expect(urls).toHaveLength(0);
+  await answerIssues(page, { submit: false });
+  await expect.poll(() => urls.length).toBe(1);
+  const url = new URL(urls[0]);
+  expect(url.pathname).toBe("/api/matching/he");
+  expect(url.searchParams.get("v")).toBeTruthy();
+  await page.getByTestId("submit-survey").click();
+  await expect(page.getByTestId("result")).toBeVisible();
+  // No waiting screen, and no second request.
+  await expect(page.getByTestId("result-loading")).toHaveCount(0);
+  expect(urls).toHaveLength(1);
+});
+
+test("submitting before the matching data arrives shows the loading state, then the result", async ({
+  page,
+}) => {
+  let release!: () => void;
+  const held = new Promise<void>((resolve) => (release = resolve));
+  await page.route(MATCHING_BUNDLE_URL, async (route) => {
+    await held;
+    await route.continue();
+  });
+  await openSurvey(page, "en");
+  await rankWithButtons(page, 5);
+  await answerIssues(page);
+  const loading = page.getByTestId("result-loading");
+  await expect(loading).toBeVisible();
+  await expect(loading).toHaveAttribute("aria-busy", "true");
+  await expect(loading.getByRole("heading", { level: 1 })).toBeFocused();
+  await expect(page.getByTestId("result")).toHaveCount(0);
+  release();
+  await expect(page.getByTestId("result")).toBeVisible();
+  await expect(loading).toHaveCount(0);
+  await expect(page.getByTestId("result").getByRole("heading", { level: 1 })).toBeFocused();
 });
 
 test.describe("sharing", () => {
-  test("share link carries only party IDs and opens the landing page", async ({
+  test("share link carries only the top four party IDs and opens the landing page", async ({
     page,
     context,
     isMobile,
@@ -134,11 +485,8 @@ test.describe("sharing", () => {
       "the native share sheet can't be driven in tests; copy-link is tested on desktop",
     );
     await context.grantPermissions(["clipboard-read", "clipboard-write"]);
-    await completeSurvey(page, "en");
-    await expect(page.getByTestId("result")).toBeVisible();
-    const ids = await page
-      .getByTestId("result-entry")
-      .evaluateAll((els) => els.map((e) => e.getAttribute("data-party-id")));
+    const set = await completeCase(page, "en", "joint-list-top");
+    const ids = set.entries.slice(0, 4);
     await page.getByTestId("share-button").click();
     await expect(page.getByTestId("share-status")).not.toBeEmpty();
     const url = new URL((await page.getByTestId("share-url-value").textContent())!);
@@ -151,12 +499,18 @@ test.describe("sharing", () => {
     await page.goto(url.pathname);
     await expect(page.getByTestId("share-landing")).toBeVisible();
     await expect(page.getByTestId("shared-top")).toHaveAttribute("href", `/en/parties/${ids[0]}`);
+    expect(
+      await page
+        .getByTestId("shared-rest")
+        .locator("a")
+        .evaluateAll((els) => els.map((e) => e.getAttribute("href"))),
+    ).toEqual(ids.slice(1).map((id) => `/en/parties/${id}`));
     await expect(page.getByTestId("start-survey")).toBeVisible();
   });
 
-  for (const locale of ["he", "en"] as const) {
+  for (const locale of LOCALES) {
     test(`landing page ignores invalid and extra parameters (${locale})`, async ({ page }) => {
-      const valid = parties()[0];
+      const valid = researchedParties()[0];
       await page.goto(
         `/${locale}/share/nope,${valid.id},${valid.id},%3Cscript%3E?answers=secret&x=1`,
       );
@@ -168,8 +522,39 @@ test.describe("sharing", () => {
       await expect(page.getByTestId("shared-top")).toHaveCount(0);
     });
 
+    test(`landing page ignores a listed party's ID (${locale})`, async ({ page }) => {
+      const [listed] = listedParties();
+      const [a, b] = researchedParties();
+      // A listed party can't be presented as someone's match, wherever it sits in the link.
+      await page.goto(`/${locale}/share/${listed.id},${a.id},${b.id}`);
+      await expect(page.getByTestId("shared-top")).toHaveAttribute(
+        "href",
+        `/${locale}/parties/${a.id}`,
+      );
+      await expect(page.getByTestId("shared-top")).toHaveText(a.name[locale]);
+      await expect(page.getByTestId("shared-rest").locator("a")).toHaveCount(1);
+      const landing = page.getByTestId("share-landing");
+      await expect(landing.locator(`a[href$="/parties/${listed.id}"]`)).toHaveCount(0);
+      expect(await landing.innerText()).not.toContain(listed.name[locale]);
+      // Nor in the page's metadata or its preview image address.
+      await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
+        "href",
+        new RegExp(`/${locale}/share/${a.id},${b.id}$`),
+      );
+      for (const sel of ['meta[property="og:title"]', 'meta[property="og:image"]']) {
+        const content = (await page.locator(sel).getAttribute("content"))!;
+        expect(content).not.toContain(listed.name[locale]);
+      }
+
+      // Alone, it leaves nothing to show.
+      await page.goto(`/${locale}/share/${listed.id}`);
+      await expect(page.getByTestId("share-landing")).toBeVisible();
+      await expect(page.getByTestId("shared-top")).toHaveCount(0);
+      await expect(page.getByTestId("start-survey")).toBeVisible();
+    });
+
     test(`landing page metadata and preview image (${locale})`, async ({ page, request }) => {
-      const [a, b] = parties();
+      const [a, b] = researchedParties();
       await page.goto(`/${locale}/share/${a.id},${b.id}`);
       const og = await page.locator('meta[property="og:image"]').getAttribute("content");
       expect(og).toBeTruthy();
