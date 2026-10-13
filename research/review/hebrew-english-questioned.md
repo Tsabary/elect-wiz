@@ -64,3 +64,9 @@ Each was checked against the party's English research document; changes were mad
 
 **For later batches:** a name or role may also be confirmed from the issue section of the research that the text is about, not only from the leadership section. A label is computed from the position rows; flag one only when the position row looks wrong against the research's "Closest option(s)" line.
 
+
+## Found in the fourth batch (2026-10-13)
+
+| Party | File | Where | What looks wrong | Found by | Status |
+|---|---|---|---|---|---|
+| hadash | `content/research/en/hadash.md` | Leadership, the Faten Ghattas bullet | Says "he holds a doctorate… and directs", then "chose her"; the registry and the rest of the English treat Faten Ghattas as a woman, so "he" looks like a typo for "she". The Hebrew uses the feminine throughout. | 5b parity check (`research/review/parity-check.md`) | open, owner to decide |
