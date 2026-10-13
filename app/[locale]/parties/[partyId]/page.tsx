@@ -1,3 +1,4 @@
+import { ExternalLink } from "lucide-react";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getFormatter, getTranslations, setRequestLocale } from "next-intl/server";
@@ -8,7 +9,7 @@ import { ResearchDocument } from "@/components/research/research-document";
 import { Link } from "@/i18n/navigation";
 import { routing, type Locale } from "@/i18n/routing";
 import { getList, getLists, getParties, getParty, getResearchDoc } from "@/lib/content/loaders";
-import { partySummary } from "@/lib/content/party-view";
+import { listedPartyView } from "@/lib/content/party-view";
 import { pageMetadata } from "@/lib/site";
 import { resolveNow, timeModes } from "@/lib/time-modes";
 
@@ -32,7 +33,9 @@ export async function generateMetadata({
     locale,
     path: `parties/${partyId}`,
     title: party.name[locale],
-    description: t("description", { name: party.name[locale] }),
+    description: t(party.tier === "listed" ? "listedDescription" : "description", {
+      name: party.name[locale],
+    }),
     siteName: m("siteName"),
   });
 }
@@ -42,14 +45,17 @@ export default async function PartyPage({ params }: PageProps<"/[locale]/parties
   setRequestLocale(locale);
   const party = getParty(partyId);
   const list = party && getList(party.listId);
-  const doc = party && getResearchDoc(partyId, locale);
-  if (!party || !list || !doc) notFound();
+  if (!party || !list) notFound();
+  // A listed party has no research document: its page shows registry facts only.
+  const listed = party.tier === "listed";
+  const doc = listed ? null : getResearchDoc(partyId, locale);
+  if (!listed && !doc) notFound();
 
   const t = await getTranslations("Research");
   const format = await getFormatter();
-  const summary = partySummary(party, getParties(), getLists(), locale);
+  const summary = listedPartyView(party, getParties(), getLists(), locale);
   const modes = timeModes(resolveNow());
-  const researchedAsOf = doc.researchedAsOf || party.researchedAsOf;
+  const researchedAsOf = doc ? doc.researchedAsOf || party.researchedAsOf : null;
 
   return (
     <article className="flex flex-col gap-8">
@@ -95,7 +101,16 @@ export default async function PartyPage({ params }: PageProps<"/[locale]/parties
             />
           </p>
         )}
-        {party.limitedInfo && (
+        {listed && (
+          <p
+            role="note"
+            data-testid="listed-note"
+            className="bg-muted rounded-lg border px-4 py-3 text-sm"
+          >
+            {t("listedNote")}
+          </p>
+        )}
+        {summary.limitedInfo && (
           <p
             role="note"
             data-testid="limited-info"
@@ -106,7 +121,49 @@ export default async function PartyPage({ params }: PageProps<"/[locale]/parties
         )}
       </header>
 
-      <ResearchDocument doc={doc} afterOverview={<PollInfo list={list} modes={modes} />} />
+      {doc ? (
+        <ResearchDocument doc={doc} afterOverview={<PollInfo list={list} modes={modes} />} />
+      ) : (
+        // Registry facts and the party's own link only: no research, no poll information.
+        <>
+          {summary.topCandidates.length > 0 && (
+            <section aria-labelledby="top-candidates" className="flex flex-col gap-3">
+              <h2 id="top-candidates" className="text-2xl font-semibold">
+                {t("topCandidates")}
+              </h2>
+              <ol className="flex list-decimal flex-col gap-1 ps-6" data-testid="top-candidates">
+                {summary.topCandidates.map((name, i) => (
+                  <li key={i}>{name}</li>
+                ))}
+              </ol>
+            </section>
+          )}
+          {summary.platformUrl && (
+            <section
+              aria-labelledby="party-platform"
+              className="flex flex-col gap-2"
+              data-testid="platform"
+            >
+              <h2 id="party-platform" className="text-2xl font-semibold">
+                {t("platformHeading")}
+              </h2>
+              <p className="text-muted-foreground text-sm" data-testid="platform-note">
+                {t("platformNote")}
+              </p>
+              <a
+                href={summary.platformUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="platform-link"
+                className="inline-flex min-h-11 items-center gap-1 self-start font-medium underline underline-offset-4"
+              >
+                {t("platformLink")}
+                <ExternalLink className="size-4" aria-hidden="true" />
+              </a>
+            </section>
+          )}
+        </>
+      )}
     </article>
   );
 }

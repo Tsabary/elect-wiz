@@ -6,6 +6,7 @@ import { ElectionGate } from "@/components/time/time-modes";
 import { Link } from "@/i18n/navigation";
 import { localeDirection, type Locale } from "@/i18n/routing";
 import { getParties, getVersions } from "@/lib/content/loaders";
+import { researchedPartyIds } from "@/lib/content/party-view";
 import { parseSharedParties } from "@/lib/share/params";
 import { pageMetadata } from "@/lib/site";
 import { resolveNow, timeModes } from "@/lib/time-modes";
@@ -21,10 +22,8 @@ type Params = { locale: Locale; parties: string };
 
 function sharedParties(locale: Locale, segment: string) {
   const parties = getParties();
-  return parseSharedParties(
-    segment,
-    parties.map((p) => p.id),
-  ).map((id) => {
+  // Only researched parties can be a match; a listed party's ID is ignored.
+  return parseSharedParties(segment, researchedPartyIds(parties)).map((id) => {
     const p = parties.find((x) => x.id === id)!;
     return { id, name: p.name[locale] };
   });

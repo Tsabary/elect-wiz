@@ -7,14 +7,19 @@ import "server-only";
 import fs from "node:fs";
 import path from "node:path";
 import { cache } from "react";
+import { buildMatchingBundle, type MatchingBundle } from "@/lib/matching/data";
 import { activeCorpus, CORPUS_DIRS, type ResearchLang } from "./config";
 import { CONTENT_ROOT } from "./read-raw";
 import { parseResearchDoc, type ParsedResearchDoc } from "./research-parser";
 import {
+  distancesFileSchema,
   glossarySchema,
   issueSchema,
   listsFileSchema,
+  matchingConfigSchema,
   partiesFileSchema,
+  partyTextsSchema,
+  positionsFileSchema,
   versionsSchema,
   type Glossary,
   type Issue,
@@ -78,4 +83,37 @@ export const getResearchDoc = cache((partyId: string, lang: ResearchLang): Resea
   if (!fs.existsSync(abs)) return null;
   const doc = parseResearchDoc(fs.readFileSync(abs, "utf8"));
   return { ...doc, partyId, lang, researchedAsOf: doc.frontmatter.researchedAsOf ?? "" };
+});
+
+const matchingDir = () => CORPUS_DIRS[activeCorpus()].matching;
+
+/** Every JSON file of a directory under the content root, in name order. */
+function readJsonDir(relDir: string): unknown[] {
+  const abs = path.join(CONTENT_ROOT, relDir);
+  if (!fs.existsSync(abs)) return [];
+  return fs
+    .readdirSync(abs)
+    .filter((f) => f.endsWith(".json"))
+    .sort()
+    .map((f) => readJson(`${relDir}/${f}`));
+}
+
+/**
+ * The matching bundle of the active corpus in one language: what the bundle
+ * route serves and the browser scores from. Only researched parties are in it.
+ */
+export const getMatchingBundle = cache((lang: ResearchLang): MatchingBundle => {
+  const dir = matchingDir();
+  const { matchingVersion, surveyContentVersion } = getVersions();
+  return buildMatchingBundle({
+    locale: lang,
+    versions: { matchingVersion, surveyContentVersion },
+    partyIds: getParties()
+      .filter((p) => p.tier === "researched")
+      .map((p) => p.id),
+    positions: readJsonDir(`${dir}/positions`).map((f) => positionsFileSchema.parse(f)),
+    distances: readJsonDir(`${dir}/distances`).map((f) => distancesFileSchema.parse(f)),
+    config: matchingConfigSchema.parse(readJson(`${dir}/config.json`)),
+    texts: readJsonDir(`${dir}/texts/${lang}`).map((f) => partyTextsSchema.parse(f)),
+  });
 });

@@ -1,11 +1,16 @@
 import placeholderProfiles from "@/content/placeholder/matching/profiles.json";
-import { issueSchema, listsFileSchema, partiesFileSchema } from "@/lib/content/schemas";
-import type { MatchRequest } from "@/lib/matching/contract";
-import type { CorpusView } from "@/lib/matching/types";
+import {
+  issueSchema,
+  listsFileSchema,
+  partiesFileSchema,
+  type Issue,
+  type List,
+  type Party,
+} from "@/lib/content/schemas";
 import { ISSUE_IDS, issueJson } from "./content";
 
 /** A corpus view covering every metadata case: joint list, below threshold, not polled, limited info. */
-export function corpusView(): CorpusView {
+export function corpusView(): { issues: Issue[]; parties: Party[]; lists: List[] } {
   const src = { title: "Avg", url: "https://example.org/p" };
   const reg = [{ title: "Reg", url: "https://example.org/r" }];
   const lists = listsFileSchema.parse({
@@ -65,27 +70,6 @@ export function corpusView(): CorpusView {
   return { issues: ISSUE_IDS.map((id) => issueSchema.parse(issueJson(id))), parties, lists };
 }
 
-export const SURVEY_VERSION = "v1";
-
-export function validRequest(overrides: Partial<MatchRequest> = {}): MatchRequest {
-  const ranked = ISSUE_IDS.slice(0, 7);
-  return {
-    locale: "en",
-    surveyContentVersion: SURVEY_VERSION,
-    ranked,
-    notImportant: ISSUE_IDS.slice(7),
-    answers: ranked.map((issueId, i) => ({
-      issueId,
-      text: i === 0 ? "My own words about this issue" : "Option 1",
-      startingOptionId: i === 0 ? null : "opt-1",
-      edited: false,
-    })),
-    anythingElse: { text: "Animal welfare", importance: "middle" },
-    token: null,
-    ...overrides,
-  };
-}
-
 // ------------------------------------------------------------------ placeholder answer sets
 
 /**
@@ -109,7 +93,7 @@ export interface PlaceholderAnswerSet {
   ranked: string[];
   /** Issue ID → the chosen option ID. */
   answers: Record<string, string>;
-  /** The result's party IDs in order, top match first. */
+  /** The result's party IDs in order, top match first: every researched placeholder party. */
   entries: string[];
   weakMatch: boolean;
   /** Breakdown items that must be labelled "party position unclear", as `[partyId, issueId]`. */
@@ -119,19 +103,40 @@ export interface PlaceholderAnswerSet {
 const EXPECTED: Record<PlaceholderCase, Omit<PlaceholderAnswerSet, "ranked" | "answers">> = {
   /** A party on the joint list "olive-and-valley" is the top match; its partner is a runner-up. */
   "joint-list-top": {
-    entries: ["green-valley", "olive-branch", "cedar-tradition", "lighthouse"],
+    entries: [
+      "green-valley",
+      "olive-branch",
+      "cedar-tradition",
+      "lighthouse",
+      "pebble-citizens",
+      "blue-horizon",
+    ],
     weakMatch: false,
     unclear: [],
   },
   /** The top match's list ("lighthouse") polls below the electoral threshold. */
   "below-threshold-top": {
-    entries: ["lighthouse", "cedar-tradition", "green-valley", "olive-branch"],
+    entries: [
+      "lighthouse",
+      "cedar-tradition",
+      "green-valley",
+      "olive-branch",
+      "pebble-citizens",
+      "blue-horizon",
+    ],
     weakMatch: false,
     unclear: [["cedar-tradition", "october-7-inquiry"]],
   },
   /** The limited-information party is the top match, with two unclear issues of its own. */
   "limited-information-top": {
-    entries: ["pebble-citizens", "olive-branch", "green-valley", "blue-horizon"],
+    entries: [
+      "pebble-citizens",
+      "olive-branch",
+      "green-valley",
+      "blue-horizon",
+      "lighthouse",
+      "cedar-tradition",
+    ],
     weakMatch: false,
     unclear: [
       ["pebble-citizens", "gaza"],
@@ -140,13 +145,27 @@ const EXPECTED: Record<PlaceholderCase, Omit<PlaceholderAnswerSet, "ranked" | "a
   },
   /** No party is close: the top score is below `weakMatchBelow`. */
   "weak-match": {
-    entries: ["green-valley", "blue-horizon", "olive-branch", "cedar-tradition"],
+    entries: [
+      "green-valley",
+      "blue-horizon",
+      "olive-branch",
+      "cedar-tradition",
+      "pebble-citizens",
+      "lighthouse",
+    ],
     weakMatch: true,
     unclear: [],
   },
   /** The top match has no documented position on one ranked issue. */
   "unclear-position": {
-    entries: ["cedar-tradition", "lighthouse", "green-valley", "olive-branch"],
+    entries: [
+      "cedar-tradition",
+      "lighthouse",
+      "green-valley",
+      "olive-branch",
+      "pebble-citizens",
+      "blue-horizon",
+    ],
     weakMatch: false,
     unclear: [["cedar-tradition", "october-7-inquiry"]],
   },

@@ -1,5 +1,5 @@
 /**
- * Deployment environment. Dev-only affordances (mock forcing, clock override)
+ * Deployment environment. Dev-only affordances (the clock override)
  * are enabled everywhere except production.
  *
  * Resolution: VERCEL_ENV (set by Vercel: production | preview | development),

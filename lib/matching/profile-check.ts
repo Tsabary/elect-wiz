@@ -7,13 +7,13 @@
  * positions, grids and constants.
  */
 import type { VoterProfile } from "../content/schemas";
-import { MAX_ENTRIES } from "./contract";
+import { TOP_ENTRIES } from "./contract";
 import { MatchDataError, MatchInputError, rankParties, type MatchingData } from "./score";
 
 export interface ProfileOutcome {
   profile: VoterProfile;
   pass: boolean;
-  /** The highest-scoring parties in result order, `MAX_ENTRIES` at most. */
+  /** The highest-scoring parties in result order, `TOP_ENTRIES` at most. */
   top: { partyId: string; score: number }[];
   /** Why the profile failed; empty when it passed. */
   problems: string[];
@@ -50,7 +50,7 @@ export function runProfiles(input: ProfileCheckInput): ProfileCheckReport {
       if (!(e instanceof MatchDataError) && !(e instanceof MatchInputError)) throw e;
       return { profile, pass: false, top: [], problems: [e.message], sameList: [] };
     }
-    const top = ranked.slice(0, MAX_ENTRIES).map(({ partyId, score }) => ({ partyId, score }));
+    const top = ranked.slice(0, TOP_ENTRIES).map(({ partyId, score }) => ({ partyId, score }));
     const topIds = top.map((t) => t.partyId);
     const { expect } = profile;
     const problems: string[] = [];
@@ -58,10 +58,10 @@ export function runProfiles(input: ProfileCheckInput): ProfileCheckReport {
       problems.push(`top is "${topIds[0]}", expected one of: ${expect.topAnyOf.join(", ")}`);
     }
     for (const id of expect.inTop4 ?? []) {
-      if (!topIds.includes(id)) problems.push(`"${id}" is not in the top ${MAX_ENTRIES}`);
+      if (!topIds.includes(id)) problems.push(`"${id}" is not in the top ${TOP_ENTRIES}`);
     }
     for (const id of expect.notInTop4 ?? []) {
-      if (topIds.includes(id)) problems.push(`"${id}" is in the top ${MAX_ENTRIES}`);
+      if (topIds.includes(id)) problems.push(`"${id}" is in the top ${TOP_ENTRIES}`);
     }
     const byList = new Map<string, string[]>();
     for (const id of topIds) {
@@ -84,13 +84,13 @@ export function formatProfileReport(report: ProfileCheckReport): string {
     lines.push(`${o.pass ? "PASS" : "FAIL"}  ${o.profile.id}: ${o.profile.description}`);
     lines.push(
       `      expected: top one of [${expect.topAnyOf.join(", ")}]` +
-        (expect.inTop4?.length ? `; in top ${MAX_ENTRIES}: [${expect.inTop4.join(", ")}]` : "") +
+        (expect.inTop4?.length ? `; in top ${TOP_ENTRIES}: [${expect.inTop4.join(", ")}]` : "") +
         (expect.notInTop4?.length
-          ? `; not in top ${MAX_ENTRIES}: [${expect.notInTop4.join(", ")}]`
+          ? `; not in top ${TOP_ENTRIES}: [${expect.notInTop4.join(", ")}]`
           : ""),
     );
     lines.push(
-      `      actual:   top ${o.top[0]?.partyId ?? "(none)"}; top ${MAX_ENTRIES}: ` +
+      `      actual:   top ${o.top[0]?.partyId ?? "(none)"}; top ${TOP_ENTRIES}: ` +
         (o.top.map((t) => `${t.partyId} ${t.score.toFixed(3)}`).join(", ") || "(none)"),
     );
     for (const s of o.sameList) {
@@ -102,7 +102,7 @@ export function formatProfileReport(report: ProfileCheckReport): string {
   lines.push(
     "",
     `${report.outcomes.length - failed} of ${report.outcomes.length} profiles pass.`,
-    `Two or more parties of one list share a top ${MAX_ENTRIES} in ${report.sameListProfiles} of ${report.outcomes.length} profiles.`,
+    `Two or more parties of one list share a top ${TOP_ENTRIES} in ${report.sameListProfiles} of ${report.outcomes.length} profiles.`,
   );
   return lines.join("\n");
 }

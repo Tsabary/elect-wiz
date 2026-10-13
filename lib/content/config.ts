@@ -15,8 +15,9 @@
  * The site renders the ACTIVE corpus. It is validated strictly (every party needs
  * both research documents, every list a poll snapshot). The inactive corpus is
  * validated for schema and consistency, and any research documents it already has
- * are fully checked, so research can land incrementally. Task 4.1 switches the
- * active corpus to `real` and deletes the placeholder corpus.
+ * are fully checked, so research can land incrementally. Task 5.1 of
+ * `tasks-deterministic-matching.md` switches the active corpus to `real`; the
+ * placeholder corpus stays for tests.
  */
 export type CorpusName = "real" | "placeholder";
 

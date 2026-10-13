@@ -1,17 +1,12 @@
 import { describe, expect, it } from "vitest";
-import { matchRequestSchema, validateMatchRequest } from "@/lib/matching/contract";
 import { seededShuffle } from "./shuffle";
 import {
-  OWN_ANSWER,
+  SURVEY_SCHEMA_VERSION,
   addToRanking,
-  anythingElseComplete,
-  buildMatchRequest,
+  buildMatchInput,
   createSurveyState,
   draftFor,
-  editOption,
-  editOwn,
   emptyDraft,
-  finalAnswer,
   isAnswered,
   issueOrder,
   markNotImportant,
@@ -21,8 +16,6 @@ import {
   rankingComplete,
   removeFromRanking,
   selectAnswer,
-  setAnythingElseImportance,
-  setAnythingElseText,
   setDraft,
   setRanking,
   unmarkNotImportant,
@@ -169,64 +162,29 @@ describe("ranking", () => {
 describe("answers", () => {
   const issue = ISSUES[0];
 
-  it("selecting a preset submits its text with its option ID, unedited", () => {
-    const d = selectAnswer(emptyDraft(), "opt-3");
-    expect(finalAnswer(issue, d)).toEqual({
-      issueId: issue.id,
-      text: "Option 3 of 0",
-      startingOptionId: "opt-3",
-      edited: false,
+  it("an answer draft holds only the selected option ID", () => {
+    expect(emptyDraft()).toEqual({ selected: null });
+    expect(selectAnswer(emptyDraft(), "opt-3")).toEqual({ selected: "opt-3" });
+    expect(selectAnswer(selectAnswer(emptyDraft(), "opt-3"), "opt-1")).toEqual({
+      selected: "opt-1",
     });
   });
 
-  it("editing a preset keeps its option ID and sets the edited flag", () => {
-    const d = editOption(emptyDraft(), "opt-2", "Option 2, but slower", "Option 2 of 0");
-    expect(d.selected).toBe("opt-2");
-    expect(finalAnswer(issue, d)).toEqual({
-      issueId: issue.id,
-      text: "Option 2, but slower",
-      startingOptionId: "opt-2",
-      edited: true,
-    });
-    // Typing it back to the original counts as unedited.
-    const back = editOption(d, "opt-2", "Option 2 of 0", "Option 2 of 0");
-    expect(finalAnswer(issue, back)?.edited).toBe(false);
-  });
-
-  it("write-your-own has no starting option", () => {
-    const d = editOwn(emptyDraft(), "My own view");
-    expect(d.selected).toBe(OWN_ANSWER);
-    expect(finalAnswer(issue, d)).toEqual({
-      issueId: issue.id,
-      text: "My own view",
-      startingOptionId: null,
-      edited: false,
-    });
-  });
-
-  it("keeps edits to other options when switching selection", () => {
-    let d = editOption(emptyDraft(), "opt-1", "changed", "Option 1 of 0");
-    d = selectAnswer(d, "opt-2");
-    expect(d.optionTexts["opt-1"]).toBe("changed");
-    d = selectAnswer(d, "opt-1");
-    expect(finalAnswer(issue, d)?.text).toBe("changed");
-  });
-
-  it("is unanswered with nothing chosen or blank text", () => {
+  it("is answered only when one of the issue's own options is chosen", () => {
     expect(isAnswered(issue, emptyDraft())).toBe(false);
-    expect(isAnswered(issue, editOwn(emptyDraft(), "   "))).toBe(false);
     expect(isAnswered(issue, selectAnswer(emptyDraft(), "opt-1"))).toBe(true);
+    expect(isAnswered(issue, selectAnswer(emptyDraft(), "not-an-option"))).toBe(false);
   });
-});
 
-describe("'anything else'", () => {
-  it("is optional, but text needs an importance", () => {
+  it("keeps each issue's answer separately", () => {
     let s = createSurveyState(VERSION);
-    expect(anythingElseComplete(s)).toBe(true);
-    s = setAnythingElseText(s, "Public transport");
-    expect(anythingElseComplete(s)).toBe(false);
-    s = setAnythingElseImportance(s, "middle");
-    expect(anythingElseComplete(s)).toBe(true);
+    s = setDraft(s, "issue-a", selectAnswer(draftFor(s, "issue-a"), "opt-2"));
+    s = setDraft(s, "issue-b", selectAnswer(draftFor(s, "issue-b"), "opt-4"));
+    expect(s.answers).toEqual({
+      "issue-a": { selected: "opt-2" },
+      "issue-b": { selected: "opt-4" },
+    });
+    expect(draftFor(s, "issue-c")).toEqual(emptyDraft());
   });
 });
 
@@ -239,39 +197,45 @@ describe("steps", () => {
   });
 });
 
-describe("matching request", () => {
-  it("produces a request the contract accepts", () => {
+describe("matching input", () => {
+  it("holds the ranking in order and one option ID per ranked issue", () => {
     let s = answered(ranked(7));
-    s = setDraft(
-      s,
-      "issue-a",
-      editOption(draftFor(s, "issue-a"), "opt-1", "edited", "Option 1 of 0"),
-    );
-    s = setAnythingElseImportance(setAnythingElseText(s, "  Transport  "), "minor");
-    const req = buildMatchRequest(s, ISSUES, "en");
-    expect(req).not.toBeNull();
-    expect(matchRequestSchema.safeParse({ ...req, token: null }).success).toBe(true);
-    const outcome = validateMatchRequest(
-      { ...req, token: null },
-      {
-        surveyContentVersion: VERSION,
-        issues: new Map(ISSUES.map((i) => [i.id, i.options.map((o) => o.id)])),
+    s = setDraft(s, "issue-a", selectAnswer(draftFor(s, "issue-a"), "opt-1"));
+    s = moveRanked(s, 0, 2);
+    const input = buildMatchInput(s, ISSUES);
+    expect(input).toEqual({
+      ranked: ["issue-b", "issue-c", "issue-a", "issue-d", "issue-e", "issue-f", "issue-g"],
+      answers: {
+        "issue-a": "opt-1",
+        "issue-b": "opt-2",
+        "issue-c": "opt-2",
+        "issue-d": "opt-2",
+        "issue-e": "opt-2",
+        "issue-f": "opt-2",
+        "issue-g": "opt-2",
       },
-    );
-    expect(outcome.ok).toBe(true);
-    expect(req!.answers[0]).toEqual({
-      issueId: "issue-a",
-      text: "edited",
-      startingOptionId: "opt-1",
-      edited: true,
     });
-    expect(req!.anythingElse).toEqual({ text: "Transport", importance: "minor" });
+    // The input is a copy: later changes to the survey don't reach a result in progress.
+    expect(input!.ranked).not.toBe(s.ranked);
   });
 
-  it("omits 'anything else' when blank and refuses incomplete surveys", () => {
-    expect(buildMatchRequest(answered(ranked(7)), ISSUES, "he")?.anythingElse).toBeNull();
-    expect(buildMatchRequest(ranked(7), ISSUES, "he")).toBeNull();
-    expect(buildMatchRequest(createSurveyState(VERSION), ISSUES, "he")).toBeNull();
+  it("leaves out 'doesn't matter' issues, even ones answered before they were set aside", () => {
+    let s = answered(ranked(7));
+    const r = markNotImportant(s, "issue-g");
+    if (!r.ok) throw new Error("unexpected");
+    s = r.state;
+    const input = buildMatchInput(s, ISSUES)!;
+    expect(input.ranked).not.toContain("issue-g");
+    expect(Object.keys(input.answers).sort()).toEqual(IDS.slice(0, 6));
+  });
+
+  it("refuses incomplete surveys", () => {
+    expect(buildMatchInput(ranked(7), ISSUES)).toBeNull();
+    expect(buildMatchInput(createSurveyState(VERSION), ISSUES)).toBeNull();
+    const oneMissing = setDraft(answered(ranked(7)), "issue-c", emptyDraft());
+    expect(buildMatchInput(oneMissing, ISSUES)).toBeNull();
+    const unknownOption = setDraft(answered(ranked(7)), "issue-c", { selected: "nope" });
+    expect(buildMatchInput(unknownOption, ISSUES)).toBeNull();
   });
 });
 
@@ -302,6 +266,22 @@ describe("storage", () => {
     const store = createSurveyStorage(mem);
     store.save(ranked(7));
     expect(store.load("v2")).toBeNull();
+    expect(mem.getItem(SURVEY_STORAGE_KEY)).toBeNull();
+  });
+
+  it("discards a survey saved under schema version 1", () => {
+    expect(SURVEY_SCHEMA_VERSION).toBe(2);
+    const mem = memoryStorage();
+    // What version 1 saved: editable answers and the "anything else" step.
+    const v1 = {
+      ...ranked(7),
+      schemaVersion: 1,
+      answers: { "issue-a": { selected: "own", optionTexts: {}, ownText: "My own view" } },
+      anythingElse: { text: "Transport", importance: "minor" },
+      step: { kind: "anything-else" },
+    };
+    mem.setItem(SURVEY_STORAGE_KEY, JSON.stringify(v1));
+    expect(createSurveyStorage(mem).load(VERSION)).toBeNull();
     expect(mem.getItem(SURVEY_STORAGE_KEY)).toBeNull();
   });
 

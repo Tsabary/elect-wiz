@@ -2,17 +2,13 @@
 
 import { useTranslations } from "next-intl";
 import type { RefObject } from "react";
-import { Button, buttonVariants } from "@/components/ui/button";
-import { Link } from "@/i18n/navigation";
-import { errorInfo, errorMessageKey } from "@/lib/matching/client";
-import type { MatchErrorCode } from "@/lib/matching/contract";
-import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+import { errorInfo, errorMessageKey, type MatchErrorCode } from "@/lib/matching/contract";
 
 /**
- * Localized error per code. "Try again" (which fetches a fresh abuse token via the
- * token hook) only on retryable errors; restart for validation / content-version
- * mismatch; nothing to retry once the election is over. Survey progress is kept,
- * so nothing is lost.
+ * Localized error per code. "Try again" when the matching data couldn't be
+ * loaded (the answers are kept, so nothing is lost); "start again" when the
+ * survey content has changed since the survey was begun.
  */
 export function ErrorState({
   code,
@@ -64,14 +60,6 @@ export function ErrorState({
           >
             {t("MatchErrors.restart")}
           </Button>
-        )}
-        {action === "none" && (
-          <Link
-            href="/parties"
-            className={cn(buttonVariants({ size: "lg" }), "h-12 px-6 text-base")}
-          >
-            {t("MatchErrors.browseParties")}
-          </Link>
         )}
       </div>
     </section>

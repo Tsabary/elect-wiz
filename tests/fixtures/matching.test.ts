@@ -33,6 +33,7 @@ describe("placeholder answer sets", () => {
     const set = placeholderAnswerSet(id);
     const r = result(id);
     expect(r.entries.map((e) => e.partyId)).toEqual(set.entries);
+    expect(r.entries).toHaveLength(researched.length);
     expect(r.weakMatch).toBe(set.weakMatch);
     const unclear = r.entries.flatMap((e) =>
       e.breakdown

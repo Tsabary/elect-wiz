@@ -16,11 +16,22 @@ export interface SurveyStore {
   readonly storageAvailable: boolean;
 }
 
+export interface SurveyStoreOptions {
+  /**
+   * Called once when a NEW survey begins: at its first ranking change. Opening
+   * the page calls nothing, and neither does continuing a survey already counted.
+   */
+  onStarted?: () => void;
+}
+
 export function createSurveyStore(
   surveyContentVersion: string,
   storage: SurveyStorage,
+  options: SurveyStoreOptions = {},
 ): SurveyStore {
   let state: SurveyState | null = null;
+  /** True until the survey in hand has been reported as started (or was resumed). */
+  let isNew = false;
   const listeners = new Set<() => void>();
   const emit = () => listeners.forEach((l) => l());
 
@@ -32,6 +43,7 @@ export function createSurveyStore(
       state = saved
         ? { ...saved, issueSeed: randomSeed() }
         : createSurveyState(surveyContentVersion);
+      isNew = !saved?.started;
       // Save a new session right away so a reload keeps the same option order.
       storage.save(state);
     }
@@ -41,15 +53,29 @@ export function createSurveyStore(
   return {
     get,
     set(update) {
-      const next = update(get());
-      if (next === state) return;
+      const prev = get();
+      const updated = update(prev);
+      if (updated === prev) return;
+      const starts =
+        isNew && (updated.ranked !== prev.ranked || updated.notImportant !== prev.notImportant);
+      // The flag is saved with the state, so undoing the change and reloading can't count twice.
+      const next = starts ? { ...updated, started: true } : updated;
       state = next;
       storage.save(next);
+      if (starts) {
+        isNew = false;
+        try {
+          options.onStarted?.();
+        } catch {
+          /* reporting must never break the survey */
+        }
+      }
       emit();
     },
     clear() {
       storage.clear();
       state = createSurveyState(surveyContentVersion);
+      isNew = true;
       emit();
     },
     subscribe(listener) {

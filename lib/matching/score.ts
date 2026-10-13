@@ -9,30 +9,38 @@
 import {
   issueAnchor,
   pairKey,
-  type DistancesFile,
+  type DistancePair,
   type MatchingConfig,
   type PartyTexts,
   type PositionRow,
-  type PositionsFile,
   type TextAgreement,
 } from "../content/schemas";
 import { hashString } from "../survey/shuffle";
-import {
-  MAX_ENTRIES,
-  type AgreementLevel,
-  type IssueBreakdown,
-  type MatchEntryCore,
-  type MatchPoint,
-} from "./contract";
+import type { AgreementLevel, IssueBreakdown, MatchEntryCore } from "./contract";
 
 // ------------------------------------------------------------------ shapes
+
+/**
+ * The parts of a positions row and of a distance grid the scoring reads. The
+ * content files (`PositionsFile`, `DistancesFile`) fit these as they are; the
+ * matching bundle carries exactly these and leaves the reviewer notes out.
+ */
+export type ScoringRow = Pick<PositionRow, "partyId" | "unclear" | "held" | "ruledOut">;
+export interface ScoringPositions {
+  issueId: string;
+  rows: readonly ScoringRow[];
+}
+export interface ScoringGrid {
+  issueId: string;
+  pairs: readonly Pick<DistancePair, "a" | "b" | "closeness">[];
+}
 
 /** The matching content the scoring works from (one corpus). */
 export interface MatchingData {
   /** One file per issue. */
-  positions: readonly PositionsFile[];
+  positions: readonly ScoringPositions[];
   /** One grid per issue. */
-  distances: readonly DistancesFile[];
+  distances: readonly ScoringGrid[];
   config: MatchingConfig;
   /**
    * One language's result texts, one entry per party. Optional: without them
@@ -48,13 +56,9 @@ export interface MatchInput {
   answers: Readonly<Record<string, string>>;
 }
 
-export interface MatchResultEntry extends MatchEntryCore {
-  points: MatchPoint[];
-}
-
 export interface MatchResult {
-  /** Top match first, then the runners-up: at most `MAX_ENTRIES` in total. */
-  entries: MatchResultEntry[];
+  /** Every given party in score order, top match first. */
+  entries: MatchEntryCore[];
   weakMatch: boolean;
 }
 
@@ -94,7 +98,7 @@ export class MatchDataError extends Error {
 const EPSILON = 1e-9;
 
 /** Closeness of two options of one issue: 1 for the same option, else the grid's value. */
-export function closeness(grid: DistancesFile, a: string, b: string): number {
+export function closeness(grid: ScoringGrid, a: string, b: string): number {
   if (a === b) return 1;
   const key = pairKey(a, b);
   const pair = grid.pairs.find((p) => pairKey(p.a, p.b) === key);
@@ -112,9 +116,9 @@ export function closeness(grid: DistancesFile, a: string, b: string): number {
  * An unclear row scores the fixed unclear value.
  */
 export function issueScore(
-  row: PositionRow,
+  row: ScoringRow,
   optionId: string,
-  grid: DistancesFile,
+  grid: ScoringGrid,
   config: MatchingConfig,
 ): number {
   if (row.unclear || row.held.length === 0) return config.unclear;
@@ -134,9 +138,9 @@ export function agreementLabel(score: number, config: MatchingConfig): TextAgree
 
 /** The label shown for a party on an issue: computed from the score, or "unclear" for an unclear row. */
 export function issueAgreement(
-  row: PositionRow,
+  row: ScoringRow,
   optionId: string,
-  grid: DistancesFile,
+  grid: ScoringGrid,
   config: MatchingConfig,
 ): AgreementLevel {
   if (row.unclear || row.held.length === 0) return "party-position-unclear";
@@ -193,8 +197,8 @@ export function tieBreakValue(input: MatchInput, partyId: string): number {
 // ------------------------------------------------------------------ scoring
 
 interface IssueData {
-  rows: Map<string, PositionRow>;
-  grid: DistancesFile;
+  rows: Map<string, ScoringRow>;
+  grid: ScoringGrid;
 }
 
 /** Checks the input against the content and returns each ranked issue's data, in rank order. */
@@ -230,7 +234,7 @@ function resolveIssues(data: MatchingData, input: MatchInput): IssueData[] {
   return resolved;
 }
 
-function rowOf(issue: IssueData, partyId: string): PositionRow {
+function rowOf(issue: IssueData, partyId: string): ScoringRow {
   const row = issue.rows.get(partyId);
   if (!row) {
     throw new MatchDataError(
@@ -242,7 +246,7 @@ function rowOf(issue: IssueData, partyId: string): PositionRow {
 
 /**
  * Every given party in result order: highest score first, equal scores ordered
- * by the tie-break. Used by the profile test, which looks beyond the top 4.
+ * by the tie-break, with the scores. Used by the profile test.
  */
 export function rankParties(
   data: MatchingData,
@@ -269,9 +273,10 @@ export function rankParties(
 }
 
 /**
- * The result for a user: the `MAX_ENTRIES` highest-scoring parties of
- * `researchedPartyIds`, each with its per-issue breakdown and its "also worth
- * knowing" points, and the weak-match flag.
+ * The result for a user: every party of `researchedPartyIds` in score order
+ * (top match first), each with its per-issue breakdown and its "also worth
+ * knowing" points, and the weak-match flag. How many of them are shown is the
+ * result view's business.
  *
  * Throws `MatchInputError` for input that doesn't fit the content, and
  * `MatchDataError` when a party has no row for a ranked issue or a grid lacks a
@@ -286,7 +291,7 @@ export function scoreMatch(
   const issues = resolveIssues(data, input);
   const n = input.ranked.length;
 
-  const entries = ranked.slice(0, MAX_ENTRIES).map(({ partyId }): MatchResultEntry => {
+  const entries = ranked.map(({ partyId }): MatchEntryCore => {
     const texts = data.texts?.find((t) => t.partyId === partyId);
     const breakdown = issues.map((issue, i): IssueBreakdown => {
       const issueId = input.ranked[i];

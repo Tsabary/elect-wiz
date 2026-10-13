@@ -41,9 +41,13 @@ export default async function PartiesPage({ params }: PageProps<"/[locale]/parti
               href={`/parties/${p.id}`}
               data-testid="party-link"
               data-party-id={p.id}
+              data-tier={p.tier}
               className="hover:bg-muted/50 focus-visible:ring-ring/50 flex flex-col gap-1 rounded-xl border p-4 outline-none focus-visible:ring-3"
             >
               <span className="text-lg font-semibold">{p.name}</span>
+              <span className="text-sm font-medium" data-testid="party-tier">
+                {t(`tier.${p.tier}`)}
+              </span>
               <span className="text-muted-foreground text-sm">
                 {t("leader", { name: p.leader })}
               </span>

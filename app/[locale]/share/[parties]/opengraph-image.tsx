@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
 import { getParties } from "@/lib/content/loaders";
+import { researchedPartyIds } from "@/lib/content/party-view";
 import { OG_SIZE, renderOgImage } from "@/lib/og/render";
 import { parseSharedParties } from "@/lib/share/params";
 
@@ -23,10 +24,10 @@ export default async function Image({
   const t = await getTranslations({ locale, namespace: "Share" });
   const m = await getTranslations({ locale, namespace: "Metadata" });
   const all = getParties();
-  const names = parseSharedParties(
-    segment,
-    all.map((p) => p.id),
-  ).map((id) => all.find((p) => p.id === id)!.name[locale]);
+  // Only researched parties can be a match; a listed party's ID is ignored.
+  const names = parseSharedParties(segment, researchedPartyIds(all)).map(
+    (id) => all.find((p) => p.id === id)!.name[locale],
+  );
   const [top, ...rest] = names;
   return renderOgImage({
     rtl: locale === "he",
