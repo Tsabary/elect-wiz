@@ -175,3 +175,25 @@ Author's flags, verified with no change needed:
 - English oddities the author kept: the doubled "see the Haredi enlistment section" in the Religion-and-state Action bullet is redundant but not wrong, and the Hebrew mirrors it. The 25 March vs 24 March budget-vote date is explicitly explained in the English body and source 107, so it is not an error.
 - English questioned: none.
 - Validation: no error names the file ✔ (`pnpm validate:content` passed)
+
+## eretz-yisrael-shelanu (checked 2026-10-13; EN researchedAsOf 2026-10-07)
+- Hebrew edition by: Stage 5a agent (Sonnet) · Parity check by: Stage 5b agent (Opus, different)
+- Sections/anchors: identical ✔ (all 9 sections and all 16 sub-anchors, same order)
+- Claims compared: ≈190 (every paragraph, bullet and sentence, all 9 sections) · Differences found: 24 · Fixed: 24 · Unresolved: 0
+- Mechanical checks: the in-text citation sequence is identical (170 markers before Sources, and the Information availability markers also match); the Sources list is identical (87 entries, same order, same titles and URLs); the evidence-tier tags pair one-to-one on the same claims; the option IDs on all 10 "closest option(s)" lines are identical.
+- Flagged items verified: "emigration" is rendered "הגירה" with no added framing. It appears only where the English has it: IDI's list of initiatives, attributed to IDI; the Gaza lead and the track record, as "עידוד הגירה" (the English has no "voluntary" there, so "מרצון" was correctly not added); and inside the Wasserlauf and Kroizer quotes. The closest-option line uses "עידוד הגירה מרצון", matching the English "voluntary". "ועדת חקירה ממלכתית-לאומית" is kept in quotation marks and attributed to the government or the bill, as in the English. "מלחמה כוללת" appears only inside Kroizer's quote. "במקומות הראשונים ברשימה" is fine. "secured" is rendered "השיג/השיגה" (2 places). "זמני/זמנית" does not appear for "tentative" ("סמכויותיה הזמניות" renders "temporary powers", which is correct). There is no "נחקרה/שנחקרו" and no avoid.he terms. Names match the registry.
+
+| Anchor | Difference | Resolution |
+|---|---|---|
+| leadership, other-migrants | Meaning drift (softening): the English says "campaign to **deport** African asylum seekers and migrants"; the Hebrew had "הרחקת" (2 places) | Changed to "לגירוש" in both places |
+| issue-haredi-enlistment | Meaning drift: "counterproductive" was rendered "מזיקים" ("harmful") | Changed to "משיגים את ההפך" |
+| issue-gaza | Meaning drift and naturalness: in "...שארגנו מועצת שומרון, תנועת נחלה ואחרים וקרא לחדש..." the subject of "וקרא" could be read as Wasserlauf, whereas in the English it is the conference that calls for renewed settlement; "Samaria Regional Council" was also given as "מועצת שומרון" | Changed to "שארגנו המועצה האזורית שומרון, תנועת נחלה ואחרים, שקרא לחדש..." |
+| issue-gaza | Citation/tag (quotation): the English quotes Otzma's warning that it would "bring down the government"; the Hebrew gave it without quotation marks, so it read as narrator paraphrase (the coalition section quotes it) | Added the quotation marks: ש"תפיל את הממשלה" |
+| overview | Naturalness and slight addition: "עמוד הרשימה באתר ועדת הבחירות המרכזית (ועדת הבחירות)" added "website" and a redundant gloss | Changed to "עמוד הרשימה של ועדת הבחירות המרכזית" |
+| overview, issues, other-positions, information-availability | Naturalness: the Latin acronym "IDI" was used in the Hebrew body (10 places) | Changed to "המכון הישראלי לדמוקרטיה" (the "(IDI)" gloss at first mention removed); Sources left untouched |
+| issue-cost-of-living, issue-october-7-inquiry | Naturalness: the ungrammatical "חיפושים... שנחזרו בבדיקת העובדות" (2 places) | Changed to "שבוצעו שוב בבדיקת העובדות" |
+| overview, issue-crime-in-arab-society, issue-haredi-enlistment | Naturalness: "ששה" changed to "שישה"; "כלי אכיפה חמורים יותר" changed to "מחמירים יותר"; "בעקרון" changed to "בעיקרון" (3 places) | Fixed |
+| issue-iran-and-regional-security | Naturalness: "negotiated agreement" was rendered with the tautology "הסכם מוסכם" | Changed to "הסכם במשא ומתן" |
+| other-agriculture | Naturalness: the heading "יבוא בעלי חיים חיים" | Changed to "חקלאות ויבוא חי של בעלי חיים" |
+| track-record | Naturalness: "לא הוצג במחקר זה ש..." | Changed to "המחקר לא הראה ש..." |
+- Validation: no error names the file ✔ (the only errors are about research/he/blue-and-white.md, another agent's unfinished file)
