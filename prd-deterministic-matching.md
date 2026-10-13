@@ -28,11 +28,12 @@ A second change comes with it. Only the 28 parties researched so far are matched
 
 ### Result
 - **The top five parties are shown in full, and a "show all" control opens the rest of the researched parties in order (owner decision 2026-10-13).** The rest appear as compact rows, each of which opens to the same per-issue breakdown. A short line says that parties close together in the list are about equally near. The weak-match message refers to the top result only. Share links still carry only the top few.
-- Unchanged: the per-issue breakdown with how much each issue weighed, links to research pages, joint-list labelling, the limited-information flag, the weak-match message, the poll notes and their blackout rules, the disclaimer and sharing.
+- Unchanged (apart from "start over", below): the per-issue breakdown with how much each issue weighed, links to research pages, joint-list labelling, the limited-information flag, the weak-match message, the poll notes and their blackout rules, the disclaimer and sharing.
 - **Per-issue explanations are fixed texts.** For a given party, issue and chosen option, every user sees the same 1–2 neutral sentences, saying whether the party agrees, partly agrees or disagrees, or that its position is unclear. "Position unclear" is also shown, instead of "disagrees", when the research has only a tentative indication of the party's position and the user chose an option that indication doesn't point to (owner decision 2026-10-13). Each links to the relevant part of the party's research page.
 - **New: "also worth knowing" points.** Each recommended party shows 2–3 short points about its most notable positions outside the 10 issues: the things the party stands out for (for example, a party that strongly pushes to legalise cannabis). They are the same for every user, they link to the research page, and they don't affect the score.
 - **New: a note that not every list is matched.** The result states plainly that some lists on the ballot were not included in the matching, with a link to them.
 - The result appears without a noticeable wait.
+- **"Start over" is offered (owner decision 2026-10-13).** The original product offered no "try again" on the result page because every result cost AI money. Matching now costs nothing, so the result page has a secondary "Start over" button near sharing, the intro shows "Start over" next to "Continue where you left off" when there is saved progress, and the survey screens have a small "Start over" control that asks for confirmation first. Starting over discards the saved survey and opens a new, empty one at the ranking step; it is counted as a new survey in the anonymous counts. The intro treats a saved survey as progress only if the user actually did something in it. The result page still has no "edit answers". This replaces the original PRD's rule that the result page doesn't offer "try again".
 
 ### Parties section: two tiers
 - **Researched and matched (28 parties):** as in the original PRD, with a full research page.
@@ -91,7 +92,7 @@ Numbers continue from the original PRD.
 
 ## Scope & impact on existing product
 - The survey loses option editing, the write-your-own field and the "Anything else?" step, all of which are built today.
-- The result page gains the "also worth knowing" points and the note about lists that aren't matched.
+- The result page gains the "also worth knowing" points, the note about lists that aren't matched, and "Start over"; the intro and the survey screens gain "Start over" too.
 - The Parties section and party pages gain the listed-only tier.
 - Site copy approved by the owner (How this works, Privacy & Terms, intro and survey texts) changes in both languages. The owner approves the new copy, as a product decision.
 - The planned AI matching, the choice of AI provider and model (decision gate D1), and the abuse and spending protections tied to AI cost are dropped.
@@ -99,6 +100,7 @@ Numbers continue from the original PRD.
 
 ## Out of scope
 - Free-text answers, edited options and the "Anything else?" step.
+- "Edit answers" on the result page: going back into the answers of a survey whose result has been shown. ("Start over", a new empty survey, is in scope: owner decision 2026-10-13.)
 - Any AI call when a user takes the survey or views a result.
 - Result explanations written for an individual user.
 - Researching or matching the 24 listed-only parties.

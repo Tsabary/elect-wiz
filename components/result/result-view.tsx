@@ -3,16 +3,19 @@
 /**
  * The result (PRD Step 4): top match plus the next closest parties, a per-issue
  * breakdown, factual notes from the registry, a disclaimer and sharing.
- * Deliberately no "edit answers" or "try again" affordances.
+ * Deliberately no "edit answers". "Start over" (owner decision 2026-10-13: matching
+ * now costs nothing) sits under the share box and opens a new, empty survey.
  *
  * The result carries every researched party in score order: the first
  * `FULL_ENTRIES` are shown as full cards, the rest as compact rows behind a
  * "show all" control. Share links carry the first `TOP_ENTRIES` only.
  */
+import { RotateCcw } from "lucide-react";
 import { useTranslations } from "next-intl";
 import type { RefObject } from "react";
 import { FULL_ENTRIES, TOP_ENTRIES, type MatchResponse } from "@/lib/matching/contract";
 import type { ClientIssue } from "@/components/survey/types";
+import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
 import { ResultEntryCard, ResultEntryRow } from "./result-entry";
 import { ShareButton } from "./share/share-button";
@@ -22,14 +25,18 @@ export function ResultView({
   issues,
   serverBlackout,
   headingRef,
+  onStartOver,
 }: {
   result: MatchResponse;
   issues: ClientIssue[];
   /** The blackout state the page was rendered with; `PollContent` re-checks it in the browser. */
   serverBlackout: boolean;
   headingRef: RefObject<HTMLHeadingElement | null>;
+  /** Leaves the result for a new, empty survey. The saved survey is already gone by now. */
+  onStartOver: () => void;
 }) {
   const t = useTranslations("Result");
+  const tCommon = useTranslations("Common");
   const [top, ...rest] = result.entries.slice(0, FULL_ENTRIES);
   const others = result.entries.slice(FULL_ENTRIES);
   const issueById = new Map(issues.map((i) => [i.id, i]));
@@ -151,6 +158,23 @@ export function ResultView({
         partyIds={result.entries.slice(0, TOP_ENTRIES).map((e) => e.partyId)}
         topName={top?.metadata.name ?? ""}
       />
+
+      <div className="flex flex-col items-start gap-2">
+        <Button
+          variant="outline"
+          size="lg"
+          className="h-11 gap-2 px-4 text-base"
+          onClick={onStartOver}
+          aria-describedby="start-over-hint"
+          data-testid="start-over"
+        >
+          <RotateCcw aria-hidden="true" />
+          {tCommon("startOver")}
+        </Button>
+        <p id="start-over-hint" className="text-muted-foreground text-sm">
+          {t("startOverHint")}
+        </p>
+      </div>
     </article>
   );
 }

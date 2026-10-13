@@ -6,6 +6,9 @@
  * and the result is computed here from the matching bundle, so the answers
  * never leave the device. The only calls out are the two anonymous counts
  * (`lib/tally/client.ts`).
+ *
+ * "Start over" (on the survey screens and under the result) puts a new survey
+ * in place of the current one: empty, with new shuffle seeds, counted anew.
  */
 import { useLocale, useTranslations } from "next-intl";
 import { useCallback, useEffect, useRef, useState, useSyncExternalStore } from "react";
@@ -25,6 +28,7 @@ import type { MatchInput } from "@/lib/matching/score";
 import {
   buildMatchInput,
   goTo,
+  hasProgress,
   normalizeStep,
   type SurveyState,
   type SurveyStep,
@@ -34,6 +38,7 @@ import { createSurveyStore, type SurveyStore } from "@/lib/survey/store";
 import { tallyResult, tallySurveyStarted } from "@/lib/tally/client";
 import { AnswerStep } from "./answers/answer-step";
 import { RankingStep } from "./ranking/ranking-step";
+import { SurveyStartOver } from "./start-over";
 import type { ClientIssue } from "./types";
 
 type Phase =
@@ -79,6 +84,8 @@ export function SurveyApp({
     serverSnapshot,
   );
   const [phase, setPhase] = useState<Phase>({ kind: "survey" });
+  /** Counts "start over"s, so a new survey gets fresh screens and focus even on the same step. */
+  const [restarts, setRestarts] = useState(0);
   const headingRef = useRef<HTMLHeadingElement>(null);
   const issueIds = issues.map((i) => i.id);
 
@@ -98,7 +105,7 @@ export function SurveyApp({
     if (stepKey === "starting") return;
     window.scrollTo({ top: 0, behavior: "instant" });
     headingRef.current?.focus({ preventScroll: true });
-  }, [stepKey]);
+  }, [stepKey, restarts]);
 
   const update = useCallback((fn: (s: SurveyState) => SurveyState) => store?.set(fn), [store]);
   const go = (next: SurveyStep) => update((s) => goTo(s, next));
@@ -156,6 +163,13 @@ export function SurveyApp({
     if (input) void match(input);
   }
 
+  /** Replaces the survey in hand (or the result shown) with a new, empty one at the ranking step. */
+  function startOver() {
+    store?.clear();
+    setPhase({ kind: "survey" });
+    setRestarts((n) => n + 1);
+  }
+
   function restart() {
     store?.clear();
     // Reload so the page picks up the current survey content.
@@ -182,6 +196,7 @@ export function SurveyApp({
         issues={issues}
         serverBlackout={serverBlackout}
         headingRef={headingRef}
+        onStartOver={startOver}
       />
     );
   }
@@ -207,8 +222,14 @@ export function SurveyApp({
           {t("noStorage")}
         </p>
       )}
+      {hasProgress(state) && (
+        <div className="-mt-2 -mb-4 flex justify-end">
+          <SurveyStartOver onConfirm={startOver} headingRef={headingRef} />
+        </div>
+      )}
       {step.kind === "ranking" && (
         <RankingStep
+          key={restarts}
           issues={issues}
           state={state}
           onChange={update}
