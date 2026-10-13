@@ -497,3 +497,41 @@ Points the author flagged:
 - Kinds: meaning drift 5 · loaded wording 2 · dropped/added claim 0 · citation/tag 0 · glossary 1 (9 instances) · naturalness 13
 - English questioned: none
 - Validation: no error names the file ✔ (the 4 current errors all concern research/he/byachad-bennett.md)
+
+## israel-first (checked 2026-10-13; EN researchedAsOf 2026-10-07)
+- Hebrew edition by: Stage 5a agent (Sonnet) · Parity check by: Stage 5b agent (Opus, different)
+- Sections/anchors: identical ✔ (all 23 headings, same order; issue headings use each issue's `he.title`)
+- Claims compared: ~360 claim sentences in 9 sections, plus 65 sources · Differences found: 19 · Fixed: 19 · Unresolved: 0
+- Checked line by line by script: identical `[n]` on every line, identical option IDs on every "האפשרות/ות הקרובה/ות" line, identical figures and dates, evidence-tier tags on the same claims, Sources list byte-identical (65 entries, same order and URLs). No `avoid.he` terms, no "נחקרה/שנחקרו", no "זמני/ת" for "tentative" ("מקלט זמני" = "temporary refuge", correct).
+
+| Anchor | Difference | Resolution |
+|---|---|---|
+| overview | naturalness: "אין מפלגת קודמת" (wrong grammatical form) | "אין מפלגה שקדמה לה" |
+| overview | meaning drift: quote "compromises at the expense of those who serve" given in the past tense ("מי ששירת") | "מי שמשרתים" |
+| overview | naturalness: "ש, לדבריה, מרגישים" | "שלדבריה מרגישים" |
+| leadership, other-cannabis…, track-record | meaning drift (10 instances): "legalize/legalization" given as "הסדרה חוקית", which blurs the difference from "regulate" (used for the 2025 medical-cannabis bill in the same section) | "לגליזציה" throughout; "להסדרת השימוש…" kept for "regulate" |
+| leadership | naturalness: "רועי חיים דנינו (רוי)": the English "(Roi)" is a Latin-spelling variant and means nothing in Hebrew | dropped the parenthesis; registry form kept |
+| leadership | meaning drift: Bino's "national field headquarters" given without "field" | "ראש מטה השטח הארצי" |
+| issue-cost-of-living | naturalness: nested parentheses around the 25/24 March sitting note | one parenthesis with a semicolon, same content |
+| issue-crime-in-arab-society, issue-housing | naturalness (2): first person "חיפשנו" where the English is impersonal (and no other Hebrew file uses it) | "נערך חיפוש … על" |
+| issue-gaza | naturalness: "להושיב בה ישראלים" | "ליישב בה ישראלים" |
+| issue-haredi-enlistment | naturalness: "נטל השירות החובה" (grammar) | "נטל שירות החובה" |
+| issue-housing | naturalness: "לא יישמה זאת לנושא הדיור" | "לא החילה זאת על תחום הדיור" |
+| issue-judea-samaria | loaded wording: "attackers" given as "מחבלים" (stronger than the English) | "במבצעי פיגועים" |
+| other-cannabis-and-individual-liberty | naturalness: "חסמים ובירוקרטיה מפני חולים" (reads as "barriers from patients") | "עבור חולים" |
+| other-education | naturalness: "להוט באמת לחינוך" | "באמת נלהב מחינוך" |
+| other-education | naturalness: "ושב-40% מהבנים…" (grammar) | "וש-40% מהבנים…" |
+| other-civil-liberties-lgbt-animals-environment | loaded wording / naturalness: "זוגות הומוסקסואלים" (clinical, dated) for "gay couples" | "זוגות חד-מיניים" |
+| coalition | naturalness: "שותף ציוני שאינו בר-קיימא" | "בגלל דבריו בעבר הוא אינו שותף ציוני אפשרי" |
+| legal | dropped/added claim (descriptor): "Lahav 433 major-crimes unit" given without "major-crimes" | "ביחידה המשטרתית לחקירת פשיעה חמורה, להב 433" |
+| legal | naturalness: "מתן שם לחשוד" | "על כך שמישהו הוגדר כחשוד" |
+
+- Points the author flagged:
+  - "להוציא" for Pollard's "remove": the same neutral strength. Kept.
+  - Judicial Selection Committee composition (1+1+1+2+3 = 8): the English states no total, so it is not wrong on its face, and the Hebrew matches. Not questioned.
+  - The 25 March 2025 vote and the note about the 24 March sitting: consistent on their face (the vote is filed under the previous day's sitting). Not questioned.
+  - The Statement bullets citing [14]: the tag and citation fit the claims. Not questioned.
+  - "(באנגלית: Israel First)" for "(Hebrew: Yisrael Tchila)": the same fact (the name in the other language), nothing dropped.
+  - "התובע הכללי" for "Chief Prosecutor": fits the bill's title. Kept.
+  - Candidate names: Nos. 1 to 5 match the registry's `topCandidates`. The registry has no Hebrew forms for the other candidates.
+- Validation: no error names the file ✔ (`pnpm validate:content` exits 0)
