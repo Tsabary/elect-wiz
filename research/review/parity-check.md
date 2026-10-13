@@ -406,3 +406,26 @@ Points the author flagged:
 - Owner's wording rule: the Hebrew never says the party "נחקרה" / "שנחקרו". The "נחקר" forms that remain refer to people questioned by police or quoted speech ✔. No "זמני/זמנית" for "tentative" (the remaining "שקט זמני" and "עובדים זמניים" translate "temporary"). "נדחתה" is used for failed votes. "שינוי לאורך זמן" ✔. avoid.he terms appear only inside attributed quotes that match the English ("הסיפוח" in Ben Gvir's "what about annexation?"; the party's "national" framework) ✔. Dates are day first ✔.
 - English questioned: none.
 - Validation: no error names the file ✔
+
+## hadash (checked 2026-10-13; EN researchedAsOf 2026-10-07)
+- Hebrew edition by: Stage 5a agent (Sonnet) · Parity check by: Stage 5b agent (Opus, different)
+- Sections/anchors: identical ✔ (all 29 headings, same order; issue headings match `he.title`)
+- Sources: 136 entries, identical count, order, titles and URLs ✔ · `[n]` citations identical on every line ✔ · closest-option IDs identical ✔ · evidence-tier tags identical ✔
+- Claims compared: ~320 (sentence/clause level, every paragraph and bullet) · Differences found: 22 · Fixed: 21 · Unresolved: 1
+| Anchor | Difference | Resolution |
+|---|---|---|
+| leadership | English Faten Ghattas bullet says "he holds a doctorate… and directs" then "chose her"; the registry and the rest of the English treat Ghattas as a woman. Hebrew uses feminine throughout ("בעלת דוקטורט ומנהלת"). | Unresolved: English questioned (pronoun "he" looks like an English typo for "she"). Hebrew left feminine; English not edited. |
+| overview | naturalness (2): "ברובם של המקרים" → "לרוב"; "אין משא ומתן מתנהל" → "אין כרגע משא ומתן" | Fixed |
+| issue-cost-of-living | naturalness (2): typo "ששלמות" → "שמשלמות"; ambiguous "הצבעותיה" (could read as the Joint List's) → "ההצבעות והצעות החוק של חד"ש" | Fixed |
+| issue-gaza | meaning drift (2): "Throughout the war" was "במהלך המלחמה" → "לאורך כל המלחמה"; Odeh quote "end the war on Gaza" was "המלחמה בעזה" → "המלחמה על עזה". naturalness (1): ungrammatical "כשההפסקת אש" → "כשהפסקת האש" | Fixed |
+| issue-haredi-enlistment | naturalness (2): "המפלגה הקומוניסטית של ישראל" → "הישראלית" (consistent with the rest of the file); "ההתאמה בהסתייגות משום ש" → "ההתאמה היא בהסתייגות, משום ש" | Fixed |
+| issue-iran-and-regional-security | meaning drift (1): "the war with Iran" was "המלחמה באיראן" → "המלחמה עם איראן". naturalness (2): "בשם" → "שכותרתה" (statement title); "קווי טרום 1967" → "הקווים שלפני 1967" (in line with the glossary's pre-1967 term) | Fixed |
+| issue-judea-samaria | naturalness/glossary (1): "קווי טרום 1967" → "הקווים שלפני 1967". Checked and kept: "settlers" = "מתיישבים" (neutral form of the glossary's יישובים/התיישבות, not "מתנחלים"); July 2024 "resolution" = "החלטת הכנסת"; July 2025 "motion" = "גילוי דעת"; failed vote "ברוב של 47 מול 9" | Fixed |
+| other-palestinian-state | naturalness (1): quote "זכאי לזכות להגדרה עצמית" → "ראוי לזכות להגדרה עצמית" ("deserve the right") | Fixed |
+| other-bedouin-negev | meaning drift (1): "where the community of Dror is planned" was "שבמקומו" (in its place) → "שבשטחו מתוכנן היישוב דרור" | Fixed |
+| coalition | meaning drift (1): Odeh quote "to remove Netanyahu" was "להפיל" (bring down) → "להוריד את נתניהו" | Fixed |
+| track-record | meaning drift (1): "led and joined" attached only to the crime protests; the anti-war protests read as a dangling item → restructured so both cover crime protests (2026) and anti-war protests (2025) | Fixed |
+| legal | naturalness (1): "חשבון פוליטי" → "חיסול חשבונות פוליטי"; dropped/added claim (1): "בהאג" added to the ICJ name, not in English → removed | Fixed |
+| information-availability | naturalness (2): "המפלגה הקומוניסטית של ישראל" → "הישראלית"; "הותאמו לדיווחים" → "הוצלבו עם דיווחים" | Fixed |
+- Also checked and correct as flagged by the author: Cassif's "הפיכה פשיסטית במלוא עוזה" stays quoted and attributed; "כיבוש" appears only in attributed phrasing ("מה שכינה הכיבוש") and in a source title; the attorney general is feminine for the incumbent; "Tentative" = "בהסתייגות" (no זמני/זמנית); failed votes put the majority first; names match the registry (פאתן ג'טאס, יוסף ג'בארין, אלתג'מוע אלווטני אלדמוקרטי); no "נחקרה/שנחקרו"; no avoid.he term (the only hit, "שחורים", is part of the proper name "הפנתרים השחורים"); no Latin acronyms in prose; dates day first.
+- Validation: no error names the file ✔ (the 4 remaining errors are all about research/he/byachad-bennett.md)
