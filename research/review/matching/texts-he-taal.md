@@ -1,0 +1,49 @@
+# Hebrew texts parity check: taal
+
+- Checked on 13.10.2026 by a Stage 7d parity checker (not the author of the Hebrew file)
+- Hebrew texts by: Stage 7d author agent, Sonnet · Parity check by: Stage 7d parity checker agent, Opus (different)
+- Structure, agreement values and anchors: identical ✔
+- Texts compared: 41 option texts + 0 unclear + 3 points (every text, none sampled) · must-fix: 0 · should-fix: 6 (6 open) · notes: 7
+- Result: not passed yet: 0 must-fix; 6 should-fix (naturalness) open. Passes after fixes once #1–6 are applied.
+
+## Findings
+
+| # | Issue / option, or point | Severity | English says | Hebrew says | Suggested Hebrew | Status (open / fixed / not applied: reason) |
+|---|---|---|---|---|---|---|
+| 1 | religion-and-state / strengthen-jewish-character | should-fix (naturalness) | The research found no published Ta'al position on the Chief Rabbinate, ... | המחקר לא מצא עמדה מפורסמת של תע״ל ... ("עמדה מפורסמת" reads first as "a famous position", not "a published position") | Replace the whole text with: המחקר לא מצא עמדה של תע״ל שפורסמה בנושא הרבנות הראשית, הנישואים והגיור או סידורי השבת. הרמז היחיד, והוא זהיר, הוא שתי הצבעות של יו״ר המפלגה אחמד טיבי, נגד הצעת חוק נישואים אזרחיים ב-7 ביוני 2023 ובעד הצעת חוק תחבורה ציבורית בשבת ב-19 בנובמבר 2025, ולפי המחקר הן מצביעות על הסטטוס קוו ועל יותר חופש בחירה. | open |
+| 2 | religion-and-state / separate-religion-and-state | should-fix (naturalness) | same as #1 | same as #1 | Same full replacement as #1 (the two texts are identical in both languages). | open |
+| 3 | gaza / advance-international-arrangement | should-fix (naturalness) | It differs on the path: ... demands ... an immediate and complete halt and full withdrawal, not a gradual one. | היא שונה בדרך: ... הפסקה מיידית ומלאה ונסיגה מלאה, ולא הדרגתיות. ("היא שונה בדרך" reads as "it is different along the way"; "ולא הדרגתיות" is a bare noun with no referent, while English "one" = withdrawal) | Replace the whole text with: המפלגה שותפה לרעיון של סיוע בינלאומי וערבי: בפברואר 2024 אמר יו״ר המפלגה אחמד טיבי שיש לשקם את עזה בסיוע בינלאומי וערבי, כשהפלסטינים בוחרים את מנהיגיהם בעצמם. ההבדל הוא בדרך: הרשימה המשותפת, שתע״ל מתמודדת במסגרתה, דורשת, לפי סקירה מ-7 באוקטובר 2026, הפסקה מיידית ומלאה ונסיגה מלאה, ולא נסיגה הדרגתית. | open |
+| 4 | haredi-enlistment / anchor-torah-study-exemption | should-fix (naturalness) | ...; the research tentatively places the party closest to no one being forced to serve. | ...; לפי המחקר, באופן זהיר, המפלגה קרובה ביותר לעמדה שאיש לא יחויב לשרת. (the hedge "באופן זהיר" hangs between commas with nothing to attach to; reads as translated. Meaning and hedging are right) | Replace the whole text with: המחקר לא מצא עמדה של תע״ל בשאלה אם תלמידי ישיבות חרדים צריכים להיות מחויבים לשרת. יו״ר המפלגה אחמד טיבי כינה את המחלוקת עניין יהודי פנימי במאי 2024, והצביע ב-13 ביולי 2026 נגד חוק היסוד שמגדיר את לימוד התורה כערך יסוד; המחקר ממקם את המפלגה, בזהירות, הכי קרוב לעמדה שאף אחד לא יחויב לשרת. | open |
+| 5 | haredi-enlistment / gradual-targets-by-agreement | should-fix (naturalness) | same final clause as #4 | same final clause as #4 | Replace the whole text with: המחקר לא מצא עמדה של תע״ל בשאלה אם תלמידי ישיבות חרדים צריכים להיות מחויבים לשרת. יו״ר המפלגה אחמד טיבי כינה את המחלוקת עניין יהודי פנימי במאי 2024, ואמר בדצמבר 2025 שלא יצביע בעד חוק הגיוס, כדי להפיל את הממשלה; המחקר ממקם את המפלגה, בזהירות, הכי קרוב לעמדה שאף אחד לא יחויב לשרת. | open |
+| 6 | haredi-enlistment / universal-service-with-sanctions | should-fix (naturalness) | same as #5 | same as #5 | Same full replacement as #5 (the two texts are identical in both languages). | open |
+| 7 | judea-samaria / separation-two-states (English names completed) | note | Joint List chair Yousef Jabareen has said ... | יו״ר הרשימה המשותפת יוסף ג'בארין אמר ... | No change. The author's English edit (adding "Yousef") is the only change to the English file (`git diff HEAD`), and it is allowed. Name and role confirmed: lists.json has יוסף ג'בארין / Yousef Jabareen as the Joint List's No. 1, and the research's leadership section says the list "is headed by Yousef Jabareen (Hadash)". Hebrew uses the registry form. | n/a |
+| 8 | cost-of-living / direct-support-for-households | note | voted for the 22 June 2026 no-confidence motion on the cost of living | הצביע ב-22 ביוני 2026 בעד הצעת האי-אמון בנושא יוקר המחיה | No change. English dates the motion, Hebrew dates the vote; both say 22 June 2026, and Hebrew word order makes this the natural form. | n/a |
+| 9 | judea-samaria / separation-two-states | note | It differs on the border | היא שונה לגבי הגבול | No change; acceptable Hebrew. If #3 is applied, "ההבדל הוא בגבול:" would match it, but this is optional. | n/a |
+| 10 | crime / emergency-powers-shin-bet; judea-samaria (pre-1967 border); points (basic law) | note (glossary) | the Shin Bet; the pre-1967 border; a proposed basic law | השב״כ; הגבול שלפני 1967; הצעת חוק יסוד | No change. The glossary's terms are used; its parenthetical glosses (שירות הביטחון הפנימי של ישראל, הקו הירוק, חוק במעמד חוקתי) are absent, but the English texts carry no gloss either, so the Hebrew matches the English. | n/a |
+| 11 | judicial-system (3 texts); point other-death-penalty | note | at its final reading | בקריאתו האחרונה / בקריאה האחרונה | No change. Understandable and faithful; "בקריאה השלישית" would be the more usual Knesset idiom but names a number the English doesn't. | n/a |
+| 12 | all texts | note | Ta'al; party leader Ahmad Tibi | תע״ל; יו״ר המפלגה אחמד טיבי | No change. Tibi is named in full with his role at first mention in every text that names him, in both languages (registry `leader` and the research's leadership section support "leader"); later mentions ("Tibi", "he") follow the full mention in the same text. "תע״ל" is the standard Hebrew short form, matching English "Ta'al" for the registry name התנועה הערבית להתחדשות; "הרשימה המשותפת" matches lists.json. | n/a |
+| 13 | cost-of-living / cut-taxes-and-government-spending | note | the spending cut it names is in military spending | הקיצוץ בהוצאות שהיא מציינת הוא בהוצאות הביטחון | No change. "הוצאות הביטחון" is the neutral, standard Hebrew for military spending. | n/a |
+
+## English names completed
+
+- judea-samaria / separation-two-states: "Joint List chair Jabareen" → "Joint List chair Yousef Jabareen". Confirmed against lists.json (topCandidates No. 1, יוסף ג'בארין / Yousef Jabareen; also leader of hadash in parties.json) and the research's "Leadership and key candidates" section ("the list is headed by Yousef Jabareen (Hadash)"). The role "Joint List chair" was already in the English and is supported. No other change to the English file.
+- No other text in either language names a person by surname only or without a role at first mention.
+
+## English texts questioned
+
+none
+
+## What was verified
+
+1. Structure: script comparison of both files: same partyId, lang "he", same 10 issues in order, same option IDs in order under each, `options` (no `unclear`) in all ten as in English, 3 points in the same order; no extra keys.
+2. Agreement values: script assert, all 41 identical and in English.
+3. Anchors: script assert, all 10 issue anchors and 3 point anchors identical.
+4. Meaning: all 41 option texts and 3 points read side by side against English; facts, dates (all day first), numbers (20%, 70%, 25%, 10%, 13-49, 62-48, 36-59, 37-58), names and vote directions all match; no claim added or dropped.
+5. Strength and hedging: every hedge kept ("though the evidence is", "tentatively", "on statements only", "according to a 7 October 2026 review", "per the research"); no "ככל הנראה" (count 0); no added hedges.
+6. Label fit: each Hebrew text read alone; disagrees texts describe a different approach, partially texts state overlap and difference, agrees texts state the position, unclear texts (haredi 1–3, religion 1 and 4) state no position found and only a tentative indication.
+7. Glossary: script search for every `avoid.he` term: none found. Required terms used: חרדים, תלמידי ישיבות, חוק הגיוס, יהודה ושומרון, יישובים / התיישבות, גושי ההתיישבות הגדולים, החלת ריבונות ישראלית, מדינה פלסטינית, הגבול שלפני 1967, מתקפת 7 באוקטובר, ועדת חקירה ממלכתית, שינויים במערכת המשפט, בית המשפט העליון, היועץ המשפטי לממשלה, חטופים, חיזבאללה, השב״כ, מעצר בלי משפט, היישובים הערביים / החברה הערבית, יוקר המחיה, הסטטוס קוו, הרבנות הראשית, נישואים אזרחיים, שבת, חוק יסוד (glosses: see #10).
+8. Neutral: no loaded words found; "נחקרה"/"שנחקרו" absent (count 0); party actions use neutral verbs (אמר, הצביע, דורשת, קוראת).
+9. Natural Hebrew: read in full; six should-fix items (#1–6). "תשובתך" and "לתשובתך" read the same for men and women.
+10. Form: sentence count by script, no option text over 2 sentences, each point 1 sentence; no poll figures, option IDs, citations, links or Markdown; every phrase quoted in English is quoted in Hebrew ("של ערבים ושל יהודים כאחד", "אשליות מסוכנות", "אני נגד מלחמות", "פתרון דיפלומטי עדיף", "מלחמה להחלפת משטר", "בריון שכונתי", "טיפולי המרה"); names in registry Hebrew forms.
+
+Validation: `CONTENT_CORPUS=real pnpm validate:content` passed (content validation, self-match and profile tests); no error from content/matching/texts/he/taal.json.
