@@ -69,6 +69,7 @@ Numbers continue from the original PRD.
 
 ### Matching rules
 36. A party's result is the weighted combination of its per-issue scores, using the user's ranking as weights.
+    - **Options held only in part (owner decision 2026-10-13):** where the research shows a party backs only part of an option that bundles separate measures, the result shows "partly agrees" for a user who chose it, and the party gets partial credit for it. This is used for the Shin Bet option on crime in Arab society, where several parties back the Shin Bet's involvement but not holding suspects without trial.
     - **Explicitly rejected options (owner decision 2026-10-13):** where the research records that a party rejected the option the user chose, for example by voting against it, the result shows "disagrees" and the party's score on that issue is limited to the level of a disagreement, even if the option is close to the one the party holds.
     - **Unclear positions (owner decision 2026-10-13):** where a party's position on an issue is unclear, it gets a small fixed partial score, about a quarter of a full match, and the explanation says the position is unclear. The issue is not skipped, because skipping would let a party with few known positions reach a perfect score on those alone. It is not zero, because zero would treat "unknown" the same as "known to disagree". The exact value is settled in the profile test.
 37. Ties are broken by a fixed, documented rule that has nothing to do with polls or party size.

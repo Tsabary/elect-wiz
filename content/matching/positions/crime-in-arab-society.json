@@ -70,7 +70,8 @@
       "held": [
         {
           "optionId": "emergency-powers-shin-bet",
-          "level": "main"
+          "level": "main",
+          "inPart": true
         },
         {
           "optionId": "invest-in-arab-communities-first",
@@ -78,7 +79,7 @@
         }
       ],
       "anchor": "issue-crime-in-arab-society",
-      "basis": "Emergency-powers stated first; cabinet \"also approved large sums for Arab communities\" (invest), \"but the current plans focus on enforcement\" (rule 5); caveat: no position on holding suspects without trial (rule 8)"
+      "basis": "Emergency-powers stated first; cabinet \"also approved large sums for Arab communities\" (invest), \"but the current plans focus on enforcement\" (rule 5); caveat: no position on holding suspects without trial (rule 8); emergency-powers held in part: Shin Bet backed, the plan \"does not mention holding suspects without trial\""
     },
     {
       "partyId": "chomat-torat-yisrael",
@@ -159,11 +160,12 @@
       "held": [
         {
           "optionId": "emergency-powers-shin-bet",
-          "level": "main"
+          "level": "main",
+          "inPart": true
         }
       ],
       "anchor": "issue-crime-in-arab-society",
-      "basis": "Single option stated plainly: extraordinary measures including the Shin Bet (rule 3); caveat: no position found on holding crime bosses without trial (rule 8)"
+      "basis": "Single option stated plainly: extraordinary measures including the Shin Bet (rule 3); caveat: no position found on holding crime bosses without trial (rule 8); emergency-powers held in part: Shin Bet backed, detention without trial not documented"
     },
     {
       "partyId": "meretz",
@@ -187,11 +189,12 @@
       "held": [
         {
           "optionId": "emergency-powers-shin-bet",
-          "level": "main"
+          "level": "main",
+          "inPart": true
         }
       ],
       "anchor": "issue-crime-in-arab-society",
-      "basis": "Single option stated plainly: extraordinary measures including the Shin Bet and terrorism-style powers (rule 3); \"no support for the investment-first approach was found\", left out (rule 7)"
+      "basis": "Single option stated plainly: extraordinary measures including the Shin Bet and terrorism-style powers (rule 3); \"no support for the investment-first approach was found\", left out (rule 7); emergency-powers held in part: Shin Bet and terrorism definition backed, nothing in the sub-section on holding suspects without trial"
     },
     {
       "partyId": "new-economic-party",
@@ -275,7 +278,8 @@
       "held": [
         {
           "optionId": "emergency-powers-shin-bet",
-          "level": "main"
+          "level": "main",
+          "inPart": true
         },
         {
           "optionId": "invest-in-arab-communities-first",
@@ -283,7 +287,7 @@
         }
       ],
       "anchor": "issue-crime-in-arab-society",
-      "basis": "\"The evidence is mixed\"; plan is \"closest to\" emergency-powers, prevention measures \"overlap with\" invest (rule 5); caveat: no support found for holding suspects without trial (rule 8)"
+      "basis": "\"The evidence is mixed\"; plan is \"closest to\" emergency-powers, prevention measures \"overlap with\" invest (rule 5); caveat: no support found for holding suspects without trial (rule 8); emergency-powers held in part: Shin Bet and emergency declaration backed, the platform \"does not mention holding suspects without trial\""
     },
     {
       "partyId": "the-reservists",
@@ -291,11 +295,12 @@
       "held": [
         {
           "optionId": "emergency-powers-shin-bet",
-          "level": "main"
+          "level": "main",
+          "inPart": true
         }
       ],
       "anchor": "issue-crime-in-arab-society",
-      "basis": "Single option named: extraordinary measures, bringing in the Shin Bet (rule 3); caveat: plan \"also adds many police resources\" (no second option named) and has not addressed detention without trial (rule 8)"
+      "basis": "Single option named: extraordinary measures, bringing in the Shin Bet (rule 3); caveat: plan \"also adds many police resources\" (no second option named) and has not addressed detention without trial (rule 8); emergency-powers held in part: Shin Bet backed, plans \"do not mention holding suspects without trial\""
     },
     {
       "partyId": "yashar-leyisrael",
@@ -319,7 +324,8 @@
       "held": [
         {
           "optionId": "emergency-powers-shin-bet",
-          "level": "either"
+          "level": "either",
+          "inPart": true
         },
         {
           "optionId": "invest-in-arab-communities-first",
@@ -327,7 +333,7 @@
         }
       ],
       "anchor": "issue-crime-in-arab-society",
-      "basis": "\"The evidence is mixed\": 2026 plans support part of emergency-powers, record in government points to invest; neither given as closest (rule 4)"
+      "basis": "\"The evidence is mixed\": 2026 plans support part of emergency-powers, record in government points to invest; neither given as closest (rule 4); emergency-powers held in part: Shin Bet backed, \"without the detention-without-trial power that option includes\""
     },
     {
       "partyId": "yesodot-yisrael",
@@ -335,7 +341,8 @@
       "held": [
         {
           "optionId": "emergency-powers-shin-bet",
-          "level": "either"
+          "level": "either",
+          "inPart": true
         },
         {
           "optionId": "more-police-resources-normal-law",
@@ -343,7 +350,7 @@
         }
       ],
       "anchor": "issue-crime-in-arab-society",
-      "basis": "\"The evidence is mixed\": the plan \"points toward\" emergency-powers, the vote and other measures \"point toward\" more-police; neither given as closest (rule 4)"
+      "basis": "\"The evidence is mixed\": the plan \"points toward\" emergency-powers, the vote and other measures \"point toward\" more-police; neither given as closest (rule 4); emergency-powers held in part: Shin Bet division backed, nothing in the sub-section on holding suspects without trial"
     },
     {
       "partyId": "yisrael-beytenu",
@@ -367,11 +374,12 @@
       "held": [
         {
           "optionId": "emergency-powers-shin-bet",
-          "level": "main"
+          "level": "main",
+          "inPart": true
         }
       ],
       "anchor": "issue-crime-in-arab-society",
-      "basis": "Only held option is emergency-powers (Shin Bet), which \"fits ... only in part\": platform opposes administrative detention and adds revocation of citizenship (rules 3, 8); \"rejects\" invest-first, left out (rule 7)"
+      "basis": "Only held option is emergency-powers (Shin Bet), which \"fits ... only in part\": platform opposes administrative detention and adds revocation of citizenship (rules 3, 8); \"rejects\" invest-first, left out (rule 7); emergency-powers held in part: Shin Bet backed, \"the use of administrative detention will be abolished\""
     }
   ]
 }

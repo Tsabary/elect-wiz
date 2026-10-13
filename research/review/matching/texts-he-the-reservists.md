@@ -55,3 +55,7 @@ Fix confirmation (13.10.2026): re-read the Hebrew file. All 13 texts match the s
 ## Trial verdict
 
 The Sonnet writing is good enough for the other 27 parties. Across 44 texts there were 0 must-fix findings: no meaning drift, no loaded wording, no dropped or added claims, and no change in hedging or label. All 13 should-fix items are about naturalness (literal renderings like "ההיקף", "ראיות מעורבות", "אמירה של הכנסת", "הראיות הזהירות") plus one glossary term ("שירות אזרחי" instead of "שירות לאומי-אזרחי"). An Opus parity pass catches these reliably. If the owner wants fewer rounds, add three lines to the writing brief: use "שירות לאומי-אזרחי"; render "perimeter" as "הפרימטר"; and reread each text for calques of "shares", "mixed" and "tentative".
+
+## Change after the check (orchestrator, 2026-10-13)
+
+The label of crime-in-arab-society / `emergency-powers-shin-bet` changed from `agrees` to `partially`: the party is now recorded as holding that option only in part (see `research/review/matching/in-part-crime-in-arab-society.md`). The English text was rewritten and checked (`texts-en-in-part-crime.md`), and the Hebrew text for that one option was rewritten to match it by the orchestrator so that the build passes. **This one Hebrew text has not been parity-checked; the Hebrew session should check it.**

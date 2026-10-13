@@ -76,13 +76,15 @@ Records which option each researched party holds on each issue. These rows decid
 { "issueId": "gaza",
   "rows": [
     { "partyId": "likud-party", "unclear": false,
-      "held": [ { "optionId": "<option id of that issue>", "level": "main" | "either" | "secondary" } ],
+      "held": [ { "optionId": "<option id of that issue>", "level": "main" | "either" | "secondary", "inPart": true } ],
       "anchor": "issue-gaza", "basis": "one-line reason for the reviewer" },
     { "partyId": "some-party", "unclear": true, "held": [], "anchor": "issue-gaza", "basis": "No documented position found." }
   ] }
 ```
 
 One row for each of the 28 researched parties, sorted by `partyId`. `anchor` is always `issue-<issueId>`.
+
+`inPart` is optional and is left out unless it is true. It marks a held option of which the research shows the party holds only part: the option then counts for less, and a voter who chose it sees "partly agrees" instead of "agrees". By owner decision (2026-10-13) it is used for one option only, `emergency-powers-shin-bet` on `crime-in-arab-society`, when the research documents the Shin Bet / emergency element but not holding suspects without trial (or the reverse). The full rule is in the brief, under "Held only in part".
 
 **Format rules** (validation enforces them):
 - at most one `main` in a row;

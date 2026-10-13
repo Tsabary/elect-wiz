@@ -30,7 +30,7 @@ The format is fixed. Code is written against it. Don't add, rename or drop a fie
 { "issueId": "gaza",
   "rows": [
     { "partyId": "likud-party", "unclear": false,
-      "held": [ { "optionId": "<option id of that issue>", "level": "main" | "either" | "secondary" } ],
+      "held": [ { "optionId": "<option id of that issue>", "level": "main" | "either" | "secondary", "inPart": true } ],
       "anchor": "issue-gaza", "basis": "one-line reason for the reviewer" },
     { "partyId": "some-party", "unclear": true, "held": [], "anchor": "issue-gaza", "basis": "No documented position found." }
   ] }
@@ -39,6 +39,7 @@ The format is fixed. Code is written against it. Don't add, rename or drop a fie
 - One row for each of the 28 researched parties, **sorted by `partyId`**.
 - `anchor` is always `issue-{{ISSUE}}`.
 - `optionId` is an option ID of this issue, exactly as in the issue file.
+- `inPart` is optional and comes after `level`. Leave it out unless the "Held only in part" rule below applies. Never write `"inPart": false`.
 
 **Format rules** (validation rejects a file that breaks them):
 - at most one `main` in a row;
@@ -71,6 +72,17 @@ Further rules:
 - **Evidence ranking: actions > formal commitments > statements.** Where a line sets what the party did against what it says, the option backed by actions is the first option, and the option backed only by statements is the second (rule 5). Don't promote a statement over an action.
 - **Recency (owner decision):** a position rests on evidence from **2021 onwards** and on the **current leadership**. Older evidence, and the record of someone who no longer leads or runs for the party, is dated background and never decides a placement. Don't hold an option that the sub-section supports only with such material. If the "Closest option(s)" line itself seems to rest on it, follow the line and report it.
 - **`basis`** is one line that quotes or paraphrases the deciding words of the research line, so the checker can see which rule you applied. Example: `"with elements of" cut-taxes; first option stated plainly (rule 5)`. Nothing in `basis` may come from outside the sub-section.
+
+**Held only in part.** A held option may carry `"inPart": true`. It means the research shows the party holds only part of what the option proposes: it backs one of the option's measures and not another. Such an option counts for less in the score, and a voter who chose it sees "partly agrees" instead of "agrees". The flag doesn't change the level: place the option by the rules above first, then decide the flag.
+
+By owner decision (2026-10-13) the flag is used for **one option only**: `emergency-powers-shin-bet` on `crime-in-arab-society`. Don't use it on any other option or issue; everywhere else a partly held option is rule 8 (a caveat in `basis`). That option proposes two separable measures: treating the crime organisations as a national emergency handled with the Shin Bet, and a new power to hold suspected crime bosses without trial. For every row that holds it, apply this rule identically to every party, from the whole sub-section:
+
+- **`inPart: true`** when the research documents the party backing the Shin Bet / emergency element but not holding suspects without trial, whether because the research found nothing on detention without trial or because the party opposes it.
+- **No `inPart`** when the research documents the party backing both elements, so also detention without trial (administrative detention) for crime suspects, from 2021 onwards. "The party" here means its platform, its MKs or ministers acting for it, its leader, or, for a party whose evidence is its candidates' record, those candidates.
+- **`inPart: true`** also when the research documents the detention element but not the Shin Bet element.
+- **Never on a `secondary` option.** A `secondary` level already says the party's hold is weak or tentative; adding the flag would count the same weakness twice. Use it only on `main` and `either`.
+
+Say in `basis` why the option is held in part, and list in your report any row where the research documents neither element.
 
 ## Method
 
