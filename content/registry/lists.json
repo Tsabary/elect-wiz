@@ -1346,8 +1346,8 @@
     {
       "id": "new-order",
       "name": {
-        "he": "סדר חדש לכינון חוקה, להפרדת רשויות ולבחירות ישירות",
-        "en": "New Order – for a Constitution, Separation of Powers and Direct Elections"
+        "he": "סדר חדש לכינון חוקה, להפרדת רשויות ולבחירות אישיות",
+        "en": "New Order – for a Constitution, Separation of Powers and Personal Elections"
       },
       "ballotLetters": "קך",
       "memberPartyIds": [
@@ -1812,7 +1812,7 @@
     {
       "id": "shas",
       "name": {
-        "he": "התאחדות הספרדים שומרי התורה תנועתו של מרן עובדיה יוסף זצ״ל",
+        "he": "התאחדות הספרדים שומרי תורה תנועתו של מרן הרב עובדיה יוסף זצ״ל",
         "en": "Shas"
       },
       "ballotLetters": "שס",
@@ -2370,7 +2370,7 @@
     {
       "id": "betach",
       "name": {
-        "he": "בטח – ביטחון חברתי בראשות סמיון גרפמן",
+        "he": "בטח – בטחון חברתי בראשות סמיון גרפמן",
         "en": "Betach – Social Security led by Semion Grafman"
       },
       "ballotLetters": "ז",
