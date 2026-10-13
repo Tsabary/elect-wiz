@@ -56,3 +56,13 @@ History: the author had added "National Security Minister" before "Itamar Ben Gv
 Follow-up check (13.10.2026): `git diff HEAD` on the Hebrew file changes exactly the 14 texts named in #1–#8, each only as suggested. Structure, agreement values and anchors were re-verified by script against the English (identical). "השר לביטחון לאומי" no longer appears.
 
 Validation (initial and follow-up runs): `CONTENT_CORPUS=real pnpm validate:content` passed ("Content validation passed (active corpus: real)"; self-match and profile tests passed). The Hebrew file raises no error.
+
+## Re-check after owner corrections (01f1991, 13 October 2026)
+
+Checked by a Stage 7d parity checker (Opus) that wrote none of these files. Sources: `git show 01f1991`, decision 3 in `research/review/hebrew-english-questioned.md`, `content/registry/parties.json` ("יצחק וסרלאוף" / "Yitzhak Wasserlauf"), and the research's leadership section (resigned 19 January 2025, returned 19 March 2025).
+
+- **judea-samaria / partial-sovereignty-area-c: pass.** EN "Its candidate Yitzhak Wasserlauf voted for a bill to apply sovereignty to the Jordan Valley on 22 January 2025, days after he resigned as a minister when Otzma Yehudit, the list he belongs to, left the government, and against one for Beitar Illit on 31 December 2025, after Otzma Yehudit had returned to the coalition and he was a minister again." HE "מועמד המפלגה יצחק וסרלאוף הצביע בעד הצעת חוק להחלת ריבונות על בקעת הירדן ב-22 בינואר 2025, ימים אחרי שהתפטר מתפקידו כשר כשעוצמה יהודית, הרשימה שהוא משתייך אליה, עזבה את הממשלה, ונגד הצעה כזו לביתר עילית ב-31 בדצמבר 2025, אחרי שעוצמה יהודית שבה לקואליציה והוא שב לכהן כשר." "Minister" is gone from the 22 January vote in both languages; the resignation, the return and both dates (day first) match; the name is the registry form (no "שמעון"); the vote directions and the hedge ("mixed" = "אינן אחידות") are unchanged; glossary terms (יהודה ושומרון, החלת ריבונות) unchanged. The first sentence and the `partially` value did not change. Note only, no change needed: "כשר כשעוצמה" puts two כ־ words side by side; it reads correctly.
+- Finding about this text under "English texts questioned" (Wasserlauf as "Minister" on 22 January 2025) is closed by the owner's fix.
+
+Validation: `pnpm validate:content` passed ("Content validation passed (active corpus: real)"; self-match and profile tests passed).
+
