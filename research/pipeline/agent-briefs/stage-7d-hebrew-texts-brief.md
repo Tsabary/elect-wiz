@@ -69,7 +69,7 @@ Only the `text` values and `lang` differ.
 ## Limits
 
 - Write only `content/matching/texts/he/{{PARTY}}.json`.
-- Don't edit the English texts or any other file.
+- Don't edit the English texts or any other file, with one exception (owner decision 2026-10-13): **names and roles.** Each text is shown to a voter on its own, so every person needs their full name and role at first mention in each text. Where an English text names someone by surname only, or without a role, add the full name and the role to the English text and write the Hebrew to match. Take the name and role only from `content/registry/` and from the "Leadership and key candidates" section of `content/research/en/{{PARTY}}.md` (the one part of the research you may open, and only for this). Give the role as it was on the date the text speaks of ("then an MK"); if neither source gives it, add the full name only and report the case. Change nothing else in the English, never its `agreement` value, and list every English text you touched in your report.
 - Don't commit, don't change git config, don't spawn sub-agents.
 
 ## Report back (concise)

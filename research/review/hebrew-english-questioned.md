@@ -8,3 +8,8 @@ The Hebrew session treats the English as canonical and frozen: it changes nothin
 | the-reservists | `content/matching/texts/en/the-reservists.json` | every text that names Hendel | The English gives only "Hendel", without his first name or role at first mention, against the result-text rule (full name and role at first mention). The Hebrew adds his first name ("יועז הנדל") but no role, so as not to add a claim. | 7d writer and parity check | open, owner to decide |
 
 The Stage 5b check of the-reservists' Hebrew research edition questioned nothing in the English research (`research/review/parity-check.md`).
+
+## Decisions on the two items above (owner, 2026-10-13)
+
+1. **crime-in-arab-society / `emergency-powers-shin-bet`:** changed. Eight parties (the-reservists among them) are now recorded as holding that option only in part, so its label is `partially`. Their English texts were rewritten and checked. The one existing Hebrew text for it (the-reservists) was rewritten to match and still needs a parity check.
+2. **Names without a role:** the Hebrew session now fixes these as it goes. The Hebrew writer may add a person's full name and role at first mention to the English text as well as the Hebrew, from the registry and the research's "Leadership and key candidates" section only; see `research/HEBREW-SESSION.md`, Job 2. The-reservists' texts that name Hendel should be completed this way in both languages.

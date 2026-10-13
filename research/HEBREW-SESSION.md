@@ -15,7 +15,7 @@ The two jobs don't depend on each other and can run in parallel. Everything else
 
 ## Rules that apply to both jobs
 
-- **English is canonical and frozen.** Never edit `content/research/en/`, `content/matching/texts/en/`, `content/matching/positions/`, `content/matching/distances/`, `content/matching/config.json` or `content/registry/`. If the English looks wrong, record it in the parity log and tell the owner; don't fix it.
+- **English is canonical and frozen, with one narrow exception (names and roles in the result texts, see Job 2).** Never edit `content/research/en/`, and never edit `content/matching/texts/en/` beyond that exception; never edit `content/matching/positions/`, `content/matching/distances/`, `content/matching/config.json` or `content/registry/`. If the English looks wrong, record it in the parity log and tell the owner; don't fix it.
 - **The agent that writes a Hebrew file never checks it.** Writing and parity-checking are done by different agents.
 - **Equivalents, not literal translations.** Natural, plain, neutral Israeli Hebrew that says exactly what the English says: the same claims, strength, hedging, dates, numbers and names.
 - **Glossary:** `content/glossary.json` Hebrew terms are mandatory; nothing listed under `avoid.he`.
@@ -43,7 +43,13 @@ Instructions: sub-stage 7d of `research/pipeline/stage-7-matching-content.md`, w
 - **Input:** `content/matching/texts/en/<partyId>.json` (checked and final), plus the Hebrew option texts in `content/issues/*.json` and Hebrew names in `content/registry/`.
 - **Output:** `content/matching/texts/he/<partyId>.json`: the same keys, the same `agreement` values and the same anchors as the English file. Only `lang` and the `text` values differ.
 - **Parity log:** `research/review/matching/texts-he-<partyId>.md`.
-- **Lessons from the English texts that apply to the Hebrew too:** each text is shown to a voter on its own, so every person keeps their full name and role at first mention; dates are written day first; a label or phrase the English puts in quotation marks stays in quotation marks.
+- **Lessons from the English texts that apply to the Hebrew too:** dates are written day first; a label or phrase the English puts in quotation marks stays in quotation marks.
+- **Names and roles: the one English change this session may make (owner decision 2026-10-13).** Each text is shown to a voter on its own, so every person needs their full name and role at first mention in each text ("party leader Yoaz Hendel", not "Hendel"). The English texts of 18 parties were written before that rule was enforced, so some name people by surname only. When the Hebrew writer meets one:
+  - it fixes the **English** text too, adding only the full name and the role, and writes the Hebrew to match;
+  - the name and role come from `content/registry/` and from the "Leadership and key candidates" section of the party's English research document, and from nowhere else; if neither gives the role as it was on the date the text speaks of, the text gets the full name only and the case is logged;
+  - nothing else in the English text may change, and its `agreement` value never changes;
+  - the parity checker confirms each such edit against those two sources and lists them in its log under "English names completed".
+  This is done party by party as the Hebrew texts are written. There is no separate pass over the English for it.
 - **Check as you go:** `pnpm validate:content` must show no error naming the file. It checks that the keys match the English file and that each text's `agreement` equals the label the scoring computes.
 
 ## While the work is in progress

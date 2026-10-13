@@ -55,6 +55,8 @@ The Hebrew file has `"lang": "he"`. Everything except `lang` and the `text` valu
 
 ## How to report
 
+**Names and roles.** The Hebrew writer is allowed one kind of English edit: adding a person's full name and role at first mention in a text, in both languages (owner decision 2026-10-13). Check every text in both languages for a person named by surname only or without a role, and confirm each name and role against `content/registry/` and the "Leadership and key candidates" section of `content/research/en/{{PARTY}}.md` (the only part of the research you open). A missing name or role in either language is a should-fix; a role the two sources don't support is a must-fix. Record the English edits under a heading "English names completed" in your log, and report any other change to the English as a must-fix.
+
 Write your log to `research/review/matching/texts-he-{{PARTY}}.md`. Create the folder if needed. Write nothing else: **don't edit the Hebrew file or the English file.** The findings go back to the Hebrew author (or another agent that is not you), and you then confirm each fix and fill in Status.
 
 If a discrepancy suggests the **English** text is wrong, don't touch either file. Record it under "English texts questioned". The English goes back through Stage 7c, and the Hebrew is redone after it.
