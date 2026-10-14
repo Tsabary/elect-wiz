@@ -1,11 +1,11 @@
 /**
- * Prints the anonymous counts added up over every day: surveys started, results
- * shown, and a table of all researched parties ranked by how often each came
- * 1st, 2nd, 3rd and 4th.
+ * Prints every anonymous count in one go: surveys started, results shown and
+ * links shared (without and with answers), added up over every day; a table of
+ * all researched parties ranked by how often each came 1st, 2nd, 3rd and 4th;
+ * and the same totals per day.
  *
- * Usage: pnpm tally:report [--he] [--days]
+ * Usage: pnpm tally:report [--he]
  *   --he    party names in Hebrew
- *   --days  also print surveys started and results per day
  *
  * Reads the counter store from `.env.local` (or the environment): the same
  * settings the site uses, `KV_REST_API_URL` with `KV_REST_API_READ_ONLY_TOKEN`
@@ -119,7 +119,7 @@ async function main() {
         researched.map((p) => p.id),
       ),
       (id) => names.get(id) ?? id,
-      { showDays: process.argv.includes("--days") },
+      { showDays: true },
     ),
   );
 }
