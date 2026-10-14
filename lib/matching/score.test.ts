@@ -11,6 +11,7 @@ import {
   type PositionRow,
   type PositionsFile,
 } from "@/lib/content/schemas";
+import { prng, seededShuffle } from "@/lib/survey/shuffle";
 import { TOP_ENTRIES } from "./contract";
 import {
   agreementLabel,
@@ -587,6 +588,54 @@ describe("scoreMatch", () => {
       expect(tieBreakValue(allA, "alef")).not.toBe(tieBreakValue(other, "alef"));
       expect(tieBreakValue(allA, "alef")).not.toBe(tieBreakValue(reordered, "alef"));
     });
+
+    it("gives each of two real parties the edge in half of all ties, for every pair", () => {
+      // Random ties over the real issue and party IDs, from a seeded generator so the
+      // run is reproducible. FNV-1a over "party\nanswers" put new-hope ahead of
+      // hadash in 52.5% of ties; a fair rule is within a point of 50% for every pair.
+      const issuesDir = path.join(process.cwd(), "content", "issues");
+      const issues = fs
+        .readdirSync(issuesDir)
+        .sort()
+        .map((f) => JSON.parse(fs.readFileSync(path.join(issuesDir, f), "utf8")))
+        .map((i: { id: string; options: { id: string }[] }) => ({
+          id: i.id,
+          options: i.options.map((o) => o.id),
+        }));
+      const partyIds: string[] = JSON.parse(
+        fs.readFileSync(path.join(process.cwd(), "content", "registry", "parties.json"), "utf8"),
+      )
+        .parties.filter((p: { tier: string }) => p.tier === "researched")
+        .map((p: { id: string }) => p.id);
+      expect(partyIds.length).toBeGreaterThan(20);
+
+      const rand = prng(20261027);
+      const n = partyIds.length;
+      const ahead = new Uint32Array(n * n);
+      const RUNS = 100_000;
+      const ties = new Float64Array(n);
+      for (let run = 0; run < RUNS; run++) {
+        const order = seededShuffle(issues, Math.floor(rand() * 2 ** 32));
+        const ranked = order.slice(0, 5 + Math.floor(rand() * (issues.length - 4)));
+        const tied: MatchInput = {
+          ranked: ranked.map((i) => i.id),
+          answers: Object.fromEntries(
+            ranked.map((i) => [i.id, i.options[Math.floor(rand() * i.options.length)]]),
+          ),
+        };
+        for (let a = 0; a < n; a++) ties[a] = tieBreakValue(tied, partyIds[a]);
+        for (let a = 0; a < n; a++)
+          for (let b = a + 1; b < n; b++) if (ties[a] < ties[b]) ahead[a * n + b]++;
+      }
+      const skewed: string[] = [];
+      for (let a = 0; a < n; a++)
+        for (let b = a + 1; b < n; b++) {
+          const rate = ahead[a * n + b] / RUNS;
+          if (Math.abs(rate - 0.5) > 0.01)
+            skewed.push(`${partyIds[a]} before ${partyIds[b]}: ${rate.toFixed(4)}`);
+        }
+      expect(skewed).toEqual([]);
+    }, 60_000);
 
     it("ignores answers to issues that aren't ranked", () => {
       const withExtra = { ranked: allA.ranked, answers: { ...allA.answers, i6: "d" } };
