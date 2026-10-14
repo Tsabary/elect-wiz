@@ -11,13 +11,41 @@
  * settings the site uses, `KV_REST_API_URL` with `KV_REST_API_READ_ONLY_TOKEN`
  * when present (it only reads), else the read-write token. Nothing is changed.
  */
-import dns from "node:dns";
 import { readFileSync } from "node:fs";
+import https from "node:https";
 import path from "node:path";
 import { buildTallyReport, formatTallyReport, type DayCounts } from "../lib/tally/report";
 
-// Some home networks are slow to reach the store over IPv6.
-dns.setDefaultResultOrder("ipv4first");
+type Reply = { result: unknown; error?: string };
+
+/**
+ * One request to the store, over IPv4 only: some home networks (the owner's
+ * included) block or intercept the store over IPv6, and plain `fetch` then fails.
+ */
+function post(url: string, token: string, body: unknown): Promise<Reply[]> {
+  return new Promise((resolve, reject) => {
+    const req = https.request(
+      url,
+      {
+        method: "POST",
+        family: 4,
+        timeout: 20_000,
+        headers: { authorization: `Bearer ${token}`, "content-type": "application/json" },
+      },
+      (res) => {
+        let text = "";
+        res.on("data", (chunk) => (text += chunk));
+        res.on("end", () => {
+          if (res.statusCode !== 200) reject(new Error(`the store answered ${res.statusCode}`));
+          else resolve(JSON.parse(text) as Reply[]);
+        });
+      },
+    );
+    req.on("timeout", () => req.destroy(new Error("the store did not answer in time")));
+    req.on("error", reject);
+    req.end(JSON.stringify(body));
+  });
+}
 
 function loadEnvFile(file: string) {
   try {
@@ -49,14 +77,7 @@ async function main() {
   const call = async (body: unknown) => {
     for (let attempt = 1; ; attempt++) {
       try {
-        const res = await fetch(`${url}/pipeline`, {
-          method: "POST",
-          headers: { authorization: `Bearer ${token}`, "content-type": "application/json" },
-          body: JSON.stringify(body),
-          signal: AbortSignal.timeout(20_000),
-        });
-        if (!res.ok) throw new Error(`the store answered ${res.status}`);
-        return (await res.json()) as { result: unknown; error?: string }[];
+        return await post(`${url}/pipeline`, token, body);
       } catch (e) {
         if (attempt >= 3) throw e;
       }
