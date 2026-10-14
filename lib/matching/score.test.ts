@@ -20,6 +20,7 @@ import {
   issueAgreement,
   issueScore,
   isWeakMatch,
+  matchPercent,
   MatchDataError,
   MatchInputError,
   partyScore,
@@ -286,6 +287,56 @@ describe("weights", () => {
   });
 });
 
+describe("matchPercent", () => {
+  it("is the score as a whole percent, not rescaled", () => {
+    expect(matchPercent(0)).toBe(0);
+    expect(matchPercent(1)).toBe(100);
+    expect(matchPercent(0.25)).toBe(25);
+    expect(matchPercent(0.6)).toBe(60);
+    expect(matchPercent(0.824)).toBe(82);
+    expect(matchPercent(0.826)).toBe(83);
+  });
+
+  it("rounds a half up", () => {
+    expect(matchPercent(0.825)).toBe(83);
+    expect(matchPercent(0.005)).toBe(1);
+  });
+
+  it("isn't thrown off by floating-point noise at a rounding boundary", () => {
+    // Equal on paper, apart in the last bits: tied in the order, so one percent.
+    for (const noise of [-1e-12, -1e-15, 0, 1e-15, 1e-12]) {
+      expect(matchPercent(0.825 + noise)).toBe(83);
+      expect(matchPercent(0.775 + noise)).toBe(78);
+    }
+    // 0.285 × 100 is 28.499…96 in floating point, and 0.1 + 0.2 + 0.27 halved is
+    // 0.28500…03: a plain Math.round(score × 100) would show 28 and 29 for one score.
+    expect(matchPercent(0.285)).toBe(29);
+    expect(matchPercent((0.1 + 0.2 + 0.27) / 2)).toBe(29);
+    expect(matchPercent(0.145)).toBe(15);
+  });
+
+  it("never increases down the order, so a lower-ranked party never shows a higher percent", () => {
+    const rand = prng(20261014);
+    // Scores crowded around half-percent boundaries, where rounding could misbehave.
+    const scores = Array.from({ length: 5000 }, () => {
+      const half = (Math.floor(rand() * 100) + 0.5) / 100;
+      return Math.min(1, Math.max(0, half + (rand() - 0.5) * 2e-9));
+    });
+    scores.sort((a, b) => b - a);
+    const percents = scores.map(matchPercent);
+    for (let i = 1; i < percents.length; i++) {
+      expect(percents[i], `${scores[i - 1]} then ${scores[i]}`).toBeLessThanOrEqual(
+        percents[i - 1],
+      );
+    }
+    for (const p of percents) {
+      expect(Number.isInteger(p)).toBe(true);
+      expect(p).toBeGreaterThanOrEqual(0);
+      expect(p).toBeLessThanOrEqual(100);
+    }
+  });
+});
+
 describe("scoreMatch", () => {
   const SIX = { p1: "a", p2: "a:either,b:either", p3: "a:secondary", p4: "b", p5: "", p6: "d" };
 
@@ -301,6 +352,42 @@ describe("scoreMatch", () => {
   it("ranks only the parties it is given", () => {
     const result = scoreMatch(dataFor(SIX), allA, ["p6", "p5", "p4"]);
     expect(result.entries.map((e) => e.partyId)).toEqual(["p4", "p5", "p6"]);
+  });
+
+  it("gives each party its score as a whole percent", () => {
+    const result = scoreMatch(dataFor(SIX), allA, Object.keys(SIX));
+    // The plain scores, not relative to the top: 1, 0.85, 0.6, 0.5, 0.25 (unclear), 0.
+    expect(result.entries.map((e) => e.percent)).toEqual([100, 85, 60, 50, 25, 0]);
+  });
+
+  it("shows the percent of the score the order is based on, never rising down the list", () => {
+    const rand = prng(271026);
+    const specs = ["a", "b", "c", "d", "", "a:either,b:either", "b:secondary", "a,d", "c:either"];
+    const pick = <T>(items: readonly T[]) => items[Math.floor(rand() * items.length)];
+    let checked = 0;
+    for (let run = 0; run < 300; run++) {
+      const parties = Object.fromEntries(
+        Array.from({ length: 8 }, (_, p) => [
+          `p${p}`,
+          Object.fromEntries(ISSUES.map((id) => [id, pick(specs)])),
+        ]),
+      );
+      const ranked = seededShuffle(ISSUES, Math.floor(rand() * 2 ** 32)).slice(0, pick([5, 6]));
+      const i: MatchInput = {
+        ranked,
+        answers: Object.fromEntries(ranked.map((id) => [id, pick(OPTIONS)])),
+      };
+      const data = dataFor(parties);
+      const ids = Object.keys(parties);
+      const { entries } = scoreMatch(data, i, ids);
+      const order = rankParties(data, i, ids);
+      expect(entries.map((e) => e.percent)).toEqual(order.map((r) => matchPercent(r.score)));
+      for (let k = 1; k < entries.length; k++) {
+        expect(entries[k].percent).toBeLessThanOrEqual(entries[k - 1].percent);
+        checked++;
+      }
+    }
+    expect(checked).toBe(300 * 7);
   });
 
   it("doesn't depend on the order of the party list", () => {
@@ -636,6 +723,13 @@ describe("scoreMatch", () => {
         }
       expect(skewed).toEqual([]);
     }, 60_000);
+
+    it("shows tied parties with the same percent", () => {
+      for (const i of manyInputs()) {
+        const percents = scoreMatch(tiedData, i, TIED).entries.map((e) => e.percent);
+        expect(new Set(percents).size).toBe(1);
+      }
+    });
 
     it("ignores answers to issues that aren't ranked", () => {
       const withExtra = { ranked: allA.ranked, answers: { ...allA.answers, i6: "d" } };

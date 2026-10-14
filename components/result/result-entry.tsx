@@ -126,6 +126,64 @@ function ResearchLink({ entry }: { entry: MatchEntry }) {
   );
 }
 
+type PercentSize = "top" | "card" | "row";
+
+/**
+ * A party's match percentage (`MatchEntry.percent`, the score the order is
+ * based on): the serif numeral and a short label, then a quiet bar on a full
+ * 0–100 track so the gaps between parties read at a glance. Ink only, never a
+ * party's or a traffic-light colour. The bar is decoration; the text says it all.
+ * In a "show all" row the label is for screen readers only and the bar shows
+ * from the `sm` width up, where the row has room for it.
+ */
+function MatchPercent({ percent, size }: { percent: number; size: PercentSize }) {
+  const t = useTranslations("Result");
+  const onInk = size === "top";
+  const row = size === "row";
+  const Tag = row ? "span" : "div"; // a row's sits in a <summary>, which holds phrasing content only
+  return (
+    <Tag
+      data-testid="match-percent"
+      data-percent={percent}
+      className={cn("flex items-center", row ? "shrink-0 gap-2" : "gap-3")}
+    >
+      <span className="flex items-baseline gap-1.5 whitespace-nowrap">
+        {t.rich("matchPercent", {
+          percent,
+          num: (chunks) => (
+            <span
+              className={cn(
+                "tabular-nums",
+                size === "top" && "display text-3xl sm:text-4xl",
+                size === "card" && "display text-2xl",
+                row && "font-bold",
+              )}
+            >
+              {chunks}
+            </span>
+          ),
+          label: (chunks) => (
+            <span className={row ? "sr-only" : "text-sm font-bold"}>{chunks}</span>
+          ),
+        })}
+      </span>
+      <span
+        aria-hidden="true"
+        className={cn(
+          "h-1.5 shrink-0 overflow-hidden rounded-full",
+          onInk ? "bg-ink-foreground/25" : "bg-foreground/15",
+          row ? "hidden w-14 sm:block" : "w-28 sm:w-40",
+        )}
+      >
+        <span
+          className={cn("block h-full rounded-full", onInk ? "bg-ink-foreground" : "bg-foreground")}
+          style={{ width: `${percent}%` }}
+        />
+      </span>
+    </Tag>
+  );
+}
+
 const hasDetails = (entry: MatchEntry) => entry.breakdown.length > 0 || entry.points.length > 0;
 
 /** One of the parties shown in full. The top match's details are open; the others' are collapsed. */
@@ -176,6 +234,7 @@ export function ResultEntryCard({
               {entry.metadata.name}
             </Link>
           </h2>
+          <MatchPercent percent={entry.percent} size={isTop ? "top" : "card"} />
           {!isTop && <EntryFacts entry={entry} serverBlackout={serverBlackout} />}
         </div>
         <BallotSlip
@@ -235,6 +294,7 @@ export function ResultEntryRow({
             {t("position", { n: position + 1 })}
           </span>
           <span className="min-w-0 grow font-bold">{entry.metadata.name}</span>
+          <MatchPercent percent={entry.percent} size="row" />
           <BallotSlip letters={entry.metadata.ballotLetters} size="compact" />
           <ChevronDown
             className="size-4 shrink-0 transition-transform group-open:rotate-180 motion-reduce:transition-none"

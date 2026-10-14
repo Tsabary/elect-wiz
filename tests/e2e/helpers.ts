@@ -155,7 +155,7 @@ export const partyIdsOf = (loc: Locator) =>
 
 // ------------------------------------------------------------------ ballot slip
 
-const siteCopy = (locale: AppLocale) =>
+export const siteCopy = (locale: AppLocale) =>
   JSON.parse(fs.readFileSync(path.join(process.cwd(), "messages", `${locale}.json`), "utf8"));
 
 /**
