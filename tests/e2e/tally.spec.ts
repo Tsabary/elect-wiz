@@ -3,6 +3,7 @@ import {
   answerIssues,
   completeCase,
   isTallyRequest,
+  issues,
   listedParties,
   openSurvey,
   partyIdsOf,
@@ -13,6 +14,8 @@ import {
   recordTally,
   researchedParties,
 } from "./helpers";
+
+const issueIds = (): string[] => issues().map((i: { id: string }) => i.id);
 
 /** Long enough for a fire-and-forget call to have left the page, had one been made. */
 const SETTLE_MS = 500;
@@ -68,7 +71,7 @@ test.describe("anonymous counts sent by the survey", () => {
     expect(shown.slice(0, 4)).toEqual(set.entries.slice(0, 4));
     expect(tally.calls[1]).toEqual({
       method: "POST",
-      body: { kind: "result", parties: set.entries.slice(0, 4) },
+      body: { kind: "result", parties: set.entries.slice(0, 4), issues: [...set.ranked] },
     });
 
     // Looking around the result reports nothing more.
@@ -229,6 +232,8 @@ test.describe("POST /api/tally", () => {
       { kind: "result", parties: ids().slice(0, 3) },
       { kind: "result", parties: ids().slice(0, 4) },
       { kind: "result", parties: ids().slice(2, 6).reverse() },
+      { kind: "result", parties: ids().slice(0, 4), issues: issueIds().slice(0, 5) },
+      { kind: "result", parties: ids().slice(0, 4), issues: issueIds().reverse() },
     ];
     for (const data of calls) {
       const res = await request.post("/api/tally", { data });
@@ -256,6 +261,19 @@ test.describe("POST /api/tally", () => {
       ["a listed party", { kind: "result", parties: [a, b, listed] }],
       ["a listed party on top", { kind: "result", parties: [listed, a, b, c] }],
       ["an unknown party", { kind: "result", parties: [a, b, "does-not-exist"] }],
+      ["too few issues", { kind: "result", parties: [a, b, c], issues: issueIds().slice(0, 4) }],
+      [
+        "a repeated issue",
+        { kind: "result", parties: [a, b, c], issues: [...issueIds().slice(0, 5), issueIds()[0]] },
+      ],
+      [
+        "an unknown issue",
+        {
+          kind: "result",
+          parties: [a, b, c],
+          issues: [...issueIds().slice(0, 4), "no-such-issue"],
+        },
+      ],
       ["parties that aren't strings", { kind: "result", parties: [1, 2, 3] }],
       ["parties as a string", { kind: "result", parties: `${a},${b},${c}` }],
       ["shared without the flag", { kind: "shared" }],

@@ -9,6 +9,8 @@ import {
   COUNTER_SHARED_ANSWERS,
   COUNTER_SHARED_PLAIN,
   COUNTER_STARTED,
+  issueFirstCounter,
+  issuePointsCounter,
   PLACES,
   placeCounter,
   type Place,
@@ -25,6 +27,16 @@ export interface PartyRow {
   inTopFour: number;
   /** Share of all results in which the party came 1st, 0–1. */
   firstShare: number;
+}
+
+export interface IssueRow {
+  issueId: string;
+  /** Importance points: 10 for each time ranked 1st, 9 for 2nd, … 1 for 10th. */
+  points: number;
+  /** Times ranked the most important. */
+  first: number;
+  /** Points per result that sent a ranking, 0–10. */
+  average: number;
 }
 
 export interface TallyReport {
@@ -44,6 +56,10 @@ export interface TallyReport {
   sharedAnswers: number;
   /** Every researched party, best first. */
   parties: PartyRow[];
+  /** Every issue, most important first (by points). */
+  issues: IssueRow[];
+  /** Results that sent their issue ranking (pages from before it was added did not). */
+  rankedResults: number;
 }
 
 /**
@@ -55,6 +71,7 @@ export interface TallyReport {
 export function buildTallyReport(
   byDay: Record<string, DayCounts>,
   partyIds: readonly string[],
+  issueIds: readonly string[] = [],
 ): TallyReport {
   const days = Object.keys(byDay)
     .sort()
@@ -91,6 +108,27 @@ export function buildTallyReport(
     for (const p of PLACES) if (a.places[p] !== b.places[p]) return b.places[p] - a.places[p];
     return a.partyId < b.partyId ? -1 : a.partyId > b.partyId ? 1 : 0;
   });
+  const sum = (field: string) => Object.values(byDay).reduce((n, c) => n + (c[field] ?? 0), 0);
+  const issueSet = new Set(issueIds);
+  for (const counts of Object.values(byDay)) {
+    for (const field of Object.keys(counts)) {
+      if (field.startsWith("issue-points:")) issueSet.add(field.slice("issue-points:".length));
+    }
+  }
+  // Every ranking has exactly one issue ranked first, so the 1st counts add up to the rankings.
+  const rankedResults = [...issueSet].reduce((n, id) => n + sum(issueFirstCounter(id)), 0);
+  const issues = [...issueSet].map((issueId): IssueRow => ({
+    issueId,
+    points: sum(issuePointsCounter(issueId)),
+    first: sum(issueFirstCounter(issueId)),
+    average: rankedResults ? sum(issuePointsCounter(issueId)) / rankedResults : 0,
+  }));
+  issues.sort(
+    (a, b) =>
+      b.points - a.points ||
+      b.first - a.first ||
+      (a.issueId < b.issueId ? -1 : a.issueId > b.issueId ? 1 : 0),
+  );
   return {
     days,
     started,
@@ -98,6 +136,8 @@ export function buildTallyReport(
     sharedPlain: total("sharedPlain"),
     sharedAnswers: total("sharedAnswers"),
     parties,
+    issues,
+    rankedResults,
   };
 }
 
@@ -105,7 +145,13 @@ export function buildTallyReport(
 export function formatTallyReport(
   report: TallyReport,
   nameOf: (partyId: string) => string,
-  { showDays = false }: { showDays?: boolean } = {},
+  {
+    showDays = false,
+    issueTitleOf = (id: string) => id,
+  }: {
+    showDays?: boolean;
+    issueTitleOf?: (issueId: string) => string;
+  } = {},
 ): string {
   const lines: string[] = [];
   const first = report.days[0]?.day;
@@ -135,6 +181,26 @@ export function formatTallyReport(
   const fmt = (r: string[]) =>
     r.map((cell, c) => (c === 1 ? cell.padEnd(widths[c]) : cell.padStart(widths[c]))).join("  ");
   lines.push(fmt(head), widths.map((w) => "-".repeat(w)).join("  "), ...rows.map(fmt));
+
+  if (report.issues.length) {
+    lines.push(
+      "",
+      `Most important issues (points: 10 for ranked 1st, 9 for 2nd, … 1 for 10th; ` +
+        `"doesn't matter" gets 0), from ${report.rankedResults} results with a ranking:`,
+    );
+    const iHead = ["#", "Issue", "Points", "Avg / result", "Ranked 1st"];
+    const iRows = report.issues.map((r, i) => [
+      String(i + 1),
+      issueTitleOf(r.issueId),
+      String(r.points),
+      r.average.toFixed(2),
+      String(r.first),
+    ]);
+    const iw = iHead.map((h, c) => Math.max(h.length, ...iRows.map((r) => r[c].length)));
+    const ifmt = (r: string[]) =>
+      r.map((cell, c) => (c === 1 ? cell.padEnd(iw[c]) : cell.padStart(iw[c]))).join("  ");
+    lines.push(ifmt(iHead), iw.map((w) => "-".repeat(w)).join("  "), ...iRows.map(ifmt));
+  }
 
   if (showDays) {
     lines.push("", "Per day:", "Day         Started  Results  Shared  +Answers");

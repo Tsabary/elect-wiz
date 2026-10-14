@@ -15,6 +15,7 @@ import {
   type CounterStore,
 } from "./counter";
 import { handleTallyRequest, tallyContext, type TallyContext } from "./handler";
+import { buildTallyReport, formatTallyReport } from "./report";
 
 const RESEARCHED = ["alpha", "beta", "gamma", "delta", "epsilon"];
 const NOW = new Date("2026-10-14T09:00:00Z");
@@ -440,7 +441,7 @@ describe("tally calls from the survey", () => {
 
   it("send only the top four party IDs of a result, in order", () => {
     const fetchImpl = ok();
-    tallyResult(["epsilon", "alpha", "beta", "gamma", "delta"], fetchImpl);
+    tallyResult(["epsilon", "alpha", "beta", "gamma", "delta"], [], fetchImpl);
     const { body } = sent(fetchImpl);
     expect(body).toEqual({ kind: "result", parties: ["epsilon", "alpha", "beta", "gamma"] });
     expect(parseTallyCall(body, RESEARCHED)).not.toBeNull();
@@ -460,7 +461,7 @@ describe("tally calls from the survey", () => {
 
   it("send nothing for a result with fewer than three parties", () => {
     const fetchImpl = ok();
-    tallyResult(["alpha", "beta"], fetchImpl);
+    tallyResult(["alpha", "beta"], [], fetchImpl);
     expect(fetchImpl).not.toHaveBeenCalled();
   });
 
@@ -472,10 +473,141 @@ describe("tally calls from the survey", () => {
     const throwing = vi.fn(() => {
       throw new Error("blocked");
     }) as unknown as typeof fetch;
-    expect(() => tallyResult(["alpha", "beta", "gamma"], throwing)).not.toThrow();
+    expect(() => tallyResult(["alpha", "beta", "gamma"], [], throwing)).not.toThrow();
     expect(() => tallyShared(true, throwing)).not.toThrow();
     expect(() => tallyShared(false, rejecting)).not.toThrow();
     // Give the rejected promise a turn: an unhandled rejection would fail the run.
     await new Promise((r) => setTimeout(r, 0));
+  });
+});
+
+describe("issue importance in the result count", () => {
+  const ISSUES = ["i1", "i2", "i3", "i4", "i5", "i6", "i7", "i8", "i9", "i10"];
+  const parse = (body: unknown) => parseTallyCall(body, RESEARCHED, ISSUES);
+  const parties = ["alpha", "beta", "gamma"];
+
+  it("accepts a result with its ranked issues, and one without them (older pages)", () => {
+    expect(parse({ kind: "result", parties, issues: ISSUES.slice(0, 5) })).toEqual({
+      kind: "result",
+      parties,
+      issues: ISSUES.slice(0, 5),
+    });
+    expect(parse({ kind: "result", parties })).toEqual({ kind: "result", parties });
+  });
+
+  it("rejects too few, too many, repeated or unknown issues", () => {
+    for (const issues of [
+      ISSUES.slice(0, 4),
+      [...ISSUES, "i11"],
+      [...ISSUES.slice(0, 5), "i1"],
+      [...ISSUES.slice(0, 4), "nope"],
+      "i1,i2,i3,i4,i5",
+    ]) {
+      expect(parse({ kind: "result", parties, issues }), JSON.stringify(issues)).toBeNull();
+    }
+    // Without the survey's issue list, no issue is known.
+    expect(
+      parseTallyCall({ kind: "result", parties, issues: ISSUES.slice(0, 5) }, RESEARCHED),
+    ).toBeNull();
+  });
+
+  it("gives 10 points to the issue ranked 1st, down to 1 for the 10th, and counts the 1st", () => {
+    const counters = countersFor({ kind: "result", parties, issues: ISSUES });
+    expect(counters).toContainEqual(["issue-points:i1", 10]);
+    expect(counters).toContainEqual(["issue-points:i2", 9]);
+    expect(counters).toContainEqual(["issue-points:i10", 1]);
+    expect(counters).toContain("issue-1st:i1");
+    expect(
+      counters.filter((c) => typeof c === "string" && c.startsWith("issue-1st:")),
+    ).toHaveLength(1);
+  });
+
+  it("adds the points up in the store, and sends them as amounts to Upstash", async () => {
+    const store = createMemoryCounterStore();
+    await recordTally(
+      store,
+      { kind: "result", parties, issues: ["i3", "i1", "i2", "i4", "i5"] },
+      NOW,
+    );
+    await recordTally(
+      store,
+      { kind: "result", parties, issues: ["i1", "i3", "i2", "i4", "i5"] },
+      NOW,
+    );
+    const day = store.counts(dayKey(israelDay(NOW)));
+    expect(day["issue-points:i1"]).toBe(9 + 10);
+    expect(day["issue-points:i3"]).toBe(10 + 9);
+    expect(day["issue-1st:i1"]).toBe(1);
+    expect(day["issue-1st:i3"]).toBe(1);
+
+    const fetchImpl = vi.fn(async () => new Response("[]", { status: 200 }));
+    await createUpstashCounterStore("https://x.test", "t", fetchImpl).increment("k", [
+      "results",
+      ["issue-points:i1", 10],
+    ]);
+    const body = JSON.parse(
+      (fetchImpl.mock.calls[0] as unknown as [string, RequestInit])[1].body as string,
+    );
+    expect(body).toEqual([
+      ["HINCRBY", "k", "results", 1],
+      ["HINCRBY", "k", "issue-points:i1", 10],
+    ]);
+  });
+
+  it("a full call with ten long IDs fits the body limit", () => {
+    const longIssues = ISSUES.map((i) => `${i}-a-rather-long-issue-identifier`);
+    const longParties = [
+      "a-quite-long-party-identifier-1",
+      "a-quite-long-party-identifier-2",
+      "a-quite-long-party-identifier-3",
+      "a-quite-long-party-identifier-4",
+    ];
+    const text = JSON.stringify({ kind: "result", parties: longParties, issues: longIssues });
+    expect(new TextEncoder().encode(text).length).toBeLessThanOrEqual(TALLY_MAX_BODY_BYTES);
+    expect(parseTallyBody(text, longParties, longIssues)).not.toBeNull();
+  });
+
+  it("the client sends the ranked issues with the result, and leaves them out when too few", () => {
+    const fetchImpl = vi.fn(async () => new Response(null, { status: 204 }));
+    tallyResult(["alpha", "beta", "gamma"], ISSUES.slice(0, 6), fetchImpl);
+    tallyResult(["alpha", "beta", "gamma"], ISSUES.slice(0, 2), fetchImpl);
+    const bodies = fetchImpl.mock.calls.map((c) =>
+      JSON.parse((c as unknown as [string, RequestInit])[1].body as string),
+    );
+    expect(bodies[0]).toEqual({
+      kind: "result",
+      parties: ["alpha", "beta", "gamma"],
+      issues: ISSUES.slice(0, 6),
+    });
+    expect(bodies[1]).toEqual({ kind: "result", parties: ["alpha", "beta", "gamma"] });
+  });
+
+  it("the report ranks issues by points, with the average per ranking and the 1st count", () => {
+    const report = buildTallyReport(
+      {
+        "2026-10-14": {
+          results: 2,
+          "issue-points:i1": 19,
+          "issue-points:i3": 19,
+          "issue-1st:i1": 1,
+          "issue-1st:i3": 1,
+          "issue-points:i2": 16,
+        },
+        "2026-10-15": { results: 1, "issue-points:i2": 10, "issue-1st:i2": 1 },
+      },
+      RESEARCHED,
+      ["i1", "i2", "i3", "i9"],
+    );
+    expect(report.rankedResults).toBe(3);
+    expect(report.issues.map((r) => [r.issueId, r.points, r.first])).toEqual([
+      ["i2", 26, 1],
+      ["i1", 19, 1],
+      ["i3", 19, 1],
+      ["i9", 0, 0],
+    ]);
+    expect(report.issues[0].average).toBeCloseTo(26 / 3);
+    expect(
+      formatTallyReport(report, (id) => id, { issueTitleOf: (id) => `Issue ${id}` }),
+    ).toContain("Issue i2");
   });
 });

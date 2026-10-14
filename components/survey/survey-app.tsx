@@ -157,7 +157,11 @@ export function SurveyApp({
       setPhase({ kind: "result", seed, result: res.result, input });
       // Anonymous count, fire-and-forget, only the first time this result is shown:
       // the top parties' IDs only, never the answers.
-      if (first) tallyResult(res.result.entries.map((e) => e.partyId));
+      if (first)
+        tallyResult(
+          res.result.entries.map((e) => e.partyId),
+          input.ranked,
+        );
     } else {
       // Whatever was loaded couldn't be used: "try again" fetches it afresh.
       bundleRequest.current = null;

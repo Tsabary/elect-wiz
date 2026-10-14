@@ -152,7 +152,7 @@
         "title": "Summary",
         "paragraphs": [
           "Your answers stay on your device. Your result is worked out there, and your answers are never sent to us. They leave your device only if you choose to share a link with your answers, which then contains them.",
-          "The only things the site receives are three anonymous counts: that a survey was started, which parties came out as the closest match and the three next closest, and that a result link was shared.",
+          "The only things the site receives are three anonymous counts: that a survey was started, which parties came out as the closest match and the three next closest along with the order in which you ranked the issues (not your positions on them), and that a result link was shared.",
           "There are no accounts and no login, and we don’t ask for your name, email, phone number or any other personal detail."
         ]
       },
@@ -172,8 +172,8 @@
       "counts": {
         "title": "Anonymous counts",
         "paragraphs": [
-          "The site receives three anonymous counts. One is sent when a new survey is started. Another is sent when a result is shown, and names only the party that came out as the closest match and the three next closest. The third is sent when you share a link to your result, and says only that a link was shared and whether it included your answers: not the answers themselves, nor the parties. None of them contains your answers or anything that identifies you.",
-          "The counts are kept only as daily totals, in a database service the site uses. They are for the site’s operator only and are never published. They count surveys started, results and shares, not people."
+          "The site receives three anonymous counts. One is sent when a new survey is started. Another is sent when a result is shown, and names only the party that came out as the closest match and the three next closest, and the issues you ranked in the order you ranked them, so we can see which issues matter most to voters. It does not include the position you chose on any issue. The third is sent when you share a link to your result, and says only that a link was shared and whether it included your answers: not the answers themselves, nor the parties. None of them contains the positions you chose or anything that identifies you.",
+          "The counts are kept only as daily totals, in a database service the site uses. They are for the site’s operator only and are never published. They count surveys started, results and shares, not people. For the issues, only a running total of importance points per issue is kept (more for an issue ranked higher), never anyone’s ranking as a whole."
         ]
       },
       "sharing": {

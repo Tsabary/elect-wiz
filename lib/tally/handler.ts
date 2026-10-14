@@ -18,6 +18,8 @@ export interface TallyContext {
   /** The store, or null when none is configured: the call is checked and nothing is counted. */
   store: CounterStore | null;
   researchedPartyIds: readonly string[];
+  /** The survey's issue IDs, which a result's ranking may name. */
+  issueIds?: readonly string[];
   /** The real time: it picks the day a call is counted under. */
   now: Date;
   electionOver: boolean;
@@ -37,6 +39,7 @@ export function tallyContext(
   request: Request,
   opts: {
     researchedPartyIds: readonly string[];
+    issueIds?: readonly string[];
     env?: Record<string, string | undefined>;
     realNow?: Date;
     fetchImpl?: typeof fetch;
@@ -50,6 +53,7 @@ export function tallyContext(
     // `next start` production: with .env.local's store settings it would count too.
     store: env.VERCEL_ENV === "production" ? counterStoreFromEnv(env, opts.fetchImpl) : null,
     researchedPartyIds: opts.researchedPartyIds,
+    issueIds: opts.issueIds ?? [],
     now: realNow,
     electionOver: isElectionOver(clock, timeConfig(env)),
   };
@@ -96,7 +100,7 @@ export async function handleTallyRequest(request: Request, ctx: TallyContext): P
   }
   if (new TextEncoder().encode(text).length > TALLY_MAX_BODY_BYTES) return empty(413);
 
-  const call = parseTallyBody(text, ctx.researchedPartyIds);
+  const call = parseTallyBody(text, ctx.researchedPartyIds, ctx.issueIds ?? []);
   if (!call) return empty(400);
   if (!ctx.store) return empty(204);
 

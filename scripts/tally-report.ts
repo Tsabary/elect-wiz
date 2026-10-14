@@ -2,7 +2,7 @@
  * Prints every anonymous count in one go: surveys started, results shown and
  * links shared (without and with answers), added up over every day; a table of
  * all researched parties ranked by how often each came 1st, 2nd, 3rd and 4th;
- * and the same totals per day.
+ * the issues ranked by importance points; and the same totals per day.
  *
  * Usage: pnpm tally:report [--he]
  *   --he    party names in Hebrew
@@ -11,7 +11,7 @@
  * settings the site uses, `KV_REST_API_URL` with `KV_REST_API_READ_ONLY_TOKEN`
  * when present (it only reads), else the read-write token. Nothing is changed.
  */
-import { readFileSync } from "node:fs";
+import { readdirSync, readFileSync } from "node:fs";
 import https from "node:https";
 import path from "node:path";
 import { buildTallyReport, formatTallyReport, type DayCounts } from "../lib/tally/report";
@@ -111,15 +111,28 @@ async function main() {
   const researched = registry.parties.filter((p) => p.tier === "researched");
   const lang = process.argv.includes("--he") ? "he" : "en";
   const names = new Map(registry.parties.map((p) => [p.id, p.name[lang]]));
+  const issuesDir = path.join(process.cwd(), "content/issues");
+  const issues = readdirSync(issuesDir)
+    .filter((f) => f.endsWith(".json"))
+    .map(
+      (f) =>
+        JSON.parse(readFileSync(path.join(issuesDir, f), "utf8")) as {
+          id: string;
+          en: { title: string };
+          he: { title: string };
+        },
+    );
+  const issueTitles = new Map(issues.map((i) => [i.id, i[lang].title]));
 
   console.log(
     formatTallyReport(
       buildTallyReport(
         byDay,
         researched.map((p) => p.id),
+        issues.map((i) => i.id),
       ),
       (id) => names.get(id) ?? id,
-      { showDays: true },
+      { showDays: true, issueTitleOf: (id) => issueTitles.get(id) ?? id },
     ),
   );
 }
