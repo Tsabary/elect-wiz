@@ -89,7 +89,7 @@ Numbers continue from the original PRD.
 ## Non-functional requirements
 - **Cost protection** (original PRD): no longer needed for matching, because no result costs money.
 - **Perceived latency:** the result appears immediately.
-- **Trust and privacy:** unchanged, and stronger. Answers are not sent anywhere; they stay on the user's device.
+- **Trust and privacy:** unchanged, and stronger. Answers are not sent anywhere; they stay on the user's device. Owner decisions of 2026-10-14: a finished survey stays saved on the device for 7 days, and nothing stays saved after polls close; nothing on the result makes the browser fetch the result's party pages before the user opens one; the language cookie is set only when the user switches language.
 
 ## Scope & impact on existing product
 - The survey loses option editing, the write-your-own field and the "Anything else?" step, all of which are built today.

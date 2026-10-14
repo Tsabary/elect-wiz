@@ -116,7 +116,7 @@ The voter ranks the most pressing issues in Israeli society by personal importan
 - **Accessibility:** ranking and answering must be operable without drag-and-drop (e.g., by keyboard or tap alternatives), with readable text and sufficient contrast.
 - **Cost protection:** the owner pays for AI usage by default. The product must be protected against abuse (e.g., scripted or repeated submissions) running up AI costs, without adding friction for normal users.
 - **Perceived latency:** generating a result may take some seconds. The user sees a clear loading state, and the wait should feel reasonable.
-- **Operator anonymity:** the operator is not named anywhere on the site.
+- **Operator credit (changed 2026-10-14):** the operator was to stay anonymous; by owner decision they are now credited by name in the footer's credits dialog, deliberately. Page metadata and social preview images still name no author.
 - **Trust and privacy:** nothing in the product contradicts the privacy note. Answers are not logged in any form linkable to an individual.
 
 ## Scope & impact on existing product

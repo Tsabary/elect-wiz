@@ -1,8 +1,9 @@
 /**
  * Site-wide URL and metadata helpers.
  *
- * Operator anonymity (plan Security §3): nothing here may name the operator.
- * Metadata carries no author, publisher or creator fields.
+ * The operator is credited by name in the footer's credits dialog (owner decision,
+ * 2026-10-14), deliberately and only there: metadata carries no author, publisher
+ * or creator fields.
  */
 import type { Metadata } from "next";
 import { locales, type Locale } from "@/i18n/routing";

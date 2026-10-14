@@ -64,7 +64,7 @@ All components are new.
    - **Share:** a URL encoding only the top match party IDs and language, never answers. It leads to a landing page with an invitation to take the survey and a generated social preview image. Native share sheet on mobile, copy-link on desktop.
    - **Time-based modes:** poll blackout (poll numbers and threshold labels hidden everywhere from a configured instant) and election over (survey disabled, "election is over" banner, research kept as an archive).
    - **Mock matching adapter:** sits **behind the real matching route** (a Next.js route handler), not in the browser, so the UI exercises the real network, timeout and error path from day one. It implements the matching contract (see APIs) with canned, realistic results covering every result-view case: joint list, below-threshold, not-polled note, limited info, weak match, error types. It's selected by configuration, so Phase 2 swaps it out without touching the UI.
-   - **Operator anonymity:** no operator name anywhere on the site, in page metadata or in the social preview images. The domain uses WHOIS privacy. If the repository is ever public, commits use a non-identifying git identity.
+   - **Operator credit (changed 2026-10-14):** originally no operator name anywhere. By owner decision the operator is now credited by name in the footer's credits dialog, deliberately. Page metadata and social preview images still carry no author, creator or publisher. The domain uses WHOIS privacy. If the repository is ever public, commits use a non-identifying git identity.
 
 ### Phase 2 (candidate design, confirmed at D1)
 
@@ -162,7 +162,7 @@ It's incompatible with the timeline and the audience, and unworkable for the mat
 ## Security, privacy & compliance
 1. **No personal data at rest**, in either phase. The Phase 2 backend must never log request or response bodies, including in error paths.
 2. **AI provider disclosure:** the Privacy & Terms page states that answers are processed by a third-party AI provider and are subject to its data-retention terms. The provider's name is filled in after D1. The intro note stays short and links there.
-3. **Operator anonymity:** no operator details on the site, in metadata, preview images or WHOIS. Non-identifying git identity if the repository is ever public.
+3. **Operator credit (changed 2026-10-14):** the operator is credited by name in the footer's credits dialog, by owner decision; before that, no operator details appeared anywhere. Still none in page metadata, preview images or WHOIS. Non-identifying git identity if the repository is ever public.
 4. **Prompt injection (Phase 2):**
    - Free text is untrusted. It's delimited as data and declared non-instructional.
    - Output is schema-constrained, then re-validated by the server: party IDs exist, cited anchors exist for that party, entry count is 3–4, text length is capped.

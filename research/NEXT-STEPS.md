@@ -130,7 +130,7 @@ Collected from the Stage 2 and 3 reports. The Stage 4 review of the 28 documents
 - **Never start long jobs on your own.** If the owner says they're going offline, don't start anything new. If they ask to pause, stop agents at a safe point, commit the work as a WIP commit, and update this note.
 - **Restate what you need.** The owner may not see earlier messages, so ask again in your current message.
 - **Keep it short.** Summarise, and point only to the parts that matter.
-- **The operator stays anonymous.** No owner name anywhere: not on the site, in metadata, in commits or in content. There is no contact channel by owner decision.
+- **The operator is credited (owner decision, 2026-10-14).** The footer's "Credits" dialog names the owner, with a portrait and links to X, LinkedIn and email. That dialog is the only place: party content, metadata and commits stay free of the owner's name.
 - **The working name** "Party Matcher" / "התאמת מפלגות" stays for now.
 - **The matching backend is decided: fixed rules, no AI at run time** (section 0). The old D1 gate and its answer-normalization requirement are gone, because users pick preset options. Recency still holds: parties are judged on current positions and leadership, and evidence from 2021 onwards outweighs older evidence.
 

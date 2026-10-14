@@ -114,7 +114,8 @@ All content is version-controlled JSON under `content/`. Nothing is stored per u
 ## Security, privacy & compliance
 
 - **Answers stay on the device.** No request ever carries them. The tally call carries only the result's party IDs. Privacy & Terms is rewritten to say exactly this, and the "AI provider" and "abuse protection" sections are removed.
-- **Tally endpoint.** It is public and unauthenticated, so the counts can be inflated by a script. The counts are owner-only and approximate by nature, so the protection is light: strict body validation, a small body-size cap and no request logging. There is no per-IP rate limit, because it would mean keeping something derived from the visitor's address, which the privacy text (only anonymous daily counts are kept) rules out. Nothing about the visitor is stored.
+- **What the device keeps, and what the host sees (2026-10-14, owner decisions; Privacy & Terms says so).** The saved survey (progress, answers, finished result) lives only in local storage: a finished one is discarded 7 days after its result was first shown, and whatever is saved is deleted on the first page load after polls close. A "start over" in one tab is honoured by the others, never written back. Links from the result and the share page to party pages are never prefetched, so the host's logs show a result's parties only if the user opens one. The only cookie is the language choice, written only by the language switch; opening a page in either language sets nothing.
+- **Tally endpoint.** It is public and unauthenticated, so the counts can be inflated by a script. The counts are owner-only and approximate by nature, so the protection is light: strict body validation, a small body-size cap and no request logging. Since 2026-10-14 it also accepts only a body declared as JSON and refuses a call another site's page made (`Sec-Fetch-Site`), so a plain cross-site form or `text/plain` request can't add to the counts, and it writes to the store only in production: previews, local runs and tests check calls without counting them, and a day is always the real (not overridden) date. There is no per-IP rate limit, because it would mean keeping something derived from the visitor's address, which the privacy text (only anonymous daily counts are kept) rules out. Nothing about the visitor is stored.
 - **Everything about scoring is public.** The bundle exposes every party's recorded position and every grid value to anyone who opens the browser tools. That is acceptable and consistent with the product's transparency; it also means the data must be defensible.
 - **Poll blackout (research/legal-findings.md §3.1).**
   - The matching bundle and all result texts must contain no poll figures. The existing `poll-figure` validation rule is extended to the matching texts.
@@ -123,7 +124,7 @@ All content is version-controlled JSON under `content/`. Nothing is stored per u
   - Share images already carry no poll data; unchanged.
 - **External links on listed-only pages** open the party's own site. They are marked as external and unchecked, use `rel="noopener noreferrer"`, and must be `https` URLs taken from an official source.
 - **Election propaganda (legal findings §3.5).** A listed-only page shows registry facts and a link, and reproduces no platform text, which keeps the "informational, neutral" footing.
-- **Operator anonymity:** unchanged. The tally store must not expose the owner's identity publicly.
+- **Operator credit:** since 2026-10-14 the operator is credited by name in the footer's credits dialog, deliberately (owner decision); page metadata and preview images still name no author. The tally store must not expose the owner's identity publicly.
 
 ## Performance & scalability
 
