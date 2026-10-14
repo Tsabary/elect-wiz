@@ -142,6 +142,17 @@ test.describe("sharing with answers", () => {
       expect(requests).toEqual([]);
     });
 
+    test(`switching language keeps the shared answers (${locale})`, async ({ page }) => {
+      const set = placeholderAnswerSet("joint-list-top");
+      const ids = set.entries.slice(0, 4);
+      const other = locale === "he" ? "en" : "he";
+      await page.goto(`/${locale}/share/${ids.join(",")}#a=${answersOf(set)}`);
+      await expect(page.getByTestId("shared-answer")).toHaveCount(set.ranked.length);
+      await page.getByTestId("language-switch").click();
+      await expect(page).toHaveURL(new RegExp(`/${other}/share/[^#]+#a=${answersOf(set)}$`));
+      await expect(page.getByTestId("shared-answer")).toHaveCount(set.ranked.length);
+    });
+
     test(`a link whose answers can't be read shows the plain result with a note (${locale})`, async ({
       page,
     }) => {

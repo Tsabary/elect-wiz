@@ -29,7 +29,9 @@ export function LanguageSwitch() {
       disabled={isPending}
       onClick={() => {
         document.cookie = `${LOCALE_CHOICE_COOKIE}=${other}; path=/; max-age=${LOCALE_CHOICE_MAX_AGE}; samesite=lax`;
-        startTransition(() => router.replace(pathname, { locale: other }));
+        // Keep the fragment: a shared link's answers (`#a=…`) live there.
+        const hash = window.location.hash;
+        startTransition(() => router.replace(`${pathname}${hash}`, { locale: other }));
       }}
     >
       {t(other)}
