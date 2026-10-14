@@ -7,6 +7,7 @@
     "validate:content": "tsx scripts/validate-content.ts",
     "check:self-match": "tsx scripts/check-self-match.ts",
     "check:profiles": "tsx scripts/check-profiles.ts",
+    "tally:report": "tsx scripts/tally-report.ts",
     "build": "pnpm validate:content && next build",
     "start": "next start",
     "lint": "eslint",

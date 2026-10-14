@@ -103,13 +103,13 @@ describe("counters", () => {
     expect(countersFor({ kind: "started" })).toEqual(["started"]);
   });
 
-  it("count a result once, its first party as top match and the rest as runners-up", () => {
+  it("count a result once, and each party in its place", () => {
     expect(countersFor({ kind: "result", parties: ["gamma", "alpha", "beta", "delta"] })).toEqual([
       "results",
-      "top:gamma",
-      "runner-up:alpha",
-      "runner-up:beta",
-      "runner-up:delta",
+      "1st:gamma",
+      "2nd:alpha",
+      "3rd:beta",
+      "4th:delta",
     ]);
     expect(countersFor({ kind: "result", parties: ["gamma", "alpha", "beta"] })).toHaveLength(4);
   });
@@ -124,13 +124,15 @@ describe("counters", () => {
     expect(store.counts("tally:2026-10-14")).toEqual({
       started: 2,
       results: 3,
-      "top:alpha": 2,
-      "top:beta": 1,
-      "runner-up:alpha": 1,
-      "runner-up:beta": 2,
-      "runner-up:gamma": 2,
-      "runner-up:delta": 1,
-      "runner-up:epsilon": 1,
+      "1st:alpha": 2,
+      "1st:beta": 1,
+      "2nd:beta": 1,
+      "2nd:gamma": 1,
+      "2nd:alpha": 1,
+      "3rd:gamma": 1,
+      "3rd:beta": 1,
+      "3rd:epsilon": 1,
+      "4th:delta": 1,
     });
   });
 });
@@ -169,9 +171,9 @@ describe("Upstash store", () => {
     expect(new Headers(init.headers).get("authorization")).toBe("Bearer secret");
     expect(JSON.parse(String(init.body))).toEqual([
       ["HINCRBY", "tally:2026-10-14", "results", 1],
-      ["HINCRBY", "tally:2026-10-14", "top:alpha", 1],
-      ["HINCRBY", "tally:2026-10-14", "runner-up:beta", 1],
-      ["HINCRBY", "tally:2026-10-14", "runner-up:gamma", 1],
+      ["HINCRBY", "tally:2026-10-14", "1st:alpha", 1],
+      ["HINCRBY", "tally:2026-10-14", "2nd:beta", 1],
+      ["HINCRBY", "tally:2026-10-14", "3rd:gamma", 1],
     ]);
   });
 
@@ -206,10 +208,10 @@ describe("POST /api/tally", () => {
     expect(store.counts("tally:2026-10-14")).toEqual({
       started: 1,
       results: 1,
-      "top:beta": 1,
-      "runner-up:alpha": 1,
-      "runner-up:gamma": 1,
-      "runner-up:delta": 1,
+      "1st:beta": 1,
+      "2nd:alpha": 1,
+      "3rd:gamma": 1,
+      "4th:delta": 1,
     });
   });
 

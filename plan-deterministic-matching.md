@@ -78,7 +78,7 @@ All content is version-controlled JSON under `content/`. Nothing is stored per u
 6. **Voter profiles** (`content/matching/profiles.json`): the invented voters for PRD requirement 40, each with ranking, answers and the expected outcome, written before scores are seen.
 7. **`content/versions.json`**: new `matchingVersion`. It names the matching bundle for caching and is shown nowhere. `researchVersion` is finally set to a real value when the real corpus goes live.
 8. **Browser storage:** schema version 2 of the saved survey (see Survey above). No migration; old saves are dropped.
-9. **Tally counters** (external key-value store): per day, the number of surveys started, the number of results shown, and per party a top-match count and a runner-up count. "Surveys started" is the visitor figure the owner asked for (owner decision 2026-10-13); it counts starts, not unique people, because telling people apart would mean identifying them. No timestamps finer than the day, no identifiers, no answers.
+9. **Tally counters** (external key-value store): per day, the number of surveys started, the number of results shown, and per party how often it came 1st, 2nd, 3rd and 4th (changed from a single runner-up count on 2026-10-14, before any counts were recorded). "Surveys started" is the visitor figure the owner asked for (owner decision 2026-10-13); it counts starts, not unique people, because telling people apart would mean identifying them. No timestamps finer than the day, no identifiers, no answers.
 
 ## APIs & interfaces
 

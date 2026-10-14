@@ -1,7 +1,7 @@
 /**
  * The anonymous counts (plan-deterministic-matching.md, "APIs & interfaces" §8
  * and Data model §9): per day, how many surveys were started, how many results
- * were shown, and per party how often it was the top match and a runner-up.
+ * were shown, and per party how often it came 1st, 2nd, 3rd and 4th.
  *
  * Nothing else is kept: no answers, no identifiers, nothing derived from the
  * visitor's address, and no time finer than the day. The counts are for the
@@ -98,17 +98,16 @@ export function dayKey(day: string): string {
 
 export const COUNTER_STARTED = "started";
 export const COUNTER_RESULTS = "results";
-export const topCounter = (partyId: string) => `top:${partyId}`;
-export const runnerUpCounter = (partyId: string) => `runner-up:${partyId}`;
+/** The places a result counts, in order: the closest party and the next three. */
+export const PLACES = ["1st", "2nd", "3rd", "4th"] as const;
+export type Place = (typeof PLACES)[number];
+/** The counter for a party coming in `place`, e.g. `1st:likud-party`. */
+export const placeCounter = (place: Place, partyId: string) => `${place}:${partyId}`;
 
-/**
- * The day's counters a call adds one to. A result counts once, its first party
- * as the top match and the others (positions 2–4) as runners-up.
- */
+/** The day's counters a call adds one to. A result counts once, and each of its parties in its place. */
 export function countersFor(call: TallyCall): string[] {
   if (call.kind === "started") return [COUNTER_STARTED];
-  const [top, ...runnersUp] = call.parties;
-  return [COUNTER_RESULTS, topCounter(top), ...runnersUp.map(runnerUpCounter)];
+  return [COUNTER_RESULTS, ...call.parties.map((id, i) => placeCounter(PLACES[i], id))];
 }
 
 // ------------------------------------------------------------------ store
