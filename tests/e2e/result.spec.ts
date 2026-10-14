@@ -15,11 +15,22 @@ import {
   rankWithButtons,
   researchedParties,
   resultEntry,
+  siteCopy,
   type AppLocale,
 } from "./helpers";
 
 /** How many parties the result shows as full cards; the rest sit behind "show all". */
 const FULL = 5;
+
+/** The match percentages shown in `loc`, in page order. */
+const percentsOf = (loc: Locator) =>
+  loc.evaluateAll((els) => els.map((e) => Number(e.getAttribute("data-percent"))));
+
+/** The visible text of a party's match percentage, as the site copy words it. */
+const percentText = (locale: AppLocale, percent: number) =>
+  siteCopy(locale)
+    .Result.matchPercent.replace("{percent}", String(percent))
+    .replace(/<\/?\w+>/g, "");
 
 const issueIdsOf = (loc: Locator) =>
   loc.evaluateAll((els) => els.map((e) => e.getAttribute("data-issue-id")));
@@ -68,6 +79,32 @@ for (const locale of LOCALES) {
             .sort(),
         );
         for (const p of listedParties()) expect(shown).not.toContain(p.id);
+
+        // Every party shows a whole match percentage, one per card or row, and
+        // it never rises down the list: the order on screen is the score order.
+        const percents = await percentsOf(page.getByTestId("match-percent"));
+        expect(percents).toHaveLength(set.entries.length);
+        for (const [i, percent] of percents.entries()) {
+          expect(Number.isInteger(percent) && percent >= 0 && percent <= 100, `${percent}`).toBe(
+            true,
+          );
+          if (i > 0) expect(percent, `#${i + 1}`).toBeLessThanOrEqual(percents[i - 1]);
+        }
+        for (const [i, partyId] of set.entries.entries()) {
+          await expect(resultEntry(page, partyId).getByTestId("match-percent")).toHaveAttribute(
+            "data-percent",
+            String(percents[i]),
+          );
+        }
+        // On the cards it reads as "82% match"; a row shows the number, with the
+        // word there for a screen reader.
+        for (const loc of [cards.first(), cards.nth(1), rows.first()]) {
+          const percent = loc.getByTestId("match-percent");
+          await expect(percent).toBeVisible();
+          await expect(percent).toHaveText(
+            percentText(locale, Number(await percent.getAttribute("data-percent"))),
+          );
+        }
 
         // Every full card and every "show all" row carries its list's ballot slip.
         for (const [i, partyId] of set.entries.entries()) {

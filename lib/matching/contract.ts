@@ -74,6 +74,11 @@ export interface MatchPoint {
 /** What the scoring produces for one party. Contains no registry facts. */
 export interface MatchEntryCore {
   partyId: string;
+  /**
+   * The party's score as a whole percent, 0–100 (`matchPercent` in `score.ts`).
+   * Never increases down the entries; parties tied in score show the same value.
+   */
+  percent: number;
   /** One item per ranked issue, in rank order. */
   breakdown: IssueBreakdown[];
   /** 2–3 points from the matching content. */

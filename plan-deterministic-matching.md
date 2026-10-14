@@ -87,7 +87,7 @@ All content is version-controlled JSON under `content/`. Nothing is stored per u
    - kept: the ordered entries, now all researched parties in score order (owner decision 2026-10-13: the result shows the top five in full and the rest behind a "show all" control), each with party ID, per-issue breakdown (`issueId`, `rank`, `weight`, `agreement`, `explanation`, `anchor`) and registry metadata; `weakMatch`; `meta`;
    - added per entry: the "also worth knowing" points;
    - removed: `anythingElseNote`, `noUsableAnswers`, and `meta.blackout` as a server-decided flag (the client already tracks the blackout through `PollContent`).
-   - The numeric score stays internal and isn't shown, as today.
+   - ~~The numeric score stays internal and isn't shown, as today.~~ Reversed (owner decision 2026-10-14): each entry carries `percent`, the party score as a whole percent, from `matchPercent()` in `lib/matching/score.ts`. It rounds the score from the same tolerance steps the order compares, so tied parties show the same percent and the shown percent never rises down the list. No rescaling and no normalising to the top match, which would hide a weak match. The result cards and the "show all" rows show it with a neutral ink bar on a 0–100 track.
 3. **Scoring rule.**
    - Issue score: for the user's option, take the best of the party's held options, each as (level value × closeness between that option and the user's option). An unclear row scores the fixed unclear value.
    - Weights: linear by rank (the top-ranked issue of n gets n, the last gets 1). The breakdown's `weight` field stays (n − rank + 1) / n, which is what the importance bar in `result-entry.tsx` draws today (top issue = full bar); dividing by the sum of weights happens only inside the score.
@@ -225,7 +225,7 @@ Then:
 - Researching, fact-checking or matching the 24 listed parties.
 - Any AI call at run time, abuse protection for matching, spending caps.
 - An admin screen for tallies.
-- Showing a numeric match percentage (the result view doesn't show one today, and the PRD doesn't add it).
+- ~~Showing a numeric match percentage.~~ Now in scope (owner decision 2026-10-14), see "APIs & interfaces" §2.
 - Special handling of same-list parties in results, unless the owner asks after the profile test.
 - Changing the issues, their options or `surveyContentVersion`.
 - Deepening or re-opening the frozen research documents.

@@ -121,7 +121,11 @@ test.describe("poll blackout (clock override)", () => {
       await expect(page.getByTestId("result-row").first()).toBeVisible();
       for (const id of POLL_NOTES) await expect(page.getByTestId(id)).toHaveCount(0);
       // No poll figure anywhere in the result. Issue option text is approved survey
-      // content and may contain percentages, so strip it first.
+      // content and may contain percentages, and each party's match percentage is
+      // not poll information, so strip both first.
+      const percents = page.getByTestId("match-percent");
+      await expect(percents).not.toHaveCount(0);
+      await percents.evaluateAll((els) => els.forEach((e) => e.remove()));
       let resultText = await page.getByTestId("result").innerText();
       for (const issue of issues()) {
         for (const o of issue.options) resultText = resultText.split(o[locale]).join("");

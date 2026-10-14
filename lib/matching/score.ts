@@ -62,7 +62,7 @@ export interface MatchResult {
   weakMatch: boolean;
 }
 
-/** One party's place in the full order. The score is internal and never shown. */
+/** One party's place in the full order. The result shows the score as `matchPercent`. */
 export interface RankedParty {
   partyId: string;
   /** Weighted average of the issue scores, 0–1. */
@@ -183,6 +183,35 @@ export function partyScore(issueScores: readonly number[]): number {
   return sum / weights;
 }
 
+/**
+ * A score in whole steps of the tolerance: the unit the result order compares,
+ * so scores equal on paper but apart in their last bits are one step.
+ */
+export function scoreStep(score: number): number {
+  return Math.round(score / EPSILON);
+}
+
+/** Steps of the tolerance in one percentage point (0.01 / EPSILON), kept whole to avoid rounding noise. */
+const STEPS_PER_PERCENT = 1e7;
+
+/**
+ * The match percentage shown for a party (owner decision 2026-10-14): its score,
+ * which is already a 0–1 weighted average of the issue scores, as a whole percent.
+ *
+ * Deliberately the plain score, not rescaled and not relative to the top match.
+ * Relative-to-top would show 100% for a weak top match and hide what the weak-
+ * match note says; stretching the range would make small gaps look large. So
+ * 100% means full agreement on every ranked issue, and an all-unclear party
+ * shows the unclear value (25% with the current constants), as the ranking counts it.
+ *
+ * Rounded from the same tolerance steps the order compares, so parties tied in
+ * the order always show the same percent, and since rounding never reverses an
+ * order, a lower-ranked party never shows a higher percent.
+ */
+export function matchPercent(score: number): number {
+  return Math.round(scoreStep(score) / STEPS_PER_PERCENT);
+}
+
 /** True when the top score is below the configured weak-match level. */
 export function isWeakMatch(topScore: number, config: MatchingConfig): boolean {
   return topScore < config.weakMatchBelow - EPSILON;
@@ -285,7 +314,7 @@ export function rankParties(
       score,
       issueScores,
       // Scores are compared in whole steps of the tolerance, so the order is a strict one.
-      step: Math.round(score / EPSILON),
+      step: scoreStep(score),
       tie: tieBreakValue(input, partyId),
     };
   });
@@ -312,7 +341,7 @@ export function scoreMatch(
   const issues = resolveIssues(data, input);
   const n = input.ranked.length;
 
-  const entries = ranked.map(({ partyId }): MatchEntryCore => {
+  const entries = ranked.map(({ partyId, score }): MatchEntryCore => {
     const texts = data.texts?.find((t) => t.partyId === partyId);
     const breakdown = issues.map((issue, i): IssueBreakdown => {
       const issueId = input.ranked[i];
@@ -329,6 +358,7 @@ export function scoreMatch(
     });
     return {
       partyId,
+      percent: matchPercent(score),
       breakdown,
       points: (texts?.points ?? []).map(({ text, anchor }) => ({ text, anchor })),
     };
