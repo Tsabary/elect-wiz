@@ -1,5 +1,6 @@
 import { expect, test, type Page } from "@playwright/test";
 import {
+  AFTER_CLOSE,
   answerIssues,
   completeSurvey,
   isTallyRequest,
@@ -7,6 +8,8 @@ import {
   LOCALES,
   openSurvey,
   rankWithButtons,
+  recheckClock,
+  setClock,
   versions,
 } from "./helpers";
 
@@ -61,6 +64,112 @@ test("a refresh after the result shows the same result again, until 'start over'
   await page.reload();
   await expect(page.getByTestId("survey")).toHaveAttribute("data-step", "ranking");
   await expect(page.getByTestId("ranked-item")).toHaveCount(0);
+});
+
+test.describe("how long a saved survey is kept", () => {
+  const saved = (page: Page) =>
+    page.evaluate(() => {
+      const raw = localStorage.getItem("elect.survey");
+      return raw ? JSON.parse(raw) : null;
+    });
+
+  test("a result is saved with the time it was first shown, and dropped once 7 days old", async ({
+    page,
+  }) => {
+    await completeSurvey(page, "en");
+    await expect(page.getByTestId("result")).toBeVisible();
+    const finished = await saved(page);
+    expect(finished.finished).toBe(true);
+    expect(Math.abs(finished.finishedAt - Date.now())).toBeLessThan(60_000);
+
+    // Six days on, coming back still shows it.
+    const DAY = 24 * 60 * 60 * 1000;
+    await page.evaluate((v) => localStorage.setItem("elect.survey", JSON.stringify(v)), {
+      ...finished,
+      finishedAt: Date.now() - 6 * DAY,
+    });
+    await page.goto("/en");
+    await expect(page.getByTestId("start-survey")).toHaveAttribute("data-status", "finished");
+
+    // Seven days on, it is gone: the intro offers a new survey and nothing is left saved.
+    await page.evaluate((v) => localStorage.setItem("elect.survey", JSON.stringify(v)), {
+      ...finished,
+      finishedAt: Date.now() - 7 * DAY - 1000,
+    });
+    await page.reload();
+    await expect(page.getByTestId("start-survey")).toHaveAttribute("data-status", "new");
+    await expect.poll(() => saved(page)).toBeNull();
+
+    // Any page deletes it, not only the intro and the survey.
+    await page.evaluate((v) => localStorage.setItem("elect.survey", JSON.stringify(v)), {
+      ...finished,
+      finishedAt: Date.now() - 7 * DAY - 1000,
+    });
+    await page.goto("/en/privacy");
+    await expect.poll(() => saved(page)).toBeNull();
+  });
+
+  test("once polls close, the saved survey is deleted on the next page load", async ({ page }) => {
+    await completeSurvey(page, "he");
+    await expect(page.getByTestId("result")).toBeVisible();
+    expect(await saved(page)).not.toBeNull();
+    // A page that says nothing about the survey is enough.
+    await page.goto(`/he/privacy?clock=${encodeURIComponent(AFTER_CLOSE)}`);
+    await expect.poll(() => saved(page)).toBeNull();
+    await page.goto("/he");
+    await expect(page.getByTestId("election-over")).toBeVisible();
+    expect(await saved(page)).toBeNull();
+  });
+
+  test("a tab left open across the close deletes it when its own check flips", async ({ page }) => {
+    await openSurvey(page, "en");
+    await rankWithButtons(page, 2);
+    expect(await saved(page)).not.toBeNull();
+    await page.goto("/en/how-it-works");
+    await setClock(page, AFTER_CLOSE);
+    await recheckClock(page);
+    await expect.poll(() => saved(page)).toBeNull();
+  });
+});
+
+test.describe("another tab", () => {
+  test("a 'start over' in one tab is not undone by a stale tab", async ({ page, context }) => {
+    await openSurvey(page, "en");
+    await rankWithButtons(page, 2);
+    await page.getByTestId("ranking-continue").click();
+    await page.getByTestId("answer-option").first().locator("input").check();
+    await page.getByTestId("step-next").click();
+    await expect(page.getByTestId("survey")).toHaveAttribute("data-step", "answer-1");
+    const before = JSON.parse((await page.evaluate(() => localStorage.getItem("elect.survey")))!);
+
+    // The other tab starts over from the intro.
+    const other = await context.newPage();
+    await other.goto("/en");
+    await other.getByTestId("home-start-over").click();
+    await other.getByTestId("start-over-confirm").click();
+    await expect(other.getByTestId("survey")).toHaveAttribute("data-step", "ranking");
+
+    // The stale tab is back at an empty ranking step …
+    await expect(page.getByTestId("survey")).toHaveAttribute("data-step", "ranking");
+    await expect(page.getByTestId("ranked-item")).toHaveCount(0);
+    // … and what it saves next is a new survey, never the deleted answers.
+    await page.getByTestId("pool-item").first().getByTestId("add-to-ranking").click();
+    const after = JSON.parse((await page.evaluate(() => localStorage.getItem("elect.survey")))!);
+    expect(after.optionSeed).not.toBe(before.optionSeed);
+    expect(after.ranked).toHaveLength(1);
+    expect(after.answers).toEqual({});
+  });
+
+  test("the intro follows a result shown or deleted in another tab", async ({ page, context }) => {
+    await page.goto("/en");
+    await expect(page.getByTestId("start-survey")).toHaveAttribute("data-status", "new");
+    const other = await context.newPage();
+    await completeSurvey(other, "en");
+    await expect(other.getByTestId("result")).toBeVisible();
+    await expect(page.getByTestId("start-survey")).toHaveAttribute("data-status", "finished");
+    await other.getByTestId("start-over").click();
+    await expect(page.getByTestId("start-survey")).toHaveAttribute("data-status", "new");
+  });
 });
 
 test("a saved survey from the old format (schema 1) is discarded", async ({ page }) => {

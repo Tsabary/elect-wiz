@@ -19,6 +19,7 @@ test.describe("locale detection and switching", () => {
     const page = await ctx.newPage();
     await page.goto("/");
     await expect(page).toHaveURL(/\/he$/);
+    expect(await ctx.cookies()).toEqual([]);
     await page.getByTestId("language-switch").click();
     await expect(page).toHaveURL(/\/en$/);
     await expect(page.locator("html")).toHaveAttribute("lang", "en");
@@ -27,16 +28,49 @@ test.describe("locale detection and switching", () => {
     const again = await ctx.newPage();
     await again.goto("/");
     await expect(again).toHaveURL(/\/en$/);
-    const cookie = (await ctx.cookies()).find((c) => c.name === "NEXT_LOCALE");
-    expect(cookie?.value).toBe("en");
-    expect(cookie?.expires ?? 0).toBeGreaterThan(Date.now() / 1000 + 60 * 60 * 24 * 300);
+    const cookies = await ctx.cookies();
+    expect(cookies.map((c) => c.name)).toEqual(["locale-choice"]);
+    expect(cookies[0].value).toBe("en");
+    expect(cookies[0].sameSite).toBe("Lax");
+    expect(cookies[0].expires).toBeGreaterThan(Date.now() / 1000 + 60 * 60 * 24 * 300);
 
-    // And switching back to Hebrew persists too.
+    // Opening a Hebrew page directly doesn't undo the choice …
+    await again.goto("/he/privacy");
+    await again.goto("/");
+    await expect(again).toHaveURL(/\/en$/);
+
+    // … but switching back to Hebrew does, and persists too.
     await again.getByTestId("language-switch").click();
     await expect(again).toHaveURL(/\/he$/);
     const third = await ctx.newPage();
     await third.goto("/");
     await expect(third).toHaveURL(/\/he$/);
+    expect((await ctx.cookies()).find((c) => c.name === "locale-choice")?.value).toBe("he");
+    await ctx.close();
+  });
+
+  test("visiting an English page directly remembers nothing", async ({ browser }) => {
+    const ctx = await browser.newContext({ locale: "en-US" });
+    const page = await ctx.newPage();
+    await page.goto("/en/privacy");
+    await expect(page.locator("html")).toHaveAttribute("lang", "en");
+    await page.goto("/en");
+    await page.goto(`/en/parties/${researchedParties()[0].id}`);
+    expect(await ctx.cookies()).toEqual([]);
+    // The next visit to "/" is Hebrew, as for anyone who never used the switch.
+    await page.goto("/");
+    await expect(page).toHaveURL(/\/he$/);
+    expect(await ctx.cookies()).toEqual([]);
+    await ctx.close();
+  });
+
+  test("next-intl's old cookie is ignored and deleted", async ({ browser, baseURL }) => {
+    const ctx = await browser.newContext({ locale: "he-IL" });
+    await ctx.addCookies([{ name: "NEXT_LOCALE", value: "en", url: baseURL! }]);
+    const page = await ctx.newPage();
+    await page.goto("/");
+    await expect(page).toHaveURL(/\/he$/);
+    expect(await ctx.cookies()).toEqual([]);
     await ctx.close();
   });
 });
@@ -140,5 +174,30 @@ test.describe("tally route", () => {
     const res = await request.post("/api/tally", { data: { hello: "world" } });
     expect(res.status()).toBe(400);
     expect(await res.text()).toBe("");
+  });
+});
+
+test.describe("security headers", () => {
+  test("every kind of response forbids framing, sniffing and full-URL referrers", async ({
+    request,
+  }) => {
+    const [party] = researchedParties();
+    for (const path of [
+      "/he",
+      "/en/privacy",
+      `/en/parties/${party.id}`,
+      "/he/survey",
+      "/api/matching/en",
+      "/he/no-such-page",
+    ]) {
+      const res = await request.get(path);
+      const h = res.headers();
+      expect(h["content-security-policy"], path).toBe("frame-ancestors 'none'");
+      expect(h["x-frame-options"], path).toBe("DENY");
+      expect(h["referrer-policy"], path).toBe("strict-origin-when-cross-origin");
+      expect(h["x-content-type-options"], path).toBe("nosniff");
+    }
+    const tally = await request.post("/api/tally", { data: { kind: "started" } });
+    expect(tally.headers()["x-frame-options"]).toBe("DENY");
   });
 });

@@ -8,7 +8,7 @@ import { parseSharedParties } from "@/lib/share/params";
 // Party names only: no answers, no poll figures or threshold notes, no operator identity.
 export const size = OG_SIZE;
 export const contentType = "image/png";
-export const revalidate = 300;
+export const revalidate = 60;
 
 export function generateStaticParams() {
   return [];

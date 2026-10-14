@@ -3,11 +3,13 @@ import {
   addToRanking,
   createSurveyState,
   goTo,
+  selectAnswer,
+  setDraft,
   markNotImportant,
   removeFromRanking,
   type SurveyState,
 } from "./state";
-import type { SurveyStorage } from "./storage";
+import { createSurveyStorage, SURVEY_STORAGE_KEY, type SurveyStorage } from "./storage";
 import { createSurveyStore } from "./store";
 
 const VERSION = "v1";
@@ -24,6 +26,8 @@ function fakeStorage(saved: SurveyState | null = null): SurveyStorage {
     clear: () => {
       current = null;
     },
+    forgetExpired: () => {},
+    subscribe: () => () => {},
   };
 }
 
@@ -138,5 +142,145 @@ describe("survey store: when a survey counts as started", () => {
     });
     expect(() => store.set((s) => addToRanking(s, "a"))).not.toThrow();
     expect(store.get().ranked).toEqual(["a"]);
+  });
+});
+
+/**
+ * Two tabs of one browser: one local storage, and a write in either tab fires
+ * a `storage` event in the other (never in the tab that wrote), as browsers do.
+ */
+function twoTabs() {
+  const data = new Map<string, string>();
+  const windows = [new EventTarget(), new EventTarget()];
+  const areas: Storage[] = [];
+  const notify = (from: number, key: string | null) => {
+    const to = 1 - from;
+    windows[to].dispatchEvent(Object.assign(new Event("storage"), { key, storageArea: areas[to] }));
+  };
+  for (const tab of [0, 1]) {
+    areas.push({
+      get length() {
+        return data.size;
+      },
+      key: (i) => [...data.keys()][i] ?? null,
+      getItem: (k) => data.get(k) ?? null,
+      setItem: (k, v) => {
+        data.set(k, String(v));
+        notify(tab, k);
+      },
+      removeItem: (k) => {
+        data.delete(k);
+        notify(tab, k);
+      },
+      clear: () => {
+        data.clear();
+        notify(tab, null);
+      },
+    });
+  }
+  const storage = (tab: number) => createSurveyStorage(areas[tab], { events: windows[tab] });
+  const saved = () => {
+    const raw = data.get(SURVEY_STORAGE_KEY);
+    return raw ? (JSON.parse(raw) as SurveyState) : null;
+  };
+  return { storage, saved, area: (tab: number) => areas[tab] };
+}
+
+/** A survey with a ranking, an answer and the answer step open. */
+const midSurvey = (s: SurveyState) =>
+  goTo(
+    setDraft(addToRanking(addToRanking(s, "a"), "b"), "a", selectAnswer({ selected: null }, "x")),
+    {
+      kind: "answer",
+      index: 1,
+    },
+  );
+
+describe("survey store: another tab", () => {
+  it("a 'start over' in another tab is not undone by a stale tab", () => {
+    const tabs = twoTabs();
+    const first = createSurveyStore(VERSION, tabs.storage(0));
+    first.set(midSurvey);
+    const stale = createSurveyStore(VERSION, tabs.storage(1));
+    const listener = vi.fn();
+    stale.subscribe(listener);
+    expect(stale.get().ranked).toEqual(["a", "b"]);
+    const before = stale.get();
+
+    first.clear();
+    expect(tabs.saved()).toBeNull();
+    // The stale tab drops the deleted survey for a new one, back at the ranking step …
+    expect(listener).toHaveBeenCalled();
+    expect(stale.get()).toMatchObject({ ranked: [], notImportant: [], answers: {} });
+    expect(stale.get().step).toEqual({ kind: "ranking" });
+    expect(stale.get().optionSeed).not.toBe(before.optionSeed);
+    // … and its next change saves that, never the deleted answers.
+    stale.set((s) => addToRanking(s, "c"));
+    expect(tabs.saved()).toMatchObject({ ranked: ["c"], answers: {} });
+  });
+
+  it("takes up a different survey another tab saved in place of its own", () => {
+    const tabs = twoTabs();
+    const stale = createSurveyStore(VERSION, tabs.storage(1));
+    stale.subscribe(() => {});
+    stale.set(midSurvey);
+    const other = createSurveyStore(VERSION, tabs.storage(0));
+    other.clear();
+    other.set((s) => addToRanking(s, "z"));
+    const theirs = tabs.saved()!;
+    expect(stale.get()).toMatchObject({ ranked: ["z"], optionSeed: theirs.optionSeed });
+    stale.set((s) => addToRanking(s, "y"));
+    expect(tabs.saved()).toMatchObject({ ranked: ["z", "y"], optionSeed: theirs.optionSeed });
+  });
+
+  it("counts a new survey begun after another tab deleted the old one", () => {
+    const tabs = twoTabs();
+    createSurveyStore(VERSION, tabs.storage(0)).set((s) => addToRanking(s, "a"));
+    const onStarted = vi.fn();
+    const stale = createSurveyStore(VERSION, tabs.storage(1), { onStarted });
+    stale.subscribe(() => {});
+    stale.set((s) => addToRanking(s, "b"));
+    expect(onStarted).not.toHaveBeenCalled();
+    tabs.area(0).removeItem(SURVEY_STORAGE_KEY);
+    stale.set((s) => addToRanking(s, "c"));
+    expect(onStarted).toHaveBeenCalledTimes(1);
+  });
+
+  it("keeps its own survey when another tab saves the same one", () => {
+    const tabs = twoTabs();
+    const one = createSurveyStore(VERSION, tabs.storage(0));
+    one.set((s) => addToRanking(s, "a"));
+    const two = createSurveyStore(VERSION, tabs.storage(1));
+    const listener = vi.fn();
+    two.subscribe(listener);
+    const mine = two.get();
+    // Opening the survey in the first tab again saves the same survey (same seeds).
+    createSurveyStore(VERSION, tabs.storage(0)).get();
+    expect(listener).not.toHaveBeenCalled();
+    expect(two.get()).toBe(mine);
+  });
+
+  it("a tab still on an older survey version never deletes a newer tab's survey", () => {
+    const tabs = twoTabs();
+    const old = createSurveyStore("v0", tabs.storage(1));
+    old.subscribe(() => {});
+    old.get();
+    const current = createSurveyStore(VERSION, tabs.storage(0));
+    current.set((s) => addToRanking(s, "a"));
+    current.set((s) => addToRanking(s, "b"));
+    expect(tabs.saved()).toMatchObject({ surveyContentVersion: VERSION, ranked: ["a", "b"] });
+    expect(current.get().ranked).toEqual(["a", "b"]);
+  });
+
+  it("stops watching when nothing listens", () => {
+    const tabs = twoTabs();
+    const one = createSurveyStore(VERSION, tabs.storage(0));
+    one.set((s) => addToRanking(s, "a"));
+    const two = createSurveyStore(VERSION, tabs.storage(1));
+    const unsubscribe = two.subscribe(() => {});
+    two.get();
+    unsubscribe();
+    one.clear();
+    expect(two.get().ranked).toEqual(["a"]);
   });
 });

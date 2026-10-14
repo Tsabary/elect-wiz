@@ -14,7 +14,7 @@ import {
   TALLY_PATH,
   type CounterStore,
 } from "./counter";
-import { handleTallyRequest, type TallyContext } from "./handler";
+import { handleTallyRequest, tallyContext, type TallyContext } from "./handler";
 
 const RESEARCHED = ["alpha", "beta", "gamma", "delta", "epsilon"];
 const NOW = new Date("2026-10-14T09:00:00Z");
@@ -186,7 +186,11 @@ describe("Upstash store", () => {
 
 describe("POST /api/tally", () => {
   const post = (body: string, headers: Record<string, string> = {}) =>
-    new Request(`https://site.test${TALLY_PATH}`, { method: "POST", body, headers });
+    new Request(`https://site.test${TALLY_PATH}`, {
+      method: "POST",
+      body,
+      headers: { "content-type": "application/json", ...headers },
+    });
   const ctx = (over: Partial<TallyContext> = {}): TallyContext => ({
     store: createMemoryCounterStore(),
     researchedPartyIds: RESEARCHED,
@@ -256,6 +260,44 @@ describe("POST /api/tally", () => {
     expect(store.keys()).toEqual([]);
   });
 
+  it("accepts only a body declared as JSON", async () => {
+    const store = createMemoryCounterStore();
+    const plain = new Request(`https://site.test${TALLY_PATH}`, {
+      method: "POST",
+      body: '{"kind":"started"}',
+      headers: { "content-type": "text/plain" },
+    });
+    expect((await handleTallyRequest(plain, ctx({ store }))).status).toBe(415);
+    for (const type of ["application/x-www-form-urlencoded", "multipart/form-data", ""]) {
+      const res = await handleTallyRequest(
+        post('{"kind":"started"}', { "content-type": type }),
+        ctx({ store }),
+      );
+      expect(res.status, type).toBe(415);
+    }
+    expect(store.keys()).toEqual([]);
+    const withCharset = post('{"kind":"started"}', {
+      "content-type": "Application/JSON; charset=utf-8",
+    });
+    expect((await handleTallyRequest(withCharset, ctx({ store }))).status).toBe(204);
+  });
+
+  it("refuses a call that another site's page made", async () => {
+    const store = createMemoryCounterStore();
+    for (const site of ["cross-site", "same-site", "none"]) {
+      const res = await handleTallyRequest(
+        post('{"kind":"started"}', { "sec-fetch-site": site }),
+        ctx({ store }),
+      );
+      expect(res.status, site).toBe(403);
+    }
+    expect(store.keys()).toEqual([]);
+    // The site's own pages, and clients that don't say (no browser), are accepted.
+    const own = post('{"kind":"started"}', { "sec-fetch-site": "same-origin" });
+    expect((await handleTallyRequest(own, ctx({ store }))).status).toBe(204);
+    expect((await handleTallyRequest(post('{"kind":"started"}'), ctx({ store }))).status).toBe(204);
+  });
+
   it("answers 503 with no body when the store fails", async () => {
     const store: CounterStore = {
       increment: async () => {
@@ -265,6 +307,77 @@ describe("POST /api/tally", () => {
     const res = await handleTallyRequest(post('{"kind":"started"}'), ctx({ store }));
     expect(res.status).toBe(503);
     expect(await res.text()).toBe("");
+  });
+});
+
+describe("the route's context", () => {
+  const STORE = { KV_REST_API_URL: "https://x.upstash.io", KV_REST_API_TOKEN: "t" };
+  const request = (headers: Record<string, string> = {}) =>
+    new Request(`https://site.test${TALLY_PATH}`, { method: "POST", headers });
+
+  it("writes to the store only on the production deployment, even with the store's settings present", () => {
+    const make = (env: Record<string, string | undefined>) =>
+      tallyContext(request(), { researchedPartyIds: RESEARCHED, env: { ...STORE, ...env } });
+    expect(make({ VERCEL_ENV: "production" }).store).not.toBeNull();
+    for (const env of [
+      { NODE_ENV: "production" },
+      { APP_ENV: "production", NODE_ENV: "production" },
+      { VERCEL_ENV: "preview" },
+      { VERCEL_ENV: "development" },
+      { APP_ENV: "test", NODE_ENV: "production" },
+      { NODE_ENV: "development" },
+      {},
+    ]) {
+      expect(make(env).store, JSON.stringify(env)).toBeNull();
+    }
+  });
+
+  it("answers a valid call outside production exactly as production does, without writing", async () => {
+    const fetchImpl = vi.fn(async () => new Response("[]", { status: 200 }));
+    const ctx = tallyContext(request(), {
+      researchedPartyIds: RESEARCHED,
+      env: { ...STORE, VERCEL_ENV: "preview" },
+      fetchImpl,
+    });
+    const res = await handleTallyRequest(
+      new Request(`https://site.test${TALLY_PATH}`, {
+        method: "POST",
+        body: '{"kind":"started"}',
+        headers: { "content-type": "application/json" },
+      }),
+      ctx,
+    );
+    expect(res.status).toBe(204);
+    expect(fetchImpl).not.toHaveBeenCalled();
+  });
+
+  it("takes the day from the real clock; the override moves only the after-close check", async () => {
+    const real = new Date("2026-10-14T09:00:00Z");
+    const env = { VERCEL_ENV: "preview" };
+    const later = tallyContext(request({ "x-clock-override": "2026-10-26T12:00:00Z" }), {
+      researchedPartyIds: RESEARCHED,
+      env,
+      realNow: real,
+    });
+    expect(later.now).toEqual(real);
+    expect(later.electionOver).toBe(false);
+    const afterClose = tallyContext(
+      request({ cookie: "clock-override=2026-10-28T12%3A00%3A00Z" }),
+      { researchedPartyIds: RESEARCHED, env, realNow: real },
+    );
+    expect(afterClose.now).toEqual(real);
+    expect(afterClose.electionOver).toBe(true);
+    // In production the override is ignored altogether.
+    const prod = tallyContext(request({ "x-clock-override": "2026-10-28T12:00:00Z" }), {
+      researchedPartyIds: RESEARCHED,
+      env: { ...STORE, VERCEL_ENV: "production" },
+      realNow: real,
+    });
+    expect(prod.electionOver).toBe(false);
+    // The day counted is the real one.
+    const store = createMemoryCounterStore();
+    await recordTally(store, { kind: "started" }, later.now);
+    expect(store.keys()).toEqual(["tally:2026-10-14"]);
   });
 });
 

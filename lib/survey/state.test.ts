@@ -24,7 +24,7 @@ import {
   type SurveyIssue,
   type SurveyState,
 } from "./state";
-import { createSurveyStorage, SURVEY_STORAGE_KEY } from "./storage";
+import { createSurveyStorage, RESULT_RETENTION_DAYS, SURVEY_STORAGE_KEY } from "./storage";
 
 const ISSUES: SurveyIssue[] = Array.from({ length: 10 }, (_, i) => ({
   id: `issue-${String.fromCharCode(97 + i)}`,
@@ -322,6 +322,66 @@ describe("storage", () => {
     expect(createSurveyStorage(mem).load(VERSION)).toBeNull();
     mem.setItem(SURVEY_STORAGE_KEY, JSON.stringify({ hello: 1 }));
     expect(createSurveyStorage(mem).load(VERSION)).toBeNull();
+  });
+
+  it("keeps a finished survey for 7 days after its result was first shown, then discards it", () => {
+    expect(RESULT_RETENTION_DAYS).toBe(7);
+    const DAY = 24 * 60 * 60 * 1000;
+    const finishedAt = Date.parse("2026-10-14T09:00:00Z");
+    let now = finishedAt;
+    const mem = memoryStorage();
+    const store = createSurveyStorage(mem, { now: () => now });
+    const finished = { ...answered(ranked(7)), finished: true, finishedAt };
+    store.save(finished);
+    now = finishedAt + 7 * DAY - 1;
+    expect(store.load(VERSION)).toEqual(finished);
+    now = finishedAt + 7 * DAY;
+    expect(store.load(VERSION)).toBeNull();
+    expect(mem.getItem(SURVEY_STORAGE_KEY)).toBeNull();
+  });
+
+  it("discards a finished survey with no record of when it finished; keeps unfinished ones", () => {
+    const mem = memoryStorage();
+    const later = Date.parse("2027-01-01T00:00:00Z");
+    const store = createSurveyStorage(mem, { now: () => later });
+    store.save({ ...answered(ranked(7)), finished: true });
+    expect(store.load(VERSION)).toBeNull();
+    const unfinished = answered(ranked(7));
+    store.save(unfinished);
+    expect(store.load(VERSION)).toEqual(unfinished);
+  });
+
+  it("with `keep`, only looks: another version or an expired result is not returned but stays", () => {
+    const mem = memoryStorage();
+    const other = { ...ranked(7), surveyContentVersion: "v-next" };
+    mem.setItem(SURVEY_STORAGE_KEY, JSON.stringify(other));
+    expect(createSurveyStorage(mem).load(VERSION, { keep: true })).toBeNull();
+    expect(JSON.parse(mem.getItem(SURVEY_STORAGE_KEY)!)).toEqual(other);
+  });
+
+  it("forgetExpired deletes an expired result whatever its version, and nothing else", () => {
+    const DAY = 24 * 60 * 60 * 1000;
+    const finishedAt = Date.parse("2026-10-14T09:00:00Z");
+    let now = finishedAt + 6 * DAY;
+    const mem = memoryStorage();
+    const store = createSurveyStorage(mem, { now: () => now });
+    const finished = {
+      ...answered(ranked(7)),
+      surveyContentVersion: "v-other",
+      finished: true,
+      finishedAt,
+    };
+    store.save(finished);
+    store.forgetExpired();
+    expect(mem.getItem(SURVEY_STORAGE_KEY)).not.toBeNull();
+    now = finishedAt + 7 * DAY;
+    store.forgetExpired();
+    expect(mem.getItem(SURVEY_STORAGE_KEY)).toBeNull();
+    // A survey under way is never expired.
+    store.save(answered(ranked(7)));
+    now += 365 * DAY;
+    store.forgetExpired();
+    expect(mem.getItem(SURVEY_STORAGE_KEY)).not.toBeNull();
   });
 
   it("works without resume when storage is unavailable or throws", () => {

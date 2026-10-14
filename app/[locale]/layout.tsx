@@ -7,6 +7,7 @@ import { getMessages, getTranslations, setRequestLocale } from "next-intl/server
 import { PreviewBanner } from "@/components/layout/preview-banner";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
+import { ForgetSurveyAfterClose } from "@/components/time/forget-survey";
 import { TimeModesProvider } from "@/components/time/time-modes";
 import { DirectionProvider } from "@/components/ui/direction";
 import { localeDirection, routing } from "@/i18n/routing";
@@ -92,7 +93,7 @@ export async function generateMetadata({ params }: LayoutProps<"/[locale]">): Pr
       siteName: t("siteName"),
       siteImage: false,
     }),
-    // Operator anonymity: no author/creator/publisher metadata (plan Security §3).
+    // No author/creator/publisher metadata: the operator is credited only in the footer's credits dialog.
     robots: { index: true, follow: true },
     formatDetection: { telephone: false, email: false, address: false },
   };
@@ -118,6 +119,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
         <NextIntlClientProvider messages={clientMessages}>
           <DirectionProvider direction={dir}>
             <TimeModesProvider config={clientTimeConfig()}>
+              <ForgetSurveyAfterClose />
               <PreviewBanner />
               <SiteHeader />
               <main

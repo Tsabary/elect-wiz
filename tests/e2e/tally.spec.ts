@@ -180,7 +180,10 @@ test.describe("POST /api/tally", () => {
       ["parties as a string", { kind: "result", parties: `${a},${b},${c}` }],
     ];
     for (const [label, data] of bad) {
-      const res = await request.post("/api/tally", { data });
+      const res = await request.post("/api/tally", {
+        headers: { "content-type": "application/json" },
+        data: JSON.stringify(data),
+      });
       expect(res.status(), label).toBe(400);
       expect(await res.text(), label).toBe("");
     }
@@ -189,8 +192,25 @@ test.describe("POST /api/tally", () => {
       data: "{not json",
     });
     expect(notJson.status()).toBe(400);
+    // Not declared as JSON (an empty body, a form, or text another site could send freely).
     const empty = await request.post("/api/tally");
-    expect(empty.status()).toBe(400);
+    expect(empty.status()).toBe(415);
+    const plain = await request.post("/api/tally", {
+      headers: { "content-type": "text/plain" },
+      data: JSON.stringify({ kind: "started" }),
+    });
+    expect(plain.status()).toBe(415);
+  });
+
+  test("refuses a call made from another site's page", async ({ request }) => {
+    for (const site of ["cross-site", "same-site"]) {
+      const res = await request.post("/api/tally", {
+        headers: { "sec-fetch-site": site },
+        data: { kind: "started" },
+      });
+      expect(res.status(), site).toBe(403);
+      expect(await res.text()).toBe("");
+    }
   });
 
   test("rejects an oversized body", async ({ request }) => {

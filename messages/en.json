@@ -166,7 +166,7 @@
       "device": {
         "title": "Progress and result saved on your device",
         "paragraphs": [
-          "Your progress and answers are saved only in your own browser, so you can close the page and come back to carry on with the survey or see your result again. They are never sent anywhere. Starting over deletes them, and so does clearing this site’s data in your browser."
+          "Your progress and answers are saved only in your own browser, so you can close the page and come back to carry on with the survey or see your result again. They are never sent anywhere. A finished survey is kept for 7 days from when its result was first shown, and is then deleted the next time the site is opened. Once polls close, anything still saved is deleted the next time the site is opened. Starting over deletes them straight away, and so does clearing this site’s data in your browser."
         ]
       },
       "counts": {
@@ -185,13 +185,13 @@
       "cookies": {
         "title": "Cookies",
         "paragraphs": [
-          "The site uses one cookie, to remember your choice of language. It doesn’t use advertising or tracking cookies, and no outside service sets cookies on it."
+          "The site uses one cookie, and only if you switch the language yourself: it remembers that choice for a year, so the site opens in that language. Just opening a page in either language sets nothing. The site doesn’t use advertising or tracking cookies, and no outside service sets cookies on it."
         ]
       },
       "hosting": {
         "title": "Hosting",
         "paragraphs": [
-          "Like any website, our hosting provider may keep standard technical logs, such as IP addresses, for security and operation. Your answers are never sent, so they are never in these logs."
+          "Like any website, our hosting provider may keep standard technical logs, such as IP addresses, for security and operation. Your answers are never sent, so they are never in these logs. Nor is your result: the site doesn’t load the pages of the parties in it until you open one."
         ]
       },
       "terms": {
@@ -260,7 +260,8 @@
       "title": "Start over?",
       "body": "Your ranking and answers so far will be deleted.",
       "confirm": "Start over",
-      "cancel": "Keep going"
+      "cancel": "Keep going",
+      "keepResult": "Keep my result"
     }
   },
   "Ranking": {

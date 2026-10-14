@@ -124,5 +124,9 @@ export function clientTimeConfig(env: Env = process.env): ClientTimeConfig {
   };
 }
 
-/** Revalidation window for time-sensitive pages, in seconds (plan Performance §1). */
-export const TIME_SENSITIVE_REVALIDATE_SECONDS = 300;
+/**
+ * Revalidation window for time-sensitive pages, in seconds (plan Performance §1).
+ * Route files need a literal, so each repeats it; next.config.ts `expireTime`
+ * (150 s) caps how old a served copy can be, and must stay above this.
+ */
+export const TIME_SENSITIVE_REVALIDATE_SECONDS = 60;

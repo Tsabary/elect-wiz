@@ -91,9 +91,21 @@ for (const locale of LOCALES) {
       await start.click();
       await expect(page.getByTestId("ranked-item")).toHaveCount(1);
 
-      // … "start over" clears it and opens a new survey.
+      // … "start over" asks first: cancelling keeps it …
       await page.goto(`/${locale}`);
       await startOver.click();
+      const dialog = page.getByRole("alertdialog");
+      await expect(dialog).toBeVisible();
+      await expect(dialog).toHaveAccessibleName(/\S/);
+      await expect(dialog).toHaveAccessibleDescription(/\S/);
+      await page.getByTestId("start-over-cancel").click();
+      await expect(dialog).toHaveCount(0);
+      await expect(page).toHaveURL(new RegExp(`/${locale}$`));
+      expect((await savedSurvey(page))?.ranked).toHaveLength(1);
+
+      // … confirming clears it and opens a new survey.
+      await startOver.click();
+      await page.getByTestId("start-over-confirm").click();
       await expect(page).toHaveURL(new RegExp(`/${locale}/survey$`));
       await expectEmptyRanking(page);
       expect((await savedSurvey(page))?.ranked ?? []).toEqual([]);
@@ -121,9 +133,16 @@ for (const locale of LOCALES) {
       await expect(page.getByTestId("result")).toBeVisible();
       await expect(page.getByTestId("survey")).toHaveCount(0);
 
-      // "Start over" from the intro clears it.
+      // "Start over" from the intro asks first, about the result; Escape keeps it.
       await page.goto(`/${locale}`);
       await page.getByTestId("home-start-over").click();
+      await expect(page.getByRole("alertdialog")).toBeVisible();
+      await page.keyboard.press("Escape");
+      await expect(page.getByRole("alertdialog")).toHaveCount(0);
+      expect((await savedSurvey(page))?.finished).toBe(true);
+      // Confirmed, it clears it.
+      await page.getByTestId("home-start-over").click();
+      await page.getByTestId("start-over-confirm").click();
       await expectEmptyRanking(page);
       await page.goto(`/${locale}`);
       await expect(start).toHaveAttribute("data-status", "new");
@@ -294,6 +313,7 @@ test.describe("anonymous counts across a start-over", () => {
     await expect.poll(() => tally.calls.map((c) => c.body.kind)).toEqual(["started"]);
     await page.goto("/en");
     await page.getByTestId("home-start-over").click();
+    await page.getByTestId("start-over-confirm").click();
     await expect(page.getByTestId("survey")).toHaveAttribute("data-step", "ranking");
     await expect(page.getByTestId("ranked-item")).toHaveCount(0);
     await page.waitForTimeout(500);

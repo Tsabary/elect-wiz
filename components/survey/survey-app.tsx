@@ -5,11 +5,13 @@
  * fully in the browser: progress lives only in on-device storage (PRD FR25),
  * and the result is computed here from the matching bundle, so the answers
  * never leave the device. A finished survey stays saved, so coming back to it
- * shows the result again, worked out afresh from the saved answers. The only calls out are the two anonymous counts
- * (`lib/tally/client.ts`).
+ * shows the result again, worked out afresh from the saved answers, for up to
+ * 7 days and never after polls close (lib/survey/storage.ts). The only calls
+ * out are the two anonymous counts (`lib/tally/client.ts`).
  *
  * "Start over" (on the survey screens and under the result) puts a new survey
- * in place of the current one: empty, with new shuffle seeds, counted anew.
+ * in place of the current one: empty, with new shuffle seeds, counted anew. A
+ * "start over" in another tab does the same here (lib/survey/store.ts).
  */
 import { useLocale, useTranslations } from "next-intl";
 import { useCallback, useEffect, useRef, useState, useSyncExternalStore } from "react";
@@ -42,12 +44,17 @@ import { RankingStep } from "./ranking/ranking-step";
 import { SurveyStartOver } from "./start-over";
 import type { ClientIssue } from "./types";
 
+/**
+ * What the screen shows. Every phase past the survey screens names the survey it
+ * belongs to (its option seed): when another tab replaces or deletes that survey,
+ * the phase no longer applies and this tab is back on the survey screens.
+ */
 type Phase =
   | { kind: "survey" }
   /** Submitted before the matching bundle arrived. */
-  | { kind: "loading" }
-  | { kind: "result"; result: MatchResponse }
-  | { kind: "error"; code: MatchErrorCode; input: MatchInput };
+  | { kind: "loading"; seed: number }
+  | { kind: "result"; seed: number; result: MatchResponse }
+  | { kind: "error"; seed: number; code: MatchErrorCode; input: MatchInput };
 
 const serverSnapshot = () => null;
 
@@ -84,7 +91,11 @@ export function SurveyApp({
     store?.get ?? serverSnapshot,
     serverSnapshot,
   );
-  const [phase, setPhase] = useState<Phase>({ kind: "survey" });
+  const [shownPhase, setPhase] = useState<Phase>({ kind: "survey" });
+  const phase: Phase =
+    shownPhase.kind !== "survey" && state?.optionSeed !== shownPhase.seed
+      ? { kind: "survey" }
+      : shownPhase;
   /** Counts "start over"s, so a new survey gets fresh screens and focus even on the same step. */
   const [restarts, setRestarts] = useState(0);
   const headingRef = useRef<HTMLHeadingElement>(null);
@@ -135,13 +146,15 @@ export function SurveyApp({
     if (answering) void loadBundle();
   }, [answering, loadBundle]);
 
-  function show(loaded: BundleLoadResult, input: MatchInput) {
+  function show(loaded: BundleLoadResult, input: MatchInput, seed: number) {
+    // Another tab replaced or deleted this survey while the result was on its way.
+    if (!store || store.get().optionSeed !== seed) return;
     const res = loaded.ok ? matchLocally(loaded.bundle, input, parties) : loaded;
     if (res.ok) {
-      // Kept until "start over", so coming back shows the result again.
-      const first = !store?.get().finished;
-      store?.set((s) => (s.finished ? s : { ...s, finished: true }));
-      setPhase({ kind: "result", result: res.result });
+      // Kept until "start over" or for RESULT_RETENTION_DAYS, so coming back shows the result again.
+      const first = !store.get().finished;
+      store.set((s) => (s.finished ? s : { ...s, finished: true, finishedAt: Date.now() }));
+      setPhase({ kind: "result", seed, result: res.result });
       // Anonymous count, fire-and-forget, only the first time this result is shown:
       // the top parties' IDs only, never the answers.
       if (first) tallyResult(res.result.entries.map((e) => e.partyId));
@@ -149,15 +162,17 @@ export function SurveyApp({
       // Whatever was loaded couldn't be used: "try again" fetches it afresh.
       bundleRequest.current = null;
       bundleResult.current = null;
-      setPhase({ kind: "error", code: res.code, input });
+      setPhase({ kind: "error", seed, code: res.code, input });
     }
   }
 
   async function match(input: MatchInput) {
+    if (!store) return;
+    const seed = store.get().optionSeed;
     // The loading state shows only if the bundle hasn't arrived yet.
-    if (bundleResult.current) return show(bundleResult.current, input);
-    setPhase({ kind: "loading" });
-    show(await loadBundle(), input);
+    if (bundleResult.current) return show(bundleResult.current, input, seed);
+    setPhase({ kind: "loading", seed });
+    show(await loadBundle(), input, seed);
   }
 
   // Coming back to a finished survey: work the result out again from the saved answers.
@@ -170,9 +185,10 @@ export function SurveyApp({
       store.set((s) => ({ ...s, finished: false }));
       return;
     }
+    const seed = store.get().optionSeed;
     let cancelled = false;
     void loadBundle().then((loaded) => {
-      if (!cancelled) show(loaded, input);
+      if (!cancelled) show(loaded, input, seed);
     });
     return () => {
       cancelled = true;
@@ -253,7 +269,7 @@ export function SurveyApp({
       )}
       {step.kind === "ranking" && (
         <RankingStep
-          key={restarts}
+          key={`${restarts}:${state.optionSeed}`}
           issues={issues}
           state={state}
           onChange={update}

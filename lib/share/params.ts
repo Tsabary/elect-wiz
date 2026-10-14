@@ -41,3 +41,44 @@ export function parseSharedParties(
   }
   return out;
 }
+
+/** A share page or its preview image: `/{locale}/share/{segment}` and what follows it. */
+const SHARE_ROUTE = /^\/([^/]+)\/share\/([^/]+)(\/opengraph-image[^/]*)?\/?$/;
+
+export type ShareRouteCheck =
+  /** Not a share page (or one Next answers 404 to anyway): carry on. */
+  | { kind: "pass" }
+  /** Already the canonical address: render it. */
+  | { kind: "canonical" }
+  /** Valid parties in a non-canonical form (order kept): send the visitor to this path. */
+  | { kind: "redirect"; path: string }
+  /** No valid party at all: not found. */
+  | { kind: "not-found"; locale: string };
+
+/**
+ * Checks a request path against the share-URL format, before anything is
+ * rendered. Every share page and preview image is rendered once per distinct
+ * address and then cached, so only the canonical address of a valid set of
+ * parties may reach the renderer: the IDs as `sharePath` writes them (for the
+ * image, as Next writes its address: commas encoded). Anything
+ * else is redirected there (unknown, repeated or extra IDs dropped, `%2C`
+ * decoded), or is a 404 when no valid party is left. `pathname` is the raw
+ * (still percent-encoded) path.
+ */
+export function checkShareRoute(
+  pathname: string,
+  knownPartyIds: Iterable<string>,
+  locales: readonly string[],
+): ShareRouteCheck {
+  const match = SHARE_ROUTE.exec(pathname);
+  if (!match || !locales.includes(match[1])) return { kind: "pass" };
+  const [, locale, segment, image = ""] = match;
+  const ids = parseSharedParties(segment, knownPartyIds);
+  if (ids.length === 0) return { kind: "not-found", locale };
+  // The page's address is `sharePath`'s. Next writes the preview image's address
+  // (in the page's metadata) with the comma percent-encoded, so that is its form.
+  const path = image
+    ? `/${locale}/share/${ids.map(encodeURIComponent).join("%2C")}${image}`
+    : sharePath(locale, ids);
+  return path === pathname ? { kind: "canonical" } : { kind: "redirect", path };
+}

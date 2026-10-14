@@ -3,7 +3,7 @@ import { researchedPartyIds } from "@/lib/content/party-view";
 import { partiesFileSchema } from "@/lib/content/schemas";
 import placeholderParties from "@/content/placeholder/registry/parties.json";
 import { hasRtl, visualRtl } from "./bidi";
-import { MAX_SHARED_PARTIES, parseSharedParties, sharePath } from "./params";
+import { checkShareRoute, MAX_SHARED_PARTIES, parseSharedParties, sharePath } from "./params";
 
 const KNOWN = ["blue-horizon", "lighthouse", "cedar-tradition", "olive-branch", "green-valley"];
 
@@ -38,6 +38,61 @@ describe("share URLs", () => {
     expect(parseSharedParties(undefined, KNOWN)).toEqual([]);
     expect(parseSharedParties("a".repeat(2000), KNOWN)).toEqual([]);
     expect(parseSharedParties(KNOWN.join(","), KNOWN)).toHaveLength(MAX_SHARED_PARTIES);
+  });
+});
+
+describe("share route check (before rendering)", () => {
+  const check = (path: string) => checkShareRoute(path, KNOWN, ["he", "en"]);
+
+  it("lets the canonical address of a valid set, and its preview image, through", () => {
+    expect(check("/he/share/blue-horizon,lighthouse")).toEqual({ kind: "canonical" });
+    expect(check("/en/share/lighthouse")).toEqual({ kind: "canonical" });
+    // The image in the form Next writes into the page's metadata: commas encoded.
+    expect(check("/en/share/lighthouse%2Colive-branch/opengraph-image")).toEqual({
+      kind: "canonical",
+    });
+  });
+
+  it("redirects any other spelling of a valid set to the canonical one", () => {
+    const cases: [string, string][] = [
+      ["/en/share/lighthouse,nope", "/en/share/lighthouse"],
+      ["/en/share/nope,lighthouse,lighthouse,%3Cscript%3E", "/en/share/lighthouse"],
+      ["/he/share/lighthouse%2Cblue-horizon", "/he/share/lighthouse,blue-horizon"],
+      ["/he/share/lighthouse,blue-horizon,", "/he/share/lighthouse,blue-horizon"],
+      ["/he/share/lighthouse,%20blue-horizon", "/he/share/lighthouse,blue-horizon"],
+      ["/he/share/lighthouse/", "/he/share/lighthouse"],
+      [`/en/share/${KNOWN.join(",")}`, `/en/share/${KNOWN.slice(0, MAX_SHARED_PARTIES).join(",")}`],
+      ["/en/share/x,lighthouse/opengraph-image", "/en/share/lighthouse/opengraph-image"],
+      [
+        "/en/share/lighthouse,olive-branch/opengraph-image",
+        "/en/share/lighthouse%2Colive-branch/opengraph-image",
+      ],
+    ];
+    for (const [from, to] of cases)
+      expect(check(from), from).toEqual({ kind: "redirect", path: to });
+  });
+
+  it("is a 404 when no valid party is left", () => {
+    for (const path of [
+      "/en/share/garbage",
+      "/he/share/%E0%A4%A",
+      "/he/share/,,",
+      "/en/share/x/opengraph-image",
+    ]) {
+      expect(check(path), path).toEqual({ kind: "not-found", locale: path.split("/")[1] });
+    }
+  });
+
+  it("leaves every other path alone", () => {
+    for (const path of [
+      "/en",
+      "/en/share",
+      "/fr/share/lighthouse",
+      "/en/parties/lighthouse",
+      "/en/share/lighthouse/other",
+    ]) {
+      expect(check(path), path).toEqual({ kind: "pass" });
+    }
   });
 });
 

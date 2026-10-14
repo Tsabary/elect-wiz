@@ -41,6 +41,11 @@ export interface SurveyState {
    * shows the result again (worked out afresh) until the user starts over.
    */
   finished?: boolean;
+  /**
+   * When the result was first shown (ms since the epoch). A finished survey is
+   * discarded on load once this is `RESULT_RETENTION_DAYS` old (storage.ts).
+   */
+  finishedAt?: number;
 }
 
 /** The minimal issue shape the survey logic needs. */

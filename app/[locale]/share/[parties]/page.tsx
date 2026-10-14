@@ -12,8 +12,9 @@ import { parseSharedParties } from "@/lib/share/params";
 import { pageMetadata } from "@/lib/site";
 import { resolveNow, timeModes } from "@/lib/time-modes";
 
-// Time-sensitive (election-over); generated on demand and revalidated about every 5 minutes.
-export const revalidate = 300;
+// Time-sensitive (election-over); generated on demand (canonical addresses only, see
+// proxy.ts), revalidated every minute (TIME_SENSITIVE_REVALIDATE_SECONDS).
+export const revalidate = 60;
 
 export function generateStaticParams() {
   return [];
@@ -62,6 +63,7 @@ export default async function SharePage({ params }: PageProps<"/[locale]/share/[
 
   return (
     <div className="flex flex-col gap-12" data-testid="share-landing">
+      {/* Party links aren't prefetched: only a click fetches a party page (as on the result). */}
       {top && (
         <section
           className="bg-ink text-ink-foreground on-ink -mx-4 flex flex-col gap-5 px-4 py-8 sm:mx-0 sm:rounded-sm sm:p-10"
@@ -71,6 +73,7 @@ export default async function SharePage({ params }: PageProps<"/[locale]/share/[
           <h1 id="shared-heading" className="display text-4xl sm:text-6xl">
             <Link
               href={`/parties/${top.id}`}
+              prefetch={false}
               className="underline-offset-8 hover:underline"
               data-testid="shared-top"
             >
@@ -85,6 +88,7 @@ export default async function SharePage({ params }: PageProps<"/[locale]/share/[
                   <li key={p.id}>
                     <Link
                       href={`/parties/${p.id}`}
+                      prefetch={false}
                       className="decoration-ink-foreground/40 hover:decoration-ink-foreground inline-flex min-h-9 items-center text-lg font-medium underline decoration-1 underline-offset-4"
                     >
                       {p.name}

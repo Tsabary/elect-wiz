@@ -2,8 +2,17 @@ import { useLocale, useTranslations } from "next-intl";
 import { Fragment } from "react";
 import { Link } from "@/i18n/navigation";
 
-/** Joins React nodes with the locale's list conjunction ("A, B and C" / "A, B ו-C"). */
-export function ListOfLinks({ items }: { items: { id: string; name: string }[] }) {
+/**
+ * Joins React nodes with the locale's list conjunction ("A, B and C" / "A, B ו-C").
+ * `prefetch={false}` where the links say something about the visitor (a result).
+ */
+export function ListOfLinks({
+  items,
+  prefetch,
+}: {
+  items: { id: string; name: string }[];
+  prefetch?: false;
+}) {
   const locale = useLocale();
   const parts = new Intl.ListFormat(locale, { type: "conjunction" }).formatToParts(
     items.map((i) => i.id),
@@ -17,6 +26,7 @@ export function ListOfLinks({ items }: { items: { id: string; name: string }[] }
           <Link
             key={idx}
             href={`/parties/${item.id}`}
+            prefetch={prefetch}
             className="font-medium underline decoration-current/40 decoration-1 underline-offset-4 hover:decoration-current"
           >
             {item.name}
@@ -35,15 +45,18 @@ export function ListOfLinks({ items }: { items: { id: string; name: string }[] }
 export function JointListLabel({
   partners,
   listName,
+  prefetch,
 }: {
   partners: { id: string; name: string }[];
   listName: string;
+  /** False inside a result, whose parties must not be fetched before a click (privacy). */
+  prefetch?: false;
 }) {
   const t = useTranslations("Common");
   return (
     <span data-testid="joint-list-label">
       {t.rich("jointList", {
-        partners: () => <ListOfLinks items={partners} />,
+        partners: () => <ListOfLinks items={partners} prefetch={prefetch} />,
         list: listName,
       })}
     </span>

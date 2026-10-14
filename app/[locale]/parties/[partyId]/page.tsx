@@ -20,8 +20,9 @@ import { listedPartyView } from "@/lib/content/party-view";
 import { pageMetadata } from "@/lib/site";
 import { resolveNow, timeModes } from "@/lib/time-modes";
 
-// Time-sensitive (poll blackout): statically generated, revalidated about every 5 minutes.
-export const revalidate = 300;
+// Time-sensitive (poll blackout): statically generated, revalidated every minute and never
+// served older than next.config.ts `expireTime` (TIME_SENSITIVE_REVALIDATE_SECONDS).
+export const revalidate = 60;
 export const dynamicParams = false;
 
 export function generateStaticParams() {

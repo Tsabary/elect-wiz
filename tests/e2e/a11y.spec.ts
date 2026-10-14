@@ -51,6 +51,10 @@ for (const locale of LOCALES) {
       await page.goto(`/${locale}`);
       await expect(page.getByTestId("home-start-over")).toBeVisible();
       await expectNoSeriousViolations(page, "intro with saved progress");
+      // Its confirmation dialog too.
+      await page.getByTestId("home-start-over").click();
+      await expect(page.getByRole("alertdialog")).toBeVisible();
+      await expectNoSeriousViolations(page, "intro start-over dialog");
     });
 
     test("research page has no serious violations", async ({ page }) => {

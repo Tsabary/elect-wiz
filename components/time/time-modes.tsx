@@ -3,8 +3,9 @@
 /**
  * Client-side re-check of the time-based modes (plan Performance §1).
  *
- * Pages are statically generated and revalidated about every 5 minutes, so a
- * cached page (CDN, browser tab left open) could outlive a switch instant. These
+ * Pages are statically generated and served at most a few minutes old
+ * (next.config.ts `expireTime`), so a cached page (browser tab left open, client
+ * router cache) could outlive a switch instant. These
  * guards compare the absolute UTC instants with the browser clock and hide poll
  * content / disable the survey as soon as an instant passes. Server-rendered HTML
  * already reflects the mode at render time, so pages work without JavaScript.

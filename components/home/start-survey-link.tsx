@@ -1,20 +1,24 @@
 "use client";
 
-import { ArrowLeft, ArrowRight, RotateCcw } from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useReducer, useSyncExternalStore } from "react";
+import { StartOverDialog } from "@/components/survey/start-over";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Link, useRouter } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 import { surveyStatus } from "@/lib/survey/state";
 import { browserLocalStorage, createSurveyStorage } from "@/lib/survey/storage";
 
-const noop = () => () => {};
+/** Re-reads the saved survey when another tab changes or deletes it. */
+const subscribe = (onChange: () => void) =>
+  createSurveyStorage(browserLocalStorage()).subscribe(onChange);
 
 /**
  * The intro's start button. With a survey under way on this device it says
  * "continue", and with a finished one "see my result"; either way "start over"
- * sits next to it. Opening the survey without doing anything is not progress.
+ * sits next to it, and asks first. Opening the survey without doing anything is
+ * not progress.
  */
 export function StartSurveyLink({
   surveyContentVersion,
@@ -28,8 +32,11 @@ export function StartSurveyLink({
   // Read again after "start over" has cleared the saved survey.
   const [, reread] = useReducer((n: number) => n + 1, 0);
   const status = useSyncExternalStore(
-    noop,
-    () => surveyStatus(createSurveyStorage(browserLocalStorage()).load(surveyContentVersion)),
+    subscribe,
+    () =>
+      surveyStatus(
+        createSurveyStorage(browserLocalStorage()).load(surveyContentVersion, { keep: true }),
+      ),
     () => "new" as const,
   );
   const resumable = status !== "new";
@@ -58,16 +65,19 @@ export function StartSurveyLink({
         <Arrow aria-hidden="true" />
       </Link>
       {resumable && (
-        <Button
-          variant="outline"
-          size="lg"
-          className="border-foreground/30 h-14 gap-2 px-5 text-base"
-          onClick={startOver}
-          data-testid="home-start-over"
-        >
-          <RotateCcw aria-hidden="true" />
-          {t("startOver")}
-        </Button>
+        <StartOverDialog
+          onConfirm={startOver}
+          focusAfter={null}
+          finished={status === "finished"}
+          trigger={
+            <Button
+              variant="outline"
+              size="lg"
+              className="border-foreground/30 h-14 gap-2 px-5 text-base"
+              data-testid="home-start-over"
+            />
+          }
+        />
       )}
     </div>
   );

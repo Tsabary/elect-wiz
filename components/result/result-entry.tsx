@@ -11,6 +11,13 @@ import { Link } from "@/i18n/navigation";
 import type { AgreementLevel, IssueBreakdown, MatchEntry } from "@/lib/matching/contract";
 import { cn } from "@/lib/utils";
 
+/*
+ * Privacy: no link to a party page here is prefetched (`prefetch={false}`).
+ * A prefetch would make the browser ask the server for the user's top parties
+ * as soon as the result shows, and the host's logs would tie the address to
+ * them. Only a click fetches a party page.
+ */
+
 /** Neutral, shape-based agreement markers (no colour coding, no party colours). */
 const AGREEMENT_MARK: Record<AgreementLevel, string> = {
   agrees: "●",
@@ -54,7 +61,7 @@ function EntryFacts({
     <>
       {m.isJointList && (
         <p className="text-sm">
-          <JointListLabel partners={m.partners} listName={m.listName} />
+          <JointListLabel partners={m.partners} listName={m.listName} prefetch={false} />
         </p>
       )}
       {m.pollNote && (
@@ -109,6 +116,7 @@ function ResearchLink({ entry }: { entry: MatchEntry }) {
   return (
     <Link
       href={`/parties/${entry.partyId}`}
+      prefetch={false}
       className="link inline-flex min-h-11 items-center gap-1 self-start"
       data-testid="research-link"
     >
@@ -160,7 +168,11 @@ export function ResultEntryCard({
             id={headingId}
             className={cn("display", isTop ? "text-4xl sm:text-5xl" : "text-2xl sm:text-3xl")}
           >
-            <Link href={`/parties/${entry.partyId}`} className="underline-offset-4 hover:underline">
+            <Link
+              href={`/parties/${entry.partyId}`}
+              prefetch={false}
+              className="underline-offset-4 hover:underline"
+            >
               {entry.metadata.name}
             </Link>
           </h2>
@@ -269,6 +281,7 @@ function Points({ entry }: { entry: MatchEntry }) {
             </p>
             <Link
               href={`/parties/${entry.partyId}#${point.anchor}`}
+              prefetch={false}
               className="link inline-flex min-h-8 items-center self-start py-1 text-sm"
               aria-label={t("pointLinkAria", { n: i + 1, name: entry.metadata.name })}
               data-testid="point-link"
@@ -330,6 +343,7 @@ function BreakdownItem({
       </p>
       <Link
         href={`/parties/${partyId}#${item.anchor}`}
+        prefetch={false}
         className="link inline-flex min-h-8 items-center self-start py-1 text-sm"
         aria-label={t("readInResearchAria", { title })}
         data-testid="breakdown-link"

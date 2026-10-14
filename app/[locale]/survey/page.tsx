@@ -9,8 +9,9 @@ import { researchedPartyMetadata } from "@/lib/content/party-view";
 import { pageMetadata } from "@/lib/site";
 import { resolveNow, timeModes } from "@/lib/time-modes";
 
-// Time-sensitive (election-over, poll blackout): revalidate about every 5 minutes.
-export const revalidate = 300;
+// Time-sensitive (election-over, poll blackout): revalidated every minute, never served
+// older than next.config.ts `expireTime` (TIME_SENSITIVE_REVALIDATE_SECONDS).
+export const revalidate = 60;
 
 export async function generateMetadata({
   params,

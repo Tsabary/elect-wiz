@@ -2,6 +2,11 @@
  * A tiny external store around the survey state, for `useSyncExternalStore`.
  * Loads (or creates) the state lazily on first read in the browser and persists
  * every change to on-device storage.
+ *
+ * Other tabs: while anything listens, the store watches the saved survey. When
+ * another tab deletes it ("start over") or puts a different survey in its place
+ * (other shuffle seeds), the survey held here is dropped for that one, or for a
+ * new empty survey, so this tab never writes the old answers back.
  */
 import { randomSeed } from "./shuffle";
 import { createSurveyState, type SurveyState } from "./state";
@@ -37,6 +42,24 @@ export function createSurveyStore(
   let isNew = false;
   const listeners = new Set<() => void>();
   const emit = () => listeners.forEach((l) => l());
+  let unwatch: (() => void) | null = null;
+
+  /** Another tab changed the saved survey. */
+  const onExternalChange = () => {
+    if (!state) return; // Nothing loaded here yet: the first read will load what is saved.
+    const saved = storage.load(surveyContentVersion, { keep: true });
+    // The same survey saved from another tab: carry on as before.
+    if (saved && saved.optionSeed === state.optionSeed) return;
+    if (saved) {
+      state = { ...saved, issueSeed: randomSeed() };
+      isNew = !saved.started;
+    } else {
+      // Deleted there: a new survey here too, saved (like after "start over") only once used.
+      state = createSurveyState(surveyContentVersion);
+      isNew = true;
+    }
+    emit();
+  };
 
   const get = (): SurveyState => {
     if (!state) {
@@ -83,7 +106,14 @@ export function createSurveyStore(
     },
     subscribe(listener) {
       listeners.add(listener);
-      return () => listeners.delete(listener);
+      unwatch ??= storage.subscribe(onExternalChange);
+      return () => {
+        listeners.delete(listener);
+        if (listeners.size === 0) {
+          unwatch?.();
+          unwatch = null;
+        }
+      };
     },
     storageAvailable: storage.available,
   };

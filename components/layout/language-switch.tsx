@@ -4,12 +4,12 @@ import { useLocale, useTranslations } from "next-intl";
 import { useTransition } from "react";
 import { Button } from "@/components/ui/button";
 import { usePathname, useRouter } from "@/i18n/navigation";
-import type { Locale } from "@/i18n/routing";
+import { LOCALE_CHOICE_COOKIE, LOCALE_CHOICE_MAX_AGE, type Locale } from "@/i18n/routing";
 
 /**
- * Toggles between Hebrew and English. Navigating to the other locale prefix makes
- * next-intl's proxy store the choice in the NEXT_LOCALE cookie, which then
- * overrides Accept-Language detection on later visits.
+ * Toggles between Hebrew and English, and remembers the choice in the
+ * language-choice cookie, so that `/` opens in that language on later visits
+ * (proxy.ts). This button is the only thing that writes the cookie.
  */
 export function LanguageSwitch() {
   const locale = useLocale() as Locale;
@@ -28,8 +28,7 @@ export function LanguageSwitch() {
       data-testid="language-switch"
       disabled={isPending}
       onClick={() => {
-        // Set the cookie explicitly too, so the choice persists even if detection would differ.
-        document.cookie = `NEXT_LOCALE=${other}; path=/; max-age=${60 * 60 * 24 * 365}; samesite=lax`;
+        document.cookie = `${LOCALE_CHOICE_COOKIE}=${other}; path=/; max-age=${LOCALE_CHOICE_MAX_AGE}; samesite=lax`;
         startTransition(() => router.replace(pathname, { locale: other }));
       }}
     >

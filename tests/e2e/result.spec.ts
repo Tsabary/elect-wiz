@@ -546,17 +546,57 @@ test.describe("sharing", () => {
   });
 
   for (const locale of LOCALES) {
-    test(`landing page ignores invalid and extra parameters (${locale})`, async ({ page }) => {
-      const valid = researchedParties()[0];
+    test(`landing page: any other spelling redirects to the canonical address (${locale})`, async ({
+      page,
+      request,
+    }) => {
+      const [valid, other] = researchedParties();
       await page.goto(
         `/${locale}/share/nope,${valid.id},${valid.id},%3Cscript%3E?answers=secret&x=1`,
+      );
+      await expect(page).toHaveURL(
+        new RegExp(`/${locale}/share/${valid.id}\\?answers=secret&x=1$`),
       );
       await expect(page.getByTestId("shared-top")).toHaveText(valid.name[locale]);
       await expect(page.getByTestId("shared-rest")).toHaveCount(0);
       expect(await page.locator("body").innerText()).not.toContain("secret");
+
+      // Redirected before anything is rendered, so junk addresses never become cached pages.
+      for (const [from, to] of [
+        [`${valid.id}%2C${other.id}`, `${valid.id},${other.id}`],
+        [`${valid.id},${other.id},`, `${valid.id},${other.id}`],
+        [`${valid.id},junk.1`, `${valid.id}`],
+        [`${valid.id},j.9/opengraph-image`, `${valid.id}/opengraph-image`],
+        [`x,${valid.id}/opengraph-image`, `${valid.id}/opengraph-image`],
+        [`${valid.id},${other.id}/opengraph-image`, `${valid.id}%2C${other.id}/opengraph-image`],
+      ]) {
+        const res = await request.get(`/${locale}/share/${from}`, { maxRedirects: 0 });
+        expect(res.status(), from).toBe(308);
+        expect(new URL(res.headers().location, "http://x").pathname).toBe(`/${locale}/share/${to}`);
+      }
+      const canonical = await request.get(`/${locale}/share/${valid.id},${other.id}`, {
+        maxRedirects: 0,
+      });
+      expect(canonical.status()).toBe(200);
+    });
+
+    test(`landing page: a link with no valid party is not found (${locale})`, async ({
+      page,
+      request,
+    }) => {
+      // (A malformed escape such as %E0%A4%A fails in Next itself, on any path, before rendering.)
+      // With a dot too: the proxy's general matcher skips paths that look like files.
+      for (const segment of ["garbage", ",,", `${listedParties()[0].id}`, "junk.3"]) {
+        const res = await request.get(`/${locale}/share/${segment}`, { maxRedirects: 0 });
+        expect(res.status(), segment).toBe(404);
+      }
+      const image = await request.get(`/${locale}/share/garbage/opengraph-image`, {
+        maxRedirects: 0,
+      });
+      expect(image.status()).toBe(404);
       await page.goto(`/${locale}/share/garbage`);
-      await expect(page.getByTestId("share-landing")).toBeVisible();
-      await expect(page.getByTestId("shared-top")).toHaveCount(0);
+      await expect(page.getByTestId("share-landing")).toHaveCount(0);
+      await expect(page.locator("html")).toHaveAttribute("lang", locale);
     });
 
     test(`landing page ignores a listed party's ID (${locale})`, async ({ page }) => {
@@ -564,6 +604,7 @@ test.describe("sharing", () => {
       const [a, b] = researchedParties();
       // A listed party can't be presented as someone's match, wherever it sits in the link.
       await page.goto(`/${locale}/share/${listed.id},${a.id},${b.id}`);
+      await expect(page).toHaveURL(new RegExp(`/${locale}/share/${a.id},${b.id}$`));
       await expect(page.getByTestId("shared-top")).toHaveAttribute(
         "href",
         `/${locale}/parties/${a.id}`,
@@ -582,12 +623,6 @@ test.describe("sharing", () => {
         const content = (await page.locator(sel).getAttribute("content"))!;
         expect(content).not.toContain(listed.name[locale]);
       }
-
-      // Alone, it leaves nothing to show.
-      await page.goto(`/${locale}/share/${listed.id}`);
-      await expect(page.getByTestId("share-landing")).toBeVisible();
-      await expect(page.getByTestId("shared-top")).toHaveCount(0);
-      await expect(page.getByTestId("start-survey")).toBeVisible();
     });
 
     test(`landing page metadata and preview image (${locale})`, async ({ page, request }) => {
@@ -613,4 +648,46 @@ test.describe("sharing", () => {
       expect((await res.body()).length).toBeGreaterThan(5000);
     });
   }
+});
+
+test.describe("privacy of the result", () => {
+  /** Every request for a party page (document, RSC payload or prefetch) the page makes from now on. */
+  const partyPageRequests = (page: Page) => {
+    const urls: string[] = [];
+    page.on("request", (r) => {
+      if (new URL(r.url()).pathname.includes("/parties/")) urls.push(r.url());
+    });
+    return urls;
+  };
+
+  test("no party page is fetched until a link is clicked", async ({ page }) => {
+    const set = await completeCase(page, "en", "joint-list-top");
+    const requests = partyPageRequests(page);
+    // Every party link on the result is on screen at some point: the cards, the
+    // joint-list partners, the breakdown and point links, and the "show all" rows.
+    await page.getByTestId("result-entry").nth(1).locator("summary").click();
+    await page.getByTestId("show-all").click();
+    await page.getByTestId("result-row").first().locator("summary").click();
+    await page.evaluate(() => window.scrollTo({ top: document.body.scrollHeight }));
+    await page.waitForTimeout(500);
+    await page.evaluate(() => window.scrollTo({ top: 0 }));
+    for (const link of await page.getByTestId("research-link").all()) await link.hover();
+    await page.waitForTimeout(1000);
+    expect(requests).toEqual([]);
+
+    // A click fetches the page it leads to, and only that one.
+    await page.getByTestId("research-link").first().click();
+    await expect(page).toHaveURL(new RegExp(`/en/parties/${set.entries[0]}$`));
+    expect(requests.length).toBeGreaterThan(0);
+    expect(requests.every((u) => u.includes(`/parties/${set.entries[0]}`))).toBe(true);
+  });
+
+  test("the share landing page fetches no party page either", async ({ page }) => {
+    const [a, b, c] = researchedParties();
+    const requests = partyPageRequests(page);
+    await page.goto(`/he/share/${a.id},${b.id},${c.id}`);
+    await page.getByTestId("shared-top").hover();
+    await page.waitForTimeout(1000);
+    expect(requests).toEqual([]);
+  });
 });

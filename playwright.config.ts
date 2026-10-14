@@ -30,6 +30,16 @@ export default defineConfig({
           APP_ENV: "test",
           CONTENT_CORPUS: "placeholder",
           CLOCK_OVERRIDE: "2026-10-20T12:00:00Z",
+          // Never the real counter store, whatever .env.local holds (Next loads it, but
+          // never over a variable already set). The route doesn't write outside
+          // production anyway; this is the second lock.
+          KV_REST_API_URL: "",
+          KV_REST_API_TOKEN: "",
+          KV_REST_API_READ_ONLY_TOKEN: "",
+          KV_URL: "",
+          KV_REDIS_URL: "",
+          UPSTASH_REDIS_REST_URL: "",
+          UPSTASH_REDIS_REST_TOKEN: "",
         },
       },
 });
