@@ -2,8 +2,17 @@ import { describe, expect, it } from "vitest";
 import { buildTallyReport, formatTallyReport } from "./report";
 
 const byDay = {
-  "2026-10-25": { started: 10, results: 6, "1st:a": 3, "1st:b": 3, "2nd:a": 2, "2nd:c": 4 },
-  "2026-10-24": { started: 4, results: 2, "1st:c": 2, "3rd:a": 1, "4th:b": 2 },
+  "2026-10-25": {
+    started: 10,
+    results: 6,
+    "1st:a": 3,
+    "1st:b": 3,
+    "2nd:a": 2,
+    "2nd:c": 4,
+    "shared:plain": 3,
+    "shared:answers": 1,
+  },
+  "2026-10-24": { started: 4, results: 2, "1st:c": 2, "3rd:a": 1, "4th:b": 2, "shared:plain": 2 },
 };
 
 describe("tally report", () => {
@@ -11,6 +20,17 @@ describe("tally report", () => {
     const r = buildTallyReport(byDay, ["a", "b", "c", "d"]);
     expect(r.days.map((d) => d.day)).toEqual(["2026-10-24", "2026-10-25"]);
     expect([r.started, r.results]).toEqual([14, 8]);
+  });
+
+  it("adds up shared links, without and with answers, and never takes them for parties", () => {
+    const r = buildTallyReport(byDay, ["a", "b", "c", "d"]);
+    expect([r.sharedPlain, r.sharedAnswers]).toEqual([5, 1]);
+    expect(r.days.map((d) => [d.sharedPlain, d.sharedAnswers])).toEqual([
+      [2, 0],
+      [3, 1],
+    ]);
+    expect(r.parties.map((p) => p.partyId)).not.toContain("plain");
+    expect(r.parties.map((p) => p.partyId)).not.toContain("answers");
   });
 
   it("ranks by 1st places, then 2nd, 3rd and 4th, and lists every party", () => {
@@ -37,6 +57,8 @@ describe("tally report", () => {
     });
     expect(text).toContain("Surveys started: 14   Results shown: 8");
     expect(text).toMatch(/1\s+A\s+3\s+2\s+1\s+0\s+6\s+37\.5%/);
-    expect(text).toContain("2026-10-24        4        2");
+    expect(text).toContain("Links shared: 6   without answers: 5   with answers: 1");
+    expect(text).toContain("2026-10-24        4        2       2         0");
+    expect(text).toContain("2026-10-25       10        6       3         1");
   });
 });

@@ -1,7 +1,8 @@
 /**
  * The anonymous counts (plan-deterministic-matching.md, "APIs & interfaces" §8
  * and Data model §9): per day, how many surveys were started, how many results
- * were shown, and per party how often it came 1st, 2nd, 3rd and 4th.
+ * were shown, per party how often it came 1st, 2nd, 3rd and 4th, and how many
+ * result links were shared, with and without answers.
  *
  * Nothing else is kept: no answers, no identifiers, nothing derived from the
  * visitor's address, and no time finer than the day. The counts are for the
@@ -30,7 +31,9 @@ export type TallyCall =
   /** A new survey was begun. Carries nothing else. */
   | { kind: "started" }
   /** A result was shown: its top parties, in result order. */
-  | { kind: "result"; parties: string[] };
+  | { kind: "result"; parties: string[] }
+  /** A share link was shared (share sheet completed or link copied): only whether it held answers. */
+  | { kind: "shared"; withAnswers: boolean };
 
 const tallyCallSchema = z.discriminatedUnion("kind", [
   z.strictObject({ kind: z.literal("started") }),
@@ -38,11 +41,12 @@ const tallyCallSchema = z.discriminatedUnion("kind", [
     kind: z.literal("result"),
     parties: z.array(z.string().min(1).max(100)).min(TALLY_MIN_PARTIES).max(TALLY_MAX_PARTIES),
   }),
+  z.strictObject({ kind: z.literal("shared"), withAnswers: z.boolean() }),
 ]);
 
 /**
  * Checks a parsed request body. Returns the call, or null for anything that
- * isn't exactly one of the two: an unknown kind, an extra field, too few or too
+ * isn't exactly one of the kinds: an unknown kind, an extra field, too few or too
  * many parties, a repeated party, or a party that isn't researched.
  */
 export function parseTallyCall(
@@ -53,6 +57,7 @@ export function parseTallyCall(
   if (!parsed.success) return null;
   const call = parsed.data;
   if (call.kind === "started") return { kind: "started" };
+  if (call.kind === "shared") return { kind: "shared", withAnswers: call.withAnswers };
   const known = new Set(researchedPartyIds);
   if (new Set(call.parties).size !== call.parties.length) return null;
   if (!call.parties.every((id) => known.has(id))) return null;
@@ -98,6 +103,9 @@ export function dayKey(day: string): string {
 
 export const COUNTER_STARTED = "started";
 export const COUNTER_RESULTS = "results";
+/** Share links shared without answers, and with them. */
+export const COUNTER_SHARED_PLAIN = "shared:plain";
+export const COUNTER_SHARED_ANSWERS = "shared:answers";
 /** The places a result counts, in order: the closest party and the next three. */
 export const PLACES = ["1st", "2nd", "3rd", "4th"] as const;
 export type Place = (typeof PLACES)[number];
@@ -107,6 +115,8 @@ export const placeCounter = (place: Place, partyId: string) => `${place}:${party
 /** The day's counters a call adds one to. A result counts once, and each of its parties in its place. */
 export function countersFor(call: TallyCall): string[] {
   if (call.kind === "started") return [COUNTER_STARTED];
+  if (call.kind === "shared")
+    return [call.withAnswers ? COUNTER_SHARED_ANSWERS : COUNTER_SHARED_PLAIN];
   return [COUNTER_RESULTS, ...call.parties.map((id, i) => placeCounter(PLACES[i], id))];
 }
 

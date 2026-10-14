@@ -53,7 +53,7 @@ type Phase =
   | { kind: "survey" }
   /** Submitted before the matching bundle arrived. */
   | { kind: "loading"; seed: number }
-  | { kind: "result"; seed: number; result: MatchResponse }
+  | { kind: "result"; seed: number; result: MatchResponse; input: MatchInput }
   | { kind: "error"; seed: number; code: MatchErrorCode; input: MatchInput };
 
 const serverSnapshot = () => null;
@@ -154,7 +154,7 @@ export function SurveyApp({
       // Kept until "start over" or for RESULT_RETENTION_DAYS, so coming back shows the result again.
       const first = !store.get().finished;
       store.set((s) => (s.finished ? s : { ...s, finished: true, finishedAt: Date.now() }));
-      setPhase({ kind: "result", seed, result: res.result });
+      setPhase({ kind: "result", seed, result: res.result, input });
       // Anonymous count, fire-and-forget, only the first time this result is shown:
       // the top parties' IDs only, never the answers.
       if (first) tallyResult(res.result.entries.map((e) => e.partyId));
@@ -233,6 +233,7 @@ export function SurveyApp({
     return (
       <ResultView
         result={phase.result}
+        input={phase.input}
         issues={issues}
         serverBlackout={serverBlackout}
         headingRef={headingRef}

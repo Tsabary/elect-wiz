@@ -343,17 +343,18 @@ for (const locale of LOCALES) {
       ]) {
         await expect(page.getByTestId(gone)).toHaveCount(0);
       }
-      // The only buttons on the result are sharing and, after it, starting over;
+      // The only buttons on the result are the two share buttons and, after them, starting over;
       // nothing links back into the survey that was answered.
       await page.getByTestId("show-all").click();
-      await expect(result.getByRole("button")).toHaveCount(2);
+      await expect(result.getByRole("button")).toHaveCount(3);
       await expect(result.getByTestId("share-button")).toBeVisible();
+      await expect(result.getByTestId("share-answers-button")).toBeVisible();
       await expect(result.getByTestId("start-over")).toBeVisible();
       expect(
         await result
           .getByRole("button")
           .evaluateAll((els) => els.map((e) => e.getAttribute("data-testid"))),
-      ).toEqual(["share-button", "start-over"]);
+      ).toEqual(["share-button", "share-answers-button", "start-over"]);
       await expect(result.locator(`a[href*="/survey"]`)).toHaveCount(0);
       await expect(result.locator("form, input, textarea, select")).toHaveCount(0);
       await expect(page.getByTestId("disclaimer")).toBeVisible();

@@ -1,14 +1,18 @@
 import AxeBuilder from "@axe-core/playwright";
 import { expect, test, type Page } from "@playwright/test";
+import { encodeAnswers } from "@/lib/share/answers";
 import {
   completeCase,
   completeSurvey,
+  issues,
   listedParties,
   LOCALES,
   MATCHING_BUNDLE_URL,
   openSurvey,
+  placeholderAnswerSet,
   rankWithButtons,
   researchedParties,
+  versions,
 } from "./helpers";
 
 /** Fails on serious or critical WCAG 2.x A/AA violations. */
@@ -76,6 +80,17 @@ for (const locale of LOCALES) {
     test("share landing page has no serious violations", async ({ page }) => {
       await page.goto(`/${locale}/share/${researchedParties()[0].id},${researchedParties()[1].id}`);
       await expectNoSeriousViolations(page, "share");
+    });
+
+    test("share landing page with answers has no serious violations", async ({ page }) => {
+      const set = placeholderAnswerSet("joint-list-top");
+      const answers = encodeAnswers(set, {
+        surveyContentVersion: versions().surveyContentVersion,
+        issues: issues(),
+      });
+      await page.goto(`/${locale}/share/${set.entries.slice(0, 4).join(",")}#a=${answers}`);
+      await expect(page.getByTestId("shared-with-answers")).toBeVisible();
+      await expectNoSeriousViolations(page, "share with answers");
     });
 
     test("survey steps have no serious violations", async ({ page }) => {
