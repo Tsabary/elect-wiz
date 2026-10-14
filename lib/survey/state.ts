@@ -36,6 +36,11 @@ export interface SurveyState {
   step: SurveyStep;
   /** Set once this survey has been counted as started, so a reload never counts it again. */
   started?: boolean;
+  /**
+   * Set when the result was first shown. The answers stay saved, so coming back
+   * shows the result again (worked out afresh) until the user starts over.
+   */
+  finished?: boolean;
 }
 
 /** The minimal issue shape the survey logic needs. */
@@ -72,6 +77,15 @@ export function hasProgress(state: SurveyState): boolean {
     state.notImportant.length > 0 ||
     Object.values(state.answers).some((a) => a?.selected != null)
   );
+}
+
+/** Where a saved survey stands, for the intro's buttons: none, under way, or with a result. */
+export type SurveyStatus = "new" | "in-progress" | "finished";
+
+export function surveyStatus(state: SurveyState | null): SurveyStatus {
+  if (!state) return "new";
+  if (state.finished) return "finished";
+  return hasProgress(state) ? "in-progress" : "new";
 }
 
 // ------------------------------------------------------------------ ordering

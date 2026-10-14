@@ -4,7 +4,8 @@
  * The survey flow: ranking → one answer screen per ranked issue → result. Runs
  * fully in the browser: progress lives only in on-device storage (PRD FR25),
  * and the result is computed here from the matching bundle, so the answers
- * never leave the device. The only calls out are the two anonymous counts
+ * never leave the device. A finished survey stays saved, so coming back to it
+ * shows the result again, worked out afresh from the saved answers. The only calls out are the two anonymous counts
  * (`lib/tally/client.ts`).
  *
  * "Start over" (on the survey screens and under the result) puts a new survey
@@ -137,11 +138,13 @@ export function SurveyApp({
   function show(loaded: BundleLoadResult, input: MatchInput) {
     const res = loaded.ok ? matchLocally(loaded.bundle, input, parties) : loaded;
     if (res.ok) {
-      // The result is shown once; a refresh starts a new survey (PRD, plan Data model §5).
-      store?.clear();
+      // Kept until "start over", so coming back shows the result again.
+      const first = !store?.get().finished;
+      store?.set((s) => (s.finished ? s : { ...s, finished: true }));
       setPhase({ kind: "result", result: res.result });
-      // Anonymous count, fire-and-forget: the top parties' IDs only, never the answers.
-      tallyResult(res.result.entries.map((e) => e.partyId));
+      // Anonymous count, fire-and-forget, only the first time this result is shown:
+      // the top parties' IDs only, never the answers.
+      if (first) tallyResult(res.result.entries.map((e) => e.partyId));
     } else {
       // Whatever was loaded couldn't be used: "try again" fetches it afresh.
       bundleRequest.current = null;
@@ -156,6 +159,27 @@ export function SurveyApp({
     setPhase({ kind: "loading" });
     show(await loadBundle(), input);
   }
+
+  // Coming back to a finished survey: work the result out again from the saved answers.
+  const reopening = !!state?.finished && phase.kind === "survey";
+  useEffect(() => {
+    if (!reopening || !store) return;
+    const input = buildMatchInput(store.get(), issues);
+    if (!input) {
+      // The saved answers no longer make a complete survey: carry on with it instead.
+      store.set((s) => ({ ...s, finished: false }));
+      return;
+    }
+    let cancelled = false;
+    void loadBundle().then((loaded) => {
+      if (!cancelled) show(loaded, input);
+    });
+    return () => {
+      cancelled = true;
+    };
+    // `show` is recreated every render; the effect only needs to run when reopening starts.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [reopening, store, issues, loadBundle]);
 
   function submit() {
     if (!state) return;
@@ -188,7 +212,7 @@ export function SurveyApp({
     );
   }
 
-  if (phase.kind === "loading") return <LoadingState headingRef={headingRef} />;
+  if (phase.kind === "loading" || reopening) return <LoadingState headingRef={headingRef} />;
   if (phase.kind === "result") {
     return (
       <ResultView

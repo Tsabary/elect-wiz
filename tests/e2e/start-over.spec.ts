@@ -2,6 +2,7 @@ import { expect, test, type Page } from "@playwright/test";
 import {
   answerIssues,
   completeCase,
+  completeSurvey,
   LOCALES,
   openSurvey,
   rankWithButtons,
@@ -103,6 +104,30 @@ for (const locale of LOCALES) {
       await expect(start).toHaveAttribute("data-resume", "false");
       await expect(page.getByTestId("home-start-over")).toHaveCount(0);
       expect(await start.innerText()).toBe(plainLabel);
+    });
+
+    test("on the intro: 'see my result' and 'start over' once a survey is finished", async ({
+      page,
+    }) => {
+      await completeSurvey(page, locale);
+      await expect(page.getByTestId("result")).toBeVisible();
+      await page.goto(`/${locale}`);
+      const start = page.getByTestId("start-survey");
+      await expect(start).toHaveAttribute("data-status", "finished");
+      await expect(page.getByTestId("home-start-over")).toBeVisible();
+
+      // "See my result" opens the result straight away, without the survey screens.
+      await start.click();
+      await expect(page.getByTestId("result")).toBeVisible();
+      await expect(page.getByTestId("survey")).toHaveCount(0);
+
+      // "Start over" from the intro clears it.
+      await page.goto(`/${locale}`);
+      await page.getByTestId("home-start-over").click();
+      await expectEmptyRanking(page);
+      await page.goto(`/${locale}`);
+      await expect(start).toHaveAttribute("data-status", "new");
+      await expect(page.getByTestId("home-start-over")).toHaveCount(0);
     });
 
     test("in the survey: asks first; cancel keeps the progress, confirm discards it", async ({

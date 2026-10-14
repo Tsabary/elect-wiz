@@ -36,10 +36,28 @@ for (const locale of LOCALES) {
   });
 }
 
-test("a refresh after the result starts a new survey", async ({ page }) => {
+test("a refresh after the result shows the same result again, until 'start over'", async ({
+  page,
+}) => {
   await completeSurvey(page, "en");
   await expect(page.getByTestId("result")).toBeVisible();
-  expect(await page.evaluate(() => localStorage.getItem("elect.survey"))).toBeNull();
+  const shown = await page
+    .getByTestId("result-entry")
+    .evaluateAll((els) => els.map((el) => el.getAttribute("data-party-id")));
+  const saved = JSON.parse((await page.evaluate(() => localStorage.getItem("elect.survey")))!);
+  expect(saved.finished).toBe(true);
+
+  await page.reload();
+  await expect(page.getByTestId("result")).toBeVisible();
+  await expect(page.getByTestId("survey")).toHaveCount(0);
+  expect(
+    await page
+      .getByTestId("result-entry")
+      .evaluateAll((els) => els.map((el) => el.getAttribute("data-party-id"))),
+  ).toEqual(shown);
+
+  await page.getByTestId("start-over").click();
+  await expect(page.getByTestId("survey")).toHaveAttribute("data-step", "ranking");
   await page.reload();
   await expect(page.getByTestId("survey")).toHaveAttribute("data-step", "ranking");
   await expect(page.getByTestId("ranked-item")).toHaveCount(0);

@@ -88,11 +88,18 @@ test.describe("anonymous counts sent by the survey", () => {
     expect(tally.calls).toHaveLength(1);
   });
 
-  test("a survey begun after a result is a new survey, counted again", async ({ page }) => {
+  test("a saved result shown again counts nothing; a survey begun after it is counted again", async ({
+    page,
+  }) => {
     const tally = recordTally(page);
     await completeCase(page, "en", "joint-list-top");
     await expect.poll(() => tally.calls.map((c) => c.body.kind)).toEqual(["started", "result"]);
+    // Coming back to the saved result is not a new result.
     await page.reload();
+    await expect(page.getByTestId("result")).toBeVisible();
+    await page.waitForTimeout(SETTLE_MS);
+    expect(tally.calls).toHaveLength(2);
+    await page.getByTestId("start-over").click();
     await expect(page.getByTestId("survey")).toHaveAttribute("data-step", "ranking");
     await page.waitForTimeout(SETTLE_MS);
     expect(tally.calls).toHaveLength(2);

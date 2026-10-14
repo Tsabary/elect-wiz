@@ -37,6 +37,7 @@
   "Common": {
     "startSurvey": "Start",
     "resumeSurvey": "Continue where you left off",
+    "seeResult": "See my result",
     "startOver": "Start over",
     "ballotLetters": "Ballot letters: {letters}",
     "jointList": "Running on a joint list with <partners></partners> as {list}."
@@ -163,9 +164,9 @@
         ]
       },
       "device": {
-        "title": "Progress saved on your device",
+        "title": "Progress and result saved on your device",
         "paragraphs": [
-          "While you take the survey, your progress is saved only in your own browser, so you can close the page and come back to it. Once your result is shown, the saved progress is deleted from your browser."
+          "Your progress and answers are saved only in your own browser, so you can close the page and come back to carry on with the survey or see your result again. They are never sent anywhere. Starting over deletes them, and so does clearing this site’s data in your browser."
         ]
       },
       "counts": {
@@ -349,7 +350,7 @@
     "disclaimerTitle": "A decision aid, not a recommendation",
     "disclaimer": "This result shows which parties’ documented positions are closest to the answers you gave. It doesn’t tell you who to vote for. Read the research and make your own judgment.",
     "howItWorksLink": "How this works and its limitations",
-    "startOverHint": "Starting over opens a new survey. This result is not saved."
+    "startOverHint": "Starting over deletes this result from this device and opens a new survey."
   },
   "Share": {
     "heading": "Share",

@@ -6,15 +6,15 @@ import { useReducer, useSyncExternalStore } from "react";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Link, useRouter } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
-import { hasProgress } from "@/lib/survey/state";
+import { surveyStatus } from "@/lib/survey/state";
 import { browserLocalStorage, createSurveyStorage } from "@/lib/survey/storage";
 
 const noop = () => () => {};
 
 /**
- * The intro's start button. When the user has made progress on this device it
- * says "continue", with "start over" next to it; opening the survey without
- * doing anything is not progress.
+ * The intro's start button. With a survey under way on this device it says
+ * "continue", and with a finished one "see my result"; either way "start over"
+ * sits next to it. Opening the survey without doing anything is not progress.
  */
 export function StartSurveyLink({
   surveyContentVersion,
@@ -27,14 +27,12 @@ export function StartSurveyLink({
   const router = useRouter();
   // Read again after "start over" has cleared the saved survey.
   const [, reread] = useReducer((n: number) => n + 1, 0);
-  const resumable = useSyncExternalStore(
+  const status = useSyncExternalStore(
     noop,
-    () => {
-      const saved = createSurveyStorage(browserLocalStorage()).load(surveyContentVersion);
-      return saved !== null && hasProgress(saved);
-    },
-    () => false,
+    () => surveyStatus(createSurveyStorage(browserLocalStorage()).load(surveyContentVersion)),
+    () => "new" as const,
   );
+  const resumable = status !== "new";
   const Arrow = dir === "rtl" ? ArrowLeft : ArrowRight;
 
   function startOver() {
@@ -48,10 +46,15 @@ export function StartSurveyLink({
       <Link
         href="/survey"
         data-testid="start-survey"
-        data-resume={resumable}
+        data-resume={status === "in-progress"}
+        data-status={status}
         className={cn(buttonVariants({ size: "lg" }), "cta h-14 gap-3 px-8 text-lg font-bold")}
       >
-        {resumable ? t("resumeSurvey") : t("startSurvey")}
+        {status === "finished"
+          ? t("seeResult")
+          : status === "in-progress"
+            ? t("resumeSurvey")
+            : t("startSurvey")}
         <Arrow aria-hidden="true" />
       </Link>
       {resumable && (

@@ -11,7 +11,7 @@ export interface SurveyStore {
   get(): SurveyState;
   set(update: (s: SurveyState) => SurveyState): void;
   /**
-   * Forgets saved progress (after a result is shown, or when the user starts over) and
+   * Forgets saved progress and result (when the user starts over) and
    * puts a new survey in its place, with new shuffle seeds, which counts as started anew.
    */
   clear(): void;
