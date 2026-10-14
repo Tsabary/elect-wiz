@@ -625,3 +625,37 @@ Author's flags, checked:
 - Names follow the registry and the checked result texts: חומת תורת ישראל, מאיר פרוש, אליקים שטארק, and the lists.json forms יצחק זאב פינדרוס and משה עזריאל רוזנטל.
 - Other rulings: "secured" = "השיגו" (2) ✔; "tentative" = "אינה ודאית" (not זמני) ✔; "שינוי לאורך זמן" ✔; the closest-option tag is exactly "**האפשרות/ות הקרובה/ות:**" ✔; "acting minister" does not occur. JDN and i24NEWS are kept as outlet names, as in the other checked Hebrew files (like Ynet).
 - Validation: no error names the file ✔ (`pnpm validate:content`: "Content validation passed"; the self-match report was not rewritten)
+
+## the-democrats-party (checked 2026-10-14; EN researchedAsOf 2026-10-06)
+- Hebrew edition by: Stage 5a agent (Sonnet) · Parity check by: Stage 5b agent (Opus, different)
+- Sections/anchors: identical ✔ (29 headings, same order; issue headings match `he.title`; frontmatter identical except `lang: he`)
+- Claims compared: 373 (every paragraph, bullet and sentence in all sections), plus the 92-entry Sources list · Differences found: 24 · Fixed: 24 · Unresolved: 0
+- Mechanical checks: the same `[n]` on every line, the same evidence-tier tags line for line, the same option IDs on all 10 "closest option(s)" lines, the Sources list byte-identical (92 entries, same order and URLs), all numbers and dates match (day first), straight quotes, no Latin acronyms in the prose, no "נחקרה"/"שנחקרו".
+- Opening line: dropping "(in Hebrew, הדמוקרטים)" is the only omission there. The formation, Golan's election (28 May 2024, 95.15%), the 30 June 2024 announcement, the reserved places 4/8/12/16 and the quarter share, the 12 July 2024 approval, the 20 Feb 2026 update (places 6, 8, 14) and the self-description are all present. The CEC parenthetical Hebrew names in the "Legal structure" paragraph were also dropped as redundant, and the content is kept.
+
+| Anchor | Difference | Resolution |
+|---|---|---|
+| overview | Glossary (orchestrator rule): "former Meretz leaders" was written as "יושבי ראש לשעבר של מרצ" ("chair" wording where the English says "leaders"). | Changed to "ראשי מרצ לשעבר". |
+| overview | Meaning drift: "the government then being formed" was written as "שהוקמה אז" (already formed). | Changed to "שבנימין נתניהו ובני גנץ הקימו אז". |
+| leadership | Naturalness: "cost him consideration for chief of staff" was written as "עלתה לו בשקילתו", which is awkward. | Changed to "בגלל האמירה הזאת הוא לא נשקל לתפקיד הרמטכ״ל". |
+| leadership | Meaning drift: "an Arab coexistence advocate" was written as "פעילה לדו-קיום עם החברה הערבית", which implies a non-Arab activist. | Changed to "פעילה ערבייה למען דו-קיום". |
+| issue-cost-of-living | Naturalness (2 fixes): "להחזיר את המחירים כלפי מטה" for fares, and the ambiguous "ובעצמה" for "on her own". | Changed to "להוריד בחזרה את מחירי הנסיעה" and "ולבדה". |
+| issue-gaza | Naturalness: "חמאס מוחלף" in the summary line. | Changed to "החלפת שלטון חמאס". |
+| issue-gaza | Loaded wording: "ההתנגדות", which is on the avoid list for Hamas as "resistance", was used for opposition within the coalition, outside any quotation. | Changed to "התנגדות מתוך הקואליציה". |
+| issue-haredi-enlistment | Meaning drift: the platform quote "We will introduce equal service" was written as "נחוקק" ("we will legislate"), which is stronger. | Changed to "ננהיג". |
+| issue-haredi-enlistment | Glossary (orchestrator rule): an article inside a law's name ("חוק שירות הביטחון"). | Changed to "חוק שירות ביטחון". |
+| issue-haredi-enlistment | Naturalness: a gender-agreement error ("עמותות שמעודדים"). | Changed to "שמעודדות". |
+| issue-judea-samaria | Naturalness: "וימנה מימון לאכיפה" for "fund enforcement". | Changed to "ויממן את האכיפה". |
+| issue-judea-samaria | Meaning drift: the closest-option line added hedging ("לפי הדיווח") to "Kariv's stated support". | Changed to "והתמיכה שהביע קריב", and smoothed "המטרה של גולן, שתי מדינות". |
+| issue-judicial-system | Meaning drift: "government legal advisers" was written as "היועצים המשפטיים לממשלה" (reads as attorneys general). | Changed to "היועצים המשפטיים במשרדי הממשלה". |
+| issue-judicial-system | Glossary (orchestrator rule), 2 occurrences: an article in a law's name ("חוק יסוד: החקיקה"). | Changed to "חוק יסוד: חקיקה" in both. |
+| issue-october-7-inquiry | Glossary: "commission picked through the Knesset" was written as "ועדה שתיבחר באמצעות הכנסת". | Changed to the glossary term "ועדה שתמונה באמצעות הכנסת". |
+| issue-october-7-inquiry, track-record, information-availability | Naturalness (3 fixes): a wrong verb form for "boycotted" ("חרמה"). | Changed to "החרימה" in all three. |
+| other-environment | Glossary (orchestrator rule): an article in a law's name ("חוק יסוד: הסביבה"). | Changed to "חוק יסוד: סביבה". |
+| other-governance | Meaning drift: "under indictment" was incomplete ("בזמן שהוגש כתב אישום", with no "against him"). | Added "נגדו". |
+| other-arab-citizens | Naturalness: "קרא לרע"ם שותפה לגיטימית" is ambiguous ("called to Ra'am"). | Changed to "הגדיר את רע"ם שותפה לגיטימית". |
+| track-record | Glossary (orchestrator rule): "its final readings" was written as "לקריאות האחרונות". | Changed to "לקריאה השנייה והשלישית". |
+
+- Kinds: meaning drift 6 · loaded wording 1 · glossary/terminology rules 7 · naturalness 10 · dropped/added claim 0 · citation/tag 0. No English questioned.
+- Avoid-list terms that remain appear only inside attributed quotations that match the English: "השתמטות" ("draft evasion", Golan, twice), "ועדת טיוח" ("whitewash commission", Golan), "כפייה דתית" ("religious coercion", Lazimi), "הדתה" ("religionization", platform).
+- Validation: no error names the file ✔
