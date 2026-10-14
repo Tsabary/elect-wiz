@@ -351,6 +351,43 @@ test.describe("ranking", () => {
     await expect(page.getByTestId("ranking-live")).toContainText("2");
   });
 
+  for (const locale of LOCALES) {
+    test(`rows show only the title; "more info" has the summary and explanation (${locale})`, async ({
+      page,
+    }) => {
+      await openSurvey(page, locale);
+      await page.getByTestId("pool-item").first().getByTestId("add-to-ranking").click();
+      for (const kind of ["ranked-item", "pool-item"]) {
+        const row = page.getByTestId(kind).first();
+        const id = await row.getAttribute("data-issue-id");
+        const text = issues().find((i) => i.id === id)[locale];
+        await expect(row.getByRole("heading", { level: 3 })).toHaveText(text.title);
+        await expect(row).not.toContainText(text.description);
+        // "More info" sits in the title row and is named after the issue.
+        const trigger = row.getByTestId("more-info");
+        await expect(trigger).toBeVisible();
+        expect(await trigger.getAttribute("aria-label")).toContain(text.title);
+        await trigger.click();
+        const dialog = page.getByRole("dialog");
+        await expect(dialog).toBeVisible();
+        await expect(dialog).toHaveAccessibleName(text.title);
+        await expect(dialog.getByTestId("more-info-summary")).toHaveText(text.description);
+        await expect(dialog.getByTestId("more-info-text")).toHaveText(text.moreInfo);
+        // Both are read out when the dialog opens.
+        await expect(dialog).toHaveAccessibleDescription(`${text.description} ${text.moreInfo}`);
+        await page.keyboard.press("Escape");
+        await expect(dialog).toHaveCount(0);
+        await expect(trigger).toBeFocused();
+      }
+      // Without the summary a row is a title (at most two lines) and a line of buttons;
+      // with it, narrow screens reached ~200px.
+      const heights = await page
+        .getByTestId("pool-item")
+        .evaluateAll((els) => els.map((e) => e.getBoundingClientRect().height));
+      expect(Math.max(...heights)).toBeLessThan(150);
+    });
+  }
+
   test("the pool order is reshuffled on every reload", async ({ page }) => {
     const order = () =>
       page

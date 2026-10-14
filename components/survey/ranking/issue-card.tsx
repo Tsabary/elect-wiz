@@ -49,7 +49,12 @@ export function IssueCard(props: Props) {
       style={style}
       data-testid={props.mode === "ranked" ? "ranked-item" : "pool-item"}
       data-issue-id={issue.id}
-      className={cn("sheet flex gap-2 p-3", isDragging && "opacity-40")}
+      className={cn(
+        // A control scrolled to (on focus) stays clear of the sticky header and, on
+        // narrow screens, the sticky "continue" bar.
+        "sheet flex gap-2 p-3 [&_button]:scroll-mt-28 [&_button]:scroll-mb-36 sm:[&_button]:scroll-mb-4",
+        isDragging && "opacity-40",
+      )}
     >
       <button
         ref={setActivatorNodeRef}
@@ -74,10 +79,11 @@ export function IssueCard(props: Props) {
               {props.rank}
             </span>
           )}
-          <h3 className="text-lg leading-snug font-bold">{issue.title}</h3>
+          <h3 className="flex-1 text-lg leading-snug font-bold">{issue.title}</h3>
+          {/* Beside the title it explains: the issue's summary is only shown in here. */}
+          <MoreInfo issue={issue} className="text-primary -my-1.5 -me-1 shrink-0 font-medium" />
         </div>
-        <p className="text-muted-foreground text-sm leading-snug">{issue.description}</p>
-        <div className="mt-1 flex flex-wrap items-center gap-1">
+        <div className="flex flex-wrap items-center gap-1">
           {props.mode === "pool" ? (
             <>
               <Button
@@ -141,7 +147,6 @@ export function IssueCard(props: Props) {
               </Button>
             </>
           )}
-          <MoreInfo issue={issue} />
         </div>
       </div>
     </li>
@@ -153,10 +158,7 @@ export function IssueCardOverlay({ issue }: { issue: ClientIssue }) {
   return (
     <div className="sheet flex -rotate-1 cursor-grabbing gap-2 p-3 shadow-lg">
       <GripVertical className="text-muted-foreground size-5 shrink-0" aria-hidden="true" />
-      <div className="flex flex-col gap-1">
-        <p className="text-lg font-bold">{issue.title}</p>
-        <p className="text-muted-foreground text-sm">{issue.description}</p>
-      </div>
+      <p className="text-lg font-bold">{issue.title}</p>
     </div>
   );
 }

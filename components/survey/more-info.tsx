@@ -13,10 +13,14 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { cn } from "@/lib/utils";
 import type { ClientIssue } from "./types";
 
-/** "More info" on an issue: its short neutral explanation, in a dialog. */
-export function MoreInfo({ issue }: { issue: ClientIssue }) {
+/**
+ * "More info" on an issue, in a dialog: its title, its one-line summary (which the
+ * ranking rows leave out to stay short) and its short neutral explanation.
+ */
+export function MoreInfo({ issue, className }: { issue: ClientIssue; className?: string }) {
   const t = useTranslations("Survey");
   return (
     <Dialog>
@@ -24,8 +28,9 @@ export function MoreInfo({ issue }: { issue: ClientIssue }) {
         render={
           <Button
             variant="ghost"
-            className="text-muted-foreground h-9 gap-1 px-2 text-sm"
+            className={cn("text-muted-foreground h-9 gap-1 px-2 text-sm", className)}
             aria-label={t("moreInfoAbout", { title: issue.title })}
+            data-testid="more-info"
           />
         }
       >
@@ -35,8 +40,15 @@ export function MoreInfo({ issue }: { issue: ClientIssue }) {
       <DialogContent className="max-h-[85dvh] overflow-y-auto sm:max-w-lg">
         <DialogHeader>
           <DialogTitle>{issue.title}</DialogTitle>
-          <DialogDescription className="text-foreground text-base leading-relaxed">
-            {issue.moreInfo}
+          {/* Both paragraphs describe the dialog, so both are read when it opens. */}
+          <DialogDescription
+            render={<div />}
+            className="text-foreground flex flex-col gap-3 text-base leading-relaxed"
+          >
+            <p className="font-medium" data-testid="more-info-summary">
+              {issue.description}
+            </p>
+            <p data-testid="more-info-text">{issue.moreInfo}</p>
           </DialogDescription>
         </DialogHeader>
         <DialogFooter>

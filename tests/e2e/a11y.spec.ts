@@ -82,8 +82,11 @@ for (const locale of LOCALES) {
       await openSurvey(page, locale);
       await page.getByTestId("pool-item").first().getByTestId("add-to-ranking").click();
       await expectNoSeriousViolations(page, "ranking");
-      await page.getByTestId("pool-item").first().locator('[aria-haspopup="dialog"]').click();
+      // A ranked row's "more info": the title, the summary the row leaves out, the explanation.
+      await page.getByTestId("ranked-item").first().getByTestId("more-info").click();
       await expect(page.getByRole("dialog")).toBeVisible();
+      await expect(page.getByRole("dialog").getByTestId("more-info-summary")).not.toBeEmpty();
+      await expect(page.getByRole("dialog").getByTestId("more-info-text")).not.toBeEmpty();
       await expectNoSeriousViolations(page, "more-info dialog");
       await page.keyboard.press("Escape");
       await expect(page.getByRole("dialog")).toHaveCount(0);
