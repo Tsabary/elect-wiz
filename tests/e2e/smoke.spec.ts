@@ -2,53 +2,41 @@ import { expect, test } from "@playwright/test";
 import { issues, listedParties, LOCALES, researchedParties, versions } from "./helpers";
 
 test.describe("locale detection and switching", () => {
-  test("Hebrew browser language lands on /he", async ({ browser }) => {
+  for (const locale of ["he-IL", "en-US", "fr-FR"]) {
+    test(`a first visit lands on /he whatever the browser language (${locale})`, async ({
+      browser,
+    }) => {
+      const ctx = await browser.newContext({ locale });
+      const page = await ctx.newPage();
+      await page.goto("/");
+      await expect(page).toHaveURL(/\/he$/);
+      await ctx.close();
+    });
+  }
+
+  test("a manual switch persists across visits", async ({ browser }) => {
     const ctx = await browser.newContext({ locale: "he-IL" });
     const page = await ctx.newPage();
     await page.goto("/");
     await expect(page).toHaveURL(/\/he$/);
-    await ctx.close();
-  });
-
-  test("unknown browser language lands on /he (default)", async ({ browser }) => {
-    const ctx = await browser.newContext({ locale: "fr-FR" });
-    const page = await ctx.newPage();
-    await page.goto("/");
-    await expect(page).toHaveURL(/\/he$/);
-    await ctx.close();
-  });
-
-  test("English browser language lands on /en", async ({ browser }) => {
-    const ctx = await browser.newContext({ locale: "en-US" });
-    const page = await ctx.newPage();
-    await page.goto("/");
-    await expect(page).toHaveURL(/\/en$/);
-    await ctx.close();
-  });
-
-  test("manual switch overrides detection and persists across visits", async ({ browser }) => {
-    const ctx = await browser.newContext({ locale: "en-US" });
-    const page = await ctx.newPage();
-    await page.goto("/");
-    await expect(page).toHaveURL(/\/en$/);
     await page.getByTestId("language-switch").click();
-    await expect(page).toHaveURL(/\/he$/);
-    await expect(page.locator("html")).toHaveAttribute("lang", "he");
+    await expect(page).toHaveURL(/\/en$/);
+    await expect(page.locator("html")).toHaveAttribute("lang", "en");
 
-    // A later visit to "/" keeps Hebrew despite the English browser language.
+    // A later visit to "/" keeps English.
     const again = await ctx.newPage();
     await again.goto("/");
-    await expect(again).toHaveURL(/\/he$/);
+    await expect(again).toHaveURL(/\/en$/);
     const cookie = (await ctx.cookies()).find((c) => c.name === "NEXT_LOCALE");
-    expect(cookie?.value).toBe("he");
+    expect(cookie?.value).toBe("en");
     expect(cookie?.expires ?? 0).toBeGreaterThan(Date.now() / 1000 + 60 * 60 * 24 * 300);
 
-    // And switching back to English persists too.
+    // And switching back to Hebrew persists too.
     await again.getByTestId("language-switch").click();
-    await expect(again).toHaveURL(/\/en$/);
+    await expect(again).toHaveURL(/\/he$/);
     const third = await ctx.newPage();
     await third.goto("/");
-    await expect(third).toHaveURL(/\/en$/);
+    await expect(third).toHaveURL(/\/he$/);
     await ctx.close();
   });
 });

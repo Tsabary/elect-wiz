@@ -14,7 +14,7 @@ export const routing = defineRouting({
   locales,
   defaultLocale,
   localePrefix: "always",
-  // First visit: detect from Accept-Language (unknown languages fall back to Hebrew).
+  // First visit: always Hebrew (proxy.ts hides the browser language); after that the cookie below.
   localeDetection: true,
   // A manual switch is remembered across visits for a year.
   localeCookie: {
