@@ -119,14 +119,14 @@ function BallotArt({ rtl }: { rtl: boolean }) {
     <div
       style={{
         position: "absolute",
-        bottom: -40,
+        bottom: -70,
         ...(rtl ? { left: 76 } : { right: 76 }),
         width: 300,
         height: 330,
         display: "flex",
         // Kept small and low, in the corner the button leaves free, so it never
         // reaches the text above.
-        transform: "scale(0.5)",
+        transform: "scale(0.7)",
         transformOrigin: rtl ? "bottom left" : "bottom right",
       }}
     >
