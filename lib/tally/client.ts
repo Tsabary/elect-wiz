@@ -1,7 +1,8 @@
 /**
- * The browser side of the anonymous counts: two fire-and-forget calls. Nothing
+ * The browser side of the anonymous counts: fire-and-forget calls. Nothing
  * waits for them and a failed call changes nothing the user sees. They carry no
- * answers: a "result" call names only the result's top parties.
+ * answers: a "result" call names only the result's top parties, a "shared" call
+ * only whether the shared link held answers.
  */
 import { TALLY_MAX_PARTIES, TALLY_MIN_PARTIES, TALLY_PATH, type TallyCall } from "./counter";
 
@@ -29,4 +30,9 @@ export function tallyResult(partyIds: readonly string[], fetchImpl?: typeof fetc
   const parties = partyIds.slice(0, TALLY_MAX_PARTIES);
   if (parties.length < TALLY_MIN_PARTIES) return;
   sendTally({ kind: "result", parties }, fetchImpl);
+}
+
+/** Sent once per completed share (share sheet finished or link copied), never when cancelled. */
+export function tallyShared(withAnswers: boolean, fetchImpl?: typeof fetch): void {
+  sendTally({ kind: "shared", withAnswers }, fetchImpl);
 }

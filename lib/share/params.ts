@@ -1,7 +1,9 @@
 /**
  * Share URLs (plan APIs §2): `/{locale}/share/{partyIds}` where `partyIds` is the
- * comma-separated top match party IDs, in result order. Nothing else is encoded:
- * never answers (PRD), never poll data (research/legal-findings.md §3.1).
+ * comma-separated top match party IDs, in result order. Nothing else is in the
+ * path or query: never answers, never poll data (research/legal-findings.md §3.1).
+ * A link the user chose to share with their answers carries them in the fragment
+ * only (`answers.ts`), which never reaches the server, the proxy or the cache.
  */
 import { TOP_ENTRIES } from "@/lib/matching/contract";
 

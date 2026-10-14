@@ -14,6 +14,7 @@ import { RotateCcw } from "lucide-react";
 import { useTranslations } from "next-intl";
 import type { RefObject } from "react";
 import { FULL_ENTRIES, TOP_ENTRIES, type MatchResponse } from "@/lib/matching/contract";
+import type { MatchInput } from "@/lib/matching/score";
 import type { ClientIssue } from "@/components/survey/types";
 import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
@@ -22,12 +23,15 @@ import { ShareButton } from "./share/share-button";
 
 export function ResultView({
   result,
+  input,
   issues,
   serverBlackout,
   headingRef,
   onStartOver,
 }: {
   result: MatchResponse;
+  /** The ranking and answers the result was worked out from (for "share with my answers"). */
+  input: MatchInput;
   issues: ClientIssue[];
   /** The blackout state the page was rendered with; `PollContent` re-checks it in the browser. */
   serverBlackout: boolean;
@@ -149,6 +153,9 @@ export function ResultView({
       <ShareButton
         partyIds={result.entries.slice(0, TOP_ENTRIES).map((e) => e.partyId)}
         topName={top?.metadata.name ?? ""}
+        input={input}
+        issues={issues}
+        surveyContentVersion={result.meta.surveyContentVersion}
       />
 
       <div className="flex flex-col items-start gap-2">

@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from "vitest";
-import { tallyResult, tallySurveyStarted } from "./client";
+import { tallyResult, tallyShared, tallySurveyStarted } from "./client";
 import {
   counterStoreFromEnv,
   countersFor,
@@ -48,6 +48,27 @@ describe("tally body validation", () => {
     expect(parse({ kind: "result", parties: ["alpha", "beta", "listed-only"] })).toBeNull();
     expect(parse({ kind: "result", parties: ["alpha", "beta", 3] })).toBeNull();
     expect(parse({ kind: "result" })).toBeNull();
+  });
+
+  it("accepts a shared call that says only whether the link held answers", () => {
+    expect(parse({ kind: "shared", withAnswers: false })).toEqual({
+      kind: "shared",
+      withAnswers: false,
+    });
+    expect(parse({ kind: "shared", withAnswers: true })).toEqual({
+      kind: "shared",
+      withAnswers: true,
+    });
+    for (const body of [
+      { kind: "shared" },
+      { kind: "shared", withAnswers: "true" },
+      { kind: "shared", withAnswers: 1 },
+      { kind: "shared", withAnswers: null },
+      { kind: "shared", withAnswers: true, parties: ["alpha", "beta", "gamma"] },
+      { kind: "shared", withAnswers: true, answers: "1-abcd-0a1a2a3a4a" },
+    ]) {
+      expect(parse(body), JSON.stringify(body)).toBeNull();
+    }
   });
 
   it("rejects anything else", () => {
@@ -101,6 +122,11 @@ describe("day keys", () => {
 describe("counters", () => {
   it("count a started survey and nothing else", () => {
     expect(countersFor({ kind: "started" })).toEqual(["started"]);
+  });
+
+  it("count a shared link as without or with answers, and nothing else", () => {
+    expect(countersFor({ kind: "shared", withAnswers: false })).toEqual(["shared:plain"]);
+    expect(countersFor({ kind: "shared", withAnswers: true })).toEqual(["shared:answers"]);
   });
 
   it("count a result once, and each party in its place", () => {
@@ -209,9 +235,18 @@ describe("POST /api/tally", () => {
       ctx({ store }),
     );
     expect(result.status).toBe(204);
+    for (const withAnswers of [false, true, true]) {
+      const shared = await handleTallyRequest(
+        post(JSON.stringify({ kind: "shared", withAnswers })),
+        ctx({ store }),
+      );
+      expect(shared.status).toBe(204);
+    }
     expect(store.counts("tally:2026-10-14")).toEqual({
       started: 1,
       results: 1,
+      "shared:plain": 1,
+      "shared:answers": 2,
       "1st:beta": 1,
       "2nd:alpha": 1,
       "3rd:gamma": 1,
@@ -235,6 +270,9 @@ describe("POST /api/tally", () => {
       '{"kind":"started","extra":1}',
       '{"kind":"result","parties":["alpha","beta"]}',
       '{"kind":"result","parties":["alpha","beta","listed-only"]}',
+      '{"kind":"shared"}',
+      '{"kind":"shared","withAnswers":"yes"}',
+      '{"kind":"shared","withAnswers":false,"parties":["alpha","beta","gamma"]}',
     ]) {
       expect((await handleTallyRequest(post(body), ctx({ store }))).status, body).toBe(400);
     }
@@ -339,15 +377,17 @@ describe("the route's context", () => {
       env: { ...STORE, VERCEL_ENV: "preview" },
       fetchImpl,
     });
-    const res = await handleTallyRequest(
-      new Request(`https://site.test${TALLY_PATH}`, {
-        method: "POST",
-        body: '{"kind":"started"}',
-        headers: { "content-type": "application/json" },
-      }),
-      ctx,
-    );
-    expect(res.status).toBe(204);
+    for (const body of ['{"kind":"started"}', '{"kind":"shared","withAnswers":true}']) {
+      const res = await handleTallyRequest(
+        new Request(`https://site.test${TALLY_PATH}`, {
+          method: "POST",
+          body,
+          headers: { "content-type": "application/json" },
+        }),
+        ctx,
+      );
+      expect(res.status, body).toBe(204);
+    }
     expect(fetchImpl).not.toHaveBeenCalled();
   });
 
@@ -406,6 +446,18 @@ describe("tally calls from the survey", () => {
     expect(parseTallyCall(body, RESEARCHED)).not.toBeNull();
   });
 
+  it("send a shared call with only the kind and whether the link held answers", () => {
+    for (const withAnswers of [false, true]) {
+      const fetchImpl = ok();
+      tallyShared(withAnswers, fetchImpl);
+      const { url, init, body } = sent(fetchImpl);
+      expect(url).toBe(TALLY_PATH);
+      expect(init.keepalive).toBe(true);
+      expect(body).toEqual({ kind: "shared", withAnswers });
+      expect(parseTallyCall(body, RESEARCHED)).toEqual(body);
+    }
+  });
+
   it("send nothing for a result with fewer than three parties", () => {
     const fetchImpl = ok();
     tallyResult(["alpha", "beta"], fetchImpl);
@@ -421,6 +473,8 @@ describe("tally calls from the survey", () => {
       throw new Error("blocked");
     }) as unknown as typeof fetch;
     expect(() => tallyResult(["alpha", "beta", "gamma"], throwing)).not.toThrow();
+    expect(() => tallyShared(true, throwing)).not.toThrow();
+    expect(() => tallyShared(false, rejecting)).not.toThrow();
     // Give the rejected promise a turn: an unhandled rejection would fail the run.
     await new Promise((r) => setTimeout(r, 0));
   });

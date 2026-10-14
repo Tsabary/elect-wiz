@@ -140,12 +140,92 @@ test.describe("anonymous counts sent by the survey", () => {
   });
 });
 
+test.describe("anonymous counts sent by sharing", () => {
+  const sharedCalls = (tally: { calls: any[] }) =>
+    tally.calls.filter((c) => c.body?.kind === "shared");
+
+  test("a copied link counts once, saying only whether it held answers", async ({
+    page,
+    context,
+    isMobile,
+  }) => {
+    test.skip(isMobile, "clipboard permissions are granted on desktop only");
+    await context.grantPermissions(["clipboard-read", "clipboard-write"]);
+    const tally = recordTally(page);
+    await completeCase(page, "en", "joint-list-top");
+    await expect.poll(() => tally.calls.map((c) => c.body.kind)).toEqual(["started", "result"]);
+
+    await page.getByTestId("share-button").click();
+    await expect.poll(() => sharedCalls(tally)).toHaveLength(1);
+    await page.getByTestId("share-answers-button").click();
+    await expect.poll(() => sharedCalls(tally)).toHaveLength(2);
+    await page.waitForTimeout(SETTLE_MS);
+    expect(sharedCalls(tally)).toEqual([
+      { method: "POST", body: { kind: "shared", withAnswers: false } },
+      { method: "POST", body: { kind: "shared", withAnswers: true } },
+    ]);
+  });
+
+  test("the share sheet counts only a completed share; cancelling or a failed copy counts nothing", async ({
+    page,
+  }) => {
+    const tally = recordTally(page);
+    await completeCase(page, "he", "joint-list-top");
+    await expect.poll(() => tally.calls.map((c) => c.body.kind)).toEqual(["started", "result"]);
+    // A touch device whose share sheet the user closes, and whose clipboard is refused.
+    await page.evaluate(() => {
+      const w = window as any;
+      w.__shareOutcome = "cancel";
+      w.matchMedia = (q: string) => ({ matches: q.includes("coarse"), media: q }) as any;
+      Object.defineProperty(navigator, "share", {
+        configurable: true,
+        value: async () => {
+          if (w.__shareOutcome === "cancel") throw new DOMException("cancelled", "AbortError");
+        },
+      });
+      Object.defineProperty(navigator, "clipboard", {
+        configurable: true,
+        value: { writeText: async () => Promise.reject(new Error("denied")) },
+      });
+    });
+
+    await page.getByTestId("share-button").click();
+    await page.getByTestId("share-answers-button").click();
+    await page.waitForTimeout(SETTLE_MS);
+    expect(sharedCalls(tally)).toEqual([]);
+
+    // No share sheet and a refused clipboard: the link is left for copying by hand, not counted.
+    await page.evaluate(() => Object.defineProperty(navigator, "share", { value: undefined }));
+    await page.getByTestId("share-answers-button").click();
+    await expect(page.getByTestId("share-url")).toBeVisible();
+    await page.waitForTimeout(SETTLE_MS);
+    expect(sharedCalls(tally)).toEqual([]);
+
+    // A completed share counts once.
+    await page.evaluate(() => {
+      (window as any).__shareOutcome = "ok";
+      Object.defineProperty(navigator, "share", {
+        configurable: true,
+        value: async () => {},
+      });
+    });
+    await page.getByTestId("share-answers-button").click();
+    await expect.poll(() => sharedCalls(tally)).toHaveLength(1);
+    await page.waitForTimeout(SETTLE_MS);
+    expect(sharedCalls(tally)).toEqual([
+      { method: "POST", body: { kind: "shared", withAnswers: true } },
+    ]);
+  });
+});
+
 test.describe("POST /api/tally", () => {
   const ids = () => researchedParties().map((p) => p.id as string);
 
-  test("accepts the two kinds of call with no content in return", async ({ request }) => {
+  test("accepts every kind of call with no content in return", async ({ request }) => {
     const calls = [
       { kind: "started" },
+      { kind: "shared", withAnswers: false },
+      { kind: "shared", withAnswers: true },
       { kind: "result", parties: ids().slice(0, 3) },
       { kind: "result", parties: ids().slice(0, 4) },
       { kind: "result", parties: ids().slice(2, 6).reverse() },
@@ -178,6 +258,10 @@ test.describe("POST /api/tally", () => {
       ["an unknown party", { kind: "result", parties: [a, b, "does-not-exist"] }],
       ["parties that aren't strings", { kind: "result", parties: [1, 2, 3] }],
       ["parties as a string", { kind: "result", parties: `${a},${b},${c}` }],
+      ["shared without the flag", { kind: "shared" }],
+      ["shared with a string flag", { kind: "shared", withAnswers: "true" }],
+      ["shared with parties", { kind: "shared", withAnswers: false, parties: [a, b, c] }],
+      ["shared with answers smuggled in", { kind: "shared", withAnswers: true, answers: "x" }],
     ];
     for (const [label, data] of bad) {
       const res = await request.post("/api/tally", {

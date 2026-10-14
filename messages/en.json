@@ -46,7 +46,7 @@
     "heading": "Which party is closest to your positions?",
     "lead": "Rank the issues that matter most to you, say where you stand on each, and see which parties’ documented positions are closest to yours.",
     "duration": "Takes about 5–10 minutes.",
-    "privacyNote": "Your answers stay on your device and are never sent anywhere. We keep only anonymous counts.",
+    "privacyNote": "Your answers stay on your device unless you choose to share them in a link. We keep only anonymous counts.",
     "privacyLink": "Privacy & Terms",
     "stepsHeading": "How it works",
     "steps": {
@@ -104,7 +104,7 @@
           "Where the research found no documented position for a party on an issue, that issue adds only a little to the party’s match, and the result says that the party’s position is unclear. The result also says “unclear” where the research has only weak evidence of the party’s position and you picked a different position. Where the research shows that a party rejected a position, for example by voting against it, the result says the party disagrees with it, even if the party’s own position is close to it.",
           "A party’s actions count for more than its statements. This is applied when the party’s positions are recorded from the research. The recorded positions and the explanations shown in a result were each checked against the research by a separate AI step.",
           "Polls, party size and the electoral threshold play no part in the match. They appear only as factual notes on the result.",
-          "All of this is worked out on your own device. Your answers are never sent anywhere.",
+          "All of this is worked out on your own device. Your answers are never sent to the site.",
           "The result shows the five closest parties in full, and you can open the rest of the researched parties below them, in order. Parties next to each other in that order are often almost equally near to your answers, so a small difference in position means little. For each party you can see, issue by issue, whether it agrees, partly agrees or disagrees with the position you picked, or that its position is unclear, with a short explanation that links to the relevant part of its research page. Each party also comes with a few “also worth knowing” points about notable positions outside the 10 issues. These points don’t affect the match.",
           "If no party matches your positions closely, the result says so instead of presenting a weak match as a strong one."
         ]
@@ -144,15 +144,15 @@
   },
   "Privacy": {
     "title": "Privacy & Terms",
-    "description": "Your answers stay on your device and are never sent anywhere. We keep only anonymous counts. Here is exactly what happens to your information.",
-    "intro": "In short: no accounts, no personal details, and your answers never leave your device.",
+    "description": "Your answers stay on your device unless you choose to share a link that contains them. We keep only anonymous counts. Here is exactly what happens to your information.",
+    "intro": "In short: no accounts, no personal details, and your answers never leave your device unless you choose to share a link with your answers.",
     "tocLabel": "On this page",
     "sections": {
       "summary": {
         "title": "Summary",
         "paragraphs": [
-          "Your answers stay on your device. Your result is worked out there, and your answers are never sent to us or to anyone else.",
-          "The only things the site receives are two anonymous counts: that a survey was started, and which parties came out as the closest match and the three next closest.",
+          "Your answers stay on your device. Your result is worked out there, and your answers are never sent to us. They leave your device only if you choose to share a link with your answers, which then contains them.",
+          "The only things the site receives are three anonymous counts: that a survey was started, which parties came out as the closest match and the three next closest, and that a result link was shared.",
           "There are no accounts and no login, and we don’t ask for your name, email, phone number or any other personal detail."
         ]
       },
@@ -166,20 +166,21 @@
       "device": {
         "title": "Progress and result saved on your device",
         "paragraphs": [
-          "Your progress and answers are saved only in your own browser, so you can close the page and come back to carry on with the survey or see your result again. They are never sent anywhere. A finished survey is kept for 7 days from when its result was first shown, and is then deleted the next time the site is opened. Once polls close, anything still saved is deleted the next time the site is opened. Starting over deletes them straight away, and so does clearing this site’s data in your browser."
+          "Your progress and answers are saved only in your own browser, so you can close the page and come back to carry on with the survey or see your result again. They aren’t sent anywhere unless you share a link with your answers. A finished survey is kept for 7 days from when its result was first shown, and is then deleted the next time the site is opened. Once polls close, anything still saved is deleted the next time the site is opened. Starting over deletes them straight away, and so does clearing this site’s data in your browser."
         ]
       },
       "counts": {
         "title": "Anonymous counts",
         "paragraphs": [
-          "The site receives two anonymous counts. One is sent when a new survey is started. The other is sent when a result is shown, and names only the party that came out as the closest match and the three next closest. Neither contains your answers or anything that identifies you.",
-          "The counts are kept only as daily totals, in a database service the site uses. They are for the site’s operator only and are never published. The first one counts surveys started, not people."
+          "The site receives three anonymous counts. One is sent when a new survey is started. Another is sent when a result is shown, and names only the party that came out as the closest match and the three next closest. The third is sent when you share a link to your result, and says only that a link was shared and whether it included your answers: not the answers themselves, nor the parties. None of them contains your answers or anything that identifies you.",
+          "The counts are kept only as daily totals, in a database service the site uses. They are for the site’s operator only and are never published. They count surveys started, results and shares, not people."
         ]
       },
       "sharing": {
         "title": "Sharing",
         "paragraphs": [
-          "If you share your result, the link contains only the names of your matched parties and the site language. It never contains your answers."
+          "If you share your result, you choose what the link contains. The usual link contains only your matched parties and the site language, never your answers.",
+          "If you choose to share a link with your answers, it also contains your ranking of the issues and the position you chose on each, so anyone who has the link can see them. They sit in the part of the address after “#”, which browsers don’t send to the site, so they still never reach us: the result is worked out again in the browser of whoever opens the link. Opening a shared link isn’t counted. Sharing one is counted anonymously, as described above."
         ]
       },
       "cookies": {
@@ -355,8 +356,10 @@
   },
   "Share": {
     "heading": "Share",
-    "explainer": "The link shows only your matched parties and invites others to take the survey. It never includes your answers.",
-    "button": "Share my result",
+    "explainer": "The link shows only your matched parties and invites others to take the survey. It doesn’t include your answers.",
+    "button": "Share without my answers",
+    "answersButton": "Share with my answers",
+    "answersNote": "This link also shows which position you chose on each issue.",
     "copied": "Link copied.",
     "manualCopy": "Copy this link:",
     "shareTitle": "Party Matcher",
@@ -366,7 +369,11 @@
     "metaDescription": "A non-partisan tool for the 2026 Knesset election. Rank the issues, say where you stand, and see which parties are closest to your positions.",
     "landingEyebrow": "A shared result. The closest match was:",
     "alsoClose": "Next closest:",
-    "landingNote": "Based on someone else’s answers, which are never shared.",
+    "landingNote": "Based on someone else’s answers, which aren’t included in this link.",
+    "landingNoteAnswers": "Worked out from the answers below, which the person who shared this link chose to include.",
+    "answersHeading": "The shared answers",
+    "answersIntro": "The issues in order of importance, and the position chosen on each.",
+    "answersUnavailable": "The answers in this link can’t be shown, so only the shared result appears.",
     "landingGenericHeading": "Which party is closest to your positions?",
     "inviteHeading": "Which party is closest to your positions?",
     "inviteBody": "Rank the issues that matter to you, say where you stand, and see which parties’ documented positions are closest to yours. Takes about 5–10 minutes.",

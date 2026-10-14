@@ -4,7 +4,15 @@
  * 2nd, 3rd and 4th). Pure, so the arithmetic can be unit-tested; the store is
  * read by `scripts/tally-report.ts`.
  */
-import { COUNTER_RESULTS, COUNTER_STARTED, PLACES, placeCounter, type Place } from "./counter";
+import {
+  COUNTER_RESULTS,
+  COUNTER_SHARED_ANSWERS,
+  COUNTER_SHARED_PLAIN,
+  COUNTER_STARTED,
+  PLACES,
+  placeCounter,
+  type Place,
+} from "./counter";
 
 /** One day's counters as stored: field name → count. */
 export type DayCounts = Record<string, number>;
@@ -21,9 +29,19 @@ export interface PartyRow {
 
 export interface TallyReport {
   /** The days with any counts, oldest first. */
-  days: { day: string; started: number; results: number }[];
+  days: {
+    day: string;
+    started: number;
+    results: number;
+    sharedPlain: number;
+    sharedAnswers: number;
+  }[];
   started: number;
   results: number;
+  /** Links shared without answers. */
+  sharedPlain: number;
+  /** Links shared with answers. */
+  sharedAnswers: number;
   /** Every researched party, best first. */
   parties: PartyRow[];
 }
@@ -44,9 +62,12 @@ export function buildTallyReport(
       day,
       started: byDay[day][COUNTER_STARTED] ?? 0,
       results: byDay[day][COUNTER_RESULTS] ?? 0,
+      sharedPlain: byDay[day][COUNTER_SHARED_PLAIN] ?? 0,
+      sharedAnswers: byDay[day][COUNTER_SHARED_ANSWERS] ?? 0,
     }));
-  const started = days.reduce((n, d) => n + d.started, 0);
-  const results = days.reduce((n, d) => n + d.results, 0);
+  const total = (k: "started" | "results" | "sharedPlain" | "sharedAnswers") =>
+    days.reduce((n, d) => n + d[k], 0);
+  const [started, results] = [total("started"), total("results")];
 
   const ids = new Set(partyIds);
   for (const counts of Object.values(byDay)) {
@@ -70,7 +91,14 @@ export function buildTallyReport(
     for (const p of PLACES) if (a.places[p] !== b.places[p]) return b.places[p] - a.places[p];
     return a.partyId < b.partyId ? -1 : a.partyId > b.partyId ? 1 : 0;
   });
-  return { days, started, results, parties };
+  return {
+    days,
+    started,
+    results,
+    sharedPlain: total("sharedPlain"),
+    sharedAnswers: total("sharedAnswers"),
+    parties,
+  };
 }
 
 /** Plain-text table for the terminal. `nameOf` gives a party's display name. */
@@ -90,6 +118,8 @@ export function formatTallyReport(
   lines.push(
     `Surveys started: ${report.started}   Results shown: ${report.results}` +
       (report.started ? `   (${pct(report.results / report.started)} reached a result)` : ""),
+    `Links shared: ${report.sharedPlain + report.sharedAnswers}   ` +
+      `without answers: ${report.sharedPlain}   with answers: ${report.sharedAnswers}`,
     "",
   );
 
@@ -107,14 +137,17 @@ export function formatTallyReport(
   lines.push(fmt(head), widths.map((w) => "-".repeat(w)).join("  "), ...rows.map(fmt));
 
   if (showDays) {
-    lines.push("", "Per day:", "Day         Started  Results");
+    lines.push("", "Per day:", "Day         Started  Results  Shared  +Answers");
     for (const d of report.days) {
-      lines.push(`${d.day}  ${String(d.started).padStart(7)}  ${String(d.results).padStart(7)}`);
+      lines.push(
+        `${d.day}  ${String(d.started).padStart(7)}  ${String(d.results).padStart(7)}` +
+          `  ${String(d.sharedPlain).padStart(6)}  ${String(d.sharedAnswers).padStart(8)}`,
+      );
     }
   }
   lines.push(
     "",
-    "Counts are of surveys and results, not people, and the endpoint is public, so treat them as approximate.",
+    "Counts are of surveys, results and shares, not people, and the endpoint is public, so treat them as approximate.",
   );
   return lines.join("\n");
 }
