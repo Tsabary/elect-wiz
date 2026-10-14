@@ -244,6 +244,21 @@ for (const locale of LOCALES) {
       await expect(page.locator(`[id="${anchor}"]`)).toBeInViewport();
     });
 
+    test("a closed 'show all' row shows its joint list or poll note under the name", async ({
+      page,
+    }) => {
+      // Here the list polling below the threshold ("lighthouse") is the one behind "show all".
+      await completeCase(page, locale, "weak-match");
+      await page.getByTestId("show-all").click();
+      const row = page.getByTestId("result-row").filter({ has: page.getByTestId("row-facts") });
+      await expect(row.first()).toBeVisible();
+      await expect(row.first().getByTestId("row-facts")).toBeVisible();
+      // Once open, the same facts lead the details instead.
+      await row.first().locator("summary").click();
+      await expect(row.first().getByTestId("row-facts")).toBeHidden();
+      await expect(row.first().getByTestId("breakdown")).toBeVisible();
+    });
+
     test("a 'show all' row opens to the same facts, breakdown and points as a card", async ({
       page,
     }) => {

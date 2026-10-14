@@ -37,8 +37,17 @@ const textLangProps = (lang: MatchEntry["textsLang"]) =>
 /**
  * The registry facts under a party's name: joint list, poll note, limited
  * information. The ballot letters are on the slip shown beside the name.
+ * `brief` leaves out the limited-information note, for a collapsed row.
  */
-function EntryFacts({ entry, serverBlackout }: { entry: MatchEntry; serverBlackout: boolean }) {
+function EntryFacts({
+  entry,
+  serverBlackout,
+  brief = false,
+}: {
+  entry: MatchEntry;
+  serverBlackout: boolean;
+  brief?: boolean;
+}) {
   const t = useTranslations("Result");
   const m = entry.metadata;
   return (
@@ -55,7 +64,7 @@ function EntryFacts({ entry, serverBlackout }: { entry: MatchEntry; serverBlacko
           </p>
         </PollContent>
       )}
-      {m.limitedInfo && (
+      {m.limitedInfo && !brief && (
         <p role="note" className="note" data-testid="result-limited-info">
           <strong>{t("limitedInfoTitle")}</strong> {t("limitedInfoBody")}
         </p>
@@ -189,7 +198,8 @@ export function ResultEntryCard({
 
 /**
  * One of the parties behind "show all": a compact row that opens to the same
- * facts, breakdown and points as a full card.
+ * facts, breakdown and points as a full card. While closed, the joint list and
+ * poll note show under the name, as on the cards above.
  */
 export function ResultEntryRow({
   entry,
@@ -203,8 +213,9 @@ export function ResultEntryRow({
   serverBlackout: boolean;
 }) {
   const t = useTranslations("Result");
+  const m = entry.metadata;
   return (
-    <li data-testid="result-row" data-party-id={entry.partyId} className="sheet">
+    <li data-testid="result-row" data-party-id={entry.partyId} className="sheet group/row">
       <details className="group">
         {/* A flex summary has no native marker, so the chevron shows the open state. */}
         <summary className="flex min-h-11 cursor-pointer list-none items-center gap-2 px-4 py-2.5 [&::-webkit-details-marker]:hidden">
@@ -226,6 +237,15 @@ export function ResultEntryRow({
           <ResearchLink entry={entry} />
         </div>
       </details>
+      {/* Outside <summary>, which must not hold links; once open, the same facts lead the details. */}
+      {(m.isJointList || m.pollNote) && (
+        <div
+          className="flex flex-col gap-1 ps-13 pe-4 pb-3 group-has-[details[open]]/row:hidden"
+          data-testid="row-facts"
+        >
+          <EntryFacts entry={entry} serverBlackout={serverBlackout} brief />
+        </div>
+      )}
     </li>
   );
 }
