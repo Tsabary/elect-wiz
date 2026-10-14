@@ -92,3 +92,11 @@ Every "open" row in the fourth-batch table is closed by this section. Changes we
 |---|---|---|---|---|---|
 | yesodot-yisrael | `content/matching/texts/en/yesodot-yisrael.json` (25 texts: 22 options + all 3 points; listed with dates in `research/review/matching/texts-he-yesodot-yisrael.md`) | texts describing events from November 2022 to 1 July 2026 | Call Chili Tropper "party leader" for dates before the party was registered (7 July 2026); the research has him as a Blue and White / National Unity MK, and a minister from 12 October 2023 to 13 June 2024, in that period. Suggested wording: "Chili Tropper, who now leads the party,". The Hebrew mirrors the English and should follow whatever is decided. | 7d writer and parity check | open, owner to decide |
 | yashar-leyisrael | `content/matching/texts/en/yashar-leyisrael.json` | judea-samaria / `separation-two-states` and `two-states-pre-1967-border` | Call Chili Tropper one of "the party's top candidates"; he is No. 6 on the joint list but leads the partner party, Yesodot Yisrael, not Yashar. "the list's top candidates" would be accurate. Pre-existing wording. Low weight. | 7d parity check | open, owner to decide (low) |
+
+## Decisions on the final-batch items (2026-10-14)
+
+Both rows of the final-batch table are closed. Changes were made in English and Hebrew together; a separate agent wrote them and another checked them, with no findings.
+
+1. **yesodot-yisrael, "party leader" before 7 July 2026:** fixed in 25 texts (22 options, 3 points). Where Tropper's first mention in a text is about an earlier event, it now reads "Chili Tropper, who now leads the party," / "חילי טרופר, שעומד היום בראש המפלגה,". Where the text already said "then a minister in the emergency government", the two are combined. The seven texts whose first mention is dated on or after 7 July 2026 keep "party leader".
+2. **yashar-leyisrael, "the party's top candidates":** fixed in both judea-samaria texts: "the list's top candidates" / "מהמועמדים הבכירים ברשימה".
+
