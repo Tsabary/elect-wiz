@@ -23,7 +23,7 @@ Read this first. The sections below were written for the old direction and have 
 The site counts, per day, surveys started and results shown, and per party how often it was the top match and a runner-up (task 2.6; `lib/tally/`, `POST /api/tally`). Until a store is connected the route accepts the calls and counts nothing, so this is needed only before launch (task 5.2).
 
 - **What to create:** one Upstash Redis database (the free tier is enough), for example through the Vercel Marketplace.
-- **The two settings the site reads** (server side only; set them as deployment secrets): `UPSTASH_REDIS_REST_URL` and `UPSTASH_REDIS_REST_TOKEN`, with the REST URL and the standard (read-write) REST token from the database's page. Connecting the database through Vercel may add them under these same names.
+- **The two settings the site reads** (server side only; set them as deployment secrets): `UPSTASH_REDIS_REST_URL` and `UPSTASH_REDIS_REST_TOKEN` (the code also accepts `KV_REST_API_URL` and `KV_REST_API_TOKEN`, the names the Vercel Marketplace may set), with the REST URL and the standard (read-write) REST token from the database's page. Connecting the database through Vercel may add them under these same names.
 - **Reading the counts:** in the Upstash console's data browser. Each day is one hash named `tally:<YYYY-MM-DD>` (the date in Israel), with the fields `started`, `results`, `top:<partyId>` and `runner-up:<partyId>`. The counts are approximate: the endpoint is public and each count is of calls, not of people.
 
 ## 1. Where things stand

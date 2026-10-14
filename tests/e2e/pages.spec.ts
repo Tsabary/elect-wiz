@@ -74,6 +74,24 @@ for (const locale of LOCALES) {
       await expect(page).toHaveURL(new RegExp(`/${locale}$`));
     });
 
+    test("the footer's credits button opens a dialog with the name, profile links and email", async ({
+      page,
+    }) => {
+      await page.goto(`/${locale}`);
+      await page.getByTestId("credit-open").click();
+      const dialog = page.getByTestId("credit-dialog");
+      await expect(dialog.getByRole("heading")).toHaveText(
+        locale === "he" ? "ינאי צבארי" : "Yanay Tsabary",
+      );
+      await expect(dialog.locator('a[href="https://x.com/yantsab"]')).toBeVisible();
+      await expect(
+        dialog.locator('a[href="https://www.linkedin.com/in/yanay-zabary/"]'),
+      ).toBeVisible();
+      await expect(dialog.locator('a[href="mailto:yanaycodes@gmail.com"]')).toBeVisible();
+      await page.keyboard.press("Escape");
+      await expect(dialog).toBeHidden();
+    });
+
     test("the intro has the privacy note, duration and start button", async ({ page }) => {
       await page.goto(`/${locale}`);
       await expect(

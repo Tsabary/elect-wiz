@@ -151,6 +151,13 @@ describe("Upstash store", () => {
     ).not.toBeNull();
   });
 
+  it("also reads the names the Vercel Marketplace sets", () => {
+    expect(
+      counterStoreFromEnv({ KV_REST_API_URL: "https://x.upstash.io", KV_REST_API_TOKEN: "t" }),
+    ).not.toBeNull();
+    expect(counterStoreFromEnv({ KV_REST_API_URL: "https://x.upstash.io" })).toBeNull();
+  });
+
   it("increments a day's counters in one transaction", async () => {
     const fetchImpl = vi.fn(async () => new Response("[]", { status: 200 }));
     const store = createUpstashCounterStore("https://x.upstash.io/", "secret", fetchImpl);

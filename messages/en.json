@@ -16,7 +16,14 @@
     "footerLabel": "Site information"
   },
   "Footer": {
-    "neutrality": "Non-partisan and independent. No party funds, influences or advertises on this site. This is a decision aid, not a voting recommendation."
+    "neutrality": "Non-partisan and independent. No party funds, influences or advertises on this site. This is a decision aid, not a voting recommendation.",
+    "credit": {
+      "open": "Credits",
+      "builtBy": "Built by",
+      "name": "Yanay Tsabary",
+      "linksLabel": "Find me on",
+      "close": "Close"
+    }
   },
   "Preview": {
     "fictional": "Preview version: the parties shown are fictional samples, not real parties."

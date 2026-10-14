@@ -170,13 +170,17 @@ export function createUpstashCounterStore(
   };
 }
 
-/** The configured store, or null when either setting is missing (local development, tests). */
+/**
+ * The configured store, or null when either setting is missing (local development, tests).
+ * Reads Upstash's own names first, then the `KV_REST_API_*` names that connecting the
+ * database through the Vercel Marketplace may set instead.
+ */
 export function counterStoreFromEnv(
   env: Record<string, string | undefined> = process.env,
   fetchImpl: typeof fetch = fetch,
 ): CounterStore | null {
-  const url = env.UPSTASH_REDIS_REST_URL?.trim();
-  const token = env.UPSTASH_REDIS_REST_TOKEN?.trim();
+  const url = (env.UPSTASH_REDIS_REST_URL || env.KV_REST_API_URL)?.trim();
+  const token = (env.UPSTASH_REDIS_REST_TOKEN || env.KV_REST_API_TOKEN)?.trim();
   if (!url || !token) return null;
   return createUpstashCounterStore(url, token, fetchImpl);
 }

@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { CreditDialog } from "./credit-dialog";
 
 export function SiteFooter() {
   const t = useTranslations("Footer");
@@ -17,6 +18,16 @@ export function SiteFooter() {
         <div className="flex flex-col gap-3">
           <p className="display text-ink-foreground text-xl">{m("siteName")}</p>
           <p className="max-w-prose leading-relaxed">{t("neutrality")}</p>
+          <CreditDialog
+            className={link}
+            labels={{
+              open: t("credit.open"),
+              builtBy: t("credit.builtBy"),
+              name: t("credit.name"),
+              linksLabel: t("credit.linksLabel"),
+              close: t("credit.close"),
+            }}
+          />
         </div>
         <nav aria-label={nav("footerLabel")}>
           <ul className="flex flex-wrap gap-x-6 sm:flex-col">
