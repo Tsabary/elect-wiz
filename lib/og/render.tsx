@@ -58,9 +58,46 @@ function line(text: string, rtl: boolean, max = 60): string {
   return rtl && hasRtl(clipped) ? visualRtl(clipped) : clipped;
 }
 
-function sizeFor(text: string): number {
-  const n = Array.from(text).length;
-  return n <= 18 ? 84 : n <= 28 ? 68 : n <= 40 ? 54 : 44;
+/** Usable text width: the image's 1200px less the side padding. */
+const TEXT_WIDTH = 1200 - 2 * 76;
+
+/**
+ * Breaks text into lines of at most `perLine` characters, at spaces. The
+ * renderer would wrap by itself, but only left to right: a wrapped Hebrew line
+ * pair comes out bottom line first. So lines are broken here, in logical order,
+ * and each is made visual on its own. Past `maxLines` the last line is clipped.
+ */
+function wrap(text: string, perLine: number, maxLines: number): string[] {
+  const lines: string[] = [];
+  let current = "";
+  for (const word of text.split(/\s+/).filter(Boolean)) {
+    const next = current ? `${current} ${word}` : word;
+    if (Array.from(next).length <= perLine || !current) current = next;
+    else {
+      lines.push(current);
+      current = word;
+    }
+  }
+  if (current) lines.push(current);
+  if (lines.length <= maxLines) return lines;
+  const kept = lines.slice(0, maxLines);
+  const last = Array.from(kept[maxLines - 1])
+    .slice(0, perLine - 1)
+    .join("");
+  kept[maxLines - 1] = `${last}…`;
+  return kept;
+}
+
+/** Characters that fit on a line at a font size (a rough average glyph width). */
+const perLine = (size: number) => Math.floor(TEXT_WIDTH / (size * 0.52));
+
+/** The largest headline size at which the text fits in two lines, and its lines. */
+function headlineLines(text: string): { size: number; lines: string[] } {
+  for (const size of [84, 70, 60]) {
+    const lines = wrap(text, perLine(size), 3);
+    if (lines.length <= 2) return { size, lines };
+  }
+  return { size: 52, lines: wrap(text, perLine(52), 2) };
 }
 
 export interface OgContent {
@@ -82,11 +119,15 @@ function BallotArt({ rtl }: { rtl: boolean }) {
     <div
       style={{
         position: "absolute",
-        bottom: -116,
+        bottom: -40,
         ...(rtl ? { left: 76 } : { right: 76 }),
         width: 300,
         height: 330,
         display: "flex",
+        // Kept small and low, in the corner the button leaves free, so it never
+        // reaches the text above.
+        transform: "scale(0.5)",
+        transformOrigin: rtl ? "bottom left" : "bottom right",
       }}
     >
       <div
@@ -161,6 +202,7 @@ function BallotArt({ rtl }: { rtl: boolean }) {
 export async function renderOgImage(c: OgContent): Promise<ImageResponse> {
   const align = c.rtl ? "flex-end" : "flex-start";
   const text = { display: "flex", justifyContent: align, width: "100%" } as const;
+  const headline = headlineLines(c.headline);
   return new ImageResponse(
     <div
       style={{
@@ -213,26 +255,41 @@ export async function renderOgImage(c: OgContent): Promise<ImageResponse> {
           ) : null}
           <div
             style={{
-              ...text,
-              fontSize: sizeFor(c.headline),
+              display: "flex",
+              flexDirection: "column",
+              alignItems: align,
+              width: "100%",
+              fontSize: headline.size,
               fontWeight: 700,
               fontFamily: DISPLAY,
               lineHeight: 1.1,
             }}
           >
-            {line(c.headline, c.rtl)}
+            {headline.lines.map((l, i) => (
+              <div key={i} style={{ display: "flex" }}>
+                {line(l, c.rtl)}
+              </div>
+            ))}
           </div>
           {c.secondary ? (
             <div
               style={{
-                ...text,
+                display: "flex",
+                flexDirection: "column",
+                alignItems: align,
+                width: "100%",
                 fontSize: 32,
                 fontWeight: 400,
                 fontFamily: REGULAR,
                 color: INK_SOFT,
+                lineHeight: 1.3,
               }}
             >
-              {line(c.secondary, c.rtl, 80)}
+              {wrap(c.secondary, perLine(32), 2).map((l, i) => (
+                <div key={i} style={{ display: "flex" }}>
+                  {line(l, c.rtl, 80)}
+                </div>
+              ))}
             </div>
           ) : null}
         </div>
