@@ -411,10 +411,10 @@ Points the author flagged:
 - Hebrew edition by: Stage 5a agent (Sonnet) · Parity check by: Stage 5b agent (Opus, different)
 - Sections/anchors: identical ✔ (all 29 headings, same order; issue headings match `he.title`)
 - Sources: 136 entries, identical count, order, titles and URLs ✔ · `[n]` citations identical on every line ✔ · closest-option IDs identical ✔ · evidence-tier tags identical ✔
-- Claims compared: ~320 (sentence/clause level, every paragraph and bullet) · Differences found: 22 · Fixed: 21 · Unresolved: 1
+- Claims compared: ~320 (sentence/clause level, every paragraph and bullet) · Differences found: 22 · Fixed: 21 · Unresolved: 0 (the English question was resolved by the owner in commit 7451c62)
 | Anchor | Difference | Resolution |
 |---|---|---|
-| leadership | English Faten Ghattas bullet says "he holds a doctorate… and directs" then "chose her"; the registry and the rest of the English treat Ghattas as a woman. Hebrew uses feminine throughout ("בעלת דוקטורט ומנהלת"). | Unresolved: English questioned (pronoun "he" looks like an English typo for "she"). Hebrew left feminine; English not edited. |
+| leadership | English Faten Ghattas bullet says "he holds a doctorate… and directs" then "chose her"; the registry and the rest of the English treat Ghattas as a woman. Hebrew uses feminine throughout ("בעלת דוקטורט ומנהלת"). | Resolved by the owner (7451c62, decision 1 in research/review/hebrew-english-questioned.md): English now "she holds a doctorate". Hebrew was already feminine ("בעלת דוקטורט ... ומנהלת", "בחרה בה") and matches the new English |
 | overview | naturalness (2): "ברובם של המקרים" → "לרוב"; "אין משא ומתן מתנהל" → "אין כרגע משא ומתן" | Fixed |
 | issue-cost-of-living | naturalness (2): typo "ששלמות" → "שמשלמות"; ambiguous "הצבעותיה" (could read as the Joint List's) → "ההצבעות והצעות החוק של חד"ש" | Fixed |
 | issue-gaza | meaning drift (2): "Throughout the war" was "במהלך המלחמה" → "לאורך כל המלחמה"; Odeh quote "end the war on Gaza" was "המלחמה בעזה" → "המלחמה על עזה". naturalness (1): ungrammatical "כשההפסקת אש" → "כשהפסקת האש" | Fixed |
@@ -429,6 +429,7 @@ Points the author flagged:
 | information-availability | naturalness (2): "המפלגה הקומוניסטית של ישראל" → "הישראלית"; "הותאמו לדיווחים" → "הוצלבו עם דיווחים" | Fixed |
 - Also checked and correct as flagged by the author: Cassif's "הפיכה פשיסטית במלוא עוזה" stays quoted and attributed; "כיבוש" appears only in attributed phrasing ("מה שכינה הכיבוש") and in a source title; the attorney general is feminine for the incumbent; "Tentative" = "בהסתייגות" (no זמני/זמנית); failed votes put the majority first; names match the registry (פאתן ג'טאס, יוסף ג'בארין, אלתג'מוע אלווטני אלדמוקרטי); no "נחקרה/שנחקרו"; no avoid.he term (the only hit, "שחורים", is part of the proper name "הפנתרים השחורים"); no Latin acronyms in prose; dates day first.
 - Validation: no error names the file ✔ (the 4 remaining errors are all about research/he/byachad-bennett.md)
+- Re-check after owner corrections (7451c62, 14 October 2026): pass. EN "she holds a doctorate in political science and directs" = HE "בעלת דוקטורט במדעי המדינה ומנהלת"; the name matches the registry (פאתן ג'טאס / Faten Ghattas); the Hebrew is unchanged and needs no change. `pnpm validate:content` passed.
 
 ## yisrael-beytenu (checked 2026-10-13; EN researchedAsOf 2026-10-07)
 - Hebrew edition by: Stage 5a agent (Sonnet) · Parity check by: Stage 5b agent (Opus, different)
@@ -539,7 +540,7 @@ Points the author flagged:
 ## atid-echad (checked 2026-10-13; EN researchedAsOf 2026-10-07)
 - Hebrew edition by: Stage 5a agent (Sonnet) · Parity check by: Stage 5b agent (Opus, different)
 - Sections/anchors: identical ✔ (9 sections, 10 issue sub-sections, 8 other-position sub-sections; issue headings match `he.title`)
-- Claims compared: ~340 (every sentence, bullet and table row) · Differences found: 31 · Fixed: 30 · Unresolved: 1
+- Claims compared: ~340 (every sentence, bullet and table row) · Differences found: 31 · Fixed: 30 · Unresolved: 0 (the English question was resolved by the owner in commit 7451c62)
 - Checked by script and by reading: `[n]` citations identical line by line; evidence-tier tags on the same claims; option IDs on all 10 closest-option lines identical (tag reads exactly "**האפשרות/ות הקרובה/ות:**"); Sources list byte-identical to English (89 entries, same order and URLs); no `avoid.he` glossary term in the body; no "נחקרה/שנחקרו"; no "זמני/זמנית"; dates day first.
 
 | Anchor | Difference | Resolution |
@@ -560,16 +561,17 @@ Points the author flagged:
 | issue-religion-and-state | naturalness: "לא מוכנים לתת למכור" | Fixed: "לתת להם למכור" (1) |
 | coalition | naturalness: "שרטוט קווים אדומים" (×3), "את הישארות" | Fixed: "הצבת קווים אדומים", "את ההישארות" (4) |
 | track-record | spelling: "שקויימה" | Fixed: "שקוימה" (1) |
-| leadership / track-record vs issue-judea-samaria | English questioned: the same Likud–Religious Zionism coalition agreement is "signed on 1 December 2022" [20] in Leadership and the track-record table, but "signed on 28 December 2022" [89] in the Judea and Samaria contradiction bullet. The English contradicts itself on the signing date (likely: agreed/initial signing 1 Dec per the Ynetnews report, final signed copy tabled 28 Dec). Hebrew mirrors the English exactly. | Unresolved (English questioned): English should reconcile the dates or say which signing each refers to |
+| leadership / track-record vs issue-judea-samaria | English questioned: the same Likud–Religious Zionism coalition agreement is "signed on 1 December 2022" [20] in Leadership and the track-record table, but "signed on 28 December 2022" [89] in the Judea and Samaria contradiction bullet. The English contradicts itself on the signing date (likely: agreed/initial signing 1 Dec per the Ynetnews report, final signed copy tabled 28 Dec). Hebrew mirrors the English exactly. | Resolved by the owner (7451c62, decision 3 in research/review/hebrew-english-questioned.md): the contradiction bullet now says "signed in its final form on 28 December 2022" [89], and the Hebrew says "שנחתם בנוסחו הסופי ב-28 בדצמבר 2022". The 1 December mentions [20] are unchanged in both. Hebrew matches the new English |
 
 - Not questioned: October 7 inquiry. The English says the government decided "not to set up a state commission of inquiry and instead to promote a commission of inquiry" whose composition reflects broad agreement; source [28]'s headline "תוקם ועדת חקירה לא ממלכתית" says the same thing, so the English is consistent. Hebrew wording matches the glossary ("ועדת חקירה ממלכתית").
 - Terms checked and kept: "מתיישבים" for settlers (neutral; no glossary entry, no avoid term); quoted "יישובים צעירים" (attributed as the ministry's own term), "מפלגת מדף" (attributed to the press), "טרור לאומני" (inside quotation marks, attributed to the security chiefs and to Strock's reply, as in the English); "גילוי דעת" for the Knesset declaratory motion; failed votes put the majority first ("נדחתה ברוב של 66 מול 14", "56 מול 32").
 - Validation: no error names the file ✔ (`pnpm validate:content` passed)
+- Re-check after owner corrections (7451c62, 14 October 2026): pass. EN "signed in its final form on 28 December 2022" = HE "שנחתם בנוסחו הסופי ב-28 בדצמבר 2022" ("in its final form" = "בנוסחו הסופי", date day first, citation [89] unchanged); nothing else in the bullet changed. `pnpm validate:content` passed.
 
 ## byachad-bennett (checked 2026-10-13; EN researchedAsOf 2026-10-06)
 - Hebrew edition by: Stage 5a agent (Sonnet) · Parity check by: Stage 5b agent (Opus, different)
 - Sections/anchors: identical ✔ (31 headings, same order; frontmatter identical except `lang: he`)
-- Claims compared: ~390 (every paragraph, bullet and sentence in all sections) · Differences found: 12 · Fixed: 11 · Unresolved: 1
+- Claims compared: ~390 (every paragraph, bullet and sentence in all sections) · Differences found: 12 · Fixed: 11 · Unresolved: 0 (the English question was resolved by the owner in commit 7451c62)
 | Anchor | Difference | Resolution |
 |---|---|---|
 | overview | naturalness: English glosses of the party and list names, "(Together led by Bennett – Restoring Hope)" and "(Together (B'Yachad) led by Naftali Bennett)", left in Hebrew prose (2 items; aids for English readers only, no claim) | Removed |
@@ -581,7 +583,7 @@ Points the author flagged:
 | other-pensions-and-older-people, information-availability | naturalness: "older people" as "אנשים מבוגרים" (literal; 4 places incl. the heading) | "אזרחים ותיקים" (standard Israeli term, as in other Hebrew documents) |
 | coalition | meaning drift: Lapid's "and hopefully, even with Likud" as "ואם יהיה אפשר" ("if possible") | "ובתקווה, גם עם הליכוד" |
 | track-record | naturalness (2 items): "קווי האדום" (ungrammatical); "בהצבעתו של בנט" (ambiguous for "with Bennett's vote") | "הקווים האדומים"; "ובנט הצביע בעדה" |
-| legal | name: English "Justice Alroni", Hebrew "השופט אלרון" | Hebrew set to follow the English: "השופט אלרוני". **Unresolved: English questioned** (the English name itself may be wrong; already logged for the owner by the orchestrator). If the owner corrects the English, the Hebrew must change with it |
+| legal | name: English "Justice Alroni", Hebrew "השופט אלרון" | Resolved by the owner (7451c62, decision 4 in research/review/hebrew-english-questioned.md): English now "Justice Yosef Elron" (confirmed against [72]), Hebrew "השופט יוסף אלרון". Hebrew matches the new English; neither edition still has "Alroni"/"אלרוני" |
 | information-availability | naturalness: "את תנאי ההסכם ... לא נמצאו" (broken construction) | "תנאי ההסכם ... לא נמצאו במסמך רשמי" |
 
 - Checked and kept as flagged by the author:
@@ -591,6 +593,7 @@ Points the author flagged:
 - Tags, citations, options: evidence-tier tags and option IDs identical line by line (70 tags/IDs); `[n]` sequences identical on every line; Sources identical (96 entries, same order, same titles and URLs).
 - Rulings: no "נחקרה/שנחקרו"; no avoid.he term outside quotes or source titles ("קרטלים" is inside Bennett's quoted words, which the English quotes; "מונופול הרבנות" only in source title [25]); no Latin acronyms left in prose (Ynet/Ynetnews are outlet names); dates day first.
 - Validation: no error names the file ✔
+- Re-check after owner corrections (7451c62, 14 October 2026): pass. EN "Justice Yosef Elron described" = HE "השופט יוסף אלרון תיאר" (the standard Hebrew spelling of the justice's name; he is not in the registry); nothing else in the bullet changed. `pnpm validate:content` passed.
 
 ## chomat-torat-yisrael (checked 2026-10-13; EN researchedAsOf 2026-10-07)
 - Hebrew edition by: Stage 5a agent (Sonnet) · Parity check by: Stage 5b agent (Opus, different)

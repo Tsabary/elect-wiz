@@ -67,3 +67,8 @@ All 30 edits in `git diff HEAD -- content/matching/texts/en/byachad-bennett.json
 10. Form: done; every Hebrew text is 1–2 sentences except gaza / defeat-hamas-then-security-control (3, F6); each point one sentence; registry Hebrew name "נפתלי בנט"; references to the user's choice use "האפשרות שבחרת"/"התשובה שבחרת".
 - Names and roles: all 30 English edits checked against the registry and the research for the date each text speaks of (table above); all roles supported; four texts start with lowercase "party leader" (F1–F4). No other English change.
 - `CONTENT_CORPUS=real pnpm validate:content`: passed; no error from `content/matching/texts/he/byachad-bennett.json` (self-match and profile tests passed; only the usual "Hebrew content is pending" note).
+
+## Re-check after owner corrections (7451c62, 14 October 2026)
+
+- judicial-system / broad-agreed-constitutional-framework (stray comma, "English texts questioned"): pass. The owner removed the comma in English only (decision 5 in research/review/hebrew-english-questioned.md). EN now reads "Party leader Naftali Bennett signed the 26 September 2026 principles document assigning constitutional matters to a joint working group." The existing HE, "ראש המפלגה נפתלי בנט חתם ב־26 בספטמבר 2026 על מסמך עקרונות המעביר את הנושאים החוקתיים לצוות עבודה משותף.", already says the same thing. The Hebrew needs no change, and `git show 7451c62` shows no change to the Hebrew file.
+- `pnpm validate:content` passed.

@@ -56,3 +56,9 @@ none
 Validation: `CONTENT_CORPUS=real pnpm validate:content` passed (content validation, self-match 28 parties with 0 blocking, 16 of 16 profiles); no error from content/matching/texts/he/hadash.json.
 
 Follow-up of 13.10.2026: `git diff HEAD` on both texts files shows only the fix round. Each of the 11 findings was applied exactly as suggested, and no other text changed. Structure, agreement values and anchors were re-checked by script and are still identical. `CONTENT_CORPUS=real pnpm validate:content` passed again (content validation, self-match 0 blocking, 16 of 16 profiles), with no error from the hadash files; research/review/matching/self-match-report.md was restored afterwards.
+
+## Re-check after owner corrections (7451c62, 14 October 2026)
+
+- judicial-system / broad-agreed-constitutional-framework (finding #12, "President Herzog"): pass. EN "when it met President Isaac Herzog on 29 March 2023" = HE "ובפגישתה עם נשיא המדינה יצחק הרצוג ב־29 במרץ 2023". This is the form the owner chose (decision 2 in research/review/hebrew-english-questioned.md) and the one already used for the-reservists (en/he the-reservists.json). Herzog is not in the registry. The date, the party as subject and "rejected a return to the previous situation" = "דחתה חזרה למצב הקודם" are unchanged. `git show 7451c62` changes only this text in the two hadash texts files.
+- Out of scope, noted only: the research document (content/research/{en,he}/hadash.md, line 123) still says "President Herzog" / "הנשיא הרצוג". The two languages match, so there is no parity gap.
+- `pnpm validate:content` passed.
