@@ -1,6 +1,7 @@
 import { useLocale, useTranslations } from "next-intl";
 import { Fragment } from "react";
 import { Link } from "@/i18n/navigation";
+import { pairListParts } from "@/lib/list-parts";
 
 /**
  * Joins React nodes with the locale's list conjunction ("A, B and C" / "A, B ו-C").
@@ -19,9 +20,9 @@ export function ListOfLinks({
   );
   return (
     <>
-      {parts.map((part, idx) => {
-        if (part.type === "literal") return <Fragment key={idx}>{part.value}</Fragment>;
-        const item = items.find((i) => i.id === part.value)!;
+      {pairListParts(parts, items).map((piece, idx) => {
+        if (piece.kind === "literal") return <Fragment key={idx}>{piece.text}</Fragment>;
+        const item = piece.item;
         return (
           <Link
             key={idx}
