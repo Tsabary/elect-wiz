@@ -85,3 +85,9 @@ Every "open" row in the fourth-batch table is closed by this section. Changes we
 4. **byachad-bennett, "Justice Alroni":** fixed in both research editions: "Justice Yosef Elron" / "השופט יוסף אלרון". Confirmed against source [72], which names him in full.
 5. **byachad-bennett, stray comma:** removed from the English text. The Hebrew needed no change.
 
+
+## Found in the fifth batch (2026-10-14)
+
+| Party | File | Where | What looks wrong | Found by | Status |
+|---|---|---|---|---|---|
+| yesodot-yisrael | `content/matching/texts/en/yesodot-yisrael.json` (25 texts: 22 options + all 3 points; listed with dates in `research/review/matching/texts-he-yesodot-yisrael.md`) | texts describing events from November 2022 to 1 July 2026 | Call Chili Tropper "party leader" for dates before the party was registered (7 July 2026); the research has him as a Blue and White / National Unity MK, and a minister from 12 October 2023 to 13 June 2024, in that period. Suggested wording: "Chili Tropper, who now leads the party,". The Hebrew mirrors the English and should follow whatever is decided. | 7d writer and parity check | open, owner to decide |
