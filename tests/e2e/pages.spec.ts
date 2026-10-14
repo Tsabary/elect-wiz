@@ -60,11 +60,21 @@ for (const locale of LOCALES) {
     }
 
     test("navigation works from every page", async ({ page }) => {
+      // Playwright's WebKit can report a `goto` right after an in-app link
+      // navigation as "interrupted" by that one; a second attempt then succeeds.
+      const goto = async (url: string) => {
+        try {
+          await page.goto(url);
+        } catch (e) {
+          if (!String(e).includes("interrupted by another navigation")) throw e;
+          await page.goto(url);
+        }
+      };
       for (const p of STATIC_PATHS) {
-        await page.goto(`/${locale}${p}`);
+        await goto(`/${locale}${p}`);
         await page.getByRole("navigation").first().locator(`a[href="/${locale}/parties"]`).click();
         await expect(page).toHaveURL(new RegExp(`/${locale}/parties$`));
-        await page.goto(`/${locale}${p}`);
+        await goto(`/${locale}${p}`);
         await page.locator(`footer a[href="/${locale}/privacy"]`).click();
         await expect(page).toHaveURL(new RegExp(`/${locale}/privacy$`));
       }

@@ -13,6 +13,9 @@ export default defineConfig({
   projects: [
     { name: "desktop-chromium", use: { ...devices["Desktop Chrome"] } },
     { name: "mobile-chromium", use: { ...devices["Pixel 7"] } },
+    // Every browser on iOS runs on WebKit, and it differs in ways that matter here
+    // (e.g. Intl.ListFormat output in Hebrew). Needs `pnpm exec playwright install webkit`.
+    { name: "mobile-webkit", use: { ...devices["iPhone 13"] } },
   ],
   // Runs against a production build so tests exercise what ships: the placeholder
   // corpus, in a non-production environment so the clock override works. The

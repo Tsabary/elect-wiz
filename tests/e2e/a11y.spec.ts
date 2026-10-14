@@ -20,6 +20,10 @@ async function expectNoSeriousViolations(page: Page, label: string) {
   await page.waitForTimeout(400);
   const results = await new AxeBuilder({ page })
     .withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"])
+    // Base UI adds invisible focus sentinels around an open dialog in WebKit only
+    // (empty `role="button"` spans that just bounce focus back inside); axe reads
+    // them as unnamed buttons. They are the library's focus trap, not page content.
+    .exclude("[data-base-ui-focus-guard]")
     .analyze();
   const serious = results.violations.filter(
     (v) => v.impact === "serious" || v.impact === "critical",

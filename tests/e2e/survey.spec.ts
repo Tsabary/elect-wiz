@@ -290,8 +290,12 @@ test.describe("ranking", () => {
     await expect(page.getByTestId("ranked-item").first()).toHaveAttribute("data-issue-id", second!);
   });
 
-  test("by touch drag and drop", async ({ page, isMobile }) => {
+  test("by touch drag and drop", async ({ page, isMobile, browserName }) => {
     test.skip(!isMobile, "touch drag is a mobile interaction");
+    test.skip(
+      browserName !== "chromium",
+      "touch events are dispatched over CDP, which only Chromium has",
+    );
     await page.setViewportSize({ width: 412, height: 1300 });
     await openSurvey(page, "he");
     await page.getByTestId("pool-item").first().getByTestId("add-to-ranking").tap();
