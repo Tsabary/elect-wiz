@@ -9,6 +9,8 @@
  * - tap/click "Add", then the up/down arrows (works everywhere, no dragging);
  * - drag and drop with mouse or touch (drag handles; dnd-kit);
  * - keyboard drag and drop (Space to pick up, arrows to move, Space to drop).
+ * Once enough are ranked, Continue also works with issues left in the pool: it
+ * asks first, then marks them "doesn't matter to me".
  */
 import {
   closestCorners,
@@ -39,7 +41,17 @@ import { useTranslations } from "next-intl";
 import { useEffect, useRef, useState, type RefObject } from "react";
 import { Button } from "@/components/ui/button";
 import {
+  Dialog,
+  DialogClose,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import {
   addToRanking,
+  canSkipRest,
   markNotImportant,
   MAX_NOT_IMPORTANT,
   MIN_RANKED,
@@ -47,6 +59,7 @@ import {
   rankingComplete,
   removeFromRanking,
   setRanking,
+  skipRest,
   unmarkNotImportant,
   unrankedPool,
   type SurveyState,
@@ -88,12 +101,14 @@ export function RankingStep({
   const [activeId, setActiveId] = useState<string | null>(null);
   const [announcement, setAnnouncement] = useState("");
   const [limitHit, setLimitHit] = useState(false);
+  const [confirmSkip, setConfirmSkip] = useState(false);
   const pendingFocus = useRef<string | null>(null);
 
   const base: DragItems = { ranked: state.ranked, pool: unrankedPool(state, issueIds) };
   const items = dragItems ?? base;
   const complete = rankingComplete(state, issueIds);
   const remaining = base.pool.length;
+  const skippable = canSkipRest(state, issueIds);
 
   // Restore focus to a control after a reorder/move (keyed nodes can lose focus when moved).
   useEffect(() => {
@@ -344,22 +359,59 @@ export function RankingStep({
         <p className="text-muted-foreground text-sm" id="ranking-status">
           {complete
             ? t("statusComplete", { count: state.ranked.length })
-            : state.ranked.length + remaining < MIN_RANKED
-              ? t("statusMin", { min: MIN_RANKED })
-              : t("statusRemaining", { count: remaining })}
+            : skippable
+              ? t("statusSkippable", { count: remaining })
+              : t("statusMin", { min: MIN_RANKED })}
         </p>
         <Button
           size="lg"
           className="h-12 text-base font-bold sm:self-start sm:px-10"
-          disabled={!complete}
+          disabled={!complete && !skippable}
           aria-describedby="ranking-status"
-          onClick={onContinue}
+          onClick={() => (complete ? onContinue() : setConfirmSkip(true))}
           data-testid="ranking-continue"
           data-focus-key="continue"
         >
           {t("continue")}
         </Button>
       </div>
+
+      <Dialog open={confirmSkip} onOpenChange={setConfirmSkip}>
+        <DialogContent role="alertdialog" data-testid="skip-rest-dialog">
+          <DialogHeader>
+            <DialogTitle>{t("skipConfirm.title", { count: remaining })}</DialogTitle>
+            <DialogDescription
+              render={<div />}
+              className="text-foreground flex flex-col gap-3 text-base leading-relaxed"
+            >
+              <ul className="list-disc ps-5 font-medium">
+                {base.pool.map((id) => (
+                  <li key={id}>{title(id)}</li>
+                ))}
+              </ul>
+              <p>{t("skipConfirm.body", { count: remaining })}</p>
+            </DialogDescription>
+          </DialogHeader>
+          <DialogFooter>
+            <DialogClose
+              render={<Button variant="outline" className="h-10" data-testid="skip-rest-cancel" />}
+            >
+              {t("skipConfirm.cancel", { count: remaining })}
+            </DialogClose>
+            <Button
+              className="h-10"
+              data-testid="skip-rest-confirm"
+              onClick={() => {
+                setConfirmSkip(false);
+                onChange((s) => skipRest(s, issueIds));
+                onContinue();
+              }}
+            >
+              {t("skipConfirm.confirm", { count: remaining })}
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
 
       <p aria-live="polite" role="status" className="sr-only" data-testid="ranking-live">
         {announcement}

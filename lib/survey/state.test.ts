@@ -4,6 +4,7 @@ import {
   SURVEY_SCHEMA_VERSION,
   addToRanking,
   buildMatchInput,
+  canSkipRest,
   createSurveyState,
   draftFor,
   emptyDraft,
@@ -19,6 +20,7 @@ import {
   selectAnswer,
   setDraft,
   setRanking,
+  skipRest,
   unmarkNotImportant,
   unrankedPool,
   type SurveyIssue,
@@ -148,6 +150,23 @@ describe("ranking", () => {
   it("is complete only when every non-excluded issue is ranked", () => {
     expect(rankingComplete(ranked(7), IDS)).toBe(true);
     expect(rankingComplete(removeFromRanking(ranked(7), "issue-a"), IDS)).toBe(false);
+  });
+
+  it("skipRest marks the unplaced issues 'doesn't matter' once enough are ranked", () => {
+    let s = createSurveyState(VERSION);
+    for (const id of IDS.slice(0, 4)) s = addToRanking(s, id);
+    expect(canSkipRest(s, IDS)).toBe(false);
+    expect(skipRest(s, IDS)).toBe(s);
+    s = addToRanking(s, IDS[4]);
+    const r = markNotImportant(s, IDS[5]);
+    if (!r.ok) throw new Error("unexpected");
+    s = r.state;
+    expect(canSkipRest(s, IDS)).toBe(true);
+    const done = skipRest(s, IDS);
+    expect(done.ranked).toEqual(IDS.slice(0, 5));
+    expect([...done.notImportant].sort()).toEqual(IDS.slice(5));
+    expect(rankingComplete(done, IDS)).toBe(true);
+    expect(canSkipRest(done, IDS)).toBe(false);
   });
 
   it("setRanking drops unknown and duplicate IDs", () => {

@@ -268,7 +268,7 @@
   "Ranking": {
     "stepLabel": "Step 1 of 3",
     "heading": "Which issues matter most to you?",
-    "instructions": "Put the issues in order, from the most important to you down. Tap “Add” to move an issue into your ranking, then reorder it with the arrows or by dragging. You can mark up to {max} issues as “doesn’t matter to me”; you won’t be asked about them.",
+    "instructions": "Put the issues in order, from the most important to you down. Tap “Add” to move an issue into your ranking, then reorder it with the arrows or by dragging. You can mark up to {max} issues as “doesn’t matter to me”; you won’t be asked about them. Issues you leave unranked count as “doesn’t matter to me” too.",
     "rankedHeading": "Your ranking",
     "rankedEmpty": "Issues you add will appear here, numbered from most important.",
     "poolHeading": "Issues to rank",
@@ -288,10 +288,16 @@
     "restoreAria": "Put back {title} with the issues to rank",
     "dragHandle": "Drag {title}",
     "limitReached": "You can mark up to {max} issues as “doesn’t matter to me”. To mark this one, put another one back first.",
-    "statusRemaining": "{count, plural, one {Rank the last remaining issue to continue.} other {Rank the # remaining issues to continue.}}",
+    "statusSkippable": "{count, plural, one {One issue isn’t ranked yet. If you continue, it will count as “doesn’t matter to me”.} other {# issues aren’t ranked yet. If you continue, they will count as “doesn’t matter to me”.}}",
     "statusMin": "Rank at least {min} issues to continue.",
     "statusComplete": "All set: {count} issues ranked.",
     "continue": "Continue",
+    "skipConfirm": {
+      "title": "{count, plural, one {You didn’t rank one issue} other {You didn’t rank # issues}}",
+      "body": "{count, plural, one {It will count as “doesn’t matter to me”: you won’t be asked about it, and your match will be based only on the issues you ranked.} other {They will count as “doesn’t matter to me”: you won’t be asked about them, and your match will be based only on the issues you ranked.}}",
+      "confirm": "{count, plural, one {Continue without it} other {Continue without them}}",
+      "cancel": "{count, plural, one {Go back and rank it} other {Go back and rank them}}"
+    },
     "announce": {
       "added": "{title} added to your ranking at number {position}.",
       "addedLast": "{title} added at number {position}. All issues are placed; you can continue.",

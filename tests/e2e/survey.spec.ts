@@ -226,7 +226,7 @@ test.describe("ranking", () => {
     await expect(page.getByTestId("pool-item")).toHaveCount(9);
   });
 
-  test("Continue is enabled only when every non-excluded issue is ranked", async ({ page }) => {
+  test("Continue is enabled once at least 5 issues are ranked", async ({ page }) => {
     await openSurvey(page, "en");
     await expect(page.getByTestId("ranking-continue")).toBeDisabled();
     await rankWithButtons(page, 5);
@@ -234,6 +234,47 @@ test.describe("ranking", () => {
     await expect(page.getByTestId("ranking-continue")).toBeEnabled();
     await page.getByTestId("ranked-item").first().getByTestId("remove-from-ranking").click();
     await expect(page.getByTestId("ranking-continue")).toBeDisabled();
+  });
+
+  test("Continue with unranked issues asks first, then counts them as 'doesn't matter'", async ({
+    page,
+  }) => {
+    await openSurvey(page, "en");
+    for (let i = 0; i < 4; i++) {
+      await page.getByTestId("pool-item").first().getByTestId("add-to-ranking").click();
+    }
+    await expect(page.getByTestId("ranking-continue")).toBeDisabled();
+    await page.getByTestId("pool-item").first().getByTestId("add-to-ranking").click();
+    await page.getByTestId("pool-item").first().getByTestId("mark-not-important").click();
+    await expect(page.getByTestId("pool-item")).toHaveCount(4);
+    await expect(page.locator("#ranking-status")).toContainText("4 issues aren’t ranked yet");
+    const unranked = await page
+      .getByTestId("pool-item")
+      .evaluateAll((els) => els.map((e) => e.getAttribute("data-issue-id")));
+
+    // Going back keeps everything as it was.
+    await page.getByTestId("ranking-continue").click();
+    const dialog = page.getByTestId("skip-rest-dialog");
+    await expect(dialog).toBeVisible();
+    await expect(dialog.getByRole("listitem")).toHaveCount(4);
+    await page.getByTestId("skip-rest-cancel").click();
+    await expect(dialog).toBeHidden();
+    await expect(page.getByTestId("survey")).toHaveAttribute("data-step", "ranking");
+    await expect(page.getByTestId("pool-item")).toHaveCount(4);
+
+    // Confirming marks them "doesn't matter" and asks only about the 5 ranked.
+    await page.getByTestId("ranking-continue").click();
+    await page.getByTestId("skip-rest-confirm").click();
+    await expect(page.getByTestId("survey")).toHaveAttribute("data-step", "answer-0");
+    await expect(page.getByTestId("answer-progress")).toContainText("5");
+    await page.getByTestId("step-back").click();
+    await expect(page.getByTestId("not-important-item")).toHaveCount(5);
+    await expect(page.getByTestId("pool-item")).toHaveCount(0);
+    for (const id of unranked) {
+      await expect(
+        page.locator(`[data-testid="not-important-item"][data-issue-id="${id}"]`),
+      ).toHaveCount(1);
+    }
   });
 
   test("the sixth 'doesn't matter' is prevented with a clear message", async ({ page }) => {

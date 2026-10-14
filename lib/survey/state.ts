@@ -181,6 +181,28 @@ export function unmarkNotImportant(state: SurveyState, issueId: string): SurveyS
   return { ...state, notImportant: without(state.notImportant, issueId) };
 }
 
+/**
+ * Whether Continue may mark the issues left in the pool "doesn't matter" (after
+ * the user confirms): enough are ranked, and the rest fit under the limit.
+ */
+export function canSkipRest(state: SurveyState, issueIds: readonly string[]): boolean {
+  const pool = unrankedPool(state, issueIds);
+  return (
+    pool.length > 0 &&
+    state.ranked.length >= MIN_RANKED &&
+    state.notImportant.length + pool.length <= MAX_NOT_IMPORTANT
+  );
+}
+
+/** Marks every issue left in the pool "doesn't matter to me". No-op unless `canSkipRest`. */
+export function skipRest(state: SurveyState, issueIds: readonly string[]): SurveyState {
+  if (!canSkipRest(state, issueIds)) return state;
+  return {
+    ...state,
+    notImportant: [...state.notImportant, ...unrankedPool(state, issueIds)],
+  };
+}
+
 /** Every issue is either ranked or "doesn't matter", with at least 5 ranked. */
 export function rankingComplete(state: SurveyState, issueIds: readonly string[]): boolean {
   const covered = new Set([...state.ranked, ...state.notImportant]);
